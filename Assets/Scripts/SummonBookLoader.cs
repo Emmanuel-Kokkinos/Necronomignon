@@ -55,14 +55,14 @@ public class SummonBookLoader : MonoBehaviour
                 //Make not summoned beasts transparent
                 if (summoned[x].tier == 0)
                 {
-                    var tempColor = slots[x].color;
+                    var tempColor = slots[x % 6].color;
                     tempColor.a = .5f;
-                    slots[x].color = tempColor;
+                    slots[x % 6].color = tempColor;
                 }
             }
             else
             {
-                slots[x % 6].sprite = Resources.Load<Sprite>("EmptyRectangle");
+                slots[x % 6].gameObject.SetActive(false);
                 beastTexts[x % 6].GetComponent<Text>().text = "";
             }
         }
