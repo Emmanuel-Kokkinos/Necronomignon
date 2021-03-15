@@ -5,9 +5,10 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     BattleManager battleManager;
+    Attack attack;
 
     private Vector3 shootDir;
-    float moveSpeed = 100f;
+    float moveSpeed = 150f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class Projectile : MonoBehaviour
         if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
+            attack = g.GetComponent<Attack>();
         }
     }
 
@@ -47,6 +49,15 @@ public class Projectile : MonoBehaviour
         {
             Destroy(gameObject);
             collision.gameObject.GetComponent<Animator>().SetTrigger("GetHit");
+
+            if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+            {
+                attack.InitiateAttack(battleManager.roundOrder[battleManager.turn - 1], battleManager.targets, battleManager.inFront(), Player.summoner);
+            }
+            else
+            {
+                attack.InitiateAttack(battleManager.roundOrder[battleManager.turn - 1], battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+            }
         }
     }
 }

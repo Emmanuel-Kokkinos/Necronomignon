@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cthulhu_Script : MonoBehaviour, Parent_Beast
 {
     BattleManager battleManager;
+    Attack attack;
     [SerializeField] GameObject backPrefab;
 
     void Start()
@@ -14,6 +15,7 @@ public class Cthulhu_Script : MonoBehaviour, Parent_Beast
         if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
+            attack = g.GetComponent<Attack>();
         }
     }
 
@@ -21,11 +23,29 @@ public class Cthulhu_Script : MonoBehaviour, Parent_Beast
     {
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     public void front_special()
     {
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     void ProjectileAnimation()
