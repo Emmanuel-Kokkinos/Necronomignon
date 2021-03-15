@@ -279,9 +279,12 @@ public class HealthManager : MonoBehaviour
         int xp = (int)Mathf.Round(battleManager.enemySummoner.getLevel() / Player.summoner.getLevel() * (battleManager.enemySummoner.xp / 5));
         if (xp < 1) xp = 1;
         xpText.text = "XP Gained: " + xp;
-        xpSlider.maxValue = Player.summoner.xpNeeded;
-        xpSlider.value = Player.summoner.xp;
+
+        Player.summoner.addXP((int)Mathf.Round((battleManager.enemySummoner.getLevel() / Player.summoner.getLevel()) * (battleManager.enemySummoner.xp / 5)));
         Player.summoner.updateLevel();
+        xpSlider.maxValue = Player.summoner.xpForLevel(Player.summoner.level);
+        xpSlider.value = Player.summoner.xp;
+
         if (specialUnlock && BeastManager.getFromNameS("SovereignDragon").tier < 0)
         {
             xpText.text += "\n Speacial Unlock:\n SovereignDragon";
@@ -320,7 +323,6 @@ public class HealthManager : MonoBehaviour
     //Collect rewards after winning a battle.
     public void onCollect()
     {
-        Player.summoner.addXP((battleManager.enemySummoner.getLevel()/Player.summoner.getLevel())*(battleManager.enemySummoner.xp/5));
         StartCoroutine(LoadMap());
     }
 
