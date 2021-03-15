@@ -6,6 +6,7 @@ using UnityEngine;
 public class Wyvern_Script : MonoBehaviour, Parent_Beast
 {
     BattleManager battleManager;
+    Attack attack;
     [SerializeField] GameObject backPrefab;
 
     void Start()
@@ -15,6 +16,7 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         if(g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
+            attack = g.GetComponent<Attack>();
         }
     }
 
@@ -22,6 +24,15 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
     {
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     public void front_special()
@@ -30,6 +41,15 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         battleManager.targets = FindColumnTargets();
         battleManager.cancelGuard = true;
         battleManager.PlayDamagedAnimation(battleManager.targets);
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     void ProjectileAnimation()

@@ -560,14 +560,7 @@ public class BattleManager : MonoBehaviour
         if (turn >= totalMoves - 1)
         {
             PlayAttackAnimation(inFront);
-            if (roundOrderTypes[turn] == "Player")
-            {
-                attack.InitiateAttack(currentTurn, targets, inFront, Player.summoner);
-            }
-            else
-            {
-                attack.InitiateAttack(currentTurn, targets, inFront, enemySummoner);
-            }
+
             GameObject slot = getSlot();
             if (!slot.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Front") &&
                 !slot.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Back"))
@@ -575,13 +568,7 @@ public class BattleManager : MonoBehaviour
                 if (pRunning) pRunning = false;
                 if (eRunning) eRunning = false;
             }
-            /*
-            PlayAttackAnimation(inFront);
-            if ((inFront && currentTurn.Move_A.healing) || (!inFront && currentTurn.Move_B.healing))
-            {
-                PlayDamagedAnimation(targets);
-            }
-            */
+
             Debug.Log("Round Ended");
             ClearTurns();
             currentTurn = roundOrder[0];
@@ -594,20 +581,12 @@ public class BattleManager : MonoBehaviour
             else if (healthManager.enemiesLeft > 0 && healthManager.playersLeft > 0 && roundOrderTypes[turn] == "Player")
             {
                 StartCoroutine(PlayerAttack());
-                
             }
         }
         else
         {
             PlayAttackAnimation(inFront);
-            if (roundOrderTypes[turn] == "Player")
-            {
-                attack.InitiateAttack(currentTurn, targets, inFront, Player.summoner);
-            }
-            else
-            {
-                attack.InitiateAttack(currentTurn, targets, inFront, enemySummoner);
-            }
+
             GameObject slot = getSlot();
             if (!slot.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Front") &&
                 !slot.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Back"))
@@ -992,7 +971,7 @@ public class BattleManager : MonoBehaviour
     }
 
     //Get the row to determine whether the current turn beast is using an A move or a B move
-    bool inFront()
+    public bool inFront()
     {
         if(currentTurn.size == 1)
         {
