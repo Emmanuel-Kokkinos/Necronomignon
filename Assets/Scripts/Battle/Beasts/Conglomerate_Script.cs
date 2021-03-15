@@ -8,20 +8,28 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
     Attack attack;
 
     [SerializeField] GameObject backPrefab;
-    int currentSlot;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
+    AudioSource audioSrc;
+
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
+        GameObject au = GameObject.Find("Music");
 
         if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
+            
+
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()
     {
+        audioSrc.PlayOneShot(backAttackSound);
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
@@ -57,6 +65,6 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
         movePrefab.transform.SetParent(target.transform);
         movePrefab.transform.localPosition = new Vector3(0, 0);
         movePrefab.transform.localRotation = Quaternion.identity;
-        movePrefab.transform.localScale = new Vector3(5, 5);
+        movePrefab.transform.localScale = new Vector3(30, 30);
     }
 }

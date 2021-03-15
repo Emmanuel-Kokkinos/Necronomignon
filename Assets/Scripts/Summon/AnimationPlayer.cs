@@ -49,6 +49,7 @@ public class AnimationPlayer : MonoBehaviour
     public void Death()
     {
         image.GetComponent<Animator>().SetInteger("Health", 0);
+        
     }
 
     // When Summoning a new beast into the field, or for the first time 

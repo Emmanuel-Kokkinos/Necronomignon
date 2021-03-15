@@ -5,6 +5,8 @@ using UnityEngine;
 public class Mandoro_Script : MonoBehaviour, Parent_Beast
 {
     BattleManager battleManager;
+    AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
+    AudioSource audioSrc;
     Attack attack;
 
     void Start()
@@ -16,6 +18,9 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
+
+        frontAttackSound = Resources.Load<AudioClip>("Robot1");
+        audioSrc = GetComponent<AudioSource>();
     }
 
     public void back_special()
@@ -50,6 +55,7 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
 
     public void front_special() 
     {
+        audioSrc.PlayOneShot(frontAttackSound);
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -60,5 +66,13 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+    }
+
+    //To modify -> add parameter to select character sound.
+    public void PlaySound()
+    {
+        //Switch statement to select the sound played. In this case we will assume only one sound 
+
+        audioSrc.PlayOneShot(deathSound);
     }
 }

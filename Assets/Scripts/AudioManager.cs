@@ -23,8 +23,6 @@ public class AudioManager : MonoBehaviour
         // Search for all games objects in scene with the tag "music", you can edit the GameObject tag in the inspector
         GameObject[] objs = GameObject.FindGameObjectsWithTag("music");
 
-
-
         if (objs.Length > 1)
         {
             // This is very IMPORTANT, it keeps the GameObject value to 1, or else you'll just have multiplying GameObjects every time you re-load the scene
