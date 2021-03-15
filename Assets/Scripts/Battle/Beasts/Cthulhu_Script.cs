@@ -58,4 +58,9 @@ public class Cthulhu_Script : MonoBehaviour, Parent_Beast
         movePrefab.transform.localRotation = Quaternion.identity;
         movePrefab.transform.localScale = new Vector3(10, 10);
     }
+
+    public void Play_SoundFX()
+    {
+        throw new System.NotImplementedException();
+    }
 }

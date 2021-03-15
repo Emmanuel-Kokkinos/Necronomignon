@@ -58,4 +58,9 @@ public class SovereignDragon_Script : MonoBehaviour, Parent_Beast
         Vector3 shootDir = ((target.transform.localPosition) - (player.transform.localPosition)).normalized;
         movePrefab.GetComponent<Projectile>().Setup(shootDir);
     }
+
+    public void Play_SoundFX()
+    {
+        throw new System.NotImplementedException();
+    }
 }
