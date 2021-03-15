@@ -45,4 +45,9 @@ public class Nage_Script : MonoBehaviour, Parent_Beast
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
     }
+
+    public void Play_SoundFX()
+    {
+        throw new System.NotImplementedException();
+    }
 }

@@ -263,4 +263,9 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         }
         return targets;
     }
+
+    public void Play_SoundFX()
+    {
+        throw new NotImplementedException();
+    }
 }

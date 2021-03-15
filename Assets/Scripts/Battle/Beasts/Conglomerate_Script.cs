@@ -29,7 +29,9 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
 
     public void back_special()
     {
+        //Audio Effect example
         audioSrc.PlayOneShot(backAttackSound);
+
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
@@ -66,5 +68,10 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
         movePrefab.transform.localPosition = new Vector3(0, 0);
         movePrefab.transform.localRotation = Quaternion.identity;
         movePrefab.transform.localScale = new Vector3(30, 30);
+    }
+
+    public void Play_SoundFX()
+    {
+        throw new System.NotImplementedException();
     }
 }

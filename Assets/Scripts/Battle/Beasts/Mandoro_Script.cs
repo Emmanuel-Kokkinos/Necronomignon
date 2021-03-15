@@ -75,4 +75,9 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
 
         audioSrc.PlayOneShot(deathSound);
     }
+
+    public void Play_SoundFX()
+    {
+        throw new System.NotImplementedException();
+    }
 }

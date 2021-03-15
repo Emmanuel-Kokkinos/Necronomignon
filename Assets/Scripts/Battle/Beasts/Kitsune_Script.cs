@@ -53,4 +53,9 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
 
         movePrefab.GetComponent<Projectile>().Setup(shootDir);
     }
+
+    public void Play_SoundFX()
+    {
+        throw new System.NotImplementedException();
+    }
 }
