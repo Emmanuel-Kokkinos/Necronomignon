@@ -5,27 +5,58 @@ using UnityEngine;
 public class Conglomerate_Script : MonoBehaviour, Parent_Beast
 {
     BattleManager battleManager;
+    Attack attack;
+
     [SerializeField] GameObject backPrefab;
-    int currentSlot;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
+    AudioSource audioSrc;
+
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
+        GameObject au = GameObject.Find("Music");
 
         if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
+            attack = g.GetComponent<Attack>();
         }
+            
+
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()
     {
+        //Audio Effect example
+        audioSrc.PlayOneShot(backAttackSound);
+
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     public void front_special()
     {
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     void ProjectileAnimation()
@@ -36,6 +67,11 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
         movePrefab.transform.SetParent(target.transform);
         movePrefab.transform.localPosition = new Vector3(0, 0);
         movePrefab.transform.localRotation = Quaternion.identity;
-        movePrefab.transform.localScale = new Vector3(50, 50);
+        movePrefab.transform.localScale = new Vector3(30, 30);
+    }
+
+    public void Play_SoundFX()
+    {
+        throw new System.NotImplementedException();
     }
 }

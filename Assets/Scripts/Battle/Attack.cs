@@ -381,9 +381,6 @@ public class Attack : MonoBehaviour
             healthManager.DisplayDamageOutput(target, damage.ToString(), type);
         }
 
-        //Change damage output color
-        
-
         int rand = UnityEngine.Random.Range(0, 2);
         if (target.statusTurns[(int)Move.types.Sleep] > 0 && rand > 0 && rand<5)
         {
@@ -392,6 +389,7 @@ public class Attack : MonoBehaviour
         }
     }
 
+    //Change damage output color
     public Color GetTypeColor(Beast attacker)
     {
         Color color = Color.white;
