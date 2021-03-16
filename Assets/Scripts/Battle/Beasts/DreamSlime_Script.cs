@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DreamSlime_Script : MonoBehaviour, Parent_Beast
 {
     BattleManager battleManager;
@@ -9,9 +10,14 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
     HealthManager healthManager;
     Attack attack;
 
+    [SerializeField] GameObject backPrefab;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
+    AudioSource audioSrc;
+
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
+        GameObject au = GameObject.Find("Music");
 
         if (g != null)
         {
@@ -20,10 +26,16 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
             healthManager = g.GetComponent<HealthManager>();
             attack = g.GetComponent<Attack>();
         }
+
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()
     {
+
+        audioSrc.PlayOneShot(backAttackSound);
+
         int slot = -1;
         int ran = Random.Range(0, 10);
         if (ran < 3 && battleManager.roundOrderTypes[battleManager.turn] == "Player" && !battleManager.isSquadFull("Player"))

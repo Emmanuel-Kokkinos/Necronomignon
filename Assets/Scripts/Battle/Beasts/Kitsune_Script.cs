@@ -13,14 +13,13 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
+        GameObject au = GameObject.Find("Music");
 
         if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
-
-        GameObject au = GameObject.Find("Music");
 
         if (au != null)
             audioSrc = au.GetComponent<AudioSource>();
