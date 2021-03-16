@@ -155,7 +155,6 @@ public class HealthManager : MonoBehaviour
     //Displays the damage output
     public void DisplayDamageOutput(Beast target, string damage, Color color)
     {
-        print(target.name);
         if (target.name != "Target")
         {
             GameObject slot = battleManager.getSlot(target);
@@ -191,26 +190,29 @@ public class HealthManager : MonoBehaviour
     //adds health to the given beast upto the beasts maxHP
     public void heal(Beast target, double heal)
     {
+        print(heal + " 1 ");
         //looks for the beast that needs to be healed and heals it up to it's max hp
-        for(int x = 0; x < Values.SQUADMAX; x++)
+        for (int x = 0; x < Values.SQUADMAX; x++)
         {
-            if(target == squad[x % squad.Count])
+            if(target == squad[x])
             {
+                if(heal > squad[x].maxHP - squad[x].hitPoints)
+                {
+                    print(heal + " 2 ");
+                    heal = squad[x].maxHP - squad[x].hitPoints;
+                    print(heal + " 3 ");
+                }
+
                 squad[x].hitPoints += int.Parse(Math.Floor(heal)+"");
-                if (squad[x].hitPoints > squad[x].maxHP)
-                {
-                    squad[x].hitPoints = squad[x].maxHP;
-                }
-                playerHealthBars[x].SetHealth(squad[x].hitPoints);
             }
-            else if(target == enemies[x%enemies.Count])
+            else if(target == enemies[x])
             {
-                enemies[x].hitPoints += int.Parse(Math.Floor(heal)+"");
-                if (enemies[x].hitPoints > enemies[x].maxHP)
+                if (heal > enemies[x].maxHP - enemies[x].hitPoints)
                 {
-                    enemies[x].hitPoints = enemies[x].maxHP;
+                    heal = enemies[x].maxHP - enemies[x].hitPoints;
                 }
-                enemyHealthBars[x].SetHealth(enemies[x].hitPoints);
+
+                enemies[x].hitPoints += int.Parse(Math.Floor(heal) + "");
             }
 
             DisplayDamageOutput(target, Math.Floor(heal).ToString(), new Color(93f / 255f, 245f / 255f, 66f / 255f));

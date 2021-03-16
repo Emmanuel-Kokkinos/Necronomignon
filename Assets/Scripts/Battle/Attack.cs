@@ -22,6 +22,7 @@ public class Attack : MonoBehaviour
     public void InitiateAttack(Beast attacker, List<Beast> targets, bool inFront, Summoner summ)
     {
         summoner = summ;
+
         if (beastManager.moveManager.movesList == null)
         {
             beastManager.moveManager.start();
@@ -31,6 +32,7 @@ public class Attack : MonoBehaviour
             battleManager.RemoveBeast(attacker);
             return;
         }
+
         //running the method for each beast
         foreach (Beast target in targets)
         {
@@ -55,10 +57,8 @@ public class Attack : MonoBehaviour
                         {
                             target.buffs.Add(new Buff(attacker.Move_A.buff));
                         }
-                        if (attacker.Move_A.healing)
+                        if(attacker.Move_A.healing)
                         {
-                            healthManager.heal(target, target.maxHP * ((double)attacker.Move_A.power / 100));
-                            print(attacker.name + " has healed " + target.name);
                             break;
                         }
                     }
@@ -70,8 +70,6 @@ public class Attack : MonoBehaviour
                         }
                         if (attacker.Move_B.healing)
                         {
-                            healthManager.heal(target, target.maxHP * ((double)attacker.Move_B.power / 100));
-                            print(attacker.name + " has healed " + target.name);
                             break;
                         }
                     }

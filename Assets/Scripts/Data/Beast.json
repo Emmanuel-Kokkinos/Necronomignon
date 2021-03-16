@@ -119,7 +119,7 @@
       "cost": "20",
       "type": "3",
       "static_img": "Dryad_Idle_00",
-      "moveA": "3",
+      "moveA": "4",
       "moveB": "14",
       "statGradients": {
         "hpGradient": {
