@@ -27,6 +27,7 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
 
     public void back_special()
     {
+        
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
@@ -38,10 +39,13 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+
+        Play_SoundFX("back");
     }
 
     public void front_special()
     {
+
         battleManager.targets.Clear();
         battleManager.targets = FindColumnTargets();
         battleManager.cancelGuard = true;
@@ -55,6 +59,8 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+
+        Play_SoundFX("front");
     }
 
     void ProjectileAnimation()
