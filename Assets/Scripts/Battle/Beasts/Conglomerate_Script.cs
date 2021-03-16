@@ -25,12 +25,14 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
 
         if (au != null)
             audioSrc = au.GetComponent<AudioSource>();
+
+        frontAttackSound = backAttackSound;
     }
 
     public void back_special()
     {
         //Audio Effect example
-        audioSrc.PlayOneShot(backAttackSound);
+        Play_SoundFX("back");
 
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
@@ -47,6 +49,8 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
 
     public void front_special()
     {
+        Play_SoundFX("front");
+
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -72,6 +76,14 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
 
     public void Play_SoundFX(string sound)
     {
+        
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            //case "start": audioSrc.PlayOneShot(startSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
         
     }
 }

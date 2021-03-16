@@ -8,6 +8,8 @@ public class SovereignDragon_Script : MonoBehaviour, Parent_Beast
     BattleManager battleManager;
     Attack attack;
     [SerializeField] GameObject frontPrefab;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
+    AudioSource audioSrc;
 
     void Start()
     {
@@ -61,6 +63,14 @@ public class SovereignDragon_Script : MonoBehaviour, Parent_Beast
 
     public void Play_SoundFX(string sound)
     {
-        throw new System.NotImplementedException();
+        /*
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            //case "start": audioSrc.PlayOneShot(startSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
+        */
     }
 }

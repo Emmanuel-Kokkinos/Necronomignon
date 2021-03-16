@@ -31,12 +31,16 @@ public class AnimationPlayer : MonoBehaviour
     public void FrontAttack()
     {
        image.GetComponent<Animator>().SetTrigger("Front");
+
+       image.GetComponent<Parent_Beast>().Play_SoundFX("front");
     }
 
     //Back Row Attack
     public void BackAttack()
     {
         image.GetComponent<Animator>().SetTrigger("Back");
+
+        image.GetComponent<Parent_Beast>().Play_SoundFX("back");
     }
 
     //When a Beast Receives Damage
@@ -49,7 +53,8 @@ public class AnimationPlayer : MonoBehaviour
     public void Death()
     {
         image.GetComponent<Animator>().SetInteger("Health", 0);
-        
+
+        image.GetComponent<Parent_Beast>().Play_SoundFX("death");
     }
 
     // When Summoning a new beast into the field, or for the first time 
