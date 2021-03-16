@@ -130,7 +130,7 @@ public class LoadMission : MonoBehaviour
                 beastPrefab.transform.SetParent(enemySlotImg[x].transform);
                 beastPrefab.transform.localPosition = new Vector3(0, -50);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                //beastPrefab.transform.localScale = new Vector3(4, 4);
+                beastPrefab.transform.localScale = new Vector3(5, 5);
 
                 enemyImgs[x].sprite = Resources.Load<Sprite>("Static_Images/" + enemyToLoad[x].static_img);
 
@@ -175,7 +175,7 @@ public class LoadMission : MonoBehaviour
                 beastPrefab.transform.SetParent(playerSlotImg[x].transform);
                 beastPrefab.transform.localPosition = new Vector3(0, -50);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                //beastPrefab.transform.localScale = new Vector3(4, 4);
+                beastPrefab.transform.localScale = new Vector3(5, 5);
 
                 playerImgs[x].sprite = Resources.Load<Sprite>("Static_Images/" + toLoad[x].static_img);
 
