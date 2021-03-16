@@ -59,7 +59,7 @@ public class Cthulhu_Script : MonoBehaviour, Parent_Beast
         movePrefab.transform.localScale = new Vector3(10, 10);
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
         throw new System.NotImplementedException();
     }

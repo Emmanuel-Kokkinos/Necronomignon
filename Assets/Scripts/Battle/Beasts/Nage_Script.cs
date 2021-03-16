@@ -46,7 +46,7 @@ public class Nage_Script : MonoBehaviour, Parent_Beast
         }
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
         throw new System.NotImplementedException();
     }

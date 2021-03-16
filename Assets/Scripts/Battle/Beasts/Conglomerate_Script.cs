@@ -70,8 +70,8 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
         movePrefab.transform.localScale = new Vector3(30, 30);
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
-        throw new System.NotImplementedException();
+        
     }
 }
