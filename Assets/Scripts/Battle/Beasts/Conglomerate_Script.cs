@@ -21,7 +21,8 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
-            
+
+        
 
         if (au != null)
             audioSrc = au.GetComponent<AudioSource>();

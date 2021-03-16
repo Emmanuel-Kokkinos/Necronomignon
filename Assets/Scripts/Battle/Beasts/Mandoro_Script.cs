@@ -12,6 +12,7 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
+        GameObject au = GameObject.Find("Music");
 
         if (g != null)
         {
@@ -20,7 +21,10 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
         }
 
         frontAttackSound = Resources.Load<AudioClip>("Robot1");
-        audioSrc = GetComponent<AudioSource>();
+        
+
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()

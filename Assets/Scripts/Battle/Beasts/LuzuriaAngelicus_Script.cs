@@ -21,6 +21,11 @@ public class LuzuriaAngelicus_Script : MonoBehaviour, Parent_Beast
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
+
+        GameObject au = GameObject.Find("Music");
+
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()

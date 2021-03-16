@@ -14,12 +14,15 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
-
-        if(g != null)
+        GameObject au = GameObject.Find("Music");
+        if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
+
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()
