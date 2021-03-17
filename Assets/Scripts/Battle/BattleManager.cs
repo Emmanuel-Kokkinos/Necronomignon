@@ -347,29 +347,32 @@ public class BattleManager : MonoBehaviour
     //starts the current players, or enemies attack. 
     public void TakeTurn()
     {
-        turn++;
-        currentTurn = roundOrder[turn]; 
-        txtTurn.text = roundOrderTypes[turn] + " " + currentTurn + " 's turn";
-        if (pRunning) pRunning = false;
-        if (eRunning) eRunning = false;
-        //If it is enemy turn, start their attack
-        if (roundOrderTypes[turn] == "Enemy")
+        if (!(turn >= totalMoves - 1))
         {
-            if (!eRunning && !pRunning)
+            turn++;
+            currentTurn = roundOrder[turn];
+            txtTurn.text = roundOrderTypes[turn] + " " + currentTurn + " 's turn";
+            if (pRunning) pRunning = false;
+            if (eRunning) eRunning = false;
+            //If it is enemy turn, start their attack
+            if (roundOrderTypes[turn] == "Enemy")
             {
-                StartCoroutine(EnemyAttack());
+                if (!eRunning && !pRunning)
+                {
+                    StartCoroutine(EnemyAttack());
+                }
+                UpdateOrderBar();
             }
-            UpdateOrderBar();
-        }
-        else if (roundOrderTypes[turn] == "Player")
-        {
-            if (!eRunning && !pRunning)
+            else if (roundOrderTypes[turn] == "Player")
             {
-                StartCoroutine(PlayerAttack());
+                if (!eRunning && !pRunning)
+                {
+                    StartCoroutine(PlayerAttack());
+                }
+                UpdateOrderBar();
             }
-            UpdateOrderBar();
+            decroStatAndBuff();
         }
-        decroStatAndBuff();
     }
 
     //This method is responsible for decrementing counters for status effects (excluding Doom) and Buffs & debuffs

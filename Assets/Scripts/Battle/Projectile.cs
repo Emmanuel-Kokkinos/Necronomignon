@@ -58,6 +58,8 @@ public class Projectile : MonoBehaviour
             {
                 attack.InitiateAttack(battleManager.roundOrder[battleManager.turn - 1], battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
             }
+
+            battleManager.TakeTurn();
         }
     }
 }

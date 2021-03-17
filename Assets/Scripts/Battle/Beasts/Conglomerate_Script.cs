@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Conglomerate_Script : Parent_Script, Parent_Beast
 {
-     
-
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
     AudioSource audioSrc;
@@ -14,10 +12,6 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
     {
         base.start();
         GameObject au = GameObject.Find("Music");
-
-        
-            
-
         if (au != null)
             audioSrc = au.GetComponent<AudioSource>();
     }
@@ -38,7 +32,7 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        base.endOfAttack();
+        battleManager.TakeTurn();
     }
 
     public void front_special()
@@ -53,7 +47,7 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        base.endOfAttack();
+        battleManager.TakeTurn();
     }
 
     void ProjectileAnimation()

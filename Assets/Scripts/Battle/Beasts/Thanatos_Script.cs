@@ -16,7 +16,7 @@ public class Thanatos_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        base.endOfAttack();
+        battleManager.TakeTurn();
     }
 
     public void front_special() 
@@ -31,7 +31,7 @@ public class Thanatos_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        base.endOfAttack();
+        battleManager.TakeTurn();
     }
 
     public void Play_SoundFX()

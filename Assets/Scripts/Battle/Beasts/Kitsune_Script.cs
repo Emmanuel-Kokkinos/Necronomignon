@@ -4,10 +4,8 @@ using UnityEngine;
  
 public class Kitsune_Script : Parent_Script, Parent_Beast
 {
-     
     [SerializeField] GameObject backPrefab;
      
-
     public void back_special()
     {
         ProjectileAnimation();
@@ -25,7 +23,7 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        base.endOfAttack();
+        battleManager.TakeTurn();
     }
 
     void ProjectileAnimation()
@@ -42,7 +40,6 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
         Vector3 shootDir = ((target.transform.localPosition) - (player.transform.localPosition)).normalized;
 
         movePrefab.GetComponent<Projectile>().Setup(shootDir);
-        base.endOfAttack();
     }
 
     public void Play_SoundFX()

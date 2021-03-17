@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Dryad_Script : Parent_Script, Parent_Beast
 {
-    
     HealthManager healthManager;
 
     void Start()
@@ -35,7 +34,7 @@ public class Dryad_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        base.endOfAttack();
+        battleManager.TakeTurn();
     }
 
     public void front_special()
@@ -50,7 +49,7 @@ public class Dryad_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        base.endOfAttack();
+        battleManager.TakeTurn();
     }
 
     //looks for which friendly unit has the lowest amount of health proportional to their max health

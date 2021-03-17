@@ -5,17 +5,7 @@ using UnityEngine;
  
 public class SovereignDragon_Script : Parent_Script, Parent_Beast
 {
-    
-
-   
     [SerializeField] GameObject frontPrefab;
-
-    
-
-    private void Update()
-    {
-        
-    }
 
     public void back_special()
     {
@@ -29,13 +19,12 @@ public class SovereignDragon_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        base.endOfAttack();
+        battleManager.TakeTurn();
     }
 
     public void front_special() 
     {
         ProjectileAnimation();
-        base.endOfAttack();
     }
 
     void ProjectileAnimation()
