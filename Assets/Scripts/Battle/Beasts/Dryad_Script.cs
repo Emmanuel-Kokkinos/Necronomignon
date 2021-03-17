@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Dryad_Script : MonoBehaviour, Parent_Beast
+public class Dryad_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+    
     HealthManager healthManager;
 
     void Start()
     {
+        base.start();
         GameObject g = GameObject.Find("GameManager");
 
         if (g != null)
         {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
             healthManager = g.GetComponent<HealthManager>();
         }
     }
@@ -37,6 +35,7 @@ public class Dryad_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     public void front_special()
@@ -51,6 +50,7 @@ public class Dryad_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     //looks for which friendly unit has the lowest amount of health proportional to their max health

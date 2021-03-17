@@ -3,22 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
  
-public class SovereignDragon_Script : MonoBehaviour, Parent_Beast
+public class SovereignDragon_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+    
+
+   
     [SerializeField] GameObject frontPrefab;
 
-    void Start()
-    {
-        GameObject g = GameObject.Find("GameManager");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-    }
+    
 
     private void Update()
     {
@@ -37,11 +29,13 @@ public class SovereignDragon_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     public void front_special() 
     {
         ProjectileAnimation();
+        base.endOfAttack();
     }
 
     void ProjectileAnimation()

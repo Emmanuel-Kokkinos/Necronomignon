@@ -345,7 +345,7 @@ public class BattleManager : MonoBehaviour
         }
     }
     //starts the current players, or enemies attack. 
-    void TakeTurn()
+    public void TakeTurn()
     {
         turn++;
         currentTurn = roundOrder[turn]; 
@@ -578,7 +578,7 @@ public class BattleManager : MonoBehaviour
                     turn--;
                 }
             }
-            TakeTurn();
+            //TakeTurn();
         }
     }
 

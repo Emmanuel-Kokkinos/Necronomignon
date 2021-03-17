@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DreamSlime_Script : MonoBehaviour, Parent_Beast
+public class DreamSlime_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
+     
     LoadMission loadMission;
-    HealthManager healthManager;
-    Attack attack;
+    HealthManager healthManager; 
 
     void Start()
     {
+        base.start();
         GameObject g = GameObject.Find("GameManager");
 
         if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
+        { 
             loadMission = g.GetComponent<LoadMission>();
-            healthManager = g.GetComponent<HealthManager>();
-            attack = g.GetComponent<Attack>();
+            healthManager = g.GetComponent<HealthManager>(); 
         }
     }
 
@@ -119,6 +117,7 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
         }
 
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+        base.endOfAttack();
     }
 
     public void front_special()
@@ -133,6 +132,7 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     public void Play_SoundFX()

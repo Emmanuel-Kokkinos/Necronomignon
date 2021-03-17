@@ -3,21 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
  
-public class Zeograth_Script : MonoBehaviour, Parent_Beast
+public class Zeograth_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+    
 
-    void Start()
-    {
-        GameObject g = GameObject.Find("GameManager");
+  
 
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-    }
+
+
 
     public void back_special()
     {
@@ -31,6 +24,7 @@ public class Zeograth_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     public void front_special() 
@@ -45,6 +39,7 @@ public class Zeograth_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     public void Play_SoundFX()

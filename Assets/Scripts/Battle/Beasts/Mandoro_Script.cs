@@ -2,22 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class Mandoro_Script : MonoBehaviour, Parent_Beast
-{
-    BattleManager battleManager;
+public class Mandoro_Script : Parent_Script, Parent_Beast
+{ 
     AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
-    AudioSource audioSrc;
-    Attack attack;
+    AudioSource audioSrc; 
 
     void Start()
     {
-        GameObject g = GameObject.Find("GameManager");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
+        base.start();
 
         frontAttackSound = Resources.Load<AudioClip>("Robot1");
         audioSrc = GetComponent<AudioSource>();
@@ -51,6 +43,7 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     public void front_special() 
@@ -66,6 +59,7 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     //To modify -> add parameter to select character sound.

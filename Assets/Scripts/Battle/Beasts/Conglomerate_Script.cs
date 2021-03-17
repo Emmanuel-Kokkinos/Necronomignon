@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Conglomerate_Script : MonoBehaviour, Parent_Beast
+public class Conglomerate_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+     
 
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
@@ -13,14 +12,10 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
 
     void Start()
     {
-        GameObject g = GameObject.Find("GameManager");
+        base.start();
         GameObject au = GameObject.Find("Music");
 
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
+        
             
 
         if (au != null)
@@ -43,6 +38,7 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     public void front_special()
@@ -57,6 +53,7 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     void ProjectileAnimation()

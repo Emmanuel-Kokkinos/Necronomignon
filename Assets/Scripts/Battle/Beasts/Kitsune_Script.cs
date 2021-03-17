@@ -2,22 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class Kitsune_Script : MonoBehaviour, Parent_Beast
+public class Kitsune_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+     
     [SerializeField] GameObject backPrefab;
-
-    void Start()
-    {
-        GameObject g = GameObject.Find("GameManager");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-    }
+     
 
     public void back_special()
     {
@@ -36,6 +25,7 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+        base.endOfAttack();
     }
 
     void ProjectileAnimation()
@@ -52,6 +42,7 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
         Vector3 shootDir = ((target.transform.localPosition) - (player.transform.localPosition)).normalized;
 
         movePrefab.GetComponent<Projectile>().Setup(shootDir);
+        base.endOfAttack();
     }
 
     public void Play_SoundFX()
