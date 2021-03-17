@@ -116,7 +116,7 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
         }
 
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
-        battleManager.TakeTurn();
+        endOfAttack();
     }
 
     public void front_special()
@@ -131,7 +131,7 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        battleManager.TakeTurn();
+        endOfAttack();
     }
 
     public void Play_SoundFX()

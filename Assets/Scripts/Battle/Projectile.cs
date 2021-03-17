@@ -52,11 +52,11 @@ public class Projectile : MonoBehaviour
 
             if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
             {
-                attack.InitiateAttack(battleManager.roundOrder[battleManager.turn - 1], battleManager.targets, battleManager.inFront(), Player.summoner);
+                attack.InitiateAttack(battleManager.roundOrder[battleManager.turn], battleManager.targets, battleManager.inFront(), Player.summoner);
             }
             else
             {
-                attack.InitiateAttack(battleManager.roundOrder[battleManager.turn - 1], battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+                attack.InitiateAttack(battleManager.roundOrder[battleManager.turn], battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
             }
 
             battleManager.TakeTurn();

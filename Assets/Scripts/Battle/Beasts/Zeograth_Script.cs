@@ -17,7 +17,7 @@ public class Zeograth_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        battleManager.TakeTurn();
+        endOfAttack();
     }
 
     public void front_special() 
@@ -32,7 +32,7 @@ public class Zeograth_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        battleManager.TakeTurn();
+        endOfAttack();
     }
 
     public void Play_SoundFX()

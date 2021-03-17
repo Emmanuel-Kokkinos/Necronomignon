@@ -553,6 +553,7 @@ public class BattleManager : MonoBehaviour
             currentTurn = roundOrder[0];
             txtTurn.text = roundOrderTypes[0] + " " + currentTurn + "'s turn";
             turn = 0;
+            
             if (healthManager.playersLeft > 0 && healthManager.enemiesLeft > 0 && roundOrderTypes[turn] == "Enemy")
             {
                 StartCoroutine(EnemyAttack());
@@ -1050,6 +1051,18 @@ public class BattleManager : MonoBehaviour
                     loadMission.RemoveImage(players[x], "Player");
                     attackPool.Remove(players[x]);
                     turn -= playersTurnsTaken[x];
+                    break;
+                }
+                else
+                {
+                    if (players[x] != null)
+                    {
+                        print(target.name + " target " + players[x].name + " player");
+                    }
+                    else
+                    {
+                        print("is null");
+                    }
                 }
             }
         }
@@ -1070,6 +1083,18 @@ public class BattleManager : MonoBehaviour
                     enemyAttackPool.Remove(enemies[x]);
                     loadMission.RemoveImage(enemies[x], "Enemy");
                     turn -= enemiesTurnsTaken[x];
+                    break;
+                }
+                else
+                {
+                    if (enemies[x] != null)
+                    {
+                        print(target.name + " target " + enemies[x].name + " enemy");
+                    }
+                    else
+                    {
+                        print("is null");
+                    }
                 }
             }
         }

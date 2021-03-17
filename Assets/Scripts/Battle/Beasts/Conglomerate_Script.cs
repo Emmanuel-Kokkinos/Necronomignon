@@ -32,7 +32,7 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        battleManager.TakeTurn();
+        endOfAttack();
     }
 
     public void front_special()
@@ -47,7 +47,7 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-        battleManager.TakeTurn();
+        endOfAttack();
     }
 
     void ProjectileAnimation()
