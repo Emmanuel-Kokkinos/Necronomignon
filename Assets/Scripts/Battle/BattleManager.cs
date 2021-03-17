@@ -508,7 +508,6 @@ public class BattleManager : MonoBehaviour
             {
                 currentTurn.cursed = null;
                 currentTurn.curseCharge = 0;
-
             }
             else
             {

@@ -190,33 +190,45 @@ public class HealthManager : MonoBehaviour
     //adds health to the given beast upto the beasts maxHP
     public void heal(Beast target, double heal)
     {
-        print(heal + " 1 ");
+        bool isPlayer = false;
+        int y = -1;
+        
         //looks for the beast that needs to be healed and heals it up to it's max hp
         for (int x = 0; x < Values.SQUADMAX; x++)
         {
             if(target == squad[x])
             {
-                if(heal > squad[x].maxHP - squad[x].hitPoints)
-                {
-                    print(heal + " 2 ");
-                    heal = squad[x].maxHP - squad[x].hitPoints;
-                    print(heal + " 3 ");
-                }
-
-                squad[x].hitPoints += int.Parse(Math.Floor(heal)+"");
+                isPlayer = true;
+                y = x;
+                break;
             }
             else if(target == enemies[x])
             {
-                if (heal > enemies[x].maxHP - enemies[x].hitPoints)
-                {
-                    heal = enemies[x].maxHP - enemies[x].hitPoints;
-                }
-
-                enemies[x].hitPoints += int.Parse(Math.Floor(heal) + "");
+                isPlayer = false;
+                y = x;
+                break;
             }
-
-            DisplayDamageOutput(target, Math.Floor(heal).ToString(), new Color(93f / 255f, 245f / 255f, 66f / 255f));
         }
+
+        if (heal > target.maxHP - target.hitPoints)
+        {
+            heal = target.maxHP - target.hitPoints;
+        }
+
+        target.hitPoints += int.Parse(Math.Floor(heal) + "");
+
+        if (isPlayer)
+        {
+            playerHealths[y % squad.Count].text = squad[y % squad.Count].hitPoints.ToString();
+            playerHealthBars[y % squad.Count].SetHealth(squad[y % squad.Count].hitPoints);
+        }
+        else
+        {
+            enemyHealths[y % enemies.Count].text = enemies[y % enemies.Count].hitPoints.ToString();
+            enemyHealthBars[y % enemies.Count].SetHealth(enemies[y % enemies.Count].hitPoints);
+        }
+        
+        DisplayDamageOutput(target, Math.Floor(heal).ToString(), new Color(93f / 255f, 245f / 255f, 66f / 255f));
     }
     //prints the health left, needs to be updated to implement ui
     void DisplayHealthLeft(Beast target, int healthLeft)

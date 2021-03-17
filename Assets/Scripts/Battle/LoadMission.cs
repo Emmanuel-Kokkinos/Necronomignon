@@ -262,9 +262,11 @@ public class LoadMission : MonoBehaviour
                 child.GetComponent<Animator>().SetInteger("Health", 0);
             }
         }
+
         GetHealthDisplayImageToRemove(toRemove, owner).transform.parent.gameObject.SetActive(false);
         StartCoroutine(PlayDeathAnimation(toRemove, owner));
     }
+
     //Get the slot to remove the image from
     Image GetImageToRemove(Beast beast, string owner)
     {
