@@ -536,7 +536,7 @@ public class BattleManager : MonoBehaviour
 
         ChangeSquadLayers(targets);
 
-        PlayAttackAnimation(inFront);
+        PlayAttackAttack(inFront);
         //Check to see if the round is still going and then run an attack
         if (turn >= totalMoves - 1)
         {
@@ -635,12 +635,25 @@ public class BattleManager : MonoBehaviour
     {
         GameObject slot = getSlot();
         slot = slot.transform.GetChild(0).gameObject;
-        Parent_Beast beast = slot.GetComponent<Parent_Beast>();
 
         if (inFront)
         {
             slot.GetComponent<Animator>().SetTrigger("Front");
+        }
+        else
+        {
+            slot.GetComponent<Animator>().SetTrigger("Back");
+        }
+    }
 
+    public void PlayAttackAttack(bool inFront)
+    {
+        GameObject slot = getSlot();
+        slot = slot.transform.GetChild(0).gameObject;
+        Parent_Beast beast = slot.GetComponent<Parent_Beast>();
+
+        if (inFront)
+        {
             if (beast != null)
             {
                 beast.front_special();
@@ -648,8 +661,6 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            slot.GetComponent<Animator>().SetTrigger("Back");
-
             if (beast != null)
             {
                 beast.back_special();
@@ -1061,7 +1072,7 @@ public class BattleManager : MonoBehaviour
                     }
                     else
                     {
-                        print("is null");
+                        print("is null "+target.name);
                     }
                 }
             }
@@ -1093,7 +1104,7 @@ public class BattleManager : MonoBehaviour
                     }
                     else
                     {
-                        print("is null");
+                        print("is null " + target.name);
                     }
                 }
             }

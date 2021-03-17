@@ -76,6 +76,7 @@ public class Attack : MonoBehaviour
 
                     if (attacker.statusTurns[(int)Move.types.Blind] > 0)
                     {
+                        battleManager.PlayAttackAnimation(battleManager.inFront());
                         healthManager.DisplayDamageOutput(attacker, "Blinded", new Color(255f / 255f, 255f / 255f, 255f / 255f));
                         print(attacker.name + " attacks blindly");
                     }
@@ -85,6 +86,7 @@ public class Attack : MonoBehaviour
                 {
                     if (attacker.curse(target))
                     {
+                        battleManager.PlayAttackAnimation(battleManager.inFront());
                         healthManager.DisplayDamageOutput(target, "DOOM!", new Color(25f / 255f, 25f / 255f, 25f / 255f));
                         print("Doom has consumed " + target.name);
                         modifier = 1;
@@ -92,6 +94,7 @@ public class Attack : MonoBehaviour
                     }
                     else
                     {
+                        battleManager.PlayAttackAnimation(battleManager.inFront());
                         healthManager.DisplayDamageOutput(target, "Doom lingers...", new Color(25f / 255f, 25f / 255f, 25f / 255f));
                         print("Doom lingers over " + target.name);
                         modifier = 1;
@@ -99,6 +102,7 @@ public class Attack : MonoBehaviour
                 }
                 else if (!isMiss(attacker, target))
                 {
+                    battleManager.PlayAttackAnimation(battleManager.inFront());
                     //adjusts the modifier for a critical hit
                     modifier *= isCrit(attacker, target);
                     //adjusts the modifier if the attack is blocked
