@@ -935,16 +935,32 @@ public class BattleManager : MonoBehaviour
     void ChangeSquadLayers(List<Beast> targets)
     {
         // Resets all of the prefabs to the Player layer
-        foreach (Beast b in attackPool)
+        /*foreach (Beast b in attackPool)
         {
             GameObject slot = getSlot(b);
             slot.transform.GetChild(0).gameObject.layer = 8;
+        }*/
+
+        foreach(GameObject g in playerPadSlots)
+        {
+            if(g != null)
+            {
+                g.transform.gameObject.layer = 8;
+            }
         }
 
-        foreach (Beast b in enemyAttackPool)
+        /*foreach (Beast b in enemyAttackPool)
         {
             GameObject slot = getSlot(b);
             slot.transform.GetChild(0).gameObject.layer = 8;
+        }*/
+
+        foreach (GameObject g in enemyPadSlots)
+        {
+            if (g != null)
+            {
+                g.transform.gameObject.layer = 8;
+            }
         }
 
         // Sets the attacker to the Player layer
