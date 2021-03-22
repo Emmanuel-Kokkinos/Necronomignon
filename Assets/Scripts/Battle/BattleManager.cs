@@ -455,26 +455,6 @@ public class BattleManager : MonoBehaviour
         targets.Clear();
         targets.Add(target);
 
-        //the if and else blocks here are identicle except for Move_A is switched with Move_B
-        if (inFront)
-        {
-            //determins if the move is healing and gets a freindly target based on lowest health proportional to max health
-            if (currentTurn.Move_A.healing)
-            {
-                targets.Clear();
-                targets.Add(this.getWeakestFriend());
-                cancelGuard = true;
-            }
-        }
-        else if (!inFront)
-        {
-            if (currentTurn.Move_B.healing)
-            {
-                targets.Clear();
-                targets.Add(this.getWeakestFriend());
-                cancelGuard = true;
-            }
-        }
         //this checks if there is a beast blocking the current target as well making sure there's nothing that would need to cancel the block 
         //like healing for example
         if (guarded && !cancelGuard)
@@ -1056,7 +1036,7 @@ public class BattleManager : MonoBehaviour
     {
         //totalBeasts --;
 
-        if(roundOrderTypes[turn] != "Player")
+        if(!target.isEnemy)
         {
             if (playersTurnsTaken.Count < Values.SQUADMAX)
             {
@@ -1076,7 +1056,7 @@ public class BattleManager : MonoBehaviour
                 }
             }
         }
-        else if (roundOrderTypes[turn] != "Enemy")
+        else if (target.isEnemy)
         {
             if(enemiesTurnsTaken.Count() <= 0)
             {
@@ -1172,34 +1152,7 @@ public class BattleManager : MonoBehaviour
             enemiesTurnsTaken.Add(0);
             enemiesTurnsTaken.Add(0);  
     }  
-    //looks for which friendly unit has the lowest amount of health proportional to their max health
-    Beast getWeakestFriend()
-    {
-        Beast b = currentTurn;
-        if(roundOrderTypes[turn] == "Player")
-        {
-            for (int x =0;x< Values.SQUADMAX;x++)
-            {
-                //checks each friendly beasts proportional health remaining and campares it to who ever had the the prieviously lowest proportional health
-                //defaults on the healer
-                if(players[x] != null && b != null && playersActive[x] && ((double)players[x].hitPoints/ (double)players[x].maxHP) < ((double)b.hitPoints/ (double)b.maxHP))
-                {
-                    b = players[x];
-                }
-            }
-        }
-        else 
-        {
-            for (int x =0; x< Values.SQUADMAX; x++)
-            {
-                if (enemies[x] != null && b != null && enemiesActive[x] && ((double)enemies[x].hitPoints/ (double)enemies[x].maxHP) < ((double)b.hitPoints/ (double)b.maxHP))
-                {
-                    b = enemies[x];
-                }
-            }
-        }
-        return b;
-    }
+    
     public bool isSquadFull(string squad)
     {
         int y = 0;
