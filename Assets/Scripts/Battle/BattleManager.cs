@@ -283,6 +283,7 @@ public class BattleManager : MonoBehaviour
         {
             turn--;
         }
+
         if (roundOrderTypes[turn] == "Enemy" && attackPool.Count > 0)
         {
             if (!eRunning && !pRunning)
@@ -297,6 +298,7 @@ public class BattleManager : MonoBehaviour
                 StartCoroutine(PlayerAttack());
             }
         }
+        
         UpdateOrderBar();
     }
 
@@ -521,6 +523,7 @@ public class BattleManager : MonoBehaviour
 
         if (targets[0] == null || targets[0].speed == 0)
         {
+            print(targets[0] + " this is a test");
             if (roundOrderTypes[turn] == "Player")
             {
 
@@ -553,7 +556,7 @@ public class BattleManager : MonoBehaviour
             currentTurn = roundOrder[0];
             txtTurn.text = roundOrderTypes[0] + " " + currentTurn + "'s turn";
             turn = 0;
-            
+
             if (healthManager.playersLeft > 0 && healthManager.enemiesLeft > 0 && roundOrderTypes[turn] == "Enemy")
             {
                 StartCoroutine(EnemyAttack());
@@ -934,27 +937,31 @@ public class BattleManager : MonoBehaviour
     // Changes the layers of the attacker and target so the projectiles only hit the target
     void ChangeSquadLayers(List<Beast> targets)
     {
-        // Resets all of the prefabs to the Player layer
-        /*foreach (Beast b in attackPool)
+        // Sets all the players to Player layer
+        foreach (Beast b in attackPool)
         {
             GameObject slot = getSlot(b);
             slot.transform.GetChild(0).gameObject.layer = 8;
-        }*/
+        }
 
-        foreach(GameObject g in playerPadSlots)
+        /*
+        foreach (GameObject g in playerPadSlots)
         {
             if(g != null)
             {
                 g.transform.gameObject.layer = 8;
             }
         }
+        */
 
-        /*foreach (Beast b in enemyAttackPool)
+        // Sets all the enemies to Player layer
+        foreach (Beast b in enemyAttackPool)
         {
             GameObject slot = getSlot(b);
             slot.transform.GetChild(0).gameObject.layer = 8;
-        }*/
+        }
 
+        /*
         foreach (GameObject g in enemyPadSlots)
         {
             if (g != null)
@@ -962,6 +969,7 @@ public class BattleManager : MonoBehaviour
                 g.transform.gameObject.layer = 8;
             }
         }
+        */
 
         // Sets the attacker to the Player layer
         GameObject player = getSlot(currentTurn);

@@ -30,7 +30,7 @@ public class Parent_Script : MonoBehaviour
 
     protected void endOfAttack()
     {
-        battleManager.PlayAttackAnimation(battleManager.inFront());
+        //battleManager.PlayAttackAnimation(battleManager.inFront());
         battleManager.TakeTurn();
     }
 }

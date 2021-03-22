@@ -24,8 +24,6 @@ public class Dryad_Script : Parent_Script, Parent_Beast
         battleManager.targets.Add(getWeakestFriend());
         battleManager.cancelGuard = true;
 
-        healthManager.heal(battleManager.targets[0], (int)(battleManager.targets[0].maxHP * ((double)battleManager.currentTurn.Move_A.power / 100)));
-
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
@@ -34,6 +32,8 @@ public class Dryad_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+
+        healthManager.heal(battleManager.targets[0], (int)(battleManager.targets[0].maxHP * ((double)battleManager.currentTurn.Move_A.power / 100)));
         endOfAttack();
     }
 
