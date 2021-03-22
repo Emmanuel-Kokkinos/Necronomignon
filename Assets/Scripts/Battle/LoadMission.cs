@@ -122,9 +122,11 @@ public class LoadMission : MonoBehaviour
         for (int x = 0; x < enemyToLoad.Count; x++)
         {
             enemySlotImg[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
-
+            
             if (enemyToLoad[x] != null)
             {
+                Debug.Log(enemyToLoad[x].name);
+                enemyToLoad[x].enemy = true;
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + enemyToLoad[x].name));
                 
                 beastPrefab.transform.SetParent(enemySlotImg[x].transform);

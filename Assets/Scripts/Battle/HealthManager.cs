@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class HealthManager : MonoBehaviour
 {
     [SerializeField] Slider xpSlider;
     [SerializeField] Text xpText;
+    [SerializeField] Text levelTxt;
     [SerializeField] Transform damageOutputPrefab;
     public BattleManager battleManager;
     public LevelChecker levelChecker;
@@ -283,7 +285,7 @@ public class HealthManager : MonoBehaviour
             }
         }
 
-        UpdateXpBar(unlock <1);
+        UpdateXpBar(unlock < 1);
         StartCoroutine(winnersAnimations());
     }
 
@@ -298,6 +300,8 @@ public class HealthManager : MonoBehaviour
         Player.summoner.updateLevel();
         xpSlider.maxValue = Player.summoner.xpForLevel(Player.summoner.level);
         xpSlider.value = Player.summoner.xp;
+        levelTxt.text = Player.summoner.level.ToString();
+
 
         if (specialUnlock && BeastManager.getFromNameS("SovereignDragon").tier < 0)
         {

@@ -1061,7 +1061,8 @@ public class BattleManager : MonoBehaviour
     {
         //totalBeasts --;
 
-        if(roundOrderTypes[turn] != "Player")
+        //if(roundOrderTypes[turn] != "Player")
+        if(!target.enemy)
         {
             if (playersTurnsTaken.Count < Values.SQUADMAX)
             {
@@ -1093,7 +1094,8 @@ public class BattleManager : MonoBehaviour
                 }
             }
         }
-        else if (roundOrderTypes[turn] != "Enemy")
+        //else if (roundOrderTypes[turn] != "Enemy")
+        else if (target.enemy)
         {
             if(enemiesTurnsTaken.Count() <= 0)
             {
