@@ -198,13 +198,13 @@ public class HealthManager : MonoBehaviour
         //looks for the beast that needs to be healed and heals it up to it's max hp
         for (int x = 0; x < Values.SQUADMAX; x++)
         {
-            if(target == squad[x])
+            if(target.Equals(squad[x]))
             {
                 isPlayer = true;
                 y = x;
                 break;
             }
-            else if(target == enemies[x])
+            else if(target.Equals(enemies[x]))
             {
                 isPlayer = false;
                 y = x;
@@ -217,7 +217,7 @@ public class HealthManager : MonoBehaviour
             heal = target.maxHP - target.hitPoints;
         }
 
-        target.hitPoints += int.Parse(Math.Floor(heal) + "");
+        target.hitPoints += (int)heal;
 
         if (isPlayer)
         {
