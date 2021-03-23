@@ -57,7 +57,6 @@ public class Attack : MonoBehaviour
                         }
                         if (attacker.Move_A.healing)
                         {
-                            healthManager.heal(target, target.maxHP * ((double)attacker.Move_A.power / 100));
                             print(attacker.name + " has healed " + target.name);
                             break;
                         }
@@ -70,7 +69,6 @@ public class Attack : MonoBehaviour
                         }
                         if (attacker.Move_B.healing)
                         {
-                            healthManager.heal(target, target.maxHP * ((double)attacker.Move_B.power / 100));
                             print(attacker.name + " has healed " + target.name);
                             break;
                         }

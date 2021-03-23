@@ -11,6 +11,7 @@ public class HealthManager : MonoBehaviour
 {
     [SerializeField] Slider xpSlider;
     [SerializeField] Text xpText;
+    [SerializeField] Text levelText;
     [SerializeField] Transform damageOutputPrefab;
     public BattleManager battleManager;
     public LevelChecker levelChecker;
@@ -191,31 +192,47 @@ public class HealthManager : MonoBehaviour
     //adds health to the given beast upto the beasts maxHP
     public void heal(Beast target, double heal)
     {
-        //looks for the beast that needs to be healed and heals it up to it's max hp
-        for(int x = 0; x < Values.SQUADMAX; x++)
-        {
-            if(target == squad[x % squad.Count])
-            {
-                squad[x].hitPoints += int.Parse(Math.Floor(heal)+"");
-                if (squad[x].hitPoints > squad[x].maxHP)
-                {
-                    squad[x].hitPoints = squad[x].maxHP;
-                }
-                playerHealthBars[x].SetHealth(squad[x].hitPoints);
-            }
-            else if(target == enemies[x%enemies.Count])
-            {
-                enemies[x].hitPoints += int.Parse(Math.Floor(heal)+"");
-                if (enemies[x].hitPoints > enemies[x].maxHP)
-                {
-                    enemies[x].hitPoints = enemies[x].maxHP;
-                }
-                enemyHealthBars[x].SetHealth(enemies[x].hitPoints);
-            }
+        bool isPlayer = false;
+        int y = -1;
 
-            DisplayDamageOutput(target, Math.Floor(heal).ToString(), new Color(93f / 255f, 245f / 255f, 66f / 255f));
+        //looks for the beast that needs to be healed and heals it up to it's max hp
+        for (int x = 0; x < Values.SQUADMAX; x++)
+        {
+            if (target.Equals(squad[x]))
+            {
+                isPlayer = true;
+                y = x;
+                break;
+            }
+            else if (target.Equals(enemies[x]))
+            {
+                isPlayer = false;
+                y = x;
+                break;
+            }
         }
+
+        if (heal > target.maxHP - target.hitPoints)
+        {
+            heal = target.maxHP - target.hitPoints;
+        }
+
+        target.hitPoints += (int)heal;
+
+        if (isPlayer)
+        {
+            playerHealths[y % squad.Count].text = squad[y % squad.Count].hitPoints.ToString();
+            playerHealthBars[y % squad.Count].SetHealth(squad[y % squad.Count].hitPoints);
+        }
+        else
+        {
+            enemyHealths[y % enemies.Count].text = enemies[y % enemies.Count].hitPoints.ToString();
+            enemyHealthBars[y % enemies.Count].SetHealth(enemies[y % enemies.Count].hitPoints);
+        }
+
+        DisplayDamageOutput(target, Math.Floor(heal).ToString(), new Color(93f / 255f, 245f / 255f, 66f / 255f));
     }
+
     //prints the health left, needs to be updated to implement ui
     void DisplayHealthLeft(Beast target, int healthLeft)
     {
@@ -284,6 +301,7 @@ public class HealthManager : MonoBehaviour
         Player.summoner.updateLevel();
         xpSlider.maxValue = Player.summoner.xpForLevel(Player.summoner.level);
         xpSlider.value = Player.summoner.xp;
+        levelText.text = Player.summoner.level.ToString();
 
         if (specialUnlock && BeastManager.getFromNameS("SovereignDragon").tier < 0)
         {
