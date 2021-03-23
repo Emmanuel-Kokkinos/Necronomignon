@@ -50,13 +50,19 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
             collision.gameObject.GetComponent<Animator>().SetTrigger("GetHit");
 
+            Beast attacker = battleManager.currentTurn;
+            if(battleManager.turn != 0)
+            {
+                attacker = battleManager.roundOrder[battleManager.turn - 1];
+            }
+
             if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
             {
-                attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+                attack.InitiateAttack(attacker, battleManager.targets, battleManager.inFront(), Player.summoner);
             }
             else
             {
-                attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+                attack.InitiateAttack(attacker, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
             }
         }
     }
