@@ -28,6 +28,7 @@ public class Thanatos_Script : MonoBehaviour, Parent_Beast
     public void back_special()
     {
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+        audioSrc.PlayOneShot(frontAttackSound);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
@@ -55,7 +56,7 @@ public class Thanatos_Script : MonoBehaviour, Parent_Beast
 
     public void Play_SoundFX(string sound)
     {
-        /*
+
         switch (sound)
         {
             case "front": audioSrc.PlayOneShot(frontAttackSound); break;
@@ -63,6 +64,7 @@ public class Thanatos_Script : MonoBehaviour, Parent_Beast
             //case "start": audioSrc.PlayOneShot(startSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
-        */
+        
+        
     }
 }
