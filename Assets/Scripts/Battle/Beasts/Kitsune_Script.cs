@@ -35,7 +35,7 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
         shootFrame = kitsuneBack.length - frame;
         //shootFrame += Time.time;
         print("shoot :" + shootFrame);
-        StartCoroutine(ProjectileAnimation());
+        ProjectileAnimation();
     }
 
     public void front_special() 
@@ -52,7 +52,7 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
         }
     }
 
-    IEnumerator ProjectileAnimation()
+    void ProjectileAnimation()
     {
         
         GameObject player = battleManager.getSlot(battleManager.currentTurn);
@@ -67,17 +67,22 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
 
 
 
-        yield return new WaitForSecondsRealtime(5);
-
-        Vector3 shootDir = ((target.transform.localPosition) - (player.transform.localPosition)).normalized;
-
-  
-        movePrefab.GetComponent<Projectile>().Setup(shootDir);
-
+        StartCoroutine(ShootCoroutine(target, player, movePrefab));
+        
     }
 
     public void Play_SoundFX()
     {
         throw new System.NotImplementedException();
+    }
+
+    IEnumerator ShootCoroutine(GameObject target, GameObject player, GameObject movePrefab)
+    {
+        yield return new WaitForSecondsRealtime(5);
+
+        Vector3 shootDir = ((target.transform.localPosition) - (player.transform.localPosition)).normalized;
+
+
+        movePrefab.GetComponent<Projectile>().Setup(shootDir);
     }
 }
