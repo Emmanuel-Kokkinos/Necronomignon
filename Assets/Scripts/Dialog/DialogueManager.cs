@@ -18,7 +18,7 @@ namespace DialogueEditor
         public string dialogueScene;
 
         //Character dialogue system 
-        public List<NPC> characterList;
+        //public List<NPC> characterList;
 
         public List<NPCConversation> storyConversations;
 
@@ -30,21 +30,10 @@ namespace DialogueEditor
             SetNPCConversation(FindByName("Conv_Intro"));
 
             //Start conversation
-            BeginConversation(currentConversation);
+            BeginConversation(currentConversation, "DialogScene");
         }
         
-        
-
-        //Populates the list of characters for which dialogs will be displayed
-        public void GetCharacters()
-        {
-
-        }
-
-        public void GetDialogues()
-        {
-
-        }
+       
 
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
@@ -71,19 +60,15 @@ namespace DialogueEditor
             storyConversations = new List<NPCConversation>(convs);
         }
 
-
-
-        //Gets the dialog for said speaker
-        public void SpeakerDialogue(string speaker)
-        {
-
-        }
         //Sets assets of current dialogue scene based on story 
         public void SceneInterface(string screenInter)
         {
             print(screenInter);
 
+            switch (screenInter)
+            {
 
+            }
         }
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
         public void ConversationEnd(string name)
@@ -92,18 +77,20 @@ namespace DialogueEditor
             {
                 case "IntroEnd": 
                     SetNPCConversation(FindByName("Conv_Academy"));
-                    BeginConversation(currentConversation);
+                    BeginConversation(currentConversation, "DialogScene");
                     break;
             }
         }
         //Conversation begins on scene
-        public void BeginConversation(NPCConversation conversation)
+        public void BeginConversation(NPCConversation conversation, string setSceneName)
         {
 
             //Sets the scene Interface
             SceneInterface(dialogueScene);
 
-            sceneName = SceneManager.GetActiveScene().name;
+            //sceneName = SceneManager.GetActiveScene().name;
+
+            sceneName = setSceneName;
 
             Debug.Log(sceneName);
 
