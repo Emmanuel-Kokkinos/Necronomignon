@@ -21,6 +21,11 @@ public class Zeograth_Script : MonoBehaviour, Parent_Beast
 
     public void back_special()
     {
+        GameObject slot = battleManager.getSlot(battleManager.targets[0]);
+        print(slot.transform.GetChild(0).name + " name of child");
+        slot.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Prefabs/Moves/Move_Controller") as RuntimeAnimatorController;
+        //Need to replay animation or remove controller each time
+
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -35,8 +40,6 @@ public class Zeograth_Script : MonoBehaviour, Parent_Beast
 
     public void front_special() 
     {
-        GameObject slot = battleManager.getSlot(battleManager.targets[0]);
-        slot.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Prefabs/Moves/Explosion_Anim") as RuntimeAnimatorController;
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
