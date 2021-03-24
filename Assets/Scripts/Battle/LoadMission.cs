@@ -121,15 +121,17 @@ public class LoadMission : MonoBehaviour
     {
         for (int x = 0; x < enemyToLoad.Count; x++)
         {
-            enemySlotImg[x].GetComponent<Image>().enabled = false;
+            enemySlotImg[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
             if (enemyToLoad[x] != null)
             {
+                enemyToLoad[x].isEnemy = true;
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + enemyToLoad[x].name));
+                
                 beastPrefab.transform.SetParent(enemySlotImg[x].transform);
                 beastPrefab.transform.localPosition = new Vector3(0, -50);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                //beastPrefab.transform.localScale = new Vector3(4, 4);
+                beastPrefab.transform.localScale = new Vector3(5, 5);
 
                 enemyImgs[x].sprite = Resources.Load<Sprite>("Static_Images/" + enemyToLoad[x].static_img);
 
@@ -158,7 +160,7 @@ public class LoadMission : MonoBehaviour
         foreach(Image slot in playerSlotImg)
         {
             slot.gameObject.SetActive(true);
-            slot.enabled = false;
+            slot.sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
         }
 
         for (int x = 0; x < toLoad.Count; x++)
@@ -174,7 +176,7 @@ public class LoadMission : MonoBehaviour
                 beastPrefab.transform.SetParent(playerSlotImg[x].transform);
                 beastPrefab.transform.localPosition = new Vector3(0, -50);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                //beastPrefab.transform.localScale = new Vector3(4, 4);
+                beastPrefab.transform.localScale = new Vector3(5, 5);
 
                 playerImgs[x].sprite = Resources.Load<Sprite>("Static_Images/" + toLoad[x].static_img);
 

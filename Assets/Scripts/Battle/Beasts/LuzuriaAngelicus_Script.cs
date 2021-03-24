@@ -7,6 +7,7 @@ using UnityEngine;
 public class LuzuriaAngelicus_Script : MonoBehaviour, Parent_Beast
 {
     BattleManager battleManager;
+    Attack attack;
     [SerializeField] GameObject backPrefab;
 
     void Start()
@@ -16,6 +17,7 @@ public class LuzuriaAngelicus_Script : MonoBehaviour, Parent_Beast
         if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
+            attack = g.GetComponent<Attack>();
         }
     }
 
@@ -23,6 +25,15 @@ public class LuzuriaAngelicus_Script : MonoBehaviour, Parent_Beast
     {
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     public void front_special() 
@@ -31,17 +42,29 @@ public class LuzuriaAngelicus_Script : MonoBehaviour, Parent_Beast
         battleManager.targets = findRowTargets();
         battleManager.cancelGuard = true;
         battleManager.PlayDamagedAnimation(battleManager.targets);
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     void ProjectileAnimation()
     {
+        GameObject player = battleManager.getSlot(battleManager.currentTurn);
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
 
         GameObject movePrefab = Instantiate(backPrefab);
         movePrefab.transform.SetParent(target.transform);
         movePrefab.transform.localPosition = new Vector3(0, 0);
         movePrefab.transform.localRotation = Quaternion.identity;
-        movePrefab.transform.localScale = new Vector3(50, 50);
+        movePrefab.transform.localScale = new Vector3(20, 20);
+
+        
     }
 
     //changes targets to the front row (if there are front row targets) or back row(if there are no front row targets)
@@ -185,5 +208,10 @@ public class LuzuriaAngelicus_Script : MonoBehaviour, Parent_Beast
             }
         }
         return targets;
+    }
+
+    public void Play_SoundFX()
+    {
+        throw new NotImplementedException();
     }
 }
