@@ -6,7 +6,7 @@ public class Thanatos_Script : MonoBehaviour, Parent_Beast
 {
     BattleManager battleManager;
     Attack attack;
-    [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     AudioSource audioSrc;
 
     void Start()
@@ -61,7 +61,7 @@ public class Thanatos_Script : MonoBehaviour, Parent_Beast
         {
             case "front": audioSrc.PlayOneShot(frontAttackSound); break;
             case "back": audioSrc.PlayOneShot(backAttackSound); break;
-            //case "start": audioSrc.PlayOneShot(startSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
         

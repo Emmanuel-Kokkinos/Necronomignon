@@ -8,6 +8,8 @@ public class Zeograth_Script : MonoBehaviour, Parent_Beast
     BattleManager battleManager;
     Attack attack;
 
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
+    AudioSource audioSrc;
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
@@ -17,6 +19,11 @@ public class Zeograth_Script : MonoBehaviour, Parent_Beast
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
+
+        GameObject au = GameObject.Find("Music");
+
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()
@@ -49,6 +56,12 @@ public class Zeograth_Script : MonoBehaviour, Parent_Beast
 
     public void Play_SoundFX(string sound)
     {
-        throw new System.NotImplementedException();
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
     }
 }

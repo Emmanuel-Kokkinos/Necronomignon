@@ -47,6 +47,8 @@ public class AnimationPlayer : MonoBehaviour
     public void Damaged()
     {
         image.GetComponent<Animator>().SetTrigger("GetHit");
+
+        image.GetComponent<Parent_Beast>().Play_SoundFX("damage");
     }
 
     //On Death
