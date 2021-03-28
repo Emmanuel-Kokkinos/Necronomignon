@@ -27,7 +27,7 @@ namespace DialogueEditor
         {
             NPCConversationToList();
 
-            SetNPCConversation(FindByName("Conv_Intro"));
+            SetNPCConversation(FindByName("Conv_Prot"));
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
