@@ -27,7 +27,7 @@ public class SaveSquad : MonoBehaviour
     // Handles the buttons being activated or deactivated when saving a squad
     public void SaveButton()
     {
-        if (createManager.totalCost > 0)
+        if (createManager.totalCost >= 0)
         {
             squad1Button.SetActive(true);
             squad2Button.SetActive(true);
