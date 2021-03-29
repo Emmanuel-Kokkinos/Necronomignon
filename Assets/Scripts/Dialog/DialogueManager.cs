@@ -8,7 +8,7 @@ namespace DialogueEditor
 {
     public class DialogueManager : MonoBehaviour
     {
-
+        public NPCManager npcManager;
         //main conversation scene variables
         private NPCConversation currentConversation;
         private string sceneName;
@@ -28,7 +28,7 @@ namespace DialogueEditor
         {
             NPCConversationToList();
 
-            SetNPCConversation(FindByName("Conv_Intro"));
+            SetNPCConversation(FindByName("Conv_Opening"));
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
@@ -62,6 +62,8 @@ namespace DialogueEditor
         //Sets assets of current dialogue scene based on story 
         public void SceneInterface(string screenInter)
         {
+            //NPCList npcs = NPCManager.npcList;
+
             switch (screenInter)
             {
                 case "Conv_Opening":
@@ -76,12 +78,15 @@ namespace DialogueEditor
         {
             switch (name)
             {
+                case "OpeningEnd":
+                    SceneManager.LoadScene("Menu");
+                    break;
                 case "IntroEnd": 
                     SetNPCConversation(FindByName("Conv_Academy"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
-                case "OpeningEnd":
-                    SceneManager.LoadScene("Menu");
+                case "StartTutorial":
+                    SceneManager.LoadScene("Tutorial1");
                     break;
             }
         }
