@@ -8,7 +8,11 @@
             "speakersNames": ["Sister", "Ari", "Mother", "Father"]
         },
         {
-            
+            "dialogueName": "Opening",
+            "conversationName": "Conv_Prot",
+            "scene": "IntroScene",
+            "numberSpeakers": 10,
+            "speakersNames": [ "John", "Auriga", "Gabriel", "Faraday", "Dio", "Azglor", "Neput", "Jheera", " ", "Tadria" ]
         }
 
     ]

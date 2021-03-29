@@ -14,8 +14,9 @@ namespace DialogueEditor
         private string sceneName;
         public DialogueManagerOnEnd conversationEnded;
 
-
         public string dialogueScene;
+
+        [SerializeField] List<GameObject> characters;
 
         //Character dialogue system 
         //public List<NPC> characterList;
@@ -32,9 +33,6 @@ namespace DialogueEditor
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
         }
-        
-       
-
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
 
@@ -78,6 +76,9 @@ namespace DialogueEditor
                 case "IntroEnd": 
                     SetNPCConversation(FindByName("Conv_Academy"));
                     BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "OpeningEnd":
+                    SceneManager.LoadScene("Menu");
                     break;
             }
         }

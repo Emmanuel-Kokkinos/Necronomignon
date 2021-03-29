@@ -159,12 +159,10 @@ namespace DialogueEditor
         {
             SetState(eState.TransitioningDialogueOff);
             //Returns to previous scene -- To be changed
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
             if (OnConversationEnded != null)
-                OnConversationEnded.Invoke();
-                
-                
+                OnConversationEnded.Invoke();   
         }
 
         public void SelectNextOption()

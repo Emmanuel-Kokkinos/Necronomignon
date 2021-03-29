@@ -29,8 +29,6 @@ public class NPCManager : MonoBehaviour
     void Start()
     {
         ParseJsonData("/Scripts/Data/NPC_Dialogue/NPC.json");
-
-
     }
 
     //Parse data from json file
