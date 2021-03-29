@@ -28,7 +28,7 @@ namespace DialogueEditor
         {
             NPCConversationToList();
 
-            SetNPCConversation(FindByName("Conv_Prot"));
+            SetNPCConversation(FindByName("Conv_Intro"));
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
@@ -51,6 +51,7 @@ namespace DialogueEditor
 
             return sceneConvo;
         }
+
         //Populates a list will all the conversations present
         private void NPCConversationToList()
         {
@@ -61,13 +62,15 @@ namespace DialogueEditor
         //Sets assets of current dialogue scene based on story 
         public void SceneInterface(string screenInter)
         {
-            print(screenInter);
-
             switch (screenInter)
             {
-
+                case "Conv_Opening":
+                    print(screenInter);
+                    // Change the amount of sprites and which sprites appear
+                    break;
             }
         }
+
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
         public void ConversationEnd(string name)
         {
@@ -82,6 +85,7 @@ namespace DialogueEditor
                     break;
             }
         }
+
         //Conversation begins on scene
         public void BeginConversation(NPCConversation conversation, string setSceneName)
         {
@@ -90,10 +94,7 @@ namespace DialogueEditor
             SceneInterface(dialogueScene);
 
             //sceneName = SceneManager.GetActiveScene().name;
-
             sceneName = setSceneName;
-
-            Debug.Log(sceneName);
 
             if (sceneName == "DialogScene")
                 ConversationManager.Instance.StartConversation(conversation);
