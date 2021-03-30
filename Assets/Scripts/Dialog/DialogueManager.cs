@@ -35,8 +35,6 @@ namespace DialogueEditor
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
-
-            
         }
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
@@ -67,6 +65,10 @@ namespace DialogueEditor
         //Sets assets of current dialogue scene based on story 
         public void SceneInterface(string screenInter)
         {
+            foreach(Image image in characters)
+            {
+                image.gameObject.SetActive(true);
+            }
             switch (screenInter)
             {
                 case "Conv_Opening":
@@ -76,13 +78,11 @@ namespace DialogueEditor
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //John
                     characters[4].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Dio
                     characters[5].sprite = Resources.Load<Sprite>("Profile_Pictures/Jheera"); //Jheera
-                    characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Azglor
+                    characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/Azglor"); //Azglor
                     characters[7].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Neput
                     characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //Tadria
-
                     break;
                 case "Conv_Intro":
-
                     for(int x = 4; x <= 7; x++)
                     {
                         characters[x].gameObject.SetActive(false);
@@ -97,6 +97,21 @@ namespace DialogueEditor
                     characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //instructor
                     break;
                 case "Conv_Academy":
+
+                    // Can remove all of this code as nothing changes from the previous conversation
+                    // But I kept it at least for now in case we want there to be a difference
+                    for (int x = 4; x <= 7; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
+
+                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad"); //dad
+                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Catherine"); //sister
+                    characters[1].transform.localScale = new Vector3(.8f, .8f);
+                    characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Ari"); //brother
+                    characters[2].transform.localScale = new Vector3(.8f, .8f);
+                    characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
+                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //instructor
                     break;
             }
         }
