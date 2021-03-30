@@ -12,6 +12,7 @@ namespace DialogueEditor
         //public NPCManager npcManager;
         //main conversation scene variables
         private NPCConversation currentConversation;
+        private static int timesUsedCounter = 0;
         private string sceneName;
         public DialogueManagerOnEnd conversationEnded;
         GameObject background;
@@ -19,6 +20,8 @@ namespace DialogueEditor
         public string dialogueScene;
 
         [SerializeField] List<Image> characters;
+        [SerializeField] List<NPCConversation> conversationNames;
+        
         private List<string> characterNames = new List<string>();
 
         //Character dialogue system 
@@ -33,7 +36,7 @@ namespace DialogueEditor
             background = GameObject.Find("Canvas");
             NPCConversationToList();
 
-            SetNPCConversation(FindByName("Conv_Intro"));
+            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
             GetConversationData(currentConversation);
 
             //Start conversation
@@ -72,6 +75,10 @@ namespace DialogueEditor
         //Sets assets of current dialogue scene based on story 
         public void SceneInterface(string screenInter)
         {
+            foreach(Image image in characters)
+            {
+                image.gameObject.SetActive(true);
+            }
             switch (screenInter)
             {
                 case "Conv_Opening":
@@ -81,13 +88,11 @@ namespace DialogueEditor
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //John
                     characters[4].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Dio
                     characters[5].sprite = Resources.Load<Sprite>("Profile_Pictures/Jheera"); //Jheera
-                    characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Azglor
+                    characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/Azglor"); //Azglor
                     characters[7].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Neput
                     characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //Tadria
-
                     break;
                 case "Conv_Intro":
-
                     for(int x = 4; x <= 7; x++)
                     {
                         characters[x].gameObject.SetActive(false);
@@ -105,6 +110,21 @@ namespace DialogueEditor
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/housePX");
                     break;
                 case "Conv_Academy":
+
+                    // Can remove all of this code as nothing changes from the previous conversation
+                    // But I kept it at least for now in case we want there to be a difference
+                    for (int x = 4; x <= 7; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
+
+                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad"); //dad
+                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Catherine"); //sister
+                    characters[1].transform.localScale = new Vector3(.8f, .8f);
+                    characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Ari"); //brother
+                    characters[2].transform.localScale = new Vector3(.8f, .8f);
+                    characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
+                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //instructor
                     break;
             }
         }
@@ -112,13 +132,15 @@ namespace DialogueEditor
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
         /*public void ConversationEnd(string name)
         {
+            timesUsedCounter++;
+
             switch (name)
             {
                 case "OpeningEnd":
                     SceneManager.LoadScene("Menu");
                     break;
                 case "IntroEnd": 
-                    SetNPCConversation(FindByName("Conv_Academy"));
+                    SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "StartTutorial":
