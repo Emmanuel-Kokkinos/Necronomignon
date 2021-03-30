@@ -157,7 +157,7 @@ namespace DialogueEditor
         public void EndConversation()
         {
             SetState(eState.TransitioningDialogueOff);
-
+            
             if (OnConversationEnded != null)
                 OnConversationEnded.Invoke();
         }

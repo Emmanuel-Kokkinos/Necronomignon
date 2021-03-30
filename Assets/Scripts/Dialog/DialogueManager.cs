@@ -14,6 +14,7 @@ namespace DialogueEditor
         private NPCConversation currentConversation;
         private string sceneName;
         public DialogueManagerOnEnd conversationEnded;
+        GameObject background;
 
         public string dialogueScene;
 
@@ -28,6 +29,8 @@ namespace DialogueEditor
         // Start is called before the first frame update
         void Start()
         {
+
+            background = GameObject.Find("Canvas");
             NPCConversationToList();
 
             SetNPCConversation(FindByName("Conv_Intro"));
@@ -35,6 +38,8 @@ namespace DialogueEditor
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
+
+            ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);
 
             
         }
@@ -95,6 +100,9 @@ namespace DialogueEditor
                     characters[2].transform.localScale = new Vector3(.8f, .8f);
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
                     characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //instructor
+
+                    
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/housePX");
                     break;
                 case "Conv_Academy":
                     break;
@@ -102,7 +110,7 @@ namespace DialogueEditor
         }
 
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
-        public void ConversationEnd(string name)
+        /*public void ConversationEnd(string name)
         {
             switch (name)
             {
@@ -114,6 +122,25 @@ namespace DialogueEditor
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "StartTutorial":
+                    SceneManager.LoadScene("Tutorial1");
+                    break;
+            }
+        }*/
+
+        public void ConversationEnd()
+        {
+            string convname = currentConversation.DefaultName;
+
+            switch (convname)
+            {
+                case "Conv_Academy":
+                    SceneManager.LoadScene("Menu");
+                    break;
+                case "Conv_Intro":
+                    SetNPCConversation(FindByName("Conv_Academy"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "Conv_Opening":
                     SceneManager.LoadScene("Tutorial1");
                     break;
             }
