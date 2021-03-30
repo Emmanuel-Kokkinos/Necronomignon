@@ -12,7 +12,7 @@ namespace DialogueEditor
         //public NPCManager npcManager;
         //main conversation scene variables
         private NPCConversation currentConversation;
-        private static int timesUsedCounter = 0;
+        //private static int timesUsedCounter = 0;
         private string sceneName;
         public DialogueManagerOnEnd conversationEnded;
 
@@ -33,10 +33,12 @@ namespace DialogueEditor
         {
             NPCConversationToList();
 
-            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            SetNPCConversation(FindByName("Conv_Opening"));
             GetConversationData(currentConversation);
 
             //Start conversation
+            //BeginConversation(currentConversation, SceneManager.GetActiveScene().name);
             BeginConversation(currentConversation, "DialogScene");
         }
 
@@ -116,13 +118,15 @@ namespace DialogueEditor
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
                     characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //instructor
                     break;
+                default:
+                    break;
             }
         }
 
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
         public void ConversationEnd(string name)
         {
-            timesUsedCounter++;
+            //timesUsedCounter++;
 
             switch (name)
             {
@@ -130,7 +134,8 @@ namespace DialogueEditor
                     SceneManager.LoadScene("Menu");
                     break;
                 case "IntroEnd": 
-                    SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+                    //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+                    SetNPCConversation(FindByName("Conv_Academy"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "StartTutorial":
