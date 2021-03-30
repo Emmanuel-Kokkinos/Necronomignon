@@ -8,7 +8,7 @@ namespace DialogueEditor
 {
     public class DialogueManager : MonoBehaviour
     {
-        public NPCManager npcManager;
+        //public NPCManager npcManager;
         //main conversation scene variables
         private NPCConversation currentConversation;
         private string sceneName;
@@ -32,6 +32,8 @@ namespace DialogueEditor
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
+
+            GetConversationData(currentConversation);
         }
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
@@ -103,6 +105,15 @@ namespace DialogueEditor
 
             if (sceneName == "DialogScene")
                 ConversationManager.Instance.StartConversation(conversation);
+        }
+
+        public void GetConversationData(NPCConversation conversation)
+        {
+            EditableConversation dataConv = conversation.DeserializeForEditor();
+
+            dataConv.SpeechNodes.ForEach(node => print(node.Name));
+
+
         }
     }
 }
