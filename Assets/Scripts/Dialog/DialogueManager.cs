@@ -24,10 +24,6 @@ namespace DialogueEditor
         
         private List<string> characterNames = new List<string>();
 
-        //Character dialogue system 
-        //public List<NPC> characterList;
-
-        public List<NPCConversation> storyConversations;
 
         // Start is called before the first frame update
         void Start()
@@ -36,12 +32,12 @@ namespace DialogueEditor
             background = GameObject.Find("Canvas");
             NPCConversationToList();
 
-            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            SetNPCConversation(FindByName(conversationNames[conversationNames.Count-1].DefaultName));
             GetConversationData(currentConversation);
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
-
+            //Add conversation End Events
             ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);
 
             
@@ -57,7 +53,7 @@ namespace DialogueEditor
         //Gets NPC conversation by the name
         private NPCConversation FindByName(string npcConvName)
         {
-            NPCConversation sceneConvo = storyConversations.Find(x => x.DefaultName.Equals(npcConvName));
+            NPCConversation sceneConvo = conversationNames.Find(x => x.DefaultName.Equals(npcConvName));
 
             if (sceneConvo != null)
                 dialogueScene = npcConvName;
@@ -69,7 +65,7 @@ namespace DialogueEditor
         private void NPCConversationToList()
         {
             NPCConversation[] convs = GameObject.FindObjectsOfType<NPCConversation>();
-            storyConversations = new List<NPCConversation>(convs);
+            conversationNames = new List<NPCConversation>(convs);
         }
 
         //Sets assets of current dialogue scene based on story 
@@ -130,28 +126,11 @@ namespace DialogueEditor
         }
 
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
-        /*public void ConversationEnd(string name)
-        {
-            timesUsedCounter++;
-
-            switch (name)
-            {
-                case "OpeningEnd":
-                    SceneManager.LoadScene("Menu");
-                    break;
-                case "IntroEnd": 
-                    SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-                    BeginConversation(currentConversation, "DialogScene");
-                    break;
-                case "StartTutorial":
-                    SceneManager.LoadScene("Tutorial1");
-                    break;
-            }
-        }*/
 
         public void ConversationEnd()
         {
             string convname = currentConversation.DefaultName;
+            timesUsedCounter++;
 
             switch (convname)
             {
@@ -159,7 +138,7 @@ namespace DialogueEditor
                     SceneManager.LoadScene("Menu");
                     break;
                 case "Conv_Intro":
-                    SetNPCConversation(FindByName("Conv_Academy"));
+                    SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Conv_Opening":
