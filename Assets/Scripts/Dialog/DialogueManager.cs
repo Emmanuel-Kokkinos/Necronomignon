@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace DialogueEditor
 {
@@ -16,7 +17,8 @@ namespace DialogueEditor
 
         public string dialogueScene;
 
-        [SerializeField] List<GameObject> characters;
+        [SerializeField] List<Image> characters;
+        private List<string> characterNames = new List<string>();
 
         //Character dialogue system 
         //public List<NPC> characterList;
@@ -28,12 +30,13 @@ namespace DialogueEditor
         {
             NPCConversationToList();
 
-            SetNPCConversation(FindByName("Conv_Opening"));
+            SetNPCConversation(FindByName("Conv_Intro"));
+            GetConversationData(currentConversation);
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
 
-            GetConversationData(currentConversation);
+            
         }
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
@@ -64,13 +67,36 @@ namespace DialogueEditor
         //Sets assets of current dialogue scene based on story 
         public void SceneInterface(string screenInter)
         {
-            //NPCList npcs = NPCManager.npcList;
-
             switch (screenInter)
             {
                 case "Conv_Opening":
-                    print(screenInter);
-                    // Change the amount of sprites and which sprites appear
+                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Gabriel
+                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Faraday"); //Faraday
+                    characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Auriga"); //Auriga
+                    characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //John
+                    characters[4].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Dio
+                    characters[5].sprite = Resources.Load<Sprite>("Profile_Pictures/Jheera"); //Jheera
+                    characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Azglor
+                    characters[7].sprite = Resources.Load<Sprite>("Profile_Pictures/tribal_pix"); //Neput
+                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //Tadria
+
+                    break;
+                case "Conv_Intro":
+
+                    for(int x = 4; x <= 7; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
+
+                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad"); //dad
+                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Catherine"); //sister
+                    characters[1].transform.localScale = new Vector3(.8f, .8f);
+                    characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Ari"); //brother
+                    characters[2].transform.localScale = new Vector3(.8f, .8f);
+                    characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
+                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //instructor
+                    break;
+                case "Conv_Academy":
                     break;
             }
         }
@@ -109,11 +135,17 @@ namespace DialogueEditor
 
         public void GetConversationData(NPCConversation conversation)
         {
+            List<string> characterDupes = new List<string>();
             EditableConversation dataConv = conversation.DeserializeForEditor();
 
-            dataConv.SpeechNodes.ForEach(node => print(node.Name));
-
-
+            dataConv.SpeechNodes.ForEach(node => characterDupes.Add(node.Name));
+            foreach(string str in characterDupes)
+            {
+                if(!characterNames.Contains(str) && str != "")
+                {
+                    characterNames.Add(str);
+                }
+            }
         }
     }
 }
