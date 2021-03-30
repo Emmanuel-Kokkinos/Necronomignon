@@ -12,12 +12,15 @@ namespace DialogueEditor
         //public NPCManager npcManager;
         //main conversation scene variables
         private NPCConversation currentConversation;
+        private static int timesUsedCounter = 0;
         private string sceneName;
         public DialogueManagerOnEnd conversationEnded;
 
         public string dialogueScene;
 
         [SerializeField] List<Image> characters;
+        [SerializeField] List<NPCConversation> conversationNames;
+        
         private List<string> characterNames = new List<string>();
 
         //Character dialogue system 
@@ -30,7 +33,7 @@ namespace DialogueEditor
         {
             NPCConversationToList();
 
-            SetNPCConversation(FindByName("Conv_Intro"));
+            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
             GetConversationData(currentConversation);
 
             //Start conversation
@@ -119,13 +122,15 @@ namespace DialogueEditor
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
         public void ConversationEnd(string name)
         {
+            timesUsedCounter++;
+
             switch (name)
             {
                 case "OpeningEnd":
                     SceneManager.LoadScene("Menu");
                     break;
                 case "IntroEnd": 
-                    SetNPCConversation(FindByName("Conv_Academy"));
+                    SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "StartTutorial":
