@@ -12,7 +12,7 @@ namespace DialogueEditor
         //public NPCManager npcManager;
         //main conversation scene variables
         private NPCConversation currentConversation;
-        //private static int timesUsedCounter = 0;
+        private static int timesUsedCounter = 0;
         private string sceneName;
         public DialogueManagerOnEnd conversationEnded;
         GameObject background;
@@ -134,7 +134,6 @@ namespace DialogueEditor
 
         public void ConversationEnd()
         {
-            //timesUsedCounter++;
             string convname = currentConversation.DefaultName;
             timesUsedCounter++;
 
@@ -144,11 +143,12 @@ namespace DialogueEditor
                     SceneManager.LoadScene("Menu");
                     break;
                 case "IntroEnd": 
-                    //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-                    SetNPCConversation(FindByName("Conv_Academy"));
+                    SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+                    //SetNPCConversation(FindByName("Conv_Academy"));
+                    break;
                 case "Conv_Intro":
                     SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-                    BeginConversation(currentConversation, "DialogScene");
+                    //BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Conv_Opening":
                     SceneManager.LoadScene("Tutorial1");
