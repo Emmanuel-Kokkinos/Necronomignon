@@ -15,6 +15,7 @@ namespace DialogueEditor
         //private static int timesUsedCounter = 0;
         private string sceneName;
         public DialogueManagerOnEnd conversationEnded;
+        GameObject background;
 
         public string dialogueScene;
 
@@ -23,23 +24,26 @@ namespace DialogueEditor
         
         private List<string> characterNames = new List<string>();
 
-        //Character dialogue system 
-        //public List<NPC> characterList;
-
-        public List<NPCConversation> storyConversations;
 
         // Start is called before the first frame update
         void Start()
         {
+
+            background = GameObject.Find("Canvas");
             NPCConversationToList();
 
             //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            SetNPCConversation(FindByName("Conv_Opening"));
+            //SetNPCConversation(FindByName("Conv_Opening"));
+            SetNPCConversation(FindByName(conversationNames[conversationNames.Count-1].DefaultName));
             GetConversationData(currentConversation);
 
             //Start conversation
             //BeginConversation(currentConversation, SceneManager.GetActiveScene().name);
             BeginConversation(currentConversation, "DialogScene");
+            //Add conversation End Events
+            ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);
+
+            
         }
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
@@ -52,7 +56,7 @@ namespace DialogueEditor
         //Gets NPC conversation by the name
         private NPCConversation FindByName(string npcConvName)
         {
-            NPCConversation sceneConvo = storyConversations.Find(x => x.DefaultName.Equals(npcConvName));
+            NPCConversation sceneConvo = conversationNames.Find(x => x.DefaultName.Equals(npcConvName));
 
             if (sceneConvo != null)
                 dialogueScene = npcConvName;
@@ -64,7 +68,7 @@ namespace DialogueEditor
         private void NPCConversationToList()
         {
             NPCConversation[] convs = GameObject.FindObjectsOfType<NPCConversation>();
-            storyConversations = new List<NPCConversation>(convs);
+            conversationNames = new List<NPCConversation>(convs);
         }
 
         //Sets assets of current dialogue scene based on story 
@@ -100,6 +104,9 @@ namespace DialogueEditor
                     characters[2].transform.localScale = new Vector3(.8f, .8f);
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
                     characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //instructor
+
+                    
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/housePX");
                     break;
                 case "Conv_Academy":
 
@@ -124,21 +131,26 @@ namespace DialogueEditor
         }
 
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
-        public void ConversationEnd(string name)
+
+        public void ConversationEnd()
         {
             //timesUsedCounter++;
+            string convname = currentConversation.DefaultName;
+            timesUsedCounter++;
 
-            switch (name)
+            switch (convname)
             {
-                case "OpeningEnd":
+                case "Conv_Academy":
                     SceneManager.LoadScene("Menu");
                     break;
                 case "IntroEnd": 
                     //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
                     SetNPCConversation(FindByName("Conv_Academy"));
+                case "Conv_Intro":
+                    SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
-                case "StartTutorial":
+                case "Conv_Opening":
                     SceneManager.LoadScene("Tutorial1");
                     break;
             }
