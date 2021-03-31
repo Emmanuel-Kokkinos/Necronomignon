@@ -638,6 +638,59 @@
       }
     },
     {
+      "name": "Azdaha2",
+      "maxHP": "88",
+      "defence": "26",
+      "power": "15",
+      "speed": "25",
+      "dexterity": "29",
+      "number_MOVES": "2",
+      "tier": "1",
+      "size": "1",
+      "cost": "23",
+      "type": "4",
+      "static_img": "SovereignDragon_Idle_00",
+      "moveA": "9",
+      "moveB": "10",
+      "statGradients": {
+        "hpGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "defenceGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "powerGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "speedGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "dexGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        }
+      }
+    },
+    {
       "name": "DreamDummy",
       "maxHP": "5",
       "defence": "1",
@@ -689,7 +742,7 @@
           "t5": "0"
         }
       },
-      "nonCombatant" : "true"
+      "nonCombatant": "true"
     }
   ]
 }
