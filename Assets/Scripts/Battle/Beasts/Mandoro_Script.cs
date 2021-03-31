@@ -2,22 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class Mandoro_Script : MonoBehaviour, Parent_Beast
+public class Mandoro_Script : Beast_Script, Parent_Beast
 {
-    BattleManager battleManager;
     AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
     AudioSource audioSrc;
-    Attack attack;
 
     void Start()
     {
-        GameObject g = GameObject.Find("GameManager");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
+        base.start();
 
         frontAttackSound = Resources.Load<AudioClip>("Robot1");
         audioSrc = GetComponent<AudioSource>();

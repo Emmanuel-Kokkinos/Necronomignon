@@ -2,22 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cthulhu_Script : MonoBehaviour, Parent_Beast
-{
-    BattleManager battleManager;
-    Attack attack;
-    [SerializeField] GameObject backPrefab;
-
-    void Start()
-    {
-        GameObject g = GameObject.Find("GameManager");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-    }
+public class Cthulhu_Script : Beast_Script, Parent_Beast
+{ 
+    [SerializeField] GameObject backPrefab; 
 
     public void back_special()
     {

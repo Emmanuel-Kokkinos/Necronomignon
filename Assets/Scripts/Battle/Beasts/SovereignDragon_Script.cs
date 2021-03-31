@@ -3,22 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
  
-public class SovereignDragon_Script : MonoBehaviour, Parent_Beast
+public class SovereignDragon_Script : Beast_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+    
     [SerializeField] GameObject frontPrefab;
 
-    void Start()
-    {
-        GameObject g = GameObject.Find("GameManager");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-    }
+    
 
     private void Update()
     {

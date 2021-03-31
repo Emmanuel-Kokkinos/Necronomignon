@@ -22,9 +22,11 @@ public class StoryManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        TextAsset mytxtData = (TextAsset)Resources.Load("json/Stories");
+        jsonString = mytxtData.text;
         //Parse through the Json file and put the moves in a list. 
-        path = Application.dataPath + "/Scripts/Data/Stories.json";
-        jsonString = File.ReadAllText(path);
+        /*path = Application.dataPath + "/Scripts/Data/Stories.json";
+        jsonString = File.ReadAllText(path);*/
         storyList = JsonUtility.FromJson<StoryList>(jsonString);
     }
 

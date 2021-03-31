@@ -26,8 +26,8 @@ public class BeastManager : MonoBehaviour
     // Start is called before the first frame update, Handles the parsing of Beast.json file. 
     void Start()
     {
-        path = Application.dataPath + "/Scripts/Data/Beast.json";
-        jsonString = File.ReadAllText(path);
+        TextAsset mytxtData = (TextAsset)Resources.Load("json/Beast");
+        jsonString = mytxtData.text;
 
 
 
@@ -65,8 +65,11 @@ public class BeastManager : MonoBehaviour
 
     public void Awake()
     {
-        path = Application.dataPath + "/Scripts/Data/Beast.json";
-        jsonString = File.ReadAllText(path);
+        TextAsset mytxtData = (TextAsset)Resources.Load("json/Beast");
+        jsonString = mytxtData.text;
+
+        /*path = Application.dataPath + "/Resources/json/Beast.json";
+        jsonString = File.ReadAllText(path);*/
 
 
 

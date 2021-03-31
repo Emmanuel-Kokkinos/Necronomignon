@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Dryad_Script : MonoBehaviour, Parent_Beast
+public class Dryad_Script : Beast_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+
     HealthManager healthManager;
 
     void Start()
     {
+        base.start();
         GameObject g = GameObject.Find("GameManager");
 
         if (g != null)
         {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
             healthManager = g.GetComponent<HealthManager>();
         }
     }

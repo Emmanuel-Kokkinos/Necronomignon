@@ -2,25 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Conglomerate_Script : MonoBehaviour, Parent_Beast
-{
-    BattleManager battleManager;
-    Attack attack;
-
+public class Conglomerate_Script : Beast_Script, Parent_Beast
+{ 
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
     AudioSource audioSrc;
 
     void Start()
     {
-        GameObject g = GameObject.Find("GameManager");
-        GameObject au = GameObject.Find("Music");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
+        base.start();
+        GameObject au = GameObject.Find("Music"); 
             
 
         if (au != null)
