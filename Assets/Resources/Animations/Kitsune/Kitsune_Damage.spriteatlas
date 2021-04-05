@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Kitsune_Damage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 134f9613f2c21794ca148a9ced017fe3, type: 3}
+    totalSpriteSurfaceArea: 124000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b0627b71744e49645a96e80f3afccd9c, type: 3}
+  - {fileID: 21300000, guid: 8fb88042188462f4a8ab8c6b1cffa2d1, type: 3}
+  - {fileID: 21300000, guid: d9623a625b5caac4280999389e94f954, type: 3}
+  - {fileID: 21300000, guid: b5a5daa2de5d787479caaa2c9e63c701, type: 3}
+  - {fileID: 21300000, guid: ff87c254537ad80419965f38e874fd22, type: 3}
+  - {fileID: 21300000, guid: bc565825cd924094dafec31791eda668, type: 3}
+  - {fileID: 21300000, guid: 8629e8d578a5e4b47b31a600fb579fcd, type: 3}
+  - {fileID: 21300000, guid: 96d6d476f79142f4aa0f92e71e3ecfe7, type: 3}
+  - {fileID: 21300000, guid: f25e0237840fe274494068b9d27fe924, type: 3}
+  - {fileID: 21300000, guid: 2f6554a710ace114fb9160e052817a1a, type: 3}
+  - {fileID: 21300000, guid: a6b3c1c7c6fa7cc41b44fedd5be64aa8, type: 3}
+  - {fileID: 21300000, guid: afb205c77809fcb428b264205e3d9f87, type: 3}
+  - {fileID: 21300000, guid: 483f39b817b03f246b3301ec295d4d64, type: 3}
+  - {fileID: 21300000, guid: 782e94d84b336864e809d033fb809efc, type: 3}
+  - {fileID: 21300000, guid: 0f8c0d19ef474684a9c407ae79cd6d2f, type: 3}
+  - {fileID: 21300000, guid: 569e36592ad632545bfc4c0ec4076766, type: 3}
+  - {fileID: 21300000, guid: fc8add896dfdbaa45bbfd557ad358a37, type: 3}
+  - {fileID: 21300000, guid: 2b5bc27a0ad190f4a91c834dc1c9d57f, type: 3}
+  - {fileID: 21300000, guid: 5316cb9a67f99f2499a935195e4badd0, type: 3}
+  - {fileID: 21300000, guid: e71350fac0777f14c96fe0141f803c3a, type: 3}
+  - {fileID: 21300000, guid: 108761fab4cdd984b94cc24d69c025a1, type: 3}
+  - {fileID: 21300000, guid: dbb4a2abc41194d4689a345a0325fa65, type: 3}
+  - {fileID: 21300000, guid: cdc10bbbcf6dd0942ba37d6e68718b81, type: 3}
+  - {fileID: 21300000, guid: 490cdcdbff2b02e4fa87175aaecaf656, type: 3}
+  - {fileID: 21300000, guid: 3908521c08161004b9ccb071c295ea9b, type: 3}
+  - {fileID: 21300000, guid: 64cab61d13cec9b4a8e74a6936695b3d, type: 3}
+  - {fileID: 21300000, guid: 2366159d684fdc34a868c8bc03462b35, type: 3}
+  - {fileID: 21300000, guid: 506f92cd30dff8c469f09293f475416a, type: 3}
+  - {fileID: 21300000, guid: 94f90fcd068159c4ea3f852ead216c81, type: 3}
+  - {fileID: 21300000, guid: 0d265a5f60817284ea8288719e095251, type: 3}
+  - {fileID: 21300000, guid: 91322d7f9a024044e9744337729fdc30, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Kitsune_Damage_09
+  - Kitsune_Damage_05
+  - Kitsune_Damage_21
+  - Kitsune_Damage_11
+  - Kitsune_Damage_16
+  - Kitsune_Damage_03
+  - Kitsune_Damage_06
+  - Kitsune_Damage_29
+  - Kitsune_Damage_28
+  - Kitsune_Damage_23
+  - Kitsune_Damage_15
+  - Kitsune_Damage_00
+  - Kitsune_Damage_19
+  - Kitsune_Damage_27
+  - Kitsune_Damage_04
+  - Kitsune_Damage_24
+  - Kitsune_Damage_10
+  - Kitsune_Damage_20
+  - Kitsune_Damage_07
+  - Kitsune_Damage_01
+  - Kitsune_Damage_12
+  - Kitsune_Damage_18
+  - Kitsune_Damage_17
+  - Kitsune_Damage_08
+  - Kitsune_Damage_26
+  - Kitsune_Damage_22
+  - Kitsune_Damage_25
+  - Kitsune_Damage_30
+  - Kitsune_Damage_13
+  - Kitsune_Damage_14
+  - Kitsune_Damage_02
+  m_Tag: Kitsune_Damage
+  m_IsVariant: 0

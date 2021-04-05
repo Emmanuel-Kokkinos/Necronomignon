@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Thanatos_Damage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 14b2627bb79a9bd44aa2bc1e5d5f22c5, type: 3}
+    totalSpriteSurfaceArea: 124000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d4ee3530a9e82ee429c9fb14d206df3a, type: 3}
+  - {fileID: 21300000, guid: baac1ee0b7f7877428f5e0d3c0349b99, type: 3}
+  - {fileID: 21300000, guid: 5d7b6211b9f390b4fa851542cae84049, type: 3}
+  - {fileID: 21300000, guid: 690b4991c41acd04bb76ba3a94676ff5, type: 3}
+  - {fileID: 21300000, guid: ce3053d1276f84a409a20269b2ea6aed, type: 3}
+  - {fileID: 21300000, guid: e02bd7d123d60aa45bb5ca853a989859, type: 3}
+  - {fileID: 21300000, guid: 30b5a3a2b755ba8469deeef7a87ab451, type: 3}
+  - {fileID: 21300000, guid: c88f812300101e54d82ecc292a336ce4, type: 3}
+  - {fileID: 21300000, guid: 3183a41434076e040bc0fee1191004d6, type: 3}
+  - {fileID: 21300000, guid: de4e4894dca56014db4e1ceab9237194, type: 3}
+  - {fileID: 21300000, guid: 8c901a2580cb2304c9c4f73436cb983a, type: 3}
+  - {fileID: 21300000, guid: fbd80c457aaafbb4e924966d8c83ab7f, type: 3}
+  - {fileID: 21300000, guid: d6d1c655807050743a458262e7bd6517, type: 3}
+  - {fileID: 21300000, guid: 2b153586646a47843bb30b17897d3bd7, type: 3}
+  - {fileID: 21300000, guid: 71f86a96f8ea424499474d4d16553f23, type: 3}
+  - {fileID: 21300000, guid: 45de34d601101d7409337af9714744f6, type: 3}
+  - {fileID: 21300000, guid: c93d02c7a99d28948b365e1227269a38, type: 3}
+  - {fileID: 21300000, guid: 5317fcc82d9916d4e927b2aa3f3c88ce, type: 3}
+  - {fileID: 21300000, guid: 39f149a99e4784f42863715aa96c305d, type: 3}
+  - {fileID: 21300000, guid: 2799cde9ba544cc4db96f83803113c81, type: 3}
+  - {fileID: 21300000, guid: ffd7558a3c8a17644ade5400da7ee83c, type: 3}
+  - {fileID: 21300000, guid: 994e82aa9a2a19c49af35125c3b67f4d, type: 3}
+  - {fileID: 21300000, guid: 5a3f8dba1a7ea284ab6b33d612c60436, type: 3}
+  - {fileID: 21300000, guid: 813bb2dacb0e7944682a7c924c636565, type: 3}
+  - {fileID: 21300000, guid: 1dcf975bd5223a6408abb950114badca, type: 3}
+  - {fileID: 21300000, guid: 4bffd45c39120da41a9149281a7b3c1b, type: 3}
+  - {fileID: 21300000, guid: e255017d8674ba344afbf684084e1a11, type: 3}
+  - {fileID: 21300000, guid: c269025e859868640a19ead7a18ae2f2, type: 3}
+  - {fileID: 21300000, guid: 30682bbe20f537246a38ad89fe91c1f2, type: 3}
+  - {fileID: 21300000, guid: 88ea616f4dfacc54fad88d86d4e88d31, type: 3}
+  - {fileID: 21300000, guid: 85a1b1ffcd67a764daea1b9621e38b6e, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Thanatos_Damage_11
+  - Thanatos_Damage_29
+  - Thanatos_Damage_20
+  - Thanatos_Damage_16
+  - Thanatos_Damage_12
+  - Thanatos_Damage_19
+  - Thanatos_Damage_08
+  - Thanatos_Damage_25
+  - Thanatos_Damage_13
+  - Thanatos_Damage_03
+  - Thanatos_Damage_21
+  - Thanatos_Damage_18
+  - Thanatos_Damage_01
+  - Thanatos_Damage_30
+  - Thanatos_Damage_07
+  - Thanatos_Damage_17
+  - Thanatos_Damage_26
+  - Thanatos_Damage_28
+  - Thanatos_Damage_22
+  - Thanatos_Damage_05
+  - Thanatos_Damage_23
+  - Thanatos_Damage_24
+  - Thanatos_Damage_27
+  - Thanatos_Damage_04
+  - Thanatos_Damage_15
+  - Thanatos_Damage_00
+  - Thanatos_Damage_06
+  - Thanatos_Damage_02
+  - Thanatos_Damage_09
+  - Thanatos_Damage_10
+  - Thanatos_Damage_14
+  m_Tag: Thanatos_Damage
+  m_IsVariant: 0

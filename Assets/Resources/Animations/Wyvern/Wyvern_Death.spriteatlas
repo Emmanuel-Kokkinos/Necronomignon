@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Wyvern_Death
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d3954af71d2978f48aded62e8d0f0b54, type: 3}
+    totalSpriteSurfaceArea: 184000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 37aeed21e83974041b0066ad7701deab, type: 3}
+  - {fileID: 21300000, guid: ec1d98313a36f724dbb6ba639d83ac5e, type: 3}
+  - {fileID: 21300000, guid: d55f69a183fad7c4e8f7c0375ae1261c, type: 3}
+  - {fileID: 21300000, guid: 7fadfdc118370be4981254860dd04635, type: 3}
+  - {fileID: 21300000, guid: e6c8484225653d84cb669281ee081a3a, type: 3}
+  - {fileID: 21300000, guid: 9fdf4872326b8414a90e9eee5cc88746, type: 3}
+  - {fileID: 21300000, guid: aa3b58c2d7274f44e9bd4a45a91123b1, type: 3}
+  - {fileID: 21300000, guid: 4c6100536f2f5fd4cbdc3927d1f679b1, type: 3}
+  - {fileID: 21300000, guid: 51b988b3b6fc9cf4483b0ba351d2f837, type: 3}
+  - {fileID: 21300000, guid: 55a02b14c22dc5c4684e7d808f465fc5, type: 3}
+  - {fileID: 21300000, guid: ff311484fd83f2d428e9924a05606ec9, type: 3}
+  - {fileID: 21300000, guid: 481714752ff926847baabd5f679d5c11, type: 3}
+  - {fileID: 21300000, guid: 0adda1a53096ee6439c928ef00c599c0, type: 3}
+  - {fileID: 21300000, guid: 216bceb508de1404e9f045209e1bbfc4, type: 3}
+  - {fileID: 21300000, guid: 4fc654765dfa7bc44a713d5854730a73, type: 3}
+  - {fileID: 21300000, guid: 1be82f96d55e5d444a167748e4b5ffe1, type: 3}
+  - {fileID: 21300000, guid: ecf0f8b6a805ed041b0921265de9da06, type: 3}
+  - {fileID: 21300000, guid: d5d856a7e0d9c8f408cbfed45ca93a93, type: 3}
+  - {fileID: 21300000, guid: 3c2be9a71ebbac4429dae99324e70f29, type: 3}
+  - {fileID: 21300000, guid: e894ecb757742be41abdd1116e5d3416, type: 3}
+  - {fileID: 21300000, guid: b17b50e7186ef4740b3c6f50b2a0c1f9, type: 3}
+  - {fileID: 21300000, guid: 3ef43e48341a18b42b093bdc21170b4e, type: 3}
+  - {fileID: 21300000, guid: 637a0158123103b4283d85fcd7e3ef20, type: 3}
+  - {fileID: 21300000, guid: 8e9c3868935d3c1448d4a90c05fc98fb, type: 3}
+  - {fileID: 21300000, guid: 59fdaf988fcd7e549b4ca10b1249ee24, type: 3}
+  - {fileID: 21300000, guid: f02080c83f423e24d92d3beb8bf55a96, type: 3}
+  - {fileID: 21300000, guid: d063c1c81f61b0a41ae685448d10d9d2, type: 3}
+  - {fileID: 21300000, guid: fc114559ac14fe2449c1c3990d2bcc3c, type: 3}
+  - {fileID: 21300000, guid: fb4f7e596bb0a824fb7d51e5aaff8449, type: 3}
+  - {fileID: 21300000, guid: cca71599b5e832f4aa85210391f6d746, type: 3}
+  - {fileID: 21300000, guid: e89fb67af21daf74eb67d7a20a056eca, type: 3}
+  - {fileID: 21300000, guid: 4ef8fdcaa2c26ba408b61ddc2d48ebad, type: 3}
+  - {fileID: 21300000, guid: 025f200b9d9e3ba4dbe81048a1a1e83a, type: 3}
+  - {fileID: 21300000, guid: 2286324b47724344d9d0e45341a7781b, type: 3}
+  - {fileID: 21300000, guid: 50eec54bb98178944a09e035e5f0e337, type: 3}
+  - {fileID: 21300000, guid: b3113e7bae3ad58409b3364c433a223c, type: 3}
+  - {fileID: 21300000, guid: d390080c2333dfa40bdd1d4ab8c6f163, type: 3}
+  - {fileID: 21300000, guid: 5982a71c0399f394e8a54311daeef3d8, type: 3}
+  - {fileID: 21300000, guid: dee5e16c060ab8749b43832e60b6038f, type: 3}
+  - {fileID: 21300000, guid: 7f1c04bca92dbd34398cd1cbf1fd1a00, type: 3}
+  - {fileID: 21300000, guid: 3c95411dc996f7241aa2c1ed4de20b8b, type: 3}
+  - {fileID: 21300000, guid: 437e4e9deaa996e40a1a3cac2505069b, type: 3}
+  - {fileID: 21300000, guid: f078f63eace931a418f42fc4c04f9c4f, type: 3}
+  - {fileID: 21300000, guid: 3421e88f2a69b4140b19ceff11f6d49a, type: 3}
+  - {fileID: 21300000, guid: 9e9dcdcf47beeef429c451201b182fc4, type: 3}
+  - {fileID: 21300000, guid: fa83c3ef43ad75b48885e44861974589, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Zefir_Death_00020
+  - Zefir_Death_00011
+  - Zefir_Death_00025
+  - Zefir_Death_00030
+  - Zefir_Death_00017
+  - Zefir_Death_00043
+  - Zefir_Death_00004
+  - Zefir_Death_00016
+  - Zefir_Death_00036
+  - Zefir_Death_00012
+  - Zefir_Death_00026
+  - Zefir_Death_00001
+  - Zefir_Death_00013
+  - Zefir_Death_00010
+  - Zefir_Death_00031
+  - Zefir_Death_00029
+  - Zefir_Death_00021
+  - Zefir_Death_00038
+  - Zefir_Death_00037
+  - Zefir_Death_00022
+  - Zefir_Death_00019
+  - Zefir_Death_00041
+  - Zefir_Death_00000
+  - Zefir_Death_00032
+  - Zefir_Death_00042
+  - Zefir_Death_00007
+  - Zefir_Death_00044
+  - Zefir_Death_00015
+  - Zefir_Death_00034
+  - Zefir_Death_00039
+  - Zefir_Death_00014
+  - Zefir_Death_00035
+  - Zefir_Death_00008
+  - Zefir_Death_00018
+  - Zefir_Death_00023
+  - Zefir_Death_00027
+  - Zefir_Death_00009
+  - Zefir_Death_00003
+  - Zefir_Death_00002
+  - Zefir_Death_00040
+  - Zefir_Death_00005
+  - Zefir_Death_00024
+  - Zefir_Death_00006
+  - Zefir_Death_00033
+  - Zefir_Death_00045
+  - Zefir_Death_00028
+  m_Tag: Wyvern_Death
+  m_IsVariant: 0
