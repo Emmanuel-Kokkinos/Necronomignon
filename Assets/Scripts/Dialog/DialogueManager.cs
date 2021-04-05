@@ -28,22 +28,20 @@ namespace DialogueEditor
         // Start is called before the first frame update
         void Start()
         {
-
             background = GameObject.Find("Canvas");
             NPCConversationToList();
 
-            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+
             //SetNPCConversation(FindByName("Conv_Opening"));
-            SetNPCConversation(FindByName(conversationNames[conversationNames.Count-1].DefaultName));
+            //SetNPCConversation(FindByName(conversationNames[conversationNames.Count-1].DefaultName));
             GetConversationData(currentConversation);
 
             //Start conversation
-            //BeginConversation(currentConversation, SceneManager.GetActiveScene().name);
             BeginConversation(currentConversation, "DialogScene");
-            //Add conversation End Events
-            ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);
 
-            
+            //Add conversation End Events
+            //ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);  
         }
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
@@ -87,8 +85,8 @@ namespace DialogueEditor
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/John"); //John
                     characters[4].sprite = Resources.Load<Sprite>("Profile_Pictures/Dio"); //Dio
                     characters[5].sprite = Resources.Load<Sprite>("Profile_Pictures/Jheera"); //Jheera
-                    characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/Azglor"); //Azglor
-                    characters[7].sprite = Resources.Load<Sprite>("Profile_Pictures/Neput"); //Neput
+                    characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/Neput"); //Neput
+                    characters[7].sprite = Resources.Load<Sprite>("Profile_Pictures/Azglor"); //Azglor
                     characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //Tadria
                     break;
                 case "Conv_Intro":
@@ -123,7 +121,7 @@ namespace DialogueEditor
                     characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Ari"); //brother
                     characters[2].transform.localScale = new Vector3(.8f, .8f);
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
-                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/sea_soldier_pix"); //instructor
+                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //instructor
                     break;
                 default:
                     break;
@@ -131,7 +129,6 @@ namespace DialogueEditor
         }
 
         //On dialog end move to following scene or go back to prev scene --Requires implementation depending on the story
-
         public void ConversationEnd()
         {
             string convname = currentConversation.DefaultName;
@@ -140,18 +137,14 @@ namespace DialogueEditor
             switch (convname)
             {
                 case "Conv_Academy":
-                    SceneManager.LoadScene("Menu");
-                    break;
-                case "IntroEnd": 
-                    SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-                    //SetNPCConversation(FindByName("Conv_Academy"));
+                    SceneManager.LoadScene("Tutorial1");
                     break;
                 case "Conv_Intro":
                     SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-                    //BeginConversation(currentConversation, "DialogScene");
+                    BeginConversation(conversationNames[timesUsedCounter], "DialogScene");
                     break;
                 case "Conv_Opening":
-                    SceneManager.LoadScene("Tutorial1");
+                    SceneManager.LoadScene("Menu");
                     break;
             }
         }
