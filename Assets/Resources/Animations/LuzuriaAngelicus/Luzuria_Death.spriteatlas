@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Luzuria_Death
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9739a13eccdf0524c86d04d753f13b77, type: 3}
+    totalSpriteSurfaceArea: 196000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b6da6d5143ec0784aaaa479dd00fda8e, type: 3}
+  - {fileID: 21300000, guid: 06ce049167a096b4e96ad6df4e33f8f7, type: 3}
+  - {fileID: 21300000, guid: 269303a1231256f4b83f00f050e507db, type: 3}
+  - {fileID: 21300000, guid: 2024a452c03be644ebf6725855c98a1b, type: 3}
+  - {fileID: 21300000, guid: b40be562f1c159148a985cf618c491a2, type: 3}
+  - {fileID: 21300000, guid: 3150de92ba4acfd40ad1f86c3a90d650, type: 3}
+  - {fileID: 21300000, guid: adc6dba2e4f250844ad35e439690f55f, type: 3}
+  - {fileID: 21300000, guid: 217557b22f6d81448b56b72a58d3e1f4, type: 3}
+  - {fileID: 21300000, guid: 6f715cf28f41a2946b6b046a168ec626, type: 3}
+  - {fileID: 21300000, guid: 9e5d49a3527877145a1321a02b55bf15, type: 3}
+  - {fileID: 21300000, guid: 2f9b67546445390408f7341716b58f20, type: 3}
+  - {fileID: 21300000, guid: 25876194c11a07147b8201ae70a1d4b9, type: 3}
+  - {fileID: 21300000, guid: 86f995d4ee3ab2540bbb9bb7092e7a74, type: 3}
+  - {fileID: 21300000, guid: e7fd9ca55e4cd0445883b9e1bd520310, type: 3}
+  - {fileID: 21300000, guid: 749ccde5eb4db59499b456268d884a29, type: 3}
+  - {fileID: 21300000, guid: 42bd52167a406974eb049cd14798e33d, type: 3}
+  - {fileID: 21300000, guid: ae7d6236924c1564698057ed35b81d9f, type: 3}
+  - {fileID: 21300000, guid: 296653868cc71d44c9020ee5f7e3f643, type: 3}
+  - {fileID: 21300000, guid: e061e1c64bd4c21439f653a9ea5e1090, type: 3}
+  - {fileID: 21300000, guid: ad945127d79d38b4abd2af84241cf12d, type: 3}
+  - {fileID: 21300000, guid: c548df37bfd7a4d4180c100c58df0716, type: 3}
+  - {fileID: 21300000, guid: 001a2ea7c3247ad45923afdfdf03b714, type: 3}
+  - {fileID: 21300000, guid: afd601e7dbc07aa488b321dae0c6e17a, type: 3}
+  - {fileID: 21300000, guid: cde402f7a3ec9ae4c99ea991eb9102e0, type: 3}
+  - {fileID: 21300000, guid: c8c0cb28f01358547afa273a963f30d4, type: 3}
+  - {fileID: 21300000, guid: b10b69389ec81504d99b849218e8a388, type: 3}
+  - {fileID: 21300000, guid: 782be4b81738c8c409d321d9a8aecf91, type: 3}
+  - {fileID: 21300000, guid: 78b9b739c5db26449a03dfc178c5ab4e, type: 3}
+  - {fileID: 21300000, guid: 4559384912ff3e8428d51c40a4279c20, type: 3}
+  - {fileID: 21300000, guid: 5f30ea696789ef942b6f5c086ae81b59, type: 3}
+  - {fileID: 21300000, guid: 0fbe45995f9ab0847bb93f96169dd311, type: 3}
+  - {fileID: 21300000, guid: 4c656bf9f90304e4889657edbc22110f, type: 3}
+  - {fileID: 21300000, guid: 4b15892aa4c240144bd7d1daa4eb998b, type: 3}
+  - {fileID: 21300000, guid: d5a4135ac4ea59a479206c32222cb0f8, type: 3}
+  - {fileID: 21300000, guid: 4bce0f5a8147dce4eb402b8ec7202d4f, type: 3}
+  - {fileID: 21300000, guid: 6db717bac1b87384fa01a9325ab0c813, type: 3}
+  - {fileID: 21300000, guid: 23b326ea8fdd40540a7f0abfe98027d1, type: 3}
+  - {fileID: 21300000, guid: baa57deaf4fa35f40adab1fd0eb30e8e, type: 3}
+  - {fileID: 21300000, guid: 2281763bd4ed7e94a9b7eab2187504f2, type: 3}
+  - {fileID: 21300000, guid: cfc19ffb0919a0f488a142fe10c32b29, type: 3}
+  - {fileID: 21300000, guid: c54dde2dfb193814c88bea7ed5dbb1ae, type: 3}
+  - {fileID: 21300000, guid: 53ffd93de9f1bc74f9879e6895b5e028, type: 3}
+  - {fileID: 21300000, guid: 3e95468ee66005a4c8cd4c46a977641b, type: 3}
+  - {fileID: 21300000, guid: e64314ae3036bcb4c9fb8aef848c6922, type: 3}
+  - {fileID: 21300000, guid: 7735919fd2b3047428c0fba1d52832ff, type: 3}
+  - {fileID: 21300000, guid: ec4dc8afd01e5e54fb20576c50a047af, type: 3}
+  - {fileID: 21300000, guid: b7caafbf73a7d2e4092c030a5e4ad909, type: 3}
+  - {fileID: 21300000, guid: 485629cfb92e0c042947cdc8137bd08e, type: 3}
+  - {fileID: 21300000, guid: 32444acfdc098e74c9167ea0a1cd7fef, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - LightDragon_Death 2_00007
+  - LightDragon_Death 2_00004
+  - LightDragon_Death 2_00019
+  - LightDragon_Death 2_00031
+  - LightDragon_Death 2_00038
+  - LightDragon_Death 2_00048
+  - LightDragon_Death 2_00011
+  - LightDragon_Death 2_00043
+  - LightDragon_Death 2_00023
+  - LightDragon_Death 2_00012
+  - LightDragon_Death 2_00017
+  - LightDragon_Death 2_00009
+  - LightDragon_Death 2_00042
+  - LightDragon_Death 2_00022
+  - LightDragon_Death 2_00010
+  - LightDragon_Death 2_00039
+  - LightDragon_Death 2_00013
+  - LightDragon_Death 2_00021
+  - LightDragon_Death 2_00041
+  - LightDragon_Death 2_00002
+  - LightDragon_Death 2_00037
+  - LightDragon_Death 2_00032
+  - LightDragon_Death 2_00029
+  - LightDragon_Death 2_00025
+  - LightDragon_Death 2_00040
+  - LightDragon_Death 2_00020
+  - LightDragon_Death 2_00033
+  - LightDragon_Death 2_00028
+  - LightDragon_Death 2_00044
+  - LightDragon_Death 2_00027
+  - LightDragon_Death 2_00015
+  - LightDragon_Death 2_00018
+  - LightDragon_Death 2_00046
+  - LightDragon_Death 2_00047
+  - LightDragon_Death 2_00008
+  - LightDragon_Death 2_00003
+  - LightDragon_Death 2_00030
+  - LightDragon_Death 2_00014
+  - LightDragon_Death 2_00026
+  - LightDragon_Death 2_00001
+  - LightDragon_Death 2_00034
+  - LightDragon_Death 2_00000
+  - LightDragon_Death 2_00016
+  - LightDragon_Death 2_00045
+  - LightDragon_Death 2_00036
+  - LightDragon_Death 2_00006
+  - LightDragon_Death 2_00024
+  - LightDragon_Death 2_00035
+  - LightDragon_Death 2_00005
+  m_Tag: Luzuria_Death
+  m_IsVariant: 0
