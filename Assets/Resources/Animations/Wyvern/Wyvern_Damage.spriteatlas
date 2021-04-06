@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Wyvern_Damage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9f2593d9a5673aa459f10fdd0ae25134, type: 3}
+    totalSpriteSurfaceArea: 144000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f2bd45a032b02e94994d4d1625d0e59f, type: 3}
+  - {fileID: 21300000, guid: afbd43c0004139045a0f4500f7c8b855, type: 3}
+  - {fileID: 21300000, guid: aa520d11485b0af40b458f47e51a7582, type: 3}
+  - {fileID: 21300000, guid: 67bf182148b7ce14182daf48b9741ba0, type: 3}
+  - {fileID: 21300000, guid: fd36f571963fbf1439a8a4678c6cf7a4, type: 3}
+  - {fileID: 21300000, guid: 764671a15c65ff24d98cefe657281dbb, type: 3}
+  - {fileID: 21300000, guid: b8732e026c64b5c459814f81ef5e2a95, type: 3}
+  - {fileID: 21300000, guid: 03ff5d52bd2cdbc4eb54c06371302bcf, type: 3}
+  - {fileID: 21300000, guid: 6071ab725d19680459dd5d377a3093fa, type: 3}
+  - {fileID: 21300000, guid: 14b93ff28b95956498742d680b30ddd1, type: 3}
+  - {fileID: 21300000, guid: 570f7f33692ba4f4cae3890325f536b5, type: 3}
+  - {fileID: 21300000, guid: 5b631a53833bfec46983c921c75d273d, type: 3}
+  - {fileID: 21300000, guid: a87a49145de7f0f478ef9bfcc2bed974, type: 3}
+  - {fileID: 21300000, guid: ec445d64936159646909e7378aeedbd6, type: 3}
+  - {fileID: 21300000, guid: 112d96a4c40fca94fb69fda964e6a1d9, type: 3}
+  - {fileID: 21300000, guid: a01c36e4d23edd54387df2f47c8ea9fc, type: 3}
+  - {fileID: 21300000, guid: c3a5d0f5c6b953e4984ae15c90b6e663, type: 3}
+  - {fileID: 21300000, guid: b0bb7cf5a442abd479d4ff1a34bc1f50, type: 3}
+  - {fileID: 21300000, guid: 763fe9a655fc6c74bad5db9b033a97d1, type: 3}
+  - {fileID: 21300000, guid: 747469a76ec854044a0cc82a289722c2, type: 3}
+  - {fileID: 21300000, guid: ad75fed757963594ea28580d8bdf7997, type: 3}
+  - {fileID: 21300000, guid: 41b2c258c9361dc40874c924077697a1, type: 3}
+  - {fileID: 21300000, guid: 101800c845700394ca1e9cbe5bf1df5a, type: 3}
+  - {fileID: 21300000, guid: 18921ff81204a7445836831834fc9a6f, type: 3}
+  - {fileID: 21300000, guid: 7f71f279e8540c047baa491ce0965824, type: 3}
+  - {fileID: 21300000, guid: 09faeef969474d04b966e17defd2043f, type: 3}
+  - {fileID: 21300000, guid: 22ff4e6a0c347e145a7bfb7fdb60fb4c, type: 3}
+  - {fileID: 21300000, guid: c643957a09bac4a40993f404bfe58dca, type: 3}
+  - {fileID: 21300000, guid: acfb8b8aeef919c439e721eb183414b7, type: 3}
+  - {fileID: 21300000, guid: 4367041ba3334914baa7546879d2b4e4, type: 3}
+  - {fileID: 21300000, guid: da85c7dbf6b11c147a57dd7eb2bd5412, type: 3}
+  - {fileID: 21300000, guid: 281fff8c96dff9a47913ff23f3211a11, type: 3}
+  - {fileID: 21300000, guid: 52af289d35e2dce4c8fa94530f37c628, type: 3}
+  - {fileID: 21300000, guid: de58abfdeea1bdd4c9fdad97092ba960, type: 3}
+  - {fileID: 21300000, guid: bb4a8a8eee554ce40a15fc919e6c5c60, type: 3}
+  - {fileID: 21300000, guid: be700d8fb11b65744a16857dd80b952f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Zefir_Damage_20
+  - Zefir_Damage_26
+  - Zefir_Damage_30
+  - Zefir_Damage_06
+  - Zefir_Damage_09
+  - Zefir_Damage_19
+  - Zefir_Damage_00
+  - Zefir_Damage_18
+  - Zefir_Damage_02
+  - Zefir_Damage_21
+  - Zefir_Damage_33
+  - Zefir_Damage_32
+  - Zefir_Damage_25
+  - Zefir_Damage_29
+  - Zefir_Damage_13
+  - Zefir_Damage_12
+  - Zefir_Damage_15
+  - Zefir_Damage_34
+  - Zefir_Damage_27
+  - Zefir_Damage_35
+  - Zefir_Damage_14
+  - Zefir_Damage_08
+  - Zefir_Damage_04
+  - Zefir_Damage_22
+  - Zefir_Damage_05
+  - Zefir_Damage_01
+  - Zefir_Damage_28
+  - Zefir_Damage_03
+  - Zefir_Damage_10
+  - Zefir_Damage_16
+  - Zefir_Damage_07
+  - Zefir_Damage_11
+  - Zefir_Damage_23
+  - Zefir_Damage_31
+  - Zefir_Damage_17
+  - Zefir_Damage_24
+  m_Tag: Wyvern_Damage
+  m_IsVariant: 0

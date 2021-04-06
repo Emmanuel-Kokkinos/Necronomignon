@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cthulhu_Damage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 56fa5c06523467445a6f66bd54f057bf, type: 3}
+    totalSpriteSurfaceArea: 124000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 720f5410cbe8d814f8bc8235331b0694, type: 3}
+  - {fileID: 21300000, guid: 0065fb5236cfe8749b2960c8edb73fa6, type: 3}
+  - {fileID: 21300000, guid: dd28fd82ec3d8554c93e60b60c7fe967, type: 3}
+  - {fileID: 21300000, guid: 4891d213cb642814992c1e15af14aa07, type: 3}
+  - {fileID: 21300000, guid: 60b83fe3660a9d74fbe82a7c28a746ff, type: 3}
+  - {fileID: 21300000, guid: cb17c1f3d92949e4785dac3f347920d7, type: 3}
+  - {fileID: 21300000, guid: 146f8f15f0d610241881b0f963c2b890, type: 3}
+  - {fileID: 21300000, guid: 6a601045f4b055443b13504e5b1dffeb, type: 3}
+  - {fileID: 21300000, guid: 434f1b95e80c41f4f946114619f4808e, type: 3}
+  - {fileID: 21300000, guid: 76500f16c2df9ac4aadf013700e41f3f, type: 3}
+  - {fileID: 21300000, guid: 5f9b256642805f14bbdd39bb99121df8, type: 3}
+  - {fileID: 21300000, guid: ea190a7670634ce48a01996fb5616bc3, type: 3}
+  - {fileID: 21300000, guid: 86034cc68ca945e47a0a93bafdce3798, type: 3}
+  - {fileID: 21300000, guid: 55bc1997e71cf1d47a665910ed91c48d, type: 3}
+  - {fileID: 21300000, guid: ee9845d78bb529349ad461e2a50e881a, type: 3}
+  - {fileID: 21300000, guid: bb60c6685876ae141a41cc94a55a2100, type: 3}
+  - {fileID: 21300000, guid: 1707e109f0d861f4fabe85cecf9cc3c4, type: 3}
+  - {fileID: 21300000, guid: 04609aaad43f3ed45a04a14af35570e7, type: 3}
+  - {fileID: 21300000, guid: 51e155fa17c0532478373115a448c8c6, type: 3}
+  - {fileID: 21300000, guid: ff24331b6e990864dbf5b39540a108c7, type: 3}
+  - {fileID: 21300000, guid: 4379d62bf5a1fe540b0eb6e6ec6bc688, type: 3}
+  - {fileID: 21300000, guid: 57dd003cbf246fa47bdf4dff664b9af9, type: 3}
+  - {fileID: 21300000, guid: 94e8529c2a3bde2458ea1f4001e138cf, type: 3}
+  - {fileID: 21300000, guid: 6824ebbc4e6bccb4fbbe23f267fd5634, type: 3}
+  - {fileID: 21300000, guid: 72fc2c5d12ff61148a892fb7c071555d, type: 3}
+  - {fileID: 21300000, guid: a2151c9e7f5735743a650e24b145f911, type: 3}
+  - {fileID: 21300000, guid: 1749d4ae1fdae3341bc21e4f223a5feb, type: 3}
+  - {fileID: 21300000, guid: a33d50fee86c8df4dbcf94470ee8babb, type: 3}
+  - {fileID: 21300000, guid: dd68ec0ffaff0f140add889990dc41cb, type: 3}
+  - {fileID: 21300000, guid: 11a2401fc14a4f64fb8163d247393f2f, type: 3}
+  - {fileID: 21300000, guid: d55bda8f80a1b214a85388388d5117e6, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Cthulhu_Damage_09
+  - Cthulhu_Damage_23
+  - Cthulhu_Damage_02
+  - Cthulhu_Damage_14
+  - Cthulhu_Damage_19
+  - Cthulhu_Damage_16
+  - Cthulhu_Damage_13
+  - Cthulhu_Damage_05
+  - Cthulhu_Damage_28
+  - Cthulhu_Damage_00
+  - Cthulhu_Damage_17
+  - Cthulhu_Damage_21
+  - Cthulhu_Damage_18
+  - Cthulhu_Damage_22
+  - Cthulhu_Damage_25
+  - Cthulhu_Damage_03
+  - Cthulhu_Damage_29
+  - Cthulhu_Damage_07
+  - Cthulhu_Damage_08
+  - Cthulhu_Damage_26
+  - Cthulhu_Damage_15
+  - Cthulhu_Damage_24
+  - Cthulhu_Damage_04
+  - Cthulhu_Damage_01
+  - Cthulhu_Damage_12
+  - Cthulhu_Damage_30
+  - Cthulhu_Damage_06
+  - Cthulhu_Damage_11
+  - Cthulhu_Damage_10
+  - Cthulhu_Damage_20
+  - Cthulhu_Damage_27
+  m_Tag: Cthulhu_Damage
+  m_IsVariant: 0

@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mandoro_Front
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 32aa28a16f0ce9f4ab9129c608265fff, type: 3}
+    totalSpriteSurfaceArea: 124000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d87e74308321b6949b202aec47ae8ae2, type: 3}
+  - {fileID: 21300000, guid: b18793c0b1ffed14e87cdc64d014f9d4, type: 3}
+  - {fileID: 21300000, guid: 23ed1f22a8064c747a5e277bd2c1c044, type: 3}
+  - {fileID: 21300000, guid: 3f88ec824de51b44dbc4b6501709de13, type: 3}
+  - {fileID: 21300000, guid: 44e218d2c60847c40b84ac3ef75b35f7, type: 3}
+  - {fileID: 21300000, guid: c15293534dcb5c140a33d4332ba70e52, type: 3}
+  - {fileID: 21300000, guid: 9e8f2aa391085e349ac483e321cc4870, type: 3}
+  - {fileID: 21300000, guid: 80ff53f38ab5c0d459cde51553d2ed8d, type: 3}
+  - {fileID: 21300000, guid: 67f4214494378c646a830eef1ec93070, type: 3}
+  - {fileID: 21300000, guid: 23375844b57e65b45a65e818fc0fca99, type: 3}
+  - {fileID: 21300000, guid: 77f249f463d562345af517098a2bfc15, type: 3}
+  - {fileID: 21300000, guid: 1c6905850b54730429e841c0bdf4303f, type: 3}
+  - {fileID: 21300000, guid: dd2c9cd52d005ca479e20a628272bcf7, type: 3}
+  - {fileID: 21300000, guid: 77054306eaf077142a9b5b3f60c93f31, type: 3}
+  - {fileID: 21300000, guid: 45cfb316d2a06a84dacce78ac8e51082, type: 3}
+  - {fileID: 21300000, guid: e4906ce6f12f46149a045761db04e34a, type: 3}
+  - {fileID: 21300000, guid: ac0547f63ea5832478d46cdd6fac7681, type: 3}
+  - {fileID: 21300000, guid: 848e9007d0e582449a46cf20af194012, type: 3}
+  - {fileID: 21300000, guid: 7e4ef6a7d3a4b07478c813a30d95b178, type: 3}
+  - {fileID: 21300000, guid: 29cc6a2846dff3246a681fe6bde471f8, type: 3}
+  - {fileID: 21300000, guid: a273e74806c023d47a570dfea7888b99, type: 3}
+  - {fileID: 21300000, guid: ca6a7e99668a9204a9ea629e760740a0, type: 3}
+  - {fileID: 21300000, guid: 6fb323a9eedf0d644bb4f8da821a6cfe, type: 3}
+  - {fileID: 21300000, guid: 3372c74b9b28304488288c05919cb0f6, type: 3}
+  - {fileID: 21300000, guid: c39ca55bed837d64d99b19214a06a026, type: 3}
+  - {fileID: 21300000, guid: fb5ae0fba31bf8e4f8e6818076059e32, type: 3}
+  - {fileID: 21300000, guid: 8980683c5b8014d43861fb68799e847e, type: 3}
+  - {fileID: 21300000, guid: e85b8cccfe5b9f44eb05bf4357dccdfc, type: 3}
+  - {fileID: 21300000, guid: fd6b815e29ed5fb43857df256e247f25, type: 3}
+  - {fileID: 21300000, guid: 808981ae4eca6684a85a2c6ad5b477d9, type: 3}
+  - {fileID: 21300000, guid: 2af2b2aefe5be5b45a7d9aae70194e9e, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ClockworkKing_Attack_A_04
+  - ClockworkKing_Attack_A_14
+  - ClockworkKing_Attack_A_06
+  - ClockworkKing_Attack_A_19
+  - ClockworkKing_Attack_A_01
+  - ClockworkKing_Attack_A_07
+  - ClockworkKing_Attack_A_09
+  - ClockworkKing_Attack_A_05
+  - ClockworkKing_Attack_A_00
+  - ClockworkKing_Attack_A_10
+  - ClockworkKing_Attack_A_27
+  - ClockworkKing_Attack_A_17
+  - ClockworkKing_Attack_A_25
+  - ClockworkKing_Attack_A_21
+  - ClockworkKing_Attack_A_02
+  - ClockworkKing_Attack_A_11
+  - ClockworkKing_Attack_A_30
+  - ClockworkKing_Attack_A_28
+  - ClockworkKing_Attack_A_08
+  - ClockworkKing_Attack_A_26
+  - ClockworkKing_Attack_A_13
+  - ClockworkKing_Attack_A_16
+  - ClockworkKing_Attack_A_18
+  - ClockworkKing_Attack_A_03
+  - ClockworkKing_Attack_A_23
+  - ClockworkKing_Attack_A_29
+  - ClockworkKing_Attack_A_15
+  - ClockworkKing_Attack_A_20
+  - ClockworkKing_Attack_A_24
+  - ClockworkKing_Attack_A_22
+  - ClockworkKing_Attack_A_12
+  m_Tag: Mandoro_Front
+  m_IsVariant: 0
