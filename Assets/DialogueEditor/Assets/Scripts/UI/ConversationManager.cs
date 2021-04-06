@@ -349,6 +349,12 @@ namespace DialogueEditor
 
             m_elapsedScrollTime += Time.deltaTime;
 
+            // Fast skip through text by clicking mouse
+            if(Input.GetMouseButtonDown(0))
+            {
+                m_scrollIndex = m_targetScrollTextCount;
+            }
+
             if (m_elapsedScrollTime > timePerChar)
             {
                 m_elapsedScrollTime = 0f;
