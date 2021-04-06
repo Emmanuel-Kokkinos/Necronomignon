@@ -138,12 +138,6 @@
     <Compile Include="Assets\Scripts\Data\Move.cs" />
     <Compile Include="Assets\Scripts\Data\MoveList.cs" />
     <Compile Include="Assets\Scripts\Data\MoveManager.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\DialogueList.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPC.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPCDialogue.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPCDialogueManager.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPCList.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPCManager.cs" />
     <Compile Include="Assets\Scripts\Data\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Data\Player.cs" />
     <Compile Include="Assets\Scripts\Data\Questions.cs" />
