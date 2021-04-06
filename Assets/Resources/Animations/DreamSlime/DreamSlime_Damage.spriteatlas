@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DreamSlime_Damage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 506f9dab30316fe4e9ef7f2ca07a1854, type: 3}
+    totalSpriteSurfaceArea: 124000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a1bc7350bf23ed1418d8423652b48d9c, type: 3}
+  - {fileID: 21300000, guid: 4c7c5ae0db5ad6549937e23975913065, type: 3}
+  - {fileID: 21300000, guid: 7a3f5431fbcd3a9438d55674dcf1c75b, type: 3}
+  - {fileID: 21300000, guid: a4b237719d4b31d4a92fb9767317715c, type: 3}
+  - {fileID: 21300000, guid: f777c6813f6c25447ad8754821b6c97a, type: 3}
+  - {fileID: 21300000, guid: 99b152e14a7f4c8408982620dd6cafd0, type: 3}
+  - {fileID: 21300000, guid: 4e7793f182257404eb2a44ea22b869af, type: 3}
+  - {fileID: 21300000, guid: b96e48327d88b814083b1fccac1c9e57, type: 3}
+  - {fileID: 21300000, guid: 7eb8f603295bb844da7d43436724bdaf, type: 3}
+  - {fileID: 21300000, guid: 3db3c1c3b04ac064fa4ae20726f5d8be, type: 3}
+  - {fileID: 21300000, guid: 2ef607c418d47e34898f09c2d07909a7, type: 3}
+  - {fileID: 21300000, guid: a997e125fbab5f74fb9f78de3f1916ca, type: 3}
+  - {fileID: 21300000, guid: 086a6b85bfdeef846865b00489ba7cf4, type: 3}
+  - {fileID: 21300000, guid: b470c0a59dd81514197cc1bacdea5e41, type: 3}
+  - {fileID: 21300000, guid: f8a66cc53a47db7408a657bbd08a65eb, type: 3}
+  - {fileID: 21300000, guid: 2da390f5581cde34e8dfc91a64b1dd83, type: 3}
+  - {fileID: 21300000, guid: cc834bb6ee21835469093f2b701a8293, type: 3}
+  - {fileID: 21300000, guid: 922779782776e6a458c7350c767a23d3, type: 3}
+  - {fileID: 21300000, guid: e867ab98dfa409048bdfb04b96a0611a, type: 3}
+  - {fileID: 21300000, guid: d05541e88e224b043b8e844ab836bda4, type: 3}
+  - {fileID: 21300000, guid: 4fae3ca95d5c5da4e8259064ce952aa1, type: 3}
+  - {fileID: 21300000, guid: 64ac70c9ec7282347871ad61ace34adc, type: 3}
+  - {fileID: 21300000, guid: 15bf9eea75cb5c949b160c70176e65f0, type: 3}
+  - {fileID: 21300000, guid: 5f12605ccf32d8046a001b2bf5e3b122, type: 3}
+  - {fileID: 21300000, guid: d8b77a9cefab8a140959fd1d7a408fcd, type: 3}
+  - {fileID: 21300000, guid: c46cf24e947c9cd4ab54edea2ef8d38e, type: 3}
+  - {fileID: 21300000, guid: 618d830f9f3fa4741ba4bafafe06bce1, type: 3}
+  - {fileID: 21300000, guid: 73a3872fdf7dff14a9cc574502a9bb31, type: 3}
+  - {fileID: 21300000, guid: 40c0ff8fad5d52e478b23389b528c0de, type: 3}
+  - {fileID: 21300000, guid: 537971cfa7da4c6448f472631c2e834d, type: 3}
+  - {fileID: 21300000, guid: 5d6b9edf0c578fa49ae49f8d6629fedf, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - DreamSlime_Damage_16
+  - DreamSlime_Damage_29
+  - DreamSlime_Damage_11
+  - DreamSlime_Damage_03
+  - DreamSlime_Damage_10
+  - DreamSlime_Damage_25
+  - DreamSlime_Damage_04
+  - DreamSlime_Damage_26
+  - DreamSlime_Damage_20
+  - DreamSlime_Damage_14
+  - DreamSlime_Damage_18
+  - DreamSlime_Damage_06
+  - DreamSlime_Damage_01
+  - DreamSlime_Damage_13
+  - DreamSlime_Damage_00
+  - DreamSlime_Damage_07
+  - DreamSlime_Damage_02
+  - DreamSlime_Damage_23
+  - DreamSlime_Damage_24
+  - DreamSlime_Damage_21
+  - DreamSlime_Damage_08
+  - DreamSlime_Damage_17
+  - DreamSlime_Damage_22
+  - DreamSlime_Damage_27
+  - DreamSlime_Damage_12
+  - DreamSlime_Damage_15
+  - DreamSlime_Damage_28
+  - DreamSlime_Damage_09
+  - DreamSlime_Damage_19
+  - DreamSlime_Damage_30
+  - DreamSlime_Damage_05
+  m_Tag: DreamSlime_Damage
+  m_IsVariant: 0

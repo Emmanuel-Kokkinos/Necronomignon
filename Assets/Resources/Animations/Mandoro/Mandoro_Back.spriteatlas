@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mandoro_Back
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 010f50ab98c68d249a3e0aa9833277da, type: 3}
+    totalSpriteSurfaceArea: 184000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f433c00086d3cfa4c9b0f72ce8e1de0e, type: 3}
+  - {fileID: 21300000, guid: 1eb78b00e3661b444a51291048c65b06, type: 3}
+  - {fileID: 21300000, guid: 124c2510eb0187d4397581a32a064280, type: 3}
+  - {fileID: 21300000, guid: 392c3c9098643064c9aa56ba34975e40, type: 3}
+  - {fileID: 21300000, guid: ad9ccde06ffde2f4998c7c461ce414c5, type: 3}
+  - {fileID: 21300000, guid: 8b95d271e5ac8714e86293df020defd0, type: 3}
+  - {fileID: 21300000, guid: 6c0c6b915cbb5b344be1ed2a73ff2b6e, type: 3}
+  - {fileID: 21300000, guid: 87f1c8c11e3d03645a11df9daae672bf, type: 3}
+  - {fileID: 21300000, guid: dff724e1c794dad4eafe06f83aa8b1cf, type: 3}
+  - {fileID: 21300000, guid: e144a10231ddaac4e8aff1f05fd4e310, type: 3}
+  - {fileID: 21300000, guid: 52a37e42e2041cc488dcc5d876bbe37e, type: 3}
+  - {fileID: 21300000, guid: f8b5ef62611e37e49acb2e97fe775d00, type: 3}
+  - {fileID: 21300000, guid: e0dffb825214f3b48b02727a1c7a454c, type: 3}
+  - {fileID: 21300000, guid: a7f257929dea0f546a5a987b23a0b13a, type: 3}
+  - {fileID: 21300000, guid: 9811cab2b1ae8a14ebf4f15e8e66f1b2, type: 3}
+  - {fileID: 21300000, guid: 142b81437a599464b8b5bb7aa914333d, type: 3}
+  - {fileID: 21300000, guid: c2ec71f3109ec4a4fa23907bc58c90db, type: 3}
+  - {fileID: 21300000, guid: 93b04c94f3e2a7648a64fd3f38267ced, type: 3}
+  - {fileID: 21300000, guid: e3e35a15683f0194ca64314c8607062f, type: 3}
+  - {fileID: 21300000, guid: 3395747522b166148aee5078d2fbf2e5, type: 3}
+  - {fileID: 21300000, guid: 938b98754e60b6344b8c94bda9f30eca, type: 3}
+  - {fileID: 21300000, guid: ee06e785922e2274c9b7a39e6c2dfb60, type: 3}
+  - {fileID: 21300000, guid: a2068ba5dcce9444bafb01e47ae16b32, type: 3}
+  - {fileID: 21300000, guid: e8de16869f045a04887c57cb500dabe6, type: 3}
+  - {fileID: 21300000, guid: cb4dd886b36a53f4ab438bc77580b058, type: 3}
+  - {fileID: 21300000, guid: e2a53b67409ed2f47a1a2d1e6d9f26a6, type: 3}
+  - {fileID: 21300000, guid: e3ef1597fd58c4b43ac7044bffde1cc7, type: 3}
+  - {fileID: 21300000, guid: 811ec548ee6d727499667b09f493196a, type: 3}
+  - {fileID: 21300000, guid: 0e078c198b08d5b4f892d6c4507c61bd, type: 3}
+  - {fileID: 21300000, guid: 565a5a59726b8f8448e549646cc746da, type: 3}
+  - {fileID: 21300000, guid: a7ab7289962597046b4f232cfc58d770, type: 3}
+  - {fileID: 21300000, guid: 63ff38f907b74404ca9366a5170c982c, type: 3}
+  - {fileID: 21300000, guid: c6801b2b2e45f214f827dc897b5d7f7b, type: 3}
+  - {fileID: 21300000, guid: b106203b69d3bc6448b7aa242821dbf3, type: 3}
+  - {fileID: 21300000, guid: 6ac0085b2565d8745b07071d4c009ad3, type: 3}
+  - {fileID: 21300000, guid: 48f9498b6c07442468e975cd3a24fac8, type: 3}
+  - {fileID: 21300000, guid: 8ae0a3bb023794d4e8d0844127436c11, type: 3}
+  - {fileID: 21300000, guid: 31a3e1fb8f9cfa841a6b4873131f9cac, type: 3}
+  - {fileID: 21300000, guid: 02cd020c23c18a14d9c91d3f9f601f74, type: 3}
+  - {fileID: 21300000, guid: 9199f60c9df74be4bb76cd5bdc2bb347, type: 3}
+  - {fileID: 21300000, guid: f4d01f0c72e6e9c4090dbd048599cf26, type: 3}
+  - {fileID: 21300000, guid: 94abf3eda73e4024d8f6efac8e75975c, type: 3}
+  - {fileID: 21300000, guid: ead1331e9684488478b6dd4ff8e4b408, type: 3}
+  - {fileID: 21300000, guid: 246a910f49c6d204bb58fac21e48b2fc, type: 3}
+  - {fileID: 21300000, guid: a0c6401feec06e744ab919c82b88ae51, type: 3}
+  - {fileID: 21300000, guid: 1efe8b3fbf2739a4ab44633b6e135361, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ClockworkKing_Attack_B_09
+  - ClockworkKing_Attack_B_38
+  - ClockworkKing_Attack_B_45
+  - ClockworkKing_Attack_B_13
+  - ClockworkKing_Attack_B_28
+  - ClockworkKing_Attack_B_43
+  - ClockworkKing_Attack_B_24
+  - ClockworkKing_Attack_B_02
+  - ClockworkKing_Attack_B_03
+  - ClockworkKing_Attack_B_07
+  - ClockworkKing_Attack_B_21
+  - ClockworkKing_Attack_B_34
+  - ClockworkKing_Attack_B_14
+  - ClockworkKing_Attack_B_19
+  - ClockworkKing_Attack_B_26
+  - ClockworkKing_Attack_B_15
+  - ClockworkKing_Attack_B_12
+  - ClockworkKing_Attack_B_22
+  - ClockworkKing_Attack_B_42
+  - ClockworkKing_Attack_B_08
+  - ClockworkKing_Attack_B_40
+  - ClockworkKing_Attack_B_30
+  - ClockworkKing_Attack_B_16
+  - ClockworkKing_Attack_B_27
+  - ClockworkKing_Attack_B_01
+  - ClockworkKing_Attack_B_18
+  - ClockworkKing_Attack_B_25
+  - ClockworkKing_Attack_B_17
+  - ClockworkKing_Attack_B_31
+  - ClockworkKing_Attack_B_29
+  - ClockworkKing_Attack_B_20
+  - ClockworkKing_Attack_B_39
+  - ClockworkKing_Attack_B_32
+  - ClockworkKing_Attack_B_05
+  - ClockworkKing_Attack_B_33
+  - ClockworkKing_Attack_B_35
+  - ClockworkKing_Attack_B_04
+  - ClockworkKing_Attack_B_36
+  - ClockworkKing_Attack_B_37
+  - ClockworkKing_Attack_B_41
+  - ClockworkKing_Attack_B_10
+  - ClockworkKing_Attack_B_11
+  - ClockworkKing_Attack_B_06
+  - ClockworkKing_Attack_B_00
+  - ClockworkKing_Attack_B_44
+  - ClockworkKing_Attack_B_23
+  m_Tag: Mandoro_Back
+  m_IsVariant: 0

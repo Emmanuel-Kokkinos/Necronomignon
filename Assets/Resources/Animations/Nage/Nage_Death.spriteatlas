@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Nage_Death
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f73f8c8e528906644ab01a3e78db3fe5, type: 3}
+    totalSpriteSurfaceArea: 180430336
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 27c80c1025e6e1b40bd9a863c1fa07c2, type: 3}
+  - {fileID: 21300000, guid: 5370894033c7ca84eab97b39ea23e992, type: 3}
+  - {fileID: 21300000, guid: 3c399bd025e3cb14eabb789339998191, type: 3}
+  - {fileID: 21300000, guid: b1c6ca11a1c7eb24083ab8a2bfc859dc, type: 3}
+  - {fileID: 21300000, guid: a1d4d491d3a54f6449c0fb35eb33c32a, type: 3}
+  - {fileID: 21300000, guid: 8e9899d2648f88a4e811a6a575ba2461, type: 3}
+  - {fileID: 21300000, guid: 9adbc8f26a5d3954db0a8822a6666042, type: 3}
+  - {fileID: 21300000, guid: bdcb9fa344a1f8148af8694c105d1afa, type: 3}
+  - {fileID: 21300000, guid: aaf6c5d39b1557545bd66f1eb3cf9d1c, type: 3}
+  - {fileID: 21300000, guid: 08477fd3bff2ca247b915bf3304f804f, type: 3}
+  - {fileID: 21300000, guid: 9d9fe384ffa7c2246895c9fbcc767b67, type: 3}
+  - {fileID: 21300000, guid: 9161eef4c4b6e7545accf35eff0ed0f9, type: 3}
+  - {fileID: 21300000, guid: f07d2a5505d75774db7f54bbcd66d450, type: 3}
+  - {fileID: 21300000, guid: b598ab85c1cf6884791e456967688492, type: 3}
+  - {fileID: 21300000, guid: b7778326ba736d14a859a5ccdfd9d588, type: 3}
+  - {fileID: 21300000, guid: b657778615497894c85f73d4a772e878, type: 3}
+  - {fileID: 21300000, guid: ba5008969c51b1a40a2a36a3ed10bb67, type: 3}
+  - {fileID: 21300000, guid: af775df6088d3f244958192125178272, type: 3}
+  - {fileID: 21300000, guid: 27fa2377f2312c14d9dfced40dde34e4, type: 3}
+  - {fileID: 21300000, guid: 7f3d99d7c1723ef4ca8b6b03065e921b, type: 3}
+  - {fileID: 21300000, guid: f0fcebd7abbaa7f45848cdd339129867, type: 3}
+  - {fileID: 21300000, guid: adde6348a9f9c2f4b9d137d5867e9f8e, type: 3}
+  - {fileID: 21300000, guid: e6fb0ec8014cc7d4c9f17a1e9f6a1fce, type: 3}
+  - {fileID: 21300000, guid: 51bd59d8fbf320c4ea4865e4c8cec252, type: 3}
+  - {fileID: 21300000, guid: 6f96d1e88c941d8409820dab73119fa0, type: 3}
+  - {fileID: 21300000, guid: c3491779a9adf714795774dddc8368c5, type: 3}
+  - {fileID: 21300000, guid: 43ada31a60399ce4d9b06f52cfb74a08, type: 3}
+  - {fileID: 21300000, guid: 8d87507ad81ce5e4d8a3c3d0d2ee4b17, type: 3}
+  - {fileID: 21300000, guid: eb6a32da27458de4bb8d828f6ff13808, type: 3}
+  - {fileID: 21300000, guid: e0d494da5a3ed0149995c90dbcdc9847, type: 3}
+  - {fileID: 21300000, guid: 4d84e70be5e52174f85fbf586cf647e8, type: 3}
+  - {fileID: 21300000, guid: 05909f2bc45f94a469a6167dc6aebd08, type: 3}
+  - {fileID: 21300000, guid: 7a12a48b4cb172041a45dcad1830698e, type: 3}
+  - {fileID: 21300000, guid: 598ad4db78fae7443a9f67da83e63ab0, type: 3}
+  - {fileID: 21300000, guid: 22da46db5427d4940894a1952a3a6a23, type: 3}
+  - {fileID: 21300000, guid: 396f41eb0a8c93b4994f03ed781786db, type: 3}
+  - {fileID: 21300000, guid: 54a1165d4a13e0a4eb4fa5a50d35ae60, type: 3}
+  - {fileID: 21300000, guid: 197e0a0e73c006845a65282272fb0bf2, type: 3}
+  - {fileID: 21300000, guid: 1e071c3e2049b564e87a27402436afae, type: 3}
+  - {fileID: 21300000, guid: b972486e97ce00843bf5946cf745cc7d, type: 3}
+  - {fileID: 21300000, guid: 01a0079e350083941a03589732a11355, type: 3}
+  - {fileID: 21300000, guid: 25d863bebbf10c34b90c124b4dfaa81f, type: 3}
+  - {fileID: 21300000, guid: 179fdd4fd308185429270f318e6ac4be, type: 3}
+  - {fileID: 21300000, guid: 8e5610eff6eedfa49bbe01e57dff790f, type: 3}
+  - {fileID: 21300000, guid: 9f99c2ef1332e1f44b27977588fffeed, type: 3}
+  - {fileID: 21300000, guid: 917e5cffde53ac84c8c4e64adb3ad9a0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Nahe_Death_00010
+  - Nahe_Death_00036
+  - Nahe_Death_00017
+  - Nahe_Death_00045
+  - Nahe_Death_00007
+  - Nahe_Death_00015
+  - Nahe_Death_00011
+  - Nahe_Death_00024
+  - Nahe_Death_00023
+  - Nahe_Death_00035
+  - Nahe_Death_00006
+  - Nahe_Death_00012
+  - Nahe_Death_00022
+  - Nahe_Death_00020
+  - Nahe_Death_00041
+  - Nahe_Death_00027
+  - Nahe_Death_00025
+  - Nahe_Death_00029
+  - Nahe_Death_00003
+  - Nahe_Death_00037
+  - Nahe_Death_00021
+  - Nahe_Death_00008
+  - Nahe_Death_00001
+  - Nahe_Death_00026
+  - Nahe_Death_00019
+  - Nahe_Death_00038
+  - Nahe_Death_00016
+  - Nahe_Death_00033
+  - Nahe_Death_00013
+  - Nahe_Death_00002
+  - Nahe_Death_00034
+  - Nahe_Death_00028
+  - Nahe_Death_00044
+  - Nahe_Death_00031
+  - Nahe_Death_00005
+  - Nahe_Death_00009
+  - Nahe_Death_00014
+  - Nahe_Death_00018
+  - Nahe_Death_00030
+  - Nahe_Death_00039
+  - Nahe_Death_00043
+  - Nahe_Death_00000
+  - Nahe_Death_00042
+  - Nahe_Death_00004
+  - Nahe_Death_00040
+  - Nahe_Death_00032
+  m_Tag: Nage_Death
+  m_IsVariant: 0

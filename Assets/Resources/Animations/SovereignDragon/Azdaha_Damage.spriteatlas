@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Azdaha_Damage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a517fad5778819a4abdd59cd403198ab, type: 3}
+    totalSpriteSurfaceArea: 124000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 320bab40a86b28e4abe95c5c957b5e14, type: 3}
+  - {fileID: 21300000, guid: 706a915199aa8a94396a6dd500ccad03, type: 3}
+  - {fileID: 21300000, guid: beb5827130e02fa4fb7cae11d7200d04, type: 3}
+  - {fileID: 21300000, guid: 83db9b91502fcb7478af8274feb26501, type: 3}
+  - {fileID: 21300000, guid: 87a857a17153bd24e9495d0f5f84ceb2, type: 3}
+  - {fileID: 21300000, guid: 90f93ac3f41d7df489723e50fdee46fb, type: 3}
+  - {fileID: 21300000, guid: c7f4da74ac4a2284a89c9ff3dc7845ea, type: 3}
+  - {fileID: 21300000, guid: 542b15c4c62f3df46865b6af15bc2119, type: 3}
+  - {fileID: 21300000, guid: 0f86ec1543bcf44409d09f93ca8b6926, type: 3}
+  - {fileID: 21300000, guid: 1384b45530b008a4290e2be51edf2691, type: 3}
+  - {fileID: 21300000, guid: b3eead76735c43d45a8ed3bf44ca0ec0, type: 3}
+  - {fileID: 21300000, guid: 1cad1796879dc8d4f905e924a0371838, type: 3}
+  - {fileID: 21300000, guid: 772d37f69ed178c4b88c9a81bc19a1e4, type: 3}
+  - {fileID: 21300000, guid: 387cc277bde613e41bc28d91c45bbbbc, type: 3}
+  - {fileID: 21300000, guid: d8d76918efad3c042acd2e4dbb44206b, type: 3}
+  - {fileID: 21300000, guid: 0461ba682922cd9469c754d2e435ebb7, type: 3}
+  - {fileID: 21300000, guid: 5ac11c788a2d03b43aa23be0c99c5600, type: 3}
+  - {fileID: 21300000, guid: 07d01b986c704b642b3e892051d0ca2c, type: 3}
+  - {fileID: 21300000, guid: 3f4e68f8f1d67334cb9f56ba6fca6944, type: 3}
+  - {fileID: 21300000, guid: 1bff3619be7f8a84bb8828fa3f4b7c58, type: 3}
+  - {fileID: 21300000, guid: ef001189d8e3117478f5863f893e2f42, type: 3}
+  - {fileID: 21300000, guid: da1b4499ea717bb4dbebd5420e097ef0, type: 3}
+  - {fileID: 21300000, guid: e09b7bba2f1686d48ba16525b92967a4, type: 3}
+  - {fileID: 21300000, guid: e646444b8efcfc94ba26c69ec19835f2, type: 3}
+  - {fileID: 21300000, guid: 5faf799c12b61674e9d784bd84924c05, type: 3}
+  - {fileID: 21300000, guid: dda4143d768832742bad74dc89d6d90d, type: 3}
+  - {fileID: 21300000, guid: 3452b31e9b3c5f74b97301290408184e, type: 3}
+  - {fileID: 21300000, guid: d55a6e3e4c5cff847b95f7fb8bb7830c, type: 3}
+  - {fileID: 21300000, guid: 0301104e5dec82546bf37634f029867f, type: 3}
+  - {fileID: 21300000, guid: 15ddab4eab397dc46b7705623d357223, type: 3}
+  - {fileID: 21300000, guid: 4b9fc3efc4c4b294396907b1374527a6, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SovereignDragon_Damage_04
+  - SovereignDragon_Damage_22
+  - SovereignDragon_Damage_08
+  - SovereignDragon_Damage_29
+  - SovereignDragon_Damage_30
+  - SovereignDragon_Damage_23
+  - SovereignDragon_Damage_03
+  - SovereignDragon_Damage_06
+  - SovereignDragon_Damage_24
+  - SovereignDragon_Damage_13
+  - SovereignDragon_Damage_14
+  - SovereignDragon_Damage_10
+  - SovereignDragon_Damage_00
+  - SovereignDragon_Damage_05
+  - SovereignDragon_Damage_16
+  - SovereignDragon_Damage_25
+  - SovereignDragon_Damage_26
+  - SovereignDragon_Damage_20
+  - SovereignDragon_Damage_27
+  - SovereignDragon_Damage_02
+  - SovereignDragon_Damage_01
+  - SovereignDragon_Damage_19
+  - SovereignDragon_Damage_21
+  - SovereignDragon_Damage_07
+  - SovereignDragon_Damage_17
+  - SovereignDragon_Damage_09
+  - SovereignDragon_Damage_15
+  - SovereignDragon_Damage_28
+  - SovereignDragon_Damage_12
+  - SovereignDragon_Damage_11
+  - SovereignDragon_Damage_18
+  m_Tag: Azdaha_Damage
+  m_IsVariant: 0

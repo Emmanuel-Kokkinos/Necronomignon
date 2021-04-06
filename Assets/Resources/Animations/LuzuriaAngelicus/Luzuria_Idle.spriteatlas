@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Luzuria_Idle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a6610de0e16997a408645d10f0cf2f60, type: 3}
+    totalSpriteSurfaceArea: 304000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a0f58570ec4e4e442ba7ce6d91e6b5ba, type: 3}
+  - {fileID: 21300000, guid: 96fb5390e0364094b8c2741f72135ffd, type: 3}
+  - {fileID: 21300000, guid: 713b0ab08ed92d94da76d881f32b768a, type: 3}
+  - {fileID: 21300000, guid: dcb258d029a619c4e95bdd9f37932c3e, type: 3}
+  - {fileID: 21300000, guid: 6f56a7e0a9687bd429c4d639081be0c1, type: 3}
+  - {fileID: 21300000, guid: b8ded401effb3f04980d9ffc36c833e5, type: 3}
+  - {fileID: 21300000, guid: aa02fd21e7c5af24d9e94d1c625b22a0, type: 3}
+  - {fileID: 21300000, guid: 3f35b2511dbeece4db57741184af2551, type: 3}
+  - {fileID: 21300000, guid: 84895661cdc0b2c46836bf40be3caac8, type: 3}
+  - {fileID: 21300000, guid: ed23ba81299df084c85ce6408615a15d, type: 3}
+  - {fileID: 21300000, guid: 05de5e429aaa5ec409ef4970169c2cc2, type: 3}
+  - {fileID: 21300000, guid: af9e76929b995934ebf764a9cc86de9d, type: 3}
+  - {fileID: 21300000, guid: 1f3e12c26cfe4eb47aea4c9e47278423, type: 3}
+  - {fileID: 21300000, guid: b4c57403dc44b834286c9948b62028b6, type: 3}
+  - {fileID: 21300000, guid: a734c333432e4d34eb44ffe8d10a982e, type: 3}
+  - {fileID: 21300000, guid: 073d6f33ed01fec4a8a367b1c04cd7e6, type: 3}
+  - {fileID: 21300000, guid: 0770dab30034b084b9a4e194cac18ea3, type: 3}
+  - {fileID: 21300000, guid: dae330c3ac0a7bc4a96c3b988a54344f, type: 3}
+  - {fileID: 21300000, guid: 019dd0c31a1b01b469f6afbb69e9c5b5, type: 3}
+  - {fileID: 21300000, guid: 404793d3f33d56f418c39206221b739d, type: 3}
+  - {fileID: 21300000, guid: f29b3734d9066c14787fb5cde4ce0a25, type: 3}
+  - {fileID: 21300000, guid: 5a16b8e4d933ee24db03a26182b0b338, type: 3}
+  - {fileID: 21300000, guid: ab50150556d413b4396831fb94f45aea, type: 3}
+  - {fileID: 21300000, guid: 3b857905f5ed0534b92de944f872fb03, type: 3}
+  - {fileID: 21300000, guid: 7be76c05b4cafde4fa254cfdb7a0427b, type: 3}
+  - {fileID: 21300000, guid: 36a811451cebd0946876d0c2a47a04f6, type: 3}
+  - {fileID: 21300000, guid: 9119e36570c9fdc46ba0a8309b35479b, type: 3}
+  - {fileID: 21300000, guid: a34003a5ff6b35649a4cac13c532d079, type: 3}
+  - {fileID: 21300000, guid: 6433d3f53f07f7d4faae2e62cb34c419, type: 3}
+  - {fileID: 21300000, guid: e970df8655301614b955b4524935d941, type: 3}
+  - {fileID: 21300000, guid: b23096a6e9948d141b243cbc039875b4, type: 3}
+  - {fileID: 21300000, guid: d3ff1ca64e78e844e92f699e6bd0da35, type: 3}
+  - {fileID: 21300000, guid: e0ba1fa6656331046888149d04fca184, type: 3}
+  - {fileID: 21300000, guid: 786a54e6b6beebe4d9b98800c6ff1d3f, type: 3}
+  - {fileID: 21300000, guid: 607405e664dae9d44b1eb9b9c3e2e779, type: 3}
+  - {fileID: 21300000, guid: bf27b4f6a9bfcc74a94c62d4f00e42f8, type: 3}
+  - {fileID: 21300000, guid: 724dd4f6172995c45814a267f491ef57, type: 3}
+  - {fileID: 21300000, guid: a527c7170169e99408e770a5df609dca, type: 3}
+  - {fileID: 21300000, guid: 0c688327a2554bc4db857b2ba4c6e501, type: 3}
+  - {fileID: 21300000, guid: c521a927453cb8e45ab5ff778ac13074, type: 3}
+  - {fileID: 21300000, guid: 60bc4737ed3f78f439970a4ac8e8415b, type: 3}
+  - {fileID: 21300000, guid: 5f89048722fc3ab4f882618a80002e62, type: 3}
+  - {fileID: 21300000, guid: afc226482d96a82489398806476c788c, type: 3}
+  - {fileID: 21300000, guid: 766ba0b899b520c43bba5beb63143bfb, type: 3}
+  - {fileID: 21300000, guid: 6f306bc8c7c5f054ab34dc548813264d, type: 3}
+  - {fileID: 21300000, guid: 133fa459fad4b51439cb95ddf5eb27d4, type: 3}
+  - {fileID: 21300000, guid: 240ea6b9cb789254fb50dd7a90704675, type: 3}
+  - {fileID: 21300000, guid: 39a8c6c9f40516d46a06c1096822fb53, type: 3}
+  - {fileID: 21300000, guid: 3a3c920a22ec9964d80a845cf58ab42e, type: 3}
+  - {fileID: 21300000, guid: 7606d30aab172814b9fef2118ca0d87b, type: 3}
+  - {fileID: 21300000, guid: db47474ac9f9dc149b22aacf7c22d784, type: 3}
+  - {fileID: 21300000, guid: 8999e84a9de16cc4494a96609ea2265e, type: 3}
+  - {fileID: 21300000, guid: 242d15fa0efc4cb4b81bc476afc2a621, type: 3}
+  - {fileID: 21300000, guid: 04805cfa6655ef7479b89d10ffb8b7f8, type: 3}
+  - {fileID: 21300000, guid: e66e0c3b3b785cd4f9db6dd42626875e, type: 3}
+  - {fileID: 21300000, guid: 342d916b4c44ab4449e29459e67e5c1f, type: 3}
+  - {fileID: 21300000, guid: 9c5df79b5ca2a4a43a81076e62b6db82, type: 3}
+  - {fileID: 21300000, guid: 6872a9fb6e72b9241b77011d90bf20ca, type: 3}
+  - {fileID: 21300000, guid: 5fcc9dfbeff61994bbfe3a7df3d23e5b, type: 3}
+  - {fileID: 21300000, guid: b5b88c3c204b67b4a9cdcb111b6ae353, type: 3}
+  - {fileID: 21300000, guid: afe1b04cf907e4e48a6587859c76191f, type: 3}
+  - {fileID: 21300000, guid: 09d21edcf8d22ed468c87fd0e96f9594, type: 3}
+  - {fileID: 21300000, guid: b8ed42fc2448d1e488eb8ba9c5d9414b, type: 3}
+  - {fileID: 21300000, guid: 12219b4e8ca6322449d614c6d74a2aa7, type: 3}
+  - {fileID: 21300000, guid: 1943075eaf5d3aa4496c415db7bc47e0, type: 3}
+  - {fileID: 21300000, guid: 6c423a9ea602140498b5ef0a8bfebf3b, type: 3}
+  - {fileID: 21300000, guid: 557f01ae38933e7439ed9db78ba0cf1f, type: 3}
+  - {fileID: 21300000, guid: 6e7f72ae8377f694c833e9d8f01a8331, type: 3}
+  - {fileID: 21300000, guid: 808792ce42d5c204ba564ecd59c44672, type: 3}
+  - {fileID: 21300000, guid: ed36e51f97c6c0e4e82d34ea6ba83f26, type: 3}
+  - {fileID: 21300000, guid: ddcb023fa6a0a114f8ca440d578d6442, type: 3}
+  - {fileID: 21300000, guid: ce52665fd1bc70b4fa0889f9f7b0091c, type: 3}
+  - {fileID: 21300000, guid: e6fec2bf327e9a54682039680c70b359, type: 3}
+  - {fileID: 21300000, guid: 74e4a6bf2fe57604781ac83d2f4d1619, type: 3}
+  - {fileID: 21300000, guid: 44e693ef52e1bcb43ad96262f59dcfc3, type: 3}
+  - {fileID: 21300000, guid: eb9a76ef9679ad1489f43d095318b3e9, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - LightDragon_Idle_60
+  - LightDragon_Idle_13
+  - LightDragon_Idle_64
+  - LightDragon_Idle_28
+  - LightDragon_Idle_57
+  - LightDragon_Idle_74
+  - LightDragon_Idle_16
+  - LightDragon_Idle_04
+  - LightDragon_Idle_39
+  - LightDragon_Idle_48
+  - LightDragon_Idle_40
+  - LightDragon_Idle_19
+  - LightDragon_Idle_58
+  - LightDragon_Idle_31
+  - LightDragon_Idle_08
+  - LightDragon_Idle_07
+  - LightDragon_Idle_67
+  - LightDragon_Idle_59
+  - LightDragon_Idle_41
+  - LightDragon_Idle_32
+  - LightDragon_Idle_71
+  - LightDragon_Idle_36
+  - LightDragon_Idle_21
+  - LightDragon_Idle_02
+  - LightDragon_Idle_53
+  - LightDragon_Idle_47
+  - LightDragon_Idle_68
+  - LightDragon_Idle_61
+  - LightDragon_Idle_24
+  - LightDragon_Idle_46
+  - LightDragon_Idle_72
+  - LightDragon_Idle_49
+  - LightDragon_Idle_42
+  - LightDragon_Idle_17
+  - LightDragon_Idle_20
+  - LightDragon_Idle_45
+  - LightDragon_Idle_34
+  - LightDragon_Idle_51
+  - LightDragon_Idle_12
+  - LightDragon_Idle_11
+  - LightDragon_Idle_37
+  - LightDragon_Idle_33
+  - LightDragon_Idle_62
+  - LightDragon_Idle_27
+  - LightDragon_Idle_66
+  - LightDragon_Idle_05
+  - LightDragon_Idle_43
+  - LightDragon_Idle_25
+  - LightDragon_Idle_29
+  - LightDragon_Idle_75
+  - LightDragon_Idle_01
+  - LightDragon_Idle_69
+  - LightDragon_Idle_52
+  - LightDragon_Idle_15
+  - LightDragon_Idle_56
+  - LightDragon_Idle_44
+  - LightDragon_Idle_63
+  - LightDragon_Idle_09
+  - LightDragon_Idle_73
+  - LightDragon_Idle_55
+  - LightDragon_Idle_23
+  - LightDragon_Idle_18
+  - LightDragon_Idle_14
+  - LightDragon_Idle_70
+  - LightDragon_Idle_22
+  - LightDragon_Idle_30
+  - LightDragon_Idle_35
+  - LightDragon_Idle_10
+  - LightDragon_Idle_65
+  - LightDragon_Idle_50
+  - LightDragon_Idle_00
+  - LightDragon_Idle_26
+  - LightDragon_Idle_06
+  - LightDragon_Idle_03
+  - LightDragon_Idle_54
+  - LightDragon_Idle_38
+  m_Tag: Luzuria_Idle
+  m_IsVariant: 0

@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Wyvern_Front
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 55406833a4703c945906e4044511e6c9, type: 3}
+    totalSpriteSurfaceArea: 140000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 892b7d4061bf2164b8e8a8e3ce6908a9, type: 3}
+  - {fileID: 21300000, guid: 147a73e0547ee3742bcee948614d70fa, type: 3}
+  - {fileID: 21300000, guid: 8a7b4041c8cdc324385df56e159faa54, type: 3}
+  - {fileID: 21300000, guid: 6faf5191426c7e7428ed40a3dbc8dccf, type: 3}
+  - {fileID: 21300000, guid: e310e0d154e3f7b48bb93c8924fd857e, type: 3}
+  - {fileID: 21300000, guid: c1f1fa02a3b4afb4eae414a8f04c20e8, type: 3}
+  - {fileID: 21300000, guid: b4bb1142bf5c5ae4c8f2820de82fefb8, type: 3}
+  - {fileID: 21300000, guid: 38b07cc2b61e2a14bb51037a07de2478, type: 3}
+  - {fileID: 21300000, guid: d3504d6353b06ce428c38886945a7316, type: 3}
+  - {fileID: 21300000, guid: b24ec483f46656444af85044872a7fff, type: 3}
+  - {fileID: 21300000, guid: fc8400d45f8d5f649973ddd4dc4f692b, type: 3}
+  - {fileID: 21300000, guid: 51a5fbd4397046c44b3e7d18f96ef2a3, type: 3}
+  - {fileID: 21300000, guid: 2e44d805445353b42b64ec1ade7c97ef, type: 3}
+  - {fileID: 21300000, guid: 24e0e135f23e0a64ab2eade25f768757, type: 3}
+  - {fileID: 21300000, guid: e8d725450598253468692073b81fe80b, type: 3}
+  - {fileID: 21300000, guid: 82e460d59148a5e45a01ba0faf107d92, type: 3}
+  - {fileID: 21300000, guid: 8243cb6779bd9fc46a13990f2b238be7, type: 3}
+  - {fileID: 21300000, guid: d93c9a77e735083488fb187d9648f931, type: 3}
+  - {fileID: 21300000, guid: 800042c700d9a5c49a1a509ffdeee8a7, type: 3}
+  - {fileID: 21300000, guid: 7adb6558da8a3294b94186ba4c4d8782, type: 3}
+  - {fileID: 21300000, guid: 8da93eb89e8f2944685967814cda3f4b, type: 3}
+  - {fileID: 21300000, guid: 648213d840eb74141b788b0d1e27c37e, type: 3}
+  - {fileID: 21300000, guid: afc04c195eb3f9245a36a23b4339d3ff, type: 3}
+  - {fileID: 21300000, guid: c897f77970b60b7488402f9e8e6920d7, type: 3}
+  - {fileID: 21300000, guid: 4a473879bb58b294fa61fcddd13fa92e, type: 3}
+  - {fileID: 21300000, guid: 5038f52a5779c3d429dc4f25109ae8bb, type: 3}
+  - {fileID: 21300000, guid: eed5221b95392b544ad9bab16f018071, type: 3}
+  - {fileID: 21300000, guid: 5728288b898018e4b95a2c90e3a1f49f, type: 3}
+  - {fileID: 21300000, guid: 4aa4b0bbcdc4e90458ac50e0683a6c97, type: 3}
+  - {fileID: 21300000, guid: c72fb4dc8f315a74dbb89b4d7f72ae9f, type: 3}
+  - {fileID: 21300000, guid: 559be36eb59e8fd4c836329b034e8701, type: 3}
+  - {fileID: 21300000, guid: 2101578e0fbc57344ac2e7fd288eb2c1, type: 3}
+  - {fileID: 21300000, guid: abf3b89e1653e1e49a15308ea4ed2316, type: 3}
+  - {fileID: 21300000, guid: 19044a9e21efda943854e2619fdc8aea, type: 3}
+  - {fileID: 21300000, guid: 2e47311f4afa2224a90133a3bdbfd2e8, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Zefir_Attack B_34
+  - Zefir_Attack B_31
+  - Zefir_Attack B_01
+  - Zefir_Attack B_22
+  - Zefir_Attack B_25
+  - Zefir_Attack B_13
+  - Zefir_Attack B_00
+  - Zefir_Attack B_06
+  - Zefir_Attack B_14
+  - Zefir_Attack B_21
+  - Zefir_Attack B_24
+  - Zefir_Attack B_08
+  - Zefir_Attack B_27
+  - Zefir_Attack B_20
+  - Zefir_Attack B_11
+  - Zefir_Attack B_32
+  - Zefir_Attack B_03
+  - Zefir_Attack B_04
+  - Zefir_Attack B_23
+  - Zefir_Attack B_18
+  - Zefir_Attack B_09
+  - Zefir_Attack B_29
+  - Zefir_Attack B_30
+  - Zefir_Attack B_19
+  - Zefir_Attack B_33
+  - Zefir_Attack B_17
+  - Zefir_Attack B_02
+  - Zefir_Attack B_28
+  - Zefir_Attack B_16
+  - Zefir_Attack B_05
+  - Zefir_Attack B_15
+  - Zefir_Attack B_26
+  - Zefir_Attack B_12
+  - Zefir_Attack B_07
+  - Zefir_Attack B_10
+  m_Tag: Wyvern_Front
+  m_IsVariant: 0
