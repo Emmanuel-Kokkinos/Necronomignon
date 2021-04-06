@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Kitsune_Idle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: fb48b6745d7721743a92bfff8eaf5935, type: 3}
+    totalSpriteSurfaceArea: 244000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 9f05e3119e6c3324f829a6b3b1be607b, type: 3}
+  - {fileID: 21300000, guid: 4e5303219d4141744b16db0974d5d82e, type: 3}
+  - {fileID: 21300000, guid: eda35641a95dae24abf655f6564125f4, type: 3}
+  - {fileID: 21300000, guid: 09d862515da9e5e4aba45ea769892d6d, type: 3}
+  - {fileID: 21300000, guid: 90ca5351c709c644896a2bd49875f623, type: 3}
+  - {fileID: 21300000, guid: bd75c0c10e3ba89458262ce019c7f2f0, type: 3}
+  - {fileID: 21300000, guid: ae907ed14f221d24b936c698cbdb8a31, type: 3}
+  - {fileID: 21300000, guid: 45c8c22254070114c84d9021887a1589, type: 3}
+  - {fileID: 21300000, guid: a2e3de32eb6a31d45b4429f2c53b0987, type: 3}
+  - {fileID: 21300000, guid: 961f30628f9f2e240b452b7f5636e1b3, type: 3}
+  - {fileID: 21300000, guid: e97262a2df909cf4492ad96055feb1f6, type: 3}
+  - {fileID: 21300000, guid: 3da9d903257283f4d8a2214e1d379b5f, type: 3}
+  - {fileID: 21300000, guid: 66063613a1f471c4cbffcbfc18459cf0, type: 3}
+  - {fileID: 21300000, guid: ee8cb61322c249145a3ddb9bd07c1059, type: 3}
+  - {fileID: 21300000, guid: e8f98cd330c46f3429abc204d61b94d2, type: 3}
+  - {fileID: 21300000, guid: 8865eb24e169c4d47bd09fc9a8399bd0, type: 3}
+  - {fileID: 21300000, guid: b08b2d44a78d6354c96b587c84386212, type: 3}
+  - {fileID: 21300000, guid: ce798f644b9e9774aba7e09570cf313b, type: 3}
+  - {fileID: 21300000, guid: 04d4d7749f10ee74ca40252576dccb96, type: 3}
+  - {fileID: 21300000, guid: 0aea80d461fbd1544818ab54edc48f5d, type: 3}
+  - {fileID: 21300000, guid: 6efbc805eaaa33a4fbf8a123d6bb1d72, type: 3}
+  - {fileID: 21300000, guid: 3fa2c025646b9e4418414621fd4a9b9a, type: 3}
+  - {fileID: 21300000, guid: f2e9e035e9b9f2147803cd2e945dddef, type: 3}
+  - {fileID: 21300000, guid: db853945922a133498ec71086e40f5d3, type: 3}
+  - {fileID: 21300000, guid: a38e0dc5d5a2c6a429e2a5c0d72870bd, type: 3}
+  - {fileID: 21300000, guid: 839bf946cefe9b448b0409891178fa9e, type: 3}
+  - {fileID: 21300000, guid: ab618d4694ad3c54cb1e534c744920a6, type: 3}
+  - {fileID: 21300000, guid: 1bf20cb65b6ecb54ebbaede6dece9d29, type: 3}
+  - {fileID: 21300000, guid: 072f66d64f9e57a4c93955a71c3a62ea, type: 3}
+  - {fileID: 21300000, guid: 37bd2c07b5afcea4ca2b026db30f9bc9, type: 3}
+  - {fileID: 21300000, guid: 32705647c6a1cdd44bee3ebd4b6287bc, type: 3}
+  - {fileID: 21300000, guid: 89bca977b385de14082f20d8e692f03d, type: 3}
+  - {fileID: 21300000, guid: d9e02987938005745a8e101baf737f2e, type: 3}
+  - {fileID: 21300000, guid: cacfe197a2a6f0546a0bf3b05e6af882, type: 3}
+  - {fileID: 21300000, guid: 0d9d1498c4a1c7e408084aa13db196bd, type: 3}
+  - {fileID: 21300000, guid: 9a3c5ac8f93a19c44881fe7002ad78cf, type: 3}
+  - {fileID: 21300000, guid: 0eefbd592265976498aa9614d833befa, type: 3}
+  - {fileID: 21300000, guid: f5311179387196a4699830195d5f258d, type: 3}
+  - {fileID: 21300000, guid: 3281e3c909507f04bb0ef6800dbf7cdd, type: 3}
+  - {fileID: 21300000, guid: 860dad3af43c2b44aa3ce165610b0137, type: 3}
+  - {fileID: 21300000, guid: 22ed117a6125cfc41b1c1ecebf898581, type: 3}
+  - {fileID: 21300000, guid: 35141f9a7ff1f244a82886f373a52a08, type: 3}
+  - {fileID: 21300000, guid: a86e3faa46cc91040b4120971f47e442, type: 3}
+  - {fileID: 21300000, guid: 150041fb5048ec54fb7dd23a1059f80b, type: 3}
+  - {fileID: 21300000, guid: e06e400cbc9c4dd41a81d38973252da1, type: 3}
+  - {fileID: 21300000, guid: 67ad700c509a4fa42a872c8fbd5a8d9a, type: 3}
+  - {fileID: 21300000, guid: 2f12ec5c578092149aa9ccfab7a587c3, type: 3}
+  - {fileID: 21300000, guid: 0bd03fac193357248a51474d6685bf04, type: 3}
+  - {fileID: 21300000, guid: ea86e0bcb5ba8c442b86ee2dbe6b2a48, type: 3}
+  - {fileID: 21300000, guid: dc6277eceb7fb114eb738b17ef873a16, type: 3}
+  - {fileID: 21300000, guid: 6a1224fcfa7e09b41b0dc23d583d0c62, type: 3}
+  - {fileID: 21300000, guid: 39cb350d4b5f0394ebabba45bc08ac49, type: 3}
+  - {fileID: 21300000, guid: b1c5bb0d621f049418d3468b2fd40870, type: 3}
+  - {fileID: 21300000, guid: 6b1e203d48ec9ff48a1be951be18f86a, type: 3}
+  - {fileID: 21300000, guid: 4cf7ef4d0b218284d99a86145e639f67, type: 3}
+  - {fileID: 21300000, guid: e0c4a4cdaaae67848b4151df54f502c6, type: 3}
+  - {fileID: 21300000, guid: f8ddbf4ed81a391479a0b8b6676808cb, type: 3}
+  - {fileID: 21300000, guid: 4aabcd9e6eaf7d24aaa0f732cdd6fe05, type: 3}
+  - {fileID: 21300000, guid: 281395eea028ec3428780fe7f0fac74a, type: 3}
+  - {fileID: 21300000, guid: 2f867e7f0fb2b0c47ba283d971d40b24, type: 3}
+  - {fileID: 21300000, guid: 983b6f7fa8a1be546beb955d3aee527c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Kitsune_Idle_55
+  - Kitsune_Idle_52
+  - Kitsune_Idle_57
+  - Kitsune_Idle_10
+  - Kitsune_Idle_07
+  - Kitsune_Idle_29
+  - Kitsune_Idle_36
+  - Kitsune_Idle_56
+  - Kitsune_Idle_39
+  - Kitsune_Idle_37
+  - Kitsune_Idle_14
+  - Kitsune_Idle_51
+  - Kitsune_Idle_02
+  - Kitsune_Idle_44
+  - Kitsune_Idle_45
+  - Kitsune_Idle_28
+  - Kitsune_Idle_35
+  - Kitsune_Idle_53
+  - Kitsune_Idle_05
+  - Kitsune_Idle_50
+  - Kitsune_Idle_31
+  - Kitsune_Idle_15
+  - Kitsune_Idle_03
+  - Kitsune_Idle_42
+  - Kitsune_Idle_27
+  - Kitsune_Idle_48
+  - Kitsune_Idle_12
+  - Kitsune_Idle_30
+  - Kitsune_Idle_58
+  - Kitsune_Idle_38
+  - Kitsune_Idle_47
+  - Kitsune_Idle_20
+  - Kitsune_Idle_43
+  - Kitsune_Idle_33
+  - Kitsune_Idle_60
+  - Kitsune_Idle_06
+  - Kitsune_Idle_09
+  - Kitsune_Idle_04
+  - Kitsune_Idle_17
+  - Kitsune_Idle_16
+  - Kitsune_Idle_21
+  - Kitsune_Idle_08
+  - Kitsune_Idle_01
+  - Kitsune_Idle_46
+  - Kitsune_Idle_25
+  - Kitsune_Idle_49
+  - Kitsune_Idle_24
+  - Kitsune_Idle_11
+  - Kitsune_Idle_26
+  - Kitsune_Idle_41
+  - Kitsune_Idle_40
+  - Kitsune_Idle_32
+  - Kitsune_Idle_34
+  - Kitsune_Idle_22
+  - Kitsune_Idle_00
+  - Kitsune_Idle_23
+  - Kitsune_Idle_19
+  - Kitsune_Idle_54
+  - Kitsune_Idle_18
+  - Kitsune_Idle_59
+  - Kitsune_Idle_13
+  m_Tag: Kitsune_Idle
+  m_IsVariant: 0

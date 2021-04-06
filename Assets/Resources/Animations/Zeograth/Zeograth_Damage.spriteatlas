@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Zeograth_Damage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 55f13d71d46f077408830c68c42416e2, type: 3}
+    totalSpriteSurfaceArea: 124000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: dd6482024f8a4ab47a8c687b2e985f21, type: 3}
+  - {fileID: 21300000, guid: 43360cb23695f374692f2d6486e5e691, type: 3}
+  - {fileID: 21300000, guid: 83806503204152c4ab270b1562831b69, type: 3}
+  - {fileID: 21300000, guid: 8d9c4f130b17bd344822da1c4100394f, type: 3}
+  - {fileID: 21300000, guid: 05a01d9326b82d64da9f757d01662502, type: 3}
+  - {fileID: 21300000, guid: 5e59f444ab0f9f64eb828535c5738221, type: 3}
+  - {fileID: 21300000, guid: 85ed85643942e3c44a19744bdf605e0f, type: 3}
+  - {fileID: 21300000, guid: 65f0e96567a002b478a84963cc767317, type: 3}
+  - {fileID: 21300000, guid: 901cfec5e1038a449bc216ea266a096c, type: 3}
+  - {fileID: 21300000, guid: 9a083626b872acd43acabb785d48ba20, type: 3}
+  - {fileID: 21300000, guid: 83f7b79645460a84b9ce0f2b2d9f7ebd, type: 3}
+  - {fileID: 21300000, guid: ef7b72a69f318de40acf062943904a22, type: 3}
+  - {fileID: 21300000, guid: d9ddcd878a6a3134ab88d39d3cd90af9, type: 3}
+  - {fileID: 21300000, guid: 2f46bcd7831b7de44a50032380016f56, type: 3}
+  - {fileID: 21300000, guid: 34b779c86c881a84a89e484e54222413, type: 3}
+  - {fileID: 21300000, guid: 434e2cf892eaa8d46bf5b1c28f00006b, type: 3}
+  - {fileID: 21300000, guid: 9c20fed97e529ef4fad1200f5ba3b4e4, type: 3}
+  - {fileID: 21300000, guid: 37d2ca4a3040d9a428a66e4539c71aa6, type: 3}
+  - {fileID: 21300000, guid: 6a143d1bd9603dd478929baa1fde287d, type: 3}
+  - {fileID: 21300000, guid: b941417b5f661b14d803b16d78f2b1cc, type: 3}
+  - {fileID: 21300000, guid: 69f92f1c8f2b52f4984763586da86b3a, type: 3}
+  - {fileID: 21300000, guid: 07de3dec63ec1a84d8da049e67d926d5, type: 3}
+  - {fileID: 21300000, guid: 2635123d17d869948bba6ca48954cbd8, type: 3}
+  - {fileID: 21300000, guid: ca0c684dde4eb444f8c547f4bd4366dd, type: 3}
+  - {fileID: 21300000, guid: 0a5ecb5d795f0ae4c89bfefdb662486b, type: 3}
+  - {fileID: 21300000, guid: 0da886ed68a6a7944aa0d8c32160931e, type: 3}
+  - {fileID: 21300000, guid: edf0b7deca5fb8542ad29f3849f889cf, type: 3}
+  - {fileID: 21300000, guid: 3841c1cf1c66dcc4495fdc56a613ded2, type: 3}
+  - {fileID: 21300000, guid: c7b197cf0e1f4dc48a2e5279ceedb350, type: 3}
+  - {fileID: 21300000, guid: f307abef214232641a8d5c58718927b3, type: 3}
+  - {fileID: 21300000, guid: 9abf3bff0a3d1b04588c490e55037ccf, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Zeograth_Damage_18
+  - Zeograth_Damage_15
+  - Zeograth_Damage_23
+  - Zeograth_Damage_10
+  - Zeograth_Damage_09
+  - Zeograth_Damage_25
+  - Zeograth_Damage_20
+  - Zeograth_Damage_22
+  - Zeograth_Damage_21
+  - Zeograth_Damage_16
+  - Zeograth_Damage_02
+  - Zeograth_Damage_08
+  - Zeograth_Damage_07
+  - Zeograth_Damage_04
+  - Zeograth_Damage_24
+  - Zeograth_Damage_05
+  - Zeograth_Damage_11
+  - Zeograth_Damage_26
+  - Zeograth_Damage_14
+  - Zeograth_Damage_28
+  - Zeograth_Damage_30
+  - Zeograth_Damage_29
+  - Zeograth_Damage_01
+  - Zeograth_Damage_13
+  - Zeograth_Damage_06
+  - Zeograth_Damage_27
+  - Zeograth_Damage_03
+  - Zeograth_Damage_19
+  - Zeograth_Damage_12
+  - Zeograth_Damage_00
+  - Zeograth_Damage_17
+  m_Tag: Zeograth_Damage
+  m_IsVariant: 0

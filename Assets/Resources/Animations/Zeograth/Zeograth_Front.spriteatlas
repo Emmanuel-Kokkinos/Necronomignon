@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Zeograth_Front
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 0548cc8efaac860459f5ca0f5ddfd84e, type: 3}
+    totalSpriteSurfaceArea: 292000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 401ba1716e7e1ca4d94c9e99e91f3a97, type: 3}
+  - {fileID: 21300000, guid: b986b8a1da9cdb74397c1325a6c8a962, type: 3}
+  - {fileID: 21300000, guid: e642acb1702950d4297433c13d322807, type: 3}
+  - {fileID: 21300000, guid: 75c412c163062d14d9a7dcdf55c649c2, type: 3}
+  - {fileID: 21300000, guid: dc100b120eb865a44a94432b71a34265, type: 3}
+  - {fileID: 21300000, guid: e3191e32000ffe142883e3ab3620fca6, type: 3}
+  - {fileID: 21300000, guid: ab40a9524db372a428ffcfcc54271c28, type: 3}
+  - {fileID: 21300000, guid: 8d51b8621e349de4ebc466915cec0498, type: 3}
+  - {fileID: 21300000, guid: d366b0722e25d6a44b627d6a0bd1a732, type: 3}
+  - {fileID: 21300000, guid: e5510c9214b29a5488bed1fc3557fa58, type: 3}
+  - {fileID: 21300000, guid: d517c2a24105d654eba0f4f41d25f234, type: 3}
+  - {fileID: 21300000, guid: f74989e39d529d24ca5f5e723faab947, type: 3}
+  - {fileID: 21300000, guid: 0ac105f30f414644d9b52a130a24c18d, type: 3}
+  - {fileID: 21300000, guid: 7b4c9a1490bc21d47998d6560f7dcbd2, type: 3}
+  - {fileID: 21300000, guid: 02419944ecbb2c843b4fabc0fcd23667, type: 3}
+  - {fileID: 21300000, guid: c826c16416e0e5c4188a21974ef14370, type: 3}
+  - {fileID: 21300000, guid: f7ed3684921f7504aa72955d40f45adc, type: 3}
+  - {fileID: 21300000, guid: b88a1f84c7845c74e8f265616d2aed76, type: 3}
+  - {fileID: 21300000, guid: d22ede05511e2f74f8457bda73e397d6, type: 3}
+  - {fileID: 21300000, guid: ceda5e25d5b30c3499f28a309319767f, type: 3}
+  - {fileID: 21300000, guid: b254477502da5fb4c951e9942adb5827, type: 3}
+  - {fileID: 21300000, guid: da5449b549392d543804c31e6cc61882, type: 3}
+  - {fileID: 21300000, guid: d4353926741874444b0c075de5b7fbfc, type: 3}
+  - {fileID: 21300000, guid: e61a894697057234f869a04b9486bc4c, type: 3}
+  - {fileID: 21300000, guid: 4fef79660b50fe4469ce7cd2f6da9f45, type: 3}
+  - {fileID: 21300000, guid: 848a7576abba84742ab4d5376913ccf2, type: 3}
+  - {fileID: 21300000, guid: 7f696d76fdf9fa44a96d8f90140a5d19, type: 3}
+  - {fileID: 21300000, guid: 26334cf6e1769f849a81b6d72252e61e, type: 3}
+  - {fileID: 21300000, guid: fdb3a627d809c5e4f8e65588e1e17845, type: 3}
+  - {fileID: 21300000, guid: 7b4c0ba7ab0da824e99460796c446ce5, type: 3}
+  - {fileID: 21300000, guid: cd9031f7b9485c94da21043c376408ed, type: 3}
+  - {fileID: 21300000, guid: 19ac3018c9e30e841904233a7b4820c2, type: 3}
+  - {fileID: 21300000, guid: 2115b918c4003ee43adc9b4b3cb66ada, type: 3}
+  - {fileID: 21300000, guid: 34d4fdd87780c254dbd645e19a41914a, type: 3}
+  - {fileID: 21300000, guid: ab484c19dd055bc43920adeaf0ba1aa6, type: 3}
+  - {fileID: 21300000, guid: 88b6252945e412f498e6cd4f1ad8f28b, type: 3}
+  - {fileID: 21300000, guid: be6bb139fa6f0d2438a8b3f0ff667936, type: 3}
+  - {fileID: 21300000, guid: 2595d93981a34cd409ddbb73f72bb64f, type: 3}
+  - {fileID: 21300000, guid: 9cd09f49d302a23469c8d7d765da3904, type: 3}
+  - {fileID: 21300000, guid: 041b5d59abbab2648abce081944055f1, type: 3}
+  - {fileID: 21300000, guid: f3061db9e61eb3045a016ba6345c3317, type: 3}
+  - {fileID: 21300000, guid: 5965470a8c5fc5c4bac0f5c7d513a86e, type: 3}
+  - {fileID: 21300000, guid: f16f301abfedcfd42b34e5bfb0591465, type: 3}
+  - {fileID: 21300000, guid: ae38f61ae4f9b014381880014387091f, type: 3}
+  - {fileID: 21300000, guid: 5262d03ac1ff03b43810992261c67f83, type: 3}
+  - {fileID: 21300000, guid: b96fb79af8fedc84fbc62e9417e0383c, type: 3}
+  - {fileID: 21300000, guid: 8268a7aaa53fa7546847ee73ec439f69, type: 3}
+  - {fileID: 21300000, guid: 8fcfe5ca3d9467d46aeb33e5365bc91e, type: 3}
+  - {fileID: 21300000, guid: 8d7bc0da78413b04a8cf3171676ff2d4, type: 3}
+  - {fileID: 21300000, guid: 80e8bfda25a434a49856438698af169d, type: 3}
+  - {fileID: 21300000, guid: 76aebaeae2fb0e446b0266d4be8cb160, type: 3}
+  - {fileID: 21300000, guid: 6f9e6afa0d4a4c2489edaac2051b3fd8, type: 3}
+  - {fileID: 21300000, guid: ff51203b332aa754b98e34195af69989, type: 3}
+  - {fileID: 21300000, guid: 3de5704bd82f3184fb5ec09c33c53258, type: 3}
+  - {fileID: 21300000, guid: e23db85ba43719f479a3ce1cc48bf3d0, type: 3}
+  - {fileID: 21300000, guid: b0c9995b39c30544d86084d1c1ab3be8, type: 3}
+  - {fileID: 21300000, guid: 3f03839b2d697b14896b823d279b37b8, type: 3}
+  - {fileID: 21300000, guid: 62ffcd9c436b9374292ed7d20b159ecb, type: 3}
+  - {fileID: 21300000, guid: 1c984edc2f626e9439b2b3581eb8a140, type: 3}
+  - {fileID: 21300000, guid: 1730e4fc13bd44a4aa314c55e8b7c428, type: 3}
+  - {fileID: 21300000, guid: ec7459fc174faee49b81812bed6702ed, type: 3}
+  - {fileID: 21300000, guid: 89cc6a0d86fa3b740902830f96b9312b, type: 3}
+  - {fileID: 21300000, guid: 2306a47daefa0fd4b9e58c5eb42a0e40, type: 3}
+  - {fileID: 21300000, guid: cf52e29dfdc638d41bde54f5656cd1ca, type: 3}
+  - {fileID: 21300000, guid: cea3e0bd56363754a8948781ada5432a, type: 3}
+  - {fileID: 21300000, guid: 7e3416bd38e3fa14e88268d769904681, type: 3}
+  - {fileID: 21300000, guid: 57ab55dda4363c444a54ec4840c4ec44, type: 3}
+  - {fileID: 21300000, guid: 13987eed723d27b44b5b701013c92d49, type: 3}
+  - {fileID: 21300000, guid: 876f1d1e8b49f324488a2d7e47080213, type: 3}
+  - {fileID: 21300000, guid: 1729ad1e8ed5fdb46a628eac62436fb5, type: 3}
+  - {fileID: 21300000, guid: 73665ffe0bb95a843b462a4450de305c, type: 3}
+  - {fileID: 21300000, guid: 0e61126fd5808844789483f0628e5564, type: 3}
+  - {fileID: 21300000, guid: 446d766fedc746648b9f8053ec1dc8d7, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Zeograth_Attack C_duplication1_40
+  - Zeograth_Attack C_duplication1_70
+  - Zeograth_Attack C_duplication1_37
+  - Zeograth_Attack C_duplication1_12
+  - Zeograth_Attack C_duplication1_64
+  - Zeograth_Attack C_duplication1_60
+  - Zeograth_Attack C_duplication1_38
+  - Zeograth_Attack C_duplication1_57
+  - Zeograth_Attack C_duplication1_13
+  - Zeograth_Attack C_duplication1_07
+  - Zeograth_Attack C_duplication1_47
+  - Zeograth_Attack C_duplication1_52
+  - Zeograth_Attack C_duplication1_01
+  - Zeograth_Attack C_duplication1_58
+  - Zeograth_Attack C_duplication1_30
+  - Zeograth_Attack C_duplication1_03
+  - Zeograth_Attack C_duplication1_34
+  - Zeograth_Attack C_duplication1_63
+  - Zeograth_Attack C_duplication1_21
+  - Zeograth_Attack C_duplication1_53
+  - Zeograth_Attack C_duplication1_24
+  - Zeograth_Attack C_duplication1_72
+  - Zeograth_Attack C_duplication1_61
+  - Zeograth_Attack C_duplication1_18
+  - Zeograth_Attack C_duplication1_36
+  - Zeograth_Attack C_duplication1_14
+  - Zeograth_Attack C_duplication1_29
+  - Zeograth_Attack C_duplication1_44
+  - Zeograth_Attack C_duplication1_19
+  - Zeograth_Attack C_duplication1_62
+  - Zeograth_Attack C_duplication1_46
+  - Zeograth_Attack C_duplication1_68
+  - Zeograth_Attack C_duplication1_02
+  - Zeograth_Attack C_duplication1_16
+  - Zeograth_Attack C_duplication1_26
+  - Zeograth_Attack C_duplication1_31
+  - Zeograth_Attack C_duplication1_06
+  - Zeograth_Attack C_duplication1_08
+  - Zeograth_Attack C_duplication1_39
+  - Zeograth_Attack C_duplication1_55
+  - Zeograth_Attack C_duplication1_43
+  - Zeograth_Attack C_duplication1_11
+  - Zeograth_Attack C_duplication1_32
+  - Zeograth_Attack C_duplication1_65
+  - Zeograth_Attack C_duplication1_51
+  - Zeograth_Attack C_duplication1_71
+  - Zeograth_Attack C_duplication1_27
+  - Zeograth_Attack C_duplication1_42
+  - Zeograth_Attack C_duplication1_59
+  - Zeograth_Attack C_duplication1_09
+  - Zeograth_Attack C_duplication1_45
+  - Zeograth_Attack C_duplication1_00
+  - Zeograth_Attack C_duplication1_54
+  - Zeograth_Attack C_duplication1_15
+  - Zeograth_Attack C_duplication1_35
+  - Zeograth_Attack C_duplication1_67
+  - Zeograth_Attack C_duplication1_33
+  - Zeograth_Attack C_duplication1_48
+  - Zeograth_Attack C_duplication1_49
+  - Zeograth_Attack C_duplication1_17
+  - Zeograth_Attack C_duplication1_66
+  - Zeograth_Attack C_duplication1_04
+  - Zeograth_Attack C_duplication1_10
+  - Zeograth_Attack C_duplication1_05
+  - Zeograth_Attack C_duplication1_25
+  - Zeograth_Attack C_duplication1_23
+  - Zeograth_Attack C_duplication1_69
+  - Zeograth_Attack C_duplication1_41
+  - Zeograth_Attack C_duplication1_28
+  - Zeograth_Attack C_duplication1_20
+  - Zeograth_Attack C_duplication1_22
+  - Zeograth_Attack C_duplication1_50
+  - Zeograth_Attack C_duplication1_56
+  m_Tag: Zeograth_Front
+  m_IsVariant: 0

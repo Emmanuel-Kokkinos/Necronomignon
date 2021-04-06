@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Azdaha_Idle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 60cfcdaeb8d73ce459e28ef73ebc03a4, type: 3}
+    totalSpriteSurfaceArea: 244000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e28d5e1017ca6b346a6a5481b372ef83, type: 3}
+  - {fileID: 21300000, guid: d59cf7a0269be1d42a5b9dc42d7e1c57, type: 3}
+  - {fileID: 21300000, guid: cac30ed024e858143ae7f0553861c424, type: 3}
+  - {fileID: 21300000, guid: 73a69a01c80e6874a9a82b4d714cc873, type: 3}
+  - {fileID: 21300000, guid: 08ba5151e8fae424ca790e7572321840, type: 3}
+  - {fileID: 21300000, guid: bd2f4dc190e935e4f925642a8f1420e8, type: 3}
+  - {fileID: 21300000, guid: 9f6dc9f1f3dd90041a177c4df92bead5, type: 3}
+  - {fileID: 21300000, guid: eeee3b6261115934ba95f1be5b760efb, type: 3}
+  - {fileID: 21300000, guid: 3672907279a58534880dacc4cd03219f, type: 3}
+  - {fileID: 21300000, guid: 0a2356d2c9c1ebe4e87d979d1b8ebb69, type: 3}
+  - {fileID: 21300000, guid: 59a64723251b42a4289746bec8213070, type: 3}
+  - {fileID: 21300000, guid: 2839c853e4b26bc4096fc1462f90f518, type: 3}
+  - {fileID: 21300000, guid: 9e8db3937180b4946ba7d8315e9f81ce, type: 3}
+  - {fileID: 21300000, guid: 58e4b8b3a10d73e488100cac37db151f, type: 3}
+  - {fileID: 21300000, guid: dc2b06548682a3048aca907d07c567f7, type: 3}
+  - {fileID: 21300000, guid: 43bb87b4d10aadb4395b2cd69589879c, type: 3}
+  - {fileID: 21300000, guid: 0ea4dce4e8da69a4dab1ed5ad986157c, type: 3}
+  - {fileID: 21300000, guid: df074a058ad102e4b8fc07b12e6a72bd, type: 3}
+  - {fileID: 21300000, guid: 5db20615ddb1a744c975376e44a0886b, type: 3}
+  - {fileID: 21300000, guid: 8b46e815c8368c1439a3164ed4f58134, type: 3}
+  - {fileID: 21300000, guid: 27aa1845f88adc84ba1457f7d4df2ec0, type: 3}
+  - {fileID: 21300000, guid: d82364a52c2a755449fb709418b6440d, type: 3}
+  - {fileID: 21300000, guid: df060116d70c36c4589e88fcecee3b3a, type: 3}
+  - {fileID: 21300000, guid: 580baf169e4d59643a3a64ba88579742, type: 3}
+  - {fileID: 21300000, guid: 8d5b4ba602f68294b9dae3064d5a0ac1, type: 3}
+  - {fileID: 21300000, guid: 25a1cad6cd8141a46801133cfa630bfc, type: 3}
+  - {fileID: 21300000, guid: 47a303e6c87036c4290ebe49d34b43f5, type: 3}
+  - {fileID: 21300000, guid: e726da1715b4d084bbec2fe24501ecd5, type: 3}
+  - {fileID: 21300000, guid: 967be527d922bdc47a229041caafd8ce, type: 3}
+  - {fileID: 21300000, guid: 49d38537360a14144ae2d318891c00e0, type: 3}
+  - {fileID: 21300000, guid: af4bed4725226294a85f576f6d709f91, type: 3}
+  - {fileID: 21300000, guid: d901d2973fccea2449ea955ea82cd778, type: 3}
+  - {fileID: 21300000, guid: 8c5606978325b80429532af2b0114bff, type: 3}
+  - {fileID: 21300000, guid: 485b29971b8de8a4bb3e8427c612b14b, type: 3}
+  - {fileID: 21300000, guid: 145b9ef70db41714d8f55c7440d28067, type: 3}
+  - {fileID: 21300000, guid: cbbaf01887078c24cb9005672de8223b, type: 3}
+  - {fileID: 21300000, guid: b49a57b8992cd7244973d3c6531fc038, type: 3}
+  - {fileID: 21300000, guid: d02b62b933be57a49ab60e0dfd78ee10, type: 3}
+  - {fileID: 21300000, guid: fc821ac9b3676554b99dfbda0c8fb1dc, type: 3}
+  - {fileID: 21300000, guid: 86f1532a6818629428fc32941ddc8cd0, type: 3}
+  - {fileID: 21300000, guid: a8eb05ea77131e44e8b9b11a07a026c3, type: 3}
+  - {fileID: 21300000, guid: 47443abb363f8eb4788ec1053afe6800, type: 3}
+  - {fileID: 21300000, guid: 25a8864cc02b8ed4d98dde925d2ae0dc, type: 3}
+  - {fileID: 21300000, guid: 6cab535cebc56074b80ee40beaa9825d, type: 3}
+  - {fileID: 21300000, guid: 60e0846cee308c141a64c437265c82e2, type: 3}
+  - {fileID: 21300000, guid: 97945dacf09e546498f8740c75573e9d, type: 3}
+  - {fileID: 21300000, guid: 504890cc59f94124090c5bf95709a6b9, type: 3}
+  - {fileID: 21300000, guid: cdd62e3decb9cbb4daef8f643d5c400d, type: 3}
+  - {fileID: 21300000, guid: 981edd5da84132744bf4e9c057058201, type: 3}
+  - {fileID: 21300000, guid: 7d6d518d639e6b44aa524a6aff3eadad, type: 3}
+  - {fileID: 21300000, guid: 931897cd19459c14081041baa8072da0, type: 3}
+  - {fileID: 21300000, guid: bff877dd4df322b4c9e6af1fd758e697, type: 3}
+  - {fileID: 21300000, guid: 6bb2d0ed0088e96428bca146caf9688a, type: 3}
+  - {fileID: 21300000, guid: 4989f41ec5855af478df854aee3b6301, type: 3}
+  - {fileID: 21300000, guid: b82fb34e98f1add4298dbc5e0f374551, type: 3}
+  - {fileID: 21300000, guid: 753fad6ef9b829f48a060ede784a7b7f, type: 3}
+  - {fileID: 21300000, guid: 81fedece5aa1d124e83855ff1e34b616, type: 3}
+  - {fileID: 21300000, guid: c793f65f2b4d11145af58f2b8cfd2ca3, type: 3}
+  - {fileID: 21300000, guid: a3f1149fe7470894aba7b747bb2adbb5, type: 3}
+  - {fileID: 21300000, guid: 6966e6eff02dab046b4bd96f2252c644, type: 3}
+  - {fileID: 21300000, guid: d666faff1de157447af130cbc7dad2e5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SovereignDragon_Idle_25
+  - SovereignDragon_Idle_40
+  - SovereignDragon_Idle_38
+  - SovereignDragon_Idle_14
+  - SovereignDragon_Idle_51
+  - SovereignDragon_Idle_26
+  - SovereignDragon_Idle_33
+  - SovereignDragon_Idle_31
+  - SovereignDragon_Idle_15
+  - SovereignDragon_Idle_46
+  - SovereignDragon_Idle_57
+  - SovereignDragon_Idle_23
+  - SovereignDragon_Idle_18
+  - SovereignDragon_Idle_60
+  - SovereignDragon_Idle_39
+  - SovereignDragon_Idle_55
+  - SovereignDragon_Idle_48
+  - SovereignDragon_Idle_58
+  - SovereignDragon_Idle_02
+  - SovereignDragon_Idle_27
+  - SovereignDragon_Idle_09
+  - SovereignDragon_Idle_00
+  - SovereignDragon_Idle_20
+  - SovereignDragon_Idle_24
+  - SovereignDragon_Idle_03
+  - SovereignDragon_Idle_35
+  - SovereignDragon_Idle_43
+  - SovereignDragon_Idle_10
+  - SovereignDragon_Idle_32
+  - SovereignDragon_Idle_28
+  - SovereignDragon_Idle_30
+  - SovereignDragon_Idle_49
+  - SovereignDragon_Idle_29
+  - SovereignDragon_Idle_44
+  - SovereignDragon_Idle_47
+  - SovereignDragon_Idle_19
+  - SovereignDragon_Idle_21
+  - SovereignDragon_Idle_45
+  - SovereignDragon_Idle_52
+  - SovereignDragon_Idle_06
+  - SovereignDragon_Idle_16
+  - SovereignDragon_Idle_36
+  - SovereignDragon_Idle_59
+  - SovereignDragon_Idle_56
+  - SovereignDragon_Idle_50
+  - SovereignDragon_Idle_12
+  - SovereignDragon_Idle_41
+  - SovereignDragon_Idle_04
+  - SovereignDragon_Idle_08
+  - SovereignDragon_Idle_54
+  - SovereignDragon_Idle_17
+  - SovereignDragon_Idle_01
+  - SovereignDragon_Idle_37
+  - SovereignDragon_Idle_53
+  - SovereignDragon_Idle_13
+  - SovereignDragon_Idle_11
+  - SovereignDragon_Idle_34
+  - SovereignDragon_Idle_42
+  - SovereignDragon_Idle_05
+  - SovereignDragon_Idle_22
+  - SovereignDragon_Idle_07
+  m_Tag: Azdaha_Idle
+  m_IsVariant: 0
