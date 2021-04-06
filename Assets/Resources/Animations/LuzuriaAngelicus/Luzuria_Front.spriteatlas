@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Luzuria_Front
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: cf75b58ad26f18b4b873471c051da86a, type: 3}
+    totalSpriteSurfaceArea: 256000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 81f9b600cdb18bb49af30ac739824ba2, type: 3}
+  - {fileID: 21300000, guid: fb99c590bfc39b541b3f4b34245cd08a, type: 3}
+  - {fileID: 21300000, guid: 39a4dd90df274c74194292847912806c, type: 3}
+  - {fileID: 21300000, guid: cb3743b03650b1a41970474c8c7644ec, type: 3}
+  - {fileID: 21300000, guid: 615b0fc0b8dce8c4aaeb95a2afa8ce12, type: 3}
+  - {fileID: 21300000, guid: a1bd9621b2d865243ae75ff6696c5e90, type: 3}
+  - {fileID: 21300000, guid: de8bb981a3b26b14abc5a24abc4a3579, type: 3}
+  - {fileID: 21300000, guid: 8be1f032e5c272846bfae0126c33c905, type: 3}
+  - {fileID: 21300000, guid: a0a69732d16d90544a66d1094142cd20, type: 3}
+  - {fileID: 21300000, guid: df381852e7a29f747b6ed5528bcdd729, type: 3}
+  - {fileID: 21300000, guid: a4531e6222634ee4ba2c3ba588cdd77a, type: 3}
+  - {fileID: 21300000, guid: 83c8da72004313940b076b7fc14682c9, type: 3}
+  - {fileID: 21300000, guid: 7b957a92d321b984598c7be7bed65522, type: 3}
+  - {fileID: 21300000, guid: 5f5030c2268f59d4cb1bdf90da381072, type: 3}
+  - {fileID: 21300000, guid: 85f0fff282bd3d24bb08b8de651801b6, type: 3}
+  - {fileID: 21300000, guid: bfa2cd133860e6b49ad29c2da7891bff, type: 3}
+  - {fileID: 21300000, guid: 83078033a3cd86e4aa54ad90f32a710e, type: 3}
+  - {fileID: 21300000, guid: a3564c337de0a4a438d14ff72e721221, type: 3}
+  - {fileID: 21300000, guid: 85ab8d7325e91114385359c0991f401a, type: 3}
+  - {fileID: 21300000, guid: f8a2b083767eaa44d90fd0519a6d73c4, type: 3}
+  - {fileID: 21300000, guid: b14c1db317a380a46b802415e52a48ec, type: 3}
+  - {fileID: 21300000, guid: 0a30a8c39333c8544a4adf40252419f8, type: 3}
+  - {fileID: 21300000, guid: d4c906e34bd0d3c4baae3c21c860022d, type: 3}
+  - {fileID: 21300000, guid: 5465a4340064ed24ead08b3049eacf50, type: 3}
+  - {fileID: 21300000, guid: e1954a94f6ff37a4cb240afdf6690d18, type: 3}
+  - {fileID: 21300000, guid: 082480b4e6b32374abd5a32aa7f23b71, type: 3}
+  - {fileID: 21300000, guid: 631f8e458f9d7a54893338c9dd58ed77, type: 3}
+  - {fileID: 21300000, guid: 3ca70b65a3a10664cab224151fb884bf, type: 3}
+  - {fileID: 21300000, guid: b1ed3df504cb65d4d8954571e06b3d76, type: 3}
+  - {fileID: 21300000, guid: 65b440961c98d1f4bbde179620dfd8f9, type: 3}
+  - {fileID: 21300000, guid: f15ffc96eac85104a8a05557fead88e5, type: 3}
+  - {fileID: 21300000, guid: ff46e6b614ce91f478eda2bee1d1ba74, type: 3}
+  - {fileID: 21300000, guid: 3465ed0789a2def40aa4090c5dfd0fee, type: 3}
+  - {fileID: 21300000, guid: 6eb810678e084474aa203bc0cedecc04, type: 3}
+  - {fileID: 21300000, guid: 2699ca67f11183448941b0d59ed37cbb, type: 3}
+  - {fileID: 21300000, guid: ab34c0b751f18cc4897df06eb07a9231, type: 3}
+  - {fileID: 21300000, guid: 8d7a2838d3a1f7c42a206db77dd0a7b6, type: 3}
+  - {fileID: 21300000, guid: 549ed448cacede341ac4e79dd64244e9, type: 3}
+  - {fileID: 21300000, guid: 4fc2406817ade87449f7eda71ab3758e, type: 3}
+  - {fileID: 21300000, guid: 3d2dfeb855653034b9b592143fa6375a, type: 3}
+  - {fileID: 21300000, guid: bda089f830994fa4197a3ece0612917f, type: 3}
+  - {fileID: 21300000, guid: da2fd949a9a53a145a53e33e7aec2fce, type: 3}
+  - {fileID: 21300000, guid: 241b0259ed76db644a7c9dec4d024d19, type: 3}
+  - {fileID: 21300000, guid: 85d6ee8944bb39d4194ab8eba40e68c9, type: 3}
+  - {fileID: 21300000, guid: de4fe6a9abe587b4d8f2713487d5f83a, type: 3}
+  - {fileID: 21300000, guid: 678d4c4afab1e7a4d840b6ce6836a498, type: 3}
+  - {fileID: 21300000, guid: 2596b35a328f2d24fb032e999e62e8bc, type: 3}
+  - {fileID: 21300000, guid: 3b7c2c0b51ed7a24ea441c9457e4336f, type: 3}
+  - {fileID: 21300000, guid: 6aadd77bd3015a7489312092d5ad41ef, type: 3}
+  - {fileID: 21300000, guid: 331b760cb9683b047b3f2f73221ad92b, type: 3}
+  - {fileID: 21300000, guid: 7258a65cc2054a14a88eac40c5dd3033, type: 3}
+  - {fileID: 21300000, guid: 272fd36ce2af32d43a12484815b0dd9d, type: 3}
+  - {fileID: 21300000, guid: c420c2cc05e046e4fad57b209da154c9, type: 3}
+  - {fileID: 21300000, guid: 4564c7ec470c51648a4e1ea495887c7a, type: 3}
+  - {fileID: 21300000, guid: 3928001d6c3eb3a42849444854672f8a, type: 3}
+  - {fileID: 21300000, guid: b3a96dadb15773c48a94148d53115e6d, type: 3}
+  - {fileID: 21300000, guid: b2d8eead97c0b394ab62d9293a1b8d81, type: 3}
+  - {fileID: 21300000, guid: ee23b8bd7bb4fef4e91e8b50fdae57c6, type: 3}
+  - {fileID: 21300000, guid: 17bb52cd1e9b70043a3d97fc1ef013f3, type: 3}
+  - {fileID: 21300000, guid: 660b84fd9ea8dd2499b4d75ffcf657ce, type: 3}
+  - {fileID: 21300000, guid: 8930d3ae1a3fc1745a03bf9e679da33d, type: 3}
+  - {fileID: 21300000, guid: 41c1d3dedc7e8bf41bf6c52ced186c83, type: 3}
+  - {fileID: 21300000, guid: fe47f26fb6c32a343bf46f799d3aa07a, type: 3}
+  - {fileID: 21300000, guid: dc03778f1b0b734478a4fa6cff5f509d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - LightDragon_Attack A_47
+  - LightDragon_Attack A_29
+  - LightDragon_Attack A_38
+  - LightDragon_Attack A_35
+  - LightDragon_Attack A_14
+  - LightDragon_Attack A_16
+  - LightDragon_Attack A_45
+  - LightDragon_Attack A_57
+  - LightDragon_Attack A_48
+  - LightDragon_Attack A_23
+  - LightDragon_Attack A_31
+  - LightDragon_Attack A_19
+  - LightDragon_Attack A_40
+  - LightDragon_Attack A_39
+  - LightDragon_Attack A_61
+  - LightDragon_Attack A_06
+  - LightDragon_Attack A_13
+  - LightDragon_Attack A_18
+  - LightDragon_Attack A_25
+  - LightDragon_Attack A_15
+  - LightDragon_Attack A_46
+  - LightDragon_Attack A_34
+  - LightDragon_Attack A_60
+  - LightDragon_Attack A_53
+  - LightDragon_Attack A_00
+  - LightDragon_Attack A_04
+  - LightDragon_Attack A_07
+  - LightDragon_Attack A_21
+  - LightDragon_Attack A_43
+  - LightDragon_Attack A_01
+  - LightDragon_Attack A_55
+  - LightDragon_Attack A_26
+  - LightDragon_Attack A_51
+  - LightDragon_Attack A_59
+  - LightDragon_Attack A_28
+  - LightDragon_Attack A_22
+  - LightDragon_Attack A_10
+  - LightDragon_Attack A_12
+  - LightDragon_Attack A_32
+  - LightDragon_Attack A_30
+  - LightDragon_Attack A_63
+  - LightDragon_Attack A_41
+  - LightDragon_Attack A_56
+  - LightDragon_Attack A_11
+  - LightDragon_Attack A_58
+  - LightDragon_Attack A_37
+  - LightDragon_Attack A_08
+  - LightDragon_Attack A_09
+  - LightDragon_Attack A_27
+  - LightDragon_Attack A_54
+  - LightDragon_Attack A_62
+  - LightDragon_Attack A_02
+  - LightDragon_Attack A_03
+  - LightDragon_Attack A_44
+  - LightDragon_Attack A_49
+  - LightDragon_Attack A_42
+  - LightDragon_Attack A_24
+  - LightDragon_Attack A_17
+  - LightDragon_Attack A_36
+  - LightDragon_Attack A_52
+  - LightDragon_Attack A_33
+  - LightDragon_Attack A_20
+  - LightDragon_Attack A_05
+  - LightDragon_Attack A_50
+  m_Tag: Luzuria_Front
+  m_IsVariant: 0

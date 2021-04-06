@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Thanatos_Front
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 47b967d11ff6b53488fa61be4993841d, type: 3}
+    totalSpriteSurfaceArea: 184000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6f005610cf586b9419d1facb2c5f8e23, type: 3}
+  - {fileID: 21300000, guid: a018ba40e340dc9499a02fdd18af185d, type: 3}
+  - {fileID: 21300000, guid: 5bdaa670b1656d64e8b0b8eef7fc248c, type: 3}
+  - {fileID: 21300000, guid: 4f475c713bde1ff49a9acd35faf8b006, type: 3}
+  - {fileID: 21300000, guid: e7900691ad2e9eb4b96588ef75bc857d, type: 3}
+  - {fileID: 21300000, guid: 51318bb1095c71f45b06ab9b511ba9f5, type: 3}
+  - {fileID: 21300000, guid: a27cc7c1531d5134787090879077287c, type: 3}
+  - {fileID: 21300000, guid: 3bcef7f114f464b49b8050ebe1f9c695, type: 3}
+  - {fileID: 21300000, guid: 201c0ff136242d341bd2ce21f81a3cd7, type: 3}
+  - {fileID: 21300000, guid: 153b5e02ee6adfb4a9d44ec4108c7e7d, type: 3}
+  - {fileID: 21300000, guid: e99e08122c4322342bb8574bfa35c3e8, type: 3}
+  - {fileID: 21300000, guid: 637f7172362a7174bbb33493d890cc5d, type: 3}
+  - {fileID: 21300000, guid: b1f612828e503b94aaa4f1962fa06e74, type: 3}
+  - {fileID: 21300000, guid: f7e34823758944d45836b627057da3ad, type: 3}
+  - {fileID: 21300000, guid: 0c18b3330b8d0b746bb8c2aa402c06a9, type: 3}
+  - {fileID: 21300000, guid: 2e2852b38020b364e98968a0c8f938a3, type: 3}
+  - {fileID: 21300000, guid: e10995b3f3961b2488a9ae4b5a51e365, type: 3}
+  - {fileID: 21300000, guid: f0ddf5341095bab4b9ad56ed2c79d03a, type: 3}
+  - {fileID: 21300000, guid: b1032d06bb2e97f4dac6bfea4d750438, type: 3}
+  - {fileID: 21300000, guid: 4d138556496adbd40bc30d7d03508de8, type: 3}
+  - {fileID: 21300000, guid: d431d066ebee58640ad5b778aa65882c, type: 3}
+  - {fileID: 21300000, guid: 03db7666b1d075245aa437671340735c, type: 3}
+  - {fileID: 21300000, guid: 602bc1b698bae7047a9c46fe4b56dfa6, type: 3}
+  - {fileID: 21300000, guid: cbad0fb658da59c46bed395f1be43e91, type: 3}
+  - {fileID: 21300000, guid: 63d72ee62073e7d499cfdbb02f270dc0, type: 3}
+  - {fileID: 21300000, guid: 821ee617a8c5f354db77a307625c2016, type: 3}
+  - {fileID: 21300000, guid: d5f70b57a52ce4b45926e666b60bfb22, type: 3}
+  - {fileID: 21300000, guid: 4cc05e87dbd09004e9e0a3f46957d753, type: 3}
+  - {fileID: 21300000, guid: 8079d2a7557945e499abb349e5ea05f0, type: 3}
+  - {fileID: 21300000, guid: 72d4719870371664abfccc78c15e02aa, type: 3}
+  - {fileID: 21300000, guid: f1eb7979cede26a408638f916735cfd2, type: 3}
+  - {fileID: 21300000, guid: 465472f9bce8ba04e88946c61366f898, type: 3}
+  - {fileID: 21300000, guid: 61a0540b924485c44971282f897cbf45, type: 3}
+  - {fileID: 21300000, guid: 7479ce0b3e328dc4595cfecadfd58859, type: 3}
+  - {fileID: 21300000, guid: 25c4687b466288b41a177cb0e6b67317, type: 3}
+  - {fileID: 21300000, guid: 5336628b7023db340a93d53d1ad1043e, type: 3}
+  - {fileID: 21300000, guid: 6386a2ab87fa2cc42b4c837fc69f10c0, type: 3}
+  - {fileID: 21300000, guid: 6fc0bebbd8c8d4d4b8808f09c58795e4, type: 3}
+  - {fileID: 21300000, guid: b5bfabcb03dfa55499f35ec973a023f2, type: 3}
+  - {fileID: 21300000, guid: b68d5bdb8299d9245a599b092f4c2d14, type: 3}
+  - {fileID: 21300000, guid: 09462bfcc34477647846994f6c3aba6a, type: 3}
+  - {fileID: 21300000, guid: a788697dfc0f9a44c9b4e09d31c3302a, type: 3}
+  - {fileID: 21300000, guid: 6e4bedfe0c2038246889c60ca3f30039, type: 3}
+  - {fileID: 21300000, guid: e390736f76be8f945bbb9a51f83c68f2, type: 3}
+  - {fileID: 21300000, guid: 9b9e1e7fa11f68440be553340c97a5ad, type: 3}
+  - {fileID: 21300000, guid: ea69f99f69f041e4c991b6fffaeecca1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Thanatos_Attack_A_01
+  - Thanatos_Attack_A_39
+  - Thanatos_Attack_A_30
+  - Thanatos_Attack_A_15
+  - Thanatos_Attack_A_10
+  - Thanatos_Attack_A_12
+  - Thanatos_Attack_A_05
+  - Thanatos_Attack_A_00
+  - Thanatos_Attack_A_38
+  - Thanatos_Attack_A_18
+  - Thanatos_Attack_A_20
+  - Thanatos_Attack_A_42
+  - Thanatos_Attack_A_26
+  - Thanatos_Attack_A_21
+  - Thanatos_Attack_A_16
+  - Thanatos_Attack_A_11
+  - Thanatos_Attack_A_04
+  - Thanatos_Attack_A_41
+  - Thanatos_Attack_A_29
+  - Thanatos_Attack_A_08
+  - Thanatos_Attack_A_24
+  - Thanatos_Attack_A_37
+  - Thanatos_Attack_A_02
+  - Thanatos_Attack_A_22
+  - Thanatos_Attack_A_27
+  - Thanatos_Attack_A_43
+  - Thanatos_Attack_A_32
+  - Thanatos_Attack_A_17
+  - Thanatos_Attack_A_31
+  - Thanatos_Attack_A_35
+  - Thanatos_Attack_A_45
+  - Thanatos_Attack_A_19
+  - Thanatos_Attack_A_23
+  - Thanatos_Attack_A_34
+  - Thanatos_Attack_A_09
+  - Thanatos_Attack_A_14
+  - Thanatos_Attack_A_06
+  - Thanatos_Attack_A_40
+  - Thanatos_Attack_A_25
+  - Thanatos_Attack_A_03
+  - Thanatos_Attack_A_28
+  - Thanatos_Attack_A_33
+  - Thanatos_Attack_A_44
+  - Thanatos_Attack_A_07
+  - Thanatos_Attack_A_13
+  - Thanatos_Attack_A_36
+  m_Tag: Thanatos_Front
+  m_IsVariant: 0

@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Azdaha_Death
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c044936538add5147b4baa9c9dc2ad08, type: 3}
+    totalSpriteSurfaceArea: 184000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: fc0fd931dd75d374e9f4d4a1feede53d, type: 3}
+  - {fileID: 21300000, guid: 0c806d5195ad32345ae9b434d953f3db, type: 3}
+  - {fileID: 21300000, guid: cf2478827e8fdd44f921abc3f37702ee, type: 3}
+  - {fileID: 21300000, guid: 1b338ce29202724429154e4ce590fd8c, type: 3}
+  - {fileID: 21300000, guid: d0253a03327d4ff4bb12538582ed394a, type: 3}
+  - {fileID: 21300000, guid: b1aa0b13bf257b746be36c73976d94b2, type: 3}
+  - {fileID: 21300000, guid: 7db5f463d8c5b194c941acce981eb084, type: 3}
+  - {fileID: 21300000, guid: c7af6d63ad8cac344aecf493b4a5a879, type: 3}
+  - {fileID: 21300000, guid: 563885b3bbeebea4ba35e4ef436607fe, type: 3}
+  - {fileID: 21300000, guid: 0b7a12d38737c0d46a032a851bbd4879, type: 3}
+  - {fileID: 21300000, guid: 2959a3445d4383847b4b5df82a269762, type: 3}
+  - {fileID: 21300000, guid: 07c88aa49e9c53a4f98e409cf0a1f61f, type: 3}
+  - {fileID: 21300000, guid: 491600e52e87b8d48aa9e3c1644f5616, type: 3}
+  - {fileID: 21300000, guid: 0da7e4469b6103e4a86c9e29cbb99814, type: 3}
+  - {fileID: 21300000, guid: 2e2e4be6b6a8af142af5e808380d7ec8, type: 3}
+  - {fileID: 21300000, guid: 17a2d7872b8d0c84c8ab84ccc6685634, type: 3}
+  - {fileID: 21300000, guid: 8673adb7a5682324a96405a86d312fcb, type: 3}
+  - {fileID: 21300000, guid: 5b9c27d7057eeb04b9d755c7639428b4, type: 3}
+  - {fileID: 21300000, guid: 4d0c4b48d6d0df54394f90356fdec6ce, type: 3}
+  - {fileID: 21300000, guid: c4a63398be80e9d43b0c2dbfe632141c, type: 3}
+  - {fileID: 21300000, guid: aa30fbc81d3198841bf797f97d8752c4, type: 3}
+  - {fileID: 21300000, guid: b9e152e8b3cd2844aa5eb8511a6a23b3, type: 3}
+  - {fileID: 21300000, guid: 5fd8a4196f050d84c96aaf806dfd6c58, type: 3}
+  - {fileID: 21300000, guid: e52a0179d9a1ce54a9805bbdcdc7f893, type: 3}
+  - {fileID: 21300000, guid: 7c4913b9c26845d46a69aa5af12ae4d7, type: 3}
+  - {fileID: 21300000, guid: 503bb61a0953b5e498590371feb4ad94, type: 3}
+  - {fileID: 21300000, guid: c5347b1a6c7631146beab2dfbe4afe74, type: 3}
+  - {fileID: 21300000, guid: 142b6cba3da3d444388189b775294f81, type: 3}
+  - {fileID: 21300000, guid: 271054ca36455e845a1b84f080eb7128, type: 3}
+  - {fileID: 21300000, guid: 57304dfa2bbb45949a29cb25ced74efb, type: 3}
+  - {fileID: 21300000, guid: 8beb623ba4e134143a08f5320bb64daa, type: 3}
+  - {fileID: 21300000, guid: a9cd7f3b3bed41d46b7c92c695c4e611, type: 3}
+  - {fileID: 21300000, guid: 2082b34bf33e32c44a9ca2d1c9884703, type: 3}
+  - {fileID: 21300000, guid: fae6517b6e9c65f4580d01bb9b1f8643, type: 3}
+  - {fileID: 21300000, guid: 8952069b3cb222548ae87ba862b12e45, type: 3}
+  - {fileID: 21300000, guid: 214e2feb63928584ab4d0c264379d378, type: 3}
+  - {fileID: 21300000, guid: 02e9f4cca98631041a060f065f525856, type: 3}
+  - {fileID: 21300000, guid: f78e885d91bf50945a7a0199c806d8f0, type: 3}
+  - {fileID: 21300000, guid: d0a32d8d3678dbc40b0b7696f7553b17, type: 3}
+  - {fileID: 21300000, guid: ed9100ad03aa08e41b0a5f5644d284f0, type: 3}
+  - {fileID: 21300000, guid: 4ab1be4e048689047a6392108d0633cd, type: 3}
+  - {fileID: 21300000, guid: 6fb33e7e18c977544a464d9eff2c3a22, type: 3}
+  - {fileID: 21300000, guid: 9b1ee66f12b430344a17f9570a8ad9d8, type: 3}
+  - {fileID: 21300000, guid: 9ae1f76f9ead24943b179452f9418f55, type: 3}
+  - {fileID: 21300000, guid: 296c3b6fcb5f4b848a881dc2ccd4a0ba, type: 3}
+  - {fileID: 21300000, guid: d626eeaff4cebe34ba585478085aa54b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Death VFX_00035
+  - Death VFX_00045
+  - Death VFX_00016
+  - Death VFX_00010
+  - Death VFX_00027
+  - Death VFX_00034
+  - Death VFX_00005
+  - Death VFX_00000
+  - Death VFX_00032
+  - Death VFX_00044
+  - Death VFX_00037
+  - Death VFX_00029
+  - Death VFX_00038
+  - Death VFX_00003
+  - Death VFX_00002
+  - Death VFX_00036
+  - Death VFX_00020
+  - Death VFX_00012
+  - Death VFX_00042
+  - Death VFX_00017
+  - Death VFX_00024
+  - Death VFX_00009
+  - Death VFX_00022
+  - Death VFX_00011
+  - Death VFX_00018
+  - Death VFX_00013
+  - Death VFX_00026
+  - Death VFX_00033
+  - Death VFX_00040
+  - Death VFX_00006
+  - Death VFX_00025
+  - Death VFX_00030
+  - Death VFX_00023
+  - Death VFX_00008
+  - Death VFX_00015
+  - Death VFX_00019
+  - Death VFX_00021
+  - Death VFX_00004
+  - Death VFX_00028
+  - Death VFX_00039
+  - Death VFX_00001
+  - Death VFX_00031
+  - Death VFX_00041
+  - Death VFX_00007
+  - Death VFX_00043
+  - Death VFX_00014
+  m_Tag: Azdaha_Death
+  m_IsVariant: 0

@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Zeograth_Death
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 4ff26d2b754544b4fb7b34319cc3c26d, type: 3}
+    totalSpriteSurfaceArea: 368000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 46b6a3f031a94cf418ad874ce4f27ec2, type: 3}
+  - {fileID: 21300000, guid: ed52604120524c4479205e45941c1156, type: 3}
+  - {fileID: 21300000, guid: 3b85a671f8c81ef4c8862c539fd9bb55, type: 3}
+  - {fileID: 21300000, guid: 8c9dee81042b1b247a23519b56e54e4a, type: 3}
+  - {fileID: 21300000, guid: 7d37669152f46b94984fed6a9baed54c, type: 3}
+  - {fileID: 21300000, guid: 9638aca1532c4074e96069a61a6e040a, type: 3}
+  - {fileID: 21300000, guid: d0063fa130401e949a4adc9845103087, type: 3}
+  - {fileID: 21300000, guid: abb434c1a6e980d499726ea974b5188b, type: 3}
+  - {fileID: 21300000, guid: bb1498f1963188d4e94cd0fdb5c066ca, type: 3}
+  - {fileID: 21300000, guid: d3a40312699241a47a96f0a54ab94fc1, type: 3}
+  - {fileID: 21300000, guid: 4176fc52e61333e48a7e6f28d2cece5d, type: 3}
+  - {fileID: 21300000, guid: af06e662d2f6e0d4c8f2ad2d3fe6620e, type: 3}
+  - {fileID: 21300000, guid: ac3ea182d40285d4dbd100fc7319ca00, type: 3}
+  - {fileID: 21300000, guid: 00f71692a53cb5d4c91458545efab1b1, type: 3}
+  - {fileID: 21300000, guid: 990d8b9222b563442bf571877adaaae3, type: 3}
+  - {fileID: 21300000, guid: 379af8d2b52b44e4c876fb1ff07af8df, type: 3}
+  - {fileID: 21300000, guid: e8766513e7df5e54b826b851de9980e3, type: 3}
+  - {fileID: 21300000, guid: 57210ce35003d3c43abe273cadcdfca9, type: 3}
+  - {fileID: 21300000, guid: 2b0e4104c4fc8454b86b7287bc08f08f, type: 3}
+  - {fileID: 21300000, guid: d2e8a6143d119fd43961226a9a398f01, type: 3}
+  - {fileID: 21300000, guid: 974c171467956904e91fc72671f190e8, type: 3}
+  - {fileID: 21300000, guid: b1b7b394552390a4bab690c958c1e24a, type: 3}
+  - {fileID: 21300000, guid: 80d0fc944410f5d4f955c4dafca9b761, type: 3}
+  - {fileID: 21300000, guid: 39128e94ee04a464aae3160df14c6b0e, type: 3}
+  - {fileID: 21300000, guid: 8f3f4cb4db67e164faf2226b417665b8, type: 3}
+  - {fileID: 21300000, guid: 7aec26e4b65657f48bcb5cd387f31cc4, type: 3}
+  - {fileID: 21300000, guid: 71d74a05b41d24c46a866464045f4296, type: 3}
+  - {fileID: 21300000, guid: d338a3258fef7ec4f96422f3f78894e3, type: 3}
+  - {fileID: 21300000, guid: e6cae565cfb538046bc59aeacd091a07, type: 3}
+  - {fileID: 21300000, guid: b8d06885ad7ca88468e1762e6c204174, type: 3}
+  - {fileID: 21300000, guid: bfa963a54649d1d4d99a027f19c9c5b3, type: 3}
+  - {fileID: 21300000, guid: b1069ed52470ba049b9a5db41245ef39, type: 3}
+  - {fileID: 21300000, guid: a8096326ba3460747a89d805b3c26d5b, type: 3}
+  - {fileID: 21300000, guid: cacd9c26c4ca5ce478b26321528d59b5, type: 3}
+  - {fileID: 21300000, guid: a7185a56aa223cb47a6e4ae7c412ca95, type: 3}
+  - {fileID: 21300000, guid: 02c7d476121826d49a178d2a2c95540d, type: 3}
+  - {fileID: 21300000, guid: 252e6e96f72d8e84994ee708de1b5594, type: 3}
+  - {fileID: 21300000, guid: 6cbab3274a8b2de4493e44b51279f130, type: 3}
+  - {fileID: 21300000, guid: df6c6547f5bc59740b685f07a8d47a31, type: 3}
+  - {fileID: 21300000, guid: ca67d3d7e41e3344cb61a0b4ad4d90d4, type: 3}
+  - {fileID: 21300000, guid: 2957a0e7980c5ab4d9e234c4f6fc24e7, type: 3}
+  - {fileID: 21300000, guid: 90f32888e3f98044c8ae37da49caff66, type: 3}
+  - {fileID: 21300000, guid: 2455f7d8377dcff439bcbab748fac1c2, type: 3}
+  - {fileID: 21300000, guid: 662b7d89408674046aea4f25575e1ef2, type: 3}
+  - {fileID: 21300000, guid: d0a176b96b961fb4e8d8ddbdbaad9c2b, type: 3}
+  - {fileID: 21300000, guid: 50215dd94f8510c4093ff15d2d46b191, type: 3}
+  - {fileID: 21300000, guid: 34a4bdd9ba08d8c4fb4fdfcef11b99dd, type: 3}
+  - {fileID: 21300000, guid: cad822e92febe20499c719b302926251, type: 3}
+  - {fileID: 21300000, guid: c2b919e975ae6474c89e94dd58c14dbe, type: 3}
+  - {fileID: 21300000, guid: 5bee68f92ce99824d9a0235e609346b9, type: 3}
+  - {fileID: 21300000, guid: c4a8fd8a35e04bc4c902fd59685e0b0b, type: 3}
+  - {fileID: 21300000, guid: b20b8ccaa0a8559408e35b319b3ea901, type: 3}
+  - {fileID: 21300000, guid: 19b4700b11f91374b8baa99c54cb3e62, type: 3}
+  - {fileID: 21300000, guid: 6806541be56240d42a5d303e37f9d64b, type: 3}
+  - {fileID: 21300000, guid: 7e73e13bf12386949aa2c9e9cdf04fa3, type: 3}
+  - {fileID: 21300000, guid: 7c204a3bb8193534c8a54aa055d86e95, type: 3}
+  - {fileID: 21300000, guid: 1427e34be820439479f561f9fda31f9c, type: 3}
+  - {fileID: 21300000, guid: 39e2666b77ac7444eb72b37b18953b09, type: 3}
+  - {fileID: 21300000, guid: ad288d6b651432146acb1325f11653ed, type: 3}
+  - {fileID: 21300000, guid: a5ae7f7ba545d414a9d41551c35f7ad9, type: 3}
+  - {fileID: 21300000, guid: 5af652cbbd40a6e44ba0cc80f6d1814c, type: 3}
+  - {fileID: 21300000, guid: b29334db92635124a8f069bc7f73ce4f, type: 3}
+  - {fileID: 21300000, guid: 202c68db6b85fef4ab1676e9e08949c8, type: 3}
+  - {fileID: 21300000, guid: 17a63ceb18239c044a67c95a1b843a49, type: 3}
+  - {fileID: 21300000, guid: c37fbb1cb370edb489c54bb4687a682e, type: 3}
+  - {fileID: 21300000, guid: 3302393c99627d644b2fba966d1f6c6a, type: 3}
+  - {fileID: 21300000, guid: 2526054c8287ac8478eddff4a3dee55b, type: 3}
+  - {fileID: 21300000, guid: 7fff5c5c33d14f94f85fc7bcd4aa47dd, type: 3}
+  - {fileID: 21300000, guid: cc5d4f6c9209d734c9313df7ca35c4e6, type: 3}
+  - {fileID: 21300000, guid: 6be16a7ced519d447bc328a129a97842, type: 3}
+  - {fileID: 21300000, guid: 5fc4ebbc15bae464b8404b7592af9c10, type: 3}
+  - {fileID: 21300000, guid: 8c22971dfabed974ca4cfbfad452e08f, type: 3}
+  - {fileID: 21300000, guid: ea16333d79f0de84d9e0b9060a193474, type: 3}
+  - {fileID: 21300000, guid: b57d7f4d5a26c994ab06cbf9e5a17b43, type: 3}
+  - {fileID: 21300000, guid: f94c4e9d076de4d4a9c1fa2c8cd9650c, type: 3}
+  - {fileID: 21300000, guid: 6b1d28ad790895344a5a9e63cf06d82c, type: 3}
+  - {fileID: 21300000, guid: 45cbffdd681b3ff4584f4fa71e0b05f9, type: 3}
+  - {fileID: 21300000, guid: c453d9ed6b7024d478c2961367f6d489, type: 3}
+  - {fileID: 21300000, guid: d3b4730ec48d1dc4aab331a484bae2e1, type: 3}
+  - {fileID: 21300000, guid: 7d78832eb3770174e88f4bc13691bed2, type: 3}
+  - {fileID: 21300000, guid: 35753e3eda11620448de114427edf9d0, type: 3}
+  - {fileID: 21300000, guid: 5148564ed3460d946b3c027b74bb5965, type: 3}
+  - {fileID: 21300000, guid: ce197aae192b6e14a852ae50e29b9193, type: 3}
+  - {fileID: 21300000, guid: 70cf06ce9bc9ff14da8cbc78b5907c3c, type: 3}
+  - {fileID: 21300000, guid: f83c61de5ae3ee4469c851fe36d45373, type: 3}
+  - {fileID: 21300000, guid: a62b3eee3fabdc140b9d8921172cfee6, type: 3}
+  - {fileID: 21300000, guid: 79ba254f6d60b91428b8ca9190e4abe2, type: 3}
+  - {fileID: 21300000, guid: 55b2005f804b1b44a9497ebb68fca06a, type: 3}
+  - {fileID: 21300000, guid: c71ea08fbb8dceb4f97708476fc693f6, type: 3}
+  - {fileID: 21300000, guid: d56e1eaf3796e8645ae97c7dc1f04637, type: 3}
+  - {fileID: 21300000, guid: b7a5fcef8a9160643a9b63a1d968ad59, type: 3}
+  - {fileID: 21300000, guid: 05697bff056369544a8f9e937d8a1aa1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Zeograth_Damage_duplication1_00044
+  - Zeograth_Damage_duplication1_00035
+  - Zeograth_Damage_duplication1_00007
+  - Zeograth_Damage_duplication1_00036
+  - Zeograth_DeathVfx_00045
+  - Zeograth_Damage_duplication1_00040
+  - Zeograth_DeathVfx_00021
+  - Zeograth_Damage_duplication1_00015
+  - Zeograth_DeathVfx_00033
+  - Zeograth_DeathVfx_00017
+  - Zeograth_Damage_duplication1_00013
+  - Zeograth_DeathVfx_00035
+  - Zeograth_Damage_duplication1_00038
+  - Zeograth_Damage_duplication1_00017
+  - Zeograth_Damage_duplication1_00020
+  - Zeograth_Damage_duplication1_00003
+  - Zeograth_DeathVfx_00040
+  - Zeograth_DeathVfx_00042
+  - Zeograth_DeathVfx_00008
+  - Zeograth_Damage_duplication1_00002
+  - Zeograth_DeathVfx_00004
+  - Zeograth_DeathVfx_00001
+  - Zeograth_DeathVfx_00011
+  - Zeograth_Damage_duplication1_00041
+  - Zeograth_DeathVfx_00023
+  - Zeograth_Damage_duplication1_00037
+  - Zeograth_DeathVfx_00037
+  - Zeograth_Damage_duplication1_00018
+  - Zeograth_DeathVfx_00006
+  - Zeograth_Damage_duplication1_00010
+  - Zeograth_DeathVfx_00044
+  - Zeograth_Damage_duplication1_00043
+  - Zeograth_DeathVfx_00030
+  - Zeograth_Damage_duplication1_00012
+  - Zeograth_DeathVfx_00009
+  - Zeograth_Damage_duplication1_00025
+  - Zeograth_DeathVfx_00038
+  - Zeograth_Damage_duplication1_00009
+  - Zeograth_DeathVfx_00031
+  - Zeograth_DeathVfx_00024
+  - Zeograth_DeathVfx_00022
+  - Zeograth_DeathVfx_00043
+  - Zeograth_Damage_duplication1_00032
+  - Zeograth_DeathVfx_00000
+  - Zeograth_DeathVfx_00020
+  - Zeograth_DeathVfx_00007
+  - Zeograth_Damage_duplication1_00031
+  - Zeograth_Damage_duplication1_00045
+  - Zeograth_DeathVfx_00018
+  - Zeograth_Damage_duplication1_00011
+  - Zeograth_Damage_duplication1_00001
+  - Zeograth_Damage_duplication1_00016
+  - Zeograth_DeathVfx_00026
+  - Zeograth_DeathVfx_00039
+  - Zeograth_DeathVfx_00012
+  - Zeograth_DeathVfx_00002
+  - Zeograth_Damage_duplication1_00005
+  - Zeograth_DeathVfx_00036
+  - Zeograth_Damage_duplication1_00034
+  - Zeograth_Damage_duplication1_00006
+  - Zeograth_DeathVfx_00003
+  - Zeograth_Damage_duplication1_00008
+  - Zeograth_DeathVfx_00032
+  - Zeograth_DeathVfx_00015
+  - Zeograth_Damage_duplication1_00023
+  - Zeograth_Damage_duplication1_00014
+  - Zeograth_Damage_duplication1_00029
+  - Zeograth_Damage_duplication1_00027
+  - Zeograth_DeathVfx_00013
+  - Zeograth_DeathVfx_00029
+  - Zeograth_DeathVfx_00016
+  - Zeograth_DeathVfx_00041
+  - Zeograth_DeathVfx_00034
+  - Zeograth_Damage_duplication1_00042
+  - Zeograth_Damage_duplication1_00021
+  - Zeograth_Damage_duplication1_00033
+  - Zeograth_DeathVfx_00014
+  - Zeograth_DeathVfx_00025
+  - Zeograth_DeathVfx_00019
+  - Zeograth_Damage_duplication1_00028
+  - Zeograth_Damage_duplication1_00039
+  - Zeograth_Damage_duplication1_00022
+  - Zeograth_DeathVfx_00028
+  - Zeograth_Damage_duplication1_00000
+  - Zeograth_DeathVfx_00027
+  - Zeograth_Damage_duplication1_00026
+  - Zeograth_Damage_duplication1_00024
+  - Zeograth_Damage_duplication1_00004
+  - Zeograth_DeathVfx_00010
+  - Zeograth_DeathVfx_00005
+  - Zeograth_Damage_duplication1_00019
+  - Zeograth_Damage_duplication1_00030
+  m_Tag: Zeograth_Death
+  m_IsVariant: 0
