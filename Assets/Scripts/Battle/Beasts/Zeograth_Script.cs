@@ -47,6 +47,34 @@ public class Zeograth_Script : MonoBehaviour, Parent_Beast
         }
     }
 
+    public void PlayScratchMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 0);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(1, 1);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Zeograth/Zeograth_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("FrontFirst");
+    }
+
+    public void PlayBiteMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 0);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(1, 1);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Zeograth/Zeograth_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Front");
+    }
+
     public void Play_SoundFX()
     {
         throw new System.NotImplementedException();
