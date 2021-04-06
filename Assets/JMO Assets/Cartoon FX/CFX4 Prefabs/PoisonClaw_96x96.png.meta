@@ -1,0 +1,1574 @@
+fileFormatVersion: 2
+guid: 69a37d89ad8ee3c4caa2cad3c0d903a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3731417798937468785
+    second: PoisonClaw_96x96_0
+  - first:
+      213: 4873722802066240851
+    second: PoisonClaw_96x96_1
+  - first:
+      213: -1456406739242234921
+    second: PoisonClaw_96x96_2
+  - first:
+      213: 2807492759650099354
+    second: PoisonClaw_96x96_3
+  - first:
+      213: -3296153503634395588
+    second: PoisonClaw_96x96_4
+  - first:
+      213: 7865960148710530106
+    second: PoisonClaw_96x96_5
+  - first:
+      213: -6161630543766842095
+    second: PoisonClaw_96x96_6
+  - first:
+      213: 4442310704568523853
+    second: PoisonClaw_96x96_7
+  - first:
+      213: -2666504511291919266
+    second: PoisonClaw_96x96_8
+  - first:
+      213: -6968033026060202819
+    second: PoisonClaw_96x96_9
+  - first:
+      213: 9144532519008965885
+    second: PoisonClaw_96x96_10
+  - first:
+      213: 1077189010716633589
+    second: PoisonClaw_96x96_11
+  - first:
+      213: 6424692871169588922
+    second: PoisonClaw_96x96_12
+  - first:
+      213: 7671186393787673022
+    second: PoisonClaw_96x96_13
+  - first:
+      213: 9016432920998476124
+    second: PoisonClaw_96x96_14
+  - first:
+      213: -4994376509441822460
+    second: PoisonClaw_96x96_15
+  - first:
+      213: -2805187146759727293
+    second: PoisonClaw_96x96_16
+  - first:
+      213: -205184407323673112
+    second: PoisonClaw_96x96_17
+  - first:
+      213: 6202113033849587966
+    second: PoisonClaw_96x96_18
+  - first:
+      213: 6065706394912672337
+    second: PoisonClaw_96x96_19
+  - first:
+      213: 7406690465532410029
+    second: PoisonClaw_96x96_20
+  - first:
+      213: -5188663277103036923
+    second: PoisonClaw_96x96_21
+  - first:
+      213: 3317688852075684884
+    second: PoisonClaw_96x96_22
+  - first:
+      213: 3849210988812662756
+    second: PoisonClaw_96x96_23
+  - first:
+      213: 7116443478296730862
+    second: PoisonClaw_96x96_24
+  - first:
+      213: 2496757625671606198
+    second: PoisonClaw_96x96_25
+  - first:
+      213: -5775794040398176993
+    second: PoisonClaw_96x96_26
+  - first:
+      213: 5785002293213884013
+    second: PoisonClaw_96x96_27
+  - first:
+      213: 7348386960012406284
+    second: PoisonClaw_96x96_28
+  - first:
+      213: -8662194284406597365
+    second: PoisonClaw_96x96_29
+  - first:
+      213: 1649298397781172529
+    second: PoisonClaw_96x96_30
+  - first:
+      213: 8349006483864953225
+    second: PoisonClaw_96x96_31
+  - first:
+      213: 7220530008755877821
+    second: PoisonClaw_96x96_32
+  - first:
+      213: 8703772258264017783
+    second: PoisonClaw_96x96_33
+  - first:
+      213: 58422098513987308
+    second: PoisonClaw_96x96_34
+  - first:
+      213: 3390320933198410833
+    second: PoisonClaw_96x96_35
+  - first:
+      213: 6728604995847735423
+    second: PoisonClaw_96x96_36
+  - first:
+      213: -5155450115090682583
+    second: PoisonClaw_96x96_37
+  - first:
+      213: -8205475829587012290
+    second: PoisonClaw_96x96_38
+  - first:
+      213: 6124161398956084594
+    second: PoisonClaw_96x96_39
+  - first:
+      213: 874523338888585370
+    second: PoisonClaw_96x96_40
+  - first:
+      213: -135563778511056084
+    second: PoisonClaw_96x96_41
+  - first:
+      213: 2876208659988568570
+    second: PoisonClaw_96x96_42
+  - first:
+      213: -6866904275873338654
+    second: PoisonClaw_96x96_43
+  - first:
+      213: 4566589893690600545
+    second: PoisonClaw_96x96_44
+  - first:
+      213: 5339686923455433602
+    second: PoisonClaw_96x96_45
+  - first:
+      213: 8558820465834347410
+    second: PoisonClaw_96x96_46
+  - first:
+      213: -6016081699411014222
+    second: PoisonClaw_96x96_47
+  - first:
+      213: 4017178916802161801
+    second: PoisonClaw_96x96_48
+  - first:
+      213: 4601517410644638866
+    second: PoisonClaw_96x96_49
+  - first:
+      213: 7664789584860684193
+    second: PoisonClaw_96x96_50
+  - first:
+      213: -4924425593736793873
+    second: PoisonClaw_96x96_51
+  - first:
+      213: -6210149491321364679
+    second: PoisonClaw_96x96_52
+  - first:
+      213: -280829619613390621
+    second: PoisonClaw_96x96_53
+  - first:
+      213: 187455946641795419
+    second: PoisonClaw_96x96_54
+  - first:
+      213: -1055610306638734084
+    second: PoisonClaw_96x96_55
+  - first:
+      213: -1115663510219708067
+    second: PoisonClaw_96x96_56
+  - first:
+      213: -3241878525196631090
+    second: PoisonClaw_96x96_57
+  - first:
+      213: -2553228083745816508
+    second: PoisonClaw_96x96_58
+  - first:
+      213: 7113110055760356610
+    second: PoisonClaw_96x96_59
+  - first:
+      213: -2575013702978116248
+    second: PoisonClaw_96x96_60
+  - first:
+      213: -8107745158002432012
+    second: PoisonClaw_96x96_61
+  - first:
+      213: 8799414345476607187
+    second: PoisonClaw_96x96_62
+  - first:
+      213: 1532819994531024868
+    second: PoisonClaw_96x96_63
+  - first:
+      213: 974513349035160951
+    second: PoisonClaw_96x96_64
+  - first:
+      213: -6608529710735835598
+    second: PoisonClaw_96x96_65
+  - first:
+      213: -5303944362675882369
+    second: PoisonClaw_96x96_66
+  - first:
+      213: -7681077947323626335
+    second: PoisonClaw_96x96_67
+  - first:
+      213: 8048211790849594475
+    second: PoisonClaw_96x96_68
+  - first:
+      213: -8980627988505718836
+    second: PoisonClaw_96x96_69
+  - first:
+      213: -2010430117060516401
+    second: PoisonClaw_96x96_70
+  - first:
+      213: -6756282432456614463
+    second: PoisonClaw_96x96_71
+  - first:
+      213: -8418150656505706778
+    second: PoisonClaw_96x96_72
+  - first:
+      213: -6477995103154891424
+    second: PoisonClaw_96x96_73
+  - first:
+      213: -5551475307607950635
+    second: PoisonClaw_96x96_74
+  - first:
+      213: -958130293288019807
+    second: PoisonClaw_96x96_75
+  - first:
+      213: -2856352996422007170
+    second: PoisonClaw_96x96_76
+  - first:
+      213: -1325593205481113398
+    second: PoisonClaw_96x96_77
+  - first:
+      213: 4983519882817019388
+    second: PoisonClaw_96x96_78
+  - first:
+      213: -4665182829105503232
+    second: PoisonClaw_96x96_79
+  - first:
+      213: -1300258596157851175
+    second: PoisonClaw_96x96_80
+  - first:
+      213: 3071955178874297692
+    second: PoisonClaw_96x96_81
+  - first:
+      213: -8641345569794955356
+    second: PoisonClaw_96x96_82
+  - first:
+      213: -2256432126140991674
+    second: PoisonClaw_96x96_83
+  - first:
+      213: 4899345462308269489
+    second: PoisonClaw_96x96_84
+  - first:
+      213: -7823968423283839428
+    second: PoisonClaw_96x96_85
+  - first:
+      213: 8096023745369768303
+    second: PoisonClaw_96x96_86
+  - first:
+      213: -8168290228451912887
+    second: PoisonClaw_96x96_87
+  - first:
+      213: 1515056147427513581
+    second: PoisonClaw_96x96_88
+  - first:
+      213: -7696739497845647797
+    second: PoisonClaw_96x96_89
+  - first:
+      213: 8527947376468566973
+    second: PoisonClaw_96x96_90
+  - first:
+      213: -8834858236750717390
+    second: PoisonClaw_96x96_91
+  - first:
+      213: 5817791570530632707
+    second: PoisonClaw_96x96_92
+  - first:
+      213: -8202363443126045375
+    second: PoisonClaw_96x96_93
+  - first:
+      213: 7995818969855257498
+    second: PoisonClaw_96x96_94
+  - first:
+      213: -8430110546044953381
+    second: PoisonClaw_96x96_95
+  - first:
+      213: -1588767197711970948
+    second: PoisonClaw_96x96_96
+  - first:
+      213: -799191629715362350
+    second: PoisonClaw_96x96_97
+  - first:
+      213: -4166173638834893465
+    second: PoisonClaw_96x96_98
+  - first:
+      213: 7859602417199104341
+    second: PoisonClaw_96x96_99
+  - first:
+      213: 7209911696151712951
+    second: PoisonClaw_96x96_100
+  - first:
+      213: -7253653276413137482
+    second: PoisonClaw_96x96_101
+  - first:
+      213: -4049738827845446942
+    second: PoisonClaw_96x96_102
+  - first:
+      213: -3562482172926759123
+    second: PoisonClaw_96x96_103
+  - first:
+      213: 8761403575425467436
+    second: PoisonClaw_96x96_104
+  - first:
+      213: -940026838345196998
+    second: PoisonClaw_96x96_105
+  - first:
+      213: -8245231325131770045
+    second: PoisonClaw_96x96_106
+  - first:
+      213: 3788066727405509215
+    second: PoisonClaw_96x96_107
+  - first:
+      213: 1848802156043497565
+    second: PoisonClaw_96x96_108
+  - first:
+      213: -4037815566120189496
+    second: PoisonClaw_96x96_109
+  - first:
+      213: 2683675944731183517
+    second: PoisonClaw_96x96_110
+  - first:
+      213: -1816189022541563264
+    second: PoisonClaw_96x96_111
+  - first:
+      213: 7708620796444113543
+    second: PoisonClaw_96x96_112
+  - first:
+      213: 3293557862852048056
+    second: PoisonClaw_96x96_113
+  - first:
+      213: -7138107183717132145
+    second: PoisonClaw_96x96_114
+  - first:
+      213: 5231090389810379019
+    second: PoisonClaw_96x96_115
+  - first:
+      213: -7079841611182665517
+    second: PoisonClaw_96x96_116
+  - first:
+      213: -3662136174763878896
+    second: PoisonClaw_96x96_117
+  - first:
+      213: -2285681930110704181
+    second: PoisonClaw_96x96_118
+  - first:
+      213: 4353145929936421541
+    second: PoisonClaw_96x96_119
+  - first:
+      213: -1115032754072274677
+    second: PoisonClaw_96x96_120
+  - first:
+      213: 3566886296454662139
+    second: PoisonClaw_96x96_121
+  - first:
+      213: 3348432537729428165
+    second: PoisonClaw_96x96_122
+  - first:
+      213: -2860264753269241484
+    second: PoisonClaw_96x96_123
+  - first:
+      213: -1389033635667457941
+    second: PoisonClaw_96x96_124
+  - first:
+      213: -7424916792780177601
+    second: PoisonClaw_96x96_125
+  - first:
+      213: 2563041334687352855
+    second: PoisonClaw_96x96_126
+  - first:
+      213: 4785779587866978299
+    second: PoisonClaw_96x96_127
+  - first:
+      213: 7200020286181905601
+    second: PoisonClaw_96x96_128
+  - first:
+      213: 2876847230989935166
+    second: PoisonClaw_96x96_129
+  - first:
+      213: 4583822842173069587
+    second: PoisonClaw_96x96_130
+  - first:
+      213: -6704554596186174938
+    second: PoisonClaw_96x96_131
+  - first:
+      213: -7517183948211634571
+    second: PoisonClaw_96x96_132
+  - first:
+      213: 6195253595754461902
+    second: PoisonClaw_96x96_133
+  - first:
+      213: 2678680149030805248
+    second: PoisonClaw_96x96_134
+  - first:
+      213: -7825917277130437577
+    second: PoisonClaw_96x96_135
+  - first:
+      213: 873815524845982000
+    second: PoisonClaw_96x96_136
+  - first:
+      213: -997908590871715333
+    second: PoisonClaw_96x96_137
+  - first:
+      213: 3916308696947170783
+    second: PoisonClaw_96x96_138
+  - first:
+      213: -3610470996816044410
+    second: PoisonClaw_96x96_139
+  - first:
+      213: -4149573740395855728
+    second: PoisonClaw_96x96_140
+  - first:
+      213: -7254000497724581904
+    second: PoisonClaw_96x96_141
+  - first:
+      213: 5427975016292684175
+    second: PoisonClaw_96x96_142
+  - first:
+      213: -3018399717485799134
+    second: PoisonClaw_96x96_143
+  - first:
+      213: -1798258634922911527
+    second: PoisonClaw_96x96_144
+  - first:
+      213: -34283261009136156
+    second: PoisonClaw_96x96_145
+  - first:
+      213: 835122862122120229
+    second: PoisonClaw_96x96_146
+  - first:
+      213: 1364524153419429851
+    second: PoisonClaw_96x96_147
+  - first:
+      213: 6649770566835250003
+    second: PoisonClaw_96x96_148
+  - first:
+      213: -3744218929176453123
+    second: PoisonClaw_96x96_149
+  - first:
+      213: -2393518184855815994
+    second: PoisonClaw_96x96_150
+  - first:
+      213: -7919882583041070832
+    second: PoisonClaw_96x96_151
+  - first:
+      213: 4083883272759233583
+    second: PoisonClaw_96x96_152
+  - first:
+      213: -1579416348736170076
+    second: PoisonClaw_96x96_153
+  - first:
+      213: -7811317943178095006
+    second: PoisonClaw_96x96_154
+  - first:
+      213: 551393500693296746
+    second: PoisonClaw_96x96_155
+  - first:
+      213: -7865096328445324322
+    second: PoisonClaw_96x96_156
+  - first:
+      213: -1941568123228678086
+    second: PoisonClaw_96x96_157
+  - first:
+      213: -4435840710602294622
+    second: PoisonClaw_96x96_158
+  - first:
+      213: 1841928707061986033
+    second: PoisonClaw_96x96_159
+  - first:
+      213: -6465024906997985735
+    second: PoisonClaw_96x96_160
+  - first:
+      213: -2716658347441616444
+    second: PoisonClaw_96x96_161
+  - first:
+      213: -1359993669948674952
+    second: PoisonClaw_96x96_162
+  - first:
+      213: -3549430648994209233
+    second: PoisonClaw_96x96_163
+  - first:
+      213: 6295881001881369445
+    second: PoisonClaw_96x96_164
+  - first:
+      213: -4697400211196750508
+    second: PoisonClaw_96x96_165
+  - first:
+      213: -8446579392990060996
+    second: PoisonClaw_96x96_166
+  - first:
+      213: 2436323516308578831
+    second: PoisonClaw_96x96_167
+  - first:
+      213: -721507243572541093
+    second: PoisonClaw_96x96_168
+  - first:
+      213: -7137613176532277478
+    second: PoisonClaw_96x96_169
+  - first:
+      213: -6695115724101754355
+    second: PoisonClaw_96x96_170
+  - first:
+      213: -2479777484091135782
+    second: PoisonClaw_96x96_171
+  - first:
+      213: 3058208224604187919
+    second: PoisonClaw_96x96_172
+  - first:
+      213: 5763875686612663162
+    second: PoisonClaw_96x96_173
+  - first:
+      213: 2214381919178401362
+    second: PoisonClaw_96x96_174
+  - first:
+      213: 6562417146807417000
+    second: PoisonClaw_96x96_175
+  - first:
+      213: 3162214857267388605
+    second: PoisonClaw_96x96_176
+  - first:
+      213: 3697900742358328027
+    second: PoisonClaw_96x96_177
+  - first:
+      213: -2383490660753560765
+    second: PoisonClaw_96x96_178
+  - first:
+      213: -8887099605366461115
+    second: PoisonClaw_96x96_179
+  - first:
+      213: -5818768475254716805
+    second: PoisonClaw_96x96_180
+  - first:
+      213: -5991184847930376048
+    second: PoisonClaw_96x96_181
+  - first:
+      213: -1935762700589220431
+    second: PoisonClaw_96x96_182
+  - first:
+      213: 5019978426680467562
+    second: PoisonClaw_96x96_183
+  - first:
+      213: 3930141610657445143
+    second: PoisonClaw_96x96_184
+  - first:
+      213: 608189585680026913
+    second: PoisonClaw_96x96_185
+  - first:
+      213: 6191915902294252573
+    second: PoisonClaw_96x96_186
+  - first:
+      213: -4020080774052173886
+    second: PoisonClaw_96x96_187
+  - first:
+      213: -1977070372669270355
+    second: PoisonClaw_96x96_188
+  - first:
+      213: -6916647866585463492
+    second: PoisonClaw_96x96_189
+  - first:
+      213: -6103766748091937210
+    second: PoisonClaw_96x96_190
+  - first:
+      213: -6987321608992803804
+    second: PoisonClaw_96x96_191
+  - first:
+      213: -1327709308450670689
+    second: PoisonClaw_96x96_192
+  - first:
+      213: 3689308568936892406
+    second: PoisonClaw_96x96_193
+  - first:
+      213: -98613816896054715
+    second: PoisonClaw_96x96_194
+  - first:
+      213: -9074005778457991449
+    second: PoisonClaw_96x96_195
+  - first:
+      213: -5891952972398747969
+    second: PoisonClaw_96x96_196
+  - first:
+      213: 6967055176943490967
+    second: PoisonClaw_96x96_197
+  - first:
+      213: -4765484963773690656
+    second: PoisonClaw_96x96_198
+  - first:
+      213: -5178359324074627262
+    second: PoisonClaw_96x96_199
+  - first:
+      213: 6825865222311229583
+    second: PoisonClaw_96x96_200
+  - first:
+      213: 4709327229124339814
+    second: PoisonClaw_96x96_201
+  - first:
+      213: -7482637796096179701
+    second: PoisonClaw_96x96_202
+  - first:
+      213: 6318741364108428058
+    second: PoisonClaw_96x96_203
+  - first:
+      213: 1069069033832731642
+    second: PoisonClaw_96x96_204
+  - first:
+      213: -182834799559503229
+    second: PoisonClaw_96x96_205
+  - first:
+      213: -26851652976111985
+    second: PoisonClaw_96x96_206
+  - first:
+      213: -9212174821061593513
+    second: PoisonClaw_96x96_207
+  - first:
+      213: 3753023329392004244
+    second: PoisonClaw_96x96_208
+  - first:
+      213: 8012392984878195822
+    second: PoisonClaw_96x96_209
+  - first:
+      213: -4156494601129029393
+    second: PoisonClaw_96x96_210
+  - first:
+      213: -6698701620986331918
+    second: PoisonClaw_96x96_211
+  - first:
+      213: 7852651964926150485
+    second: PoisonClaw_96x96_212
+  - first:
+      213: -6328720162676332482
+    second: PoisonClaw_96x96_213
+  - first:
+      213: 4037391211800245934
+    second: PoisonClaw_96x96_214
+  - first:
+      213: -3864936016461801158
+    second: PoisonClaw_96x96_215
+  - first:
+      213: 2169807137013709226
+    second: PoisonClaw_96x96_216
+  - first:
+      213: 2929038276119667025
+    second: PoisonClaw_96x96_217
+  - first:
+      213: 8528821981523687246
+    second: PoisonClaw_96x96_218
+  - first:
+      213: -1429026763027610847
+    second: PoisonClaw_96x96_219
+  - first:
+      213: 5773818437473936644
+    second: PoisonClaw_96x96_220
+  - first:
+      213: -5871478532977451198
+    second: PoisonClaw_96x96_221
+  - first:
+      213: -3496633012847303780
+    second: PoisonClaw_96x96_222
+  - first:
+      213: 241029497780318451
+    second: PoisonClaw_96x96_223
+  - first:
+      213: -2741342381357963033
+    second: PoisonClaw_96x96_224
+  - first:
+      213: 405272247597738013
+    second: PoisonClaw_96x96_225
+  - first:
+      213: 6033385120680380576
+    second: PoisonClaw_96x96_226
+  - first:
+      213: -9074144267091808805
+    second: PoisonClaw_96x96_227
+  - first:
+      213: 4004296003969066649
+    second: PoisonClaw_96x96_228
+  - first:
+      213: 2967909346456422137
+    second: PoisonClaw_96x96_229
+  - first:
+      213: -4290025244789738709
+    second: PoisonClaw_96x96_230
+  - first:
+      213: 3557186351010152179
+    second: PoisonClaw_96x96_231
+  - first:
+      213: -9074723607754222042
+    second: PoisonClaw_96x96_232
+  - first:
+      213: 4769858638754782222
+    second: PoisonClaw_96x96_233
+  - first:
+      213: -2501781551957751933
+    second: PoisonClaw_96x96_234
+  - first:
+      213: 1408707002568839320
+    second: PoisonClaw_96x96_235
+  - first:
+      213: 3847241377069746013
+    second: PoisonClaw_96x96_236
+  - first:
+      213: 7787356681924836985
+    second: PoisonClaw_96x96_237
+  - first:
+      213: 2406616032739046978
+    second: PoisonClaw_96x96_238
+  - first:
+      213: -1168326055063105637
+    second: PoisonClaw_96x96_239
+  - first:
+      213: 4690278217364846223
+    second: PoisonClaw_96x96_240
+  - first:
+      213: 6539489960058794055
+    second: PoisonClaw_96x96_241
+  - first:
+      213: 5839672625683702635
+    second: PoisonClaw_96x96_242
+  - first:
+      213: 4155469664730988866
+    second: PoisonClaw_96x96_243
+  - first:
+      213: 8865895731682761844
+    second: PoisonClaw_96x96_244
+  - first:
+      213: 5223643531885906849
+    second: PoisonClaw_96x96_245
+  - first:
+      213: -5692761821228053818
+    second: PoisonClaw_96x96_246
+  - first:
+      213: -4488657776358948612
+    second: PoisonClaw_96x96_247
+  - first:
+      213: 587158818315734507
+    second: PoisonClaw_96x96_248
+  - first:
+      213: 494863961884049967
+    second: PoisonClaw_96x96_249
+  - first:
+      213: -6834086756010893057
+    second: PoisonClaw_96x96_250
+  - first:
+      213: -6480908878241036399
+    second: PoisonClaw_96x96_251
+  - first:
+      213: -7442341236382174346
+    second: PoisonClaw_96x96_252
+  - first:
+      213: 6865816415612680437
+    second: PoisonClaw_96x96_253
+  - first:
+      213: 4158997153592258969
+    second: PoisonClaw_96x96_254
+  - first:
+      213: -3371887209131215629
+    second: PoisonClaw_96x96_255
+  - first:
+      213: 7070075276189824915
+    second: PoisonClaw_96x96_256
+  - first:
+      213: -2870267700120128109
+    second: PoisonClaw_96x96_257
+  - first:
+      213: -4916751487948878982
+    second: PoisonClaw_96x96_258
+  - first:
+      213: -2385057154400478013
+    second: PoisonClaw_96x96_259
+  - first:
+      213: -3988092701859160963
+    second: PoisonClaw_96x96_260
+  - first:
+      213: 1325115137957230135
+    second: PoisonClaw_96x96_261
+  - first:
+      213: -671100305249273507
+    second: PoisonClaw_96x96_262
+  - first:
+      213: -7882336610279104543
+    second: PoisonClaw_96x96_263
+  - first:
+      213: 8010367099356720525
+    second: PoisonClaw_96x96_264
+  - first:
+      213: -1587683391703723350
+    second: PoisonClaw_96x96_265
+  - first:
+      213: 961168224327415232
+    second: PoisonClaw_96x96_266
+  - first:
+      213: 2401736860761208243
+    second: PoisonClaw_96x96_267
+  - first:
+      213: 2167365726899664774
+    second: PoisonClaw_96x96_268
+  - first:
+      213: -5506032240316528081
+    second: PoisonClaw_96x96_269
+  - first:
+      213: -5359145528629940871
+    second: PoisonClaw_96x96_270
+  - first:
+      213: 8778964687514305574
+    second: PoisonClaw_96x96_271
+  - first:
+      213: 1492565493350860382
+    second: PoisonClaw_96x96_272
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8023c12847573cc0800000000000000
+      internalID: -3731417798937468785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35531eef011f2a340800000000000000
+      internalID: 4873722802066240851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db4bfa79cdc9cbe0800000000000000
+      internalID: -1456406739242234921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90ec684ac736f620800000000000000
+      internalID: 2807492759650099354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e66ba2ad5b142d0800000000000000
+      internalID: -3296153503634395588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c15416411892d60800000000000000
+      internalID: 7865960148710530106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11594998aad7d7aa0800000000000000
+      internalID: -6161630543766842095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cd8b7ac0246ad30800000000000000
+      internalID: 4442310704568523853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54f774564caefad0800000000000000
+      internalID: -2666504511291919266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbccd7a81e29c4f90800000000000000
+      internalID: -6968033026060202819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4998050e7e7ee70800000000000000
+      internalID: 9144532519008965885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_11
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f928b3b2b1f2fe00800000000000000
+      internalID: 1077189010716633589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe3c097028192950800000000000000
+      internalID: 6424692871169588922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_13
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb92687a167857a60800000000000000
+      internalID: 7671186393787673022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_14
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59704578fdc02d70800000000000000
+      internalID: 9016432920998476124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_15
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4013a28a60960bab0800000000000000
+      internalID: -4994376509441822460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34715ec0729f119d0800000000000000
+      internalID: -2805187146759727293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_17
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edf5006ed9072df0800000000000000
+      internalID: -205184407323673112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_18
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8cc6fa1f4521650800000000000000
+      internalID: 6202113033849587966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_19
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ac59424d7bd2450800000000000000
+      internalID: 6065706394912672337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_20
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8f45f6cb9d9c660800000000000000
+      internalID: 7406690465532410029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_21
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506c82d7d3a2ef7b0800000000000000
+      internalID: -5188663277103036923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_22
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414ae3fde6cca0e20800000000000000
+      internalID: 3317688852075684884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_23
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e775b510052b6530800000000000000
+      internalID: 3849210988812662756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_24
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec950493afa2c260800000000000000
+      internalID: 7116443478296730862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf576805d346a220800000000000000
+      internalID: 2496757625671606198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_26
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d9f36fbe148dfa0800000000000000
+      internalID: -5775794040398176993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_27
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e65d77fe4784050800000000000000
+      internalID: 5785002293213884013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_28
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ee6a7b107baf560800000000000000
+      internalID: 7348386960012406284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_29
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09968e4134b9c780800000000000000
+      internalID: -8662194284406597365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonClaw_96x96_30
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1312e58872c73e610800000000000000
+      internalID: 1649298397781172529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
