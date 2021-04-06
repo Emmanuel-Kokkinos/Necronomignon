@@ -63,24 +63,11 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
     {
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
 
-        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
-        movePrefab.transform.SetParent(target.transform);
-        movePrefab.transform.localPosition = new Vector3(0, 0);
-        movePrefab.transform.localRotation = Quaternion.identity;
-        movePrefab.transform.localScale = new Vector3(2f, 2f);
-
-        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Conglomerate/Conglomerate_Move_Controller") as RuntimeAnimatorController;
-        movePrefab.GetComponent<Animator>().SetTrigger("Back");
-
-        /**
-         * To instantiate prefab or particle effect for move
-         * 
         GameObject movePrefab = Instantiate(backPrefab);
         movePrefab.transform.SetParent(target.transform);
         movePrefab.transform.localPosition = new Vector3(0, 0);
         movePrefab.transform.localRotation = Quaternion.identity;
-        movePrefab.transform.localScale = new Vector3(30, 30);
-        */
+        movePrefab.transform.localScale = new Vector3(10, 10);
     }
 
     public void Play_SoundFX()

@@ -26,7 +26,7 @@ public class Dryad_Script : MonoBehaviour, Parent_Beast
         battleManager.targets.Clear();
         battleManager.targets.Add(getWeakestFriend());
         battleManager.cancelGuard = true;
-
+        
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
@@ -37,6 +37,20 @@ public class Dryad_Script : MonoBehaviour, Parent_Beast
         }
 
         healthManager.heal(battleManager.targets[0], (int)(battleManager.targets[0].maxHP * ((double)battleManager.currentTurn.Move_A.power / 100)));
+    }
+
+    public void PlayBackMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 100);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(2f, 2f);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Dryad/Dryad_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Back");
     }
 
     public void front_special()
