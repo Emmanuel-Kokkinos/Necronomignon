@@ -532,6 +532,59 @@
       }
     },
     {
+      "name": "Thanatos2",
+      "maxHP": "67",
+      "defence": "14",
+      "power": "19",
+      "speed": "50",
+      "dexterity": "37",
+      "number_MOVES": "3",
+      "tier": "1",
+      "size": "0",
+      "cost": "25",
+      "type": "7",
+      "static_img": "Thanatos2_Idle_00",
+      "moveA": "9",
+      "moveB": "8",
+      "statGradients": {
+        "hpGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "defenceGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "powerGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "speedGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "dexGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        }
+      }
+    },
+    {
       "name": "Nage",
       "maxHP": "92",
       "defence": "24",
@@ -689,7 +742,7 @@
           "t5": "0"
         }
       },
-      "nonCombatant" : "true"
+      "nonCombatant": "true"
     }
   ]
 }

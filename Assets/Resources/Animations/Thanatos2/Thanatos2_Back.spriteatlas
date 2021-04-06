@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Thanatos2_Back
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f867b96cc59fb8c44a7333c03a0a9e26, type: 3}
+    totalSpriteSurfaceArea: 130023424
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d8f2bb2063ced1448a12d6cf2890e20d, type: 3}
+  - {fileID: 21300000, guid: c9b166307a792b1439283a8228405073, type: 3}
+  - {fileID: 21300000, guid: 3bccc9610dabfa247a2ff1efea747a00, type: 3}
+  - {fileID: 21300000, guid: 136674125caae4b488421d2ed03a0653, type: 3}
+  - {fileID: 21300000, guid: 1e48bf54efdd89f479c7648cee77261f, type: 3}
+  - {fileID: 21300000, guid: b935e8354ffd7b245a9862c5187d6b55, type: 3}
+  - {fileID: 21300000, guid: ff6a90a57cc83814c9240f122f08e4fb, type: 3}
+  - {fileID: 21300000, guid: 598fc276497da1f46a0d839337b276a8, type: 3}
+  - {fileID: 21300000, guid: 30967577a5db7734292e094a6bc0d9c9, type: 3}
+  - {fileID: 21300000, guid: 2e404ef7105294743a5d606b72ec73c7, type: 3}
+  - {fileID: 21300000, guid: be5bfc28293670f4fbb6155bdadd7f0b, type: 3}
+  - {fileID: 21300000, guid: 41562068754b4bb47886660fcbef1f55, type: 3}
+  - {fileID: 21300000, guid: 892a23c85f376ab4a8074490012593a7, type: 3}
+  - {fileID: 21300000, guid: f33cbef8949266245a68c21f8fe26507, type: 3}
+  - {fileID: 21300000, guid: d007fa5961e4f244b8080ba6f8051110, type: 3}
+  - {fileID: 21300000, guid: 1377ac795790e5c478e49ff08b976a70, type: 3}
+  - {fileID: 21300000, guid: 7553ab89c41b9c54bb1e7728f6a805cd, type: 3}
+  - {fileID: 21300000, guid: 648374c9912680b488ea20e8962121d0, type: 3}
+  - {fileID: 21300000, guid: db2b4ee99139ea946ac1f6e7402f4865, type: 3}
+  - {fileID: 21300000, guid: 16ce371aa451b874091e6b48937ec1b8, type: 3}
+  - {fileID: 21300000, guid: a474a02a363190547b0b1a45295193b1, type: 3}
+  - {fileID: 21300000, guid: 82c63e7ac67427e44bf3602f553ec4e8, type: 3}
+  - {fileID: 21300000, guid: 43ca8cebfd9e101408c5ab690daf831e, type: 3}
+  - {fileID: 21300000, guid: 78e90fdc5eb739f4fabfeaf8547c0b29, type: 3}
+  - {fileID: 21300000, guid: 2cc9a31d2d2ec3749a69fa0b15f39955, type: 3}
+  - {fileID: 21300000, guid: c0aaff3dba25e3640a33e770842d82c1, type: 3}
+  - {fileID: 21300000, guid: e7e93f4d99f116244b3974e8ef09100b, type: 3}
+  - {fileID: 21300000, guid: abb45bed415b36840a20555d7e1198db, type: 3}
+  - {fileID: 21300000, guid: 35761c0e60ca84d46aa7d75f679bafcd, type: 3}
+  - {fileID: 21300000, guid: e50fdc5e2f8a16d4d9fe9e495ae431fb, type: 3}
+  - {fileID: 21300000, guid: 15b254ae363b55747b5ccf4b286f96d0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Thanatos_Attack_B_00
+  - Thanatos_Attack_B_03
+  - Thanatos_Attack_B_12
+  - Thanatos_Attack_B_26
+  - Thanatos_Attack_B_20
+  - Thanatos_Attack_B_11
+  - Thanatos_Attack_B_05
+  - Thanatos_Attack_B_17
+  - Thanatos_Attack_B_19
+  - Thanatos_Attack_B_25
+  - Thanatos_Attack_B_08
+  - Thanatos_Attack_B_07
+  - Thanatos_Attack_B_09
+  - Thanatos_Attack_B_01
+  - Thanatos_Attack_B_22
+  - Thanatos_Attack_B_06
+  - Thanatos_Attack_B_29
+  - Thanatos_Attack_B_16
+  - Thanatos_Attack_B_10
+  - Thanatos_Attack_B_13
+  - Thanatos_Attack_B_15
+  - Thanatos_Attack_B_24
+  - Thanatos_Attack_B_21
+  - Thanatos_Attack_B_28
+  - Thanatos_Attack_B_14
+  - Thanatos_Attack_B_30
+  - Thanatos_Attack_B_23
+  - Thanatos_Attack_B_04
+  - Thanatos_Attack_B_18
+  - Thanatos_Attack_B_27
+  - Thanatos_Attack_B_02
+  m_Tag: Thanatos2_Back
+  m_IsVariant: 0

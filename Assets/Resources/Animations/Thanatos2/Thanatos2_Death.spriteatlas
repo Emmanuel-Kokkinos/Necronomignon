@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Thanatos2_Death
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9b85730c49f79a446a16fb674b3423f6, type: 3}
+    totalSpriteSurfaceArea: 205520896
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3cf44700b03531048a8dbff09befe402, type: 3}
+  - {fileID: 21300000, guid: 6544a060e1bf0a04d9d81710c16799da, type: 3}
+  - {fileID: 21300000, guid: 90b4c8902f1074243bbd8d3e382f4194, type: 3}
+  - {fileID: 21300000, guid: d44357518c6c8f04c8e0eefaec252c5c, type: 3}
+  - {fileID: 21300000, guid: 1b2ceb81cea7a9144b3df9f6d0334ba4, type: 3}
+  - {fileID: 21300000, guid: dc18dfa18d3f3e240b122835ab10e7e9, type: 3}
+  - {fileID: 21300000, guid: e3e3b6c1111551840bb6d1de6f75a7f0, type: 3}
+  - {fileID: 21300000, guid: a18fb212873027b43ae0c585e6d088f5, type: 3}
+  - {fileID: 21300000, guid: e130d7a288db0bb48a2f880459e9e477, type: 3}
+  - {fileID: 21300000, guid: 064b59b221ca30d45806f862535eb62f, type: 3}
+  - {fileID: 21300000, guid: daac13f2af2ca374fb256bdfb150c9f4, type: 3}
+  - {fileID: 21300000, guid: e2f0c053b443fb349a7617e8a49032f3, type: 3}
+  - {fileID: 21300000, guid: bba7cec3e7cb89040b3d237b32c18250, type: 3}
+  - {fileID: 21300000, guid: f271fc04c39e35c4ea353eeae466fd10, type: 3}
+  - {fileID: 21300000, guid: 7530b854c00ee8b43b602f6a842bbea6, type: 3}
+  - {fileID: 21300000, guid: 6bc15364e6636794eba9860116fffb25, type: 3}
+  - {fileID: 21300000, guid: f19d60b42e2874e4f9e85769147a3831, type: 3}
+  - {fileID: 21300000, guid: 5e6b43b4318e6a046ad67b1f52513d3b, type: 3}
+  - {fileID: 21300000, guid: 834637e4a588d6f47a0d28e0f750f450, type: 3}
+  - {fileID: 21300000, guid: 2d6b0725dad12284ea87b2477d37fa33, type: 3}
+  - {fileID: 21300000, guid: 9a51d0451aba9d34ea6657bfd68695d0, type: 3}
+  - {fileID: 21300000, guid: 60b2965594324f547809d5b8f53a6651, type: 3}
+  - {fileID: 21300000, guid: 84db7e66ef88939439d8a84c8e759142, type: 3}
+  - {fileID: 21300000, guid: 4e5045764ec5f214c945b51ca4e9014d, type: 3}
+  - {fileID: 21300000, guid: abec100726386a24b8fd5e94c0af2874, type: 3}
+  - {fileID: 21300000, guid: 375efed73da59084db4fcca57e5fe4de, type: 3}
+  - {fileID: 21300000, guid: 2ef7565838f71e64ca3d17f6800c7826, type: 3}
+  - {fileID: 21300000, guid: f75ea168bc961d142aeea61e7a7a081d, type: 3}
+  - {fileID: 21300000, guid: 63dbf009dd7c79f4e89f146b1742fc98, type: 3}
+  - {fileID: 21300000, guid: cb1f550904c1c1e4eacc2487bbe82d36, type: 3}
+  - {fileID: 21300000, guid: 2ccd1859db0b1214589736622e5e6c91, type: 3}
+  - {fileID: 21300000, guid: 818526e9a1830d94ba4d4c4817708581, type: 3}
+  - {fileID: 21300000, guid: 84ba1a3a95aec9d44ba08f466eafbbdb, type: 3}
+  - {fileID: 21300000, guid: 39d41fda88932734490e6e03b7d27aa5, type: 3}
+  - {fileID: 21300000, guid: 3d78d01be3f4e3a4b9e7ae72ee2ad09f, type: 3}
+  - {fileID: 21300000, guid: 9c13343bf0249444a8d78871fa6d2791, type: 3}
+  - {fileID: 21300000, guid: c2fc3e3cc07da7c408d9bd2faa12ce92, type: 3}
+  - {fileID: 21300000, guid: 35c0c36c629fd9b4e81f4e8d01489280, type: 3}
+  - {fileID: 21300000, guid: c51f230dc096d3b4ab0016a130feded8, type: 3}
+  - {fileID: 21300000, guid: a153433d13a18a8439875d59b4a1be19, type: 3}
+  - {fileID: 21300000, guid: f28a166d8bf99f6478a2930b6c8b9d77, type: 3}
+  - {fileID: 21300000, guid: e3dbb73ea5b75ac4db5fe1daada0fa50, type: 3}
+  - {fileID: 21300000, guid: 34b6aa7e00c52794a992b70d978607ca, type: 3}
+  - {fileID: 21300000, guid: a19ba1ee203c99c4b9b698799961cb76, type: 3}
+  - {fileID: 21300000, guid: 76c0b32f5ceddc146854e7baf135934e, type: 3}
+  - {fileID: 21300000, guid: 606a319f5022dbb4cba3b8a114d10532, type: 3}
+  - {fileID: 21300000, guid: f9bbdd9f6a8407242b74e1d61f1e8b9d, type: 3}
+  - {fileID: 21300000, guid: 370391afd76abb94fb16db552ab320f2, type: 3}
+  - {fileID: 21300000, guid: f7bd04bfdaec0fb489e0efc1d8e35c85, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Thanatos_Death_02
+  - Thanatos_Death_04
+  - Thanatos_Death_27
+  - Thanatos_Death_13
+  - Thanatos_Death_17
+  - Thanatos_Death_10
+  - Thanatos_Death_29
+  - Thanatos_Death_12
+  - Thanatos_Death_37
+  - Thanatos_Death_21
+  - Thanatos_Death_20
+  - Thanatos_Death_23
+  - Thanatos_Death_18
+  - Thanatos_Death_26
+  - Thanatos_Death_24
+  - Thanatos_Death_28
+  - Thanatos_Death_46
+  - Thanatos_Death_01
+  - Thanatos_Death_08
+  - Thanatos_Death_03
+  - Thanatos_Death_16
+  - Thanatos_Death_09
+  - Thanatos_Death_39
+  - Thanatos_Death_31
+  - Thanatos_Death_43
+  - Thanatos_Death_34
+  - Thanatos_Death_05
+  - Thanatos_Death_33
+  - Thanatos_Death_00
+  - Thanatos_Death_19
+  - Thanatos_Death_22
+  - Thanatos_Death_38
+  - Thanatos_Death_32
+  - Thanatos_Death_06
+  - Thanatos_Death_41
+  - Thanatos_Death_15
+  - Thanatos_Death_11
+  - Thanatos_Death_45
+  - Thanatos_Death_47
+  - Thanatos_Death_48
+  - Thanatos_Death_40
+  - Thanatos_Death_25
+  - Thanatos_Death_44
+  - Thanatos_Death_42
+  - Thanatos_Death_36
+  - Thanatos_Death_14
+  - Thanatos_Death_35
+  - Thanatos_Death_30
+  - Thanatos_Death_07
+  m_Tag: Thanatos2_Death
+  m_IsVariant: 0
