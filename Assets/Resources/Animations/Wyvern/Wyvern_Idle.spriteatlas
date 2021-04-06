@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Wyvern_Idle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: b4213ebe32099d848bc9a102e5ba64dc, type: 3}
+    totalSpriteSurfaceArea: 244000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ad0c2a301ee77754cb87924b6ba8e8b2, type: 3}
+  - {fileID: 21300000, guid: 62b7d750f9c1ebe44addc4947c6fa5dd, type: 3}
+  - {fileID: 21300000, guid: 59ac3e5006f621546ab27b77b9280020, type: 3}
+  - {fileID: 21300000, guid: 374782e027a7bd84483115aee87c81bf, type: 3}
+  - {fileID: 21300000, guid: 8ed08fe0c5abf8745b98a5b1f19fa15f, type: 3}
+  - {fileID: 21300000, guid: 6a5615913cf758e448912d612f078fc4, type: 3}
+  - {fileID: 21300000, guid: fd694aa1440b1154e8eb407416c3f469, type: 3}
+  - {fileID: 21300000, guid: c95535b1a8d2bc8429c5b1b04385d959, type: 3}
+  - {fileID: 21300000, guid: 5a5ee4922c34417438e33608dea852ad, type: 3}
+  - {fileID: 21300000, guid: 9c18e4e2463da9944b2deb7abd0e91fd, type: 3}
+  - {fileID: 21300000, guid: 8155074321a9b8d40a058fd58a760b83, type: 3}
+  - {fileID: 21300000, guid: 27373d7307480314c9c5784484dc2cb2, type: 3}
+  - {fileID: 21300000, guid: 4b142a835ac340d4db4e4cc39dedb4d0, type: 3}
+  - {fileID: 21300000, guid: 926bffa35d2c9b14eaf9bbb799f298eb, type: 3}
+  - {fileID: 21300000, guid: c56e10b3c711b5b4ab65e9306c309bb9, type: 3}
+  - {fileID: 21300000, guid: 8268ebb3f8e81ae4ea53aae7ad95e67a, type: 3}
+  - {fileID: 21300000, guid: dd9f37f3537281a4abcbd0713a398a2a, type: 3}
+  - {fileID: 21300000, guid: 0fc2a1444962b974bb11b5cb471b20d2, type: 3}
+  - {fileID: 21300000, guid: 201ab7c4add717d478928443effb3f90, type: 3}
+  - {fileID: 21300000, guid: c43979d4bf273fe4ba78539b56e22b87, type: 3}
+  - {fileID: 21300000, guid: d4743df481fc7f84bbb4f9a7a770c7ab, type: 3}
+  - {fileID: 21300000, guid: ebdfb8262cf01d14eb240291c9bd5a6f, type: 3}
+  - {fileID: 21300000, guid: be33cf66e5bf27f4490bb52b9156f22a, type: 3}
+  - {fileID: 21300000, guid: 0066c35727b0cf942a6ea00ac23f9d34, type: 3}
+  - {fileID: 21300000, guid: 75d38087c9cd46d47a1300a5dae0ed35, type: 3}
+  - {fileID: 21300000, guid: aa9debb7dfb9c0c4a8457c4ce1cea295, type: 3}
+  - {fileID: 21300000, guid: 03f116d770dd997469483e022a039441, type: 3}
+  - {fileID: 21300000, guid: a0f9ffe7f12debe45b078e9096968b74, type: 3}
+  - {fileID: 21300000, guid: 03bcd4f767620694b85bf0d0e0a6050c, type: 3}
+  - {fileID: 21300000, guid: 5f4a5118a8cf51f4383901bca1835f19, type: 3}
+  - {fileID: 21300000, guid: 49c1e83820534694caf95ab38db976ee, type: 3}
+  - {fileID: 21300000, guid: 1c680a98d3ca8564f9df87b089c3492c, type: 3}
+  - {fileID: 21300000, guid: 76f35229bde4770478613a9b3997eaad, type: 3}
+  - {fileID: 21300000, guid: aaaff3e96c279a54f9f63d2fbc0e313a, type: 3}
+  - {fileID: 21300000, guid: 37bb682aeae567f4490016f0a1c040b7, type: 3}
+  - {fileID: 21300000, guid: 8db5b56a1ebf5fe48a1b546f1c4a598a, type: 3}
+  - {fileID: 21300000, guid: b202109aff868df4da9f35699d7f7c4e, type: 3}
+  - {fileID: 21300000, guid: ccdb02fad5712af48a828c90ed1fd085, type: 3}
+  - {fileID: 21300000, guid: 4c7e140b1cc27ca47a245010bfb0cfd9, type: 3}
+  - {fileID: 21300000, guid: 521f690bbad979d4397c6aefea4c138b, type: 3}
+  - {fileID: 21300000, guid: cc18cd0b4c4c03948ac844c96dff892d, type: 3}
+  - {fileID: 21300000, guid: e77b143bb1a05e945a4f662ec7dc9ed3, type: 3}
+  - {fileID: 21300000, guid: 0863092c9c4cbd94ba580c6b3236cfaa, type: 3}
+  - {fileID: 21300000, guid: 9be9c46c98f8c4147b78fb6c5c0c7116, type: 3}
+  - {fileID: 21300000, guid: 1167fcac4acce3f4e8864a8e20d4bc36, type: 3}
+  - {fileID: 21300000, guid: c53dd6cc123886343b79239f31862d48, type: 3}
+  - {fileID: 21300000, guid: c6ed5acc746af4e4f942e8e9b2ad3db6, type: 3}
+  - {fileID: 21300000, guid: ea9eabece509f3843b9f265fbc714931, type: 3}
+  - {fileID: 21300000, guid: a6af391d427b1ee458137e5a3eeef7c4, type: 3}
+  - {fileID: 21300000, guid: a701504d4c37e7a4fa3353efb8b7f783, type: 3}
+  - {fileID: 21300000, guid: c97c116d2dd855e4b96ddab74529e1d9, type: 3}
+  - {fileID: 21300000, guid: 848d718d9e785294e9d32f1923e4ac5e, type: 3}
+  - {fileID: 21300000, guid: 620da1ad3216d374987a5c65dfc67d1f, type: 3}
+  - {fileID: 21300000, guid: 829ae7fd4e62abf4d8d3c84b35f3f58e, type: 3}
+  - {fileID: 21300000, guid: 8858520ed331bbc48a58c0faa7232961, type: 3}
+  - {fileID: 21300000, guid: 72992cae57979bc4ba9cd40179589037, type: 3}
+  - {fileID: 21300000, guid: fd67ecbec96deb34cbe86ca65361c829, type: 3}
+  - {fileID: 21300000, guid: 3640ccfec25dabd4da4f05097234abb4, type: 3}
+  - {fileID: 21300000, guid: 9cc8ee5f70945e540befec1f33af6139, type: 3}
+  - {fileID: 21300000, guid: 350d506f20b566341b179e41a17fd379, type: 3}
+  - {fileID: 21300000, guid: 9e4427ef99d8f0a4684a6bd36fed11b2, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Zefir_Idle_36
+  - Zefir_Idle_40
+  - Zefir_Idle_00
+  - Zefir_Idle_28
+  - Zefir_Idle_17
+  - Zefir_Idle_11
+  - Zefir_Idle_21
+  - Zefir_Idle_34
+  - Zefir_Idle_18
+  - Zefir_Idle_56
+  - Zefir_Idle_31
+  - Zefir_Idle_26
+  - Zefir_Idle_49
+  - Zefir_Idle_13
+  - Zefir_Idle_33
+  - Zefir_Idle_06
+  - Zefir_Idle_57
+  - Zefir_Idle_32
+  - Zefir_Idle_45
+  - Zefir_Idle_48
+  - Zefir_Idle_01
+  - Zefir_Idle_46
+  - Zefir_Idle_19
+  - Zefir_Idle_15
+  - Zefir_Idle_02
+  - Zefir_Idle_55
+  - Zefir_Idle_54
+  - Zefir_Idle_14
+  - Zefir_Idle_12
+  - Zefir_Idle_60
+  - Zefir_Idle_50
+  - Zefir_Idle_59
+  - Zefir_Idle_10
+  - Zefir_Idle_08
+  - Zefir_Idle_05
+  - Zefir_Idle_52
+  - Zefir_Idle_20
+  - Zefir_Idle_04
+  - Zefir_Idle_27
+  - Zefir_Idle_51
+  - Zefir_Idle_58
+  - Zefir_Idle_35
+  - Zefir_Idle_24
+  - Zefir_Idle_07
+  - Zefir_Idle_03
+  - Zefir_Idle_16
+  - Zefir_Idle_09
+  - Zefir_Idle_42
+  - Zefir_Idle_22
+  - Zefir_Idle_23
+  - Zefir_Idle_44
+  - Zefir_Idle_43
+  - Zefir_Idle_47
+  - Zefir_Idle_29
+  - Zefir_Idle_25
+  - Zefir_Idle_53
+  - Zefir_Idle_41
+  - Zefir_Idle_30
+  - Zefir_Idle_37
+  - Zefir_Idle_39
+  - Zefir_Idle_38
+  m_Tag: Wyvern_Idle
+  m_IsVariant: 0

@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DreamSlime_Death
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d35fb90cb4674624c83ff4b3666f2386, type: 3}
+    totalSpriteSurfaceArea: 180000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4bf3fc60ae04a784d8d86c201acf6339, type: 3}
+  - {fileID: 21300000, guid: 047b44c0ee296dd44bf4e1a78a0a69ad, type: 3}
+  - {fileID: 21300000, guid: ad8167b12c6fc5147bcea027e912a60e, type: 3}
+  - {fileID: 21300000, guid: ced742f14a5f9884980d2c10928b108e, type: 3}
+  - {fileID: 21300000, guid: 2340c53276dffd0418431bd47f322136, type: 3}
+  - {fileID: 21300000, guid: 5a073162a12843a41bc00ead7d3a73a1, type: 3}
+  - {fileID: 21300000, guid: ef27d5921d642bb43acdbbf030a3804b, type: 3}
+  - {fileID: 21300000, guid: 308561a29018c7d4fa111b72da93f72d, type: 3}
+  - {fileID: 21300000, guid: 02e567e2572600c4daf598b3122e624f, type: 3}
+  - {fileID: 21300000, guid: bdd47e13d8180344897d07dea2759d3c, type: 3}
+  - {fileID: 21300000, guid: f522a393063bf5746bf7ea736277a5f4, type: 3}
+  - {fileID: 21300000, guid: 85626214d5bd3f94fa932542cc5d2f72, type: 3}
+  - {fileID: 21300000, guid: c101f1b41f75354438e05bed3ca2ef04, type: 3}
+  - {fileID: 21300000, guid: db756bd56699a1c4fa05b07e41d831f0, type: 3}
+  - {fileID: 21300000, guid: 177cddf588c65ae478126bd8c35fdc80, type: 3}
+  - {fileID: 21300000, guid: e3754556fa537c2498582239a3ab20d8, type: 3}
+  - {fileID: 21300000, guid: 533a23a6b39c0214f9deaa0c11838e35, type: 3}
+  - {fileID: 21300000, guid: 2c732bd707091f046873b47c0e7c03fa, type: 3}
+  - {fileID: 21300000, guid: 999b6818352f87b4daaebaa15320186c, type: 3}
+  - {fileID: 21300000, guid: 2785ce180743ad747a1d7b0ef4ce8d1a, type: 3}
+  - {fileID: 21300000, guid: b2ca1328ba41ead4e9cc57b7db1ca2ab, type: 3}
+  - {fileID: 21300000, guid: 785921486fa7fec479c2bc01a5592443, type: 3}
+  - {fileID: 21300000, guid: 38d4da583158e8342ae9bdb4af121430, type: 3}
+  - {fileID: 21300000, guid: bb0d21884a32cb94ca7aed4d84f7b118, type: 3}
+  - {fileID: 21300000, guid: a76edcb84d8d4be49927e286cf4bf527, type: 3}
+  - {fileID: 21300000, guid: dcf956f8ea8bff744aa647b3fd3a9c0d, type: 3}
+  - {fileID: 21300000, guid: bf1cde091b58374429a7b6080ebc53bb, type: 3}
+  - {fileID: 21300000, guid: 0dcc758a3e5434047a7a53dd4bf22461, type: 3}
+  - {fileID: 21300000, guid: 61fddc6b264262a4493f88bad5f5fbfe, type: 3}
+  - {fileID: 21300000, guid: 836c698b3e2bbbf459deef8dc02c17cc, type: 3}
+  - {fileID: 21300000, guid: 1358a59b69f2e954699bde8faa40fe6a, type: 3}
+  - {fileID: 21300000, guid: 2260deeb1e7873d4f862bb1485bf8b47, type: 3}
+  - {fileID: 21300000, guid: 372d946c2c6036a4da82e99d6477f7f0, type: 3}
+  - {fileID: 21300000, guid: c893b52da38ee15448a946e994c99577, type: 3}
+  - {fileID: 21300000, guid: 7478a44dd687ed146a1f7bf85a3077d7, type: 3}
+  - {fileID: 21300000, guid: 9b74095d69cb59b4b84c46dcd97ab868, type: 3}
+  - {fileID: 21300000, guid: 7fd2716db224774488d7353b74157589, type: 3}
+  - {fileID: 21300000, guid: f300df9d5af162946aba6a769f830d58, type: 3}
+  - {fileID: 21300000, guid: ce6def0ea7bd6eb428637991cf3c4b66, type: 3}
+  - {fileID: 21300000, guid: 25fc123e498923348bd8d361936bcff7, type: 3}
+  - {fileID: 21300000, guid: 2fae663e4fef7ef42a0bfb752801b486, type: 3}
+  - {fileID: 21300000, guid: 6f3d1aee737fe3b4b981a74cae297daa, type: 3}
+  - {fileID: 21300000, guid: 6ae4d0fe63b1fbf4f9568392c61217c7, type: 3}
+  - {fileID: 21300000, guid: 6218489f0cd22844cbb61b4acc9f744c, type: 3}
+  - {fileID: 21300000, guid: abca10af32fc951459c258cc7b8a7b43, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - DreamSlime_Death_00039
+  - DreamSlime_Death_00028
+  - DreamSlime_Death_00004
+  - DreamSlime_Death_00013
+  - DreamSlime_Death_00038
+  - DreamSlime_Death_00027
+  - DreamSlime_Death_00036
+  - DreamSlime_Death_00003
+  - DreamSlime_Death_00018
+  - DreamSlime_Death_00041
+  - DreamSlime_Death_00034
+  - DreamSlime_Death_00042
+  - DreamSlime_Death_00026
+  - DreamSlime_Death_00008
+  - DreamSlime_Death_00020
+  - DreamSlime_Death_00031
+  - DreamSlime_Death_00029
+  - DreamSlime_Death_00015
+  - DreamSlime_Death_00022
+  - DreamSlime_Death_00037
+  - DreamSlime_Death_00007
+  - DreamSlime_Death_00006
+  - DreamSlime_Death_00016
+  - DreamSlime_Death_00000
+  - DreamSlime_Death_00001
+  - DreamSlime_Death_00024
+  - DreamSlime_Death_00009
+  - DreamSlime_Death_00032
+  - DreamSlime_Death_00043
+  - DreamSlime_Death_00030
+  - DreamSlime_Death_00005
+  - DreamSlime_Death_00040
+  - DreamSlime_Death_00019
+  - DreamSlime_Death_00011
+  - DreamSlime_Death_00025
+  - DreamSlime_Death_00044
+  - DreamSlime_Death_00021
+  - DreamSlime_Death_00033
+  - DreamSlime_Death_00010
+  - DreamSlime_Death_00017
+  - DreamSlime_Death_00012
+  - DreamSlime_Death_00023
+  - DreamSlime_Death_00014
+  - DreamSlime_Death_00002
+  - DreamSlime_Death_00035
+  m_Tag: DreamSlime_Death
+  m_IsVariant: 0

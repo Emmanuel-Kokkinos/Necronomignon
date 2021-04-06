@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cthulhu_Back
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 54d5927736e73714ea8afb2323f18c35, type: 3}
+    totalSpriteSurfaceArea: 224000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 953e0330e64e2114b9d4dd828bb47862, type: 3}
+  - {fileID: 21300000, guid: 49fc2480d11de044db7ea081be236f27, type: 3}
+  - {fileID: 21300000, guid: dffac2b03d84a06408797064cc36b85c, type: 3}
+  - {fileID: 21300000, guid: 55807f31e4c1fa44591937ca6f0d0f7f, type: 3}
+  - {fileID: 21300000, guid: 791ae5a1c84b06940a6e814dffd0a36d, type: 3}
+  - {fileID: 21300000, guid: 8618353203a650d4aa46e066b23fbafb, type: 3}
+  - {fileID: 21300000, guid: bf3b98033558ec548965cbdac3f5f00f, type: 3}
+  - {fileID: 21300000, guid: c67f5033666df7a44a6b7a8b8d976259, type: 3}
+  - {fileID: 21300000, guid: 22f44254c28e6ac47bec493d626d5480, type: 3}
+  - {fileID: 21300000, guid: 1f93eda48ac931e409eb6ac3352a2462, type: 3}
+  - {fileID: 21300000, guid: eed67eb4b18fce94faaa5e5fa3cf2dfc, type: 3}
+  - {fileID: 21300000, guid: a5faf4e446e76dd40b6ec487f8661760, type: 3}
+  - {fileID: 21300000, guid: b7c2aa3541e57c44894518f95d3cc0e2, type: 3}
+  - {fileID: 21300000, guid: 929bfdb5cc2da804696268f5147637a7, type: 3}
+  - {fileID: 21300000, guid: 0fb254e504e925545a429bfa108a61e4, type: 3}
+  - {fileID: 21300000, guid: 180e1156a8463064181b6874ab60bd6b, type: 3}
+  - {fileID: 21300000, guid: 5db2bd8667a485b43aa847b9b884f398, type: 3}
+  - {fileID: 21300000, guid: 173cd35749a1c0148a5ca6ac04396063, type: 3}
+  - {fileID: 21300000, guid: 82d032a75e5c4e74293f4c19919b1d1e, type: 3}
+  - {fileID: 21300000, guid: a464f9a75410ba848bd5ee778da67c2f, type: 3}
+  - {fileID: 21300000, guid: fb3ab5c7cb99eaf408dbc8e25551bfb0, type: 3}
+  - {fileID: 21300000, guid: a0ed8418a78d9cd498e61fd97072d9f6, type: 3}
+  - {fileID: 21300000, guid: dab469283b5e20d4182e2863e849a7f7, type: 3}
+  - {fileID: 21300000, guid: ea566d48c6021b649a77ae667cf3dc9b, type: 3}
+  - {fileID: 21300000, guid: afcd4358cee73d147b7bb04373c94a72, type: 3}
+  - {fileID: 21300000, guid: 8b0709786bee7ff4eac6f91b00c5ae1d, type: 3}
+  - {fileID: 21300000, guid: b6b64488d5ce21c46979668bc572739e, type: 3}
+  - {fileID: 21300000, guid: f3e3f609ee4b3594bbc56c35bf8fce75, type: 3}
+  - {fileID: 21300000, guid: 28eb11199e6bd2f48a657415ea662a10, type: 3}
+  - {fileID: 21300000, guid: 86963039e7a754545acf2a67028dc625, type: 3}
+  - {fileID: 21300000, guid: bafb6389245beff4e8dd3ef68880715c, type: 3}
+  - {fileID: 21300000, guid: 8aed91b914dd2954baebbc10af4e4d45, type: 3}
+  - {fileID: 21300000, guid: bcee3ac991d23104d8e5ddbbd7212f89, type: 3}
+  - {fileID: 21300000, guid: 2995aa7a77bfa684d8f8c7f2b8f19d33, type: 3}
+  - {fileID: 21300000, guid: 20afe0fa4bbcebd41b16c34d72527a19, type: 3}
+  - {fileID: 21300000, guid: 6fa0484b9041d64459bccb69ac6504a6, type: 3}
+  - {fileID: 21300000, guid: 9c5a595b2ec5c184da39fe46e1d0f584, type: 3}
+  - {fileID: 21300000, guid: 03a6a5bb031897844b500da505b20877, type: 3}
+  - {fileID: 21300000, guid: 4c5d19fb0c8d4d547949dcf1f3ca01d5, type: 3}
+  - {fileID: 21300000, guid: f412d33cd18919d4c8a4ffe2e1ee677d, type: 3}
+  - {fileID: 21300000, guid: 1a23e36c7c2ac394d83dab359b8f1e11, type: 3}
+  - {fileID: 21300000, guid: bf2036fc468e784468ca33d1d8905dd4, type: 3}
+  - {fileID: 21300000, guid: 33bda6fc5996d37458710f32759505ff, type: 3}
+  - {fileID: 21300000, guid: 9646445dc45b7954abe5c20f7abb22d8, type: 3}
+  - {fileID: 21300000, guid: 7b8b646db2950344fb0db3d2cbadf719, type: 3}
+  - {fileID: 21300000, guid: e63818dd82a36be4395309e4dd71cefa, type: 3}
+  - {fileID: 21300000, guid: 126f6e5eab6f19a409cb2e6e763e9b7d, type: 3}
+  - {fileID: 21300000, guid: b377cf8eead42de438048e4cb23d5635, type: 3}
+  - {fileID: 21300000, guid: 5170d9ae8801b74438ddb520d451adb3, type: 3}
+  - {fileID: 21300000, guid: 65bb1dbeee77e104caa679237816026b, type: 3}
+  - {fileID: 21300000, guid: e4ca7ffe596f32c4b9da19002c04ad23, type: 3}
+  - {fileID: 21300000, guid: acef4f2fb64c55f4b8250593e78d5a67, type: 3}
+  - {fileID: 21300000, guid: 0a396d4f54938f34d8a69324d89c062a, type: 3}
+  - {fileID: 21300000, guid: 1ac8ce8f85ffccf4fb716c4002acef9b, type: 3}
+  - {fileID: 21300000, guid: e0b5afdfa1169e3449bce464b68c941d, type: 3}
+  - {fileID: 21300000, guid: 57a082ff985557c47905dcc5277e3c18, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Cthulhu_Attack D_08
+  - Cthulhu_Attack D_25
+  - Cthulhu_Attack D_43
+  - Cthulhu_Attack D_24
+  - Cthulhu_Attack D_42
+  - Cthulhu_Attack D_10
+  - Cthulhu_Attack D_41
+  - Cthulhu_Attack D_15
+  - Cthulhu_Attack D_47
+  - Cthulhu_Attack D_11
+  - Cthulhu_Attack D_31
+  - Cthulhu_Attack D_00
+  - Cthulhu_Attack D_34
+  - Cthulhu_Attack D_07
+  - Cthulhu_Attack D_03
+  - Cthulhu_Attack D_23
+  - Cthulhu_Attack D_37
+  - Cthulhu_Attack D_45
+  - Cthulhu_Attack D_13
+  - Cthulhu_Attack D_26
+  - Cthulhu_Attack D_49
+  - Cthulhu_Attack D_14
+  - Cthulhu_Attack D_51
+  - Cthulhu_Attack D_39
+  - Cthulhu_Attack D_04
+  - Cthulhu_Attack D_29
+  - Cthulhu_Attack D_18
+  - Cthulhu_Attack D_48
+  - Cthulhu_Attack D_46
+  - Cthulhu_Attack D_20
+  - Cthulhu_Attack D_28
+  - Cthulhu_Attack D_05
+  - Cthulhu_Attack D_22
+  - Cthulhu_Attack D_53
+  - Cthulhu_Attack D_55
+  - Cthulhu_Attack D_54
+  - Cthulhu_Attack D_44
+  - Cthulhu_Attack D_21
+  - Cthulhu_Attack D_27
+  - Cthulhu_Attack D_30
+  - Cthulhu_Attack D_38
+  - Cthulhu_Attack D_12
+  - Cthulhu_Attack D_09
+  - Cthulhu_Attack D_33
+  - Cthulhu_Attack D_16
+  - Cthulhu_Attack D_02
+  - Cthulhu_Attack D_01
+  - Cthulhu_Attack D_40
+  - Cthulhu_Attack D_36
+  - Cthulhu_Attack D_52
+  - Cthulhu_Attack D_35
+  - Cthulhu_Attack D_32
+  - Cthulhu_Attack D_19
+  - Cthulhu_Attack D_06
+  - Cthulhu_Attack D_50
+  - Cthulhu_Attack D_17
+  m_Tag: Cthulhu_Back
+  m_IsVariant: 0

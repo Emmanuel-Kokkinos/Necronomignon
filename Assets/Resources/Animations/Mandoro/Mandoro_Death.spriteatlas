@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mandoro_Death
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 314e304cdb642a547b37a3e9e00058d6, type: 3}
+    totalSpriteSurfaceArea: 184000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 36765260fbcfdb24e8c4d6c5294f18bf, type: 3}
+  - {fileID: 21300000, guid: be2e11708c44cf644a2654c9c59561c2, type: 3}
+  - {fileID: 21300000, guid: 71afa4d0e751a9a4a97f5f553b59b2bf, type: 3}
+  - {fileID: 21300000, guid: 62c8e941dde67cd489b81108e3a94568, type: 3}
+  - {fileID: 21300000, guid: b3392491b6305d8458a677b38316597a, type: 3}
+  - {fileID: 21300000, guid: f93eff125776bb24f90a68761e7e1218, type: 3}
+  - {fileID: 21300000, guid: 16de95e2170e2ea418870f3c1f9fcfa4, type: 3}
+  - {fileID: 21300000, guid: f359e8e21647a7d42895799f1ad91a84, type: 3}
+  - {fileID: 21300000, guid: 96241033d3b89b44c8339f8dfff87278, type: 3}
+  - {fileID: 21300000, guid: 377234b3cf5e0b34aa794759dd7b2cc9, type: 3}
+  - {fileID: 21300000, guid: 3454f0247a0fb5144b546dff6a6bbc58, type: 3}
+  - {fileID: 21300000, guid: cc0391744837bf749940a2aab59432cc, type: 3}
+  - {fileID: 21300000, guid: d7eada94abea75c46bdab85b25ee79e2, type: 3}
+  - {fileID: 21300000, guid: 5e967545130606c4f98bb40dbad32bc0, type: 3}
+  - {fileID: 21300000, guid: 2759f3856b7011b4a8e1f1f5fa635e0e, type: 3}
+  - {fileID: 21300000, guid: 6014ca95678a3bb4f8419fafd2a80672, type: 3}
+  - {fileID: 21300000, guid: dcc4bfb540205584ba87095e447f40af, type: 3}
+  - {fileID: 21300000, guid: a3a24516ed4e7a842be753bcce781140, type: 3}
+  - {fileID: 21300000, guid: c04a2db62d32e10439128b776f8a8ebb, type: 3}
+  - {fileID: 21300000, guid: 8fa98907ca7f1e14ab09468c9a8c96ba, type: 3}
+  - {fileID: 21300000, guid: a43ca877efc0f4f4cb9179e05d2b4e83, type: 3}
+  - {fileID: 21300000, guid: 70a1abb719d318a4eb1f453a5df94fda, type: 3}
+  - {fileID: 21300000, guid: 70612ff7aeb3bcd4b992c757490360f5, type: 3}
+  - {fileID: 21300000, guid: a7465d08bfccc5b4e946a2429852f1ba, type: 3}
+  - {fileID: 21300000, guid: 87b148483f43ad646af79c721608a1be, type: 3}
+  - {fileID: 21300000, guid: 794261a8b4aa7244dbc63da302fbd747, type: 3}
+  - {fileID: 21300000, guid: e58384c8a093eef48b0a07a5f7ed9e81, type: 3}
+  - {fileID: 21300000, guid: a08bc6898881796408a052e223fe0ae5, type: 3}
+  - {fileID: 21300000, guid: 556ff9e91558ef844a93b0b04d331c9b, type: 3}
+  - {fileID: 21300000, guid: 5695af1ae5f542740b0a7eb3e21038d6, type: 3}
+  - {fileID: 21300000, guid: 3c1f4e0be3b95714db539065570b05c7, type: 3}
+  - {fileID: 21300000, guid: e6aa2ccb18511e841a3cc1e05df89e9c, type: 3}
+  - {fileID: 21300000, guid: 10dc91eb9af738e4ab23b2e47556e66b, type: 3}
+  - {fileID: 21300000, guid: 8e7a773ce1746384d85ffda28dbc633b, type: 3}
+  - {fileID: 21300000, guid: 8283177c57cf5cd4eaddcf77d5a996ea, type: 3}
+  - {fileID: 21300000, guid: 2d49011de00db1a4eae37c821d5ef3db, type: 3}
+  - {fileID: 21300000, guid: 3746dc5dbbe210c41a5e621ef630a9d3, type: 3}
+  - {fileID: 21300000, guid: c75ca8cdd7fb59e4b946e7d915fd1de7, type: 3}
+  - {fileID: 21300000, guid: c8061eed6d521f748a092295278370c4, type: 3}
+  - {fileID: 21300000, guid: 1a1f371eceba00e45bb88dded9ff6ade, type: 3}
+  - {fileID: 21300000, guid: f24a871e3a557404f8acc9b135fd1704, type: 3}
+  - {fileID: 21300000, guid: 224d5d1e66af5624aa44801832969871, type: 3}
+  - {fileID: 21300000, guid: 2d71233e6e4ef4242867e2393809e6a3, type: 3}
+  - {fileID: 21300000, guid: a9b6a6fe9081c044998ae41884bd51a8, type: 3}
+  - {fileID: 21300000, guid: 310b363fc3647a24a960cf7d988015c7, type: 3}
+  - {fileID: 21300000, guid: d139eb7f9af9b5943bcc83115de97b9c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ClockworkKing_Death_00019
+  - ClockworkKing_Death_00018
+  - ClockworkKing_Death_00042
+  - ClockworkKing_Death_00010
+  - ClockworkKing_Death_00043
+  - ClockworkKing_Death_00023
+  - ClockworkKing_Death_00040
+  - ClockworkKing_Death_00028
+  - ClockworkKing_Death_00038
+  - ClockworkKing_Death_00027
+  - ClockworkKing_Death_00013
+  - ClockworkKing_Death_00045
+  - ClockworkKing_Death_00000
+  - ClockworkKing_Death_00041
+  - ClockworkKing_Death_00037
+  - ClockworkKing_Death_00007
+  - ClockworkKing_Death_00005
+  - ClockworkKing_Death_00036
+  - ClockworkKing_Death_00016
+  - ClockworkKing_Death_00004
+  - ClockworkKing_Death_00008
+  - ClockworkKing_Death_00002
+  - ClockworkKing_Death_00020
+  - ClockworkKing_Death_00001
+  - ClockworkKing_Death_00022
+  - ClockworkKing_Death_00026
+  - ClockworkKing_Death_00035
+  - ClockworkKing_Death_00031
+  - ClockworkKing_Death_00009
+  - ClockworkKing_Death_00003
+  - ClockworkKing_Death_00015
+  - ClockworkKing_Death_00025
+  - ClockworkKing_Death_00039
+  - ClockworkKing_Death_00014
+  - ClockworkKing_Death_00021
+  - ClockworkKing_Death_00032
+  - ClockworkKing_Death_00017
+  - ClockworkKing_Death_00034
+  - ClockworkKing_Death_00029
+  - ClockworkKing_Death_00033
+  - ClockworkKing_Death_00012
+  - ClockworkKing_Death_00044
+  - ClockworkKing_Death_00006
+  - ClockworkKing_Death_00024
+  - ClockworkKing_Death_00030
+  - ClockworkKing_Death_00011
+  m_Tag: Mandoro_Death
+  m_IsVariant: 0

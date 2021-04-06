@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Conglomerate_Damage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c54e3cf063a0c884894e3b1db311e5e1, type: 3}
+    totalSpriteSurfaceArea: 124000000
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: aa45af00b984de140b24a2ddf22b2c7d, type: 3}
+  - {fileID: 21300000, guid: dc7430406f8c7c74798dc95eecbfaf37, type: 3}
+  - {fileID: 21300000, guid: c9138d50110a6024da9f2b5d63126060, type: 3}
+  - {fileID: 21300000, guid: c1a3caa0f3b3cc6439e75e5b0ae70f72, type: 3}
+  - {fileID: 21300000, guid: bf94e4b19643a0e49ab6807edb848698, type: 3}
+  - {fileID: 21300000, guid: 02debfc19d143fe47995b96379ef981c, type: 3}
+  - {fileID: 21300000, guid: ebc38f72728de774aac654f3866fe529, type: 3}
+  - {fileID: 21300000, guid: 210db0c2eddddf242b919c87e73f1482, type: 3}
+  - {fileID: 21300000, guid: 5bf111d37be34454c8d23fa6760bafd6, type: 3}
+  - {fileID: 21300000, guid: 161abcf4e8a9d2449bbfd26517868bfb, type: 3}
+  - {fileID: 21300000, guid: fecab43520ba1d546bc6a0cdb2606a7c, type: 3}
+  - {fileID: 21300000, guid: d6b17bd575ec8bb41abe15dc38b9f1c8, type: 3}
+  - {fileID: 21300000, guid: a0d38bf5da1e3fd4890158b9925f76e3, type: 3}
+  - {fileID: 21300000, guid: 32191db6d0cf6654aa37fced7d87836c, type: 3}
+  - {fileID: 21300000, guid: d9b4d5a7c04d9f547a016b50e7b07bd7, type: 3}
+  - {fileID: 21300000, guid: 5f8e0a38dcc276c46ab3f12336662340, type: 3}
+  - {fileID: 21300000, guid: a32855e990d5723448d2b31a1e1c64a2, type: 3}
+  - {fileID: 21300000, guid: 531cb17a7d72aaf419bc7828edcfee92, type: 3}
+  - {fileID: 21300000, guid: 9e14a1cba7fea2942a274ce2cc0922d4, type: 3}
+  - {fileID: 21300000, guid: 1b1ec60c4231d8a4ab2feae3fcece97c, type: 3}
+  - {fileID: 21300000, guid: 58e75e0cb03442143ad89adab9af8d0e, type: 3}
+  - {fileID: 21300000, guid: d026c71c3b3168a448988bc08cba23e2, type: 3}
+  - {fileID: 21300000, guid: 8331574d2a7768441a715a74a4716902, type: 3}
+  - {fileID: 21300000, guid: a0ea706db3a0a5e4f9c0556474e92436, type: 3}
+  - {fileID: 21300000, guid: 77d4f76e15661c04185d46baa42bd78c, type: 3}
+  - {fileID: 21300000, guid: dd3354eedb2437348bac0adb76e189db, type: 3}
+  - {fileID: 21300000, guid: bb6bccfe98dd00b40b01183ea3835961, type: 3}
+  - {fileID: 21300000, guid: 392a482fd7b55514abafc26fa41c0e21, type: 3}
+  - {fileID: 21300000, guid: 9d94a04f73b59ce4d926e2931c86dd83, type: 3}
+  - {fileID: 21300000, guid: 3b4d11bf1d3301c48b61ce6d8e98dafe, type: 3}
+  - {fileID: 21300000, guid: 36cf8cbf92c5c714086fed087fa705cf, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Conglomerate_Damage_02
+  - Conglomerate_Damage_13
+  - Conglomerate_Damage_16
+  - Conglomerate_Damage_21
+  - Conglomerate_Damage_14
+  - Conglomerate_Damage_12
+  - Conglomerate_Damage_15
+  - Conglomerate_Damage_17
+  - Conglomerate_Damage_18
+  - Conglomerate_Damage_01
+  - Conglomerate_Damage_00
+  - Conglomerate_Damage_05
+  - Conglomerate_Damage_03
+  - Conglomerate_Damage_25
+  - Conglomerate_Damage_22
+  - Conglomerate_Damage_26
+  - Conglomerate_Damage_19
+  - Conglomerate_Damage_24
+  - Conglomerate_Damage_29
+  - Conglomerate_Damage_08
+  - Conglomerate_Damage_06
+  - Conglomerate_Damage_30
+  - Conglomerate_Damage_04
+  - Conglomerate_Damage_27
+  - Conglomerate_Damage_10
+  - Conglomerate_Damage_09
+  - Conglomerate_Damage_11
+  - Conglomerate_Damage_20
+  - Conglomerate_Damage_28
+  - Conglomerate_Damage_07
+  - Conglomerate_Damage_23
+  m_Tag: Conglomerate_Damage
+  m_IsVariant: 0

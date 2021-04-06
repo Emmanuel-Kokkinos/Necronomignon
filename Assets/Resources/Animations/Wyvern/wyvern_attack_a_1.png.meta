@@ -1,0 +1,1646 @@
+fileFormatVersion: 2
+guid: 2ff758048cc13be47adf55f2a5335bd3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6732928310603966897
+    second: wyvern_attack_a_1_0
+  - first:
+      213: 3271218693866165462
+    second: wyvern_attack_a_1_1
+  - first:
+      213: -3853370706033313550
+    second: wyvern_attack_a_1_2
+  - first:
+      213: 4255559802323178310
+    second: wyvern_attack_a_1_3
+  - first:
+      213: 8264757010697798736
+    second: wyvern_attack_a_1_4
+  - first:
+      213: 7593540869894900462
+    second: wyvern_attack_a_1_5
+  - first:
+      213: 7340398273127045969
+    second: wyvern_attack_a_1_6
+  - first:
+      213: -7164638659609979370
+    second: wyvern_attack_a_1_7
+  - first:
+      213: 3504569905438021231
+    second: wyvern_attack_a_1_8
+  - first:
+      213: 6882264459341552838
+    second: wyvern_attack_a_1_9
+  - first:
+      213: -281508107673530081
+    second: wyvern_attack_a_1_10
+  - first:
+      213: 8801823141407934770
+    second: wyvern_attack_a_1_11
+  - first:
+      213: 1717405022909975908
+    second: wyvern_attack_a_1_12
+  - first:
+      213: -6349416217500733713
+    second: wyvern_attack_a_1_13
+  - first:
+      213: -72464385103377069
+    second: wyvern_attack_a_1_14
+  - first:
+      213: -3185701950244058287
+    second: wyvern_attack_a_1_15
+  - first:
+      213: -6906973446422844244
+    second: wyvern_attack_a_1_16
+  - first:
+      213: 45617170145841648
+    second: wyvern_attack_a_1_17
+  - first:
+      213: 2985011612558432854
+    second: wyvern_attack_a_1_18
+  - first:
+      213: -2483425863505143653
+    second: wyvern_attack_a_1_19
+  - first:
+      213: 1622984386523505862
+    second: wyvern_attack_a_1_20
+  - first:
+      213: -3737998717244218165
+    second: wyvern_attack_a_1_21
+  - first:
+      213: 4656908041464385842
+    second: wyvern_attack_a_1_22
+  - first:
+      213: -4779658811969527152
+    second: wyvern_attack_a_1_23
+  - first:
+      213: -1219664070906790292
+    second: wyvern_attack_a_1_24
+  - first:
+      213: 1545247126445023160
+    second: wyvern_attack_a_1_25
+  - first:
+      213: -2754017475569424913
+    second: wyvern_attack_a_1_26
+  - first:
+      213: -1645795815978976094
+    second: wyvern_attack_a_1_27
+  - first:
+      213: -1761486735430600206
+    second: wyvern_attack_a_1_28
+  - first:
+      213: -879073749801215654
+    second: wyvern_attack_a_1_29
+  - first:
+      213: 1191983836341999939
+    second: wyvern_attack_a_1_30
+  - first:
+      213: -8529965097271142501
+    second: wyvern_attack_a_1_31
+  - first:
+      213: 401540091630950507
+    second: wyvern_attack_a_1_32
+  - first:
+      213: -2876299562471627754
+    second: wyvern_attack_a_1_33
+  - first:
+      213: -7621551675550182602
+    second: wyvern_attack_a_1_34
+  - first:
+      213: -7878773300789801979
+    second: wyvern_attack_a_1_35
+  - first:
+      213: -7167325004011130882
+    second: wyvern_attack_a_1_36
+  - first:
+      213: 1067194382613122151
+    second: wyvern_attack_a_1_37
+  - first:
+      213: -67164821139431111
+    second: wyvern_attack_a_1_38
+  - first:
+      213: 2115194581704262328
+    second: wyvern_attack_a_1_39
+  - first:
+      213: 8616124713630077028
+    second: wyvern_attack_a_1_40
+  - first:
+      213: -1217647954282275667
+    second: wyvern_attack_a_1_41
+  - first:
+      213: 4208233736087265460
+    second: wyvern_attack_a_1_42
+  - first:
+      213: -4045158032220433575
+    second: wyvern_attack_a_1_43
+  - first:
+      213: 434284024290699088
+    second: wyvern_attack_a_1_44
+  - first:
+      213: 7943534239168372761
+    second: wyvern_attack_a_1_45
+  - first:
+      213: -6496769153503284008
+    second: wyvern_attack_a_1_46
+  - first:
+      213: 5383147907456439016
+    second: wyvern_attack_a_1_47
+  - first:
+      213: 995671720801810466
+    second: wyvern_attack_a_1_48
+  - first:
+      213: -4507790103992214829
+    second: wyvern_attack_a_1_49
+  - first:
+      213: 3366738396282212780
+    second: wyvern_attack_a_1_50
+  - first:
+      213: -1983642711519313534
+    second: wyvern_attack_a_1_51
+  - first:
+      213: 8463614629060682779
+    second: wyvern_attack_a_1_52
+  - first:
+      213: 1372239740708525596
+    second: wyvern_attack_a_1_53
+  - first:
+      213: 8487676426845602562
+    second: wyvern_attack_a_1_54
+  - first:
+      213: 2215368240110392672
+    second: wyvern_attack_a_1_55
+  - first:
+      213: 5632605376286198256
+    second: wyvern_attack_a_1_56
+  - first:
+      213: -9173454128838482002
+    second: wyvern_attack_a_1_57
+  - first:
+      213: 4852172377118879677
+    second: wyvern_attack_a_1_58
+  - first:
+      213: 4828414830122191305
+    second: wyvern_attack_a_1_59
+  - first:
+      213: 9111763784723082584
+    second: wyvern_attack_a_1_60
+  - first:
+      213: 2013712197733557051
+    second: wyvern_attack_a_1_61
+  - first:
+      213: -863133344620451674
+    second: wyvern_attack_a_1_62
+  - first:
+      213: -7414453581060204541
+    second: wyvern_attack_a_1_63
+  - first:
+      213: -777738974058216998
+    second: wyvern_attack_a_1_64
+  - first:
+      213: -8472000053379695133
+    second: wyvern_attack_a_1_65
+  - first:
+      213: -8934014968809129324
+    second: wyvern_attack_a_1_66
+  - first:
+      213: -8974124704425109975
+    second: wyvern_attack_a_1_67
+  - first:
+      213: -2376897776313317872
+    second: wyvern_attack_a_1_68
+  - first:
+      213: -6817970157035213460
+    second: wyvern_attack_a_1_69
+  - first:
+      213: -3948983036345085429
+    second: wyvern_attack_a_1_70
+  - first:
+      213: 2607743832895460084
+    second: wyvern_attack_a_1_71
+  - first:
+      213: -5061510437040976825
+    second: wyvern_attack_a_1_72
+  - first:
+      213: -3435517561936684214
+    second: wyvern_attack_a_1_73
+  - first:
+      213: -535208620861396841
+    second: wyvern_attack_a_1_74
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b968bb30aa207d50800000000000000
+      internalID: 6732928310603966897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_1
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d492860214b56d20800000000000000
+      internalID: 3271218693866165462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_2
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8fcf642c3168ac0800000000000000
+      internalID: -3853370706033313550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_3
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64397e1e719ce0b30800000000000000
+      internalID: 4255559802323178310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_4
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054cf8176b052b270800000000000000
+      internalID: 8264757010697798736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_5
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea0f79503da16960800000000000000
+      internalID: 7593540869894900462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_6
+      rect:
+        serializedVersion: 2
+        x: 4476
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15bd0ab96555ed560800000000000000
+      internalID: 7340398273127045969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_7
+      rect:
+        serializedVersion: 2
+        x: 5222
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6169ae55917129c90800000000000000
+      internalID: -7164638659609979370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_8
+      rect:
+        serializedVersion: 2
+        x: 5968
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f665820d2cbb2a030800000000000000
+      internalID: 3504569905438021231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_9
+      rect:
+        serializedVersion: 2
+        x: 6714
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc595ddf07b28f50800000000000000
+      internalID: 6882264459341552838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_10
+      rect:
+        serializedVersion: 2
+        x: 7460
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f111ab81ed1e71cf0800000000000000
+      internalID: -281508107673530081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_11
+      rect:
+        serializedVersion: 2
+        x: 8206
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239ce67538b562a70800000000000000
+      internalID: 8801823141407934770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_12
+      rect:
+        serializedVersion: 2
+        x: 8952
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d4506e4c275d710800000000000000
+      internalID: 1717405022909975908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_13
+      rect:
+        serializedVersion: 2
+        x: 9698
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feea3c0479752e7a0800000000000000
+      internalID: -6349416217500733713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_14
+      rect:
+        serializedVersion: 2
+        x: 10444
+        y: 2096
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35dcb03960e8efef0800000000000000
+      internalID: -72464385103377069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b0f6f64fc1ac3d0800000000000000
+      internalID: -3185701950244058287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_16
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac29e4ce308520a0800000000000000
+      internalID: -6906973446422844244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_17
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f19336139012a000800000000000000
+      internalID: 45617170145841648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_18
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a16f01f34ec6920800000000000000
+      internalID: 2985011612558432854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_19
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9812cbb559198dd0800000000000000
+      internalID: -2483425863505143653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_20
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c42dba53bff58610800000000000000
+      internalID: 1622984386523505862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_21
+      rect:
+        serializedVersion: 2
+        x: 4476
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4eacfa8f5ff1cc0800000000000000
+      internalID: -3737998717244218165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_22
+      rect:
+        serializedVersion: 2
+        x: 5222
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231152bb039a0a040800000000000000
+      internalID: 4656908041464385842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_23
+      rect:
+        serializedVersion: 2
+        x: 5968
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092adfc52ad3badb0800000000000000
+      internalID: -4779658811969527152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_24
+      rect:
+        serializedVersion: 2
+        x: 6714
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e3b445df1e21fe0800000000000000
+      internalID: -1219664070906790292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_25
+      rect:
+        serializedVersion: 2
+        x: 7460
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfd2fd0312d17510800000000000000
+      internalID: 1545247126445023160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_26
+      rect:
+        serializedVersion: 2
+        x: 8206
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5677782b3c7c9d0800000000000000
+      internalID: -2754017475569424913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_27
+      rect:
+        serializedVersion: 2
+        x: 8952
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acbfb7dc65f829e0800000000000000
+      internalID: -1645795815978976094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_28
+      rect:
+        serializedVersion: 2
+        x: 9698
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9b81a9521fd87e0800000000000000
+      internalID: -1761486735430600206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_29
+      rect:
+        serializedVersion: 2
+        x: 10444
+        y: 1572
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a595ab30517ecc3f0800000000000000
+      internalID: -879073749801215654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3491c27dbf6ca8010800000000000000
+      internalID: 1191983836341999939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_31
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b975cae00f97f9980800000000000000
+      internalID: -8529965097271142501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_32
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b689dbcf59e829500800000000000000
+      internalID: 401540091630950507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_33
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614644789c45518d0800000000000000
+      internalID: -2876299562471627754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_34
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6335c8db12fca3690800000000000000
+      internalID: -7621551675550182602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_35
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c879c2d69f8a290800000000000000
+      internalID: -7878773300789801979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_36
+      rect:
+        serializedVersion: 2
+        x: 4476
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff242a02eb888c90800000000000000
+      internalID: -7167325004011130882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_37
+      rect:
+        serializedVersion: 2
+        x: 5222
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c82f103af6fce00800000000000000
+      internalID: 1067194382613122151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_38
+      rect:
+        serializedVersion: 2
+        x: 5968
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931e49673f1611ff0800000000000000
+      internalID: -67164821139431111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_39
+      rect:
+        serializedVersion: 2
+        x: 6714
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b24059e34eaa5d10800000000000000
+      internalID: 2115194581704262328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_40
+      rect:
+        serializedVersion: 2
+        x: 7460
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4609260e6cf929770800000000000000
+      internalID: 8616124713630077028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_41
+      rect:
+        serializedVersion: 2
+        x: 8206
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac168f03ab0a1fe0800000000000000
+      internalID: -1217647954282275667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_42
+      rect:
+        serializedVersion: 2
+        x: 8952
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0eb4b6946a66a30800000000000000
+      internalID: 4208233736087265460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_43
+      rect:
+        serializedVersion: 2
+        x: 9698
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953de2da336bcd7c0800000000000000
+      internalID: -4045158032220433575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_44
+      rect:
+        serializedVersion: 2
+        x: 10444
+        y: 1048
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0576977e403e60600800000000000000
+      internalID: 434284024290699088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910a8cacd4a1d3e60800000000000000
+      internalID: 7943534239168372761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_46
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4b8b150e6d6d5a0800000000000000
+      internalID: -6496769153503284008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_47
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2145d2088c4ba40800000000000000
+      internalID: 5383147907456439016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_48
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2283b4f972651dd00800000000000000
+      internalID: 995671720801810466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_49
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dad581a8cc1171c0800000000000000
+      internalID: -4507790103992214829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_50
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1d112dbbe09be20800000000000000
+      internalID: 3366738396282212780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_51
+      rect:
+        serializedVersion: 2
+        x: 4476
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2814992b67fa874e0800000000000000
+      internalID: -1983642711519313534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_52
+      rect:
+        serializedVersion: 2
+        x: 5222
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1426f8b9acc47570800000000000000
+      internalID: 8463614629060682779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_53
+      rect:
+        serializedVersion: 2
+        x: 5968
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c161b9316cc2b0310800000000000000
+      internalID: 1372239740708525596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_54
+      rect:
+        serializedVersion: 2
+        x: 6714
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203c6969db84ac570800000000000000
+      internalID: 8487676426845602562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_55
+      rect:
+        serializedVersion: 2
+        x: 7460
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06556764da19ebe10800000000000000
+      internalID: 2215368240110392672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_56
+      rect:
+        serializedVersion: 2
+        x: 8206
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f98e753fb80b2e40800000000000000
+      internalID: 5632605376286198256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_57
+      rect:
+        serializedVersion: 2
+        x: 8952
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7ed37a21851b080800000000000000
+      internalID: -9173454128838482002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_58
+      rect:
+        serializedVersion: 2
+        x: 9698
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf222fa111665340800000000000000
+      internalID: 4852172377118879677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_59
+      rect:
+        serializedVersion: 2
+        x: 10444
+        y: 524
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c949a9b4b9f10340800000000000000
+      internalID: 4828414830122191305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wyvern_attack_a_1_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 746
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d20b1d2ec737e70800000000000000
+      internalID: 9111763784723082584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 31fdd3d6d0c41c54093057ae94972e18
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
