@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 namespace DialogueEditor
 {
@@ -158,13 +157,9 @@ namespace DialogueEditor
         public void EndConversation()
         {
             SetState(eState.TransitioningDialogueOff);
-            //Returns to previous scene -- To be changed
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-
+            
             if (OnConversationEnded != null)
                 OnConversationEnded.Invoke();
-                
-                
         }
 
         public void SelectNextOption()
@@ -195,7 +190,7 @@ namespace DialogueEditor
             if (m_uiOptions.Count == 0) { return; }
 
             UIConversationButton button = m_uiOptions[m_currentSelectedIndex];
-            button.OnClick();
+            button.OnButtonPressed();
         }
 
         public void AlertHover(UIConversationButton button)
@@ -350,7 +345,7 @@ namespace DialogueEditor
             m_elapsedScrollTime += Time.deltaTime;
 
             // Fast skip through text by clicking mouse
-            if(Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 m_scrollIndex = m_targetScrollTextCount;
             }
@@ -464,7 +459,7 @@ namespace DialogueEditor
         // Do Speech
         //--------------------------------------
 
-        public void SetupSpeech(SpeechNode speech)
+        private void SetupSpeech(SpeechNode speech)
         {
             if (speech == null)
             {

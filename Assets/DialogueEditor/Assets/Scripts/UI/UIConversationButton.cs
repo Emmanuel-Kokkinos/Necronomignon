@@ -36,7 +36,7 @@ namespace DialogueEditor
         private float m_hoverT = 0.0f;
         private eHoverState m_hoverState;
         private bool Hovering { get { return (m_hoverState == eHoverState.animatingOn || m_hoverState == eHoverState.animatingOff); } }
-        private Vector3 BigSize { get { return Vector3.one * 1.18f; } }
+        private Vector3 BigSize { get { return Vector3.one * 1.2f; } }
 
 
         //--------------------------------------
@@ -108,20 +108,12 @@ namespace DialogueEditor
         {
             if (!ConversationManager.Instance.AllowMouseInteraction) { return; }
 
-            switch (m_buttonType)
-            {
-                case eButtonType.Speech:
-                    ConversationManager.Instance.SpeechSelected(m_node as SpeechNode);
-                    break;
+            DoClickBehaviour();
+        }
 
-                case eButtonType.Option:
-                    ConversationManager.Instance.OptionSelected(m_node as OptionNode);
-                    break;
-
-                case eButtonType.None:
-                    ConversationManager.Instance.EndButtonSelected();
-                    break;
-            }
+        public void OnButtonPressed()
+        {
+            DoClickBehaviour();
         }
 
 
@@ -169,8 +161,6 @@ namespace DialogueEditor
             }
         }
 
-        
-
         public void SetAlpha(float a)
         {
             Color c_image = OptionBackgroundImage.color;
@@ -198,6 +188,31 @@ namespace DialogueEditor
 
                 case eButtonType.None:
                     TextMesh.text = "End.";
+                    break;
+            }
+        }
+
+
+
+
+        //--------------------------------------
+        // Private logic
+        //--------------------------------------
+
+        private void DoClickBehaviour()
+        {
+            switch (m_buttonType)
+            {
+                case eButtonType.Speech:
+                    ConversationManager.Instance.SpeechSelected(m_node as SpeechNode);
+                    break;
+
+                case eButtonType.Option:
+                    ConversationManager.Instance.OptionSelected(m_node as OptionNode);
+                    break;
+
+                case eButtonType.None:
+                    ConversationManager.Instance.EndButtonSelected();
                     break;
             }
         }
