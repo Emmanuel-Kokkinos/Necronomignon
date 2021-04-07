@@ -95,4 +95,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Summon/BeastQuiz.unity
     guid: aa0f68800a731d54eb6eb85db160a3f2
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 5629f858bd5c878488777fd115d093bb,
+      type: 2}
