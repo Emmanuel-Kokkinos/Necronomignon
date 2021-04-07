@@ -24,17 +24,7 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
 
     public void back_special()
     {
-        RuntimeAnimatorController animCont = this.GetComponent<Animator>().runtimeAnimatorController;
-
-        AnimationClip kitsuneBack = animCont.animationClips[2];
-
-        //Calculate the time at which the frame of the animation is called
-        float frame = 34 * (1 / 30);
-
-        print("frame " + frame);
-        shootFrame = kitsuneBack.length - frame;
-        //shootFrame += Time.time;
-        print("shoot :" + shootFrame);
+        
         ProjectileAnimation();
     }
 
