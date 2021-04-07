@@ -12,7 +12,7 @@ namespace DialogueEditor
         //public NPCManager npcManager;
         //main conversation scene variables
         private NPCConversation currentConversation;
-        private static int timesUsedCounter = 0;
+        private static int timesUsedCounter;
         private string sceneName;
         public DialogueManagerOnEnd conversationEnded;
         GameObject background;
@@ -31,17 +31,18 @@ namespace DialogueEditor
             background = GameObject.Find("Canvas");
             NPCConversationToList();
 
+            timesUsedCounter = conversationNames.Count - 1;
+
             SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
 
-            //SetNPCConversation(FindByName("Conv_Opening"));
-            //SetNPCConversation(FindByName(conversationNames[conversationNames.Count-1].DefaultName));
+
             GetConversationData(currentConversation);
 
             //Start conversation
             BeginConversation(currentConversation, "DialogScene");
 
             //Add conversation End Events
-            //ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);  
+            ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);  
         }
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
@@ -123,7 +124,17 @@ namespace DialogueEditor
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
                     characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //instructor
                     break;
+                    //Moved tutorial to dialogue manager so it can be loaded directly from dialogue
+                case "Tutorial1":
+                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dio");
+                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria");
+                    break;
+                case "Tutorial2":
+                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad");
+                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria");
+                    break;
                 default:
+
                     break;
             }
         }
@@ -132,19 +143,29 @@ namespace DialogueEditor
         public void ConversationEnd()
         {
             string convname = currentConversation.DefaultName;
-            timesUsedCounter++;
+            timesUsedCounter--;
 
             switch (convname)
             {
                 case "Conv_Academy":
-                    SceneManager.LoadScene("Tutorial1");
+                    //SceneManager.LoadScene("Tutorial1");
+                    SetNPCConversation(FindByName("Conv_Opening"));
+                    BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Conv_Intro":
                     SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-                    BeginConversation(conversationNames[timesUsedCounter], "DialogScene");
+                    BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Conv_Opening":
-                    SceneManager.LoadScene("Menu");
+                    
+                    BeginConversation(FindByName("Tutorial1"), "Tutorial1");
+                    break;
+                case "Tutorial1":
+                    SetNPCConversation(FindByName("Tutorial2"));
+                    BeginConversation(currentConversation, "Tutorial1");
+                    break;
+                case "Tutorial2":
+                        SceneManager.LoadScene("Menu");
                     break;
             }
         }
@@ -159,7 +180,10 @@ namespace DialogueEditor
             //sceneName = SceneManager.GetActiveScene().name;
             sceneName = setSceneName;
 
-            if (sceneName == "DialogScene")
+            if (sceneName != "DialogScene")
+                SceneManager.LoadScene(sceneName);
+
+            if(conversation != null)
                 ConversationManager.Instance.StartConversation(conversation);
         }
 

@@ -2186,6 +2186,7 @@ GameObject:
   - component: {fileID: 1421393756}
   - component: {fileID: 1421393758}
   - component: {fileID: 1421393757}
+  - component: {fileID: 1421393759}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2238,7 +2239,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421393753}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05aec444ebc2d1440bbd3bd867f27d66, type: 3}
   m_Name: 
@@ -2262,6 +2263,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b49c21ce6a2fe4b92a553629ea69e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1421393759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421393753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec5395c00106da4ea54e44215a64edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversationEnded: {fileID: 0}
+  dialogueScene: 
+  characters: []
+  conversationNames: []
 --- !u!1 &1726545723
 GameObject:
   m_ObjectHideFlags: 0
