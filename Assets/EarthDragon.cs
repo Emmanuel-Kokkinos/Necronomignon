@@ -6,25 +6,36 @@ using UnityEngine;
 public class EarthDragon : MonoBehaviour
 {
     UnityArmatureComponent armatureComponent;
+    bool idle = false;
 
     // Start is called before the first frame update
     void Start()
     {
         armatureComponent = GetComponent<UnityArmatureComponent>();
-        armatureComponent.animation.FadeIn("Idle", 2f, -1);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(!idle)
+        {
+            PlayIdle();
+        }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             PlayAttackA();
         }
     }
 
+     void PlayIdle()
+    {
+        armatureComponent.animation.FadeIn("Idle", .5f, -1);
+        idle = true;
+    }
+
     void PlayAttackA()
     {
-        armatureComponent.animation.FadeIn("Attack A", 0, 1);
+        armatureComponent.animation.FadeIn("Attack A", 0f, 1);
+        idle = false;
     }
 }
