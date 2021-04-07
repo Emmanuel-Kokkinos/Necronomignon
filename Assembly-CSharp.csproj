@@ -143,7 +143,6 @@
     <Compile Include="Assets\DragonBones\Scripts\unity\UnitySlot.cs" />
     <Compile Include="Assets\DragonBones\Scripts\unity\UnityTextureAtlasData.cs" />
     <Compile Include="Assets\DragonBones\Scripts\unity\UnityUGUIDisplay.cs" />
-    <Compile Include="Assets\EarthDragon.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -172,6 +171,7 @@
     <Compile Include="Assets\Scripts\Battle\Beasts\Cthulhu_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\DreamSlime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Dryad_Script.cs" />
+    <Compile Include="Assets\Scripts\Battle\Beasts\EarthDragon.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Kitsune_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\LuzuriaAngelicus_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Mandoro_Script.cs" />

@@ -6,7 +6,8 @@ using UnityEngine;
 public class EarthDragon : MonoBehaviour
 {
     UnityArmatureComponent armatureComponent;
-    bool idle = false;
+    enum State { IDLE, FRONT, BACK, DAMAGED };
+    State state = State.FRONT;
 
     // Start is called before the first frame update
     void Start()
@@ -17,25 +18,28 @@ public class EarthDragon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!idle)
-        {
-            PlayIdle();
-        }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             PlayAttackA();
+        }
+        else
+        {
+            PlayIdle();
         }
     }
 
      void PlayIdle()
     {
-        armatureComponent.animation.FadeIn("Idle", .5f, -1);
-        idle = true;
+        if (state != State.IDLE)
+        {
+            armatureComponent.animation.FadeIn("Idle", .5f, -1);
+            state = State.IDLE;
+        }
     }
 
     void PlayAttackA()
     {
         armatureComponent.animation.FadeIn("Attack A", 0f, 1);
-        idle = false;
+        state = State.FRONT;
     }
 }
