@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 2359eb47a9cd674418d842fb4fe880f8, type: 3}
-    totalSpriteSurfaceArea: 268000000
+    totalSpriteSurfaceArea: 264000000
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -53,7 +53,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4231098044692ff49bb871270bcfd5f8, type: 3}
   - {fileID: 21300000, guid: 25717ab0de8e167478385060e530d196, type: 3}
   - {fileID: 21300000, guid: 0df12e0191c85624ea286bf1c378eacf, type: 3}
-  - {fileID: 21300000, guid: ac6d3b81932a99d42b515ec998ab27fd, type: 3}
   - {fileID: 21300000, guid: 634e4d32749653a428ae917886e0e88a, type: 3}
   - {fileID: 21300000, guid: 241c9f3258863164bac7b8bdd421f4a2, type: 3}
   - {fileID: 21300000, guid: 3b66767269fef0c4fb0a5883b6872112, type: 3}
@@ -121,7 +120,6 @@ SpriteAtlas:
   - Nahe_Idle_20
   - Nahe_Idle_28
   - Nahe_Idle_14
-  - Nahe_Idle_16
   - Nahe_Idle_27
   - Nahe_Idle_63
   - Nahe_Idle_55
