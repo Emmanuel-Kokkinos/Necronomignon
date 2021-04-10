@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DragonBones;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,7 @@ using UnityEngine.UI;
 public class AnimationPlayer : MonoBehaviour
 {
     public GameObject image;
+    UnityArmatureComponent armatureComponent;
     BeastManager beastManager;
 
     // Start is called before the first frame update
@@ -20,9 +22,9 @@ public class AnimationPlayer : MonoBehaviour
         //Prefab setting
         GameObject beastPrefab = (GameObject)Instantiate(Resources.Load($"Prefabs/Beasts/{SummonBookLoader.beastName}"));
         beastPrefab.transform.SetParent(GameObject.Find($"Image").transform);
-        beastPrefab.transform.localPosition = new Vector3(0, 0);
+        beastPrefab.transform.localPosition = new Vector3(0, 100);
         beastPrefab.transform.localRotation = Quaternion.identity;
-        beastPrefab.transform.localScale = new Vector3(10, 10);
+        beastPrefab.transform.localScale = new Vector3(100, 100);
 
         image = image.transform.GetChild(0).gameObject;
     }
@@ -30,7 +32,11 @@ public class AnimationPlayer : MonoBehaviour
     //Front Row Attack
     public void FrontAttack()
     {
-       image.GetComponent<Animator>().SetTrigger("Front");
+        if(image.name == "Terraos(Clone)")
+        {
+            armatureComponent.animation.FadeIn("Attack A", .5f, -1);
+        }
+        image.GetComponent<Animator>().SetTrigger("Front");
     }
 
     //Back Row Attack

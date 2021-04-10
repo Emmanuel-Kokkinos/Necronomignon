@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EarthDragon : MonoBehaviour
 {
-    UnityArmatureComponent armatureComponent;
+    public UnityArmatureComponent armatureComponent;
     enum State { IDLE, FRONT, BACK, DAMAGED };
     State state = State.FRONT;
 
@@ -13,11 +13,18 @@ public class EarthDragon : MonoBehaviour
     void Start()
     {
         armatureComponent = GetComponent<UnityArmatureComponent>();
+        StartCoroutine(TestDeath());
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            PlayAttackA();
+        }
+
+        /*
         if (Input.GetKeyDown(KeyCode.Q))
         {
             PlayAttackA();
@@ -26,6 +33,17 @@ public class EarthDragon : MonoBehaviour
         {
             PlayIdle();
         }
+        */
+    }
+
+    IEnumerator TestDeath()
+    {
+        GameObject.Find("Beast").GetComponent<Animator>().SetInteger("Health", 0);
+        armatureComponent.gameObject.SetActive(false);
+
+        yield return new WaitForSeconds(2f);
+
+        armatureComponent.gameObject.SetActive(true);
     }
 
      void PlayIdle()
