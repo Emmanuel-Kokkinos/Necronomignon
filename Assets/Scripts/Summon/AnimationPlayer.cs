@@ -26,7 +26,12 @@ public class AnimationPlayer : MonoBehaviour
         beastPrefab.transform.localRotation = Quaternion.identity;
         beastPrefab.transform.localScale = new Vector3(100, 100);
 
+        
+
         image = image.transform.GetChild(0).gameObject;
+
+        armatureComponent = image.GetComponent<UnityArmatureComponent>();
+        Summon();
     }
 
     //Front Row Attack
@@ -34,20 +39,37 @@ public class AnimationPlayer : MonoBehaviour
     {
         if(image.name == "Terraos(Clone)")
         {
-            armatureComponent.animation.FadeIn("Attack A", .5f, -1);
+            armatureComponent.animation.Reset();
+            armatureComponent.animation.FadeIn("Attack A", .5f, 1);
+            /*while (armatureComponent.animation.isCompleted)
+            {
+                Summon();
+            }*/
+            StartCoroutine(wait4me());
+            
         }
-        image.GetComponent<Animator>().SetTrigger("Front");
+       // image.GetComponent<Animator>().SetTrigger("Front");
     }
 
     //Back Row Attack
     public void BackAttack()
     {
+        if (image.name == "Terraos(Clone)")
+        {
+            armatureComponent.animation.FadeIn("Attack B", .5f, 1);
+            StartCoroutine(wait4me());
+        }
         image.GetComponent<Animator>().SetTrigger("Back");
     }
 
     //When a Beast Receives Damage
     public void Damaged()
     {
+        if (image.name == "Terraos(Clone)")
+        {
+            armatureComponent.animation.FadeIn("Damage", .5f, 1);
+            StartCoroutine(wait4me());
+        }
         image.GetComponent<Animator>().SetTrigger("GetHit");
     }
 
@@ -61,14 +83,23 @@ public class AnimationPlayer : MonoBehaviour
     // When Summoning a new beast into the field, or for the first time 
     public void Summon()
     {
-        image.GetComponent<Animator>().SetInteger("Health", 100);
+        if (image.name == "Terraos(Clone)")
+        {
+            armatureComponent.animation.Play("Idle", 0);
+        }
+        //image.GetComponent<Animator>().SetInteger("Health", 100);
         //Summon animation will go here when we get them
-        image.GetComponent<Animator>().Play("Base Layer.Idle", 0);
+        //image.GetComponent<Animator>().Play("Base Layer.Idle", 0);
     }
 
     //Back Button(obviously) 
     public void BackButton()
     {
         SceneManager.LoadScene("SummonMain");
+    }
+    IEnumerator wait4me()
+    {
+        yield return new WaitWhile(new System.Func<bool>(() => !armatureComponent.animation.isCompleted));
+        Summon();
     }
 }

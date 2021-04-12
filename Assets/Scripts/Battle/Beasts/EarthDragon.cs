@@ -38,8 +38,8 @@ public class EarthDragon : MonoBehaviour
 
     IEnumerator TestDeath()
     {
-        GameObject.Find("Beast").GetComponent<Animator>().SetInteger("Health", 0);
-        armatureComponent.gameObject.SetActive(false);
+        GameObject.Find("Terraos(Clone)").GetComponent<Animator>().SetInteger("Health", 0);
+        //armatureComponent.gameObject.SetActive(false);
 
         yield return new WaitForSeconds(2f);
 
