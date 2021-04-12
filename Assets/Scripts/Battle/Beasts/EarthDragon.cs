@@ -13,7 +13,7 @@ public class EarthDragon : MonoBehaviour
     void Start()
     {
         armatureComponent = GetComponent<UnityArmatureComponent>();
-        StartCoroutine(TestDeath());
+        //StartCoroutine(TestDeath());
     }
 
     // Update is called once per frame

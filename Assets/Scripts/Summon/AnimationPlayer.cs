@@ -39,16 +39,11 @@ public class AnimationPlayer : MonoBehaviour
     {
         if(image.name == "Terraos(Clone)")
         {
-            armatureComponent.animation.Reset();
-            armatureComponent.animation.FadeIn("Attack A", .5f, 1);
-            /*while (armatureComponent.animation.isCompleted)
-            {
-                Summon();
-            }*/
+            armatureComponent.animation.Play("Attack A", 1);
             StartCoroutine(wait4me());
             
         }
-       // image.GetComponent<Animator>().SetTrigger("Front");
+        image.GetComponent<Animator>().SetTrigger("Front");
     }
 
     //Back Row Attack
@@ -56,7 +51,7 @@ public class AnimationPlayer : MonoBehaviour
     {
         if (image.name == "Terraos(Clone)")
         {
-            armatureComponent.animation.FadeIn("Attack B", .5f, 1);
+            armatureComponent.animation.Play("Attack B", 1);
             StartCoroutine(wait4me());
         }
         image.GetComponent<Animator>().SetTrigger("Back");
@@ -67,7 +62,7 @@ public class AnimationPlayer : MonoBehaviour
     {
         if (image.name == "Terraos(Clone)")
         {
-            armatureComponent.animation.FadeIn("Damage", .5f, 1);
+            armatureComponent.animation.Play("Damage", 1);
             StartCoroutine(wait4me());
         }
         image.GetComponent<Animator>().SetTrigger("GetHit");
@@ -76,8 +71,12 @@ public class AnimationPlayer : MonoBehaviour
     //On Death
     public void Death()
     {
+        if (image.name == "Terraos(Clone)")
+        {
+            armatureComponent.animation.Play("Deathj", 1);
+            StartCoroutine(wait4me());
+        }
         image.GetComponent<Animator>().SetInteger("Health", 0);
-        
     }
 
     // When Summoning a new beast into the field, or for the first time 
@@ -87,9 +86,9 @@ public class AnimationPlayer : MonoBehaviour
         {
             armatureComponent.animation.Play("Idle", 0);
         }
-        //image.GetComponent<Animator>().SetInteger("Health", 100);
+        image.GetComponent<Animator>().SetInteger("Health", 100);
         //Summon animation will go here when we get them
-        //image.GetComponent<Animator>().Play("Base Layer.Idle", 0);
+        image.GetComponent<Animator>().Play("Base Layer.Idle", 0);
     }
 
     //Back Button(obviously) 
@@ -97,6 +96,7 @@ public class AnimationPlayer : MonoBehaviour
     {
         SceneManager.LoadScene("SummonMain");
     }
+
     IEnumerator wait4me()
     {
         yield return new WaitWhile(new System.Func<bool>(() => !armatureComponent.animation.isCompleted));

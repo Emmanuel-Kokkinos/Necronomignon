@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: Terraos_ske_Data
+  m_EditorClassIdentifier: 
+  dataName: Terraos_ske
+  dragonBonesJSON: {fileID: 4900000, guid: b1402358d8c2fbe47ae9e868eff0aa12, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 705c4488ad75e9e4b99b6022ab28788c, type: 3}
+    texture: {fileID: 2800000, guid: 968f305e69c8a0342a678ffad1794b38, type: 3}
+    material: {fileID: 0}
+    uiMaterial: {fileID: 2100000, guid: 7acf0c5decde22244815759e78ae41ca, type: 2}
