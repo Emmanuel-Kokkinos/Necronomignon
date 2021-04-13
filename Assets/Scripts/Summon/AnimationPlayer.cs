@@ -22,11 +22,9 @@ public class AnimationPlayer : MonoBehaviour
         //Prefab setting
         GameObject beastPrefab = (GameObject)Instantiate(Resources.Load($"Prefabs/Beasts/{SummonBookLoader.beastName}"));
         beastPrefab.transform.SetParent(GameObject.Find($"Image").transform);
-        beastPrefab.transform.localPosition = new Vector3(0, 100);
+        beastPrefab.transform.localPosition = new Vector3(0, 0);
         beastPrefab.transform.localRotation = Quaternion.identity;
         beastPrefab.transform.localScale = new Vector3(100, 100);
-
-        
 
         image = image.transform.GetChild(0).gameObject;
 
@@ -37,58 +35,35 @@ public class AnimationPlayer : MonoBehaviour
     //Front Row Attack
     public void FrontAttack()
     {
-        if(image.name == "Terraos(Clone)")
-        {
-            armatureComponent.animation.Play("Attack A", 1);
-            StartCoroutine(wait4me());
-            
-        }
-        image.GetComponent<Animator>().SetTrigger("Front");
+        armatureComponent.animation.Play("Front", 1);
+        StartCoroutine(wait4me());
     }
 
     //Back Row Attack
     public void BackAttack()
     {
-        if (image.name == "Terraos(Clone)")
-        {
-            armatureComponent.animation.Play("Attack B", 1);
-            StartCoroutine(wait4me());
-        }
-        image.GetComponent<Animator>().SetTrigger("Back");
+        armatureComponent.animation.Play("Back", 1);
+        StartCoroutine(wait4me());
     }
 
     //When a Beast Receives Damage
     public void Damaged()
     {
-        if (image.name == "Terraos(Clone)")
-        {
-            armatureComponent.animation.Play("Damage", 1);
-            StartCoroutine(wait4me());
-        }
-        image.GetComponent<Animator>().SetTrigger("GetHit");
+        armatureComponent.animation.Play("Damage", 1);
+        StartCoroutine(wait4me());
     }
 
     //On Death
     public void Death()
     {
-        if (image.name == "Terraos(Clone)")
-        {
-            armatureComponent.animation.Play("Deathj", 1);
-            StartCoroutine(wait4me());
-        }
-        image.GetComponent<Animator>().SetInteger("Health", 0);
+        armatureComponent.animation.Play("Death", 1);
+        StartCoroutine(wait4me());
     }
 
     // When Summoning a new beast into the field, or for the first time 
     public void Summon()
     {
-        if (image.name == "Terraos(Clone)")
-        {
-            armatureComponent.animation.Play("Idle", 0);
-        }
-        image.GetComponent<Animator>().SetInteger("Health", 100);
-        //Summon animation will go here when we get them
-        image.GetComponent<Animator>().Play("Base Layer.Idle", 0);
+        armatureComponent.animation.Play("Idle", 0);
     }
 
     //Back Button(obviously) 

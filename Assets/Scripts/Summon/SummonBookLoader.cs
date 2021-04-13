@@ -91,12 +91,6 @@ public class SummonBookLoader : MonoBehaviour
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = new Vector3(3, 3);
 
-                if (beastPrefab.name != "Terraos(Clone)")
-                {
-                    Animator animator = beastPrefab.GetComponent<Animator>();
-                    animator.enabled = false;
-                }
-
                 beastTexts[x % 6].GetComponent<Text>().text = summonedNames[x];
 
                 //Make not summoned beasts transparent
