@@ -110,10 +110,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPrefab: {fileID: 100004, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
-  frontAttackSound: {fileID: 0}
-  backAttackSound: {fileID: 0}
-  startSound: {fileID: 0}
-  deathSound: {fileID: 0}
+  frontAttackSound: {fileID: 8300000, guid: e6946c9f3581b3440ad7e245d95bb688, type: 3}
+  backAttackSound: {fileID: 8300000, guid: ee0a66b1620cc104b87d02b9b0f39a9b, type: 3}
+  damageSound: {fileID: 8300000, guid: f00d38b1a8f048a48a345a99e380878e, type: 3}
+  deathSound: {fileID: 8300000, guid: ad81e14381c520641bf90095cfd7f568, type: 3}
 --- !u!61 &5149487903072482094
 BoxCollider2D:
   m_ObjectHideFlags: 0

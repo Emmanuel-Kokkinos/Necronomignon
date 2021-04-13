@@ -109,10 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512ede3df3a9ce241bd78801e97aff2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frontAttackSound: {fileID: 0}
-  backAttackSound: {fileID: 0}
-  startSound: {fileID: 0}
-  deathSound: {fileID: 0}
+  frontAttackSound: {fileID: 8300000, guid: 7227943608080db4ca1c0db802696aef, type: 3}
+  backAttackSound: {fileID: 8300000, guid: dc5a49c699571644ca752640aaecdbd6, type: 3}
+  damageSound: {fileID: 8300000, guid: d85de77c1dcf6d2498d818efea2618c0, type: 3}
+  deathSound: {fileID: 8300000, guid: aa24cc9dc324aeb4b912a9b5f81e84d4, type: 3}
 --- !u!61 &3989548621223768371
 BoxCollider2D:
   m_ObjectHideFlags: 0
