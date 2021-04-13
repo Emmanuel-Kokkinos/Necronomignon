@@ -93,6 +93,12 @@ namespace DialogueEditor
             {
                 case "Conv_Opening":
 
+                    //Change for setCharacterActive Method later
+                    for (int x = 4; x <= 7; x++)
+                    {
+                        characters[x].gameObject.SetActive(true);
+                    }
+
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
                     characters[2].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
@@ -133,11 +139,12 @@ namespace DialogueEditor
 
                     // Can remove all of this code as nothing changes from the previous conversation
                     // But I kept it at least for now in case we want there to be a difference
-                   /* for (int x = 4; x <= 7; x++)
+                   for (int x = 4; x <= 7; x++)
                     {
                         characters[x].gameObject.SetActive(false);
                     }
 
+                   /*
                     characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad"); //dad
                     characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Catherine"); //sister
                     characters[1].transform.localScale = new Vector3(.8f, .8f);
