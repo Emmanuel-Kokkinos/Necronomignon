@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DragonBones;
 
 /*
 * This Class Manages everything related to health, initialises 
@@ -13,7 +14,7 @@ public class HealthManager : MonoBehaviour
     [SerializeField] Slider xpSlider;
     [SerializeField] Text xpText;
     [SerializeField] Text levelText;
-    [SerializeField] Transform damageOutputPrefab;
+    [SerializeField] UnityEngine.Transform damageOutputPrefab;
     public BattleManager battleManager;
     public LevelChecker levelChecker;
 
@@ -180,7 +181,7 @@ public class HealthManager : MonoBehaviour
                 location.y -= 50;
             }
 
-            Transform damagePopup = Instantiate(damageOutputPrefab);
+            UnityEngine.Transform damagePopup = Instantiate(damageOutputPrefab);
             damagePopup.transform.SetParent(GameObject.Find("Canvas").transform);
             damagePopup.localPosition = location;
             damagePopup.localRotation = Quaternion.identity;
@@ -279,7 +280,7 @@ public class HealthManager : MonoBehaviour
                 beastPrefab.transform.SetParent(winners[x].transform);
                 beastPrefab.transform.localPosition = new Vector3(0, -30);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(8f, 8f);
+                beastPrefab.transform.localScale = new Vector3(25f, 25f);
             }
             else
             {
@@ -334,7 +335,7 @@ public class HealthManager : MonoBehaviour
         {
             if(g.transform.childCount > 0)
             {
-                g.transform.GetChild(0).GetComponent<Animator>().SetTrigger("Front");
+                g.transform.GetChild(0).GetComponent<UnityArmatureComponent>().animation.Play("Front");
             }
         }
     }
