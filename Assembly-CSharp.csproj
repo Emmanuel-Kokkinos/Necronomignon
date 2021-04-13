@@ -79,7 +79,6 @@
     <Compile Include="Assets\DialogueEditor\Assets\Scripts\SetParamAction.cs" />
     <Compile Include="Assets\DialogueEditor\Assets\Scripts\UI\ConversationManager.cs" />
     <Compile Include="Assets\DialogueEditor\Assets\Scripts\UI\UIConversationButton.cs" />
-    <Compile Include="Assets\DialogueEditor\Example\ExampleInputManager.cs" />
     <Compile Include="Assets\DragonBones\Demos\Scripts\AnimationBase.cs" />
     <Compile Include="Assets\DragonBones\Demos\Scripts\AnimationLayer.cs" />
     <Compile Include="Assets\DragonBones\Demos\Scripts\BaseDemo.cs" />
@@ -201,12 +200,6 @@
     <Compile Include="Assets\Scripts\Data\Move.cs" />
     <Compile Include="Assets\Scripts\Data\MoveList.cs" />
     <Compile Include="Assets\Scripts\Data\MoveManager.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\DialogueList.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPC.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPCDialogue.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPCDialogueManager.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPCList.cs" />
-    <Compile Include="Assets\Scripts\Data\NPC_Dialogue\NPCManager.cs" />
     <Compile Include="Assets\Scripts\Data\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Data\Player.cs" />
     <Compile Include="Assets\Scripts\Data\Questions.cs" />
@@ -219,7 +212,6 @@
     <Compile Include="Assets\Scripts\Data\Summoner.cs" />
     <Compile Include="Assets\Scripts\Data\Values.cs" />
     <Compile Include="Assets\Scripts\Dialog\DialogueManager.cs" />
-    <Compile Include="Assets\Scripts\Dialog\DialogueManagerOnEnd.cs" />
     <Compile Include="Assets\Scripts\Display_Picture.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\LoadScenes.cs" />
@@ -285,7 +277,6 @@
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
-    <None Include="Assets\SimplePixelUI\fonts\Font2\license.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\SaveSystem\DISCLAIMER.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
@@ -298,7 +289,7 @@
     <None Include="Assets\DragonBones\Demos\Scripts\LightTestShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\SimplePixelUI\fonts\Font1\license.txt" />
+    <None Include="Assets\PixelUI(TEMP)\Font1\license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
@@ -308,10 +299,9 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\DragonBones\Resources\Shaders\DB_BlendMode_Grab.shader" />
-    <None Include="Assets\SimplePixelUI\fonts\Font1\readme.txt" />
+    <None Include="Assets\PixelUI(TEMP)\Font1\readme.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\SimplePixelUI\fonts\Font2\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\SaveSystem\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -909,6 +899,30 @@
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{D45FEDFD-3606-B90B-F8C2-C000549793B8}</Project>
       <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.CacheServer.csproj">
+      <Project>{2DCCF69E-0E2B-CBF2-C28C-56ADA3758423}</Project>
+      <Name>UnityEditor.CacheServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
+      <Project>{5880CD8B-6E9D-B0E4-06CD-665F422635BD}</Project>
+      <Name>Unity.ScriptableBuildPipeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ResourceManager.csproj">
+      <Project>{9076B4F5-4662-7DAE-6182-55C0383029C3}</Project>
+      <Name>Unity.ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Addressables.Editor.csproj">
+      <Project>{A5175C36-0897-1230-446A-061EF37BA60A}</Project>
+      <Name>Unity.Addressables.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Addressables.csproj">
+      <Project>{E0787891-8903-AC0F-4152-1783075F6247}</Project>
+      <Name>Unity.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ScriptableBuildPipeline.csproj">
+      <Project>{F7F4AC2E-8B7D-8DB2-9B4F-13FBEAFA397A}</Project>
+      <Name>Unity.ScriptableBuildPipeline</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

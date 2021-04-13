@@ -35,6 +35,7 @@ public class AnimationPlayer : MonoBehaviour
     //Front Row Attack
     public void FrontAttack()
     {
+        image.GetComponent<Parent_Beast>().Play_SoundFX("front");
         armatureComponent.animation.Play("Front", 1);
         StartCoroutine(wait4me());
     }
@@ -42,6 +43,7 @@ public class AnimationPlayer : MonoBehaviour
     //Back Row Attack
     public void BackAttack()
     {
+        image.GetComponent<Parent_Beast>().Play_SoundFX("back");
         armatureComponent.animation.Play("Back", 1);
         StartCoroutine(wait4me());
     }
@@ -49,6 +51,7 @@ public class AnimationPlayer : MonoBehaviour
     //When a Beast Receives Damage
     public void Damaged()
     {
+        image.GetComponent<Parent_Beast>().Play_SoundFX("damage");
         armatureComponent.animation.Play("Damage", 1);
         StartCoroutine(wait4me());
     }
@@ -56,6 +59,7 @@ public class AnimationPlayer : MonoBehaviour
     //On Death
     public void Death()
     {
+        image.GetComponent<Parent_Beast>().Play_SoundFX("death");
         armatureComponent.animation.Play("Death", 1);
         StartCoroutine(wait4me());
     }

@@ -72,7 +72,7 @@ public class MissionList : MonoBehaviour
 
             enemies.Add(beastManager.getFromName("Dryad"));
 
-            while (enemies.Count < 3)
+            while (enemies.Count < 4)
             {
                 enemies.Add(null);
             }
@@ -353,6 +353,7 @@ public class MissionList : MonoBehaviour
             }
             summoner.xp = 250;
         }
+
         if (mission == "bottom")
         {
             List<int> position = new List<int>();
