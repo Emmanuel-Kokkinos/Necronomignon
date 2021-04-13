@@ -5,22 +5,24 @@ using UnityEngine;
 public class Mandoro_Script : MonoBehaviour, Parent_Beast
 {
     BattleManager battleManager;
-    AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     AudioSource audioSrc;
     Attack attack;
 
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
+        GameObject au = GameObject.Find("Music");
 
         if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
+        
 
-        frontAttackSound = Resources.Load<AudioClip>("Robot1");
-        audioSrc = GetComponent<AudioSource>();
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()
@@ -69,15 +71,18 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
     }
 
     //To modify -> add parameter to select character sound.
-    public void PlaySound()
-    {
-        //Switch statement to select the sound played. In this case we will assume only one sound 
 
-        audioSrc.PlayOneShot(deathSound);
-    }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
-        throw new System.NotImplementedException();
+        
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
+        
     }
 }

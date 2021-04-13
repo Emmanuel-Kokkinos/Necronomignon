@@ -5,7 +5,8 @@ using UnityEngine;
 public class SummonManager : MonoBehaviour
 {
 
-    public static string name;
+    public static new string name;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -8,20 +8,29 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
     BattleManager battleManager;
     Attack attack;
     [SerializeField] GameObject backPrefab;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
+    AudioSource audioSrc;
 
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
-
-        if(g != null)
+        GameObject au = GameObject.Find("Music");
+        if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
+
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
+
+        //This is done since animations for wyvern a and b are the same 
+        
     }
 
     public void back_special()
     {
+        
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
@@ -33,10 +42,13 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+
+        Play_SoundFX("back");
     }
 
     public void front_special()
     {
+
         battleManager.targets.Clear();
         battleManager.targets = FindColumnTargets();
         battleManager.cancelGuard = true;
@@ -50,6 +62,8 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+
+        Play_SoundFX("front");
     }
 
     void ProjectileAnimation()
@@ -264,8 +278,16 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         return targets;
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
-        throw new NotImplementedException();
+
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
+
     }
 }

@@ -9,6 +9,6 @@ public interface Parent_Beast
 
     void back_special();
 
-    void Play_SoundFX();
+    void Play_SoundFX(string sound);
 
 }
