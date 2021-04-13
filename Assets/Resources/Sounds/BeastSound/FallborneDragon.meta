@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 951cfa40619594e4b9af3ae57399d1e4
+<<<<<<< HEAD:Assets/Resources/Sounds/BeastSound/FallborneDragon.meta
+guid: c12168f3ffc65074d945d3650b1adee2
+=======
+guid: 5b31f478153cdb044a38ed1464d56dec
+>>>>>>> master:Assets/AddressableAssetsData/AssetGroups.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

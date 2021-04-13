@@ -375,7 +375,7 @@ namespace DialogueEditor
             }
         }
 
-        public SpeechNode CreateSpeechNode(EditableSpeechNode editableNode)
+        private SpeechNode CreateSpeechNode(EditableSpeechNode editableNode)
         {
             SpeechNode speech = new SpeechNode();
             speech.Name = editableNode.Name;
@@ -399,7 +399,7 @@ namespace DialogueEditor
             return speech;
         }
 
-        public OptionNode CreateOptionNode(EditableOptionNode editableNode)
+        private OptionNode CreateOptionNode(EditableOptionNode editableNode)
         {
             OptionNode option = new OptionNode();
             option.Text = editableNode.Text;

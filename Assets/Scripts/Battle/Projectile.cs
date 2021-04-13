@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
 
     private Vector3 shootDir;
     float moveSpeed = 150f;
+    public float shootTime = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,8 @@ public class Projectile : MonoBehaviour
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
+
+        
     }
 
     // Update is called once per frame
