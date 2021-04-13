@@ -92,15 +92,6 @@ namespace DialogueEditor
             switch (screenInter)
             {
                 case "Conv_Opening":
-                    /*characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Gabriel"); //Gabriel
-                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Faraday"); //Faraday
-                    characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Auriga"); //Auriga
-                    characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/John"); //John
-                    characters[4].sprite = Resources.Load<Sprite>("Profile_Pictures/Dio"); //Dio
-                    characters[5].sprite = Resources.Load<Sprite>("Profile_Pictures/Jheera"); //Jheera
-                    characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/Neput"); //Neput
-                    characters[7].sprite = Resources.Load<Sprite>("Profile_Pictures/Azglor"); //Azglor
-                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //Tadria*/
 
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
@@ -190,16 +181,11 @@ namespace DialogueEditor
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Conv_Opening":
-                    
-                    BeginConversation(FindByName("Tutorial1"), "Tutorial1");
+                    SetNPCConversation(FindByName("Tutorial1"));
+                    BeginConversation(currentConversation, "Tutorial1");
                     break;
                 case "Tutorial1":
-                    SetNPCConversation(FindByName("Tutorial2"));
-                    BeginConversation(currentConversation, "Tutorial1");
                     SceneManager.LoadScene("Menu");
-                    break;
-                case "Tutorial2":
-                        SceneManager.LoadScene("Menu");
                     break;
             }
         }
