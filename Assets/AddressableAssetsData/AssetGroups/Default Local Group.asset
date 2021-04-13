@@ -27,14 +27,14 @@ MonoBehaviour:
     m_Address: unclicked_button
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2800000, guid: 50282dd39994b3e42ba9367159c8be74, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 50282dd39994b3e42ba9367159c8be74, type: 3}
   - m_GUID: 5bb03e4ba0f707f4e9ef43b6d6a444dc
     m_Address: arrow_button_clicked
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2800000, guid: 5bb03e4ba0f707f4e9ef43b6d6a444dc, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5bb03e4ba0f707f4e9ef43b6d6a444dc, type: 3}
   - m_GUID: 7275da243163e714bbb8dd6b13e8cc19
     m_Address: arrow_button
     m_ReadOnly: 0
@@ -45,14 +45,14 @@ MonoBehaviour:
     m_Address: slider
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2800000, guid: 86929a18144017b40944eb84e285e395, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 86929a18144017b40944eb84e285e395, type: 3}
   - m_GUID: 9d3242ea2b9d2794a8eca5e2245f272c
     m_Address: clicked_button
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2800000, guid: 9d3242ea2b9d2794a8eca5e2245f272c, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 9d3242ea2b9d2794a8eca5e2245f272c, type: 3}
   - m_GUID: c900e9112e25b1b47875321927099159
     m_Address: sliderKnobl
     m_ReadOnly: 0

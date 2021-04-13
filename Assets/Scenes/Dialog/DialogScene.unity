@@ -214,7 +214,6 @@ GameObject:
   - component: {fileID: 209366589}
   - component: {fileID: 209366588}
   - component: {fileID: 209366591}
-  - component: {fileID: 209366593}
   - component: {fileID: 209366597}
   m_Layer: 0
   m_Name: GameManager
@@ -271,7 +270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec5395c00106da4ea54e44215a64edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationEnded: {fileID: 0}
   dialogueScene: 
   characters:
   - {fileID: 1726947926}
@@ -300,18 +298,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveManager: {fileID: 209366597}
---- !u!114 &209366593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209366587}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1802cd6170254384081bfcd923b87868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &209366594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,6 +1377,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 404627815824699239, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
     - {fileID: 8050628943823832647, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
+    - {fileID: 3537375243640273888, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
 --- !u!1 &514852842
 GameObject:

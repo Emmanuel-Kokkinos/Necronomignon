@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿
 using System.Collections.Generic;
 using UnityEngine;
-using DialogueEditor;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using System.Collections;
 
 namespace DialogueEditor
 {
@@ -14,7 +16,6 @@ namespace DialogueEditor
         private NPCConversation currentConversation;
         private static int timesUsedCounter;
         private string sceneName;
-        public DialogueManagerOnEnd conversationEnded;
         GameObject background;
 
         public string dialogueScene;
@@ -23,23 +24,31 @@ namespace DialogueEditor
         [SerializeField] List<NPCConversation> conversationNames;
         
         private List<string> characterNames = new List<string>();
+        private List<Sprite> characterAssets = new List<Sprite>();
 
 
         // Start is called before the first frame update
         void Start()
         {
+            print(characterAssets.Count);
+
             background = GameObject.Find("Canvas");
+
+            //Sets all conversations to list
             NPCConversationToList();
 
+            //Last item of list
             timesUsedCounter = conversationNames.Count - 1;
 
+            //Sets the default conversation
             SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
 
-
+            //Gets the data associated with conversation for further edit
             GetConversationData(currentConversation);
 
-            //Start conversation
-            BeginConversation(currentConversation, "DialogScene");
+            //Start conversation and Initializes addressable components to load resources
+            StartCoroutine(LoadConversationAsync());
+            
 
             //Add conversation End Events
             ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);  
@@ -63,7 +72,10 @@ namespace DialogueEditor
             return sceneConvo;
         }
 
-        //Populates a list will all the conversations present
+        /*Populates a list will all the conversations present
+         * ConversationNames list has all conversation reversed from the order they appear in inspector
+         * thus: last item in list == first conversation in inspector
+         */
         private void NPCConversationToList()
         {
             NPCConversation[] convs = GameObject.FindObjectsOfType<NPCConversation>();
@@ -80,7 +92,7 @@ namespace DialogueEditor
             switch (screenInter)
             {
                 case "Conv_Opening":
-                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Gabriel"); //Gabriel
+                    /*characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Gabriel"); //Gabriel
                     characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Faraday"); //Faraday
                     characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Auriga"); //Auriga
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/John"); //John
@@ -88,7 +100,17 @@ namespace DialogueEditor
                     characters[5].sprite = Resources.Load<Sprite>("Profile_Pictures/Jheera"); //Jheera
                     characters[6].sprite = Resources.Load<Sprite>("Profile_Pictures/Neput"); //Neput
                     characters[7].sprite = Resources.Load<Sprite>("Profile_Pictures/Azglor"); //Azglor
-                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //Tadria
+                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //Tadria*/
+
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
+                    characters[1].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
+                    characters[2].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
+                    characters[3].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
+                    characters[4].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
+                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
+                    characters[6].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
+                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
                     break;
                 case "Conv_Intro":
                     for(int x = 4; x <= 7; x++)
@@ -96,22 +118,31 @@ namespace DialogueEditor
                         characters[x].gameObject.SetActive(false);
                     }
 
-                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad"); //dad
+                    //OBSOLETE CALL OF RESOURCES
+                    /*characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad"); //dad
                     characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Catherine"); //sister
                     characters[1].transform.localScale = new Vector3(.8f, .8f);
                     characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Ari"); //brother
                     characters[2].transform.localScale = new Vector3(.8f, .8f);
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
-                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //instructor
+                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //instructor*/
 
-                    
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Dad")); //dad
+                    characters[1].sprite = characterAssets.Find(x => x.name.Equals("Catherine")); //sister
+                    characters[1].transform.localScale = new Vector3(.8f, .8f);
+                    characters[2].sprite = characterAssets.Find(x => x.name.Equals("Ari")); //brother
+                    characters[2].transform.localScale = new Vector3(.8f, .8f);
+                    characters[3].sprite = characterAssets.Find(x => x.name.Equals("Mom")); //mom
+                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //instructor
+
+                    //Sets background of intro conversation
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/housePX");
                     break;
                 case "Conv_Academy":
 
                     // Can remove all of this code as nothing changes from the previous conversation
                     // But I kept it at least for now in case we want there to be a difference
-                    for (int x = 4; x <= 7; x++)
+                   /* for (int x = 4; x <= 7; x++)
                     {
                         characters[x].gameObject.SetActive(false);
                     }
@@ -122,16 +153,18 @@ namespace DialogueEditor
                     characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Ari"); //brother
                     characters[2].transform.localScale = new Vector3(.8f, .8f);
                     characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
-                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //instructor
+                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //instructor*/
+
+
                     break;
                     //Moved tutorial to dialogue manager so it can be loaded directly from dialogue
                 case "Tutorial1":
-                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dio");
-                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria");
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Dio"));
+                    characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Tutorial2":
-                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad");
-                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria");
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Dad"));
+                    characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 default:
 
@@ -163,6 +196,7 @@ namespace DialogueEditor
                 case "Tutorial1":
                     SetNPCConversation(FindByName("Tutorial2"));
                     BeginConversation(currentConversation, "Tutorial1");
+                    SceneManager.LoadScene("Menu");
                     break;
                 case "Tutorial2":
                         SceneManager.LoadScene("Menu");
@@ -201,5 +235,24 @@ namespace DialogueEditor
                 }
             }
         }
+
+        //Import characters assets and begin conversation
+        public IEnumerator LoadConversationAsync()
+        {
+            //Gets all the addressable character sprites
+            AsyncOperationHandle<IList<Sprite>> characterSprites = Addressables.LoadAssetsAsync<Sprite>("Character", spr => { Debug.Log(spr.name); });
+
+            yield return characterSprites;
+
+            //Sets character assets list to set the sprites in scene
+            characterAssets = (List<Sprite>)characterSprites.Result;
+
+            print(characterAssets.Count);
+
+            //Begins conversation at end of corroutine
+            BeginConversation(currentConversation, "DialogScene");
+        }
+
+
     }
 }

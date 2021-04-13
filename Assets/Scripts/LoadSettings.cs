@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadSettings : MonoBehaviour
@@ -27,7 +23,6 @@ public class LoadSettings : MonoBehaviour
     void Start()
     {
         //Loads assets asynchroniously
-        Addressables.InitializeAsync();
         setRedRoachAsset();
 
         if (blurBackground != null) blurBackground.SetActive(false);
