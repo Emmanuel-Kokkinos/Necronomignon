@@ -481,7 +481,7 @@ MonoBehaviour:
   backPrefab: {fileID: 1687118924408352, guid: 77c69ec12208c4c4380d15e30b6f8f68, type: 3}
   frontAttackSound: {fileID: 0}
   backAttackSound: {fileID: 8300000, guid: a5990d0217ac3c3478a658ff6c3ca71c, type: 3}
-  startSound: {fileID: 0}
+  damageSound: {fileID: 0}
   deathSound: {fileID: 0}
 --- !u!82 &5737343482714949596
 AudioSource:

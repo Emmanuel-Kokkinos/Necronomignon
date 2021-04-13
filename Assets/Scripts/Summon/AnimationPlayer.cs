@@ -37,7 +37,7 @@ public class AnimationPlayer : MonoBehaviour
     {
         image.GetComponent<Parent_Beast>().Play_SoundFX("front");
         armatureComponent.animation.Play("Front", 1);
-        StartCoroutine(wait4me());
+        StartCoroutine(AnimationWaitTime());
     }
 
     //Back Row Attack
@@ -45,7 +45,7 @@ public class AnimationPlayer : MonoBehaviour
     {
         image.GetComponent<Parent_Beast>().Play_SoundFX("back");
         armatureComponent.animation.Play("Back", 1);
-        StartCoroutine(wait4me());
+        StartCoroutine(AnimationWaitTime());
     }
 
     //When a Beast Receives Damage
@@ -53,7 +53,7 @@ public class AnimationPlayer : MonoBehaviour
     {
         image.GetComponent<Parent_Beast>().Play_SoundFX("damage");
         armatureComponent.animation.Play("Damage", 1);
-        StartCoroutine(wait4me());
+        StartCoroutine(AnimationWaitTime());
     }
 
     //On Death
@@ -61,7 +61,7 @@ public class AnimationPlayer : MonoBehaviour
     {
         image.GetComponent<Parent_Beast>().Play_SoundFX("death");
         armatureComponent.animation.Play("Death", 1);
-        StartCoroutine(wait4me());
+        StartCoroutine(AnimationWaitTime());
     }
 
     // When Summoning a new beast into the field, or for the first time 
@@ -76,7 +76,7 @@ public class AnimationPlayer : MonoBehaviour
         SceneManager.LoadScene("SummonMain");
     }
 
-    IEnumerator wait4me()
+    IEnumerator AnimationWaitTime()
     {
         yield return new WaitWhile(new System.Func<bool>(() => !armatureComponent.animation.isCompleted));
         Summon();

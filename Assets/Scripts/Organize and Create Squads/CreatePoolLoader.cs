@@ -65,13 +65,10 @@ public class CreatePoolLoader : MonoBehaviour
             {
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + summonedNames[x]));
                 beastPrefab.transform.SetParent(GameObject.Find("Pool" + (x % 9 + 1)).transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -75);
+                beastPrefab.transform.localPosition = new Vector3(0, -85);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(5f, 5f);
+                beastPrefab.transform.localScale = new Vector3(30f, 30f);
                 beastPrefab.transform.SetParent(GameObject.Find("PoolBeasts").transform);
-
-                Animator animator = beastPrefab.GetComponent<Animator>();
-                animator.enabled = false;
             }
         }
 

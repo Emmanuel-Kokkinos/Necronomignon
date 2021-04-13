@@ -70,9 +70,9 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
                     {
                         beastPrefab.transform.SetParent(GameObject.Find("BigSlot" + (slotID - 8)).transform);
                     }
-                    beastPrefab.transform.localPosition = new Vector3(-10, -30);
+                    beastPrefab.transform.localPosition = new Vector3(-10, -35);
                     beastPrefab.transform.localRotation = Quaternion.identity;
-                    beastPrefab.transform.localScale = new Vector3(3f, 3f);
+                    beastPrefab.transform.localScale = new Vector3(18f, 18f);
                     beastPrefab.transform.SetParent(GameObject.Find("SlotBeasts").transform);
                 }
             }
@@ -168,9 +168,9 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
                     {
                         beastPrefab.transform.SetParent(GameObject.Find("BigSlot" + (slotID - 8)).transform);
                     }
-                    beastPrefab.transform.localPosition = new Vector3(-10, -30);
+                    beastPrefab.transform.localPosition = new Vector3(-10, -35);
                     beastPrefab.transform.localRotation = Quaternion.identity;
-                    beastPrefab.transform.localScale = new Vector3(3f, 3f);
+                    beastPrefab.transform.localScale = new Vector3(18f, 18f);
                     beastPrefab.transform.SetParent(GameObject.Find("SlotBeasts").transform);
                 }
             }

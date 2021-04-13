@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DragonBones;
 
 /**
  * Handles the turn order and attacking in the demo battle scene
@@ -74,8 +75,17 @@ public class DemoBattleManager : MonoBehaviour
             if(toLoad[x] != null)
             {
                 slots.Add(toLoad[x]);
-                slotImgs[x].GetComponent<Animator>().runtimeAnimatorController = 
-                    Resources.Load("Animations/" + toLoad[x].name + "/" + toLoad[x].name + "_Controller") as RuntimeAnimatorController;
+
+                slotImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
+
+                GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
+                beastPrefab.transform.SetParent(slotImgs[x].transform);
+                beastPrefab.transform.localPosition = new Vector3(0, -85);
+                beastPrefab.transform.localRotation = Quaternion.identity;
+                beastPrefab.transform.localScale = new Vector3(30f, 30f);
+
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
+
                 thisSquad.Add(toLoad[x]);
             }
             else
