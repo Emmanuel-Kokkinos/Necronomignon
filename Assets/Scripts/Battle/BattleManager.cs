@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using DragonBones;
 
 //manages the main battle mechanics
 public class BattleManager : MonoBehaviour
@@ -641,7 +642,7 @@ public class BattleManager : MonoBehaviour
 
         if (inFront)
         {
-            slot.GetComponent<Animator>().SetTrigger("Front");
+            slot.GetComponent<UnityArmatureComponent>().animation.Play("Front", 1);
 
             if (beast != null)
             {
@@ -650,7 +651,7 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            slot.GetComponent<Animator>().SetTrigger("Back");
+            slot.GetComponent<UnityArmatureComponent>().animation.Play("Back", 1);
 
             if (beast != null)
             {
@@ -680,7 +681,7 @@ public class BattleManager : MonoBehaviour
                 if (enemySlots[x] != null && enemySlots[x].Equals(target))
                 {
                     StartCoroutine(ChangeBattleColor(enemyPadSlots[x].transform.GetChild(0).gameObject));
-                    enemyPadSlots[x].transform.GetChild(0).gameObject.GetComponent<Animator>().SetTrigger("GetHit");
+                    enemyPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>().animation.Play("Damage", 1);
                     break;
                 }
             }
@@ -692,18 +693,19 @@ public class BattleManager : MonoBehaviour
                 if (slots[x] != null && slots[x].Equals(target))
                 {
                     StartCoroutine(ChangeBattleColor(playerPadSlots[x].transform.GetChild(0).gameObject));
-                    playerPadSlots[x].transform.GetChild(0).gameObject.GetComponent<Animator>().SetTrigger("GetHit");
+                    playerPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>().animation.Play("Damage", 1);
                     break;
                 }
             }
         }
     }
 
+    //Change the color of the target for a split second to show the damage type
     IEnumerator ChangeBattleColor(GameObject beast)
     {
-        beast.gameObject.GetComponent<Image>().color = attack.GetTypeColor(currentTurn);
+        beast.gameObject.transform.GetChild(0).GetComponent<Image>().color = attack.GetTypeColor(currentTurn);
         yield return new WaitForSeconds(.1f);
-        beast.gameObject.GetComponent<Image>().color = Color.white;
+        beast.gameObject.transform.GetChild(0).GetComponent<Image>().color = Color.white;
     }
 
     //starts the attacking cycle for the enemy

@@ -279,7 +279,7 @@ public class LoadMission : MonoBehaviour
         {
             if(child.tag == "Prefab")
             {
-                child.GetComponent<Animator>().SetInteger("Health", 0);
+                child.GetComponent<UnityArmatureComponent>().animation.Play("Death", 1);
             }
         }
         GetHealthDisplayImageToRemove(toRemove, owner).transform.parent.gameObject.SetActive(false);

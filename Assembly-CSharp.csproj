@@ -170,13 +170,13 @@
     <Compile Include="Assets\Scripts\Battle\Beasts\Cthulhu_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\DreamSlime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Dryad_Script.cs" />
-    <Compile Include="Assets\Scripts\Battle\Beasts\EarthDragon.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Kitsune_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\LuzuriaAngelicus_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Mandoro_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Nage_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Parent_Beast.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\SovereignDragon_Script.cs" />
+    <Compile Include="Assets\Scripts\Battle\Beasts\Terraos_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Thanatos_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Wyvern_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Zeograth_Script.cs" />
