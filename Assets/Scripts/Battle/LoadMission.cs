@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DragonBones;
 
 //prepares all information and data for battle
 public class LoadMission : MonoBehaviour
@@ -126,14 +127,23 @@ public class LoadMission : MonoBehaviour
             if (enemyToLoad[x] != null)
             {
                 enemyToLoad[x].isEnemy = true;
+
+                //Instantiate a prefab of the beast in battle
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + enemyToLoad[x].name));
-                
                 beastPrefab.transform.SetParent(enemySlotImg[x].transform);
                 beastPrefab.transform.localPosition = new Vector3(0, -50);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(5, 5);
+                beastPrefab.transform.localScale = new Vector3(20f, 20f);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
 
-                enemyImgs[x].sprite = Resources.Load<Sprite>("Static_Images/" + enemyToLoad[x].static_img);
+                //Instantiate a prefab of the beast in the healthDisplay
+                GameObject beastDisplayPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + enemyToLoad[x].name));
+                beastDisplayPrefab.transform.SetParent(enemyImgs[x].transform);
+                beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
+                beastDisplayPrefab.transform.localRotation = Quaternion.identity;
+                beastDisplayPrefab.transform.localScale = new Vector3(10f, 10f);
+
+                enemyImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
                 enemySlot.Add(enemyToLoad[x]);
                 enemySquad.Add(enemyToLoad[x]);
@@ -172,13 +182,22 @@ public class LoadMission : MonoBehaviour
 
             if (toLoad[x] != null)
             {
+                //Instantiate a prefab of the beast in battle
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(playerSlotImg[x].transform);
                 beastPrefab.transform.localPosition = new Vector3(0, -50);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(5, 5);
+                beastPrefab.transform.localScale = new Vector3(20f, 20f);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
 
-                playerImgs[x].sprite = Resources.Load<Sprite>("Static_Images/" + toLoad[x].static_img);
+                //Instantiate a prefab of the beast in the healthDisplay
+                GameObject beastDisplayPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
+                beastDisplayPrefab.transform.SetParent(playerImgs[x].transform);
+                beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
+                beastDisplayPrefab.transform.localRotation = Quaternion.identity;
+                beastDisplayPrefab.transform.localScale = new Vector3(10f, 10f);
+
+                playerImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
                 Beast b = new Beast();
                 b = beastManager.getFromName(toLoad[x].name);
@@ -256,7 +275,7 @@ public class LoadMission : MonoBehaviour
     public void RemoveImage(Beast toRemove, string owner)
     {
         GameObject parent = GetImageToRemove(toRemove, owner).gameObject;
-        foreach(Transform child in parent.transform)
+        foreach(UnityEngine.Transform child in parent.transform)
         {
             if(child.tag == "Prefab")
             {
