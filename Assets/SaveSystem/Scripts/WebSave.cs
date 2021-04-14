@@ -323,7 +323,7 @@ namespace SaveSystem
                 FtpWebResponse response = (FtpWebResponse)request.GetResponse();
                 return true;
             }
-            catch (Exception exc)
+            catch (Exception)
             {
                 return false;
             }

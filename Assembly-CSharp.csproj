@@ -149,7 +149,6 @@
     <Compile Include="Assets\Scripts\Data\Summoner.cs" />
     <Compile Include="Assets\Scripts\Data\Values.cs" />
     <Compile Include="Assets\Scripts\Dialog\DialogueManager.cs" />
-    <Compile Include="Assets\Scripts\Dialog\DialogueManagerOnEnd.cs" />
     <Compile Include="Assets\Scripts\Display_Picture.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\LoadAssetBundles.cs" />
@@ -792,6 +791,14 @@
       <Project>{6D1A74EB-1CE1-F018-288A-EC313B0AC299}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEditor.CacheServer.csproj">
+      <Project>{2DCCF69E-0E2B-CBF2-C28C-56ADA3758423}</Project>
+      <Name>UnityEditor.CacheServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
+      <Project>{5880CD8B-6E9D-B0E4-06CD-665F422635BD}</Project>
+      <Name>Unity.ScriptableBuildPipeline.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{19C2750D-5880-B2AB-CEB7-818D4F72A1F6}</Project>
       <Name>Unity.VSCode.Editor</Name>
@@ -800,6 +807,10 @@
       <Project>{8705747C-309E-CCDE-5561-48F8E1923888}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ResourceManager.csproj">
+      <Project>{9076B4F5-4662-7DAE-6182-55C0383029C3}</Project>
+      <Name>Unity.ResourceManager</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{038A012F-15E1-FE2B-6391-556A28955FB3}</Project>
       <Name>UnityEngine.UI</Name>
@@ -807,6 +818,10 @@
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{2E4430B5-2093-C53E-5865-BD6A223A35C2}</Project>
       <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Addressables.Editor.csproj">
+      <Project>{A5175C36-0897-1230-446A-061EF37BA60A}</Project>
+      <Name>Unity.Addressables.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
       <Project>{6C44A873-457B-320D-60E1-8DBBDE7C0CC4}</Project>
@@ -828,30 +843,6 @@
       <Project>{78AA744C-68B5-81B8-9CA6-0B8FFF01A7E8}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{18D05ECB-78D7-8AA4-41EF-CCF2335EE16B}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{D45FEDFD-3606-B90B-F8C2-C000549793B8}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.CacheServer.csproj">
-      <Project>{2DCCF69E-0E2B-CBF2-C28C-56ADA3758423}</Project>
-      <Name>UnityEditor.CacheServer</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
-      <Project>{5880CD8B-6E9D-B0E4-06CD-665F422635BD}</Project>
-      <Name>Unity.ScriptableBuildPipeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ResourceManager.csproj">
-      <Project>{9076B4F5-4662-7DAE-6182-55C0383029C3}</Project>
-      <Name>Unity.ResourceManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Addressables.Editor.csproj">
-      <Project>{A5175C36-0897-1230-446A-061EF37BA60A}</Project>
-      <Name>Unity.Addressables.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Addressables.csproj">
       <Project>{E0787891-8903-AC0F-4152-1783075F6247}</Project>
       <Name>Unity.Addressables</Name>
@@ -859,6 +850,14 @@
     <ProjectReference Include="Unity.ScriptableBuildPipeline.csproj">
       <Project>{F7F4AC2E-8B7D-8DB2-9B4F-13FBEAFA397A}</Project>
       <Name>Unity.ScriptableBuildPipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{18D05ECB-78D7-8AA4-41EF-CCF2335EE16B}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{D45FEDFD-3606-B90B-F8C2-C000549793B8}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

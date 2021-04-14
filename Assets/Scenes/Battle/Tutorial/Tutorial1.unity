@@ -3746,6 +3746,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 47
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: ConversationEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}

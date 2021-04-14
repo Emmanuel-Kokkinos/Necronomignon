@@ -7,24 +7,26 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
     BattleManager battleManager;
     Attack attack;
     [SerializeField] GameObject backPrefab;
-    float shootFrame;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
+    AudioSource audioSrc;
 
     void Start()
     {
-        
         GameObject g = GameObject.Find("GameManager");
         GameObject au = GameObject.Find("Music");
+
         if (g != null)
         {
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
 
+        if (au != null)
+            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()
     {
-        
         ProjectileAnimation();
     }
 
@@ -44,35 +46,30 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
 
     void ProjectileAnimation()
     {
-        
         GameObject player = battleManager.getSlot(battleManager.currentTurn);
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
 
         GameObject movePrefab = Instantiate(backPrefab);
-        
         movePrefab.transform.SetParent(player.transform);
         movePrefab.transform.localPosition = new Vector3(0, 0);
         movePrefab.transform.localRotation = Quaternion.identity;
         movePrefab.transform.localScale = new Vector3(30, 30);
 
-
-
-        StartCoroutine(ShootCoroutine(target, player, movePrefab));
-        
-    }
-
-    public void Play_SoundFX()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    IEnumerator ShootCoroutine(GameObject target, GameObject player, GameObject movePrefab)
-    {
-        yield return new WaitForSecondsRealtime(5);
-
         Vector3 shootDir = ((target.transform.localPosition) - (player.transform.localPosition)).normalized;
 
-
         movePrefab.GetComponent<Projectile>().Setup(shootDir);
+    }
+
+    public void Play_SoundFX(string sound)
+    { 
+        
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
+        
     }
 }
