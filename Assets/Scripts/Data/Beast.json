@@ -592,7 +592,7 @@
       "speed": "38",
       "dexterity": "27",
       "number_MOVES": "3",
-      "tier": "-1",
+      "tier": "1",
       "size": "0",
       "cost": "18",
       "type": "8",
@@ -649,6 +649,59 @@
       "size": "0",
       "cost": "21",
       "type": "3",
+      "static_img": "Mandoro_Idle_00",
+      "moveA": "8",
+      "moveB": "9",
+      "statGradients": {
+        "hpGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "defenceGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "powerGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "speedGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "dexGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        }
+      }
+    },
+    {
+      "name": "FatherTime",
+      "maxHP": "87",
+      "defence": "39",
+      "power": "22",
+      "speed": "28",
+      "dexterity": "17",
+      "number_MOVES": "3",
+      "tier": "1",
+      "size": "0",
+      "cost": "21",
+      "type": "8",
       "static_img": "Mandoro_Idle_00",
       "moveA": "8",
       "moveB": "9",
