@@ -23,7 +23,7 @@ public class StoryManager : MonoBehaviour
     void Start()
     {
         //Parse through the Json file and put the moves in a list. 
-        path = Application.dataPath + "/Scripts/Data/Stories.json";
+        path = Application.streamingAssetsPath + "/Stories.json";
         jsonString = File.ReadAllText(path);
         storyList = JsonUtility.FromJson<StoryList>(jsonString);
     }
