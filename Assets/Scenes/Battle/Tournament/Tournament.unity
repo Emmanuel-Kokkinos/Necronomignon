@@ -3183,6 +3183,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: LoadSelect
       objectReference: {fileID: 0}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: TourBattle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}
 --- !u!224 &2922953118656590766 stripped
