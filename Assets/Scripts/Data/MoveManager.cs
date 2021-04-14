@@ -23,7 +23,7 @@ public class MoveManager : MonoBehaviour
     void Start()
     {
         //Parse through the Json file and put the moves in a list. 
-        path = Application.dataPath + "/Scripts/Data/Move.json";
+        path = Application.streamingAssetsPath + "/Move.json";
         jsonString = File.ReadAllText(path);
         movesList = JsonUtility.FromJson<MoveList>(jsonString);
     }

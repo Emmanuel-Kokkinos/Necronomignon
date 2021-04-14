@@ -1,0 +1,11 @@
+ManifestFileVersion: 0
+CRC: 188316785
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: staticimages
+      Dependencies: {}
+    Info_1:
+      Name: beastsprefabs
+      Dependencies:
+        Dependency_0: staticimages

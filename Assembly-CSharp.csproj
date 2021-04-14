@@ -152,6 +152,7 @@
     <Compile Include="Assets\Scripts\Dialog\DialogueManagerOnEnd.cs" />
     <Compile Include="Assets\Scripts\Display_Picture.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
+    <Compile Include="Assets\Scripts\LoadAssetBundles.cs" />
     <Compile Include="Assets\Scripts\LoadScenes.cs" />
     <Compile Include="Assets\Scripts\LoadSettings.cs" />
     <Compile Include="Assets\Scripts\LoadStory.cs" />

@@ -63,7 +63,7 @@ public class CreatePoolLoader : MonoBehaviour
 
             if (summoned.Count >= x + 1 && NotSummoned(x))
             {
-                GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + summonedNames[x]));
+                GameObject beastPrefab = (GameObject) Instantiate(LoadAssetBundles.getObj(summoned[x].name));
                 beastPrefab.transform.SetParent(GameObject.Find("Pool" + (x % 9 + 1)).transform);
                 beastPrefab.transform.localPosition = new Vector3(0, -75);
                 beastPrefab.transform.localRotation = Quaternion.identity;
