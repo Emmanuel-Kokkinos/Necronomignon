@@ -89,6 +89,7 @@ namespace DialogueEditor
             {
                 image.gameObject.SetActive(true);
             }
+
             switch (screenInter)
             {
                 case "Conv_Opening":
@@ -110,6 +111,7 @@ namespace DialogueEditor
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
                     break;
                 case "Conv_Intro":
+
                     for(int x = 4; x <= 7; x++)
                     {
                         characters[x].gameObject.SetActive(false);
@@ -143,17 +145,6 @@ namespace DialogueEditor
                     {
                         characters[x].gameObject.SetActive(false);
                     }
-
-                   /*
-                    characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad"); //dad
-                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Catherine"); //sister
-                    characters[1].transform.localScale = new Vector3(.8f, .8f);
-                    characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Ari"); //brother
-                    characters[2].transform.localScale = new Vector3(.8f, .8f);
-                    characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
-                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //instructor*/
-
-
                     break;
                     //Moved tutorial to dialogue manager so it can be loaded directly from dialogue
                 case "Tutorial1":
@@ -163,6 +154,10 @@ namespace DialogueEditor
                 case "Tutorial2":
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Dad"));
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    break;
+                case "Conv_Tour":
+                    GameObject tourChar = GameObject.Find("Character");
+                    tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 default:
 
@@ -188,11 +183,16 @@ namespace DialogueEditor
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Conv_Opening":
-                    SetNPCConversation(FindByName("Tutorial1"));
-                    BeginConversation(currentConversation, "Tutorial1");
+                    SetNPCConversation(FindByName("Conv_Tour"));
+                    BeginConversation(currentConversation, "Tournament");
                     break;
                 case "Tutorial1":
                     SceneManager.LoadScene("Menu");
+                    break;
+                case "Conv_Tour":
+                    GameObject tourChar = GameObject.Find("Character");
+                    tourChar.gameObject.SetActive(false);
+                    TournamentManager.firstMission.SetActive(true);
                     break;
             }
         }
