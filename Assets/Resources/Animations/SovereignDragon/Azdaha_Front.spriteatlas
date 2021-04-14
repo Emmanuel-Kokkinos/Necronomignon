@@ -43,12 +43,56 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: be64d447234c25a4e94a799454bc5598, type: 3}
-    totalSpriteSurfaceArea: 324000000
+    totalSpriteSurfaceArea: 324605880
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 4da0d4308c1ad90499e20b9e0a610f1c, type: 3}
   - {fileID: 21300000, guid: cb291640f83abe645930151ce89126ce, type: 3}
+  - {fileID: 8284119128304511201, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 4370965450260820009, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 2447063198822146963, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -5527419007691468770, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -8505231899749042716, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -1893856738055674040, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -3090034931710107369, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 7029215118494966345, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 6968187377652674767, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 8138739536577411194, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -9153322749097090961, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 7279195886135047875, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 6221141709320284820, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 3363286700575585196, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 6398685867554312983, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -1712872809878786653, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 8673916484365150367, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -803125141196540368, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -2103149572722308952, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 6048660316418528257, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 2657067228840774429, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 8380584696595592535, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 8087773454047918778, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 8260995008754007710, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 7434712520758749743, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -4196844012858689321, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -7065446674980967489, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 3454036058413189537, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 5369247060774884803, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -5286344951706033050, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 2287564066028643134, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 8810611685506915566, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -4597863433648494074, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -8264354785758889825, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 1215193149117269280, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -4662221641523857329, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -6169135889263528363, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 5460821275346648634, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 6800435526995861810, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -5672206975180506934, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 3358241926660032656, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: 4069892154647640100, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -1266580980843501826, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
+  - {fileID: -3095219563576811386, guid: 3e6e094033d5c364e9c485947568a2c7, type: 3}
   - {fileID: 21300000, guid: f8b69f50c659d03469978060109caf44, type: 3}
   - {fileID: 21300000, guid: d2ffd2602a65fbd45a826c0123c51c6a, type: 3}
   - {fileID: 21300000, guid: 9f2fcd603474e10488de176d8463434e, type: 3}
@@ -131,6 +175,50 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - SovereignDragon_Attack C_29
   - SovereignDragon_Attack C_14
+  - level_up_102x135_12
+  - level_up_102x135_13
+  - level_up_102x135_10
+  - level_up_102x135_11
+  - level_up_102x135_16
+  - level_up_102x135_17
+  - level_up_102x135_14
+  - level_up_102x135_15
+  - level_up_102x135_18
+  - level_up_102x135_19
+  - level_up_102x135_29
+  - level_up_102x135_28
+  - level_up_102x135_27
+  - level_up_102x135_26
+  - level_up_102x135_25
+  - level_up_102x135_24
+  - level_up_102x135_23
+  - level_up_102x135_22
+  - level_up_102x135_21
+  - level_up_102x135_20
+  - level_up_102x135_7
+  - level_up_102x135_6
+  - level_up_102x135_5
+  - level_up_102x135_4
+  - level_up_102x135_3
+  - level_up_102x135_2
+  - level_up_102x135_1
+  - level_up_102x135_0
+  - level_up_102x135_9
+  - level_up_102x135_8
+  - level_up_102x135_38
+  - level_up_102x135_41
+  - level_up_102x135_39
+  - level_up_102x135_40
+  - level_up_102x135_43
+  - level_up_102x135_42
+  - level_up_102x135_34
+  - level_up_102x135_35
+  - level_up_102x135_36
+  - level_up_102x135_37
+  - level_up_102x135_30
+  - level_up_102x135_31
+  - level_up_102x135_32
+  - level_up_102x135_33
   - SovereignDragon_Attack C_40
   - SovereignDragon_Attack C_80
   - SovereignDragon_Attack C_23

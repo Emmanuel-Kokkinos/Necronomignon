@@ -63,4 +63,19 @@ public class SovereignDragon_Script : MonoBehaviour, Parent_Beast
     {
         throw new System.NotImplementedException();
     }
+
+    public void PlayFrontMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0,25);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(2f, 2f);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/SovereignDragon/SovereignDragon_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Front");
+    }
+
 }
