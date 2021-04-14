@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using DragonBones;
 
 /**
  * Handles the movement of beasts when creating a squad
@@ -50,8 +51,6 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     // Set the selected beasts animation to the chosen slot
     void SetImage()
     {
-        gameObject.GetComponent<Animator>().enabled = true;
-
         // Make sure no beast is already in that slot
         if (createManager.slots[slotID - 1] == null || createManager.slots[slotID - 1].speed == 0)
         {
@@ -74,6 +73,8 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
                     beastPrefab.transform.localRotation = Quaternion.identity;
                     beastPrefab.transform.localScale = new Vector3(18f, 18f);
                     beastPrefab.transform.SetParent(GameObject.Find("SlotBeasts").transform);
+
+                    beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
                 }
             }
 
@@ -87,7 +88,7 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         gameObject.GetComponent<Image>().enabled = true;
         gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Static_Images/Ellipse 1");
 
-        foreach(Transform child in GameObject.Find("SlotBeasts").transform)
+        foreach(UnityEngine.Transform child in GameObject.Find("SlotBeasts").transform)
         {
             if(child.name.Contains(createManager.selected.name))
             {
@@ -148,8 +149,6 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     // Move this beast to another slot
     void MoveImage()
     {
-        gameObject.GetComponent<Animator>().enabled = true;
-
         // Make sure the spot to move to is empty before allowing to move
         if (slotID != createManager.selectedSlotID && (createManager.slots[slotID - 1] == null || createManager.slots[slotID - 1].speed == 0))
         {
@@ -172,6 +171,8 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
                     beastPrefab.transform.localRotation = Quaternion.identity;
                     beastPrefab.transform.localScale = new Vector3(18f, 18f);
                     beastPrefab.transform.SetParent(GameObject.Find("SlotBeasts").transform);
+
+                    beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
                 }
             }
 
