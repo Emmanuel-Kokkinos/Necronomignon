@@ -89,8 +89,8 @@ public class LoadSettings : MonoBehaviour
     public static void setRedRoachAsset() {
 
         //Loads assets asynchroniously so they can be used when red roach is active
-        Sprite clicked = Addressables.LoadAssetAsync<Sprite>("clicked_button").Result;
-        Sprite unclicked = Addressables.LoadAssetAsync<Sprite>("unclicked_button").Result;
+        Sprite clicked = Resources.Load<Sprite>("Static_Images/clicked_button");
+        Sprite unclicked = Resources.Load<Sprite>("Static_Images/unclicked_button");
 
         Color colorTemp = (Player.RedRoach ? Color.red : new Color(0.9137255f, 0.7098039f, 0.1254902f, 1f));
         //Solves missing reference exception
