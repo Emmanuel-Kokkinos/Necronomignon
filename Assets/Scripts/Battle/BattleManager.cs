@@ -24,6 +24,7 @@ public class BattleManager : MonoBehaviour
 
     public Text txtTurn;
     Animator anim;
+    UnityArmatureComponent armature;
 
     public List<Beast> players = new List<Beast>();
     public List<Beast> enemies = new List<Beast>();
@@ -639,10 +640,11 @@ public class BattleManager : MonoBehaviour
         GameObject slot = getSlot();
         slot = slot.transform.GetChild(0).gameObject;
         Parent_Beast beast = slot.GetComponent<Parent_Beast>();
+        armature = slot.GetComponent<UnityArmatureComponent>();
 
         if (inFront)
         {
-            slot.GetComponent<UnityArmatureComponent>().animation.Play("Front", 1);
+            armature.animation.Play("Front", 1);
 
             if (beast != null)
             {
@@ -651,13 +653,15 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            slot.GetComponent<UnityArmatureComponent>().animation.Play("Back", 1);
+            armature.animation.Play("Back", 1);
 
             if (beast != null)
             {
                 beast.back_special();
             }
         }
+
+        StartCoroutine(AnimationWaitTime());
     }
 
     //this plays the damage animation for one or many beasts
@@ -681,7 +685,9 @@ public class BattleManager : MonoBehaviour
                 if (enemySlots[x] != null && enemySlots[x].Equals(target))
                 {
                     StartCoroutine(ChangeBattleColor(enemyPadSlots[x].transform.GetChild(0).gameObject));
-                    enemyPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>().animation.Play("Damage", 1);
+                    armature = enemyPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>();
+                    armature.animation.Play("Damage", 1);
+                    StartCoroutine(AnimationWaitTime());
                     break;
                 }
             }
@@ -693,7 +699,9 @@ public class BattleManager : MonoBehaviour
                 if (slots[x] != null && slots[x].Equals(target))
                 {
                     StartCoroutine(ChangeBattleColor(playerPadSlots[x].transform.GetChild(0).gameObject));
-                    playerPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>().animation.Play("Damage", 1);
+                    armature = playerPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>();
+                    armature.animation.Play("Damage", 1);
+                    StartCoroutine(AnimationWaitTime());
                     break;
                 }
             }
@@ -1188,5 +1196,11 @@ public class BattleManager : MonoBehaviour
             }
         }
         return y == 8;
+    }
+
+    IEnumerator AnimationWaitTime()
+    {
+        yield return new WaitWhile(new System.Func<bool>(() => !armature.animation.isCompleted));
+        armature.animation.Play("Idle", 0);
     }
 }
