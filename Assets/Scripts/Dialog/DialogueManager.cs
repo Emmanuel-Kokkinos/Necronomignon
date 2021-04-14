@@ -156,7 +156,8 @@ namespace DialogueEditor
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Conv_Tour":
-                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    GameObject tourChar = GameObject.Find("Character");
+                    tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 default:
 
@@ -189,7 +190,9 @@ namespace DialogueEditor
                     SceneManager.LoadScene("Menu");
                     break;
                 case "Conv_Tour":
-                    characters[0].gameObject.SetActive(false);
+                    GameObject tourChar = GameObject.Find("Character");
+                    tourChar.gameObject.SetActive(false);
+                    TournamentManager.firstMission.SetActive(true);
                     break;
             }
         }

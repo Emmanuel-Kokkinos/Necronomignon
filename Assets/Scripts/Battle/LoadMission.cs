@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LoadMission : MonoBehaviour
 {
     public SquadData squadData;
+    //In a similar fashion should add Tournament missions 
     public MissionList missionList;
     public BattleManager battleManager;
     public BeastManager beastManager;
