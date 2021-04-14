@@ -28,7 +28,7 @@ public class MissionList : MonoBehaviour
         // Kitsune in a random position
         if (mission == "first")
         {
-            Beast kitsune = beastManager.getFromName("Conglomerate");
+            Beast kitsune = beastManager.getFromName("Kitsune");
 
             int ran = -1;
             //ran = Random.Range(-1, Values.SMALLSLOT - 1);
