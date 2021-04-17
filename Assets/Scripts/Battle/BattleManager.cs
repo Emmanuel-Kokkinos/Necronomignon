@@ -328,7 +328,16 @@ public class BattleManager : MonoBehaviour
         {
             try
             {
-                orderBar[x].sprite = Resources.Load<Sprite>("Static_Images/"+GetImage(roundOrder[x + turn]));
+                if(orderBar[x].transform.childCount > 0)
+                {
+                    Destroy(orderBar[x].gameObject.transform.GetChild(0).gameObject);
+                }
+                
+                GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + roundOrder[x + turn].name));
+                beastPrefab.transform.SetParent(orderBar[x].transform);
+                beastPrefab.transform.localPosition = new Vector3(0f, -50f);
+                beastPrefab.transform.localRotation = Quaternion.identity;
+                beastPrefab.transform.localScale = new Vector3(15f, 15f);
 
                 if (roundOrderTypes[x + turn].Equals("Player"))
                 {
@@ -341,7 +350,7 @@ public class BattleManager : MonoBehaviour
             }
             catch
             {
-                orderBar[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
+                orderBar[x].gameObject.SetActive(false);
                 orderBarOutlines[x].gameObject.SetActive(false);
             }
         }
