@@ -45,7 +45,7 @@ public class LoadAssetBundles : MonoBehaviour
             print(go.name + "_Idle_00.png");
             print(myAssetBundleImg);
             //Loading asset bundle causing crash in load squad. Reverted to previous work for functionality until myassetbundle is fixed
-            go.GetComponent<Image>().sprite = /*myAssetBundleImg.LoadAsset<Sprite>($"{go.name}_Idle_00");*/Resources.Load<Sprite>("Static_Images/" + go.name+ "_Idle_00");
+            //go.GetComponent<Image>().sprite = /*myAssetBundleImg.LoadAsset<Sprite>($"{go.name}_Idle_00");*/Resources.Load<Sprite>("Static_Images/" + go.name+ "_Idle_00");
             //print(Resources.Load<RuntimeAnimatorController>("Animations/"+go.name + "/" +go.name + "_Controller")/*myAssetBundleAnimation.LoadAsset<RuntimeAnimatorController>( go.name + "_Controller"*/);
             //byte[] filedata = File.ReadAllBytes(Application.streamingAssetsPath+"Animations/"+go.name+"/"+go.name+"_Controller.controller");
             //go.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animations/" + go.name + "/" + go.name + "_Controller");
