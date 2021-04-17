@@ -10,11 +10,19 @@ using UnityEngine.UI;
 public class TutorialManager : MonoBehaviour
 {
     Scene scene;
+    public GameObject pawn;
+    public GameObject knight;
+    public GameObject rook;
+    public GameObject king;
+    public GameObject mando;
+    public GameObject dream;
+    public GameObject wyvern;
+    public GameObject exit;
     
     void Start()
     {
         scene = SceneManager.GetActiveScene();
-
+        exit.SetActive(false);
         if (scene.name == "Tutorial3")
         {
             StartCoroutine(Tutorial3Start());
@@ -70,5 +78,70 @@ public class TutorialManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(nextScene);
+    }
+
+    public void mandoAttack()
+    {
+        
+        Animator animator = new Animator() ;
+        if (mando != null)
+        {
+            animator = mando.GetComponent<Animator>();
+        }
+        animator.SetTrigger("Front");
+        pawn.SetActive(false);
+    }
+    public void dreamAttack()
+    {
+
+        Animator animator = new Animator();
+        if (dream != null)
+        {
+            animator = dream.GetComponent<Animator>();
+        }
+        animator.SetTrigger("Front");
+        
+        StartCoroutine(waitAttack());
+    }
+    public void wyvernAttack()
+    {
+
+        Animator animator = new Animator();
+        if (dream != null)
+        {
+            animator = wyvern.GetComponent<Animator>();
+        }
+        animator.SetTrigger("Front");
+
+        StartCoroutine(waitAttackW());
+    }
+
+    IEnumerator waitAttack()
+    {
+        yield return new WaitForSeconds(3f);
+        knight.SetActive(false);
+        Transform transform = rook.GetComponent<Transform>();
+        for (int x = 10; x > 0; x--)
+        {
+            transform.position += Vector3.left * x;
+            yield return new WaitForSeconds(.03f);
+            transform.position += (Vector3.right * (x * 2));
+            yield return new WaitForSeconds(.03f);
+            transform.position += Vector3.left * x;
+            yield return new WaitForSeconds(.03f);
+        }
+        
+    }
+    IEnumerator waitAttackW()
+    {
+        yield return new WaitForSeconds(.5f);
+        rook.SetActive(false);
+        king.SetActive(false);
+
+    }
+
+    public void unlockExit()
+    {
+        exit.SetActive(true);
     }
 }
