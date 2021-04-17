@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 8767060016537971710}
   m_Layer: 0
   m_Name: Zeograth
-  m_TagString: Untagged
+  m_TagString: Prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

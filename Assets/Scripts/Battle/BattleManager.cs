@@ -645,6 +645,7 @@ public class BattleManager : MonoBehaviour
         if (inFront)
         {
             armature.animation.Play("Front", 1);
+            StartCoroutine(AnimationWaitTime(armature));
 
             if (beast != null)
             {
@@ -654,14 +655,13 @@ public class BattleManager : MonoBehaviour
         else
         {
             armature.animation.Play("Back", 1);
+            StartCoroutine(AnimationWaitTime(armature));
 
             if (beast != null)
             {
                 beast.back_special();
             }
         }
-
-        StartCoroutine(AnimationWaitTime());
     }
 
     //this plays the damage animation for one or many beasts
@@ -687,7 +687,7 @@ public class BattleManager : MonoBehaviour
                     StartCoroutine(ChangeBattleColor(enemyPadSlots[x].transform.GetChild(0).gameObject));
                     armature = enemyPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>();
                     armature.animation.Play("Damage", 1);
-                    StartCoroutine(AnimationWaitTime());
+                    StartCoroutine(AnimationWaitTime(armature));
                     break;
                 }
             }
@@ -701,7 +701,7 @@ public class BattleManager : MonoBehaviour
                     StartCoroutine(ChangeBattleColor(playerPadSlots[x].transform.GetChild(0).gameObject));
                     armature = playerPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>();
                     armature.animation.Play("Damage", 1);
-                    StartCoroutine(AnimationWaitTime());
+                    StartCoroutine(AnimationWaitTime(armature));
                     break;
                 }
             }
@@ -1198,9 +1198,10 @@ public class BattleManager : MonoBehaviour
         return y == 8;
     }
 
-    IEnumerator AnimationWaitTime()
+    // Wait for the animation to finish then go back to Idle animation
+    public IEnumerator AnimationWaitTime(UnityArmatureComponent beast)
     {
-        yield return new WaitWhile(new System.Func<bool>(() => !armature.animation.isCompleted));
-        armature.animation.Play("Idle", 0);
+        yield return new WaitWhile(new System.Func<bool>(() => !beast.animation.isCompleted));
+        beast.animation.Play("Idle", 0);
     }
 }

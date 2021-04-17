@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 5080524094857325436}
   m_Layer: 0
   m_Name: Azdaha
-  m_TagString: Untagged
+  m_TagString: Prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

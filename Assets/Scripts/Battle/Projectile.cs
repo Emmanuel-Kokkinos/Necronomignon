@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DragonBones;
 
 public class Projectile : MonoBehaviour
 {
@@ -21,8 +22,6 @@ public class Projectile : MonoBehaviour
             battleManager = g.GetComponent<BattleManager>();
             attack = g.GetComponent<Attack>();
         }
-
-        
     }
 
     // Update is called once per frame
@@ -51,7 +50,8 @@ public class Projectile : MonoBehaviour
         if(collision.GetComponent<Parent_Beast>() != null)
         {
             Destroy(gameObject);
-            collision.gameObject.GetComponent<Animator>().SetTrigger("GetHit");
+            collision.gameObject.GetComponent<UnityArmatureComponent>().animation.Play("Damage", 1);
+            StartCoroutine(battleManager.AnimationWaitTime(collision.gameObject.GetComponent<UnityArmatureComponent>()));
 
             Beast attacker = battleManager.currentTurn;
             if(battleManager.turn != 0)
