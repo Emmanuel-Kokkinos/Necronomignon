@@ -47,7 +47,6 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2019.4.8f1</UnityVersion>
@@ -80,6 +79,69 @@
     <Compile Include="Assets\DialogueEditor\Assets\Scripts\SetParamAction.cs" />
     <Compile Include="Assets\DialogueEditor\Assets\Scripts\UI\ConversationManager.cs" />
     <Compile Include="Assets\DialogueEditor\Assets\Scripts\UI\UIConversationButton.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\AnimationBase.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\AnimationLayer.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\BaseDemo.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\BoneOffset.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\BoundingBox.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\CoreElement.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\DragonBonesEvent.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\HelloDragonBones.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\InverseKinematics.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\LightShader.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\Performance.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\ReplaceAnimtion.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\ReplaceSkin.cs" />
+    <Compile Include="Assets\DragonBones\Demos\Scripts\ReplaceSlotDisplay.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\3rdParty\MiniJSON.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\animation\Animation.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\animation\AnimationState.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\animation\BaseTimelineState.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\animation\IAnimatable.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\animation\TimelineState.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\animation\WorldClock.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\armature\Armature.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\armature\Bone.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\armature\Constraint.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\armature\DeformVertices.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\armature\IArmatureProxy.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\armature\Slot.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\armature\TransformObject.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\core\BaseObject.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\core\DragonBones.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\event\EventObject.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\event\IEventDispatcher.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\factory\BaseFactory.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\geom\ColorTransform.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\geom\Matrix.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\geom\Point.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\geom\Rectangle.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\geom\Transform.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\AnimationConfig.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\AnimationData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\ArmatureData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\BoundingBoxData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\CanvasData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\ConstraintData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\DisplayData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\DragonBonesData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\SkinData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\TextureAtlasData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\model\UserData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\parser\BinaryDataParser.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\parser\BinaryDataReader.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\parser\BinaryDataWriter.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\parser\DataParser.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\parser\ObjectDataParser.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\MeshBuffer.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\UnityArmatureComponent.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\UnityCombineMeshs.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\UnityDragonBonesData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\UnityEventDispatcher.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\UnityFactory.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\UnitySlot.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\UnityTextureAtlasData.cs" />
+    <Compile Include="Assets\DragonBones\Scripts\unity\UnityUGUIDisplay.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -108,12 +170,14 @@
     <Compile Include="Assets\Scripts\Battle\Beasts\Cthulhu_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\DreamSlime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Dryad_Script.cs" />
+    <Compile Include="Assets\Scripts\Battle\Beasts\FatherTime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Kitsune_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\LuzuriaAngelicus_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Mandoro_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Nage_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Parent_Beast.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\SovereignDragon_Script.cs" />
+    <Compile Include="Assets\Scripts\Battle\Beasts\Terraos_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Thanatos_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Wyvern_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Zeograth_Script.cs" />
@@ -230,6 +294,7 @@
     <None Include="Assets\ResolvedIssues.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\JsonDotNet\link.xml" />
+    <None Include="Assets\DragonBones\Demos\Scripts\LightTestShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\PixelUI(TEMP)\Font1\license.txt" />
@@ -237,9 +302,11 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\DragonBones\Resources\Shaders\DB_BlendMode_UIGrab.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\DragonBones\Resources\Shaders\DB_BlendMode_Grab.shader" />
     <None Include="Assets\PixelUI(TEMP)\Font1\readme.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -435,7 +502,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/migue/Documents/GitHub/Necronomignon/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/Users/Manoli/Documents/GitHub/Necronomignon/Necronomignon/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

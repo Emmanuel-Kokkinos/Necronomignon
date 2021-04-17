@@ -213,7 +213,7 @@
       }
     },
     {
-      "name": "LuzuriaAngelicus",
+      "name": "Luzuria",
       "maxHP": "70",
       "defence": "12",
       "power": "11",
@@ -426,7 +426,7 @@
       }
     },
     {
-      "name": "SovereignDragon",
+      "name": "Azdaha",
       "maxHP": "88",
       "defence": "26",
       "power": "15",
@@ -434,7 +434,7 @@
       "dexterity": "29",
       "number_MOVES": "2",
       "tier": "1",
-      "size": "1",
+      "size": "0",
       "cost": "23",
       "type": "4",
       "static_img": "SovereignDragon_Idle_00",
@@ -479,7 +479,7 @@
       }
     },
     {
-      "name": "Thanatos",
+      "name": "MotherPenance",
       "maxHP": "67",
       "defence": "14",
       "power": "19",
@@ -532,15 +532,15 @@
       }
     },
     {
-      "name": "Nage",
+      "name": "FallborneDragon",
       "maxHP": "92",
       "defence": "24",
       "power": "16",
       "speed": "30",
       "dexterity": "17",
       "number_MOVES": "2",
-      "tier": "-1",
-      "size": "1",
+      "tier": "1",
+      "size": "0",
       "cost": "22",
       "type": "7",
       "static_img": "Nage_Idle_00",
@@ -592,13 +592,119 @@
       "speed": "38",
       "dexterity": "27",
       "number_MOVES": "3",
-      "tier": "-1",
+      "tier": "1",
       "size": "0",
       "cost": "18",
       "type": "8",
       "static_img": "Mandoro_Idle_00",
       "moveA": "16",
       "moveB": "15",
+      "statGradients": {
+        "hpGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "defenceGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "powerGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "speedGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "dexGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        }
+      }
+    },
+    {
+      "name": "Terraos",
+      "maxHP": "87",
+      "defence": "39",
+      "power": "22",
+      "speed": "28",
+      "dexterity": "17",
+      "number_MOVES": "3",
+      "tier": "1",
+      "size": "0",
+      "cost": "21",
+      "type": "3",
+      "static_img": "Mandoro_Idle_00",
+      "moveA": "8",
+      "moveB": "9",
+      "statGradients": {
+        "hpGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "defenceGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "powerGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "speedGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        },
+        "dexGradient": {
+          "t1": "2",
+          "t2": "3",
+          "t3": "4",
+          "t4": "5",
+          "t5": "6"
+        }
+      }
+    },
+    {
+      "name": "FatherTime",
+      "maxHP": "87",
+      "defence": "39",
+      "power": "22",
+      "speed": "28",
+      "dexterity": "17",
+      "number_MOVES": "3",
+      "tier": "1",
+      "size": "0",
+      "cost": "21",
+      "type": "8",
+      "static_img": "Mandoro_Idle_00",
+      "moveA": "8",
+      "moveB": "9",
       "statGradients": {
         "hpGradient": {
           "t1": "2",
@@ -689,7 +795,7 @@
           "t5": "0"
         }
       },
-      "nonCombatant" : "true"
+      "nonCombatant": "true"
     }
   ]
 }
