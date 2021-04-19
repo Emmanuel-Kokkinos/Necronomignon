@@ -2,26 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class Kitsune_Script : MonoBehaviour, Parent_Beast
+public class Kitsune_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     AudioSource audioSrc;
 
     void Start()
     {
-        GameObject g = GameObject.Find("GameManager");
-        GameObject au = GameObject.Find("Music");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-
         audioSrc = GetComponent<AudioSource>();
+        
+        base.start();
     }
 
     public void back_special()
