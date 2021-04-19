@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 54d5927736e73714ea8afb2323f18c35, type: 3}
-    totalSpriteSurfaceArea: 224041472
+    totalSpriteSurfaceArea: 224000000
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -77,14 +77,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f3e3f609ee4b3594bbc56c35bf8fce75, type: 3}
   - {fileID: 21300000, guid: 28eb11199e6bd2f48a657415ea662a10, type: 3}
   - {fileID: 21300000, guid: 86963039e7a754545acf2a67028dc625, type: 3}
-  - {fileID: 1381459468522392296, guid: 88f96189cc74183408247957266e4d0f, type: 3}
-  - {fileID: 2290757627229124164, guid: 88f96189cc74183408247957266e4d0f, type: 3}
-  - {fileID: -4085298491828794787, guid: 88f96189cc74183408247957266e4d0f, type: 3}
-  - {fileID: 6996949113339776851, guid: 88f96189cc74183408247957266e4d0f, type: 3}
-  - {fileID: 3756053673378783133, guid: 88f96189cc74183408247957266e4d0f, type: 3}
-  - {fileID: 5460594409273313270, guid: 88f96189cc74183408247957266e4d0f, type: 3}
-  - {fileID: -1223848966447463768, guid: 88f96189cc74183408247957266e4d0f, type: 3}
-  - {fileID: 1794477503344242297, guid: 88f96189cc74183408247957266e4d0f, type: 3}
   - {fileID: 21300000, guid: bafb6389245beff4e8dd3ef68880715c, type: 3}
   - {fileID: 21300000, guid: 8aed91b914dd2954baebbc10af4e4d45, type: 3}
   - {fileID: 21300000, guid: bcee3ac991d23104d8e5ddbbd7212f89, type: 3}
@@ -142,14 +134,6 @@ SpriteAtlas:
   - Cthulhu_Attack D_48
   - Cthulhu_Attack D_46
   - Cthulhu_Attack D_20
-  - Black-hole_6
-  - Black-hole_7
-  - Black-hole_4
-  - Black-hole_5
-  - Black-hole_2
-  - Black-hole_3
-  - Black-hole_0
-  - Black-hole_1
   - Cthulhu_Attack D_28
   - Cthulhu_Attack D_05
   - Cthulhu_Attack D_22
