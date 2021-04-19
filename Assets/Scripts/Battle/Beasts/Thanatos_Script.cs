@@ -2,22 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class Thanatos_Script : MonoBehaviour, Parent_Beast
+public class Thanatos_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     AudioSource audioSrc;
 
     void Start()
     {
-        GameObject g = GameObject.Find("GameManager");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
+        base.start();
 
         GameObject au = GameObject.Find("Music");
 

@@ -2,22 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FatherTime_Script : MonoBehaviour, Parent_Beast
+public class FatherTime_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
-
-    void Start()
-    {
-        GameObject g = GameObject.Find("GameManager");
-
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-    }
-
     public void back_special()
     {
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
