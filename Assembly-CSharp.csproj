@@ -303,7 +303,6 @@
     <None Include="Assets\PixelUI(TEMP)\Font1\license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Resources\Dragonbones\EarthDragon\dragonbones_assets\Terraos_settings.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\DragonBones\Resources\Shaders\DB_BlendMode_UIGrab.shader" />

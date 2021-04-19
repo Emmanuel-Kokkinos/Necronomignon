@@ -30,7 +30,7 @@ public class BeastSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                             createManager.ShowMoveDescription();
                             createManager.placing = true;
                         }
-                        createManager.selected = createPoolLoader.summoned[createManager.selectedIndex+(createPoolLoader.counter * 9)];
+                        createManager.selected = createPoolLoader.summoned[createManager.selectedIndex + (createPoolLoader.counter * 9)];
                     }
                 }
             }

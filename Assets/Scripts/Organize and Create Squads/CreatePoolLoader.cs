@@ -50,6 +50,29 @@ public class CreatePoolLoader : MonoBehaviour
     // Fill up the image slots with your summoned beasts
     void SetImages()
     {
+        foreach(Image slot in slots)
+        {
+            slot.enabled = true;
+        }
+
+        // Making sure the pool slots are enabled or disabled properly when a page switch happens
+        foreach (Transform child in GameObject.Find("SlotBeasts").transform)
+        {
+            for(int x = counter * 9; x < 9 + (counter * 9); x++)
+            {
+                try
+                {
+                    if (child.name.Equals(summoned[x].name))
+                    {
+                        slots[x % 9].enabled = false;
+                    }
+                }
+                catch
+                {
+                }
+            }
+        }
+
         // Destroy old prefabs
         foreach (Transform child in GameObject.Find("PoolBeasts").transform)
         {

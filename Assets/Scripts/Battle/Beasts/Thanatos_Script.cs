@@ -11,8 +11,6 @@ public class Thanatos_Script : Parent_Script, Parent_Beast
     {
         base.start();
 
-        GameObject au = GameObject.Find("Music");
-
         audioSrc = GetComponent<AudioSource>();
     }
 
