@@ -21,9 +21,6 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
 
     public void back_special()
     {
-        //Audio Effect example
-        Play_SoundFX("back");
-
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
@@ -39,8 +36,6 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
 
     public void front_special()
     {
-        Play_SoundFX("front");
-
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
