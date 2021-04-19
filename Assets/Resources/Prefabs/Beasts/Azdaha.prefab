@@ -920,9 +920,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5812941008356539962}
   - component: {fileID: 2316293688547536364}
-  - component: {fileID: 7513171431187616512}
   - component: {fileID: 4406674203015645458}
   - component: {fileID: 5080524094857325436}
+  - component: {fileID: 7513171431187616512}
   m_Layer: 0
   m_Name: Azdaha
   m_TagString: Prefab
@@ -990,6 +990,50 @@ MonoBehaviour:
   _flipX: 0
   _flipY: 0
   _closeCombineMeshs: 0
+--- !u!114 &4406674203015645458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494392765607086941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ca01fce92852d4d86dc2db29a24689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontPrefab: {fileID: 1844191813266838, guid: 968c924d2be019d4b9e67647551eec3e,
+    type: 3}
+  frontAttackSound: {fileID: 8300000, guid: 8b344f1c07f6a7a4d8e7ff22fe1a4ddf, type: 3}
+  backAttackSound: {fileID: 8300000, guid: da4a53d38c7751a4bb04603c5a6c05e5, type: 3}
+  damageSound: {fileID: 8300000, guid: 683bdf2adf3204f4a9ba0ef364bb52f8, type: 3}
+  deathSound: {fileID: 8300000, guid: e679d9d2c1055ae4ba1183c338ab2a08, type: 3}
+--- !u!61 &5080524094857325436
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494392765607086941}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.009913921, y: 2.7955847}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.897231, y: 5.044676}
+  m_EdgeRadius: 0
 --- !u!82 &7513171431187616512
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1086,50 +1130,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4406674203015645458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6494392765607086941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6ca01fce92852d4d86dc2db29a24689, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontPrefab: {fileID: 1844191813266838, guid: 968c924d2be019d4b9e67647551eec3e,
-    type: 3}
-  frontAttackSound: {fileID: 8300000, guid: 8b344f1c07f6a7a4d8e7ff22fe1a4ddf, type: 3}
-  backAttackSound: {fileID: 0}
-  damageSound: {fileID: 8300000, guid: 683bdf2adf3204f4a9ba0ef364bb52f8, type: 3}
-  deathSound: {fileID: 8300000, guid: e679d9d2c1055ae4ba1183c338ab2a08, type: 3}
---- !u!61 &5080524094857325436
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6494392765607086941}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.009913921, y: 2.7955847}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.897231, y: 5.044676}
-  m_EdgeRadius: 0
 --- !u!1 &6558570550024965727
 GameObject:
   m_ObjectHideFlags: 0

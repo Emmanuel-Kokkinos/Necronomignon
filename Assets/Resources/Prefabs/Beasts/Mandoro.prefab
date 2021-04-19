@@ -596,8 +596,8 @@ GameObject:
   - component: {fileID: 4372383453755919525}
   - component: {fileID: 1130669532475839441}
   - component: {fileID: 6050332171577096242}
-  - component: {fileID: 6579535682810080948}
   - component: {fileID: 1383378952862264424}
+  - component: {fileID: 6579535682810080948}
   m_Layer: 0
   m_Name: Mandoro
   m_TagString: Prefab
@@ -671,6 +671,32 @@ MonoBehaviour:
   backAttackSound: {fileID: 8300000, guid: 59c6dafe0b35b29469f8e1522f089ec2, type: 3}
   damageSound: {fileID: 8300000, guid: 2b7f96781c7c19a40b2de671edf98ce6, type: 3}
   deathSound: {fileID: 8300000, guid: db35add42abcea143a724b0da5bdd001, type: 3}
+--- !u!61 &1383378952862264424
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5720376571355750749}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5418296, y: 2.110283}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.083659, y: 3.2433636}
+  m_EdgeRadius: 0
 --- !u!82 &6579535682810080948
 AudioSource:
   m_ObjectHideFlags: 0
@@ -767,32 +793,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!61 &1383378952862264424
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5720376571355750749}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.5418296, y: 2.110283}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.083659, y: 3.2433636}
-  m_EdgeRadius: 0
 --- !u!1 &7555646559245435688
 GameObject:
   m_ObjectHideFlags: 0
