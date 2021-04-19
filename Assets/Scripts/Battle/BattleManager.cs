@@ -330,7 +330,11 @@ public class BattleManager : MonoBehaviour
             {
                 if(orderBar[x].transform.childCount > 0)
                 {
-                    Destroy(orderBar[x].gameObject.transform.GetChild(0).gameObject);
+                    foreach (UnityEngine.Transform child in orderBar[x].transform)
+                    {
+                        Destroy(child.gameObject);
+                    }
+                    //Destroy(orderBar[x].gameObject.transform.GetChild(0).gameObject);
                 }
                 
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + roundOrder[x + turn].name));
