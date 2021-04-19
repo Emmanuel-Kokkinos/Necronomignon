@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8692278190694966811}
   - component: {fileID: 932788877215494223}
-  - component: {fileID: 6767264981142297981}
   - component: {fileID: 6263219504465256814}
+  - component: {fileID: 6767264981142297981}
   - component: {fileID: 2101188687861730199}
   m_Layer: 0
   m_Name: DreamSlime
@@ -74,6 +74,23 @@ MonoBehaviour:
   _flipX: 0
   _flipY: 0
   _closeCombineMeshs: 0
+--- !u!114 &6263219504465256814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728776799968973640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df750bfb0d1af348ab2fd7d290ca154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backPrefab: {fileID: 0}
+  frontAttackSound: {fileID: 8300000, guid: 14705b45ad742a34ea5a63250cc9409e, type: 3}
+  backAttackSound: {fileID: 8300000, guid: 73a57753dc5a6444181d92bd82f29d23, type: 3}
+  damageSound: {fileID: 8300000, guid: 1fc619e1cdb3c2c45bba779f66201016, type: 3}
+  deathSound: {fileID: 8300000, guid: 3d080d6873fc6ca409e588124d6f2e9c, type: 3}
 --- !u!61 &6767264981142297981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100,23 +117,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6354618, y: 1.2178732}
   m_EdgeRadius: 0
---- !u!114 &6263219504465256814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728776799968973640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df750bfb0d1af348ab2fd7d290ca154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backPrefab: {fileID: 0}
-  frontAttackSound: {fileID: 8300000, guid: 14705b45ad742a34ea5a63250cc9409e, type: 3}
-  backAttackSound: {fileID: 8300000, guid: 73a57753dc5a6444181d92bd82f29d23, type: 3}
-  damageSound: {fileID: 8300000, guid: 1fc619e1cdb3c2c45bba779f66201016, type: 3}
-  deathSound: {fileID: 8300000, guid: 3d080d6873fc6ca409e588124d6f2e9c, type: 3}
 --- !u!82 &2101188687861730199
 AudioSource:
   m_ObjectHideFlags: 0

@@ -855,9 +855,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6200542622623676969}
   - component: {fileID: 7861189196907677596}
+  - component: {fileID: 1295897681673633089}
   - component: {fileID: 2984643588411888881}
   - component: {fileID: 7903419865674388144}
-  - component: {fileID: 1295897681673633089}
   m_Layer: 0
   m_Name: FallborneDragon
   m_TagString: Prefab
@@ -924,6 +924,22 @@ MonoBehaviour:
   _flipX: 0
   _flipY: 0
   _closeCombineMeshs: 0
+--- !u!114 &1295897681673633089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5935035580675385706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4e17ee7b5265b4fa899dbaeffc69c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontAttackSound: {fileID: 8300000, guid: 636eecf9a0c5b4047a2a695a3ab62aea, type: 3}
+  backAttackSound: {fileID: 8300000, guid: a62cbc474f1e1854c858288b67a54722, type: 3}
+  damageSound: {fileID: 8300000, guid: 20a06189ae51d704f89870b65aa803ed, type: 3}
+  deathSound: {fileID: 8300000, guid: 6f0d3aec7962f8c4fbf8ea18977f2b9e, type: 3}
 --- !u!61 &2984643588411888881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1046,22 +1062,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1295897681673633089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5935035580675385706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf4e17ee7b5265b4fa899dbaeffc69c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontAttackSound: {fileID: 8300000, guid: 636eecf9a0c5b4047a2a695a3ab62aea, type: 3}
-  backAttackSound: {fileID: 8300000, guid: a62cbc474f1e1854c858288b67a54722, type: 3}
-  damageSound: {fileID: 8300000, guid: 20a06189ae51d704f89870b65aa803ed, type: 3}
-  deathSound: {fileID: 8300000, guid: 6f0d3aec7962f8c4fbf8ea18977f2b9e, type: 3}
 --- !u!1 &6203111280110524825
 GameObject:
   m_ObjectHideFlags: 0
