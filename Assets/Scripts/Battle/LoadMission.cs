@@ -280,6 +280,9 @@ public class LoadMission : MonoBehaviour
         {
             if(child.tag == "Prefab")
             {
+                Parent_Beast beast = child.GetComponent<Parent_Beast>();
+                beast.Play_SoundFX("death");
+
                 child.GetComponent<UnityArmatureComponent>().animation.Play("Death", 1);
             }
         }

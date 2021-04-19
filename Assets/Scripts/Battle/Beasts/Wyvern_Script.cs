@@ -21,11 +21,7 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
             attack = g.GetComponent<Attack>();
         }
 
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
-
-        //This is done since animations for wyvern a and b are the same 
-        
+        audioSrc = GetComponent<AudioSource>();
     }
 
     public void back_special()

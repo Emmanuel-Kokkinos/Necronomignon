@@ -21,8 +21,7 @@ public class Thanatos_Script : MonoBehaviour, Parent_Beast
 
         GameObject au = GameObject.Find("Music");
 
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     public void back_special()

@@ -21,8 +21,7 @@ public class Kitsune_Script : MonoBehaviour, Parent_Beast
             attack = g.GetComponent<Attack>();
         }
 
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     public void back_special()

@@ -22,12 +22,9 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
             attack = g.GetComponent<Attack>();
         }
 
-        
-
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
-
         frontAttackSound = backAttackSound;
+
+        audioSrc = GetComponent<AudioSource>();
     }
 
     public void back_special()

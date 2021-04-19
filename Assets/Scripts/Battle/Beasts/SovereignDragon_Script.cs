@@ -23,8 +23,7 @@ public class SovereignDragon_Script : MonoBehaviour, Parent_Beast
 
         GameObject au = GameObject.Find("Music");
 
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     private void Update()
