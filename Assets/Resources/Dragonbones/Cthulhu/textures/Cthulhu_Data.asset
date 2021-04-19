@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: Cthulhu_Data
+  m_EditorClassIdentifier: 
+  dataName: Cthulhu
+  dragonBonesJSON: {fileID: 4900000, guid: d4f58da3b5d51324fa8bdaf112e45da8, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 0b3eb37da9f4c924ab3c7f1c5781f1ec, type: 3}
+    texture: {fileID: 2800000, guid: 3b3b776dafcc75740bc635a8e732fcb6, type: 3}
+    material: {fileID: 0}
+    uiMaterial: {fileID: 2100000, guid: e9451597ae76f8949b44bba3c159b590, type: 2}
