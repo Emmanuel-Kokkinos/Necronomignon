@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 5245408f7488e034e9807d0f401a7260, type: 3}
-    totalSpriteSurfaceArea: 244010240
+    totalSpriteSurfaceArea: 244000000
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -54,16 +54,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1a2156022c56c6c4b9222fab69aec39c, type: 3}
   - {fileID: 21300000, guid: ddce802280c02d548bbbdedd80cb1bc4, type: 3}
   - {fileID: 21300000, guid: a1cc356279a169840b6c98cc126a8bc5, type: 3}
-  - {fileID: -3363215268976367786, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: 632384308415478266, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: -3305501945226654926, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: 5812803443009539430, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: -4143643001926031047, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: -4660068225294071580, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: 2471782151079400785, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: -1709481875156959639, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: -5388184769275919714, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
-  - {fileID: 6367685475297251851, guid: c54071a2b0f700e46a0d6d9b01cf883d, type: 3}
   - {fileID: 21300000, guid: 8661c3e25be5a334b923759b00511a4c, type: 3}
   - {fileID: 21300000, guid: c4103e33054aeeb41a220e03d9f54eed, type: 3}
   - {fileID: 21300000, guid: 4520eb24d4bf9464d9340db6a298f93e, type: 3}
@@ -126,16 +116,6 @@ SpriteAtlas:
   - Zefir_Attack A_43
   - Zefir_Attack A_21
   - Zefir_Attack A_34
-  - TCNYK001 - Copy_0
-  - TCNYK001 - Copy_1
-  - TCNYK001 - Copy_2
-  - TCNYK001 - Copy_3
-  - TCNYK001 - Copy_4
-  - TCNYK001 - Copy_5
-  - TCNYK001 - Copy_6
-  - TCNYK001 - Copy_7
-  - TCNYK001 - Copy_8
-  - TCNYK001 - Copy_9
   - Zefir_Attack A_28
   - Zefir_Attack A_15
   - Zefir_Attack A_24
