@@ -330,7 +330,11 @@ public class BattleManager : MonoBehaviour
             {
                 if(orderBar[x].transform.childCount > 0)
                 {
-                    Destroy(orderBar[x].gameObject.transform.GetChild(0).gameObject);
+                    foreach (UnityEngine.Transform child in orderBar[x].transform)
+                    {
+                        Destroy(child.gameObject);
+                    }
+                    //Destroy(orderBar[x].gameObject.transform.GetChild(0).gameObject);
                 }
                 
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + roundOrder[x + turn].name));
@@ -693,6 +697,9 @@ public class BattleManager : MonoBehaviour
             {
                 if (enemySlots[x] != null && enemySlots[x].Equals(target))
                 {
+                    Parent_Beast beast = enemyPadSlots[x].transform.GetChild(0).GetComponent<Parent_Beast>();
+                    beast.Play_SoundFX("damage");
+
                     StartCoroutine(ChangeBattleColor(enemyPadSlots[x].transform.GetChild(0).gameObject));
                     armature = enemyPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>();
                     armature.animation.Play("Damage", 1);
@@ -707,6 +714,9 @@ public class BattleManager : MonoBehaviour
             {
                 if (slots[x] != null && slots[x].Equals(target))
                 {
+                    Parent_Beast beast = playerPadSlots[x].transform.GetChild(0).GetComponent<Parent_Beast>();
+                    beast.Play_SoundFX("damage");
+
                     StartCoroutine(ChangeBattleColor(playerPadSlots[x].transform.GetChild(0).gameObject));
                     armature = playerPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>();
                     armature.animation.Play("Damage", 1);
@@ -718,11 +728,12 @@ public class BattleManager : MonoBehaviour
     }
 
     //Change the color of the target for a split second to show the damage type
+    //                               ****Need to fix for DragonBones****
     IEnumerator ChangeBattleColor(GameObject beast)
     {
-        beast.gameObject.transform.GetChild(0).GetComponent<Image>().color = attack.GetTypeColor(currentTurn);
+        //beast.gameObject.transform.GetChild(0).GetComponent<Image>().color = attack.GetTypeColor(currentTurn);
         yield return new WaitForSeconds(.1f);
-        beast.gameObject.transform.GetChild(0).GetComponent<Image>().color = Color.white;
+        //beast.gameObject.transform.GetChild(0).GetComponent<Image>().color = Color.white;
     }
 
     //starts the attacking cycle for the enemy

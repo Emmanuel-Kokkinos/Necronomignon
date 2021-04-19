@@ -9,11 +9,8 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
     void Start()
     {
-        GameObject au = GameObject.Find("Music");
-
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
-
+        audioSrc = GetComponent<AudioSource>();
+        
         base.start();
     }
 

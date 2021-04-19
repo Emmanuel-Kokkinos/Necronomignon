@@ -10,11 +10,9 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
 
     void Start()
     {
-        GameObject au = GameObject.Find("Music");
-
+        audioSrc = GetComponent<AudioSource>();
+        
         base.start();
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
     }
 
     public void back_special()

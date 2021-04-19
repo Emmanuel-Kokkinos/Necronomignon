@@ -15,8 +15,7 @@ public class SovereignDragon_Script : Parent_Script, Parent_Beast
 
         GameObject au = GameObject.Find("Music");
 
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     private void Update()

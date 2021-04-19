@@ -13,8 +13,7 @@ public class Zeograth_Script : Parent_Script, Parent_Beast
         base.start();
         GameObject au = GameObject.Find("Music");
 
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     public void back_special()

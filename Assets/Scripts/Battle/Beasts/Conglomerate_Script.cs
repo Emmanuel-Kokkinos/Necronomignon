@@ -12,12 +12,10 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
 
     void Start()
     {
-        GameObject au = GameObject.Find("Music");
-
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
-
         frontAttackSound = backAttackSound;
+
+        audioSrc = GetComponent<AudioSource>();
+
         base.start();
     }
 

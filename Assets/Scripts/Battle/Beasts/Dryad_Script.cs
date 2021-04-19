@@ -13,15 +13,14 @@ public class Dryad_Script : Parent_Script, Parent_Beast
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
-        GameObject au = GameObject.Find("Music");
 
         if (g != null)
         {
             healthManager = g.GetComponent<HealthManager>();
         }
 
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
+        audioSrc = GetComponent<AudioSource>();
+        
         base.start();
     }
 

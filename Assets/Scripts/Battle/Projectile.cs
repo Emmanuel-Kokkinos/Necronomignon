@@ -50,6 +50,7 @@ public class Projectile : MonoBehaviour
         if(collision.GetComponent<Parent_Beast>() != null)
         {
             Destroy(gameObject);
+            collision.gameObject.GetComponent<Parent_Beast>().Play_SoundFX("damage");
             collision.gameObject.GetComponent<UnityArmatureComponent>().animation.Play("Damage", 1);
             StartCoroutine(battleManager.AnimationWaitTime(collision.gameObject.GetComponent<UnityArmatureComponent>()));
 
