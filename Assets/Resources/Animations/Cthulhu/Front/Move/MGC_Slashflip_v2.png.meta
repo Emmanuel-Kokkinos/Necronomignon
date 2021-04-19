@@ -1,0 +1,965 @@
+fileFormatVersion: 2
+guid: c970252d9e5209d4297edc115b4b91f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8795087095828213603
+    second: MGC_Slashflip_v2_0
+  - first:
+      213: 8260176763769112196
+    second: MGC_Slashflip_v2_1
+  - first:
+      213: -8728999134594427860
+    second: MGC_Slashflip_v2_2
+  - first:
+      213: -3983311558035940551
+    second: MGC_Slashflip_v2_3
+  - first:
+      213: -8360314264515502897
+    second: MGC_Slashflip_v2_4
+  - first:
+      213: 4118325057765641747
+    second: MGC_Slashflip_v2_5
+  - first:
+      213: 6105604754129027531
+    second: MGC_Slashflip_v2_6
+  - first:
+      213: 8278744931164803566
+    second: MGC_Slashflip_v2_7
+  - first:
+      213: 8102645874955073235
+    second: MGC_Slashflip_v2_8
+  - first:
+      213: -7598450682664779293
+    second: MGC_Slashflip_v2_9
+  - first:
+      213: -8124625250242119854
+    second: MGC_Slashflip_v2_10
+  - first:
+      213: 8138877245045759290
+    second: MGC_Slashflip_v2_11
+  - first:
+      213: -1746436678436579845
+    second: MGC_Slashflip_v2_12
+  - first:
+      213: 3319896131229351255
+    second: MGC_Slashflip_v2_13
+  - first:
+      213: 5309342223784607027
+    second: MGC_Slashflip_v2_14
+  - first:
+      213: -8354234576025579118
+    second: MGC_Slashflip_v2_15
+  - first:
+      213: 5378914196038901216
+    second: MGC_Slashflip_v2_16
+  - first:
+      213: 877812277960436615
+    second: MGC_Slashflip_v2_17
+  - first:
+      213: -5731948854156909372
+    second: MGC_Slashflip_v2_18
+  - first:
+      213: -534336266459128686
+    second: MGC_Slashflip_v2_19
+  - first:
+      213: 5989228971858437690
+    second: MGC_Slashflip_v2_20
+  - first:
+      213: -5831545336979538957
+    second: MGC_Slashflip_v2_21
+  - first:
+      213: 3009126912043915995
+    second: MGC_Slashflip_v2_22
+  - first:
+      213: 5247505800438589810
+    second: MGC_Slashflip_v2_23
+  - first:
+      213: -4643689071293145336
+    second: MGC_Slashflip_v2_24
+  - first:
+      213: 6758549009815490753
+    second: MGC_Slashflip_v2_25
+  - first:
+      213: -495543170268994590
+    second: MGC_Slashflip_v2_26
+  - first:
+      213: -1590919543539736148
+    second: MGC_Slashflip_v2_27
+  - first:
+      213: 320237958033933325
+    second: MGC_Slashflip_v2_28
+  - first:
+      213: 5788184854772176140
+    second: MGC_Slashflip_v2_29
+  - first:
+      213: 976048929420663950
+    second: MGC_Slashflip_v2_30
+  - first:
+      213: -5895151378866375777
+    second: MGC_Slashflip_v2_31
+  - first:
+      213: -2526227610847629935
+    second: MGC_Slashflip_v2_32
+  - first:
+      213: -662430655363200550
+    second: MGC_Slashflip_v2_33
+  - first:
+      213: 682564165923108444
+    second: MGC_Slashflip_v2_34
+  - first:
+      213: -4738942803791372977
+    second: MGC_Slashflip_v2_35
+  - first:
+      213: -3321981267862504367
+    second: MGC_Slashflip_v2_36
+  - first:
+      213: -2585573864155807760
+    second: MGC_Slashflip_v2_37
+  - first:
+      213: -296170988767656250
+    second: MGC_Slashflip_v2_38
+  - first:
+      213: -4950164298125306932
+    second: MGC_Slashflip_v2_39
+  - first:
+      213: 1078855739411602484
+    second: MGC_Slashflip_v2_40
+  - first:
+      213: 5499209467540638393
+    second: MGC_Slashflip_v2_41
+  - first:
+      213: -6339932159178379367
+    second: MGC_Slashflip_v2_42
+  - first:
+      213: -3022797879886027323
+    second: MGC_Slashflip_v2_43
+  - first:
+      213: 4374116665632292257
+    second: MGC_Slashflip_v2_44
+  - first:
+      213: 1280223513305379459
+    second: MGC_Slashflip_v2_45
+  - first:
+      213: -8629716035654971635
+    second: MGC_Slashflip_v2_46
+  - first:
+      213: 2810138175883226887
+    second: MGC_Slashflip_v2_47
+  - first:
+      213: 5178743133852079504
+    second: MGC_Slashflip_v2_48
+  - first:
+      213: 4991782495032039788
+    second: MGC_Slashflip_v2_49
+  - first:
+      213: -6365230491314306117
+    second: MGC_Slashflip_v2_50
+  - first:
+      213: 6188820787007782320
+    second: MGC_Slashflip_v2_51
+  - first:
+      213: -3114378178332859645
+    second: MGC_Slashflip_v2_52
+  - first:
+      213: -5977551686958301588
+    second: MGC_Slashflip_v2_53
+  - first:
+      213: -1719417816612906052
+    second: MGC_Slashflip_v2_54
+  - first:
+      213: -9154436703389019337
+    second: MGC_Slashflip_v2_55
+  - first:
+      213: -4443886281743269336
+    second: MGC_Slashflip_v2_56
+  - first:
+      213: -1187359863612630550
+    second: MGC_Slashflip_v2_57
+  - first:
+      213: -4854546627651394215
+    second: MGC_Slashflip_v2_58
+  - first:
+      213: 682447145526573128
+    second: MGC_Slashflip_v2_59
+  - first:
+      213: 4454432517824606490
+    second: MGC_Slashflip_v2_60
+  - first:
+      213: -5893148605266300659
+    second: MGC_Slashflip_v2_61
+  - first:
+      213: -9157811262787281791
+    second: MGC_Slashflip_v2_62
+  - first:
+      213: -1719768062080791520
+    second: MGC_Slashflip_v2_63
+  - first:
+      213: -4177554089278727739
+    second: MGC_Slashflip_v2_64
+  - first:
+      213: 3982533010872060091
+    second: MGC_Slashflip_v2_65
+  - first:
+      213: -5507562099837012881
+    second: MGC_Slashflip_v2_66
+  - first:
+      213: -4003466248265554397
+    second: MGC_Slashflip_v2_67
+  - first:
+      213: 7216324997316060343
+    second: MGC_Slashflip_v2_68
+  - first:
+      213: 7436953404726356022
+    second: MGC_Slashflip_v2_69
+  - first:
+      213: 6319413840511566276
+    second: MGC_Slashflip_v2_70
+  - first:
+      213: -6235813057565261786
+    second: MGC_Slashflip_v2_71
+  - first:
+      213: 8226719498840801175
+    second: MGC_Slashflip_v2_72
+  - first:
+      213: -8509722414317849685
+    second: MGC_Slashflip_v2_73
+  - first:
+      213: -4703554174820686820
+    second: MGC_Slashflip_v2_74
+  - first:
+      213: -3135710778057299885
+    second: MGC_Slashflip_v2_75
+  - first:
+      213: 8667900289477761375
+    second: MGC_Slashflip_v2_76
+  - first:
+      213: 2947076485174490623
+    second: MGC_Slashflip_v2_77
+  - first:
+      213: -3635239130218959090
+    second: MGC_Slashflip_v2_78
+  - first:
+      213: -9153020830623248224
+    second: MGC_Slashflip_v2_79
+  - first:
+      213: -8272997456562479563
+    second: MGC_Slashflip_v2_80
+  - first:
+      213: 738554561114345352
+    second: MGC_Slashflip_v2_81
+  - first:
+      213: -6151946177035807925
+    second: MGC_Slashflip_v2_82
+  - first:
+      213: 5167535048065386670
+    second: MGC_Slashflip_v2_83
+  - first:
+      213: -4856629239491115199
+    second: MGC_Slashflip_v2_84
+  - first:
+      213: -4246079009485822880
+    second: MGC_Slashflip_v2_85
+  - first:
+      213: -8521372590592501382
+    second: MGC_Slashflip_v2_86
+  - first:
+      213: 5259489600673534055
+    second: MGC_Slashflip_v2_87
+  - first:
+      213: 7967594425471158488
+    second: MGC_Slashflip_v2_88
+  - first:
+      213: -5729996388552744232
+    second: MGC_Slashflip_v2_89
+  - first:
+      213: -472680499487085244
+    second: MGC_Slashflip_v2_90
+  - first:
+      213: 6915959032805507728
+    second: MGC_Slashflip_v2_91
+  - first:
+      213: 6236224146258925724
+    second: MGC_Slashflip_v2_92
+  - first:
+      213: 5685398844411235812
+    second: MGC_Slashflip_v2_93
+  - first:
+      213: -5162156016150219600
+    second: MGC_Slashflip_v2_94
+  - first:
+      213: 809787802504434759
+    second: MGC_Slashflip_v2_95
+  - first:
+      213: 5606899312900925037
+    second: MGC_Slashflip_v2_96
+  - first:
+      213: -2871530772041350186
+    second: MGC_Slashflip_v2_97
+  - first:
+      213: 772579251204467259
+    second: MGC_Slashflip_v2_98
+  - first:
+      213: 3775961484849592306
+    second: MGC_Slashflip_v2_99
+  - first:
+      213: -8598183424725913040
+    second: MGC_Slashflip_v2_100
+  - first:
+      213: 5770936365929887773
+    second: MGC_Slashflip_v2_101
+  - first:
+      213: -7135560577086929126
+    second: MGC_Slashflip_v2_102
+  - first:
+      213: -9014098174178134202
+    second: MGC_Slashflip_v2_103
+  - first:
+      213: 8458472069923810407
+    second: MGC_Slashflip_v2_104
+  - first:
+      213: -8647877176615962293
+    second: MGC_Slashflip_v2_105
+  - first:
+      213: 4798602858045924858
+    second: MGC_Slashflip_v2_106
+  - first:
+      213: 4681493156735101761
+    second: MGC_Slashflip_v2_107
+  - first:
+      213: -1356069775311071536
+    second: MGC_Slashflip_v2_108
+  - first:
+      213: 4664930271917862747
+    second: MGC_Slashflip_v2_109
+  - first:
+      213: -7562582897953144806
+    second: MGC_Slashflip_v2_110
+  - first:
+      213: 4269756899366819070
+    second: MGC_Slashflip_v2_111
+  - first:
+      213: -619292408484476322
+    second: MGC_Slashflip_v2_112
+  - first:
+      213: -5475391416078923536
+    second: MGC_Slashflip_v2_113
+  - first:
+      213: 7427813670049470080
+    second: MGC_Slashflip_v2_114
+  - first:
+      213: -168515484933248366
+    second: MGC_Slashflip_v2_115
+  - first:
+      213: -1745400592471919907
+    second: MGC_Slashflip_v2_116
+  - first:
+      213: -6371011270042284275
+    second: MGC_Slashflip_v2_117
+  - first:
+      213: -675554380911712068
+    second: MGC_Slashflip_v2_118
+  - first:
+      213: 1682375777159799906
+    second: MGC_Slashflip_v2_119
+  - first:
+      213: 6220463753576103666
+    second: MGC_Slashflip_v2_120
+  - first:
+      213: -3777722259675605947
+    second: MGC_Slashflip_v2_121
+  - first:
+      213: -2245873046967021883
+    second: MGC_Slashflip_v2_122
+  - first:
+      213: -1870093414033924132
+    second: MGC_Slashflip_v2_123
+  - first:
+      213: 8145171272620906514
+    second: MGC_Slashflip_v2_124
+  - first:
+      213: -6269579236265229111
+    second: MGC_Slashflip_v2_125
+  - first:
+      213: 5968936536565074784
+    second: MGC_Slashflip_v2_126
+  - first:
+      213: 5573264264321571292
+    second: MGC_Slashflip_v2_127
+  - first:
+      213: -4035080794020130255
+    second: MGC_Slashflip_v2_128
+  - first:
+      213: -9035777866751914701
+    second: MGC_Slashflip_v2_129
+  - first:
+      213: -6309512333880422507
+    second: MGC_Slashflip_v2_130
+  - first:
+      213: 8105528528217701221
+    second: MGC_Slashflip_v2_131
+  - first:
+      213: -6452419662949101068
+    second: MGC_Slashflip_v2_132
+  - first:
+      213: 8856295645081408785
+    second: MGC_Slashflip_v2_133
+  - first:
+      213: 4604209352817429896
+    second: MGC_Slashflip_v2_134
+  - first:
+      213: 8522537262722341476
+    second: MGC_Slashflip_v2_135
+  - first:
+      213: -5518914943672045138
+    second: MGC_Slashflip_v2_136
+  - first:
+      213: -4530028992169473729
+    second: MGC_Slashflip_v2_137
+  - first:
+      213: 1880349540581588910
+    second: MGC_Slashflip_v2_138
+  - first:
+      213: 2590814687959604945
+    second: MGC_Slashflip_v2_139
+  - first:
+      213: 2899696650950763269
+    second: MGC_Slashflip_v2_140
+  - first:
+      213: -4518207500358547914
+    second: MGC_Slashflip_v2_141
+  - first:
+      213: -8697929334801846436
+    second: MGC_Slashflip_v2_142
+  - first:
+      213: -4832333969728473595
+    second: MGC_Slashflip_v2_143
+  - first:
+      213: 1034763144629628901
+    second: MGC_Slashflip_v2_144
+  - first:
+      213: 6310520380524438110
+    second: MGC_Slashflip_v2_145
+  - first:
+      213: -3222709977381279596
+    second: MGC_Slashflip_v2_146
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90998c72e291f580800000000000000
+      internalID: -8795087095828213603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486c46a900b02a270800000000000000
+      internalID: 8260176763769112196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c249ec9098d5cd680800000000000000
+      internalID: -8728999134594427860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b5f811e3f68b8c0800000000000000
+      internalID: -3983311558035940551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc1ce4a8723afb80800000000000000
+      internalID: -8360314264515502897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e06b9f1da372930800000000000000
+      internalID: 4118325057765641747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc10ccccc277bb450800000000000000
+      internalID: 6105604754129027531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1d428f6a204e270800000000000000
+      internalID: 8278744931164803566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d63b7d5e71627070800000000000000
+      internalID: 8102645874955073235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e10178cc51ec8690800000000000000
+      internalID: -7598450682664779293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257362a81688f3f80800000000000000
+      internalID: -8124625250242119854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d56759bb913f070800000000000000
+      internalID: 8138877245045759290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5131f081963c7e0800000000000000
+      internalID: -1746436678436579845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_13
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d7e1911f3a21e20800000000000000
+      internalID: 3319896131229351255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33df9a75f929ea940800000000000000
+      internalID: 5309342223784607027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29195bd6aebcf0c80800000000000000
+      internalID: -8354234576025579118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed543c66fdb5aa40800000000000000
+      internalID: 5378914196038901216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bee4fad9d9e2c00800000000000000
+      internalID: 877812277960436615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c42545e2e60470b0800000000000000
+      internalID: -5731948854156909372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MGC_Slashflip_v2_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c58172ff7a598f0800000000000000
+      internalID: -534336266459128686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7bd22d05246b4db47aebd59ef32e17e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
