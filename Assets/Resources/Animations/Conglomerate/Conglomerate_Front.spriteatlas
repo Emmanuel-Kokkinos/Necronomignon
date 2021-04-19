@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 9c450fdc1a498454abfd0941076f6806, type: 3}
-    totalSpriteSurfaceArea: 248000000
+    totalSpriteSurfaceArea: 248028672
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -92,6 +92,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fbac74f9c55627b46a9c21279d07193f, type: 3}
   - {fileID: 21300000, guid: 008ec81a533e5d34997b80845918e103, type: 3}
   - {fileID: 21300000, guid: 225b0e4a09e1bb5489cf68e67bd7726d, type: 3}
+  - {fileID: -1689955232033085888, guid: 8426048afa717ab4c8d8e5f362fb1441, type: 3}
+  - {fileID: -3700033612007612386, guid: 8426048afa717ab4c8d8e5f362fb1441, type: 3}
+  - {fileID: 5990986294797411861, guid: 8426048afa717ab4c8d8e5f362fb1441, type: 3}
+  - {fileID: 1432699757230615834, guid: 8426048afa717ab4c8d8e5f362fb1441, type: 3}
+  - {fileID: -8844970588755076640, guid: 8426048afa717ab4c8d8e5f362fb1441, type: 3}
+  - {fileID: 3479214450063277215, guid: 8426048afa717ab4c8d8e5f362fb1441, type: 3}
+  - {fileID: -3457254997974178007, guid: 8426048afa717ab4c8d8e5f362fb1441, type: 3}
   - {fileID: 21300000, guid: dd60bcba53ce6d04b99d7a4745a7b729, type: 3}
   - {fileID: 21300000, guid: 2d82cacac74b1b843bf6ff104403be9e, type: 3}
   - {fileID: 21300000, guid: 94bcb5da846f7e64782afe55eb121531, type: 3}
@@ -155,6 +162,13 @@ SpriteAtlas:
   - Conglomerate_Attack B_42
   - Conglomerate_Attack B_48
   - Conglomerate_Attack B_07
+  - stab_atttack_5
+  - stab_atttack_4
+  - stab_atttack_6
+  - stab_atttack_1
+  - stab_atttack_0
+  - stab_atttack_3
+  - stab_atttack_2
   - Conglomerate_Attack B_31
   - Conglomerate_Attack B_11
   - Conglomerate_Attack B_14

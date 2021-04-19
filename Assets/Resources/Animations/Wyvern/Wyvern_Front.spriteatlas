@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 55406833a4703c945906e4044511e6c9, type: 3}
-    totalSpriteSurfaceArea: 140000000
+    totalSpriteSurfaceArea: 140005120
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -67,6 +67,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d93c9a77e735083488fb187d9648f931, type: 3}
   - {fileID: 21300000, guid: 800042c700d9a5c49a1a509ffdeee8a7, type: 3}
   - {fileID: 21300000, guid: 7adb6558da8a3294b94186ba4c4d8782, type: 3}
+  - {fileID: 6283147460232431772, guid: 64d3f0682cde5f8419a6933e8dab7c83, type: 3}
+  - {fileID: -2247918224548019269, guid: 64d3f0682cde5f8419a6933e8dab7c83, type: 3}
+  - {fileID: 2816895114182060562, guid: 64d3f0682cde5f8419a6933e8dab7c83, type: 3}
+  - {fileID: 4408985956767555964, guid: 64d3f0682cde5f8419a6933e8dab7c83, type: 3}
+  - {fileID: -6939695964637348897, guid: 64d3f0682cde5f8419a6933e8dab7c83, type: 3}
   - {fileID: 21300000, guid: 8da93eb89e8f2944685967814cda3f4b, type: 3}
   - {fileID: 21300000, guid: 648213d840eb74141b788b0d1e27c37e, type: 3}
   - {fileID: 21300000, guid: afc04c195eb3f9245a36a23b4339d3ff, type: 3}
@@ -103,6 +108,11 @@ SpriteAtlas:
   - Zefir_Attack B_04
   - Zefir_Attack B_23
   - Zefir_Attack B_18
+  - slash_4
+  - slash_3
+  - slash_2
+  - slash_1
+  - slash_0
   - Zefir_Attack B_09
   - Zefir_Attack B_29
   - Zefir_Attack B_30

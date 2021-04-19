@@ -7,6 +7,8 @@ public class Cthulhu_Script : MonoBehaviour, Parent_Beast
     BattleManager battleManager;
     Attack attack;
     [SerializeField] GameObject backPrefab;
+    GameObject backMove;
+    
 
     void Start()
     {
@@ -18,6 +20,42 @@ public class Cthulhu_Script : MonoBehaviour, Parent_Beast
             attack = g.GetComponent<Attack>();
         }
     }
+
+    public void PlayBackMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 100);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(2f, 2f);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Cthulhu/Cthulhu_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Back");
+
+    }
+
+    //public void ResizeBackMove() {
+    //    movePrefab.transform.localScale = new Vector3(5f, 5f);
+    //    Debug.Log("Resize");
+    //}
+
+    public void PlayFrontMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 100);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(2f, 2f);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Cthulhu/Cthulhu_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Front");
+    }
+
+ 
 
     public void back_special()
     {

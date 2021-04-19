@@ -52,6 +52,33 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         }
     }
 
+    public void PlayBackMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 100);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(2f, 2f);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Wyvern/Wyvern_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Back");
+    }
+
+    public void PlayFrontMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 100);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(2f, 2f);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Wyvern/Wyvern_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Front");
+    }
     void ProjectileAnimation()
     {
         GameObject target = battleManager.getSlot(battleManager.targets[0]);

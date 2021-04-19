@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: 5f568e4b37876bd47aef063e07ba30b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5929950720325185575
+    second: ROARRECOLOR_0
+  - first:
+      213: 8306965328762812370
+    second: ROARRECOLOR_1
+  - first:
+      213: 2572079029024493387
+    second: ROARRECOLOR_2
+  - first:
+      213: -5227655817426817028
+    second: ROARRECOLOR_3
+  - first:
+      213: -272513603476633509
+    second: ROARRECOLOR_4
+  - first:
+      213: -3030051361627513719
+    second: ROARRECOLOR_5
+  - first:
+      213: -5392726243968109486
+    second: ROARRECOLOR_6
+  - first:
+      213: 2057968578781009914
+    second: ROARRECOLOR_7
+  - first:
+      213: -7339109149465222406
+    second: ROARRECOLOR_8
+  - first:
+      213: 8841480180509130159
+    second: ROARRECOLOR_9
+  - first:
+      213: -956638085137124225
+    second: ROARRECOLOR_10
+  - first:
+      213: 3796514802806901085
+    second: ROARRECOLOR_11
+  - first:
+      213: 1851536470423724068
+    second: ROARRECOLOR_12
+  - first:
+      213: 4264792078240148640
+    second: ROARRECOLOR_13
+  - first:
+      213: 7311068912402213923
+    second: ROARRECOLOR_14
+  - first:
+      213: 2725615823131169277
+    second: ROARRECOLOR_15
+  - first:
+      213: -3911902524425489869
+    second: ROARRECOLOR_16
+  - first:
+      213: -1919176279649533424
+    second: ROARRECOLOR_17
+  - first:
+      213: -8100132181975871410
+    second: ROARRECOLOR_18
+  - first:
+      213: -7588167923221175257
+    second: ROARRECOLOR_19
+  - first:
+      213: 9162038567660703196
+    second: ROARRECOLOR_20
+  - first:
+      213: -6825192426066831410
+    second: ROARRECOLOR_21
+  - first:
+      213: 93997539662456337
+    second: ROARRECOLOR_22
+  - first:
+      213: 1043709947463685105
+    second: ROARRECOLOR_23
+  - first:
+      213: 7079819215062000064
+    second: ROARRECOLOR_24
+  - first:
+      213: 9151671117479006179
+    second: ROARRECOLOR_25
+  - first:
+      213: -8383444224384824402
+    second: ROARRECOLOR_26
+  - first:
+      213: -3019859627366829518
+    second: ROARRECOLOR_27
+  - first:
+      213: 8994987884922718874
+    second: ROARRECOLOR_28
+  - first:
+      213: 463652405889759524
+    second: ROARRECOLOR_29
+  - first:
+      213: 628119281027428269
+    second: ROARRECOLOR_30
+  - first:
+      213: -1825714185573282529
+    second: ROARRECOLOR_31
+  - first:
+      213: -271340998623495250
+    second: ROARRECOLOR_32
+  - first:
+      213: 5153997537573014532
+    second: ROARRECOLOR_33
+  - first:
+      213: -6187086662866740085
+    second: ROARRECOLOR_34
+  - first:
+      213: 1423830112627795168
+    second: ROARRECOLOR_35
+  - first:
+      213: 2384843171124884902
+    second: ROARRECOLOR_36
+  - first:
+      213: 1530814428819468694
+    second: ROARRECOLOR_37
+  - first:
+      213: -298423579917861295
+    second: ROARRECOLOR_38
+  - first:
+      213: 8602247886012460442
+    second: ROARRECOLOR_39
+  - first:
+      213: -100554979659205489
+    second: ROARRECOLOR_40
+  - first:
+      213: -7311567181504990854
+    second: ROARRECOLOR_41
+  - first:
+      213: -8937524775599911815
+    second: ROARRECOLOR_42
+  - first:
+      213: -3623847077689934795
+    second: ROARRECOLOR_43
+  - first:
+      213: 1411101855654787848
+    second: ROARRECOLOR_44
+  - first:
+      213: 2819057728172227246
+    second: ROARRECOLOR_45
+  - first:
+      213: -120855569562085135
+    second: ROARRECOLOR_46
+  - first:
+      213: 4385694105363861374
+    second: ROARRECOLOR_47
+  - first:
+      213: 1946983918529716164
+    second: ROARRECOLOR_48
+  - first:
+      213: 1040494923952219168
+    second: ROARRECOLOR_49
+  - first:
+      213: -8471289931469498648
+    second: ROARRECOLOR_50
+  - first:
+      213: -5414291576610666317
+    second: ROARRECOLOR_51
+  - first:
+      213: 31199443924737348
+    second: ROARRECOLOR_52
+  - first:
+      213: -937168697705965441
+    second: ROARRECOLOR_53
+  - first:
+      213: -811973169796874223
+    second: ROARRECOLOR_54
+  - first:
+      213: -8006891907042030184
+    second: ROARRECOLOR_55
+  - first:
+      213: -3793665121898791769
+    second: ROARRECOLOR_56
+  - first:
+      213: -1296030988452243396
+    second: ROARRECOLOR_57
+  - first:
+      213: 231062189721620675
+    second: ROARRECOLOR_58
+  - first:
+      213: 3431788371581637925
+    second: ROARRECOLOR_59
+  - first:
+      213: 2619659694169875703
+    second: ROARRECOLOR_60
+  - first:
+      213: 5574471125934434709
+    second: ROARRECOLOR_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ROARRECOLOR_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720fd8c03ca6b4250800000000000000
+      internalID: 5929950720325185575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7b46e44f4484370800000000000000
+      internalID: 8306965328762812370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f8c3bdf3cd1b320800000000000000
+      internalID: 2572079029024493387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff254a3bb2a377b0800000000000000
+      internalID: -5227655817426817028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_4
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58405c4256d73cf0800000000000000
+      internalID: -272513603476633509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_5
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cd00b275813f5d0800000000000000
+      internalID: -3030051361627513719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_6
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254ba519d003925b0800000000000000
+      internalID: -5392726243968109486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_7
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af75821d48f5f8c10800000000000000
+      internalID: 2057968578781009914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_8
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af26e42ec1f362a90800000000000000
+      internalID: -7339109149465222406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_9
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad37e7416f33ba70800000000000000
+      internalID: 8841480180509130159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_10
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74bac4eab659b2f0800000000000000
+      internalID: -956638085137124225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_11
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5941dd291eefa430800000000000000
+      internalID: 3796514802806901085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_12
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42069482c9af1b910800000000000000
+      internalID: 1851536470423724068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_13
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac6760acc59f2b30800000000000000
+      internalID: 4264792078240148640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_14
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ca22ca072267560800000000000000
+      internalID: 7311068912402213923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_15
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1dae3762553d520800000000000000
+      internalID: 2725615823131169277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_16
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3323aa3516126b9c0800000000000000
+      internalID: -3911902524425489869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROARRECOLOR_17
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01242268757bd55e0800000000000000
+      internalID: -1919176279649533424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dc7d27e06b2f22e41abe45b08f51bf1c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
