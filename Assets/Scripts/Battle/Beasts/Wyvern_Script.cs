@@ -3,27 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wyvern_Script : MonoBehaviour, Parent_Beast
+public class Wyvern_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     AudioSource audioSrc;
 
     void Start()
     {
-        GameObject g = GameObject.Find("GameManager");
         GameObject au = GameObject.Find("Music");
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
 
         if (au != null)
             audioSrc = au.GetComponent<AudioSource>();
 
+        base.start();
         //This is done since animations for wyvern a and b are the same 
         
     }

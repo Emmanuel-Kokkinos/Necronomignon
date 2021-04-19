@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class DreamSlime_Script : MonoBehaviour, Parent_Beast
+public class DreamSlime_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
     LoadMission loadMission;
     HealthManager healthManager;
-    Attack attack;
 
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
@@ -21,14 +19,13 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
 
         if (g != null)
         {
-            battleManager = g.GetComponent<BattleManager>();
             loadMission = g.GetComponent<LoadMission>();
             healthManager = g.GetComponent<HealthManager>();
-            attack = g.GetComponent<Attack>();
         }
 
         if (au != null)
             audioSrc = au.GetComponent<AudioSource>();
+        base.start();
     }
 
     public void back_special()

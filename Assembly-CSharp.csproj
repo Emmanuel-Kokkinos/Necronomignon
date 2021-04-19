@@ -47,6 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2019.4.8f1</UnityVersion>
@@ -170,12 +171,14 @@
     <Compile Include="Assets\Scripts\Battle\Beasts\Cthulhu_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\DreamSlime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Dryad_Script.cs" />
+    <Compile Include="Assets\Scripts\Battle\Beasts\EarthDragon.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\FatherTime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Kitsune_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\LuzuriaAngelicus_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Mandoro_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Nage_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Parent_Beast.cs" />
+    <Compile Include="Assets\Scripts\Battle\Beasts\Parent_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\SovereignDragon_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Terraos_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Thanatos_Script.cs" />
@@ -218,6 +221,7 @@
     <Compile Include="Assets\Scripts\Data\Summoner.cs" />
     <Compile Include="Assets\Scripts\Data\Values.cs" />
     <Compile Include="Assets\Scripts\Dialog\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Dialog\DialogueManagerOnEnd.cs" />
     <Compile Include="Assets\Scripts\Display_Picture.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\LoadAssetBundles.cs" />
@@ -300,6 +304,7 @@
     <None Include="Assets\PixelUI(TEMP)\Font1\license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Resources\Dragonbones\EarthDragon\dragonbones_assets\Terraos_settings.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\DragonBones\Resources\Shaders\DB_BlendMode_UIGrab.shader" />
@@ -502,13 +507,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/Manoli/Documents/GitHub/Necronomignon/Necronomignon/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <HintPath>C:/Users/Sidne/OneDrive/Documents/GitHub/Necronomignon/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
