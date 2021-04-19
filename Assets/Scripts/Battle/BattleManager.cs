@@ -662,6 +662,7 @@ public class BattleManager : MonoBehaviour
 
             if (beast != null)
             {
+                beast.Play_SoundFX("front");
                 beast.front_special();
             }
         }
@@ -672,6 +673,7 @@ public class BattleManager : MonoBehaviour
 
             if (beast != null)
             {
+                beast.Play_SoundFX("back");
                 beast.back_special();
             }
         }
