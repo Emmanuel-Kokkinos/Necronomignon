@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DragonBones;
 
 
 public class DreamSlime_Script : Parent_Script, Parent_Beast
@@ -52,6 +53,8 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
                         beastPrefab.transform.SetParent(battleManager.playerPadSlots[ran].transform);
                         beastPrefab.transform.localPosition = new Vector3(0, 0);
                         beastPrefab.transform.localRotation = Quaternion.identity;
+                        beastPrefab.transform.localScale = new Vector3(20f, 20f);
+                        beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
                         slot = ran;
                     }
                 }

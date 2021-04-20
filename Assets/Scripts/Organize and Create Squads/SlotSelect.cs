@@ -137,6 +137,7 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     // Select this beast and give options to move to another slot or remove from the grid
     void EditPlace()
     {
+        print(createPoolLoader.summoned[slotID + (createPoolLoader.counter * 9)]);
         createManager.selected = thisBeast;
         createManager.selectedIndex = thisBeastIndex;
         createManager.selectedSlotID = slotID;
