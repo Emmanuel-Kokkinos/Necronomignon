@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Values : MonoBehaviour
 {
-    public static int SQUADMAX = 8;
-    public static int SLOTMAX = 11;
-    public static int SMALLSLOT = 8;
-    public static int TOTAL_BEAST_COST = 80;
-    public static int BEAST_COST_MIN = 10;
-    public static double TEIRBOOST = .05;
-    public static List<List<string>> stories = new List<List<string>>();
+    public readonly static int SQUADMAX = 8;
+    public readonly static int SLOTMAX = 11;
+    public readonly static int SMALLSLOT = 8;
+    public readonly static int TOTAL_BEAST_COST = 80;
+    public readonly static int BEAST_COST_MIN = 10;
+    public readonly static double TEIRBOOST = .05;
+    public readonly static List<List<string>> stories = new List<List<string>>();
 
     // Start is called before the first frame update
     void Start()
