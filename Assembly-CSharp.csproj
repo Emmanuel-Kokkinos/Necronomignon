@@ -222,6 +222,7 @@
     <Compile Include="Assets\Scripts\Data\Values.cs" />
     <Compile Include="Assets\Scripts\Dialog\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Dialog\DialogueManagerOnEnd.cs" />
+    <Compile Include="Assets\Scripts\Dialog\StartingBeast.cs" />
     <Compile Include="Assets\Scripts\Display_Picture.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\LoadAssetBundles.cs" />
