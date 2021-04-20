@@ -2379,23 +2379,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 17
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":-115.5,"yPos":259},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Thanks
-    fam!","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":118.5,"yPos":259},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"*hug
-    family* (this feels nice)","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":581.5,"yPos":240},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
-    Me!","parentUIDs":[8],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":582.5,"yPos":298},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Reporting
-    for Duty","parentUIDs":[8],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":336.5,"yPos":349},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
-    tha''t correct","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":106,"yPos":404},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Follow
-    her","parentUIDs":[13],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":260.5,"yPos":51},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":37.5,"yPos":48},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Diogenes
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":-51,"yPos":201},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Thanks
+    fam!","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":183,"yPos":201},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"*hug
+    family* (this feels nice)","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":646,"yPos":182},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
+    Me!","parentUIDs":[8],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":647,"yPos":240},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Reporting
+    for Duty","parentUIDs":[8],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":401,"yPos":291},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
+    tha''t correct","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":170.5,"yPos":346},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Follow
+    her","parentUIDs":[13],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":325,"yPos":-7},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":102,"yPos":-10},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Diogenes
     Besnik! Please report to \r\nthe front desk to began your Necromancy Adeptness
-    Exam.\r","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Instructor:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":489.5,"yPos":52},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Ahhhh!!!!!
-    THIS IS SO COOOOL!","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":493.5,"yPos":150},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Show
-    them what you are made of Dio!","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":261.5,"yPos":151},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"No
-    matter what happens, we are so very proud.\r","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mother:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":36.5,"yPos":153},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Remember
-    what grandpa used to say: Never give up, trust your instincts.\r","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Father:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":337.5,"yPos":247},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Diogenes
-    Besnik?","parentUIDs":[6,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Instructor:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":579.5,"yPos":372},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Pleasure
+    Exam.\r","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Instructor:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":554,"yPos":-6},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Ahhhh!!!!!
+    THIS IS SO COOOOL!","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":558,"yPos":92},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Show
+    them what you are made of Dio!","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":326,"yPos":93},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"No
+    matter what happens, we are so very proud.\r","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mother:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":101,"yPos":95},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Remember
+    what grandpa used to say: Never give up, trust your instincts.\r","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Father:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":402,"yPos":189},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Diogenes
+    Besnik?","parentUIDs":[6,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Instructor:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":644,"yPos":314},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Pleasure
     to meet you Diogenes. I see in the application that you have been trained a bit
-    by Paimon of Mirrulak, is that correct?\r","parentUIDs":[9,10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Instructor:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":336.5,"yPos":412},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Fantastic!
-    Well, follow me to the arena, and let''s see what you are capable of.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Instructor:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-126,"yPos":359},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Start
+    by Paimon of Mirrulak, is that correct?\r","parentUIDs":[9,10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Instructor:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":401,"yPos":354},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Fantastic!
+    Well, follow me to the arena, and let''s see what you are capable of.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Instructor:","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-61.5,"yPos":301},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Start
     Tutorial","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Conv_Academy
@@ -2744,6 +2744,21 @@ GameObject:
   - component: {fileID: 775820548}
   - component: {fileID: 775820547}
   - component: {fileID: 775820546}
+  - component: {fileID: 775820626}
+  - component: {fileID: 775820625}
+  - component: {fileID: 775820624}
+  - component: {fileID: 775820623}
+  - component: {fileID: 775820622}
+  - component: {fileID: 775820621}
+  - component: {fileID: 775820620}
+  - component: {fileID: 775820619}
+  - component: {fileID: 775820618}
+  - component: {fileID: 775820617}
+  - component: {fileID: 775820616}
+  - component: {fileID: 775820615}
+  - component: {fileID: 775820614}
+  - component: {fileID: 775820613}
+  - component: {fileID: 775820612}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -4019,6 +4034,291 @@ MonoBehaviour:
   TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!114 &775820612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 80
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 79
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 78
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 77
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 75
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 74
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 73
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 72
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 70
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 69
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 68
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 67
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 76
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 71
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &775820626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 66
+  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &826479834
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,104 +5398,127 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 66
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":100,\"yPos\":192},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes.\",\"parentUIDs\":[23],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":100,\"yPos\":259},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I\u2019d
-    say the means justify the ends.\",\"parentUIDs\":[23],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":102,\"yPos\":326},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    would need to see the outcome\",\"parentUIDs\":[23],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":577,\"yPos\":192},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Loyalty\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":577,\"yPos\":259},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Strength\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":577,\"yPos\":327},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vision\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":580,\"yPos\":397},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tact\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":348,\"yPos\":378},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Stay
-    by my friend\u2019s side and not leave until I know they are safe.\",\"parentUIDs\":[32],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":350,\"yPos\":451},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+  CurrentIDCounter: 81
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":202,\"yPos\":97},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes.\",\"parentUIDs\":[23],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":202,\"yPos\":164},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I\u2019d
+    say the means justify the ends.\",\"parentUIDs\":[23],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":204,\"yPos\":231},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    would need to see the outcome\",\"parentUIDs\":[23],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":679,\"yPos\":97},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Loyalty\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":679,\"yPos\":164},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Strength\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":679,\"yPos\":232},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vision\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":682,\"yPos\":302},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tact\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":450,\"yPos\":283},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Stay
+    by my friend\u2019s side and not leave until I know they are safe.\",\"parentUIDs\":[32],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":452,\"yPos\":356},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     will send a wyvern ahead to follow the perpetrator so I can organize my friend\u2019s
-    rescue.\",\"parentUIDs\":[32],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":352,\"yPos\":523},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Best
-    friend? In this line of work, you can never grow too attached to anyone.\",\"parentUIDs\":[32],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":353,\"yPos\":598},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"It
-    depends on the context. I would need more information to answer this.\",\"parentUIDs\":[32],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":103,\"yPos\":509},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
+    rescue.\",\"parentUIDs\":[32],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":454,\"yPos\":428},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Best
+    friend? In this line of work, you can never grow too attached to anyone.\",\"parentUIDs\":[32],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":455,\"yPos\":503},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"It
+    depends on the context. I would need more information to answer this.\",\"parentUIDs\":[32],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":205,\"yPos\":414},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
     you\u2019re going to become a Necromancer, might as well be the best. It is a
     solitary job that requires you to be the best version of yourself at all times.
-    No rest, just work.\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":103,\"yPos\":574},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Preparation
+    No rest, just work.\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":205,\"yPos\":479},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Preparation
     is everything. Before going into battle, one must always make sure that the inventory
     is full, all familiars are healthy, and health spells are charged. You never
-    know what will happen.\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":104,\"yPos\":642},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    know what will happen.\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206,\"yPos\":547},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     will do everything I can to serve others. To become a Necromancer is to turn
     your life into a gift for the people. And that will sometimes mean making difficult
-    sacrifices, but I\u2019m ready for it.\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":105,\"yPos\":706},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Necromancy
+    sacrifices, but I\u2019m ready for it.\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":207,\"yPos\":611},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Necromancy
     is a way of seeing the world. I prefer to use my powers only when strictly necessary,
-    otherwise I would like to commit myself to its study rather than its practice.\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":578,\"yPos\":595},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Getting
+    otherwise I would like to commit myself to its study rather than its practice.\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":680,\"yPos\":500},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Getting
     everything done on my list for the day. Whatever I can\u2019t do, I put it on
-    the list for the following day. I\u2019ll go to bed anxious otherwise. \",\"parentUIDs\":[42],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":581,\"yPos\":667},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Doing
+    the list for the following day. I\u2019ll go to bed anxious otherwise. \",\"parentUIDs\":[42],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":683,\"yPos\":572},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Doing
     at least one meaningful thing like foraging herbs and mushrooms to add to my
-    collection, practicing spells or battles, organizing my library, etc.\",\"parentUIDs\":[42],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":582,\"yPos\":739},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Visiting
+    collection, practicing spells or battles, organizing my library, etc.\",\"parentUIDs\":[42],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":684,\"yPos\":644},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Visiting
     friends, maybe taking a kid or two for a ride on the wyvern! I consider my day
-    a success if I manage to make people smile.\",\"parentUIDs\":[42],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":585,\"yPos\":811},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    a success if I manage to make people smile.\",\"parentUIDs\":[42],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":687,\"yPos\":716},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     literally never stop working. I\u2019m usually exhausted after a day because
-    I will probably have hunted for familiars, fought monsters. \",\"parentUIDs\":[42],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":356,\"yPos\":808},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Air\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":356,\"yPos\":878},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Fire\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":108,\"yPos\":808},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Water\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":104,\"yPos\":878},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Earth\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":104,\"yPos\":944},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cosmic\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":357,\"yPos\":948},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dark\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":106,\"yPos\":1013},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Horror\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":354,\"yPos\":1011},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Light\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":353,\"yPos\":1098},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hexia
+    I will probably have hunted for familiars, fought monsters. \",\"parentUIDs\":[42],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":458,\"yPos\":713},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Air\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":458,\"yPos\":783},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Fire\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210,\"yPos\":713},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Water\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206,\"yPos\":783},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Earth\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206,\"yPos\":849},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cosmic\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":459,\"yPos\":853},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dark\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208,\"yPos\":918},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Horror\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":456,\"yPos\":916},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Light\",\"parentUIDs\":[47],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":455,\"yPos\":1003},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hexia
     for sure: the waterfront treehouses are the perfect place to relax and have friends
-    over.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":584,\"yPos\":1101},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Up
+    over.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":686,\"yPos\":1006},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Up
     north with the dragons: not a single day would be boring.\\r\\nI admire Baishi
-    order; their metropolis is the greatest modern architectural achievement so far.\\r\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":105,\"yPos\":1203},\"ID\":59,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mirrulak
-    will forever be my home. My library is too large to move anyway.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":354,\"yPos\":1206},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Have
+    order; their metropolis is the greatest modern architectural achievement so far.\\r\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":207,\"yPos\":1108},\"ID\":59,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mirrulak
+    will forever be my home. My library is too large to move anyway.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":456,\"yPos\":1111},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Have
     you ever heard of the Velmilli simulator? I heard that you can become a God,
-    which is basically my sole objective.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":586,\"yPos\":1203},\"ID\":61,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
-    entire Angels\u2019 colony is a work of art. Period.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":109,\"yPos\":1298},\"ID\":62,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Neo-Carcosa\u2019s
+    which is basically my sole objective.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":688,\"yPos\":1108},\"ID\":61,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    entire Angels\u2019 colony is a work of art. Period.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211,\"yPos\":1203},\"ID\":62,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Neo-Carcosa\u2019s
     mountain peaks are awe-inspiring and terrifying at once and I\u2019m there for
-    it.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":351,\"yPos\":1301},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    it.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":453,\"yPos\":1206},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     admire Baishi order; their metropolis is the greatest modern architectural achievement
-    so far.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":583,\"yPos\":1298},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Around
-    the Elementals\u2019 sprawling colony full of mysteries to discover.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":111,\"yPos\":1391},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
+    so far.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":685,\"yPos\":1203},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Around
+    the Elementals\u2019 sprawling colony full of mysteries to discover.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":213,\"yPos\":1296},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
     I could spend the rest of my days listening to the best music in the Daemon colony,
-    I would be glad.\",\"parentUIDs\":[56],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":86,\"yPos\":-757},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    I would be glad.\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":71}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":702,\"yPos\":1315},\"ID\":67,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Team?
+    No such thing; I ride alone.\",\"parentUIDs\":[66],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":71}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":705,\"yPos\":1384},\"ID\":68,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Complete
+    collaboration; we must all agree on a plan before acting.\",\"parentUIDs\":[66],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":71}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":702,\"yPos\":1452},\"ID\":69,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    have no expectations so they won\u2019t disappoint me.\",\"parentUIDs\":[66],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":71}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":703,\"yPos\":1519},\"ID\":70,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    hold them to the same expectations I have towards myself: to be their best at
+    all times.\",\"parentUIDs\":[66],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":76}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":215,\"yPos\":1393},\"ID\":72,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"They
+    are extensions of myself - the quality of their performance depends entirely
+    on me.\",\"parentUIDs\":[71],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":76}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":220,\"yPos\":1474},\"ID\":73,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"It
+    is a mixed relationship: I\u2019m a little creeped out by the fact that they\u2019re
+    actually dead creatures whose body we use to battle\u2026\",\"parentUIDs\":[71],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":76}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":220,\"yPos\":1556},\"ID\":74,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Best
+    friends, I try to treat them as well as I can. Their essence is sacred to me.
+    I also say a little prayer in their honor before going out to battle.\",\"parentUIDs\":[71],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":76}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":452,\"yPos\":1557},\"ID\":75,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"They
+    are simply mystical instruments meant to assist the Necromancer, but you always
+    get attached.\",\"parentUIDs\":[71],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":456,\"yPos\":1650},\"ID\":77,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    danger of becoming the thing you fight is always there: be careful.\",\"parentUIDs\":[76],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":455,\"yPos\":1729},\"ID\":78,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"An
+    abyss is not nearly as terrifying as monsters; all you have to do is look within.\",\"parentUIDs\":[76],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":700,\"yPos\":1650},\"ID\":79,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There
+    are no monsters, only nihilist soft bois.\",\"parentUIDs\":[76],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":699,\"yPos\":1732},\"ID\":80,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"When
+    facing challenges in our lives, we can allow them to affect our perception of
+    the world - we need to fight that.\",\"parentUIDs\":[76],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":188,\"yPos\":-852},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
     AS Necromancers, you must be ready at all times, for the world is full of crisis,
-    and one must be AWAKE.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":341,\"yPos\":-756},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*mumbles*
-    Oh no it\u2019s the dragon dream again.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":584,\"yPos\":-754},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*whispers*
-    DIO! NO! You are just asleep at your own graduation.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Auriga\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":587,\"yPos\":-643},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wait,
-    what?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":340,\"yPos\":-640},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"NECROMANCY
+    and one must be AWAKE.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":443,\"yPos\":-851},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*mumbles*
+    Oh no it\u2019s the dragon dream again.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":686,\"yPos\":-849},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*whispers*
+    DIO! NO! You are just asleep at your own graduation.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Auriga\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":689,\"yPos\":-738},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wait,
+    what?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":442,\"yPos\":-735},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"NECROMANCY
     WILL ALLOW TO SOAR TO NEW HEIGHTS, LIKE A WYVERN, RESPLENDENT AGAINST THE SETTING
     SUN, YOU MUST BE QUICK OF MIND, LIKE A WYVERN, AND GRACEFUL, ALSO LIKE A WYVERN.
     AS A MATTER OF FACT, JUST BE LIKE A WYVERN AT ALL TIMES. THINGS WILL WORK OUT.
-    TRUST ME.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":89,\"yPos\":-643},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"thankfully
-    we only need to hear this once.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"John\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":90,\"yPos\":-527},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Who
-    does she think she is comparing me to a beast of burden?\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Gabriel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":341,\"yPos\":-524},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wow
-    seriously guys? Did you not read her books growing up? She\u2019s so inspiring!\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Jheera\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":588,\"yPos\":-522},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Inspiring
-    for lunatics I suppose.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"John\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":587,\"yPos\":-403},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dude,
-    just shut up for once?\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Azglor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":337,\"yPos\":-402},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"YOU
+    TRUST ME.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191,\"yPos\":-738},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"thankfully
+    we only need to hear this once.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"John\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192,\"yPos\":-622},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Who
+    does she think she is comparing me to a beast of burden?\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Gabriel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":443,\"yPos\":-619},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wow
+    seriously guys? Did you not read her books growing up? She\u2019s so inspiring!\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Jheera\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":690,\"yPos\":-617},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Inspiring
+    for lunatics I suppose.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"John\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":689,\"yPos\":-498},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dude,
+    just shut up for once?\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Azglor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":439,\"yPos\":-497},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"YOU
     ARE A SELECTED, PRIVILEGED FEW, GIVEN AN OPPORTUNITY OF A LIFETIME TO HAVE TRAINED
     AT MISKATONIC. (maybe something about wishing she had that chance too) CHECK
     YOUR EGOS! BEING A NECROMANCER IS NOT A REPLACEMENT FOR A PERSONALITY. YOU MUST
     REALIZE THAT LIFE REQUIRES YOU TO BE THE BEST VERSION OF YOURSELF, AND FOR YOU
-    TO TREAT OTHERS AS IF YOU WISH TO BE TREATED.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":93,\"yPos\":-403},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"DO
+    TO TREAT OTHERS AS IF YOU WISH TO BE TREATED.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":195,\"yPos\":-498},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"DO
     NOT BE A SPOILED KID *GLANCES DIRECTLY AT JOHN*, AND LET YOUR EGO BELIEVE ALL
     OTHERS ARE NOW UNDER YOU. TRUST ME, IF EVERYONE MORE POWERFUL THAN YOU ACTED
-    ON THOSE PRINCIPLES, WELL, I\u2019D BE DEVOURING YOU RIGHT NOW.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92,\"yPos\":-286},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    LOVE YOU IRVINA!\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Jheera\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":340,\"yPos\":-283},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    LOVE YOU TOO STRANGER!\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":587,\"yPos\":-283},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"WHERE
+    ON THOSE PRINCIPLES, WELL, I\u2019D BE DEVOURING YOU RIGHT NOW.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194,\"yPos\":-381},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    LOVE YOU IRVINA!\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Jheera\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":442,\"yPos\":-378},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    LOVE YOU TOO STRANGER!\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":689,\"yPos\":-378},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"WHERE
     WAS I? OH YEAH, POWER. POWER CAN CONSUME YOU, BLIND YOU, PUT YOU ON A PATH OF
     DESTRUCTION. POWER WELL USED WILL REWARD YOU AND THOSE AROUND YOU, AND YOUR ACTIONS
-    WITH YOUR INDIVIDUAL POWER WILL SHAPE THE FUTURE.\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":586,\"yPos\":-160},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"MISUSE
+    WITH YOUR INDIVIDUAL POWER WILL SHAPE THE FUTURE.\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":688,\"yPos\":-255},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"MISUSE
     YOUR POWER, AND RISK BRINGING CHAOS TO OUR FINE BALANCE. HISTORY IS FILLED WITH
     VILE NECROMANCERS BLINDED BY THEIR SELFISH AMBITIONS, BUT EACH TIME THEY TRIED
     TO PLACE THEMSELVES OVER THE NATURAL ORDER OF THINGS, THE UNIVERSE RETURNED THE
-    FAVOR, AND WITH INTEREST.\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":338,\"yPos\":-160},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"REMAIN
+    FAVOR, AND WITH INTEREST.\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":440,\"yPos\":-255},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"REMAIN
     TRUE TO WHAT YOU KNOW IS RIGHT. BE HONEST, BE KIND, BE HELPFUL, JUST LIKE WYVERNS,
-    THEY ARE THE BEST, AND YOU COULD LEARN A LOT FROM THEM.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":91,\"yPos\":-163},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"LIKE
-    THAT ONE TIME, WHERE I HAD THIS FUNGAL RASH AT THE END OF MY TAI\u2026\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":93,\"yPos\":-38},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Thank
+    THEY ARE THE BEST, AND YOU COULD LEARN A LOT FROM THEM.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193,\"yPos\":-258},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"LIKE
+    THAT ONE TIME, WHERE I HAD THIS FUNGAL RASH AT THE END OF MY TAI\u2026\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":195,\"yPos\":-133},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Thank
     you so much Irvina Vyperienne! What a wonderful commencement speech, thank you
-    so much for your insightful words of experience to the next generation of Necromancers.\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"DEAN\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":341,\"yPos\":-36},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"SUMMON
-    WELL FOR ME CAUSE I WOULD IF YOUR BOOKS WERE BIG ENOUGH!!\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":587,\"yPos\":-30},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes,
-    I am sure they will!\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"DEAN\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":585,\"yPos\":92},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"AND
+    so much for your insightful words of experience to the next generation of Necromancers.\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"DEAN\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":443,\"yPos\":-131},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"SUMMON
+    WELL FOR ME CAUSE I WOULD IF YOUR BOOKS WERE BIG ENOUGH!!\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":689,\"yPos\":-125},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes,
+    I am sure they will!\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"DEAN\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":687,\"yPos\":-3},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"AND
     JUST BECAUSE YOUR WYVERNS ARE FAMILIARS, IT DOES NOT MEAN YOU CAN ABUSE THEM.
     A WYVERN IS SACRED EVEN IF IT IS MATERIALIZED FROM COSMIC MAGIC NECROMANCY. IF
-    YOU HURT YOURS I WILL PERSONALLY HUNT YOU DOWN AND FEED YOU TO MY FLOCK OF BABIES!\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":345,\"yPos\":94},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+    YOU HURT YOURS I WILL PERSONALLY HUNT YOU DOWN AND FEED YOU TO MY FLOCK OF BABIES!\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Irvina\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":447,\"yPos\":-1},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
     all heard the Irvina Vyperienne. *Ahem* To carry on with the ceremony: Much of
     what Irvina Vyperienne said is true. The ethos of the Necromancer is based on
     community, collaboration, and above all, trust. Now, onto your final questions.
-    This will help us determine what familiar will be best suited for you.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"DEAN\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":100,\"yPos\":90},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do
-    the ends justify the means?\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":343,\"yPos\":259},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    do you prefer to be known for possessing?\",\"parentUIDs\":[24,25,26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":581,\"yPos\":497},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
+    This will help us determine what familiar will be best suited for you.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"DEAN\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":202,\"yPos\":-5},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do
+    the ends justify the means?\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":445,\"yPos\":164},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    do you prefer to be known for possessing?\",\"parentUIDs\":[24,25,26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":683,\"yPos\":402},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
     closest comrade has been gravely injured in battle and you see the perpetrator
-    running away. What do you do?\",\"parentUIDs\":[28,29,30,31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":103,\"yPos\":404},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Describe
-    your personal approach to Necromancy.\",\"parentUIDs\":[33,34,35,36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":353,\"yPos\":678},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    does an accomplished day look like to you?\",\"parentUIDs\":[38,39,40,41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":587,\"yPos\":902},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Pick
-    an element\",\"parentUIDs\":[43,44,45,46],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":59},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":110,\"yPos\":1096},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
-    you could live somewhere on Abbysthria, where would it be?\",\"parentUIDs\":[50,51,52,54,48,49,53,55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    running away. What do you do?\",\"parentUIDs\":[28,29,30,31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":205,\"yPos\":309},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Describe
+    your personal approach to Necromancy.\",\"parentUIDs\":[33,34,35,36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":455,\"yPos\":583},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    does an accomplished day look like to you?\",\"parentUIDs\":[38,39,40,41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":689,\"yPos\":807},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Pick
+    an element\",\"parentUIDs\":[43,44,45,46],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":59},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212,\"yPos\":1001},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
+    you could live somewhere on Abbysthria, where would it be?\",\"parentUIDs\":[48,49,50,51,52,53,54,55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":68},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":69},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":70}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":453,\"yPos\":1311},\"ID\":66,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    kind of expectations do you have of your team when on a mission?\",\"parentUIDs\":[57,58,59,60,61,62,63,64,65],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":72},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":73},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":74},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":75}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":457,\"yPos\":1427},\"ID\":71,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
+    would you describe your relationship with your familiars?\",\"parentUIDs\":[67,68,69,70],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":77},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":78},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":79},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":80}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":216,\"yPos\":1678},\"ID\":76,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"React
+    to the following sentence: \u201CBeware that, when fighting monsters, you yourself
+    do not become a monster... for when you gaze long into the abyss. The abyss gazes
+    also into you.\u201D\",\"parentUIDs\":[72,73,74,75],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
-  DefaultName: 
+  DefaultName: Questionnaire
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
   NodeSerializedDataList:
@@ -5265,6 +5588,21 @@ MonoBehaviour:
   - {fileID: 775820548}
   - {fileID: 775820547}
   - {fileID: 775820546}
+  - {fileID: 775820626}
+  - {fileID: 775820625}
+  - {fileID: 775820624}
+  - {fileID: 775820623}
+  - {fileID: 775820622}
+  - {fileID: 775820621}
+  - {fileID: 775820620}
+  - {fileID: 775820619}
+  - {fileID: 775820618}
+  - {fileID: 775820617}
+  - {fileID: 775820616}
+  - {fileID: 775820615}
+  - {fileID: 775820614}
+  - {fileID: 775820613}
+  - {fileID: 775820612}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -5480,24 +5818,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 26
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":492,"yPos":258},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":730,"yPos":256},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Say
-    Nothing","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":619,"yPos":357},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"But,
-    What if I don''t get accepted?","parentUIDs":[14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":847,"yPos":356},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
-    you!","parentUIDs":[14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":383,"yPos":453},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
-    that could be great.","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":858,"yPos":450},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    guess it won''t be the end of the world...","parentUIDs":[17],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":632,"yPos":625},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Uhhh,
-    noted (?)","parentUIDs":[25],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":629,"yPos":543},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Please
-    Stop...","parentUIDs":[25],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":391,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.5,"Volume":0.072},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":145,"yPos":127},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"...Don''t
-    worry Dio, you''ve got this!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":386,"yPos":128},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah!
-    You are going to kick-ASS!!!!","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.5,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":631,"yPos":131},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"ARI!
-    Watch your language! Where did you\r\neven learn how to speak like that?\r","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mother","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":145,"yPos":233},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"...
-    Sorry","parentUIDs":[10,11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":148,"yPos":340},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"We
-    are so proud of you.\nwe have seen you  practice, \nyou are a natural Necromancer!","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Father","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":400,"yPos":341},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah!
-    You are going to be the top of class!\r","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":621,"yPos":438},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":379,"yPos":258},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":617,"yPos":256},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Say
+    Nothing","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":506,"yPos":357},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"But,
+    What if I don''t get accepted?","parentUIDs":[14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":734,"yPos":356},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
+    you!","parentUIDs":[14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":270,"yPos":453},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
+    that could be great.","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":745,"yPos":450},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    guess it won''t be the end of the world...","parentUIDs":[17],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":519,"yPos":625},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Uhhh,
+    noted (?)","parentUIDs":[25],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":516,"yPos":543},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Please
+    Stop...","parentUIDs":[25],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":278,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.5,"Volume":0.072},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":32,"yPos":127},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"...Don''t
+    worry Dio, you''ve got this!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":273,"yPos":128},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah!
+    You are going to kick-ASS!!!!","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.5,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":518,"yPos":131},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"ARI!
+    Watch your language! Where did you\r\neven learn how to speak like that?\r","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mother","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":32,"yPos":233},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"...
+    Sorry","parentUIDs":[10,11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":35,"yPos":340},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"We
+    are so proud of you.\nwe have seen you  practice, \nyou are a natural Necromancer!","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Father","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":287,"yPos":341},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah!
+    You are going to be the top of class!\r","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":508,"yPos":438},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
     worst case scenario, you try again next! You are young, there is time. You can
-    always take a year off to travel time to travel on your own, visit Caldera perhaps?","parentUIDs":[15,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mother","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":151,"yPos":445},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Caldera
+    always take a year off to travel time to travel on your own, visit Caldera perhaps?","parentUIDs":[15,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mother","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":38,"yPos":445},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Caldera
     is amazing! The elfish ladies are quite the beautys. And Turtleboom is a must
-    have experience, especially when you are young...","parentUIDs":[19,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Father","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":148,"yPos":549},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"HOWARD!","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mother","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":380,"yPos":550},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"What?
+    have experience, especially when you are young...","parentUIDs":[19,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Father","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":35,"yPos":549},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"HOWARD!","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mother","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":267,"yPos":550},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"What?
     We met there","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Father","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Conv_Intro
