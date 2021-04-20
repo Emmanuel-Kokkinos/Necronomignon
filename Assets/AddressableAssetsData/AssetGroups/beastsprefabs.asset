@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: beastsprefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: beastsprefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 912149de19d6c4e42bade1848f4e0984
+  m_SerializeEntries:
+  - m_GUID: 18a1014392610214598ba7d41d2ce785
+    m_Address: Assets/Resources/Prefabs/Beasts/Conglomerate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 543447ffde342454baea6fd67311b463, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 26d19cf8360db714292d02b3c720d082, type: 2}
+    - {fileID: 11400000, guid: 27c57b031207cdc4bac7a6b340440857, type: 2}
