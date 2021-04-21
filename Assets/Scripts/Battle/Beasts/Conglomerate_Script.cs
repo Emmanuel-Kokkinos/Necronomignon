@@ -8,13 +8,12 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
 
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    AudioSource audioSrc;
 
     void Start()
     {
         frontAttackSound = backAttackSound;
 
-        audioSrc = GetComponent<AudioSource>();
+        
 
         base.start();
     }
