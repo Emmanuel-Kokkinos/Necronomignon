@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
  
@@ -8,6 +9,7 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
     AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
     AudioSource audioSrc;
     Attack attack;
+    GameObject emptyObj;
 
     void Start()
     {
@@ -23,9 +25,58 @@ public class Mandoro_Script : MonoBehaviour, Parent_Beast
         audioSrc = GetComponent<AudioSource>();
     }
 
+    public void PlayBackMove()
+    {
+        GameObject player = this.gameObject;
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+        emptyObj = new GameObject("Empty");
+
+        float playerX = player.transform.position.x;
+        float playerY = player.transform.position.y;
+        float targetX = target.transform.position.x ;
+        float targetY = target.transform.position.y;
+        targetY += targetY > playerY? - 10 : 10;
+
+        float deltaX = playerX - targetX;
+        float deltaY = playerY - targetY;
+
+        float delta = deltaY / deltaX;
+        double tan = Mathf.Atan(delta);
+
+        double angle = tan * (180 / Math.PI);
+        //double angle = Math.Tan(delta);
+
+        Debug.Log("playerX + playerY: " + playerX + " " + playerY);
+        Debug.Log("targetX + targetY : " + targetX + " " + targetY);
+        Debug.Log("deltaX + deltaY : " + deltaX + " " + deltaY);
+        Debug.Log("delta : " + delta);
+        Debug.Log("Angle : " + angle);
+
+        Component[] allComp = emptyObj.GetComponents<Component>();
+        if (allComp.Length == 1){
+            Debug.Log("fuck");
+            emptyObj = new GameObject("Empty");
+            emptyObj.transform.SetParent(player.transform);
+            emptyObj.transform.localPosition = new Vector3(-12 , 12);
+            emptyObj.transform.localScale = new Vector2(0.2f, 0.2f);
+        }
+        
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(emptyObj.transform);
+        
+
+        movePrefab.transform.localPosition = new Vector2(550, 0);
+        emptyObj.transform.rotation = Quaternion.Euler(0, 0, (float)angle);
+        movePrefab.transform.localScale = new Vector2(playerX > targetX ? -11f : 11f, 0.4f);
+        movePrefab.transform.SetAsFirstSibling();
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Mandoro/Mandoro_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Back");
+    }
+
     public void back_special()
     {
-        int ran = Random.Range(1, 5);
+        int ran = UnityEngine.Random.Range(1, 5);
         print("The number of attacks is " + (ran + 1));
         foreach (Beast b in battleManager.targets)
         {
