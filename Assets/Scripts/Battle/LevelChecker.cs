@@ -28,6 +28,7 @@ public class LevelChecker : MonoBehaviour
     //unlocks the following level
     public void Progess(string levelName)
     {
+
         if (lastClick == "first" && levels <= 0)
         {
             levels++;
@@ -82,6 +83,11 @@ public class LevelChecker : MonoBehaviour
             levels++;
             unlock("Cthulhu");
         }
+    }
+
+    public void TourProgress(string levelname)
+    {
+
     }
 
     public static void unlock(String name)

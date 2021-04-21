@@ -121,6 +121,49 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &73783519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 73783521}
+  - component: {fileID: 73783520}
+  m_Layer: 0
+  m_Name: TournamentManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &73783520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73783519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2803f1feb137024999d0b5d91a6d029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &73783521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73783519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 658.51807, y: 279.10733, z: 99.87726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &284803886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -246,7 +289,7 @@ PrefabInstance:
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: second
+      value: Tournament
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}
@@ -466,12 +509,6 @@ GameObject:
   - component: {fileID: 336260506}
   - component: {fileID: 336260505}
   - component: {fileID: 336260500}
-  - component: {fileID: 336260502}
-  - component: {fileID: 336260503}
-  - component: {fileID: 336260501}
-  - component: {fileID: 336260499}
-  - component: {fileID: 336260507}
-  - component: {fileID: 336260504}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -479,22 +516,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &336260499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336260498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1afe8a7afdb297a41997db6dcc2ae029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mission: 
-  beastManager: {fileID: 0}
-  enemies: []
-  totalEnemies: 11
 --- !u!114 &336260500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,55 +533,6 @@ MonoBehaviour:
   - {fileID: 804858661}
   conversationNames:
   - {fileID: 0}
---- !u!114 &336260501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336260498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f733728d69a02045935c68049080daf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &336260502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336260498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2803f1feb137024999d0b5d91a6d029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &336260503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336260498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e362e85839800dc4fa45edc01d0fb65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelChecker: {fileID: 0}
---- !u!114 &336260504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336260498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c5a5d2c2081cb448a093516dc0c519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &336260505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,19 +559,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &336260507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336260498}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a77224d440cddc4cae14c4bbf35c6b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelChecker: {fileID: 0}
 --- !u!1 &548997722
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +750,7 @@ PrefabInstance:
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: seventh
+      value: Tournament
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}
@@ -1385,6 +1344,49 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 804858660}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &829203832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829203834}
+  - component: {fileID: 829203833}
+  m_Layer: 0
+  m_Name: LevelData
+  m_TagString: Level
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &829203833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829203832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c5a5d2c2081cb448a093516dc0c519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &829203834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829203832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 432.47885, y: 271.48618, z: -1.7747192}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &858114703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,7 +1642,7 @@ PrefabInstance:
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: fourth
+      value: Tournament
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}
@@ -1775,7 +1777,7 @@ PrefabInstance:
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: third
+      value: Tournament
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}
@@ -2034,7 +2036,7 @@ PrefabInstance:
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: final
+      value: Tournament
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}
@@ -2044,6 +2046,50 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1483814416}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1485242518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1485242520}
+  - component: {fileID: 1485242519}
+  m_Layer: 0
+  m_Name: LevelChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1485242519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485242518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a77224d440cddc4cae14c4bbf35c6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelChecker: {fileID: 829203833}
+--- !u!4 &1485242520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485242518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 436.00626, y: 296.1369, z: -1.2058105}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1497709570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,7 +2801,7 @@ PrefabInstance:
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: sixth
+      value: Tournament
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}
@@ -2890,7 +2936,7 @@ PrefabInstance:
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: fifth
+      value: Tournament
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}
@@ -3165,9 +3211,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 336260507}
+      objectReference: {fileID: 1485242519}
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -3186,7 +3237,47 @@ PrefabInstance:
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
-      value: TourBattle
+      value: Manoli
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1485242519}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: setCurrentLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: John
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 73783520}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetBattleInterface
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: Tournament
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba92c566358daf4a82aac348a227db1, type: 3}

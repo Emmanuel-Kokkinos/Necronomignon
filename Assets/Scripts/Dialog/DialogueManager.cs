@@ -234,7 +234,7 @@ namespace DialogueEditor
             //Gets all the addressable character sprites
             AsyncOperationHandle<IList<Sprite>> characterSprites = Addressables.LoadAssetsAsync<Sprite>("Character", spr => { Debug.Log(spr.name); });
 
-            yield return characterSprites;
+            yield return new WaitUntil(() => characterSprites.IsDone);
 
             //Sets character assets list to set the sprites in scene
             characterAssets = (List<Sprite>)characterSprites.Result;
