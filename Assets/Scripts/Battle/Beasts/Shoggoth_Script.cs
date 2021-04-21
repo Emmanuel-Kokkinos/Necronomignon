@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DragonBones;
 
 public class Shoggoth_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
+    [SerializeField] Texture tex;
     AudioSource audioSrc;
 
     void Start()
@@ -12,6 +14,14 @@ public class Shoggoth_Script : Parent_Script, Parent_Beast
         audioSrc = GetComponent<AudioSource>();
 
         base.start();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            //change texture color
+        }
     }
 
     public void back_special()

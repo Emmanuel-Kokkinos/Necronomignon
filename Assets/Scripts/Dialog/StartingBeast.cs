@@ -10,7 +10,7 @@ public class StartingBeast : MonoBehaviour
     private void Start()
     {
         total = 0;
-        chosenBeast = "Conglomerate";
+        chosenBeast = "Azdaha";
     }
 
     public void UpdateTotals(int value)
@@ -18,21 +18,19 @@ public class StartingBeast : MonoBehaviour
         total += value;
         print(total);
 
-        if(total <= 18)
+        if(total <= -3)
         {
-            chosenBeast = "Conglomerate";
+            chosenBeast = "MotherPenance";
         }
-        if (total <= 25)
+        else if (total >= 3)
         {
-            chosenBeast = "Kitsune";
+            chosenBeast = "Azdaha";
         }
-        if (total <= 32)
+        else
         {
-            chosenBeast = "Wyvern";
+            chosenBeast = "Terraos";
         }
-        if (total <= 40)
-        {
-            chosenBeast = "Dryad";
-        }
+
+        print(chosenBeast);
     }
 }
