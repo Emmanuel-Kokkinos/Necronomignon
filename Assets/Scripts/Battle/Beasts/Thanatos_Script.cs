@@ -4,15 +4,7 @@ using UnityEngine;
  
 public class Thanatos_Script : Parent_Script, Parent_Beast
 {
-    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    AudioSource audioSrc;
-
-    void Start()
-    {
-        base.start();
-
-        audioSrc = GetComponent<AudioSource>();
-    }
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound; 
 
     public void back_special()
     {

@@ -8,7 +8,6 @@ public class Dryad_Script : Parent_Script, Parent_Beast
     HealthManager healthManager;
 
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    AudioSource audioSrc;
 
     void Start()
     {
@@ -18,8 +17,6 @@ public class Dryad_Script : Parent_Script, Parent_Beast
         {
             healthManager = g.GetComponent<HealthManager>();
         }
-
-        audioSrc = GetComponent<AudioSource>();
         
         base.start();
     }

@@ -11,7 +11,6 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
 
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    AudioSource audioSrc;
 
     void Start()
     {
@@ -22,8 +21,6 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
             loadMission = g.GetComponent<LoadMission>();
             healthManager = g.GetComponent<HealthManager>();
         }
-
-        audioSrc = GetComponent<AudioSource>();
         
         base.start();
     }

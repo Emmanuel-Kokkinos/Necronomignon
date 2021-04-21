@@ -7,15 +7,6 @@ public class Shoggoth_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     [SerializeField] Texture tex;
-    AudioSource audioSrc;
-
-    void Start()
-    {
-        audioSrc = GetComponent<AudioSource>();
-
-        base.start();
-    }
-
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Q))
