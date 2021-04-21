@@ -83,12 +83,10 @@ public class LevelChecker : MonoBehaviour
             levels++;
             unlock("Cthulhu");
         }
-    }
-
-    public void TourProgress(string levelname)
-    {
+        //These will define the tournament levels
 
     }
+
 
     public static void unlock(String name)
     {
