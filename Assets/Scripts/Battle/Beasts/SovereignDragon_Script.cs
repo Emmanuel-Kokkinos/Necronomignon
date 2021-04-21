@@ -7,16 +7,7 @@ public class SovereignDragon_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] GameObject frontPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    AudioSource audioSrc;
 
-    void Start()
-    {
-        base.start();
-
-        GameObject au = GameObject.Find("Music");
-
-        audioSrc = GetComponent<AudioSource>();
-    }
 
     private void Update()
     {

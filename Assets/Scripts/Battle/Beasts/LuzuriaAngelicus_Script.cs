@@ -8,14 +8,6 @@ public class LuzuriaAngelicus_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    AudioSource audioSrc;
-
-    void Start()
-    {
-        audioSrc = GetComponent<AudioSource>();
-        
-        base.start();
-    }
 
     public void back_special()
     {
