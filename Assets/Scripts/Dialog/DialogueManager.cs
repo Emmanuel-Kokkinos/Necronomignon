@@ -30,8 +30,6 @@ namespace DialogueEditor
         // Start is called before the first frame update
         void Start()
         {
-            print(characterAssets.Count);
-
             background = GameObject.Find("Canvas");
 
             //Sets all conversations to list
@@ -41,7 +39,8 @@ namespace DialogueEditor
             timesUsedCounter = conversationNames.Count - 1;
 
             //Sets the default conversation
-            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            SetNPCConversation(FindByName("Questionnaire"));
 
             //Gets the data associated with conversation for further edit
             GetConversationData(currentConversation);
@@ -117,15 +116,6 @@ namespace DialogueEditor
                         characters[x].gameObject.SetActive(false);
                     }
 
-                    //OBSOLETE CALL OF RESOURCES
-                    /*characters[0].sprite = Resources.Load<Sprite>("Profile_Pictures/Dad"); //dad
-                    characters[1].sprite = Resources.Load<Sprite>("Profile_Pictures/Catherine"); //sister
-                    characters[1].transform.localScale = new Vector3(.8f, .8f);
-                    characters[2].sprite = Resources.Load<Sprite>("Profile_Pictures/Ari"); //brother
-                    characters[2].transform.localScale = new Vector3(.8f, .8f);
-                    characters[3].sprite = Resources.Load<Sprite>("Profile_Pictures/Mom"); //mom
-                    characters[8].sprite = Resources.Load<Sprite>("Profile_Pictures/Tadria"); //instructor*/
-
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Dad")); //dad
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Catherine")); //sister
                     characters[1].transform.localScale = new Vector3(.8f, .8f);
@@ -139,8 +129,6 @@ namespace DialogueEditor
                     break;
                 case "Conv_Academy":
 
-                    // Can remove all of this code as nothing changes from the previous conversation
-                    // But I kept it at least for now in case we want there to be a difference
                    for (int x = 4; x <= 7; x++)
                     {
                         characters[x].gameObject.SetActive(false);
@@ -159,6 +147,18 @@ namespace DialogueEditor
                     GameObject tourChar = GameObject.Find("Character");
                     tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
+
+                case "Questionnaire":
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
+                    characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                    characters[2].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
+                    characters[3].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
+                    characters[4].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
+                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
+                    characters[6].gameObject.SetActive(false);
+                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //DEAN
+                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Irvina
+                    break;
                 default:
 
                     break;
@@ -174,7 +174,6 @@ namespace DialogueEditor
             switch (convname)
             {
                 case "Conv_Academy":
-                    //SceneManager.LoadScene("Tutorial1");
                     SetNPCConversation(FindByName("Conv_Opening"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
