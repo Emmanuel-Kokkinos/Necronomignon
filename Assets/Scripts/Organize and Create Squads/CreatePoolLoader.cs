@@ -50,6 +50,29 @@ public class CreatePoolLoader : MonoBehaviour
     // Fill up the image slots with your summoned beasts
     void SetImages()
     {
+        foreach(Image slot in slots)
+        {
+            slot.enabled = true;
+        }
+
+        // Making sure the pool slots are enabled or disabled properly when a page switch happens
+        foreach (Transform child in GameObject.Find("SlotBeasts").transform)
+        {
+            for(int x = counter * 9; x < 9 + (counter * 9); x++)
+            {
+                try
+                {
+                    if (child.name.Equals(summoned[x].name))
+                    {
+                        slots[x % 9].enabled = false;
+                    }
+                }
+                catch
+                {
+                }
+            }
+        }
+
         // Destroy old prefabs
         foreach (Transform child in GameObject.Find("PoolBeasts").transform)
         {
@@ -63,15 +86,13 @@ public class CreatePoolLoader : MonoBehaviour
 
             if (summoned.Count >= x + 1 && NotSummoned(x))
             {
-                GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + summonedNames[x]));
+                //GameObject beastPrefab = (GameObject) Instantiate(LoadAssetBundles.getObj(summoned[x].name));
+                GameObject beastPrefab = (GameObject) Instantiate(Resources.Load("Prefabs/Beasts/" + summoned[x].name));
                 beastPrefab.transform.SetParent(GameObject.Find("Pool" + (x % 9 + 1)).transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -75);
+                beastPrefab.transform.localPosition = new Vector3(0, -85);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(5f, 5f);
+                beastPrefab.transform.localScale = new Vector3(30f, 30f);
                 beastPrefab.transform.SetParent(GameObject.Find("PoolBeasts").transform);
-
-                Animator animator = beastPrefab.GetComponent<Animator>();
-                animator.enabled = false;
             }
         }
 

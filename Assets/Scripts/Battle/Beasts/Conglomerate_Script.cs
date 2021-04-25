@@ -2,29 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Conglomerate_Script : MonoBehaviour, Parent_Beast
+public class Conglomerate_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+    
 
     [SerializeField] GameObject backPrefab;
-    [SerializeField] AudioClip frontAttackSound, backAttackSound, startSound, deathSound;
-    AudioSource audioSrc;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
     void Start()
     {
-        GameObject g = GameObject.Find("GameManager");
-        GameObject au = GameObject.Find("Music");
+        frontAttackSound = backAttackSound;
 
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-            
+        
 
-        if (au != null)
-            audioSrc = au.GetComponent<AudioSource>();
+        base.start();
     }
 
     public void PlayFrontMove()
@@ -43,9 +34,6 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
 
     public void back_special()
     {
-        //Audio Effect example
-        audioSrc.PlayOneShot(backAttackSound);
-
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
@@ -84,8 +72,16 @@ public class Conglomerate_Script : MonoBehaviour, Parent_Beast
         movePrefab.transform.localScale = new Vector3(10, 10);
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
-        throw new System.NotImplementedException();
+        
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
+        
     }
 }

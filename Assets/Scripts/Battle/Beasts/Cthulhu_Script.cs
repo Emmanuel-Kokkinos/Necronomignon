@@ -2,22 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cthulhu_Script : MonoBehaviour, Parent_Beast
+public class Cthulhu_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
+    
     [SerializeField] GameObject backPrefab;
 
-    void Start()
-    {
-        GameObject g = GameObject.Find("GameManager");
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
-        if (g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-    }
 
     public void back_special()
     {
@@ -36,6 +27,8 @@ public class Cthulhu_Script : MonoBehaviour, Parent_Beast
 
     public void front_special()
     {
+        audioSrc.PlayOneShot(frontAttackSound);
+
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -59,8 +52,14 @@ public class Cthulhu_Script : MonoBehaviour, Parent_Beast
         movePrefab.transform.localScale = new Vector3(10, 10);
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
-        throw new System.NotImplementedException();
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
     }
 }

@@ -1,0 +1,338 @@
+{
+  "Stories": [
+    {
+      "beast_name": "Cthulhu",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Kitsune",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Dryad",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Wyvern",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "DreamSlime",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Luzuria",
+      "title": "I. The Horror in Clay.",
+      "pages": [
+        "We followed the smoke from the skies, only to find that we were too late, the once idyllic Bordekai Valley was but ash, another region destroyed by the ruthless Luzuria Angelicus. We landed in the ruins, no survivors to be seen. ' The embers are still fresh, she can't be far.'  Purson said, as he stared upon the smoldering remains, I had never seen his spirits broken such as this. 'How many have been lost to our failures?' he added as a guilty afterthought. My reply was cut short by a terrible roar emanating from the far distance, echoing across the valley of ruin. We conjured our wyverns and took to the skies, rushing as fast as we could, in hopes of avoiding more carnage.",
+        "As we crossed the lake, its reflections were tainted by the clouds of rising ash. We could now hear screams coming from below; at least it meant there were still survivors. As our wyverns descended with great speed, we could now see our target: Luzuria Angelicus, wrath incarnate, stood tall against the flames, her silhouette an omen of annihilation. The survivors fled towards us, but she did not move, the ground shook, something was approaching us. 'Astaroth my pupil, no matter what happens, defend the villagers, and if I fall, retreat and tell the others. Luzuria must be stopped at all costs.' From behind the roaring inferno, a giant shadow emerged, an enormous Dragon of white pearlescent scales, whose soft hues betray the ferocity of the being: it was Azdaha The Rogue, The Scourge of Angels. She breathed her white flames, scorching the grass between us, and enveloping her daughter in the dancing light of bright fire.",
+        "Small for a dragon, yet colossal for anything else, her wings were fair and feathered, her scales an ivory white that gleamed amidst the blazes, and in her face, one could read only malevolence. She was the first dragon to walk on two legs, the first to have hands, the first Necromancer of Dragonkind. At her feet, impaled deep into the ground, was the greatsword Judgment, the fabled Dwarmaskus Steel blade of the late Sunthor Earthbound, one of the many fallen in the attempts to end her rampage. In a swift, sudden movement, she ripped Judgment from the ground with one hand, a feat of strength meant to demoralize us, for even famed Sunthor used both of his. I was afraid, and I glanced at Purson for reassurance, but even he seemed troubled by the sight. She grinned, and her voice thundered:\t' AHHHHH, PURSON, I DIDN'T EXPECT TO MEET YOU SO SOON. HAS THE DESPERATION TAKEN HOLD OF?' ' Luzuria Angelicus, you have transgressed every imaginable rule that binds the worlds together. Your reign of terror ends here, I recommend you surrender right now.' Purson said, as he drew his blade.",
+        "\"NOTED...\" In a blink of an eye, her familiars materialized before her, their hollow eyes ablaze with the same evil that burned in hers, and Azdaha took to the air. \"...BUT THEN HOW WILL I ADD YOU TO MY COLLECTION?\" With demonic speed, and angelic grace, she pushed herself off the ground and soared, blade aimed true, right towards Purson. Before he evaded her, his own familiars appeared, already charging towards our foes. Amidst the cacophony of slaughter, the clash of their swords rang louder. Her attacks were relentless, yet Purson stood his ground. Around them, familiars savagely slayed each other , but for each one slain, in an instant, another would be spawned, a true display of mastery.Wyvern, Kitsune, Zeograth and Dryad I summoned to aid the fight, but amidst the clash of steel, one glance from Luzuria was all it took before three more creatures materialized: Manticore, Gargoyle and Meltera, ready to intercept my own. Her Manticore lept into my Dryad, ripping it in half immediately with its cavernous maw, but my wyvern swooped in, grabbing it with its claws, ascending back into the sky, and dropping it into the snapping mouth of my Zeograth; it disintegrated into nothingness.",
+        "Before the Zeograth's mouth was fully closed,her Gargoyle came rushing down from above, its blades extended and aimed for the eyes. I sent my Kitsune up the Zeograth's tail, and it leapt off its head, breathing its fire in midair, incinerating the Gargoyle, who dissipated before even reaching the ground. The same can be said for my Kitsune, because the flames of her Meltera made quick work of my favorite familiar.The Zeograth was also caught in the flames, but continued towards the snake, distracting both heads of the Meltera who blasted it with their twin flames. From behind, my Wyvern fell upon the vicious snake, and using its razor-edged tail, sliced the beast into two. I had survived the onslaught, I took a moment to breathe, and rushed with my familiars to where Purson and Luzuria fought.Words mostly fail me; epic doesn't suffice: they both moved inhumanely fast, the impact of their blades thundered across the valley. The ground shook as their familiars dropped beside them like flies, their screams and roars accented by the sound of thunder and diluvial rains.",
+        "In the skies, the flames of Azdaha and Drakmar lit the sky with blues and whites, their claws and teeth ripping chunks from their bodies. The Drakmar bit into Azdaha's neck, then drove her into the ground, with an impact that sent a shockwave unlike any I had ever felt. Azdaha raised her neck from the crater, just as Purson's C'Thulhu leaped from the settling dust, and used its crystalline axe to sever her head. Her body dematerialized as would any other familiar. Had she summoned her own Mother? I Luzuria's wrath was unhinged, and Purson parried every blow, but was unable to strike back. He was on the defensive, and quickly losing ground. I sent my Wyvern and Zeograth before me to flank her, I had to try something.",
+        "Purson's Cthulhu was about to swing its axe at Luzuria, but she whipped her tail into Purson's chest, knocking him to the ground, and, free for an instant, she raised her fist to the sky, and brought down a pillar of blinding light upon C'thulhu; nothing but a scorch remained. My Wyvern descended upon her with its tail, but she evaded it with expert precision, cleaving it in half, just in time to to incinerate my Zeograth with her unholy light, and still manage to parry Purson's incoming strike.  I tried summoning more familiars, but I had no more strength left in me. I rushed towards her with my dagger in hand, in retrospect, I do not why, for there was nothing I could hope to accomplish. There were no more familiars on the field, how many they summoned I lost count long ago. From the skies, her pillars of light came raining down, for each one he dodged, the distance between them lessened. All it took was one brief moment of vulnerability, and Luzuria's sword impaled through Purson's chest.",
+        "She shrieked with pleasure as his blue blood pooled at his feet. All was (seemed?) doomed. He knew it too, as he looked at me. I had never felt so useless in my life. His eyes sharpened, and his gaze went to my dagger. Of course. I threw my dagger true, right towards Purson, who grabbed it in mid air, and in one quick motion, devoid of hesitation, threw it through her right, purple eye. Her body slumped forward, even in death still grasping Judgment, and as she fell, it cut even deeper into Purson. Around me, no sound could be heard but the rain mixing with the blood of the fallen and the ashes of what once was. Beside him I knelt, holding his hand as life seeped away. He was too weak to speak, and yet he tried. ",
+        "\"I know, don't you worry, I know.\" I said as tears poured down my face. I gave him a final kiss, his lips already cold. His eyes gazed into mine, there was no fear, only longing, grief for what could have been. And then it was gone. The reign of Terror of Luzuria Angelicus has ended. Her sample was gathered as was instructed; she will make a powerful addition to the Necronomignon. However, I wonder, by harnessing her powers, are we condoning her actions?",
+        "\"Beware that, when fighting monsters, you yourself do not become a monster... for when you gaze long into the abyss. The abyss gazes also into you.\""
+
+      ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "ClockworkQueen",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Conglomerate",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Zeograth",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Thanatos",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "SovereignDragon",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Terraos",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "FatherTime",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    },
+    {
+      "beast_name": "Nage",
+      "title": "I. The Horror in Clay.",
+      "pages": [ "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.", "Cthulhu still lives, too, I suppose, again in that chasm of stone which has shielded him since the sun was young. His accursed city is sunken once more, for the Vigilant sailed over the spot after the April storm; but his ministers on earth still bellow and prance and slay around idol-capped monoliths in lonely places. He must have been trapped by the sinking whilst within his black abyss, or else the world would by now be screaming with fright and frenzy. Who knows the end? What has risen may sink, and what has sunk may rise. Loathsomeness waits and dreams in the deep, and decay spreads over the tottering cities of men. A time will come—but I must not and cannot think! Let me pray that, if I do not survive this manuscript, my executors may put caution before audacity and see that it meets no other eye." ],
+      "questions": [
+        {
+          "question": "What Colour is Cthulhu",
+          "options": [ "Black", "Blue", "Magenta", "Seafoam" ]
+        },
+        {
+          "question": "Who wrote the original Cthulhu story",
+          "options": [ "HP Lovecraft", "JJ Abrams", "George RR Martin", "Darren Shan" ]
+        },
+        {
+          "question": "Who does the sweat of your brow belong to",
+          "options": [ "You", "The Poor", "Everyone", "God" ]
+        },
+        {
+          "question": "choose A",
+          "options": [ "a", "b", "c", "d" ]
+        }
+      ]
+    }
+  ]
+}

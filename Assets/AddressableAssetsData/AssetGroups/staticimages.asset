@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: staticimages
+  m_EditorClassIdentifier: 
+  m_GroupName: staticimages
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 632d9133af6b1f146a778dc40d0e9c4b
+  m_SerializeEntries:
+  - m_GUID: 06134e5df34331d4fa32bf7c8dd2e785
+    m_Address: Assets/Resources/Static_Images/Thanatos_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 252ecc2fda78df34cb71fddb66d6f197
+    m_Address: Assets/Resources/Static_Images/Kitsune_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3a0efd6df84b60e4384ff545fa284625
+    m_Address: Assets/Resources/Static_Images/Cthulhu_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4f2b2194e34a7b9469fb76156f71ea28
+    m_Address: Assets/Resources/Static_Images/Nage_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 50252fb6d3b87d241b2064611a5b8fd5
+    m_Address: Assets/Resources/Static_Images/DreamSlime_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 513bef21b10abe140bb549ef3652b137
+    m_Address: Assets/Resources/Static_Images/Conglomerate_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 567b9cf9ce3937440b218a8997742bd7
+    m_Address: Assets/Resources/Static_Images/Zeograth_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 958558b5427646b44b411ea4299341b4
+    m_Address: Assets/Resources/Static_Images/Wyvern_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a12a58593122f9e4a97dc56e33fb54c0
+    m_Address: Assets/Resources/Static_Images/SovereignDragon_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d7ceec69162b5264b8b3e8c40e71b9b2
+    m_Address: Assets/Resources/Static_Images/LuzuriaAngelicus_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e90e16f0171c8b842b4f1d0f7211ca1d
+    m_Address: Assets/Resources/Static_Images/Dryad_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f35c37285bc44274c961bae8200a4237
+    m_Address: Assets/Resources/Static_Images/Mandoro_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 543447ffde342454baea6fd67311b463, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8c5a2ce45ab46504d9823ed49cb991c0, type: 2}
+    - {fileID: 11400000, guid: af2b15285c3c7d94bae73e91e86cbfe0, type: 2}

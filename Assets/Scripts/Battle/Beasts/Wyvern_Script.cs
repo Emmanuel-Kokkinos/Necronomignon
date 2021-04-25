@@ -3,53 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wyvern_Script : MonoBehaviour, Parent_Beast
+public class Wyvern_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
     [SerializeField] GameObject backPrefab;
-
-    void Start()
-    {
-        GameObject g = GameObject.Find("GameManager");
-
-        if(g != null)
-        {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
-        }
-    }
-
-    public void PlayBackMove()
-    {
-        GameObject target = battleManager.getSlot(battleManager.targets[0]);
-
-        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
-        movePrefab.transform.SetParent(target.transform);
-        movePrefab.transform.localPosition = new Vector3(0, 100);
-        movePrefab.transform.localRotation = Quaternion.identity;
-        movePrefab.transform.localScale = new Vector3(2f, 2f);
-
-        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Wyvern/Wyvern_Move_Controller") as RuntimeAnimatorController;
-        movePrefab.GetComponent<Animator>().SetTrigger("Back");
-    }
-
-    public void PlayFrontMove()
-    {
-        GameObject target = battleManager.getSlot(battleManager.targets[0]);
-
-        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
-        movePrefab.transform.SetParent(target.transform);
-        movePrefab.transform.localPosition = new Vector3(0, 100);
-        movePrefab.transform.localRotation = Quaternion.identity;
-        movePrefab.transform.localScale = new Vector3(2f, 2f);
-
-        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Wyvern/Wyvern_Move_Controller") as RuntimeAnimatorController;
-        movePrefab.GetComponent<Animator>().SetTrigger("Front");
-    }
-
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound; 
     public void back_special()
     {
+        
         ProjectileAnimation();
         battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
@@ -61,10 +21,13 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+
+        Play_SoundFX("back");
     }
 
     public void front_special()
     {
+
         battleManager.targets.Clear();
         battleManager.targets = FindColumnTargets();
         battleManager.cancelGuard = true;
@@ -78,6 +41,8 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+
+        Play_SoundFX("front");
     }
 
     void ProjectileAnimation()
@@ -105,6 +70,7 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
             slot += Values.SMALLSLOT / 2;
             //this switch finds the column the attacker is in and find the most sutible target column determined by distance
             //the aligned cloumn is always prioritised 
+            if(battleManager.attackPool.Count >0)
             switch (slot % (Values.SMALLSLOT / 2))
             {
                 case 0:
@@ -200,7 +166,8 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         else
         {
             slot += Values.SMALLSLOT / 2;
-            switch (slot % (Values.SMALLSLOT / 2))
+            if (battleManager.enemyAttackPool.Count > 0)
+                switch (slot % (Values.SMALLSLOT / 2))
             {
                 case 0:
 
@@ -292,8 +259,16 @@ public class Wyvern_Script : MonoBehaviour, Parent_Beast
         return targets;
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
-        throw new NotImplementedException();
+
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
+
     }
 }

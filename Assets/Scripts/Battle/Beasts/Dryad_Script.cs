@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Dryad_Script : MonoBehaviour, Parent_Beast
+public class Dryad_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
-    Attack attack;
     HealthManager healthManager;
+
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
     void Start()
     {
@@ -15,10 +15,10 @@ public class Dryad_Script : MonoBehaviour, Parent_Beast
 
         if (g != null)
         {
-            battleManager = g.GetComponent<BattleManager>();
-            attack = g.GetComponent<Attack>();
             healthManager = g.GetComponent<HealthManager>();
         }
+        
+        base.start();
     }
 
     public void back_special()
@@ -101,8 +101,14 @@ public class Dryad_Script : MonoBehaviour, Parent_Beast
         return b;
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
-        throw new System.NotImplementedException();
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
     }
 }

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.AddressableAssets;
 using UnityEngine.UI;
 
 public class LoadSettings : MonoBehaviour
@@ -24,6 +22,9 @@ public class LoadSettings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Loads assets asynchroniously
+        setRedRoachAsset();
+
         if (blurBackground != null) blurBackground.SetActive(false);
 
         if (resolutionsList == null){
@@ -35,6 +36,7 @@ public class LoadSettings : MonoBehaviour
     // Update is called once per frame
     void Update(){}
 
+    //Load settings assets into screen
     public void loadSettings() {
         //if settings screen is instantiated stop function
         GameObject go = GameObject.Find("Music");
@@ -65,6 +67,7 @@ public class LoadSettings : MonoBehaviour
         setRedRoachAsset();
     }
     
+    //Gives buttons onclick listeners
     public void setOnClickFunctions()
     {
         Button CloseSettings = (Button) GameObject.Find("closeSettingsBtn").GetComponent<Button>();
@@ -82,15 +85,19 @@ public class LoadSettings : MonoBehaviour
         RedRoach.onClick.AddListener(Player.activeRedRoach);
     }
 
+    //Asset to initiate redroach mode
     public static void setRedRoachAsset() {
-        Sprite temp = Resources.Load<Sprite>("Assets/" + (Player.RedRoach? "clicked_button" : "button"));
+
+        //Loads assets asynchroniously so they can be used when red roach is active
+        Sprite clicked = Resources.Load<Sprite>("Static_Images/clicked_button");
+        Sprite unclicked = Resources.Load<Sprite>("Static_Images/unclicked_button");
+
         Color colorTemp = (Player.RedRoach ? Color.red : new Color(0.9137255f, 0.7098039f, 0.1254902f, 1f));
         //Solves missing reference exception
         if(redRoach != null)
         {
-            redRoach.image.sprite = temp;
+            redRoach.image.sprite = Player.RedRoach ? clicked : unclicked;
             redRoach.GetComponentInChildren<Text>().color = colorTemp;
-            Debug.Log("sprite " + temp.name + " color " + colorTemp.ToString());
         }
         
     }

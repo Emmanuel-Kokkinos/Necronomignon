@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using DragonBones;
 
 //manages the main battle mechanics
 public class BattleManager : MonoBehaviour
@@ -23,6 +24,7 @@ public class BattleManager : MonoBehaviour
 
     public Text txtTurn;
     Animator anim;
+    UnityArmatureComponent armature;
 
     public List<Beast> players = new List<Beast>();
     public List<Beast> enemies = new List<Beast>();
@@ -326,7 +328,20 @@ public class BattleManager : MonoBehaviour
         {
             try
             {
-                orderBar[x].sprite = Resources.Load<Sprite>("Static_Images/"+GetImage(roundOrder[x + turn]));
+                if(orderBar[x].transform.childCount > 0)
+                {
+                    foreach (UnityEngine.Transform child in orderBar[x].transform)
+                    {
+                        Destroy(child.gameObject);
+                    }
+                    //Destroy(orderBar[x].gameObject.transform.GetChild(0).gameObject);
+                }
+                
+                GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + roundOrder[x + turn].name));
+                beastPrefab.transform.SetParent(orderBar[x].transform);
+                beastPrefab.transform.localPosition = new Vector3(0f, -50f);
+                beastPrefab.transform.localRotation = Quaternion.identity;
+                beastPrefab.transform.localScale = new Vector3(15f, 15f);
 
                 if (roundOrderTypes[x + turn].Equals("Player"))
                 {
@@ -339,7 +354,7 @@ public class BattleManager : MonoBehaviour
             }
             catch
             {
-                orderBar[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
+                orderBar[x].gameObject.SetActive(false);
                 orderBarOutlines[x].gameObject.SetActive(false);
             }
         }
@@ -638,22 +653,27 @@ public class BattleManager : MonoBehaviour
         GameObject slot = getSlot();
         slot = slot.transform.GetChild(0).gameObject;
         Parent_Beast beast = slot.GetComponent<Parent_Beast>();
+        armature = slot.GetComponent<UnityArmatureComponent>();
 
         if (inFront)
         {
-            slot.GetComponent<Animator>().SetTrigger("Front");
+            armature.animation.Play("Front", 1);
+            StartCoroutine(AnimationWaitTime(armature));
 
             if (beast != null)
             {
+                beast.Play_SoundFX("front");
                 beast.front_special();
             }
         }
         else
         {
-            slot.GetComponent<Animator>().SetTrigger("Back");
+            armature.animation.Play("Back", 1);
+            StartCoroutine(AnimationWaitTime(armature));
 
             if (beast != null)
             {
+                beast.Play_SoundFX("back");
                 beast.back_special();
             }
         }
@@ -679,8 +699,13 @@ public class BattleManager : MonoBehaviour
             {
                 if (enemySlots[x] != null && enemySlots[x].Equals(target))
                 {
+                    Parent_Beast beast = enemyPadSlots[x].transform.GetChild(0).GetComponent<Parent_Beast>();
+                    beast.Play_SoundFX("damage");
+
                     StartCoroutine(ChangeBattleColor(enemyPadSlots[x].transform.GetChild(0).gameObject));
-                    enemyPadSlots[x].transform.GetChild(0).gameObject.GetComponent<Animator>().SetTrigger("GetHit");
+                    armature = enemyPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>();
+                    armature.animation.Play("Damage", 1);
+                    StartCoroutine(AnimationWaitTime(armature));
                     break;
                 }
             }
@@ -691,19 +716,26 @@ public class BattleManager : MonoBehaviour
             {
                 if (slots[x] != null && slots[x].Equals(target))
                 {
+                    Parent_Beast beast = playerPadSlots[x].transform.GetChild(0).GetComponent<Parent_Beast>();
+                    beast.Play_SoundFX("damage");
+
                     StartCoroutine(ChangeBattleColor(playerPadSlots[x].transform.GetChild(0).gameObject));
-                    playerPadSlots[x].transform.GetChild(0).gameObject.GetComponent<Animator>().SetTrigger("GetHit");
+                    armature = playerPadSlots[x].transform.GetChild(0).gameObject.GetComponent<UnityArmatureComponent>();
+                    armature.animation.Play("Damage", 1);
+                    StartCoroutine(AnimationWaitTime(armature));
                     break;
                 }
             }
         }
     }
 
+    //Change the color of the target for a split second to show the damage type
+    //                               ****Need to fix for DragonBones****
     IEnumerator ChangeBattleColor(GameObject beast)
     {
-        beast.gameObject.GetComponent<Image>().color = attack.GetTypeColor(currentTurn);
+        //beast.gameObject.transform.GetChild(0).GetComponent<Image>().color = attack.GetTypeColor(currentTurn);
         yield return new WaitForSeconds(.1f);
-        beast.gameObject.GetComponent<Image>().color = Color.white;
+        //beast.gameObject.transform.GetChild(0).GetComponent<Image>().color = Color.white;
     }
 
     //starts the attacking cycle for the enemy
@@ -1187,4 +1219,20 @@ public class BattleManager : MonoBehaviour
         }
         return y == 8;
     }
+
+    // Wait for the animation to finish then go back to Idle animation
+    public IEnumerator AnimationWaitTime(UnityArmatureComponent beast)
+    {
+        print(!beast.animation.isCompleted);
+        yield return new WaitUntil(() => beast.animation.isCompleted);
+        beast.animation.Play("Idle", 0);
+    }
+    IEnumerator PauseWhile(System.Func<bool> condition)
+    {
+        if (condition == null)
+            yield break;
+        while (!condition())
+            yield return null;
+    }
+
 }

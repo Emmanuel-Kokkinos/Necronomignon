@@ -58,12 +58,9 @@ public class LoadSquads : MonoBehaviour
                 squad1Slots[x].SetActive(true);
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(GameObject.Find("btnSquad1").transform.GetChild(x).transform);
-                beastPrefab.transform.localPosition = new Vector3(0, 0);
+                beastPrefab.transform.localPosition = new Vector3(-10, -35);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(1.5f, 1.5f);
-
-                Animator animator = beastPrefab.GetComponent<Animator>();
-                animator.enabled = false;
+                beastPrefab.transform.localScale = new Vector3(18f, 18f);
             }
         }
     }
@@ -83,12 +80,9 @@ public class LoadSquads : MonoBehaviour
                 squad2Slots[x].SetActive(true);
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(GameObject.Find("btnSquad2").transform.GetChild(x).transform);
-                beastPrefab.transform.localPosition = new Vector3(0, 0);
+                beastPrefab.transform.localPosition = new Vector3(-10, -35);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(1.5f, 1.5f);
-
-                Animator animator = beastPrefab.GetComponent<Animator>();
-                animator.enabled = false;
+                beastPrefab.transform.localScale = new Vector3(18f, 18f);
             }
         }
     }

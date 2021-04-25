@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DragonBones;
 
 public class Projectile : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Projectile : MonoBehaviour
 
     private Vector3 shootDir;
     float moveSpeed = 150f;
+    public float shootTime = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +50,9 @@ public class Projectile : MonoBehaviour
         if(collision.GetComponent<Parent_Beast>() != null)
         {
             Destroy(gameObject);
-            collision.gameObject.GetComponent<Animator>().SetTrigger("GetHit");
+            collision.gameObject.GetComponent<Parent_Beast>().Play_SoundFX("damage");
+            collision.gameObject.GetComponent<UnityArmatureComponent>().animation.Play("Damage", 1);
+            StartCoroutine(battleManager.AnimationWaitTime(collision.gameObject.GetComponent<UnityArmatureComponent>()));
 
             Beast attacker = battleManager.currentTurn;
             if(battleManager.turn != 0)

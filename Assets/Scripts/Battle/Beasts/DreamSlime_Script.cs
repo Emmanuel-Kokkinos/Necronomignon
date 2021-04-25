@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DragonBones;
 
-public class DreamSlime_Script : MonoBehaviour, Parent_Beast
+
+public class DreamSlime_Script : Parent_Script, Parent_Beast
 {
-    BattleManager battleManager;
     LoadMission loadMission;
     HealthManager healthManager;
-    Attack attack;
+
+    [SerializeField] GameObject backPrefab;
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
     void Start()
     {
@@ -15,11 +18,11 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
 
         if (g != null)
         {
-            battleManager = g.GetComponent<BattleManager>();
             loadMission = g.GetComponent<LoadMission>();
             healthManager = g.GetComponent<HealthManager>();
-            attack = g.GetComponent<Attack>();
         }
+        
+        base.start();
     }
 
     public void PlayBackMove()
@@ -52,6 +55,9 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
 
     public void back_special()
     {
+
+        audioSrc.PlayOneShot(backAttackSound);
+
         int slot = -1;
         int ran = Random.Range(0, 10);
         if (ran < 3 && battleManager.roundOrderTypes[battleManager.turn] == "Player" && !battleManager.isSquadFull("Player"))
@@ -72,6 +78,8 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
                         beastPrefab.transform.SetParent(battleManager.playerPadSlots[ran].transform);
                         beastPrefab.transform.localPosition = new Vector3(0, 0);
                         beastPrefab.transform.localRotation = Quaternion.identity;
+                        beastPrefab.transform.localScale = new Vector3(20f, 20f);
+                        beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
                         slot = ran;
                     }
                 }
@@ -163,8 +171,14 @@ public class DreamSlime_Script : MonoBehaviour, Parent_Beast
         }
     }
 
-    public void Play_SoundFX()
+    public void Play_SoundFX(string sound)
     {
-        throw new System.NotImplementedException();
+        switch (sound)
+        {
+            case "front": audioSrc.PlayOneShot(frontAttackSound); break;
+            case "back": audioSrc.PlayOneShot(backAttackSound); break;
+            case "damage": audioSrc.PlayOneShot(damageSound); break;
+            case "death": audioSrc.PlayOneShot(deathSound); break;
+        }
     }
 }

@@ -135,7 +135,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7043817208939467131}
   - component: {fileID: 7043817208939467133}
-  - component: {fileID: 3537375243640273888}
   m_Layer: 5
   m_Name: Speaker
   m_TagString: Untagged
@@ -171,17 +170,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7043817208939467130}
   m_CullTransparentMesh: 1
---- !u!114 &3537375243640273888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7043817208939467130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1802cd6170254384081bfcd923b87868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npcDialogueManager: {fileID: 0}
-  npcImage: {fileID: 0}

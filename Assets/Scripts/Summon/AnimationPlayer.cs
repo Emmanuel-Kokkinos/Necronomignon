@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DragonBones;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,7 @@ using UnityEngine.UI;
 public class AnimationPlayer : MonoBehaviour
 {
     public GameObject image;
+    UnityArmatureComponent armatureComponent;
     BeastManager beastManager;
 
     // Start is called before the first frame update
@@ -22,47 +24,61 @@ public class AnimationPlayer : MonoBehaviour
         beastPrefab.transform.SetParent(GameObject.Find($"Image").transform);
         beastPrefab.transform.localPosition = new Vector3(0, 0);
         beastPrefab.transform.localRotation = Quaternion.identity;
-        beastPrefab.transform.localScale = new Vector3(10, 10);
+        beastPrefab.transform.localScale = new Vector3(100, 100);
 
         image = image.transform.GetChild(0).gameObject;
+
+        armatureComponent = image.GetComponent<UnityArmatureComponent>();
+        Summon();
     }
 
     //Front Row Attack
     public void FrontAttack()
     {
-       image.GetComponent<Animator>().SetTrigger("Front");
+        image.GetComponent<Parent_Beast>().Play_SoundFX("front");
+        armatureComponent.animation.Play("Front", 1);
+        StartCoroutine(AnimationWaitTime());
     }
 
     //Back Row Attack
     public void BackAttack()
     {
-        image.GetComponent<Animator>().SetTrigger("Back");
+        image.GetComponent<Parent_Beast>().Play_SoundFX("back");
+        armatureComponent.animation.Play("Back", 1);
+        StartCoroutine(AnimationWaitTime());
     }
 
     //When a Beast Receives Damage
     public void Damaged()
     {
-        image.GetComponent<Animator>().SetTrigger("GetHit");
+        image.GetComponent<Parent_Beast>().Play_SoundFX("damage");
+        armatureComponent.animation.Play("Damage", 1);
+        StartCoroutine(AnimationWaitTime());
     }
 
     //On Death
     public void Death()
     {
-        image.GetComponent<Animator>().SetInteger("Health", 0);
-        
+        image.GetComponent<Parent_Beast>().Play_SoundFX("death");
+        armatureComponent.animation.Play("Death", 1);
+        StartCoroutine(AnimationWaitTime());
     }
 
     // When Summoning a new beast into the field, or for the first time 
     public void Summon()
     {
-        image.GetComponent<Animator>().SetInteger("Health", 100);
-        //Summon animation will go here when we get them
-        image.GetComponent<Animator>().Play("Base Layer.Idle", 0);
+        armatureComponent.animation.Play("Idle", 0);
     }
 
     //Back Button(obviously) 
     public void BackButton()
     {
         SceneManager.LoadScene("SummonMain");
+    }
+
+    IEnumerator AnimationWaitTime()
+    {
+        yield return new WaitWhile(new System.Func<bool>(() => !armatureComponent.animation.isCompleted));
+        Summon();
     }
 }
