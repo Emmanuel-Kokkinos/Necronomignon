@@ -8,7 +8,8 @@ public class CampaignManager : MonoBehaviour
 {
     static public GameObject firstMission;
     static public string sceneInterface;
-    static public bool dialogueEnd = false; 
+    static public bool dialogueEnd = false;
+    static public List<Sprite> enemyPictures = new List<Sprite>();
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +31,8 @@ public class CampaignManager : MonoBehaviour
                 speaker.SetActive(false);
             }
         }
-            
-        
+
+        BuildTournament();
     }
 
     // Update is called once per frame
@@ -42,11 +43,18 @@ public class CampaignManager : MonoBehaviour
 
     public void BuildTournament()
     {
-
+        SetEnemyPictures();
     }
 
     public void SetBattleInterface(string mission)
     {
         sceneInterface = mission;
+    }
+    //Adds pictures to list of pictures
+    public void SetEnemyPictures()
+    {
+        enemyPictures.Add(Resources.Load<Sprite>("Character_Pictures/Profile_Pictures/John_Front"));
+        enemyPictures.Add(Resources.Load<Sprite>("Character_Pictures/Profile_Pictures/Jheera_Front"));
+        enemyPictures.Add(Resources.Load<Sprite>("Character_Pictures/Profile_Pictures/Gabriel_Front"));
     }
 }
