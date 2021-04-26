@@ -97,6 +97,7 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
                         beastPrefab.transform.SetParent(battleManager.enemyPadSlots[ran].transform);
                         beastPrefab.transform.localPosition = new Vector3(0, 0);
                         beastPrefab.transform.localRotation = Quaternion.identity;
+                        beastPrefab.transform.localScale = new Vector3(20f, 20f);
                         slot = ran;
                     }
                 }
