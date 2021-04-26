@@ -7,14 +7,6 @@ public class Zeograth_Script : Parent_Script, Parent_Beast
 {
 
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    AudioSource audioSrc;
-    void Start()
-    {
-        base.start();
-        GameObject au = GameObject.Find("Music");
-
-        audioSrc = GetComponent<AudioSource>();
-    }
 
     public void back_special()
     {

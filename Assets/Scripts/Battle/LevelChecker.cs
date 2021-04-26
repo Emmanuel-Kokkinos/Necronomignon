@@ -28,6 +28,7 @@ public class LevelChecker : MonoBehaviour
     //unlocks the following level
     public void Progess(string levelName)
     {
+
         if (lastClick == "first" && levels <= 0)
         {
             levels++;
@@ -82,7 +83,10 @@ public class LevelChecker : MonoBehaviour
             levels++;
             unlock("Cthulhu");
         }
+        //These will define the tournament levels
+
     }
+
 
     public static void unlock(String name)
     {

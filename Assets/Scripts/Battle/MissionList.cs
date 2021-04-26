@@ -25,6 +25,123 @@ public class MissionList : MonoBehaviour
         mission = LevelChecker.lastClick;
         summoner = new Summoner();
 
+        MissionCheck();
+        TourMission();
+        RedRoach();
+
+    }
+    
+    /*
+     * Determine the fights of the tournament
+     */
+    public void TourMission()
+    {
+        /*
+        First Battle is lazyly put together (John the shitty Neo Carcosan)
+        2 fight should be against Demon Chick
+        Third fight, finals is against Gabriel
+        2nd fight should be decent team, tiers 3 and 4s
+        third fight all tier 4s and 5s and well thought out combination
+        */
+        if (mission == "John")
+        {
+            Beast kitsune = beastManager.getFromName("Kitsune");
+            enemies.Add(beastManager.getFromName("Zeograth"));
+
+            int ran = -1;
+            //ran = Random.Range(-1, Values.SMALLSLOT - 1);
+            ran = (kitsune.size == 0) ? Random.Range(-1, Values.SMALLSLOT - 1) : Random.Range(Values.SMALLSLOT, totalEnemies - 1);
+
+            while (ran >= 0)
+            {
+                enemies.Add(null);
+                ran--;
+            }
+
+            enemies.Add(kitsune);
+            
+
+            while (enemies.Count < totalEnemies)
+            {
+                enemies.Add(null);
+            }
+
+            foreach (Beast b in enemies)
+            {
+                if (b != null)
+                {
+                    b.setTierUpper(2);
+                }
+            }
+
+            summoner.xp = 10;
+        }
+        else if(mission == "DemonChick")
+        {
+
+        }
+        else if(mission == "Gabriel")
+        {
+            Beast b = new Beast();
+            int i = -1;
+
+
+            b = beastManager.getFromName("Luzuria");
+            b.defence = 25;
+
+            enemies.Add(b);
+            enemies.Add(null);
+            enemies.Add(null);
+            enemies.Add(BeastManager.getFromNameS("DreamSlime"));
+            enemies.Add(BeastManager.getFromNameS("Dryad"));
+            enemies.Add(null);
+            enemies.Add(null);
+            b = new Beast();
+
+            do
+            {
+                i = Random.Range(0, BeastManager.beastsList.Beasts.Count);
+                b = BeastManager.getFromNameS(BeastManager.beastsList.Beasts[i].name);
+                if (enemies[0].name == b.name)
+                {
+                    print("Scenario apocalypse");
+                    b.power = 1;
+                }
+            }
+            while (b.power < 10 || b.name == "DreamSlime" || b.size == 1 || enemies.Contains(b));
+
+            enemies.Add(b);
+            enemies.Add(null);
+            enemies.Add(null);
+            enemies.Add(null);
+            foreach (Beast be in enemies)
+            {
+                if (be != null)
+                {
+                    be.setTierUpper(4);
+                }
+            }
+            summoner.xp = 100;
+        }
+    }
+    public void RedRoach()
+    {
+        if (Player.RedRoach)
+        {
+            //summoner.xp *= 3;
+            summoner.xp = (int)Mathf.Pow(summoner.xp, 1.7f);
+            foreach (Beast be in enemies)
+            {
+                if (be != null)
+                {
+                    be.setTierLower(5);
+                }
+            }
+        }
+    }
+    public void MissionCheck()
+    {
+
         // Kitsune in a random position
         if (mission == "first")
         {
@@ -49,7 +166,7 @@ public class MissionList : MonoBehaviour
 
             foreach (Beast b in enemies)
             {
-                if(b != null)
+                if (b != null)
                 {
                     b.setTierUpper(2);
                 }
@@ -57,9 +174,9 @@ public class MissionList : MonoBehaviour
 
             summoner.xp = 2;
         }
-        
+
         // Conglomerate back row, Dryad front row
-        if(mission == "second")
+        if (mission == "second")
         {
             int ran = -1;
             ran = Random.Range(-1, 3);
@@ -103,24 +220,24 @@ public class MissionList : MonoBehaviour
         }
 
         // Dryad and Wyvern front row, Conglomerate back row
-        if(mission == "third")
+        if (mission == "third")
         {
             int poN = -1;
             int poD = -1;
             int poW = -1;
             poN = Random.Range(0, Values.SMALLSLOT / 2);
 
-            while(poD == -1 || poD == poN)
+            while (poD == -1 || poD == poN)
             {
                 poD = Random.Range(0, Values.SMALLSLOT / 2);
             }
 
-            while(poW == -1 || poW == poN || poW == poD)
+            while (poW == -1 || poW == poN || poW == poD)
             {
                 poW = Random.Range(0, Values.SMALLSLOT / 2);
             }
 
-            for(int x = 0; x < Values.SMALLSLOT/2; x++)
+            for (int x = 0; x < Values.SMALLSLOT / 2; x++)
             {
                 if (x == poD)
                 {
@@ -159,14 +276,14 @@ public class MissionList : MonoBehaviour
             }
             summoner.xp = 50;
         }
-        
+
         // High defence small beast in the front blocking Dryad, DreamSlime in the front blocking a random small beast with low damage
-        if(mission == "fourth")
+        if (mission == "fourth")
         {
             Beast b = new Beast();
             int i = -1;
 
-            while(b.defence < 24 || b.size == 1)
+            while (b.defence < 24 || b.size == 1)
             {
                 i = Random.Range(0, BeastManager.beastsList.Beasts.Count);
                 b = BeastManager.getFromNameS(BeastManager.beastsList.Beasts[i].name);
@@ -190,7 +307,7 @@ public class MissionList : MonoBehaviour
                     print("Scenario apocalypse");
                     b.power = 1;
                 }
-            } 
+            }
             while (b.power < 10 || b.name == "DreamSlime" || b.size == 1 || enemies.Contains(b));
 
             enemies.Add(b);
@@ -230,14 +347,14 @@ public class MissionList : MonoBehaviour
             int beastCost = 0;
             int ran = -1;
 
-            while (beastCost < Values.TOTAL_BEAST_COST-Values.BEAST_COST_MIN)
+            while (beastCost < Values.TOTAL_BEAST_COST - Values.BEAST_COST_MIN)
             {
                 //randomly picks a beast based on it's number in the list
                 while (beast.Contains(ran) || ran == -1)
                 {
                     ran = Random.Range(0, BeastManager.beastsList.Beasts.Count);
                 }
-               
+
                 if (BeastManager.beastsList.Beasts[ran].tier != -2)
                 {
                     beastCost += BeastManager.beastsList.Beasts[ran].cost;
@@ -249,7 +366,7 @@ public class MissionList : MonoBehaviour
                 }
             }
 
-            while(beast.Count < Values.SQUADMAX)
+            while (beast.Count < Values.SQUADMAX)
             {
                 beast.Add(-1);
             }
@@ -297,7 +414,7 @@ public class MissionList : MonoBehaviour
 
             int ran = -1;
 
-            int godhimself = Random.Range(1, Values.SQUADMAX+1);
+            int godhimself = Random.Range(1, Values.SQUADMAX + 1);
 
             while (beast.Count < godhimself)
             {
@@ -347,7 +464,7 @@ public class MissionList : MonoBehaviour
                     b.setTierUpper(5);
                 }
             }
-            while(enemies.Count < totalEnemies)
+            while (enemies.Count < totalEnemies)
             {
                 enemies.Add(null);
             }
@@ -433,14 +550,14 @@ public class MissionList : MonoBehaviour
                         beasts.Add(b.name);
                         break;
                 }
-                
+
                 b = new Beast();
             }
             beasts.Add(null);
             beasts.Add(null);
             beasts.Add(null);
             beasts.Add(null);
-            foreach(string str in beasts)
+            foreach (string str in beasts)
             {
                 print(str);
             }
@@ -479,7 +596,7 @@ public class MissionList : MonoBehaviour
                     ran = Random.Range(0, Values.SMALLSLOT);
                 }
                 position.Add(ran);
-                
+
             }
             ran = Random.Range(0, 4);
             List<string> beasts = new List<string>();
@@ -586,9 +703,9 @@ public class MissionList : MonoBehaviour
             {
                 enemies.Add(null);
             }
-            int ran =  Random.Range(0, BeastManager.beastsList.Beasts.Count);
+            int ran = Random.Range(0, BeastManager.beastsList.Beasts.Count);
             Beast b = BeastManager.getFromNameS(BeastManager.beastsList.Beasts[ran].name);
-            while(b.tier == -2)
+            while (b.tier == -2)
             {
                 ran = Random.Range(0, BeastManager.beastsList.Beasts.Count);
                 b = BeastManager.getFromNameS(BeastManager.beastsList.Beasts[ran].name);
@@ -605,7 +722,7 @@ public class MissionList : MonoBehaviour
             summoner.xp = 2000;
             //summoner.addXP(Player.summoner.xp*4);
         }
-        else if(mission == "even")
+        else if (mission == "even")
         {
             List<int> beast = new List<int>();
             int beastCost = 0;
@@ -628,7 +745,7 @@ public class MissionList : MonoBehaviour
                 {
                     ran = -1;
                 }
-                if(beastCost + Values.BEAST_COST_MIN > Values.TOTAL_BEAST_COST)
+                if (beastCost + Values.BEAST_COST_MIN > Values.TOTAL_BEAST_COST)
                 {
                     break;
                 }
@@ -674,18 +791,5 @@ public class MissionList : MonoBehaviour
             enemies.Add(null);
             summoner.xp = Player.summoner.xp;
         }
-        if (Player.RedRoach)
-        {
-            //summoner.xp *= 3;
-            summoner.xp = (int)Mathf.Pow(summoner.xp, 1.7f);
-            foreach (Beast be in enemies)
-            {
-                if (be != null)
-                {
-                    be.setTierLower(5);
-                }
-            }
-        }
-
     }
 }

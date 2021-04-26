@@ -5,14 +5,6 @@ using UnityEngine;
 public class Nage_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    AudioSource audioSrc;
-
-    void Start()
-    {
-        audioSrc = GetComponent<AudioSource>();
-        
-        base.start();
-    }
 
     public void back_special()
     {

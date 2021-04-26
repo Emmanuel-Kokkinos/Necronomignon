@@ -352,6 +352,10 @@ public class HealthManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         victoryScreen.SetActive(false);
         LoadScenes load = new LoadScenes();
-        load.LoadSelect("Map");
+
+        if (TournamentManager.sceneInterface == "Campaign")
+            load.LoadSelect("Map");
+        else if (TournamentManager.sceneInterface == "Tournament")
+            load.LoadSelect("Tournament");
     }
 }
