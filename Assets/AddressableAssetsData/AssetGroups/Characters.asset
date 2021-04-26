@@ -109,7 +109,7 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: cd43c19b4789acb449fa0ae3553e32ff
-    m_Address: Dean
+    m_Address: Thoth
     m_ReadOnly: 0
     m_SerializedLabels:
     - Character
