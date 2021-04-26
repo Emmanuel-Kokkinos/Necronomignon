@@ -12,7 +12,6 @@ public class LuzuriaAngelicus_Script : Parent_Script, Parent_Beast
     public void back_special()
     {
         ProjectileAnimation();
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
@@ -29,7 +28,6 @@ public class LuzuriaAngelicus_Script : Parent_Script, Parent_Beast
         battleManager.targets.Clear();
         battleManager.targets = findRowTargets();
         battleManager.cancelGuard = true;
-        battleManager.PlayDamagedAnimation(battleManager.targets);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {

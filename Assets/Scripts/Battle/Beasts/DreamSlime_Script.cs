@@ -27,9 +27,6 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
 
     public void back_special()
     {
-
-        audioSrc.PlayOneShot(backAttackSound);
-
         int slot = -1;
         int ran = Random.Range(0, 10);
         if (ran < 3 && battleManager.roundOrderTypes[battleManager.turn] == "Player" && !battleManager.isSquadFull("Player"))
@@ -126,14 +123,10 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
                 }
             }
         }
-
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
     }
 
     public void front_special()
     {
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
-
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);

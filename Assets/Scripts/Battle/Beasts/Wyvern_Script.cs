@@ -8,10 +8,8 @@ public class Wyvern_Script : Parent_Script, Parent_Beast
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound; 
     public void back_special()
-    {
-        
+    { 
         ProjectileAnimation();
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
@@ -21,17 +19,13 @@ public class Wyvern_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-
-        Play_SoundFX("back");
     }
 
     public void front_special()
     {
-
         battleManager.targets.Clear();
         battleManager.targets = FindColumnTargets();
         battleManager.cancelGuard = true;
-        battleManager.PlayDamagedAnimation(battleManager.targets);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
@@ -41,8 +35,6 @@ public class Wyvern_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
-
-        Play_SoundFX("front");
     }
 
     void ProjectileAnimation()
