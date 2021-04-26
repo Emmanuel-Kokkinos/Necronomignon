@@ -39,8 +39,8 @@ namespace DialogueEditor
             timesUsedCounter = conversationNames.Count - 1;
 
             //Sets the default conversation
-            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            //SetNPCConversation(FindByName("Questionnaire"));
+            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            SetNPCConversation(FindByName("Questionnaire"));
 
             //Gets the data associated with conversation for further edit
             GetConversationData(currentConversation);
@@ -161,7 +161,7 @@ namespace DialogueEditor
                     characters[6].gameObject.SetActive(false);
                     characters[7].sprite = characterAssets.Find(x => x.name.Equals("Irvina")); //Irvina
                     characters[7].gameObject.transform.localScale = new Vector3(1.3f, 1.3f);
-                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dean")); //DEAN
+                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Thoth")); //Thoth
                     break;
                 default:
 

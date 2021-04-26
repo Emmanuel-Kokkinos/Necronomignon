@@ -171,7 +171,6 @@
     <Compile Include="Assets\Scripts\Battle\Beasts\Cthulhu_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\DreamSlime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Dryad_Script.cs" />
-    <Compile Include="Assets\Scripts\Battle\Beasts\EarthDragon.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\FatherTime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Kitsune_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\LuzuriaAngelicus_Script.cs" />
