@@ -87,6 +87,7 @@ namespace DialogueEditor
             foreach(Image image in characters)
             {
                 image.gameObject.SetActive(true);
+                image.gameObject.transform.localScale = new Vector3(1, 1);
             }
 
             switch (screenInter)
@@ -156,8 +157,9 @@ namespace DialogueEditor
                     characters[4].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
                     characters[5].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
                     characters[6].gameObject.SetActive(false);
-                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //DEAN
-                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Irvina
+                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Irvina")); //Irvina
+                    characters[7].gameObject.transform.localScale = new Vector3(1.3f, 1.3f);
+                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dean")); //DEAN
                     break;
                 default:
 
