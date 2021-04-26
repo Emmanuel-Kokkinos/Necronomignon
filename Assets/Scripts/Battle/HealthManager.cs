@@ -123,6 +123,7 @@ public class HealthManager : MonoBehaviour
                 }
                 else
                 {
+                    battleManager.PlayDamagedAnimation(target);
                     DisplayHealthLeft(target, squad[x % squad.Count].hitPoints);
                 }
             }
@@ -149,6 +150,7 @@ public class HealthManager : MonoBehaviour
                 }
                 else
                 {
+                    battleManager.PlayDamagedAnimation(target);
                     DisplayHealthLeft(target, enemies[x].hitPoints);
                 }
             }
