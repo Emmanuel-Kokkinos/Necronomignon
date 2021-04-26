@@ -74,42 +74,53 @@ public class MissionList : MonoBehaviour
                 }
             }
 
-            summoner.xp = 10;
+            summoner.xp = 15;
         }
         else if(mission == "DemonChick")
         {
+            Beast b = new Beast();
+            b = beastManager.getFromName("Conglomerate");
+            b.power = 2;
+            enemies.Add(b);
+            enemies.Add(null);
+            enemies.Add(null);
+            b = beastManager.getFromName("Wyvern");
+            b.defence = 30;
+            enemies.Add(b);
+            enemies.Add(beastManager.getFromName("FallborneDragon"));
+            enemies.Add(beastManager.getFromName("DreamSlime"));
+            enemies.Add(null);
+            enemies.Add(beastManager.getFromName("Dryad"));
+            enemies.Add(null);
+            enemies.Add(null);
+            enemies.Add(null);
 
+            foreach (Beast be in enemies)
+            {
+                if (be != null)
+                {
+                    be.setTierUpper(3);
+                }
+            }
+
+            summoner.xp = 70;
         }
         else if(mission == "Gabriel")
         {
             Beast b = new Beast();
-            int i = -1;
-
 
             b = beastManager.getFromName("Luzuria");
             b.defence = 25;
 
             enemies.Add(b);
             enemies.Add(null);
+            enemies.Add(BeastManager.getFromNameS("FallborneDragon"));
+            enemies.Add(BeastManager.getFromNameS("Mandoro"));
+            enemies.Add(beastManager.getFromName("Dryad"));
             enemies.Add(null);
-            enemies.Add(BeastManager.getFromNameS("DreamSlime"));
-            enemies.Add(BeastManager.getFromNameS("Dryad"));
             enemies.Add(null);
-            enemies.Add(null);
-            b = new Beast();
-
-            do
-            {
-                i = Random.Range(0, BeastManager.beastsList.Beasts.Count);
-                b = BeastManager.getFromNameS(BeastManager.beastsList.Beasts[i].name);
-                if (enemies[0].name == b.name)
-                {
-                    print("Scenario apocalypse");
-                    b.power = 1;
-                }
-            }
-            while (b.power < 10 || b.name == "DreamSlime" || b.size == 1 || enemies.Contains(b));
-
+            b = beastManager.getFromName("Cthulhu");
+            b.power = 3;
             enemies.Add(b);
             enemies.Add(null);
             enemies.Add(null);
@@ -118,10 +129,14 @@ public class MissionList : MonoBehaviour
             {
                 if (be != null)
                 {
-                    be.setTierUpper(4);
+                    be.setTierUpper(5);
                 }
             }
-            summoner.xp = 100;
+            summoner.xp = 120;
+        }
+        else if (mission == "Boss")
+        {
+
         }
     }
     public void RedRoach()

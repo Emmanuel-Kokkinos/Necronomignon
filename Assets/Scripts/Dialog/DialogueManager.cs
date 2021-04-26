@@ -39,8 +39,8 @@ namespace DialogueEditor
             timesUsedCounter = conversationNames.Count - 1;
 
             //Sets the default conversation
-            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            SetNPCConversation(FindByName("Questionnaire"));
+            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            //SetNPCConversation(FindByName("Questionnaire"));
 
             //Gets the data associated with conversation for further edit
             GetConversationData(currentConversation);
@@ -145,8 +145,10 @@ namespace DialogueEditor
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Conv_Tour":
-                    GameObject tourChar = GameObject.Find("Character");
-                    tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    if(CampaignManager.dialogueEnd == false) { 
+                        GameObject tourChar = GameObject.Find("Character");
+                        tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    }
                     break;
 
                 case "Questionnaire":
@@ -193,7 +195,8 @@ namespace DialogueEditor
                 case "Conv_Tour":
                     GameObject tourChar = GameObject.Find("Character");
                     tourChar.gameObject.SetActive(false);
-                    TournamentManager.firstMission.SetActive(true);
+                    CampaignManager.firstMission.SetActive(true);
+                    CampaignManager.dialogueEnd = true;
                     break;
             }
         }

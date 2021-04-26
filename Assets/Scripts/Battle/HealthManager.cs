@@ -355,9 +355,9 @@ public class HealthManager : MonoBehaviour
         victoryScreen.SetActive(false);
         LoadScenes load = new LoadScenes();
 
-        if (TournamentManager.sceneInterface == "Campaign")
+        if (CampaignManager.sceneInterface == "Campaign")
             load.LoadSelect("Map");
-        else if (TournamentManager.sceneInterface == "Tournament")
+        else if (CampaignManager.sceneInterface == "Tournament")
             load.LoadSelect("Tournament");
     }
 }
