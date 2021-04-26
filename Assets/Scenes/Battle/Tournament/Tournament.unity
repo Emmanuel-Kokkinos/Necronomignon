@@ -301,10 +301,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6265388258128273044, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d789d12d4880ee4c9f6b36176e75d96,
+        type: 3}
     - target: {fileID: 7591135172197989736, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_Text
-      value: Fight 2
+      value: 'Fight:
+
+        Jheera'
       objectReference: {fileID: 0}
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
@@ -1465,10 +1473,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6265388258128273044, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 07e6439fc77d1ef4a98edfa5b1a18edf,
+        type: 3}
     - target: {fileID: 7591135172197989736, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
       propertyPath: m_Text
-      value: Fight 3
+      value: 'Fight:
+
+        Gabriel'
       objectReference: {fileID: 0}
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
@@ -2929,6 +2945,19 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265388258128273044, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5283f9bc60e23294a91d376c81718307,
+        type: 3}
+    - target: {fileID: 7591135172197989736, guid: 1ba92c566358daf4a82aac348a227db1,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Fight:
+
+        John'
       objectReference: {fileID: 0}
     - target: {fileID: 7770795364233737337, guid: 1ba92c566358daf4a82aac348a227db1,
         type: 3}
