@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DragonBones;
+using UnityEngine.SceneManagement;
 
 //prepares all information and data for battle
 public class LoadMission : MonoBehaviour
@@ -90,6 +91,9 @@ public class LoadMission : MonoBehaviour
         giveUpDialog = GameObject.Find("giveUpDialog");
         if (giveUpDialog != null)
             giveUpDialog.SetActive(false);
+
+        //Turns off back button if it is a tournament
+
 
         foreach(GameObject go in slotHealthBars)
         {
@@ -359,6 +363,7 @@ public class LoadMission : MonoBehaviour
         {
             Time.timeScale = 0;
             giveUpDialog.SetActive(true);
+                
         }
     }
 }
