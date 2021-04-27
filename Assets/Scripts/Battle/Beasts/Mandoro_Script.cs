@@ -89,8 +89,8 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
         movePrefab.transform.SetParent(emptyObj.transform);
 
 
-        movePrefab.transform.localPosition = new Vector2(133, 0);
-        movePrefab.transform.localScale = new Vector2(playerX > targetX ? 1.5f : -1.5f, 0.1f);
+        movePrefab.transform.localPosition = new Vector2(73, 0);
+        movePrefab.transform.localScale = new Vector2(playerX > targetX ? 0.8f : -0.8f, 0.1f);
         emptyObj.transform.rotation = Quaternion.Euler(0, 0, (float)angle);
         movePrefab.transform.SetAsFirstSibling();
 
