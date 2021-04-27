@@ -429,7 +429,7 @@ public class MissionList : MonoBehaviour
 
             int ran = -1;
 
-            int godhimself = Random.Range(1, Values.SQUADMAX + 1);
+            int godhimself = Random.Range(2, Values.SQUADMAX + 1);
 
             while (beast.Count < godhimself)
             {

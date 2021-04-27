@@ -57,7 +57,8 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
             battleManager.slots[slot].hitPoints = battleManager.slots[slot].maxHP;
             battleManager.attackPool.Add(battleManager.slots[slot]);
             loadMission.playerSlot[slot] = (battleManager.slots[slot]);
-            healthManager.playersLeft++;
+            //healthManager.playersLeft++;
+            battleManager.slots[slot].nonCombatant = true;
 
             //health display
             loadMission.playerDisplaySlots[slot].gameObject.SetActive(true);
@@ -103,7 +104,7 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
             battleManager.enemySlots[slot].hitPoints = battleManager.enemySlots[slot].maxHP;
             battleManager.enemyAttackPool.Add(battleManager.enemySlots[slot]);
             loadMission.enemySlot[slot] = (battleManager.enemySlots[slot]);
-            healthManager.enemiesLeft++;
+            //healthManager.enemiesLeft++;
 
             //health display
             loadMission.enemyDisplaySlots[slot].gameObject.SetActive(true);
@@ -122,6 +123,15 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
                     break;
                 }
             }
+        }
+
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
     }
 
