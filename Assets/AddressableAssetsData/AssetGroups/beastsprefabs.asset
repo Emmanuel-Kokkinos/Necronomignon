@@ -16,13 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 912149de19d6c4e42bade1848f4e0984
-  m_SerializeEntries:
-  - m_GUID: 18a1014392610214598ba7d41d2ce785
-    m_Address: Assets/Resources/Prefabs/Beasts/Conglomerate.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 543447ffde342454baea6fd67311b463, type: 2}
   m_SchemaSet:

@@ -17,18 +17,68 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: bdad653e982f65b42a9cead38615989d
   m_SerializeEntries:
+  - m_GUID: 06134e5df34331d4fa32bf7c8dd2e785
+    m_Address: Assets/Resources/Static_Images/Thanatos_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 06134e5df34331d4fa32bf7c8dd2e785, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 06134e5df34331d4fa32bf7c8dd2e785, type: 3}
+  - m_GUID: 18a1014392610214598ba7d41d2ce785
+    m_Address: Assets/Resources/Prefabs/Beasts/Conglomerate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5938876819750666035, guid: 18a1014392610214598ba7d41d2ce785,
+      type: 3}
+    m_TargetAsset: {fileID: 5938876819750666035, guid: 18a1014392610214598ba7d41d2ce785,
+      type: 3}
+  - m_GUID: 252ecc2fda78df34cb71fddb66d6f197
+    m_Address: Assets/Resources/Static_Images/Kitsune_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 252ecc2fda78df34cb71fddb66d6f197, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 252ecc2fda78df34cb71fddb66d6f197, type: 3}
+  - m_GUID: 3a0efd6df84b60e4384ff545fa284625
+    m_Address: Assets/Resources/Static_Images/Cthulhu_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 3a0efd6df84b60e4384ff545fa284625, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 3a0efd6df84b60e4384ff545fa284625, type: 3}
   - m_GUID: 4c6cac6a2f3d68b4e9d82d1c5e0eb443
     m_Address: sliderFill
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 4f2b2194e34a7b9469fb76156f71ea28
+    m_Address: Assets/Resources/Static_Images/Nage_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 4f2b2194e34a7b9469fb76156f71ea28, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 4f2b2194e34a7b9469fb76156f71ea28, type: 3}
+  - m_GUID: 50252fb6d3b87d241b2064611a5b8fd5
+    m_Address: Assets/Resources/Static_Images/DreamSlime_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 50252fb6d3b87d241b2064611a5b8fd5, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 50252fb6d3b87d241b2064611a5b8fd5, type: 3}
+  - m_GUID: 513bef21b10abe140bb549ef3652b137
+    m_Address: Assets/Resources/Static_Images/Conglomerate_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 513bef21b10abe140bb549ef3652b137, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 513bef21b10abe140bb549ef3652b137, type: 3}
+  - m_GUID: 567b9cf9ce3937440b218a8997742bd7
+    m_Address: Assets/Resources/Static_Images/Zeograth_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 567b9cf9ce3937440b218a8997742bd7, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 567b9cf9ce3937440b218a8997742bd7, type: 3}
   - m_GUID: 5bb03e4ba0f707f4e9ef43b6d6a444dc
     m_Address: arrow_button_clicked
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2800000, guid: 5bb03e4ba0f707f4e9ef43b6d6a444dc, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5bb03e4ba0f707f4e9ef43b6d6a444dc, type: 3}
   - m_GUID: 7275da243163e714bbb8dd6b13e8cc19
     m_Address: arrow_button
     m_ReadOnly: 0
@@ -41,18 +91,48 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 958558b5427646b44b411ea4299341b4
+    m_Address: Assets/Resources/Static_Images/Wyvern_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 958558b5427646b44b411ea4299341b4, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 958558b5427646b44b411ea4299341b4, type: 3}
+  - m_GUID: a12a58593122f9e4a97dc56e33fb54c0
+    m_Address: Assets/Resources/Static_Images/SovereignDragon_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: a12a58593122f9e4a97dc56e33fb54c0, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: a12a58593122f9e4a97dc56e33fb54c0, type: 3}
   - m_GUID: c900e9112e25b1b47875321927099159
     m_Address: sliderKnobl
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: d7ceec69162b5264b8b3e8c40e71b9b2
+    m_Address: Assets/Resources/Static_Images/LuzuriaAngelicus_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: d7ceec69162b5264b8b3e8c40e71b9b2, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d7ceec69162b5264b8b3e8c40e71b9b2, type: 3}
   - m_GUID: d875a3fef7d8bcf4ea706c25445ffb0e
     m_Address: back_arrow
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: e90e16f0171c8b842b4f1d0f7211ca1d
+    m_Address: Assets/Resources/Static_Images/Dryad_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: e90e16f0171c8b842b4f1d0f7211ca1d, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: e90e16f0171c8b842b4f1d0f7211ca1d, type: 3}
+  - m_GUID: f35c37285bc44274c961bae8200a4237
+    m_Address: Assets/Resources/Static_Images/Mandoro_Idle_00.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: f35c37285bc44274c961bae8200a4237, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: f35c37285bc44274c961bae8200a4237, type: 3}
   - m_GUID: f3c7f3b7d59bf024990bd00ae79a1297
     m_Address: back_arrow_clicked
     m_ReadOnly: 0
