@@ -40,7 +40,7 @@ namespace DialogueEditor
 
             //Sets the default conversation
             SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            SetNPCConversation(FindByName("Conv_Graduation"));
+            //SetNPCConversation(FindByName("Conv_Graduation"));
 
             //Gets the data associated with conversation for further edit
             GetConversationData(currentConversation);
@@ -145,10 +145,25 @@ namespace DialogueEditor
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Conv_Tour":
-                    if(CampaignManager.dialogueEnd == false) { 
-                        GameObject tourChar = GameObject.Find("Character");
-                        tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+
+                    if (CampaignManager.dialogueEnd == false) {
+                        characters[0].gameObject.SetActive(true);
+                        for (int x = 1; x <= 8; x++)
+                        {
+                            characters[x].gameObject.SetActive(false);
+                        }
+                        characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                        characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                        characters[2].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
+                        characters[3].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
+                        characters[4].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
+                        characters[5].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
+                        characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
+                        characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
+                        characters[8].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
                     }
+
+                    
                     break;
 
                 case "Questionnaire":
@@ -202,8 +217,10 @@ namespace DialogueEditor
                     SceneManager.LoadScene("Menu");
                     break;
                 case "Conv_Tour":
-                    GameObject tourChar = GameObject.Find("Character");
-                    tourChar.gameObject.SetActive(false);
+                    for(int x = 0; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
                     CampaignManager.firstMission.SetActive(true);
                     CampaignManager.dialogueEnd = true;
                     break;
