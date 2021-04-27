@@ -45,14 +45,12 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
     public void Play_SoundFX(string sound)
     {
-        
         switch (sound)
         {
             case "front": audioSrc.PlayOneShot(frontAttackSound); break;
             case "back": audioSrc.PlayOneShot(backAttackSound); break;
             case "damage": audioSrc.PlayOneShot(damageSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
-        }
-        
+        } 
     }
 }

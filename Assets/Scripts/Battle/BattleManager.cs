@@ -324,19 +324,22 @@ public class BattleManager : MonoBehaviour
             outline.gameObject.SetActive(true);
         }
 
+        foreach(Image beast in orderBar)
+        {
+            beast.gameObject.SetActive(true);
+        }
+
         for (int x = 0; x < orderBar.Count; x++)
         {
+            if (orderBar[x].transform.childCount > 0)
+            {
+                foreach (UnityEngine.Transform child in orderBar[x].transform)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
             try
             {
-                if(orderBar[x].transform.childCount > 0)
-                {
-                    foreach (UnityEngine.Transform child in orderBar[x].transform)
-                    {
-                        Destroy(child.gameObject);
-                    }
-                    //Destroy(orderBar[x].gameObject.transform.GetChild(0).gameObject);
-                }
-                
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + roundOrder[x + turn].name));
                 beastPrefab.transform.SetParent(orderBar[x].transform);
                 beastPrefab.transform.localPosition = new Vector3(0f, -50f);
@@ -569,6 +572,7 @@ public class BattleManager : MonoBehaviour
             currentTurn = roundOrder[0];
             txtTurn.text = roundOrderTypes[0] + " " + currentTurn + "'s turn";
             turn = 0;
+
             if (healthManager.playersLeft > 0 && healthManager.enemiesLeft > 0 && roundOrderTypes[turn] == "Enemy")
             {
                 StartCoroutine(EnemyAttack());
