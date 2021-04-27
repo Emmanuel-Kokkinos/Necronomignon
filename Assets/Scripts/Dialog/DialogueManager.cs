@@ -237,7 +237,7 @@ namespace DialogueEditor
         public IEnumerator LoadConversationAsync()
         {
             //Gets all the addressable character sprites
-            AsyncOperationHandle<IList<Sprite>> characterSprites = Addressables.LoadAssetsAsync<Sprite>("Character", spr => { Debug.Log(spr.name); });
+            AsyncOperationHandle<IList<Sprite>> characterSprites = Addressables.LoadAssetsAsync<Sprite>("GameNPC", spr => { Debug.Log(spr.name); });
 
             yield return new WaitUntil(() => characterSprites.IsDone);
 
