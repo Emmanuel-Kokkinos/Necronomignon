@@ -62,6 +62,7 @@ public class LoadSettings : MonoBehaviour
 
         setOnClickFunctions();
         setVolumeSlider();
+        setFullscreenDropdown();
         getFullscreenOption();
         setResolutionsDropdown();
         setRedRoachAsset();
@@ -133,6 +134,7 @@ public class LoadSettings : MonoBehaviour
     }
 
     public void setResolutionsDropdown() {
+        int tempVal = -1;
         if (fullscreen) resolutionDropdown.interactable = false;
 
         resolutionDropdown.options.Clear();
@@ -146,10 +148,23 @@ public class LoadSettings : MonoBehaviour
             Debug.Log(resolutionsList[i].ToString()) ;
 
             if (resolutionsList[i].Equals(Screen.currentResolution))
-                resolutionDropdown.value = i;
+                tempVal = i;
         }
+        resolutionDropdown.value = tempVal;
 
-    }   
+    }
+
+    public void setFullscreenDropdown() {
+
+        fullscreenDropdown.options.Clear();
+
+        fullscreenDropdown.options.Add(new Dropdown.OptionData() { text = "Fullscreen"});
+        fullscreenDropdown.options.Add(new Dropdown.OptionData() { text = "Windowed"});
+        fullscreenDropdown.options.Add(new Dropdown.OptionData() { text = "Borderless"});
+
+        fullscreenDropdown.value = 0;
+            
+    }
     
     public void getFullscreenOption() {
         switch (fullscreenDropdown.value) {

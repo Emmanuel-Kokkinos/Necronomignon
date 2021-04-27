@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Assets/Character.meta
+guid: 5079513b9b8278943b4c458b91cb6138
+=======
 guid: cc8a63dabcea9674ab0d98c1128599cc
+>>>>>>> master:Assets/AddressableAssetsData/Windows.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
