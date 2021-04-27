@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Assets/Move.meta
 guid: e4dc5e91a4eec0b4d9fbbb1e0fd40e9a
+=======
+guid: eb679329e9200784ca507d4483fb6aaf
+>>>>>>> master:Assets/Assets/BattleFlags.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

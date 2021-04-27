@@ -28,7 +28,25 @@ public class LevelChecker : MonoBehaviour
     //unlocks the following level
     public void Progess(string levelName)
     {
+        //Tournament
+        if (lastClick == "John" && levels <= 0)
+        {
+            levels++;
+        }
+        if (lastClick == "DemonChick" && levels <= 1)
+        {
+            levels++;
+        }
+        if (lastClick == "Gabriel" && levels <= 2)
+        {
+            levels++;
+        }
+        if (lastClick == "Boss" && levels <= 3)
+        {
+            levels = 0;
+        }
 
+        //Missions of adventure
         if (lastClick == "first" && levels <= 0)
         {
             levels++;

@@ -55,8 +55,6 @@ public class Dryad_Script : Parent_Script, Parent_Beast
 
     public void front_special()
     {
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
-
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);

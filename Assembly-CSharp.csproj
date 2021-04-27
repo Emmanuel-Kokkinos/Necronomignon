@@ -171,7 +171,6 @@
     <Compile Include="Assets\Scripts\Battle\Beasts\Cthulhu_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\DreamSlime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Dryad_Script.cs" />
-    <Compile Include="Assets\Scripts\Battle\Beasts\EarthDragon.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\FatherTime_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\Kitsune_Script.cs" />
     <Compile Include="Assets\Scripts\Battle\Beasts\LuzuriaAngelicus_Script.cs" />
@@ -197,7 +196,7 @@
     <Compile Include="Assets\Scripts\Battle\LoadTutorial.cs" />
     <Compile Include="Assets\Scripts\Battle\MissionList.cs" />
     <Compile Include="Assets\Scripts\Battle\Projectile.cs" />
-    <Compile Include="Assets\Scripts\Battle\Tournament\TournamentManager.cs" />
+    <Compile Include="Assets\Scripts\Battle\Tournament\CampaignManager.cs" />
     <Compile Include="Assets\Scripts\Battle\TutorialManager.cs" />
     <Compile Include="Assets\Scripts\ConversationStart.cs" />
     <Compile Include="Assets\Scripts\Data\Beast.cs" />

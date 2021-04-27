@@ -4,25 +4,18 @@ using UnityEngine;
 
 public class StartingBeast : MonoBehaviour
 {
-    private int total;
-    public string chosenBeast;
-
-    private void Start()
-    {
-        total = 0;
-        chosenBeast = "Azdaha";
-    }
+    private int total = 0;
+    private string chosenBeast = "Azdaha";
 
     public void UpdateTotals(int value)
     {
         total += value;
-        print(total);
 
-        if(total <= -3)
+        if(total <= -2)
         {
             chosenBeast = "MotherPenance";
         }
-        else if (total >= 3)
+        else if (total >= 2)
         {
             chosenBeast = "Azdaha";
         }
@@ -30,7 +23,5 @@ public class StartingBeast : MonoBehaviour
         {
             chosenBeast = "Terraos";
         }
-
-        print(chosenBeast);
     }
 }

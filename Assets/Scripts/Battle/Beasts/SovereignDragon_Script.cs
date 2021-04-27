@@ -8,16 +8,8 @@ public class SovereignDragon_Script : Parent_Script, Parent_Beast
     [SerializeField] GameObject frontPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
-
-    private void Update()
-    {
-        
-    }
-
     public void back_special()
     {
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
-
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
