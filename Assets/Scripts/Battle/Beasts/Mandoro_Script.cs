@@ -56,10 +56,10 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
         emptyObj = new GameObject("Empty");
         GameObject arm = player.transform.Find("Left Arm").gameObject;
 
-        //string targetScript = battleManager.targets[0].name + "_Script";
-        //Debug.Log("target script " + targetScript);
+        string targetScript = battleManager.targets[0].name + "_Script";
+        Debug.Log("target script " + targetScript);
 
-        //Kitsune_Script script;
+        Kitsune_Script script;
 
         float playerX = player.transform.position.x;
         float playerY = player.transform.position.y;
