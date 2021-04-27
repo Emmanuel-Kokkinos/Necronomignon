@@ -201,6 +201,8 @@ public class LoadMission : MonoBehaviour
                 beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
                 beastDisplayPrefab.transform.localRotation = Quaternion.identity;
                 beastDisplayPrefab.transform.localScale = new Vector3(10f, 10f);
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 playerImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 

@@ -345,6 +345,8 @@ public class BattleManager : MonoBehaviour
                 beastPrefab.transform.localPosition = new Vector3(0f, -50f);
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = new Vector3(15f, 15f);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 if (roundOrderTypes[x + turn].Equals("Player"))
                 {

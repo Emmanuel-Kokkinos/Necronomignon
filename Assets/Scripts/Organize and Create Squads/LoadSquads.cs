@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DragonBones;
 
 /**
  * Handles the images and animations of squads 1 and 2 when they need to be loaded
@@ -61,6 +62,8 @@ public class LoadSquads : MonoBehaviour
                 beastPrefab.transform.localPosition = new Vector3(-10, -35);
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = new Vector3(18f, 18f);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
             }
         }
     }
@@ -83,6 +86,8 @@ public class LoadSquads : MonoBehaviour
                 beastPrefab.transform.localPosition = new Vector3(-10, -35);
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = new Vector3(18f, 18f);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
             }
         }
     }
