@@ -201,6 +201,8 @@ public class LoadMission : MonoBehaviour
                 beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
                 beastDisplayPrefab.transform.localRotation = Quaternion.identity;
                 beastDisplayPrefab.transform.localScale = new Vector3(10f, 10f);
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 playerImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
@@ -370,7 +372,10 @@ public class LoadMission : MonoBehaviour
     //plays death animation whenever someone dies
     IEnumerator PlayDeathAnimation(Beast toRemove, string owner)
     {
-        yield return new WaitForSeconds(2f);
+        //yield return new WaitForSeconds(2f);
+        GameObject slot = battleManager.getSlot(toRemove);
+        UnityArmatureComponent armature = slot.transform.GetChild(0).GetComponent<UnityArmatureComponent>();
+        yield return new WaitWhile(new System.Func<bool>(() => !armature.animation.isCompleted));
 
         GetImageToRemove(toRemove, owner).gameObject.SetActive(false);
         GameObject child = GetImageToRemove(toRemove, owner).transform.GetChild(0).gameObject;

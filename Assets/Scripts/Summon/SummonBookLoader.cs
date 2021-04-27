@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using System;
+using DragonBones;
 
 /*
  * This class handles most of the logic behind the SummonMain scene
@@ -69,7 +70,7 @@ public class SummonBookLoader : MonoBehaviour
         //Destroy old prefabs
         foreach (Image slot in slots)
         {
-            foreach (Transform child in slot.transform)
+            foreach (UnityEngine.Transform child in slot.transform)
             {
                 Destroy(child.gameObject);
             }
@@ -90,6 +91,8 @@ public class SummonBookLoader : MonoBehaviour
                 beastPrefab.transform.localPosition = new Vector3(0, -50);
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = new Vector3(30f, 30f);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 beastTexts[x % 6].GetComponent<Text>().text = summonedNames[x];
 

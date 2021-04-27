@@ -345,6 +345,8 @@ public class BattleManager : MonoBehaviour
                 beastPrefab.transform.localPosition = new Vector3(0f, -50f);
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = new Vector3(15f, 15f);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 if (roundOrderTypes[x + turn].Equals("Player"))
                 {
@@ -1227,7 +1229,6 @@ public class BattleManager : MonoBehaviour
     // Wait for the animation to finish then go back to Idle animation
     public IEnumerator AnimationWaitTime(UnityArmatureComponent beast)
     {
-        print(!beast.animation.isCompleted);
         yield return new WaitUntil(() => beast.animation.isCompleted);
         beast.animation.Play("Idle", 0);
     }
