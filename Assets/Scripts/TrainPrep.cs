@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DragonBones;
 
 //Script used to show the beast
 public class TrainPrep : MonoBehaviour
@@ -25,6 +26,8 @@ public class TrainPrep : MonoBehaviour
         beastPrefab.transform.localPosition = new Vector3(0, -50);
         beastPrefab.transform.localRotation = Quaternion.identity;
         beastPrefab.transform.localScale = new Vector3(60f, 60f);
+        beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+        beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
         b = BeastManager.getFromNameS(name.text);
 

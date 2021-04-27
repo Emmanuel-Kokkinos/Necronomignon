@@ -1771,7 +1771,7 @@ GameObject:
   - component: {fileID: 2114400711895834530}
   m_Layer: 5
   m_Name: RedRoach
-  m_TagString: Untagged
+  m_TagString: settings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3938,7 +3938,7 @@ GameObject:
   - component: {fileID: 8972240904800705900}
   m_Layer: 5
   m_Name: exitBtn
-  m_TagString: Untagged
+  m_TagString: settings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

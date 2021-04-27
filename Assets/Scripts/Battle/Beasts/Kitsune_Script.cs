@@ -49,4 +49,10 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) {
+        Debug.Log(type + " Status effect applied ");
+    }
 }
