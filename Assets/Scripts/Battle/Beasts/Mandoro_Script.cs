@@ -10,6 +10,7 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
     private GameObject emptyObj;
     public void back_special()
     {
+
         int ran = UnityEngine.Random.Range(1, 5);
         for (; ran > 0; ran--)
         {
