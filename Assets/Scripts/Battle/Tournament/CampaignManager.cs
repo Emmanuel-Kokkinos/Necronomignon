@@ -8,8 +8,16 @@ public class CampaignManager : MonoBehaviour
 {
     static public GameObject firstMission;
     static public string sceneInterface;
-    static public bool dialogueEnd = false;
+    static public bool dialogueEnd, semiDiagEnd, finDiagEnd, tourEnd = false;
+
     static public List<Sprite> enemyPictures = new List<Sprite>();
+    /*Flag to set if win each of battles:  
+     * 0 -> lose
+     * 1 -> defeat john
+     * 2 -> defeat jheera
+     * 3 -> defeat gabriel
+     */
+    public int winTourBattle = 0;
 
     // Start is called before the first frame update
     void Start()

@@ -161,11 +161,8 @@ namespace DialogueEditor
                         characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                         characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
                         characters[8].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
-                    }
-
-                    
+                    } 
                     break;
-
                 case "Questionnaire":
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
@@ -187,6 +184,11 @@ namespace DialogueEditor
                     }
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dio"));
                     break;
+                case "Conv_semi":
+                    
+
+                    break;
+                case "Conv_finals": break;
                 default:
 
                     break;
@@ -227,6 +229,16 @@ namespace DialogueEditor
                 case "Conv_Graduation":
                     LoadScenes load = gameObject.AddComponent<LoadScenes>();
                     load.LoadSelect("Tournament");
+                    break;
+                case "Conv_semi":
+                    CampaignManager.semiDiagEnd = true;
+
+                    break;
+                case "Conv_finals":
+                    CampaignManager.finDiagEnd = true;
+                    break;
+                case "Tour_end":
+                    CampaignManager.tourEnd = true;
                     break;
             }
         }
