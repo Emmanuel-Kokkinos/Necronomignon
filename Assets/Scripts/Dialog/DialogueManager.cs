@@ -40,7 +40,7 @@ namespace DialogueEditor
 
             //Sets the default conversation
             SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            //SetNPCConversation(FindByName("Questionnaire"));
+            SetNPCConversation(FindByName("Conv_Graduation"));
 
             //Gets the data associated with conversation for further edit
             GetConversationData(currentConversation);
@@ -163,6 +163,15 @@ namespace DialogueEditor
                     characters[7].gameObject.transform.localScale = new Vector3(1.3f, 1.3f);
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Thoth")); //Thoth
                     break;
+                case "Conv_Graduation":
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Gabriel
+                    for (int x = 1; x < 8; x++)
+                    {
+                        if(characters[x].gameObject != null)
+                            characters[x].gameObject.SetActive(false);
+                    }
+                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dio"));
+                    break;
                 default:
 
                     break;
@@ -197,6 +206,10 @@ namespace DialogueEditor
                     tourChar.gameObject.SetActive(false);
                     CampaignManager.firstMission.SetActive(true);
                     CampaignManager.dialogueEnd = true;
+                    break;
+                case "Conv_Graduation":
+                    LoadScenes load = gameObject.AddComponent<LoadScenes>();
+                    load.LoadSelect("Tournament");
                     break;
             }
         }
@@ -250,6 +263,20 @@ namespace DialogueEditor
             BeginConversation(currentConversation, "DialogScene");
         }
 
+        public void CharacterOutOfScene(int charId)
+        {
+            characters[charId].gameObject.SetActive(false);
+        }
+
+        public void CharacterReplace(string character)
+        {
+            characters[0].sprite = characterAssets.Find(x => x.name.Equals(character));
+        }
+
+        public void CharacterOnScene(int charId)
+        {
+            characters[charId].gameObject.SetActive(true);
+        }
 
     }
 }
