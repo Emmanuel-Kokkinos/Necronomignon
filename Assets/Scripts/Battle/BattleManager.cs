@@ -1227,6 +1227,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitUntil(() => beast.animation.isCompleted);
         beast.animation.Play("Idle", 0);
     }
+
     IEnumerator PauseWhile(System.Func<bool> condition)
     {
         if (condition == null)

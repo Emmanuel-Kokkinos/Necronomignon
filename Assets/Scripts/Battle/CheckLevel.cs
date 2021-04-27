@@ -99,23 +99,7 @@ public class CheckLevel : MonoBehaviour
         }
         if (LevelChecker.levels < 3)
         {
-            GameObject.Find("btnTour4").SetActive(false);
-        }
-        if (LevelChecker.levels < 4)
-        {
-            GameObject.Find("btnTour5").SetActive(false);
-        }
-        if (LevelChecker.levels < 5)
-        {
-            GameObject.Find("btnTour6").SetActive(false);
-        }
-        if (LevelChecker.levels < 6)
-        {
-            GameObject.Find("btnTour7").SetActive(false);
-        }
-        if (LevelChecker.levels < 7)
-        {
-            GameObject.Find("btnFinal").SetActive(false);
+            GameObject.Find("btnBoss").SetActive(false);
         }
     }
 }

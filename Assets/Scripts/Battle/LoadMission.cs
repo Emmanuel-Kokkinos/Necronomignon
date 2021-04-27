@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DragonBones;
+using UnityEngine.SceneManagement;
 
 //prepares all information and data for battle
 public class LoadMission : MonoBehaviour
@@ -90,6 +91,9 @@ public class LoadMission : MonoBehaviour
         giveUpDialog = GameObject.Find("giveUpDialog");
         if (giveUpDialog != null)
             giveUpDialog.SetActive(false);
+
+        //Turns off back button if it is a tournament
+
 
         foreach(GameObject go in slotHealthBars)
         {
@@ -261,9 +265,35 @@ public class LoadMission : MonoBehaviour
 
     void LoadDisplayPictures()
     {
-        playerProfile.sprite = Display_Picture.displayPicture;
+        
+        //Sets enemy pictures based on the tournament
+        if (CampaignManager.sceneInterface == "Tournament")
+        {
+            playerProfile.sprite = Resources.Load<Sprite>("Character_Pictures/Profile_Pictures/Dio_Front");
 
-        //Randomize enemy sprite here?
+            switch (LevelChecker.lastClick)
+            {
+                case "John":
+                    enemyProfile.sprite = CampaignManager.enemyPictures[0];
+                    break;
+                case "DemonChick":
+                    enemyProfile.sprite = CampaignManager.enemyPictures[1];
+                    break;
+                case "Gabriel":
+                    enemyProfile.sprite = CampaignManager.enemyPictures[2];
+                    break;
+                default: break;
+            }
+        }
+        else
+        {
+            //This will be used when the player can pic their picture. However, now there will only be a static Dio image here
+            playerProfile.sprite = Display_Picture.displayPicture;
+
+            //TODO: Randomize enemy sprite here?
+        }
+
+
     }
 
     //Get the images from the resources folder to be loaded
@@ -359,6 +389,7 @@ public class LoadMission : MonoBehaviour
         {
             Time.timeScale = 0;
             giveUpDialog.SetActive(true);
+                
         }
     }
 }

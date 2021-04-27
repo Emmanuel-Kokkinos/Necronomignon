@@ -10,7 +10,6 @@ public class StartingBeast : MonoBehaviour
     public void UpdateTotals(int value)
     {
         total += value;
-        print(total);
 
         if(total <= -2)
         {
@@ -24,7 +23,5 @@ public class StartingBeast : MonoBehaviour
         {
             chosenBeast = "Terraos";
         }
-
-        print(chosenBeast);
     }
 }

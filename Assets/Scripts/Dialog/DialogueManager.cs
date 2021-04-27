@@ -87,6 +87,7 @@ namespace DialogueEditor
             foreach(Image image in characters)
             {
                 image.gameObject.SetActive(true);
+                image.gameObject.transform.localScale = new Vector3(1, 1);
             }
 
             switch (screenInter)
@@ -144,8 +145,10 @@ namespace DialogueEditor
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Conv_Tour":
-                    GameObject tourChar = GameObject.Find("Character");
-                    tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    if(CampaignManager.dialogueEnd == false) { 
+                        GameObject tourChar = GameObject.Find("Character");
+                        tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    }
                     break;
 
                 case "Questionnaire":
@@ -156,8 +159,9 @@ namespace DialogueEditor
                     characters[4].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
                     characters[5].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
                     characters[6].gameObject.SetActive(false);
-                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //DEAN
-                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Irvina
+                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Irvina")); //Irvina
+                    characters[7].gameObject.transform.localScale = new Vector3(1.3f, 1.3f);
+                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Thoth")); //Thoth
                     break;
                 default:
 
@@ -191,7 +195,8 @@ namespace DialogueEditor
                 case "Conv_Tour":
                     GameObject tourChar = GameObject.Find("Character");
                     tourChar.gameObject.SetActive(false);
-                    TournamentManager.firstMission.SetActive(true);
+                    CampaignManager.firstMission.SetActive(true);
+                    CampaignManager.dialogueEnd = true;
                     break;
             }
         }

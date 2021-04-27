@@ -8,9 +8,6 @@ public class Thanatos_Script : Parent_Script, Parent_Beast
 
     public void back_special()
     {
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
-        audioSrc.PlayOneShot(frontAttackSound);
-
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
@@ -23,8 +20,6 @@ public class Thanatos_Script : Parent_Script, Parent_Beast
 
     public void front_special() 
     {
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
-
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
@@ -37,7 +32,6 @@ public class Thanatos_Script : Parent_Script, Parent_Beast
 
     public void Play_SoundFX(string sound)
     {
-
         switch (sound)
         {
             case "front": audioSrc.PlayOneShot(frontAttackSound); break;
@@ -45,7 +39,5 @@ public class Thanatos_Script : Parent_Script, Parent_Beast
             case "damage": audioSrc.PlayOneShot(damageSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
-        
-        
     }
 }
