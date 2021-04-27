@@ -8,9 +8,10 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     private GameObject emptyObj;
+    private GameObject statusEffect ;
+    private int statusCounter = -1;
     public void back_special()
     {
-
         int ran = UnityEngine.Random.Range(1, 5);
         for (; ran > 0; ran--)
         {
@@ -48,12 +49,17 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
     public async void PlayBackMove()
     {
-        await Task.Delay(500);
+        //await Task.Delay(500);
 
         GameObject player = this.gameObject;
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
         emptyObj = new GameObject("Empty");
         GameObject arm = player.transform.Find("Left Arm").gameObject;
+
+        //string targetScript = battleManager.targets[0].name + "_Script";
+        //Debug.Log("target script " + targetScript);
+
+        //Kitsune_Script script;
 
         float playerX = player.transform.position.x;
         float playerY = player.transform.position.y;
@@ -69,16 +75,9 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
         double angle = tan * (180 / Math.PI);
 
-        //Debug.Log("playerX + playerY: " + playerX + " " + playerY);
-        //Debug.Log("targetX + targetY : " + targetX + " " + targetY);
-        //Debug.Log("deltaX + deltaY : " + deltaX + " " + deltaY);
-        //Debug.Log("delta : " + delta);
-        //Debug.Log("Angle : " + angle);
-
         Component[] allComp = emptyObj.GetComponents<Component>();
         if (allComp.Length == 1)
         {
-            Debug.Log("fuck");
             emptyObj = new GameObject("Empty");
             emptyObj.transform.SetParent(arm.transform);
             emptyObj.transform.localPosition = new Vector2(-1.7f, 2.5f);
@@ -110,4 +109,8 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
             case "death": audioSrc.PlayOneShot(deathSound); break;
         } 
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
 }
