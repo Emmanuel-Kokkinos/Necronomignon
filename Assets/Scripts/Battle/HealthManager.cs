@@ -333,6 +333,9 @@ public class HealthManager : MonoBehaviour
     IEnumerator winnersAnimations()
     {
         yield return new WaitForSeconds(2f);
+
+        ConversationStart.winBattleConvo();
+
         foreach (GameObject g in winners)
         {
             if(g.transform.childCount > 0)
@@ -353,7 +356,8 @@ public class HealthManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         victoryScreen.SetActive(false);
-        LoadScenes load = new LoadScenes();
+
+        LoadScenes load = gameObject.AddComponent<LoadScenes>();
 
         if (CampaignManager.sceneInterface == "Campaign")
             load.LoadSelect("Map");

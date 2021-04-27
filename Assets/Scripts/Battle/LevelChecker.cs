@@ -32,14 +32,17 @@ public class LevelChecker : MonoBehaviour
         if (lastClick == "John" && levels <= 0)
         {
             levels++;
+            CampaignManager.winTourBattle = levels;
         }
         if (lastClick == "DemonChick" && levels <= 1)
         {
             levels++;
+            CampaignManager.winTourBattle = levels;
         }
         if (lastClick == "Gabriel" && levels <= 2)
         {
             levels++;
+            CampaignManager.winTourBattle = levels;
         }
         if (lastClick == "Boss" && levels <= 3)
         {

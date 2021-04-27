@@ -384,6 +384,13 @@ public class LoadMission : MonoBehaviour
         {
             Time.timeScale = 1;
             giveUpDialog.SetActive(false);
+
+            LoadScenes load = gameObject.AddComponent<LoadScenes>();
+
+            if (CampaignManager.sceneInterface == "Campaign")
+                load.LoadSelect("Map");
+            else if (CampaignManager.sceneInterface == "Tournament")
+                load.LoadSelect("Tournament");
         }
         else
         {
