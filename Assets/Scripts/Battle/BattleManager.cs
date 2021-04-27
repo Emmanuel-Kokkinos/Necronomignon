@@ -1227,7 +1227,6 @@ public class BattleManager : MonoBehaviour
     // Wait for the animation to finish then go back to Idle animation
     public IEnumerator AnimationWaitTime(UnityArmatureComponent beast)
     {
-        print(!beast.animation.isCompleted);
         yield return new WaitUntil(() => beast.animation.isCompleted);
         beast.animation.Play("Idle", 0);
     }

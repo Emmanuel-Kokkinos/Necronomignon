@@ -370,7 +370,10 @@ public class LoadMission : MonoBehaviour
     //plays death animation whenever someone dies
     IEnumerator PlayDeathAnimation(Beast toRemove, string owner)
     {
-        yield return new WaitForSeconds(2f);
+        //yield return new WaitForSeconds(2f);
+        GameObject slot = battleManager.getSlot(toRemove);
+        UnityArmatureComponent armature = slot.transform.GetChild(0).GetComponent<UnityArmatureComponent>();
+        yield return new WaitWhile(new System.Func<bool>(() => !armature.animation.isCompleted));
 
         GetImageToRemove(toRemove, owner).gameObject.SetActive(false);
         GameObject child = GetImageToRemove(toRemove, owner).transform.GetChild(0).gameObject;
