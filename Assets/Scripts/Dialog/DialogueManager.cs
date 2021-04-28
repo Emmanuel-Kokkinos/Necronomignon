@@ -40,7 +40,8 @@ namespace DialogueEditor
 
             //Sets the default conversation
             //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            SetNPCConversation(FindByName("Conv_Intro"));
+             SetNPCConversation(FindByName("Conv_Intro"));
+            // SetNPCConversation(FindByName("Conv_Opening"));
 
             //Sets tournament conversations
             if (SceneManager.GetActiveScene().name == "Tournament")
@@ -138,6 +139,8 @@ namespace DialogueEditor
                     characters[6].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
                     characters[7].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
+
+                    characters[8].gameObject.SetActive(false);
                     break;
                 case "Conv_Intro":
 
@@ -158,8 +161,8 @@ namespace DialogueEditor
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/housePX");
                     break;
                 case "Conv_Academy":
-
-                   for (int x = 4; x <= 7; x++)
+                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    for (int x = 4; x < 7; x++)
                     {
                         characters[x].gameObject.SetActive(false);
                     }
@@ -420,6 +423,13 @@ namespace DialogueEditor
                 chars.gameObject.SetActive(true);
 
             SetTournamentSprites();
+        }
+
+        //Temporary method to jump to tournament
+        public void skipToTournament()
+        {
+            SetNPCConversation(FindByName("Conv_Tour"));
+            BeginConversation(currentConversation, "Tournament");
         }
 
     }
