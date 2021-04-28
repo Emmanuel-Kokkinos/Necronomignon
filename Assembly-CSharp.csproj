@@ -188,6 +188,7 @@
     <Compile Include="Assets\Scripts\Battle\Buff.cs" />
     <Compile Include="Assets\Scripts\Battle\CheckLevel.cs" />
     <Compile Include="Assets\Scripts\Battle\DamageOutput.cs" />
+    <Compile Include="Assets\Scripts\Battle\DestroyOnExit.cs" />
     <Compile Include="Assets\Scripts\Battle\FriendlyClick.cs" />
     <Compile Include="Assets\Scripts\Battle\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Battle\HealthManager.cs" />
