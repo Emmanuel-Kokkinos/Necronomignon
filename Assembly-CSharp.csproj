@@ -197,6 +197,7 @@
     <Compile Include="Assets\Scripts\Battle\MissionList.cs" />
     <Compile Include="Assets\Scripts\Battle\Projectile.cs" />
     <Compile Include="Assets\Scripts\Battle\Tournament\CampaignManager.cs" />
+    <Compile Include="Assets\Scripts\Battle\TutorialClicking.cs" />
     <Compile Include="Assets\Scripts\Battle\TutorialManager.cs" />
     <Compile Include="Assets\Scripts\ConversationStart.cs" />
     <Compile Include="Assets\Scripts\Data\Beast.cs" />

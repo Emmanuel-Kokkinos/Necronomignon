@@ -17,6 +17,7 @@ public class TutorialManager : MonoBehaviour
     public GameObject king;
     public GameObject mando;
     public GameObject dream;
+    public GameObject wyvernSpot;
     public GameObject wyvern;
     public GameObject exit;
     
@@ -25,7 +26,6 @@ public class TutorialManager : MonoBehaviour
         scene = SceneManager.GetActiveScene();
         dream.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
         mando.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
-        wyvern.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
         exit.SetActive(false);
         if (scene.name == "Tutorial3")
         {
@@ -149,5 +149,10 @@ public class TutorialManager : MonoBehaviour
     public void unlockExit()
     {
         exit.SetActive(true);
+    }
+
+    public void PlaceWyvern()
+    {
+        wyvernSpot.gameObject.SetActive(true);
     }
 }

@@ -39,8 +39,8 @@ namespace DialogueEditor
             timesUsedCounter = conversationNames.Count - 1;
 
             //Sets the default conversation
-            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            SetNPCConversation(FindByName("Professor"));
+            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            //SetNPCConversation(FindByName("SquadSetup"));
             //SetNPCConversation(FindByName("Conv_Intro"));
             // SetNPCConversation(FindByName("Conv_Opening"));
 
@@ -293,7 +293,11 @@ namespace DialogueEditor
                     SetNPCConversation(FindByName("Conv_Graduation"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
-                case "Tutorial1":
+                case "SquadSetup":
+                    SetNPCConversation(FindByName("Professor"));
+                    BeginConversation(currentConversation, "Tutorial1");
+                    break;
+                case "Professor":
                     SceneManager.LoadScene("Menu");
                     break;
                 case "Conv_Graduation":

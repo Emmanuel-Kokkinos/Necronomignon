@@ -121,6 +121,107 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &28198142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28198143}
+  - component: {fileID: 28198145}
+  - component: {fileID: 28198144}
+  - component: {fileID: 28198146}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &28198143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28198142}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 755312121}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28198144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28198142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &28198145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28198142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &28198146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28198142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1421393756}
+        m_MethodName: PlaceWyvern
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 2
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &29630521
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,7 +833,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 21b95a092c94f2c4480412d628025237,
+      objectReference: {fileID: 21300000, guid: d41c012ebf130fd4d96fb2052ebbc6e7,
         type: 3}
     m_RemovedComponents:
     - {fileID: 404627815824699239, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
@@ -745,6 +846,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 425199591}
     m_Modifications:
+    - target: {fileID: 1836909862923655991, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6151228420661868232, guid: e8908b8a57870024cb335469af25f6f2,
         type: 3}
       propertyPath: m_Name
@@ -868,12 +974,12 @@ PrefabInstance:
     - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -204
+      value: -360
       objectReference: {fileID: 0}
     - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
         type: 3}
@@ -893,7 +999,7 @@ PrefabInstance:
     - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -190
+      value: -171
       objectReference: {fileID: 0}
     - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
         type: 3}
@@ -904,6 +1010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8908b8a57870024cb335469af25f6f2, type: 3}
@@ -1029,38 +1140,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 59
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":665,"yPos":293},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"Raise
-    hand","parentUIDs":[35,47],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":47}],"EditorInfo":{"isRoot":false,"xPos":668,"yPos":340},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"Keep
-    head down","parentUIDs":[35],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":180,"yPos":303},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"Conglomerate","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":180,"yPos":359},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Zeograth
-    ","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":183,"yPos":421},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"Dryad","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":183,"yPos":477},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"Cthulhu","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":966,"yPos":398},"ID":48,"ParamActions":[],"TMPFontGUID":null,"Text":"Embrace
-    the shame","parentUIDs":[47],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":true,"xPos":171,"yPos":-228},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright
-    class, we''ll start with the basics.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":414,"yPos":-229},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Basic
-    attacks happen between your summoned creature and your opponent.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":657,"yPos":-229},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"My
-    Mandoro will demonstrate by attacking this pawn statue","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":-109},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":418,"yPos":-112},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"as
-    you can see, taking down weak enemies is a pieceof cake.","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":173,"yPos":-111},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"sometimes
-    however, we have more than one enemy to tackle","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":175,"yPos":2},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"For
-    example, we have three enemies left on the feild.","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":424,"yPos":1},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"Attecking
-    them individually may be too time consuming","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":-8},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"This
-    is where multi attacks come into play","parentUIDs":[28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":94},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Dream
-    Slime may prove valueable in this senario as it has a slash attack.","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":427,"yPos":102},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":177,"yPos":98},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"As
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":772,"yPos":543},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"Raise
+    hand","parentUIDs":[35,47],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":47}],"EditorInfo":{"isRoot":false,"xPos":775,"yPos":590},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"Keep
+    head down","parentUIDs":[35],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":287,"yPos":553},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"Conglomerate","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":287,"yPos":609},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Zeograth
+    ","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":290,"yPos":671},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"Dryad","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":290,"yPos":727},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"Cthulhu","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":1073,"yPos":648},"ID":48,"ParamActions":[],"TMPFontGUID":null,"Text":"Embrace
+    the shame","parentUIDs":[47],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":true,"xPos":278,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright
+    class, we''ll start with the basics.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":521,"yPos":21},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Basic
+    attacks happen between your summoned creature and your opponent.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":764,"yPos":21},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"My
+    Mandoro will demonstrate by attacking this pawn statue","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":767,"yPos":141},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":525,"yPos":138},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"as
+    you can see, taking down weak enemies is a pieceof cake.","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":280,"yPos":139},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"sometimes
+    however, we have more than one enemy to tackle","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":282,"yPos":252},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"For
+    example, we have three enemies left on the feild.","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":531,"yPos":251},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"Attecking
+    them individually may be too time consuming","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":767,"yPos":242},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+    is where multi attacks come into play","parentUIDs":[28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":767,"yPos":344},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Dream
+    Slime may prove valueable in this senario as it has a slash attack.","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":534,"yPos":352},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":284,"yPos":348},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"As
     you can see, tough we were not able to eliminate all the foes we targeted, we
-    still managed to damage them, putting us in a better position.","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":178,"yPos":206},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"however,
-    sometimes even this method is insufecient ","parentUIDs":[32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":428,"yPos":206},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Particularly
-    If you were to fight an enemy with a healer.","parentUIDs":[33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":665,"yPos":206},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
-    here can give me an example of a healer?","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":40},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":428,"yPos":299},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah
-    yes, you. Please give us an example. ","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":422,"yPos":469},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"Unfortunatly,
-    incorrect. thank you for trying at least. unlike the rest of the class.","parentUIDs":[45,39,40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":651,"yPos":401},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"Very
-    good, correct. ","parentUIDs":[41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":173,"yPos":545},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"Really,
-    you think Cthulhu. CTHULHU, is a healer. perhaps you should spent more time studying.","parentUIDs":[42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":48}],"EditorInfo":{"isRoot":false,"xPos":957,"yPos":278},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"Really,
-    no one is willing to try. or even at least guess?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":933,"yPos":495},"ID":49,"ParamActions":[],"TMPFontGUID":null,"Text":"Disapointing.","parentUIDs":[48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":51}],"EditorInfo":{"isRoot":false,"xPos":662,"yPos":521},"ID":50,"ParamActions":[],"TMPFontGUID":null,"Text":"The
-    answer is Dryad. dispite Having low HP herself, she is quite useful as a healer.","parentUIDs":[43,44,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":52}],"EditorInfo":{"isRoot":false,"xPos":668,"yPos":640},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"because
-    of these features common in healers they tend to be guarded by a tank","parentUIDs":[50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":53}],"EditorInfo":{"isRoot":false,"xPos":427,"yPos":640},"ID":52,"ParamActions":[],"TMPFontGUID":null,"Text":"this
-    is where Wyvern comes into play.","parentUIDs":[51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":54}],"EditorInfo":{"isRoot":false,"xPos":186,"yPos":641},"ID":53,"ParamActions":[],"TMPFontGUID":null,"Text":"wyvern
+    still managed to damage them, putting us in a better position.","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":285,"yPos":456},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"however,
+    sometimes even this method is insufecient ","parentUIDs":[32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":535,"yPos":456},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Particularly
+    If you were to fight an enemy with a healer.","parentUIDs":[33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":772,"yPos":456},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
+    here can give me an example of a healer?","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":40},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":535,"yPos":549},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah
+    yes, you. Please give us an example. ","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":529,"yPos":719},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"Unfortunatly,
+    incorrect. thank you for trying at least. unlike the rest of the class.","parentUIDs":[45,39,40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":758,"yPos":651},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"Very
+    good, correct. ","parentUIDs":[41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":280,"yPos":795},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"Really,
+    you think Cthulhu. CTHULHU, is a healer. perhaps you should spent more time studying.","parentUIDs":[42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":48}],"EditorInfo":{"isRoot":false,"xPos":1064,"yPos":528},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"Really,
+    no one is willing to try. or even at least guess?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":1040,"yPos":745},"ID":49,"ParamActions":[],"TMPFontGUID":null,"Text":"Disapointing.","parentUIDs":[48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":51}],"EditorInfo":{"isRoot":false,"xPos":769,"yPos":771},"ID":50,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    answer is Dryad. dispite Having low HP herself, she is quite useful as a healer.","parentUIDs":[43,44,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":52}],"EditorInfo":{"isRoot":false,"xPos":775,"yPos":890},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"because
+    of these features common in healers they tend to be guarded by a tank","parentUIDs":[50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":53}],"EditorInfo":{"isRoot":false,"xPos":534,"yPos":890},"ID":52,"ParamActions":[],"TMPFontGUID":null,"Text":"this
+    is where Wyvern comes into play.","parentUIDs":[51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":54}],"EditorInfo":{"isRoot":false,"xPos":293,"yPos":891},"ID":53,"ParamActions":[],"TMPFontGUID":null,"Text":"wyvern
     has a peircing attack that can attack both the front and back row. When a priority
-    target is being protected, a column attack is invalueable ","parentUIDs":[52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":55}],"EditorInfo":{"isRoot":false,"xPos":188,"yPos":743},"ID":54,"ParamActions":[],"TMPFontGUID":null,"Text":"Observe","parentUIDs":[53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":428,"yPos":744},"ID":55,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":57}],"EditorInfo":{"isRoot":false,"xPos":678,"yPos":751},"ID":56,"ParamActions":[],"TMPFontGUID":null,"Text":"As
-    you can see we have now defeted the enemy team, and are victorious.","parentUIDs":[55],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":58}],"EditorInfo":{"isRoot":false,"xPos":683,"yPos":862},"ID":57,"ParamActions":[],"TMPFontGUID":null,"Text":"of
+    target is being protected, a column attack is invalueable ","parentUIDs":[52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":55}],"EditorInfo":{"isRoot":false,"xPos":295,"yPos":993},"ID":54,"ParamActions":[],"TMPFontGUID":null,"Text":"Observe","parentUIDs":[53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":535,"yPos":994},"ID":55,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":57}],"EditorInfo":{"isRoot":false,"xPos":785,"yPos":1001},"ID":56,"ParamActions":[],"TMPFontGUID":null,"Text":"As
+    you can see we have now defeted the enemy team, and are victorious.","parentUIDs":[55],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":58}],"EditorInfo":{"isRoot":false,"xPos":790,"yPos":1112},"ID":57,"ParamActions":[],"TMPFontGUID":null,"Text":"of
     course in a real battle the enemy would likely get in an attack or two. maybe
-    even a kill.","parentUIDs":[56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":437,"yPos":854},"ID":58,"ParamActions":[],"TMPFontGUID":null,"Text":"be
+    even a kill.","parentUIDs":[56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":544,"yPos":1104},"ID":58,"ParamActions":[],"TMPFontGUID":null,"Text":"be
     sure to use stratigic placments when forming you team.","parentUIDs":[57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Professor
@@ -1122,6 +1233,94 @@ Transform:
   m_Father: {fileID: 1799782102}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &421348957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421348958}
+  - component: {fileID: 421348960}
+  - component: {fileID: 421348959}
+  - component: {fileID: 421348962}
+  m_Layer: 5
+  m_Name: WyvernSpot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &421348958
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421348957}
+  m_LocalRotation: {x: 0.37807038, y: -0.18886822, z: 0.5486133, w: 0.72139794}
+  m_LocalPosition: {x: 0, y: 0, z: 90.56584}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 425199591}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -350.662, y: -115.66894}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &421348959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421348957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.43720198, g: 1, b: 0.23113209, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: dd40035c333b64e2cb384bc6fe49357d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &421348960
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421348957}
+  m_CullTransparentMesh: 0
+--- !u!114 &421348962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421348957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8ddf76c8e7ea649bf8a0a2e8071fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialManager: {fileID: 1421393756}
 --- !u!1 &425199587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,6 +1422,7 @@ RectTransform:
   - {fileID: 839600680}
   - {fileID: 2040099923}
   - {fileID: 2035512329}
+  - {fileID: 421348958}
   - {fileID: 54975755}
   - {fileID: 1308051590}
   - {fileID: 620689283}
@@ -1370,7 +1570,7 @@ PrefabInstance:
     - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
         type: 3}
@@ -1390,12 +1590,12 @@ PrefabInstance:
     - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -249
+      value: -405
       objectReference: {fileID: 0}
     - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -267
+      value: -248
       objectReference: {fileID: 0}
     - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
         type: 3}
@@ -1406,6 +1606,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3efecb4663a20344ab08731a9a6a4648, type: 3}
@@ -1524,7 +1729,7 @@ RectTransform:
   m_Children:
   - {fileID: 988953877}
   m_Father: {fileID: 425199591}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2073,7 +2278,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684259953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425199591}
@@ -2081,7 +2286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 335, y: 59}
+  m_AnchoredPosition: {x: 442, y: 57}
   m_SizeDelta: {x: 160, y: 146.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &684259955
@@ -2175,6 +2380,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684259953}
   m_CullTransparentMesh: 0
+--- !u!1 &755312120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 755312121}
+  - component: {fileID: 755312122}
+  m_Layer: 0
+  m_Name: SquadSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &755312121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755312120}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 28198143}
+  m_Father: {fileID: 1799782102}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &755312122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755312120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 3
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":-26,"yPos":61},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"When
+    in battle, formation is key. Each Familiar has their own skills, one for a front
+    position, and one for a back position. These abilities are varied. For example,
+    in the front row, a Wyvern will attack with its bladed tail. In the back row,
+    a Wyvern will use a projectile tornado to damage his foes.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":228,"yPos":62},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
+    Dio, come up so that we can demonstrate this.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":472,"yPos":62},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Try
+    placing Wyvern in the front row!","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  saveVersion: 110
+  DefaultName: SquadSetup
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 28198145}
+  - {fileID: 28198144}
+  - {fileID: 28198146}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1421393756}
+        m_MethodName: PlaceWyvern
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &839600679
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,7 +2481,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839600679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425199591}
@@ -2210,7 +2489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251, y: -195}
+  m_AnchoredPosition: {x: 358, y: -197}
   m_SizeDelta: {x: 185.90028, y: 154.78485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &839600681
@@ -2331,7 +2610,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858522909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425199591}
@@ -2339,7 +2618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 312, y: -63}
+  m_AnchoredPosition: {x: 419, y: -65}
   m_SizeDelta: {x: 124.06877, y: 154.78485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &858522911
@@ -3187,6 +3466,7 @@ MonoBehaviour:
   king: {fileID: 2040099922}
   mando: {fileID: 2035512328}
   dream: {fileID: 1308051589}
+  wyvernSpot: {fileID: 421348957}
   wyvern: {fileID: 54975754}
   exit: {fileID: 620689282}
 --- !u!114 &1421393759
@@ -4119,6 +4399,7 @@ Transform:
   - {fileID: 1152405404}
   - {fileID: 534959972}
   - {fileID: 372797331}
+  - {fileID: 755312121}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4157,12 +4438,12 @@ PrefabInstance:
     - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -147
+      value: -303
       objectReference: {fileID: 0}
     - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -66
+      value: -47
       objectReference: {fileID: 0}
     - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
         type: 3}
@@ -4173,6 +4454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 6483131866244334955, guid: ce52d57fb71d94b488e6ac1e02af8b87,
         type: 3}
@@ -4529,7 +4815,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: af663a2687ad9324280c3fbb955dc19e,
+      objectReference: {fileID: 21300000, guid: 2fb7c5ff932c41f42851c3748d9f0af2,
         type: 3}
     m_RemovedComponents:
     - {fileID: 404627815824699239, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
@@ -4574,7 +4860,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040099922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -29}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 425199591}
@@ -4582,7 +4868,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 447, y: -221}
+  m_AnchoredPosition: {x: 554, y: -223}
   m_SizeDelta: {x: 210.99913, y: 180.91037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2040099924
@@ -4691,7 +4977,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071319205}
   m_LocalRotation: {x: 0.37998712, y: -0.18498166, z: 0.5559815, w: 0.7157347}
-  m_LocalPosition: {x: 0, y: 0, z: 22}
+  m_LocalPosition: {x: 0, y: 0, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425199591}
@@ -4699,7 +4985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 48.559002, y: 13.788001, z: 81.923004}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 389, y: -175}
+  m_AnchoredPosition: {x: 496, y: -177}
   m_SizeDelta: {x: 684.7, y: 443.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2071319207
@@ -4765,7 +5051,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075495886}
   m_LocalRotation: {x: 0.37807038, y: -0.18886822, z: 0.5486133, w: 0.72139794}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0000120926925}
+  m_LocalPosition: {x: 0, y: 0, z: 56.99999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425199591}
@@ -4773,7 +5059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 48.826004, y: 12.485001, z: 80.19}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -326.7, y: -188.3}
+  m_AnchoredPosition: {x: -482.7, y: -169.3}
   m_SizeDelta: {x: 684.7, y: 443.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075495888
