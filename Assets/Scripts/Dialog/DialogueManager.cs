@@ -36,12 +36,11 @@ namespace DialogueEditor
             NPCConversationToList();
 
             //Last item of list
-            timesUsedCounter = conversationNames.Count - 1;
+            timesUsedCounter = 0;
 
             //Sets the default conversation
-            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            //SetNPCConversation(FindByName("Questionnaire"));
-            //SetNPCConversation(FindByName("Conv_Intro"));
+            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            SetNPCConversation(FindByName("Conv_Intro"));
             // SetNPCConversation(FindByName("Conv_Opening"));
 
             //Sets tournament conversations
@@ -50,8 +49,9 @@ namespace DialogueEditor
 
                 if(CampaignManager.winTourBattle == 0)
                 {
-                   
+                    CampaignManager.dialogueEnd = false;
                     SetNPCConversation(FindByName("Conv_Tour"));
+                    
                 }
                 else
                 {
@@ -142,6 +142,8 @@ namespace DialogueEditor
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
 
                     characters[8].gameObject.SetActive(false);
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Waiting_Room");
                     break;
                 case "Conv_Intro":
 
@@ -167,6 +169,9 @@ namespace DialogueEditor
                     {
                         characters[x].gameObject.SetActive(false);
                     }
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Miskatonic");
+
                     break;
                     //Moved tutorial to dialogue manager so it can be loaded directly from dialogue
                 case "Tutorial1":
@@ -194,7 +199,9 @@ namespace DialogueEditor
                         characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                         characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
                         characters[8].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
-                    } 
+                    }
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Colosseum");
                     break;
                 case "Questionnaire":
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
@@ -216,6 +223,8 @@ namespace DialogueEditor
                             characters[x].gameObject.SetActive(false);
                     }
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dio"));
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Graduation_Hall");
                     break;
                 case "Conv_semi":
                     if (CampaignManager.semiDiagEnd == false)
@@ -234,8 +243,16 @@ namespace DialogueEditor
                     }
                     
                     break;
-                case "Tourn_End":
-                    SetTournamentSprites();
+                case "Tourn_end":
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                    characters[2].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
+                    characters[3].gameObject.SetActive(false); //Jheera
+                    characters[4].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
+                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
+                    characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
+                    characters[7].gameObject.SetActive(false); //Neput
+                    characters[8].gameObject.SetActive(false); //Faraday
                     break;
                 case "Conv_Auriga":
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
@@ -248,6 +265,8 @@ namespace DialogueEditor
                         else
                             c++;
                     }
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/forest_mirrulak");
                     break;
                 case "Conv_Interlude":
 
@@ -256,10 +275,13 @@ namespace DialogueEditor
                     characters[2].gameObject.SetActive(false);
                     characters[5].gameObject.SetActive(false);
 
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Party_Scene");
                     break;
                 case "FallMirrulak_Intro":
                     foreach (Image chars in characters)
                         chars.gameObject.SetActive(false);
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Near_Mirrulak");
                     break;
                 default:
 
@@ -271,7 +293,7 @@ namespace DialogueEditor
         public void ConversationEnd()
         {
             string convname = currentConversation.DefaultName;
-            timesUsedCounter--;
+            timesUsedCounter++;
 
             //Saving.saveAll();
 
@@ -290,6 +312,7 @@ namespace DialogueEditor
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Questionnaire":
+                    Saving.saveAll();
                     SetNPCConversation(FindByName("Conv_Graduation"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
@@ -318,13 +341,24 @@ namespace DialogueEditor
                     break;
                 case "Conv_finals":
                     CampaignManager.finDiagEnd = true;
-
+                    for (int x = 0; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
                     break;
                 case "Tour_end":
+                    for (int x = 0; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
+
                     CampaignManager.tourEnd = true;
-                    //Begin a battle with John and then with gabriel
+                    //Begin a battle with John and then with gabriel for now only starts auriga
+                    SetNPCConversation(FindByName("Conv_Auriga"));
+                    BeginConversation(currentConversation, "Tournament");
                     break;
                 case "Conv_Auriga":
+                    Saving.saveAll();
                     SetNPCConversation(FindByName("Conv_Interlude"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
