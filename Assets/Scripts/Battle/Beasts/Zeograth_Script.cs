@@ -44,7 +44,7 @@ public class Zeograth_Script : Parent_Script, Parent_Beast
     }
     public string Beast_Name()
     {
-        return "Mandoro";
+        return "Zeograth";
     }
     public void checkStatusEffect() { }
 
