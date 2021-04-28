@@ -202,7 +202,7 @@ public class LoadMission : MonoBehaviour
                 beastDisplayPrefab.transform.SetParent(playerImgs[x].transform);
                 beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
                 beastDisplayPrefab.transform.localRotation = Quaternion.identity;
-                beastDisplayPrefab.transform.localScale = beastPrefab.transform.localScale * .33f;
+                beastDisplayPrefab.transform.localScale = beastPrefab.transform.localScale * .4f;
                 beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
                 beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
