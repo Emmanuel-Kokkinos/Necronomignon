@@ -50,17 +50,7 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
     public async void PlayBackMove(){
         GameObject player = this.gameObject;
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
-        emptyObj = new GameObject("Empty");
         GameObject arm = player.transform.Find("Left Arm").gameObject;
-
-        string enemy = battleManager.targets[0].name;
-        string targetScript = enemy + "_Script (Script)";
-        Debug.Log("target script " + targetScript);
-
-        GameObject kit = GameObject.Find(enemy + "(Clone)");
-        Parent_Beast script = kit.GetComponent<Parent_Beast>();
-
-        script.applyStatusEffect("Sleep");
 
         float playerX = player.transform.position.x;
         float playerY = player.transform.position.y;
@@ -115,6 +105,19 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
     public void checkStatusEffect() { }
 
     public void applyStatusEffect(string type) { }
+
+    public void getTargetScript() {
+        emptyObj = new GameObject("Empty");
+
+        string enemy = battleManager.targets[0].name;
+        string targetScript = enemy + "_Script (Script)";
+        //Debug.Log("target script " + targetScript);
+
+        GameObject kit = GameObject.Find(enemy + "(Clone)");
+        Parent_Beast script = kit.GetComponent<Parent_Beast>();
+
+        script.applyStatusEffect("Sleep");
+    }
 
     public string Beast_Name() {
         return "Mandoro";

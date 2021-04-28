@@ -6,6 +6,10 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
+
+    private GameObject statusEffect;
+    private string statusName;
+    private int statusCounter = -1;
     public void back_special()
     {
         ProjectileAnimation();
@@ -50,10 +54,34 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
         }
     }
 
-    public void checkStatusEffect() { }
+    public void checkStatusEffect() {
+    //status effect is done
+        if (statusCounter == 3) {
+            statusCounter = -1;
+            //destroy prefab
+            return;
+        }
+
+        statusCounter++;
+    }
 
     public void applyStatusEffect(string type) {
+        if (statusCounter != -1) return;
+
+        statusCounter = 0;
+
         Debug.Log(type + " Status effect applied ");
+
+        statusEffect = (GameObject)Instantiate(Resources.Load("Prefabs/Moves/Move"));
+        statusEffect.transform.SetParent(this.transform);
+
+
+        statusEffect.transform.localPosition = new Vector2(73, 0);
+        statusEffect.transform.localScale = new Vector2(1f, 1f);
+        statusEffect.transform.SetAsFirstSibling();
+
+        statusEffect.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Beasts_Moves/Mandoro/Mandoro_Move_Controller") as RuntimeAnimatorController;
+        statusEffect.GetComponent<Animator>().SetTrigger("Back");
     }
 
     public string Beast_Name() {
