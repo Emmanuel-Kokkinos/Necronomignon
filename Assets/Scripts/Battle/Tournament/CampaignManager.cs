@@ -21,20 +21,25 @@ public class CampaignManager : MonoBehaviour
      */
     public static int winTourBattle = 0;
 
-    public static bool dialoguePlays = true;
-
     // Start is called before the first frame update
     void Start()
     {
         //Makes first button dissapear so it can be active once dialogue ends
         firstMission = GameObject.Find("btnTour1");
-        
+        GameObject conversation = GameObject.Find("ConversationManager");
 
         if (firstMission != null && dialogueEnd == false)
             firstMission.SetActive(false);
 
         //When Dialogue Ends once, don't repeat
-        
+        /*if(dialogueEnd == true)
+        {
+            if (conversation != null)
+            {
+                conversation.SetActive(false);
+            }
+        }*/
+
         BuildTournament();
     }
 
@@ -61,4 +66,5 @@ public class CampaignManager : MonoBehaviour
         enemyPictures.Add(Resources.Load<Sprite>("Character_Pictures/Profile_Pictures/Gabriel_Front"));
     }
 
+    
 }

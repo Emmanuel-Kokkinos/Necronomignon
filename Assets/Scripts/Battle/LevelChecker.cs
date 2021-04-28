@@ -33,19 +33,16 @@ public class LevelChecker : MonoBehaviour
         {
             levels++;
             CampaignManager.winTourBattle = levels;
-            Saving.saveAll();
         }
         if (lastClick == "DemonChick" && levels <= 1)
         {
             levels++;
             CampaignManager.winTourBattle = levels;
-            Saving.saveAll();
         }
         if (lastClick == "Gabriel" && levels <= 2)
         {
             levels++;
             CampaignManager.winTourBattle = levels;
-            Saving.saveAll();
         }
         if (lastClick == "Boss" && levels <= 3)
         {

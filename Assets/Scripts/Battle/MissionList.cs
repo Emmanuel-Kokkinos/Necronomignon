@@ -88,7 +88,7 @@ public class MissionList : MonoBehaviour
             b.defence = 30;
             enemies.Add(b);
             enemies.Add(null);
-            enemies.Add(null);
+            enemies.Add(beastManager.getFromName("Zeograth"));
             enemies.Add(null);
             enemies.Add(beastManager.getFromName("Dryad"));
             enemies.Add(null);
@@ -99,7 +99,7 @@ public class MissionList : MonoBehaviour
             {
                 if (be != null)
                 {
-                    be.setTierUpper(2);
+                    be.setTierUpper(1);
                 }
             }
 
@@ -115,16 +115,13 @@ public class MissionList : MonoBehaviour
             enemies.Add(b);
             enemies.Add(null);
             enemies.Add(BeastManager.getFromNameS("Conglomerate"));
-            //enemies.Add(null);
-            enemies.Add(null);
+            enemies.Add(BeastManager.getFromNameS("Mandoro"));
             enemies.Add(beastManager.getFromName("Dryad"));
-            //enemies.Add(null);
             enemies.Add(null);
             enemies.Add(null);
             b = beastManager.getFromName("Kitsune");
             b.power = 3;
             enemies.Add(b);
-            //enemies.Add(null);
             enemies.Add(null);
             enemies.Add(null);
             enemies.Add(null);
@@ -132,7 +129,7 @@ public class MissionList : MonoBehaviour
             {
                 if (be != null)
                 {
-                    be.setTierUpper(2);
+                    be.setTierUpper(1);
                 }
             }
             summoner.xp = 15;
