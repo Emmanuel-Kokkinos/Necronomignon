@@ -51,6 +51,7 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
         GameObject player = this.gameObject;
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
         GameObject arm = player.transform.Find("Left Arm").gameObject;
+        emptyObj = new GameObject("Empty");
 
         float playerX = player.transform.position.x;
         float playerY = player.transform.position.y;
@@ -89,6 +90,8 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
         await Task.Delay(70);
 
         movePrefab.GetComponent<Animator>().SetTrigger("Back");
+
+        getTargetScript(target);
     }
 
     public void Play_SoundFX(string sound)
@@ -106,17 +109,13 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
     public void applyStatusEffect(string type) { }
 
-    public void getTargetScript() {
-        emptyObj = new GameObject("Empty");
-
+    public void getTargetScript(GameObject target) {
         string enemy = battleManager.targets[0].name;
-        string targetScript = enemy + "_Script (Script)";
-        //Debug.Log("target script " + targetScript);
 
         GameObject kit = GameObject.Find(enemy + "(Clone)");
         Parent_Beast script = kit.GetComponent<Parent_Beast>();
 
-        script.applyStatusEffect("fire");
+        script.applyStatusEffect("fire" );
     }
 
     public string Beast_Name() {
