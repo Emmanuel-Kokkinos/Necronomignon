@@ -39,8 +39,9 @@ namespace DialogueEditor
             timesUsedCounter = conversationNames.Count - 1;
 
             //Sets the default conversation
-            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-             SetNPCConversation(FindByName("Conv_Intro"));
+            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            //SetNPCConversation(FindByName("Questionnaire"));
+            //SetNPCConversation(FindByName("Conv_Intro"));
             // SetNPCConversation(FindByName("Conv_Opening"));
 
             //Sets tournament conversations
