@@ -142,8 +142,6 @@ namespace DialogueEditor
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
 
                     characters[8].gameObject.SetActive(false);
-
-                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Waiting_Room");
                     break;
                 case "Conv_Intro":
 
@@ -169,9 +167,6 @@ namespace DialogueEditor
                     {
                         characters[x].gameObject.SetActive(false);
                     }
-
-                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Miskatonic");
-
                     break;
                     //Moved tutorial to dialogue manager so it can be loaded directly from dialogue
                 case "Tutorial1":
@@ -199,9 +194,7 @@ namespace DialogueEditor
                         characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                         characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
                         characters[8].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
-                    }
-
-                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Colosseum");
+                    } 
                     break;
                 case "Questionnaire":
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
@@ -223,8 +216,6 @@ namespace DialogueEditor
                             characters[x].gameObject.SetActive(false);
                     }
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dio"));
-
-                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Graduation_Hall");
                     break;
                 case "Conv_semi":
                     if (CampaignManager.semiDiagEnd == false)
@@ -257,8 +248,6 @@ namespace DialogueEditor
                         else
                             c++;
                     }
-
-                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/forest_mirrulak");
                     break;
                 case "Conv_Interlude":
 
@@ -267,13 +256,10 @@ namespace DialogueEditor
                     characters[2].gameObject.SetActive(false);
                     characters[5].gameObject.SetActive(false);
 
-                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Party_Scene");
                     break;
                 case "FallMirrulak_Intro":
                     foreach (Image chars in characters)
                         chars.gameObject.SetActive(false);
-
-                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Near_Mirrulak");
                     break;
                 default:
 
@@ -332,10 +318,7 @@ namespace DialogueEditor
                     break;
                 case "Conv_finals":
                     CampaignManager.finDiagEnd = true;
-                    for (int x = 0; x <= 8; x++)
-                    {
-                        characters[x].gameObject.SetActive(false);
-                    }
+
                     break;
                 case "Tour_end":
                     CampaignManager.tourEnd = true;
