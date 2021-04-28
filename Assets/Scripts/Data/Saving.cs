@@ -40,6 +40,7 @@ public class Saving : MonoBehaviour
     {
         EasySave.Save<BeastList>("playerBL",BeastManager.beastsList);
         EasySave.Save<int>("level", LevelChecker.levels);
+        EasySave.Save<int>("winTour", CampaignManager.winTourBattle);
         List<Beast> failsafe = new List<Beast>();
       /*  while (failsafe.Count < 11)
         {
@@ -63,9 +64,14 @@ public class Saving : MonoBehaviour
         }
         EasySave.Save<int>("playerXP", Player.summoner.xp);
 
-        //Dialog box when game is saved
-        txtLoadSave.text = "The Game Has Been Saved!";
-        loadSaveDialog.SetActive(true);
+        if (txtLoadSave != null && loadSaveDialog != null)
+        {
+            //Dialog box when game is saved
+            txtLoadSave.text = "The Game Has Been Saved!";
+            loadSaveDialog.SetActive(true);
+        }
+            
+            
     }
     public static void loadAll()
     {
@@ -92,8 +98,12 @@ public class Saving : MonoBehaviour
         Player.summoner.xp = EasySave.Load<int>("playerXP");
 
         //Displays dialog box when game is loaded
-        txtLoadSave.text = "Your Game Has Been Loaded!";
-        loadSaveDialog.SetActive(true);
+        if(txtLoadSave != null && loadSaveDialog != null)
+        {
+            txtLoadSave.text = "Your Game Has Been Loaded!";
+            loadSaveDialog.SetActive(true);
+        }
+        
         changeSettingsBtnStatus(false);
     }
 

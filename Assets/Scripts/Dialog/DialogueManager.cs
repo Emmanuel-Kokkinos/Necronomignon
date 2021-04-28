@@ -36,11 +36,11 @@ namespace DialogueEditor
             NPCConversationToList();
 
             //Last item of list
-            timesUsedCounter = conversationNames.Count - 1;
+            timesUsedCounter = 0;
 
             //Sets the default conversation
             //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-             SetNPCConversation(FindByName("Conv_Intro"));
+            SetNPCConversation(FindByName("Conv_Intro"));
             // SetNPCConversation(FindByName("Conv_Opening"));
 
             //Sets tournament conversations
@@ -49,8 +49,9 @@ namespace DialogueEditor
 
                 if(CampaignManager.winTourBattle == 0)
                 {
-                   
+                    CampaignManager.dialogueEnd = false;
                     SetNPCConversation(FindByName("Conv_Tour"));
+                    
                 }
                 else
                 {
@@ -242,8 +243,16 @@ namespace DialogueEditor
                     }
                     
                     break;
-                case "Tourn_End":
-                    SetTournamentSprites();
+                case "Tourn_end":
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                    characters[2].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
+                    characters[3].gameObject.SetActive(false); //Jheera
+                    characters[4].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
+                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
+                    characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
+                    characters[7].gameObject.SetActive(false); //Neput
+                    characters[8].gameObject.SetActive(false); //Faraday
                     break;
                 case "Conv_Auriga":
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
@@ -284,7 +293,7 @@ namespace DialogueEditor
         public void ConversationEnd()
         {
             string convname = currentConversation.DefaultName;
-            timesUsedCounter--;
+            timesUsedCounter++;
 
             //Saving.saveAll();
 
@@ -303,6 +312,7 @@ namespace DialogueEditor
                     BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Questionnaire":
+                    Saving.saveAll();
                     SetNPCConversation(FindByName("Conv_Graduation"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
@@ -337,10 +347,18 @@ namespace DialogueEditor
                     }
                     break;
                 case "Tour_end":
+                    for (int x = 0; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
+
                     CampaignManager.tourEnd = true;
-                    //Begin a battle with John and then with gabriel
+                    //Begin a battle with John and then with gabriel for now only starts auriga
+                    SetNPCConversation(FindByName("Conv_Auriga"));
+                    BeginConversation(currentConversation, "Tournament");
                     break;
                 case "Conv_Auriga":
+                    Saving.saveAll();
                     SetNPCConversation(FindByName("Conv_Interlude"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
