@@ -24,7 +24,7 @@ public class AnimationPlayer : MonoBehaviour
         beastPrefab.transform.SetParent(GameObject.Find($"Image").transform);
         beastPrefab.transform.localPosition = new Vector3(0, 0);
         beastPrefab.transform.localRotation = Quaternion.identity;
-        beastPrefab.transform.localScale = new Vector3(100, 100);
+        beastPrefab.transform.localScale = beastPrefab.transform.localScale * .85f;
 
         image = image.transform.GetChild(0).gameObject;
 

@@ -71,7 +71,7 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
                     }
                     beastPrefab.transform.localPosition = new Vector3(-10, -35);
                     beastPrefab.transform.localRotation = Quaternion.identity;
-                    beastPrefab.transform.localScale = new Vector3(18f, 18f);
+                    beastPrefab.transform.localScale = beastPrefab.transform.localScale * .15f;
                     beastPrefab.transform.SetParent(GameObject.Find("SlotBeasts").transform);
 
                     beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
@@ -169,7 +169,7 @@ public class SlotSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
                     }
                     beastPrefab.transform.localPosition = new Vector3(-10, -35);
                     beastPrefab.transform.localRotation = Quaternion.identity;
-                    beastPrefab.transform.localScale = new Vector3(18f, 18f);
+                    beastPrefab.transform.localScale = beastPrefab.transform.localScale * .15f;
                     beastPrefab.transform.SetParent(GameObject.Find("SlotBeasts").transform);
 
                     beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);

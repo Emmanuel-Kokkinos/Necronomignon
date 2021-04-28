@@ -25,7 +25,7 @@ public class TrainPrep : MonoBehaviour
         beastPrefab.transform.SetParent(GameObject.Find($"BeastImage").transform);
         beastPrefab.transform.localPosition = new Vector3(0, -50);
         beastPrefab.transform.localRotation = Quaternion.identity;
-        beastPrefab.transform.localScale = new Vector3(60f, 60f);
+        beastPrefab.transform.localScale = beastPrefab.transform.localScale * .8f;
         beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
         beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 

@@ -80,9 +80,9 @@ public class DemoBattleManager : MonoBehaviour
 
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(slotImgs[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -85);
+                beastPrefab.transform.localPosition = new Vector3(0, -40);
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(30f, 30f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .25f;
 
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
 
