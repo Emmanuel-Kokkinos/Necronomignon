@@ -116,7 +116,7 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
         GameObject kit = GameObject.Find(enemy + "(Clone)");
         Parent_Beast script = kit.GetComponent<Parent_Beast>();
 
-        script.applyStatusEffect("Sleep");
+        script.applyStatusEffect("fire");
     }
 
     public string Beast_Name() {

@@ -80,7 +80,7 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
         statusEffect.transform.localScale = new Vector2(1f, 1f);
         statusEffect.transform.SetAsFirstSibling();
 
-        statusEffect.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Beasts_Moves/Mandoro/Mandoro_Move_Controller") as RuntimeAnimatorController;
+        statusEffect.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Beasts_Moves/statusEffects/" + type + "/" + type + "_controller") as RuntimeAnimatorController;
         statusEffect.GetComponent<Animator>().SetTrigger("Back");
     }
 
