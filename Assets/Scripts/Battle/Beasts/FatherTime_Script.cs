@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FatherTime_Script : Parent_Script, Parent_Beast
 {
+
     public void back_special()
     {
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -40,4 +41,18 @@ public class FatherTime_Script : Parent_Script, Parent_Beast
         }
         */
     }
+
+    public string Beast_Name()
+    {
+        return "FatherTime";
+    }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
+    public void applyDoom() { }
+
+    public void updateDoom() { }
+
 }

@@ -42,4 +42,16 @@ public class Zeograth_Script : Parent_Script, Parent_Beast
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
     }
+    public string Beast_Name()
+    {
+        return "Zeograth";
+    }
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
+    public void applyDoom() { }
+
+    public void updateDoom() { }
+
 }
