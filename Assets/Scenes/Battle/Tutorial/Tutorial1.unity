@@ -187,6 +187,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &54975754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1836909862923655991, guid: e8908b8a57870024cb335469af25f6f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 236056179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &54975755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 236056179}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &67168710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -294,6 +306,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConversationManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca,
+        type: 3}
+      propertyPath: OptionImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 362946eb8ac1482438202515bae297dc,
+        type: 3}
     - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -720,18 +738,6 @@ PrefabInstance:
     - {fileID: 404627815824699239, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
     - {fileID: 8050628943823832647, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
---- !u!1 &235778714 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1559203100959074912, guid: 3efecb4663a20344ab08731a9a6a4648,
-    type: 3}
-  m_PrefabInstance: {fileID: 526842267}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &235778715 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1559203100959074915, guid: 3efecb4663a20344ab08731a9a6a4648,
-    type: 3}
-  m_PrefabInstance: {fileID: 526842267}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &236056179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -859,6 +865,46 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -204
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -190
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308144668820069665, guid: e8908b8a57870024cb335469af25f6f2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8908b8a57870024cb335469af25f6f2, type: 3}
 --- !u!1 &282970883
@@ -983,43 +1029,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 59
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":444,"yPos":-219},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"Raise
-    hand","parentUIDs":[35,47],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":47}],"EditorInfo":{"isRoot":false,"xPos":446,"yPos":-172},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"Keep
-    head down","parentUIDs":[35],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":-42,"yPos":-209},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"Conglomerate","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":-42,"yPos":-153},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Zeograth
-    ","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":-39,"yPos":-91},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"Dryad","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":-39,"yPos":-35},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"Cthulhu","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":744,"yPos":-114},"ID":48,"ParamActions":[],"TMPFontGUID":null,"Text":"Embrace
-    the shame","parentUIDs":[47],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":true,"xPos":-51,"yPos":-740},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright
-    class, we''ll start with the basics.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":192,"yPos":-741},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Basic
-    attacks happen between your summoned creature and your opponent.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":435,"yPos":-741},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"My
-    Mandoro will demonstrate by attacking this pawn statue","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":438,"yPos":-621},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":196,"yPos":-624},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"as
-    you can see, taking down weak enemies is a pieceof cake.","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":-49,"yPos":-623},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"sometimes
-    however, we have more than one enemy to tackle","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":-47,"yPos":-510},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"For
-    example, we have three enemies left on the feild.","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":202,"yPos":-511},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"Attecking
-    them individually may be too time consuming","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":438,"yPos":-520},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"This
-    is where multi attacks come into play","parentUIDs":[28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":438,"yPos":-418},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Dream
-    Slime may prove valueable in this senario as it has a slash attack.","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":205,"yPos":-410},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":-45,"yPos":-414},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"As
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":665,"yPos":293},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"Raise
+    hand","parentUIDs":[35,47],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":47}],"EditorInfo":{"isRoot":false,"xPos":668,"yPos":340},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"Keep
+    head down","parentUIDs":[35],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":180,"yPos":303},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"Conglomerate","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":180,"yPos":359},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Zeograth
+    ","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":183,"yPos":421},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"Dryad","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":183,"yPos":477},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"Cthulhu","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":966,"yPos":398},"ID":48,"ParamActions":[],"TMPFontGUID":null,"Text":"Embrace
+    the shame","parentUIDs":[47],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":true,"xPos":171,"yPos":-228},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright
+    class, we''ll start with the basics.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":414,"yPos":-229},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Basic
+    attacks happen between your summoned creature and your opponent.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":657,"yPos":-229},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"My
+    Mandoro will demonstrate by attacking this pawn statue","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":-109},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":418,"yPos":-112},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"as
+    you can see, taking down weak enemies is a pieceof cake.","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":173,"yPos":-111},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"sometimes
+    however, we have more than one enemy to tackle","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":175,"yPos":2},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"For
+    example, we have three enemies left on the feild.","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":424,"yPos":1},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"Attecking
+    them individually may be too time consuming","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":-8},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+    is where multi attacks come into play","parentUIDs":[28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":94},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Dream
+    Slime may prove valueable in this senario as it has a slash attack.","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":427,"yPos":102},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":177,"yPos":98},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"As
     you can see, tough we were not able to eliminate all the foes we targeted, we
-    still managed to damage them, putting us in a better position.","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":-44,"yPos":-306},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"however,
-    sometimes even this method is insufecient ","parentUIDs":[32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":206,"yPos":-306},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Particularly
-    If you were to fight an enemy with a healer.","parentUIDs":[33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":443,"yPos":-306},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
-    here can give me an example of a healer?","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":40},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":206,"yPos":-213},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah
-    yes, you. Please give us an example. ","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":200,"yPos":-43},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"Unfortunatly,
-    incorrect. thank you for trying at least. unlike the rest of the class.","parentUIDs":[45,39,40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":429,"yPos":-111},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"Very
-    good, correct. ","parentUIDs":[41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":-49,"yPos":33},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"Really,
-    you think Cthulhu. CTHULHU, is a healer. perhaps you should spent more time studying.","parentUIDs":[42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":48}],"EditorInfo":{"isRoot":false,"xPos":735,"yPos":-234},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"Really,
-    no one is willing to try. or even at least guess?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":711,"yPos":-17},"ID":49,"ParamActions":[],"TMPFontGUID":null,"Text":"Disapointing.","parentUIDs":[48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":51}],"EditorInfo":{"isRoot":false,"xPos":440,"yPos":9},"ID":50,"ParamActions":[],"TMPFontGUID":null,"Text":"The
-    answer is Dryad. dispite Having low HP herself, she is quite useful as a healer.","parentUIDs":[43,44,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":52}],"EditorInfo":{"isRoot":false,"xPos":446,"yPos":128},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"because
-    of these features common in healers they tend to be guarded by a tank","parentUIDs":[50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":53}],"EditorInfo":{"isRoot":false,"xPos":205,"yPos":128},"ID":52,"ParamActions":[],"TMPFontGUID":null,"Text":"this
-    is where Wyvern comes into play.","parentUIDs":[51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":54}],"EditorInfo":{"isRoot":false,"xPos":-36,"yPos":129},"ID":53,"ParamActions":[],"TMPFontGUID":null,"Text":"wyvern
+    still managed to damage them, putting us in a better position.","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":178,"yPos":206},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"however,
+    sometimes even this method is insufecient ","parentUIDs":[32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":428,"yPos":206},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Particularly
+    If you were to fight an enemy with a healer.","parentUIDs":[33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":665,"yPos":206},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
+    here can give me an example of a healer?","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":40},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":428,"yPos":299},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah
+    yes, you. Please give us an example. ","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":422,"yPos":469},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"Unfortunatly,
+    incorrect. thank you for trying at least. unlike the rest of the class.","parentUIDs":[45,39,40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":651,"yPos":401},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"Very
+    good, correct. ","parentUIDs":[41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":173,"yPos":545},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"Really,
+    you think Cthulhu. CTHULHU, is a healer. perhaps you should spent more time studying.","parentUIDs":[42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":48}],"EditorInfo":{"isRoot":false,"xPos":957,"yPos":278},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"Really,
+    no one is willing to try. or even at least guess?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":933,"yPos":495},"ID":49,"ParamActions":[],"TMPFontGUID":null,"Text":"Disapointing.","parentUIDs":[48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":51}],"EditorInfo":{"isRoot":false,"xPos":662,"yPos":521},"ID":50,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    answer is Dryad. dispite Having low HP herself, she is quite useful as a healer.","parentUIDs":[43,44,49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":52}],"EditorInfo":{"isRoot":false,"xPos":668,"yPos":640},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"because
+    of these features common in healers they tend to be guarded by a tank","parentUIDs":[50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":53}],"EditorInfo":{"isRoot":false,"xPos":427,"yPos":640},"ID":52,"ParamActions":[],"TMPFontGUID":null,"Text":"this
+    is where Wyvern comes into play.","parentUIDs":[51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":54}],"EditorInfo":{"isRoot":false,"xPos":186,"yPos":641},"ID":53,"ParamActions":[],"TMPFontGUID":null,"Text":"wyvern
     has a peircing attack that can attack both the front and back row. When a priority
-    target is being protected, a column attack is invalueable ","parentUIDs":[52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":55}],"EditorInfo":{"isRoot":false,"xPos":-34,"yPos":231},"ID":54,"ParamActions":[],"TMPFontGUID":null,"Text":"Observe","parentUIDs":[53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":206,"yPos":232},"ID":55,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":57}],"EditorInfo":{"isRoot":false,"xPos":456,"yPos":239},"ID":56,"ParamActions":[],"TMPFontGUID":null,"Text":"As
-    you can see we have now defeted the enemy team, and are victorious.","parentUIDs":[55],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":58}],"EditorInfo":{"isRoot":false,"xPos":461,"yPos":350},"ID":57,"ParamActions":[],"TMPFontGUID":null,"Text":"of
+    target is being protected, a column attack is invalueable ","parentUIDs":[52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":55}],"EditorInfo":{"isRoot":false,"xPos":188,"yPos":743},"ID":54,"ParamActions":[],"TMPFontGUID":null,"Text":"Observe","parentUIDs":[53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":428,"yPos":744},"ID":55,"ParamActions":[],"TMPFontGUID":null,"Text":"ATTACK","parentUIDs":[54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":57}],"EditorInfo":{"isRoot":false,"xPos":678,"yPos":751},"ID":56,"ParamActions":[],"TMPFontGUID":null,"Text":"As
+    you can see we have now defeted the enemy team, and are victorious.","parentUIDs":[55],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":58}],"EditorInfo":{"isRoot":false,"xPos":683,"yPos":862},"ID":57,"ParamActions":[],"TMPFontGUID":null,"Text":"of
     course in a real battle the enemy would likely get in an attack or two. maybe
-    even a kill.","parentUIDs":[56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":215,"yPos":342},"ID":58,"ParamActions":[],"TMPFontGUID":null,"Text":"be
+    even a kill.","parentUIDs":[56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":437,"yPos":854},"ID":58,"ParamActions":[],"TMPFontGUID":null,"Text":"be
     sure to use stratigic placments when forming you team.","parentUIDs":[57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Professor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Professor
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   NodeSerializedDataList:
   - {fileID: 1701214439}
   - {fileID: 1701214438}
@@ -1060,18 +1106,7 @@ MonoBehaviour:
   - {fileID: 1701214470}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1421393756}
-        m_MethodName: unlockExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &372797331
 Transform:
   m_ObjectHideFlags: 0
@@ -1187,9 +1222,9 @@ RectTransform:
   - {fileID: 858522910}
   - {fileID: 839600680}
   - {fileID: 2040099923}
-  - {fileID: 1041862218}
-  - {fileID: 235778715}
-  - {fileID: 1405067014}
+  - {fileID: 2035512329}
+  - {fileID: 54975755}
+  - {fileID: 1308051590}
   - {fileID: 620689283}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1332,6 +1367,46 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -249
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -267
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3efecb4663a20344ab08731a9a6a4648, type: 3}
 --- !u!1 &534959971
@@ -1379,21 +1454,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 15
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":656,"yPos":16},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
-    too soon to tell...","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":657,"yPos":72},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Maybe
-    not! Wow it feels good to done with the exam.","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":197,"yPos":330},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"True!
-    I hope I''m not late!","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":197,"yPos":386},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah
-    I can use a break from the bickering for a while.","parentUIDs":[11],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":193,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Dio,
-    that was amazing!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mom","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":434,"yPos":24},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    guess someone won''t be going to Caldera this year!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dad","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":654,"yPos":142},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"YOU
-    BETTER SUMMON ME A UNICORN WHEN YOU GET BACK YOU PROMISED!!!!!","parentUIDs":[2,3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":434,"yPos":137},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"LAME!
-    I WANT TO RIDE AZDAHA!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":196,"yPos":134},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Urgh,
-    could you be more stereotypical?","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":197,"yPos":238},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    won''t be saying that when I am soaring on the wings of The Scourge of Angels!","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":431,"yPos":241},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"ARI!
-    That name is disrespectful and invokes many terrible memories.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mom","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":655,"yPos":242},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"...but
-    she''s so cool...","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":655,"yPos":339},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Loser.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":433,"yPos":342},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Come
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":741,"yPos":16},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+    too soon to tell...","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":742,"yPos":72},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Maybe
+    not! Wow it feels good to done with the exam.","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":282,"yPos":330},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"True!
+    I hope I''m not late!","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":282,"yPos":386},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah
+    I can use a break from the bickering for a while.","parentUIDs":[11],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":278,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Dio,
+    that was amazing!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mom","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":519,"yPos":24},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    guess someone won''t be going to Caldera this year!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dad","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":739,"yPos":142},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"YOU
+    BETTER SUMMON ME A UNICORN WHEN YOU GET BACK YOU PROMISED!!!!!","parentUIDs":[2,3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":519,"yPos":137},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"LAME!
+    I WANT TO RIDE AZDAHA!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":281,"yPos":134},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Urgh,
+    could you be more stereotypical?","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":282,"yPos":238},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    won''t be saying that when I am soaring on the wings of The Scourge of Angels!","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":516,"yPos":241},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"ARI!
+    That name is disrespectful and invokes many terrible memories.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Mom","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":740,"yPos":242},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"...but
+    she''s so cool...","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":740,"yPos":339},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Loser.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":518,"yPos":342},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Come
     on you two! It''s Dio''s big day, stop making it about yourselves! Now, shouldn''t
-    you be going inside now?","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dad","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":198,"yPos":482},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[12,13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    you be going inside now?","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dad","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":283,"yPos":482},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[12,13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -2923,12 +2998,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988953876}
   m_CullTransparentMesh: 0
---- !u!224 &1041862218 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6746957924042127737, guid: ce52d57fb71d94b488e6ac1e02af8b87,
-    type: 3}
-  m_PrefabInstance: {fileID: 2002474542}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1152405403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,37 +3043,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 22
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":193,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"WOOOO,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":182,"yPos":118},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"WOOOO,
     DIOOOOOO!!!!!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari
-    and Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":434.5,"yPos":20},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Cute
-    siblings you got there Dio. ","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":674.5,"yPos":21},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
+    and Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":423.5,"yPos":116},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Cute
+    siblings you got there Dio. ","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":663.5,"yPos":117},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
     well, here is a Necronomignon, \nand, uhhh, let me check over here... AH, yes!
-    So you have practiced summoning a Kitsune and a Wyvern?","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":675.5,"yPos":130},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
-    that''s all that I''ve learnt so far.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dio","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":434.5,"yPos":132},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Perfect!
-    Nice choices by the way.","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":193.5,"yPos":131},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
+    So you have practiced summoning a Kitsune and a Wyvern?","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":664.5,"yPos":226},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
+    that''s all that I''ve learnt so far.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dio","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":423.5,"yPos":228},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Perfect!
+    Nice choices by the way.","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":182.5,"yPos":227},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
     so, first things first, put the Kitsune in the front\nrow, and make it attack
-    that target over there.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":195,"yPos":246},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"When
+    that target over there.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":184,"yPos":342},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"When
     in battle, you must control your familiars with your mind. Focus on your intent,
-    and keep coming back to it, even if you loose your train of thought.","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":435,"yPos":244},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"If
-    you don''t order your familiars well, you won''t have control over how they fight.","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":672,"yPos":245},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"So,
-    for the first part of the test, have your Kitsune use its claws on the target.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":672,"yPos":351},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Great
+    and keep coming back to it, even if you loose your train of thought.","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":424,"yPos":340},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    you don''t order your familiars well, you won''t have control over how they fight.","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":661,"yPos":341},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"So,
+    for the first part of the test, have your Kitsune use its claws on the target.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":661,"yPos":447},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Great
     job! For the next part of the exam, please position your Kitsune in back row,
-    and hit the target with its flame breath attack.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":434,"yPos":351},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"WE
-    NEED A NEW TARGET, NOW PLEASE!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":197,"yPos":351},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"That
-    was really good! You are a natural.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":201,"yPos":466},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Let''s
-    see how you can do with two familiars at the same time.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":436,"yPos":468},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Summon
-    the Wyvern in the front row, and go to town on that hay!","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":671,"yPos":471},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Excellent!
-    Truly remarkable. Has Paimon taught you how to do combined spells?","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":672,"yPos":580},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"No,
-    he has not.","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dio","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":439,"yPos":579},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
+    and hit the target with its flame breath attack.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":423,"yPos":447},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"WE
+    NEED A NEW TARGET, NOW PLEASE!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":186,"yPos":447},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"That
+    was really good! You are a natural.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":190,"yPos":562},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Let''s
+    see how you can do with two familiars at the same time.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":425,"yPos":564},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Summon
+    the Wyvern in the front row, and go to town on that hay!","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":567},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Excellent!
+    Truly remarkable. Has Paimon taught you how to do combined spells?","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":661,"yPos":676},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"No,
+    he has not.","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Dio","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":428,"yPos":675},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
     this is an advanced tactic and not part of the evaluation exam, so don''t feel
-    anxious. But I am very curious to see what you can do.","parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":202,"yPos":578},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Put
+    anxious. But I am very curious to see what you can do.","parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":191,"yPos":674},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Put
     the Kitsune and Wyvern side by side in the back row, and if you can manage, visualize
     them working side by side, using the power of air and fire together to create
-    a devastating spell.","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":202,"yPos":688},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"WOOOOOOOOWWWWWWW!!!!","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari
-    and Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":442,"yPos":687},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"*scribbles
+    a devastating spell.","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":191,"yPos":784},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"WOOOOOOOOWWWWWWW!!!!","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ari
+    and Catherine","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":431,"yPos":783},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"*scribbles
     intensely* Well, I, uh, was not expecting that to work so well. No wonder Paimon
-    has dedicated so much time with you.","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":671,"yPos":689},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
-    congratulations, you are done with the Placement Exam.","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":671,"yPos":798},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
+    has dedicated so much time with you.","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":785},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
+    congratulations, you are done with the Placement Exam.","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":660,"yPos":894},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
     hug the family, and then go wait in the room over there, first door on the left,
     to await the results. Very nice meeting you Dio.","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tadria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -3037,23 +3106,23 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1308051589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1728776799968973640, guid: 3efecb4663a20344ab08731a9a6a4648,
+    type: 3}
+  m_PrefabInstance: {fileID: 526842267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1308051590 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8692278190694966811, guid: 3efecb4663a20344ab08731a9a6a4648,
+    type: 3}
+  m_PrefabInstance: {fileID: 526842267}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1316656727 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7043817208939467131, guid: 3667ac33d6e6fb24f893c40adf01a07d,
     type: 3}
   m_PrefabInstance: {fileID: 137019410}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1405067013 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6151228420661868232, guid: e8908b8a57870024cb335469af25f6f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 236056179}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1405067014 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6151228420661868235, guid: e8908b8a57870024cb335469af25f6f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 236056179}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1421393753
 GameObject:
@@ -3116,9 +3185,9 @@ MonoBehaviour:
   knight: {fileID: 858522909}
   rook: {fileID: 839600679}
   king: {fileID: 2040099922}
-  mando: {fileID: 1816257607}
-  dream: {fileID: 235778714}
-  wyvern: {fileID: 1405067013}
+  mando: {fileID: 2035512328}
+  dream: {fileID: 1308051589}
+  wyvern: {fileID: 54975754}
   exit: {fileID: 620689282}
 --- !u!114 &1421393759
 MonoBehaviour:
@@ -3132,7 +3201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec5395c00106da4ea54e44215a64edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationEnded: {fileID: 0}
   dialogueScene: 
   characters: []
   conversationNames: []
@@ -3216,7 +3284,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 24
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!4 &1701214436
@@ -3249,7 +3317,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 23
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214438
@@ -3268,7 +3336,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 22
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214439
@@ -3287,7 +3355,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214440
@@ -3355,7 +3423,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 29
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214443
@@ -3374,7 +3442,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 28
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214444
@@ -3393,7 +3461,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 27
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214445
@@ -3412,7 +3480,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 26
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214446
@@ -3431,7 +3499,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 25
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214447
@@ -3450,7 +3518,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 32
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214448
@@ -3469,7 +3537,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 48
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214449
@@ -3488,7 +3556,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 42
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214450
@@ -3507,7 +3575,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 41
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214451
@@ -3526,7 +3594,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 40
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214452
@@ -3545,7 +3613,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 39
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214453
@@ -3564,7 +3632,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 37
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214454
@@ -3583,7 +3651,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 36
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214455
@@ -3613,7 +3681,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 55
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214456
@@ -3632,7 +3700,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 54
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214457
@@ -3651,7 +3719,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 53
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214458
@@ -3670,7 +3738,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 52
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214459
@@ -3689,7 +3757,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 51
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214460
@@ -3708,7 +3776,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 50
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214461
@@ -3727,7 +3795,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 49
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214462
@@ -3746,19 +3814,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 47
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ConversationEnd
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214463
@@ -3777,7 +3833,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 45
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214464
@@ -3796,7 +3852,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 44
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214465
@@ -3815,7 +3871,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 43
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214466
@@ -3834,7 +3890,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 38
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214467
@@ -3853,7 +3909,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 35
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214468
@@ -3872,7 +3928,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 34
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214469
@@ -3921,7 +3977,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 58
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214471
@@ -3940,7 +3996,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 57
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1701214472
@@ -3959,7 +4015,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 56
-  TMPFont: {fileID: 11400000, guid: 40e061ecfdddf564987901fdf764d922, type: 2}
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1 &1726545723
@@ -4066,12 +4122,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1816257607 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6746957924042127736, guid: ce52d57fb71d94b488e6ac1e02af8b87,
-    type: 3}
-  m_PrefabInstance: {fileID: 2002474542}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2002474542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4079,6 +4129,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 425199591}
     m_Modifications:
+    - target: {fileID: 2513665464544999295, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.4959772
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -147
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 6483131866244334955, guid: ce52d57fb71d94b488e6ac1e02af8b87,
         type: 3}
       propertyPath: MaxDistance
@@ -4440,6 +4535,18 @@ PrefabInstance:
     - {fileID: 404627815824699239, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
     - {fileID: 8050628943823832647, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3667ac33d6e6fb24f893c40adf01a07d, type: 3}
+--- !u!1 &2035512328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5720376571355750749, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+    type: 3}
+  m_PrefabInstance: {fileID: 2002474542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2035512329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4372383453755919525, guid: ce52d57fb71d94b488e6ac1e02af8b87,
+    type: 3}
+  m_PrefabInstance: {fileID: 2002474542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2040099922
 GameObject:
   m_ObjectHideFlags: 0

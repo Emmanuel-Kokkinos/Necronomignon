@@ -23,6 +23,9 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         scene = SceneManager.GetActiveScene();
+        dream.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
+        mando.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
+        wyvern.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
         exit.SetActive(false);
         if (scene.name == "Tutorial3")
         {
@@ -119,7 +122,9 @@ public class TutorialManager : MonoBehaviour
 
     IEnumerator waitAttack()
     {
+        //yield return new WaitUntil(() => dream.GetComponent<UnityArmatureComponent>().animation.isCompleted);
         yield return new WaitForSeconds(3f);
+        dream.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
         knight.SetActive(false);
         UnityEngine.Transform transform = rook.GetComponent<UnityEngine.Transform>();
         for (int x = 10; x > 0; x--)
