@@ -12,8 +12,7 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
     private string statusName;
     private int statusCounter = -1;
     private int doomCounter = -1;
-    public void back_special()
-    {
+    public void back_special(){
         checkStatusEffect();
         ProjectileAnimation();
     }
@@ -85,9 +84,6 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
         //avoids the beast to have multiple doom effects applied on it
         else if (type == "Doom" && doomCounter != -1) return;
 
-        //avoids the beast to have multiple status effects at the same time
-        if (statusCounter != -1) return;
-
         statusName = type;
         statusCounter = 0;
 
@@ -102,7 +98,8 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
         statusEffect.GetComponent<Animator>().SetTrigger("effect");
     }
 
-    public void applyDoom(){
+
+    public void applyDoom() {
         doomCounter = 0;
 
         statusEffect = (GameObject)Instantiate(Resources.Load("Prefabs/Moves/Move"));
@@ -130,6 +127,7 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
         Sprite doom = Resources.Load<Sprite>("Beasts_Moves/statusEffects/Doom/Doom" + (doomCounter + 1));
         statusEffect.GetComponent<Image>().sprite = doom;
     }
+
 
     public string Beast_Name() {
         return "Kitsune";
