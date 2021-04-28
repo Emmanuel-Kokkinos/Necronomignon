@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //checks which levels are availible for the player
 public class CheckLevel : MonoBehaviour
@@ -18,11 +19,41 @@ public class CheckLevel : MonoBehaviour
             levelChecker = name.GetComponent<LevelChecker>();
         }
 
-       if(LevelChecker.levels < 1)
+        //Interface of either the map or the tournament
+        if (SceneManager.GetActiveScene().name.Equals("Map"))
+            ActiveCampaingInterface();
+        else if (SceneManager.GetActiveScene().name.Equals("Tournament"))
+            ActiveTourInterface();
+       
+    }
+    //sends a string that represents which beasts should be sent as the enemy squad in mission list
+    public void sendString(string str)
+    {
+        GameObject name = GameObject.Find("LevelData");
+
+        if (name != null)
+        {
+            levelChecker = name.GetComponent<LevelChecker>();
+            levelChecker.setLastClick(str);
+        }
+    }
+    public void setCurrentLevel(int level)
+    {
+        lvl = level;
+        if (ConversationManager.Instance != null)
+        {
+            print(lvl);
+            ConversationManager.Instance.SetInt("Levels", lvl);
+        }
+    }
+
+    public void ActiveCampaingInterface()
+    {
+        if (LevelChecker.levels < 1)
         {
             GameObject.Find("btnLevel2").SetActive(false);
         }
-       if(LevelChecker.levels < 2)
+        if (LevelChecker.levels < 2)
         {
             GameObject.Find("btnLevel3").SetActive(false);
         }
@@ -46,7 +77,7 @@ public class CheckLevel : MonoBehaviour
         {
             GameObject.Find("btnLevel8").SetActive(false);
         }
-        if(LevelChecker.levels < 8)
+        if (LevelChecker.levels < 8)
         {
             GameObject.Find("btnLevel9").SetActive(false);
         }
@@ -55,24 +86,20 @@ public class CheckLevel : MonoBehaviour
             GameObject.Find("btnLevel10").SetActive(false);
         }
     }
-    //sends a string that represents which beasts should be sent as the enemy squad in mission list
-    public void sendString(string str)
-    {
-        GameObject name = GameObject.Find("LevelData");
 
-        if (name != null)
-        {
-            levelChecker = name.GetComponent<LevelChecker>();
-            levelChecker.setLastClick(str);
-        }
-    }
-    public void setCurrentLevel(int level)
+    public void ActiveTourInterface()
     {
-        lvl = level;
-        if (ConversationManager.Instance != null)
+        if (LevelChecker.levels < 1)
         {
-            print(lvl);
-            ConversationManager.Instance.SetInt("Levels", lvl);
+            GameObject.Find("btnTour2").SetActive(false);
+        }
+        if (LevelChecker.levels < 2)
+        {
+            GameObject.Find("btnTour3").SetActive(false);
+        }
+        if (LevelChecker.levels < 3)
+        {
+            GameObject.Find("btnBoss").SetActive(false);
         }
     }
 }

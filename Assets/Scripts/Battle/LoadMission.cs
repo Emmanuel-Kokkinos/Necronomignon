@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DragonBones;
+using UnityEngine.SceneManagement;
 
 //prepares all information and data for battle
 public class LoadMission : MonoBehaviour
@@ -91,6 +92,9 @@ public class LoadMission : MonoBehaviour
         if (giveUpDialog != null)
             giveUpDialog.SetActive(false);
 
+        //Turns off back button if it is a tournament
+
+
         foreach(GameObject go in slotHealthBars)
         {
             go.SetActive(false);
@@ -132,17 +136,21 @@ public class LoadMission : MonoBehaviour
                 //Instantiate a prefab of the beast in battle
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + enemyToLoad[x].name));
                 beastPrefab.transform.SetParent(enemySlotImg[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -50);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(20f, 20f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .06f;
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
 
                 //Instantiate a prefab of the beast in the healthDisplay
                 GameObject beastDisplayPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + enemyToLoad[x].name));
                 beastDisplayPrefab.transform.SetParent(enemyImgs[x].transform);
-                beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
+                var pos = beastDisplayPrefab.transform.position;
+                pos.y += 50;
+                beastDisplayPrefab.transform.localPosition = pos;
                 beastDisplayPrefab.transform.localRotation = Quaternion.identity;
-                beastDisplayPrefab.transform.localScale = new Vector3(10f, 10f);
+                beastDisplayPrefab.transform.localScale = beastDisplayPrefab.transform.localScale * .015f;
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 enemyImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
@@ -186,17 +194,22 @@ public class LoadMission : MonoBehaviour
                 //Instantiate a prefab of the beast in battle
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(playerSlotImg[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -50);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(20f, 20f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .06f;
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
 
                 //Instantiate a prefab of the beast in the healthDisplay
                 GameObject beastDisplayPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastDisplayPrefab.transform.SetParent(playerImgs[x].transform);
-                beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
+                var pos = beastDisplayPrefab.transform.position;
+                pos.y += 50;
+                beastDisplayPrefab.transform.localPosition = pos;
+                beastDisplayPrefab.transform.localPosition = beastDisplayPrefab.transform.position;
                 beastDisplayPrefab.transform.localRotation = Quaternion.identity;
-                beastDisplayPrefab.transform.localScale = new Vector3(10f, 10f);
+                beastDisplayPrefab.transform.localScale = beastDisplayPrefab.transform.localScale * .015f;
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 playerImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
@@ -261,9 +274,35 @@ public class LoadMission : MonoBehaviour
 
     void LoadDisplayPictures()
     {
-        playerProfile.sprite = Display_Picture.displayPicture;
+        
+        //Sets enemy pictures based on the tournament
+        if (CampaignManager.sceneInterface == "Tournament")
+        {
+            playerProfile.sprite = Resources.Load<Sprite>("Character_Pictures/Profile_Pictures/Dio_Front");
 
-        //Randomize enemy sprite here?
+            switch (LevelChecker.lastClick)
+            {
+                case "John":
+                    enemyProfile.sprite = CampaignManager.enemyPictures[0];
+                    break;
+                case "DemonChick":
+                    enemyProfile.sprite = CampaignManager.enemyPictures[1];
+                    break;
+                case "Gabriel":
+                    enemyProfile.sprite = CampaignManager.enemyPictures[2];
+                    break;
+                default: break;
+            }
+        }
+        else
+        {
+            //This will be used when the player can pic their picture. However, now there will only be a static Dio image here
+            playerProfile.sprite = Display_Picture.displayPicture;
+
+            //TODO: Randomize enemy sprite here?
+        }
+
+
     }
 
     //Get the images from the resources folder to be loaded
@@ -340,7 +379,10 @@ public class LoadMission : MonoBehaviour
     //plays death animation whenever someone dies
     IEnumerator PlayDeathAnimation(Beast toRemove, string owner)
     {
-        yield return new WaitForSeconds(2f);
+        //yield return new WaitForSeconds(2f);
+        GameObject slot = battleManager.getSlot(toRemove);
+        UnityArmatureComponent armature = slot.transform.GetChild(0).GetComponent<UnityArmatureComponent>();
+        yield return new WaitWhile(new System.Func<bool>(() => !armature.animation.isCompleted));
 
         GetImageToRemove(toRemove, owner).gameObject.SetActive(false);
         GameObject child = GetImageToRemove(toRemove, owner).transform.GetChild(0).gameObject;
@@ -354,11 +396,19 @@ public class LoadMission : MonoBehaviour
         {
             Time.timeScale = 1;
             giveUpDialog.SetActive(false);
+
+            LoadScenes load = gameObject.AddComponent<LoadScenes>();
+
+            if (CampaignManager.sceneInterface == "Campaign")
+                load.LoadSelect("Map");
+            else if (CampaignManager.sceneInterface == "Tournament")
+                load.LoadSelect("Tournament");
         }
         else
         {
             Time.timeScale = 0;
             giveUpDialog.SetActive(true);
+                
         }
     }
 }

@@ -13,7 +13,6 @@ public class Cthulhu_Script : Parent_Script, Parent_Beast
     public void back_special()
     {
         ProjectileAnimation();
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
@@ -28,8 +27,6 @@ public class Cthulhu_Script : Parent_Script, Parent_Beast
     public void front_special()
     {
         audioSrc.PlayOneShot(frontAttackSound);
-
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {

@@ -373,7 +373,6 @@ public class Attack : MonoBehaviour
         }
         else
         {
-            //battleManager.PlayAttackAnimation(inFront);
             healthManager.UpdateHealth(target, damage);
             Color type = GetTypeColor(attacker);
             healthManager.DisplayDamageOutput(target, damage.ToString(), type);

@@ -1,30 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
  
 public class Mandoro_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-
+    private GameObject emptyObj;
+    private GameObject statusEffect ;
+    private int statusCounter = -1;
     public void back_special()
     {
-        int ran = Random.Range(1, 5);
-        print("The number of attacks is " + (ran + 1));
-        foreach (Beast b in battleManager.targets)
-        {
-            print(b.name + " before");
-        }
+        int ran = UnityEngine.Random.Range(1, 5);
         for (; ran > 0; ran--)
         {
             battleManager.targets.Add(battleManager.targets[0]);
         }
         
-        foreach(Beast b in battleManager.targets)
-        {
-            print(b.name + " after");
-        }
-
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
@@ -34,12 +27,13 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+
+        PlayBackMove();
     }
 
     public void front_special() 
     {
         audioSrc.PlayOneShot(frontAttackSound);
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
@@ -53,17 +47,70 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
     //To modify -> add parameter to select character sound.
 
+    public async void PlayBackMove()
+    {
+        //await Task.Delay(500);
+
+        GameObject player = this.gameObject;
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+        emptyObj = new GameObject("Empty");
+        GameObject arm = player.transform.Find("Left Arm").gameObject;
+
+        //string targetScript = battleManager.targets[0].name + "_Script";
+        //Debug.Log("target script " + targetScript);
+
+        //Kitsune_Script script;
+
+        float playerX = player.transform.position.x;
+        float playerY = player.transform.position.y;
+        float targetX = target.transform.position.x;
+        float targetY = target.transform.position.y;
+        targetY += targetY > playerY ? -10 : 10;
+
+        float deltaX = playerX - targetX;
+        float deltaY = playerY - targetY;
+
+        float delta = deltaY / deltaX;
+        double tan = Mathf.Atan(delta);
+
+        double angle = tan * (180 / Math.PI);
+
+        Component[] allComp = emptyObj.GetComponents<Component>();
+        if (allComp.Length == 1)
+        {
+            emptyObj = new GameObject("Empty");
+            emptyObj.transform.SetParent(arm.transform);
+            emptyObj.transform.localPosition = new Vector2(-1.7f, 2.5f);
+            emptyObj.transform.localScale = new Vector2(0.2f, 0.2f);
+        }
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Moves/Move"));
+        movePrefab.transform.SetParent(emptyObj.transform);
+
+
+        movePrefab.transform.localPosition = new Vector2(73, 0);
+        movePrefab.transform.localScale = new Vector2(playerX > targetX ? 0.8f : -0.8f, 0.1f);
+        emptyObj.transform.rotation = Quaternion.Euler(0, 0, (float)angle);
+        movePrefab.transform.SetAsFirstSibling();
+
+        await Task.Delay(70);
+
+        //movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Mandoro/Mandoro_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Back");
+    }
 
     public void Play_SoundFX(string sound)
     {
-        
         switch (sound)
         {
             case "front": audioSrc.PlayOneShot(frontAttackSound); break;
             case "back": audioSrc.PlayOneShot(backAttackSound); break;
             case "damage": audioSrc.PlayOneShot(damageSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
-        }
-        
+        } 
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
 }

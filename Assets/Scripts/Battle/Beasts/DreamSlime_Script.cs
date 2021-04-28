@@ -25,11 +25,36 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
         base.start();
     }
 
+    public void PlayBackMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 100);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(2f, 2f);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/DreamSlime/DreamSlime_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Back");
+    }
+
+    public void PlayFrontMove()
+    {
+        GameObject target = battleManager.getSlot(battleManager.targets[0]);
+
+        GameObject movePrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        movePrefab.transform.SetParent(target.transform);
+        movePrefab.transform.localPosition = new Vector3(0, 100);
+        movePrefab.transform.localRotation = Quaternion.identity;
+        movePrefab.transform.localScale = new Vector3(2f, 2f);
+
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/DreamSlime/DreamSlime_Move_Controller") as RuntimeAnimatorController;
+        movePrefab.GetComponent<Animator>().SetTrigger("Front");
+    }
+
     public void back_special()
     {
-
-        audioSrc.PlayOneShot(backAttackSound);
-
         int slot = -1;
         int ran = Random.Range(0, 10);
         if (ran < 3 && battleManager.roundOrderTypes[battleManager.turn] == "Player" && !battleManager.isSquadFull("Player"))
@@ -60,7 +85,8 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
             battleManager.slots[slot].hitPoints = battleManager.slots[slot].maxHP;
             battleManager.attackPool.Add(battleManager.slots[slot]);
             loadMission.playerSlot[slot] = (battleManager.slots[slot]);
-            healthManager.playersLeft++;
+            //healthManager.playersLeft++;
+            battleManager.slots[slot].nonCombatant = true;
 
             //health display
             loadMission.playerDisplaySlots[slot].gameObject.SetActive(true);
@@ -97,6 +123,7 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
                         beastPrefab.transform.SetParent(battleManager.enemyPadSlots[ran].transform);
                         beastPrefab.transform.localPosition = new Vector3(0, 0);
                         beastPrefab.transform.localRotation = Quaternion.identity;
+                        beastPrefab.transform.localScale = new Vector3(20f, 20f);
                         slot = ran;
                     }
                 }
@@ -105,7 +132,7 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
             battleManager.enemySlots[slot].hitPoints = battleManager.enemySlots[slot].maxHP;
             battleManager.enemyAttackPool.Add(battleManager.enemySlots[slot]);
             loadMission.enemySlot[slot] = (battleManager.enemySlots[slot]);
-            healthManager.enemiesLeft++;
+            //healthManager.enemiesLeft++;
 
             //health display
             loadMission.enemyDisplaySlots[slot].gameObject.SetActive(true);
@@ -126,12 +153,21 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
             }
         }
 
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
+        }
+        else
+        {
+            attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
+        }
     }
 
     public void front_special()
     {
-        battleManager.PlayDamagedAnimation(battleManager.targets[0]);
+        battleManager.targets.Clear();
+        battleManager.targets = findRowTargets();
+        battleManager.cancelGuard = true;
 
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
@@ -141,6 +177,149 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), battleManager.enemySummoner);
         }
+    }
+
+    //changes targets to the front row (if there are front row targets) or back row(if there are no front row targets)
+    //it takes into consideration the position of the attacker and the availible targets 
+    List<Beast> findRowTargets()
+    {
+        List<Beast> slots = battleManager.slots;
+        List<Beast> enemySlots = battleManager.enemySlots;
+        List<Beast> targets = battleManager.targets;
+
+        int slot = battleManager.getCurrentBeastSlot();
+        if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
+        {
+            //this for loop will aquier upto three targets from a single row
+            for (int x = 0; x < enemySlots.Count; x++)
+            {
+                //this if statment tries to get all three beasts in the front row
+                if (x < (Values.SMALLSLOT / 2) && enemySlots[x] != null && enemySlots[x].hitPoints > 0)
+                {
+                    if (slot + 1 == x || slot == x || slot - 1 == x)
+                    {
+                        targets.Add(enemySlots[x]);
+                    }
+                }
+
+                else if (x == Values.SMALLSLOT / 2 && targets.Count < 1)
+                {
+                    for (int y = 0; y < Values.SMALLSLOT / 2; y++)
+                    {
+                        if (enemySlots[y] != null && enemySlots[y].hitPoints > 0)
+                        {
+                            targets.Add(enemySlots[y]);
+                        }
+                    }
+                }
+                //this else if checks to see if any targets from the front row have been added and if so
+                //breaks the loop, if not adds the beasts from the back row
+
+                if (x >= (Values.SMALLSLOT / 2) && enemySlots[x] != null && enemySlots[x].hitPoints > 0)
+                {
+                    print("help");
+                    //this is the dynamic if to check for beasts in the front, I had to have it work dynamically or else it would never work
+                    if (x == (Values.SMALLSLOT / 2) && targets.Count >= 1)
+                    {
+                        break;
+                    }
+
+
+                    if (slot % (Values.SMALLSLOT / 2) + 1 == x % (Values.SMALLSLOT / 2) || slot % (Values.SMALLSLOT / 2) == x % (Values.SMALLSLOT / 2) || slot % (Values.SMALLSLOT / 2) - 1 == x % (Values.SMALLSLOT / 2))
+                    {
+                        print("slot " + x);
+                        targets.Add(enemySlots[x]);
+                    }
+                }
+            }
+            //this is to cover situations that would normally have no availible target
+            if (targets.Count <= 0)
+            {
+                for (int x = 0; x < enemySlots.Count; x++)
+                {
+                    if (x < (Values.SMALLSLOT / 2) && enemySlots[x] != null && enemySlots[x].hitPoints > 0)
+                    {
+                        targets.Add(enemySlots[x]);
+                    }
+                    else if (x >= (Values.SMALLSLOT / 2) && enemySlots[x] != null && enemySlots[x].hitPoints > 0)
+
+                    {
+                        if (targets.Count > 0)
+                        {
+                            break;
+                        }
+                        targets.Add(enemySlots[x]);
+
+                    }
+                }
+            }
+        }
+        else
+        {
+            for (int x = 0; x < slots.Count; x++)
+            {
+                if (x < (Values.SMALLSLOT / 2) && slots[x] != null && slots[x].hitPoints > 0)
+                {
+                    if (slot + 1 == x || slot == x || slot - 1 == x)
+                    {
+                        targets.Add(slots[x]);
+                    }
+                }
+                else if (x == Values.SMALLSLOT / 2 && targets.Count < 1)
+                {
+                    for (int y = 0; y < Values.SMALLSLOT / 2; y++)
+                    {
+                        if (slots[y] != null && slots[y].hitPoints > 0)
+                        {
+                            targets.Add(slots[y]);
+                        }
+                    }
+                }
+                if (x >= (Values.SMALLSLOT / 2) && slots[x] != null && slots[x].hitPoints > 0)
+                {
+                    print(targets.Count);
+                    if (targets.Count - (x - (Values.SMALLSLOT / 2)) >= 1)
+                    {
+                        print("broken");
+                        break;
+                    }
+                    if (slot + 1 == x || slot == x || slot - 1 == x)
+                    {
+                        targets.Add(slots[x]);
+                    }
+                }
+            }
+            if (targets.Count <= 0)
+            {
+                for (int x = 0; x < Values.SMALLSLOT / 2; x++)
+                {
+                    if (slots[x] != null && slots[x].hitPoints > 0)
+                    {
+                        targets.Add(slots[x]);
+                    }
+                }
+                if (targets.Count <= 0)
+                {
+                    for (int x = 0; x < slots.Count; x++)
+                    {
+                        if (x < (Values.SMALLSLOT / 2) && slots[x] != null && slots[x].hitPoints > 0)
+                        {
+                            targets.Add(slots[x]);
+                        }
+                        else if (x >= (Values.SMALLSLOT / 2) && slots[x] != null && slots[x].hitPoints > 0)
+
+                        {
+                            if (targets.Count > 0)
+                            {
+                                break;
+                            }
+                            targets.Add(slots[x]);
+                        }
+                    }
+                }
+            }
+        }
+        return targets;
     }
 
     public void Play_SoundFX(string sound)

@@ -324,24 +324,31 @@ public class BattleManager : MonoBehaviour
             outline.gameObject.SetActive(true);
         }
 
+        foreach(Image beast in orderBar)
+        {
+            beast.gameObject.SetActive(true);
+        }
+
         for (int x = 0; x < orderBar.Count; x++)
         {
+            if (orderBar[x].transform.childCount > 0)
+            {
+                foreach (UnityEngine.Transform child in orderBar[x].transform)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
             try
             {
-                if(orderBar[x].transform.childCount > 0)
-                {
-                    foreach (UnityEngine.Transform child in orderBar[x].transform)
-                    {
-                        Destroy(child.gameObject);
-                    }
-                    //Destroy(orderBar[x].gameObject.transform.GetChild(0).gameObject);
-                }
-                
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + roundOrder[x + turn].name));
                 beastPrefab.transform.SetParent(orderBar[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0f, -50f);
+                var pos = beastPrefab.transform.position;
+                pos.y += 20;
+                beastPrefab.transform.localPosition = pos;
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(15f, 15f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .0175f;
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 if (roundOrderTypes[x + turn].Equals("Player"))
                 {
@@ -569,6 +576,7 @@ public class BattleManager : MonoBehaviour
             currentTurn = roundOrder[0];
             txtTurn.text = roundOrderTypes[0] + " " + currentTurn + "'s turn";
             turn = 0;
+
             if (healthManager.playersLeft > 0 && healthManager.enemiesLeft > 0 && roundOrderTypes[turn] == "Enemy")
             {
                 StartCoroutine(EnemyAttack());
@@ -1223,10 +1231,10 @@ public class BattleManager : MonoBehaviour
     // Wait for the animation to finish then go back to Idle animation
     public IEnumerator AnimationWaitTime(UnityArmatureComponent beast)
     {
-        print(!beast.animation.isCompleted);
         yield return new WaitUntil(() => beast.animation.isCompleted);
         beast.animation.Play("Idle", 0);
     }
+
     IEnumerator PauseWhile(System.Func<bool> condition)
     {
         if (condition == null)
