@@ -269,8 +269,6 @@ public class HealthManager : MonoBehaviour
 
     IEnumerator DisplayLosingScreen()
     {
-        ConversationStart.winBattleConvo();
-
         yield return new WaitForSeconds(2.5f);
         losingScreen.SetActive(true);
     }
@@ -349,10 +347,9 @@ public class HealthManager : MonoBehaviour
     //Play the 'roaring' animation for the winning team.
     IEnumerator winnersAnimations()
     {
-        ConversationStart.winBattleConvo();
-
         yield return new WaitForSeconds(2f);
 
+        ConversationStart.winBattleConvo();
 
         foreach (GameObject g in winners)
         {
