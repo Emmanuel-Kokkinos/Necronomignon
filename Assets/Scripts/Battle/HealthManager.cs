@@ -32,9 +32,10 @@ public class HealthManager : MonoBehaviour
     List<Beast> squad = new List<Beast>();
     List<Beast> enemies = new List<Beast>();
 
-    public List<GameObject> winners = new List<GameObject>();
+    [SerializeField] GameObject victoryScreen;
+    [SerializeField] GameObject losingScreen;
 
-    public GameObject victoryScreen;
+    public List<GameObject> winners = new List<GameObject>();
 
     //Get the health for each beast in play from BeastDatabase
     public void GetHealth(List<Beast> players, List<Beast> opposing, List<HealthBar> activePlayersHealth, List<HealthBar> activeEnemiesHealth)
@@ -251,7 +252,7 @@ public class HealthManager : MonoBehaviour
         {
             Debug.Log("Opposing Team Wins. Better Luck Next Time.");
             Player.summoner.addXP(battleManager.enemySummoner.xp/50);
-            StartCoroutine(LoadMap());
+            StartCoroutine(DisplayLosingScreen());
         }
     }
     //Check to see if there are any enemies left, if not end game
@@ -264,6 +265,18 @@ public class HealthManager : MonoBehaviour
             levelChecker.Progess(SceneManager.GetActiveScene().name);
             StartCoroutine(displayVictoryScreen());
         }
+    }
+
+    IEnumerator DisplayLosingScreen()
+    {
+        yield return new WaitForSeconds(2.5f);
+        losingScreen.SetActive(true);
+    }
+
+    public void OnLoadButtonClick()
+    {
+        losingScreen.SetActive(false);
+        SceneManager.LoadScene("Menu");
     }
 
     //Display the victory popup with the winning squad and rewards for winning the battle.
@@ -280,9 +293,11 @@ public class HealthManager : MonoBehaviour
 
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + squad[x].name));
                 beastPrefab.transform.SetParent(winners[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -30);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(25f, 25f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .065f;
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
             }
             else
             {
@@ -333,6 +348,9 @@ public class HealthManager : MonoBehaviour
     IEnumerator winnersAnimations()
     {
         yield return new WaitForSeconds(2f);
+
+        ConversationStart.winBattleConvo();
+
         foreach (GameObject g in winners)
         {
             if(g.transform.childCount > 0)
@@ -353,7 +371,8 @@ public class HealthManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         victoryScreen.SetActive(false);
-        LoadScenes load = new LoadScenes();
+
+        LoadScenes load = gameObject.AddComponent<LoadScenes>();
 
         if (CampaignManager.sceneInterface == "Campaign")
             load.LoadSelect("Map");

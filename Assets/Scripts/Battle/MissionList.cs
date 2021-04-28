@@ -87,8 +87,8 @@ public class MissionList : MonoBehaviour
             b = beastManager.getFromName("Wyvern");
             b.defence = 30;
             enemies.Add(b);
-            enemies.Add(beastManager.getFromName("FallborneDragon"));
-            enemies.Add(beastManager.getFromName("DreamSlime"));
+            enemies.Add(null);
+            enemies.Add(beastManager.getFromName("Zeograth"));
             enemies.Add(null);
             enemies.Add(beastManager.getFromName("Dryad"));
             enemies.Add(null);
@@ -99,27 +99,27 @@ public class MissionList : MonoBehaviour
             {
                 if (be != null)
                 {
-                    be.setTierUpper(3);
+                    be.setTierUpper(1);
                 }
             }
 
-            summoner.xp = 70;
+            summoner.xp = 15;
         }
         else if(mission == "Gabriel")
         {
             Beast b = new Beast();
 
-            b = beastManager.getFromName("Luzuria");
+            b = beastManager.getFromName("Wyvern");
             b.defence = 25;
 
             enemies.Add(b);
             enemies.Add(null);
-            enemies.Add(BeastManager.getFromNameS("FallborneDragon"));
+            enemies.Add(BeastManager.getFromNameS("Conglomerate"));
             enemies.Add(BeastManager.getFromNameS("Mandoro"));
             enemies.Add(beastManager.getFromName("Dryad"));
             enemies.Add(null);
             enemies.Add(null);
-            b = beastManager.getFromName("Cthulhu");
+            b = beastManager.getFromName("Kitsune");
             b.power = 3;
             enemies.Add(b);
             enemies.Add(null);
@@ -129,10 +129,10 @@ public class MissionList : MonoBehaviour
             {
                 if (be != null)
                 {
-                    be.setTierUpper(5);
+                    be.setTierUpper(1);
                 }
             }
-            summoner.xp = 120;
+            summoner.xp = 15;
         }
         else if (mission == "Boss")
         {

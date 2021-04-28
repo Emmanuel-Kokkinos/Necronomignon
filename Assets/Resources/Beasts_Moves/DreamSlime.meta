@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/Beasts_Moves/DreamSlime.meta
 guid: 1ad87dd8b16ce884ea158e49b4b99076
+========
+guid: 8297785239b8d974a9de8710e9e6f65b
+>>>>>>>> master:Assets/Assets/Animations/DreamSlime.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

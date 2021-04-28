@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DragonBones;
 
 //This script manages the whole tutorial. Each tutorial scene is hard coded in order
 //to keep the whole battle algorithm intact
@@ -82,36 +83,36 @@ public class TutorialManager : MonoBehaviour
 
     public void mandoAttack()
     {
-        
-        Animator animator = new Animator() ;
+
+        UnityArmatureComponent animator = new UnityArmatureComponent() ;
         if (mando != null)
         {
-            animator = mando.GetComponent<Animator>();
+            animator = mando.GetComponent<UnityArmatureComponent>();
         }
-        animator.SetTrigger("Front");
+        animator.animation.Play("Front", 1);
         pawn.SetActive(false);
     }
     public void dreamAttack()
     {
 
-        Animator animator = new Animator();
+        UnityArmatureComponent animator = new UnityArmatureComponent();
         if (dream != null)
         {
-            animator = dream.GetComponent<Animator>();
+            animator = dream.GetComponent<UnityArmatureComponent>();
         }
-        animator.SetTrigger("Front");
+        animator.animation.Play("Front",1);
         
         StartCoroutine(waitAttack());
     }
     public void wyvernAttack()
     {
 
-        Animator animator = new Animator();
+        UnityArmatureComponent animator = new UnityArmatureComponent();
         if (dream != null)
         {
-            animator = wyvern.GetComponent<Animator>();
+            animator = wyvern.GetComponent<UnityArmatureComponent>();
         }
-        animator.SetTrigger("Front");
+        animator.animation.Play("Front",1);
 
         StartCoroutine(waitAttackW());
     }
@@ -120,7 +121,7 @@ public class TutorialManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         knight.SetActive(false);
-        Transform transform = rook.GetComponent<Transform>();
+        UnityEngine.Transform transform = rook.GetComponent<UnityEngine.Transform>();
         for (int x = 10; x > 0; x--)
         {
             transform.position += Vector3.left * x;
