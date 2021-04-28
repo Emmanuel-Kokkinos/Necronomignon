@@ -15,6 +15,6 @@ public interface Parent_Beast
 
     void checkStatusEffect();
 
-    void applyStatusEffect(string type, GameObject target );
+    void applyStatusEffect(string type);
 
 }

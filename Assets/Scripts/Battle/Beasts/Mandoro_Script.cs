@@ -107,7 +107,7 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
     public void checkStatusEffect() { }
 
-    public void applyStatusEffect(string type, GameObject target) { }
+    public void applyStatusEffect(string type) { }
 
     public void getTargetScript(GameObject target) {
         string enemy = battleManager.targets[0].name;
@@ -115,7 +115,7 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
         GameObject kit = GameObject.Find(enemy + "(Clone)");
         Parent_Beast script = kit.GetComponent<Parent_Beast>();
 
-        script.applyStatusEffect("fire",target );
+        script.applyStatusEffect("fire" );
     }
 
     public string Beast_Name() {

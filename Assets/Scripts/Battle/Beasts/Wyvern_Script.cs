@@ -9,7 +9,7 @@ public class Wyvern_Script : Parent_Script, Parent_Beast
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     public void checkStatusEffect() { }
 
-    public void applyStatusEffect(string type, GameObject target) { }
+    public void applyStatusEffect(string type) { }
     public void back_special()
     { 
         ProjectileAnimation();

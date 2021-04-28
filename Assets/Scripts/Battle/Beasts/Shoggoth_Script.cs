@@ -7,7 +7,7 @@ public class Shoggoth_Script : Parent_Script, Parent_Beast
 {
     public void checkStatusEffect() { }
 
-    public void applyStatusEffect(string type, GameObject target) { }
+    public void applyStatusEffect(string type) { }
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     [SerializeField] Texture tex;
     private void Update()

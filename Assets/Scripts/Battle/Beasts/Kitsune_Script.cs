@@ -73,8 +73,11 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
         statusCounter++;
     }
 
-    public void applyStatusEffect(string type, GameObject target) {
+    public void applyStatusEffect(string type) {
         if (statusCounter != -1) return;
+
+        if(type )
+
         Debug.Log("counter " + statusCounter);
         statusCounter = 0;
 

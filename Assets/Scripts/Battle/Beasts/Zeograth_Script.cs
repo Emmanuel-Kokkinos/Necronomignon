@@ -48,5 +48,5 @@ public class Zeograth_Script : Parent_Script, Parent_Beast
     }
     public void checkStatusEffect() { }
 
-    public void applyStatusEffect(string type, GameObject target) { }
+    public void applyStatusEffect(string type) { }
 }

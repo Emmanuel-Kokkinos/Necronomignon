@@ -10,7 +10,7 @@ public class Dryad_Script : Parent_Script, Parent_Beast
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     public void checkStatusEffect() { }
 
-    public void applyStatusEffect(string type, GameObject target) { }
+    public void applyStatusEffect(string type) { }
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
