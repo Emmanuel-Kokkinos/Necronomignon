@@ -40,7 +40,32 @@ namespace DialogueEditor
 
             //Sets the default conversation
             SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            SetNPCConversation(FindByName("Conv_Graduation"));
+
+            //Sets tournament conversations
+            if(SceneManager.GetActiveScene().name == "Tournament")
+            {
+
+                if(CampaignManager.winTourBattle == 0)
+                {
+                    CampaignManager.dialogueEnd = false;
+                    SetNPCConversation(FindByName("Conv_Tour"));
+                }
+                else
+                {
+                    if (CampaignManager.dialogueEnd == true && CampaignManager.semiDiagEnd == false && CampaignManager.finDiagEnd == false && CampaignManager.tourEnd == false && CampaignManager.winTourBattle == 1)
+                    {
+                        SetNPCConversation(FindByName("Conv_semi"));
+                    }
+                    else if (CampaignManager.dialogueEnd == true && CampaignManager.semiDiagEnd == true && CampaignManager.finDiagEnd == false && CampaignManager.tourEnd == false && CampaignManager.winTourBattle == 2)
+                        SetNPCConversation(FindByName("Conv_finals"));
+                    else if (CampaignManager.dialogueEnd == true && CampaignManager.semiDiagEnd == true && CampaignManager.finDiagEnd == true && CampaignManager.tourEnd == false && CampaignManager.winTourBattle == 3)
+                        SetNPCConversation(FindByName("Tour_end"));
+                    
+                }
+                
+
+            }
+            //SetNPCConversation(FindByName("Conv_Graduation"));
 
             //Gets the data associated with conversation for further edit
             GetConversationData(currentConversation);
@@ -50,7 +75,8 @@ namespace DialogueEditor
             
 
             //Add conversation End Events
-            ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);  
+            ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);
+            
         }
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
@@ -61,7 +87,7 @@ namespace DialogueEditor
             currentConversation = dialogue;
         }
         //Gets NPC conversation by the name
-        private NPCConversation FindByName(string npcConvName)
+        public NPCConversation FindByName(string npcConvName)
         {
             NPCConversation sceneConvo = conversationNames.Find(x => x.DefaultName.Equals(npcConvName));
 
@@ -145,12 +171,24 @@ namespace DialogueEditor
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Conv_Tour":
-                    if(CampaignManager.dialogueEnd == false) { 
-                        GameObject tourChar = GameObject.Find("Character");
-                        tourChar.GetComponent<Image>().sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
-                    }
-                    break;
 
+                    if (CampaignManager.dialogueEnd == false) {
+                        characters[0].gameObject.SetActive(true);
+                        for (int x = 1; x <= 8; x++)
+                        {
+                            characters[x].gameObject.SetActive(false);
+                        }
+                        characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                        characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                        characters[2].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
+                        characters[3].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
+                        characters[4].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
+                        characters[5].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
+                        characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
+                        characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
+                        characters[8].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
+                    } 
+                    break;
                 case "Questionnaire":
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
@@ -171,6 +209,36 @@ namespace DialogueEditor
                             characters[x].gameObject.SetActive(false);
                     }
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dio"));
+                    break;
+                case "Conv_semi":
+                    if (CampaignManager.semiDiagEnd == false)
+                    {
+                        characters[0].gameObject.SetActive(true);
+                        
+                        characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                        characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                        characters[2].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
+                        characters[3].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
+                        characters[4].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
+                        characters[5].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
+                        characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
+                        characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
+                        characters[8].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
+                    }
+
+                    break;
+                case "Conv_finals":
+                    characters[0].gameObject.SetActive(true);
+
+                    characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    characters[1].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                    characters[2].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
+                    characters[3].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
+                    characters[4].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
+                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
+                    characters[6].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
+                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
+                    characters[8].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
                     break;
                 default:
 
@@ -202,14 +270,31 @@ namespace DialogueEditor
                     SceneManager.LoadScene("Menu");
                     break;
                 case "Conv_Tour":
-                    GameObject tourChar = GameObject.Find("Character");
-                    tourChar.gameObject.SetActive(false);
+                    for(int x = 0; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
                     CampaignManager.firstMission.SetActive(true);
+                
                     CampaignManager.dialogueEnd = true;
                     break;
                 case "Conv_Graduation":
                     LoadScenes load = gameObject.AddComponent<LoadScenes>();
                     load.LoadSelect("Tournament");
+                    break;
+                case "Conv_semi":
+                    CampaignManager.semiDiagEnd = true;
+                    for (int x = 0; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
+                    break;
+                case "Conv_finals":
+                    CampaignManager.finDiagEnd = true;
+
+                    break;
+                case "Tour_end":
+                    CampaignManager.tourEnd = true;
                     break;
             }
         }
