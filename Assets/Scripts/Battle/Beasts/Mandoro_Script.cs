@@ -91,6 +91,8 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
         movePrefab.GetComponent<Animator>().SetTrigger("Back");
 
+        //starts the status effects
+        //for now there is a 100% chance for the status effects
         getTargetScript(target);
     }
 
@@ -109,14 +111,21 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
     public void applyStatusEffect(string type) { }
 
+    /*
+        Retrieves the target beast and its script, then applies the status effect on it.
+     */
     public void getTargetScript(GameObject target) {
         string enemy = battleManager.targets[0].name;
 
         GameObject kit = GameObject.Find(enemy + "(Clone)");
         Parent_Beast script = kit.GetComponent<Parent_Beast>();
 
-        script.applyStatusEffect("fire" );
+        script.applyStatusEffect("Doom" );
     }
+
+    public void applyDoom() { }
+
+    public void updateDoom() { }
 
     public string Beast_Name() {
         return "Mandoro";

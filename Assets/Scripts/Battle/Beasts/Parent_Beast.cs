@@ -17,4 +17,8 @@ public interface Parent_Beast
 
     void applyStatusEffect(string type);
 
+    public void applyDoom();
+
+    public void updateDoom();
+
 }

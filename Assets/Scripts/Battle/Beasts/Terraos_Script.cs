@@ -50,5 +50,9 @@ public class Terraos_Script : Parent_Script, Parent_Beast
 
     public void applyStatusEffect(string type) { }
 
+    public void applyDoom() { }
+
+    public void updateDoom() { }
+
 
 }
