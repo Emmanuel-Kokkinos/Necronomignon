@@ -9,7 +9,9 @@ public class Cthulhu_Script : Parent_Script, Parent_Beast
 
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
+    public void checkStatusEffect() { }
 
+    public void applyStatusEffect(string type) { }
     public void back_special()
     {
         ProjectileAnimation();
@@ -58,5 +60,10 @@ public class Cthulhu_Script : Parent_Script, Parent_Beast
             case "damage": audioSrc.PlayOneShot(damageSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
+    }
+
+    public string Beast_Name()
+    {
+        return "Mandoro";
     }
 }

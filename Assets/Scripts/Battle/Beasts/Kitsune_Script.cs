@@ -55,4 +55,8 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
     public void applyStatusEffect(string type) {
         Debug.Log(type + " Status effect applied ");
     }
+
+    public string Beast_Name() {
+        return "Kitsune";
+    }
 }

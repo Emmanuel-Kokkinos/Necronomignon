@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Terraos_Script : Parent_Script, Parent_Beast
 {
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
     public void back_special()
     {
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -40,4 +43,9 @@ public class Terraos_Script : Parent_Script, Parent_Beast
         }
         */
     }
+    public string Beast_Name()
+    {
+        return "Mandoro";
+    }
+
 }

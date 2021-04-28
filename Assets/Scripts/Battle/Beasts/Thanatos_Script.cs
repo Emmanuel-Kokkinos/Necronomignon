@@ -4,8 +4,11 @@ using UnityEngine;
  
 public class Thanatos_Script : Parent_Script, Parent_Beast
 {
-    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound; 
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
     public void back_special()
     {
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -39,5 +42,10 @@ public class Thanatos_Script : Parent_Script, Parent_Beast
             case "damage": audioSrc.PlayOneShot(damageSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
+    }
+
+    public string Beast_Name()
+    {
+        return "Mandoro";
     }
 }

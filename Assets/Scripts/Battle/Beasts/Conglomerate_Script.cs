@@ -13,6 +13,10 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
 
         base.start();
     }
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
 
     public void PlayFrontMove()
     {
@@ -74,5 +78,10 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
             case "damage": audioSrc.PlayOneShot(damageSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }  
+    }
+
+    public string Beast_Name()
+    {
+        return "Mandoro";
     }
 }
