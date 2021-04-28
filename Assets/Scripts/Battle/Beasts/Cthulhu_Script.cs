@@ -11,7 +11,7 @@ public class Cthulhu_Script : Parent_Script, Parent_Beast
 
     public void checkStatusEffect() { }
 
-    public void applyStatusEffect(string type) { }
+    public void applyStatusEffect(string type, GameObject target) { }
     public void back_special()
     {
         ProjectileAnimation();

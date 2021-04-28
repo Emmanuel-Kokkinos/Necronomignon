@@ -12,11 +12,13 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
     private int statusCounter = -1;
     public void back_special()
     {
+        checkStatusEffect();
         ProjectileAnimation();
     }
 
     public void front_special() 
     {
+        checkStatusEffect();
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
         {
             attack.InitiateAttack(battleManager.currentTurn, battleManager.targets, battleManager.inFront(), Player.summoner);
@@ -55,33 +57,41 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
     }
 
     public void checkStatusEffect() {
-    //status effect is done
-        if (statusCounter == 3) {
+        //status effect is done
+        if (statusCounter == -1) return;
+
+        if (statusCounter == 2 || battleManager.currentTurn.hitPoints <= 0) {
             statusCounter = -1;
-            //destroy prefab
+            Destroy(statusEffect);
+            statusName = "";
+            Debug.Log("Effect Done");
             return;
         }
+
+        Debug.Log("Status counter: " + statusCounter);
 
         statusCounter++;
     }
 
-    public void applyStatusEffect(string type) {
+    public void applyStatusEffect(string type, GameObject target) {
         if (statusCounter != -1) return;
-
+        Debug.Log("counter " + statusCounter);
         statusCounter = 0;
 
         Debug.Log(type + " Status effect applied ");
 
         statusEffect = (GameObject)Instantiate(Resources.Load("Prefabs/Moves/Move"));
         statusEffect.transform.SetParent(this.transform);
-
-
-        statusEffect.transform.localPosition = new Vector2(73, 0);
-        statusEffect.transform.localScale = new Vector2(1f, 1f);
         statusEffect.transform.SetAsFirstSibling();
+        statusEffect.transform.localPosition = new Vector2(0, 5);
+        statusEffect.transform.localScale = new Vector2(0.015f, 0.015f);
+        
 
         statusEffect.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Beasts_Moves/statusEffects/" + type + "/" + type + "_controller") as RuntimeAnimatorController;
-        statusEffect.GetComponent<Animator>().SetTrigger("Back");
+        statusEffect.GetComponent<Animator>().SetTrigger("effect");
+    }
+
+    public void applyDoom() { 
     }
 
     public string Beast_Name() {
