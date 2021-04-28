@@ -293,9 +293,11 @@ public class HealthManager : MonoBehaviour
 
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + squad[x].name));
                 beastPrefab.transform.SetParent(winners[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -30);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = beastPrefab.transform.localScale * .065f;
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
             }
             else
             {

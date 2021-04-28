@@ -80,7 +80,7 @@ public class DemoBattleManager : MonoBehaviour
 
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(slotImgs[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -40);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = beastPrefab.transform.localScale * .25f;
 

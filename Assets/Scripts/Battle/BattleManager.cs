@@ -342,7 +342,9 @@ public class BattleManager : MonoBehaviour
             {
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + roundOrder[x + turn].name));
                 beastPrefab.transform.SetParent(orderBar[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0f, -50f);
+                var pos = beastPrefab.transform.position;
+                pos.y += 20;
+                beastPrefab.transform.localPosition = pos;
                 beastPrefab.transform.localRotation = Quaternion.identity;
                 beastPrefab.transform.localScale = beastPrefab.transform.localScale * .0175f;
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);

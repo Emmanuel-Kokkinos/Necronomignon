@@ -23,7 +23,7 @@ public class TrainPrep : MonoBehaviour
         name.text = SummonManager.name;
         GameObject beastPrefab = (GameObject)Instantiate(Resources.Load($"Prefabs/Beasts/{SummonManager.name}"));
         beastPrefab.transform.SetParent(GameObject.Find($"BeastImage").transform);
-        beastPrefab.transform.localPosition = new Vector3(0, -50);
+        beastPrefab.transform.localPosition = beastPrefab.transform.position;
         beastPrefab.transform.localRotation = Quaternion.identity;
         beastPrefab.transform.localScale = beastPrefab.transform.localScale * .8f;
         beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
