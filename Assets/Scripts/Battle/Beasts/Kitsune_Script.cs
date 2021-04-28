@@ -76,7 +76,7 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
     public void applyStatusEffect(string type) {
         if (statusCounter != -1) return;
 
-        if(type )
+        //if(type )
 
         Debug.Log("counter " + statusCounter);
         statusCounter = 0;
