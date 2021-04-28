@@ -11,9 +11,7 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
 
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    public void checkStatusEffect() { }
-
-    public void applyStatusEffect(string type) { }
+  
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
@@ -337,6 +335,11 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
 
     public string Beast_Name()
     {
-        return "Mandoro";
+        return "DreamSlime";
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
 }

@@ -5,9 +5,7 @@ using DragonBones;
 
 public class Shoggoth_Script : Parent_Script, Parent_Beast
 {
-    public void checkStatusEffect() { }
-
-    public void applyStatusEffect(string type) { }
+ 
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
     [SerializeField] Texture tex;
     private void Update()
@@ -43,6 +41,11 @@ public class Shoggoth_Script : Parent_Script, Parent_Beast
 
     public string Beast_Name()
     {
-        return "Mandoro";
+        return "Shoggoth";
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
 }

@@ -8,9 +8,7 @@ public class SovereignDragon_Script : Parent_Script, Parent_Beast
     [SerializeField] GameObject frontPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
-    public void checkStatusEffect() { }
-
-    public void applyStatusEffect(string type) { }
+ 
     public void back_special()
     {
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -70,7 +68,12 @@ public class SovereignDragon_Script : Parent_Script, Parent_Beast
 
     public string Beast_Name()
     {
-        return "Mandoro";
+        return "SovereignDragon";
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
 
 }

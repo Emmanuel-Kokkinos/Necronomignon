@@ -5,9 +5,7 @@ using UnityEngine;
 public class Nage_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    public void checkStatusEffect() { }
-
-    public void applyStatusEffect(string type) { }
+ 
     public void back_special()
     {
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -46,6 +44,11 @@ public class Nage_Script : Parent_Script, Parent_Beast
     }
     public string Beast_Name()
     {
-        return "Mandoro";
+        return "Nage";
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
 }

@@ -7,9 +7,7 @@ public class Wyvern_Script : Parent_Script, Parent_Beast
 {
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    public void checkStatusEffect() { }
-
-    public void applyStatusEffect(string type) { }
+   
     public void back_special()
     { 
         ProjectileAnimation();
@@ -269,6 +267,11 @@ public class Wyvern_Script : Parent_Script, Parent_Beast
 
     public string Beast_Name()
     {
-        return "Mandoro";
+        return "Wyvern";
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
 }

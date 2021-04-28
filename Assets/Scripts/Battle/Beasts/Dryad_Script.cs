@@ -8,9 +8,7 @@ public class Dryad_Script : Parent_Script, Parent_Beast
     HealthManager healthManager;
 
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-    public void checkStatusEffect() { }
 
-    public void applyStatusEffect(string type) { }
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
@@ -114,6 +112,11 @@ public class Dryad_Script : Parent_Script, Parent_Beast
 
     public string Beast_Name()
     {
-        return "Mandoro";
+        return "Dryad";
     }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
 }
