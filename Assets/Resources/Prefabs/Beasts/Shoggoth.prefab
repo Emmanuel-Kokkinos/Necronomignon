@@ -403,10 +403,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c937d70a98689f849a81a2c8050d1535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frontAttackSound: {fileID: 0}
-  backAttackSound: {fileID: 0}
-  damageSound: {fileID: 0}
-  deathSound: {fileID: 0}
+  frontAttackSound: {fileID: 8300000, guid: 1a7e51ec669938b44abe143061d8d147, type: 3}
+  backAttackSound: {fileID: 8300000, guid: de2d3683ffb3ac143875180020de739e, type: 3}
+  damageSound: {fileID: 8300000, guid: dfe7d948fd46ba24f94ed1bc1ffa0bda, type: 3}
+  deathSound: {fileID: 8300000, guid: e4cf6ff6e6d39b7499e2d68043387af2, type: 3}
   tex: {fileID: 2800000, guid: 178fb0191cec0fb479a9a3f6a388d478, type: 3}
 --- !u!61 &7271219643070437120
 BoxCollider2D:

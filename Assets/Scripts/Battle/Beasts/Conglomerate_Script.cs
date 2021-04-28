@@ -9,7 +9,6 @@ public class Conglomerate_Script : Parent_Script, Parent_Beast
 
     void Start()
     {
-        frontAttackSound = backAttackSound;
 
         base.start();
     }

@@ -474,6 +474,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9156501f3788b3f4e8a320d6e1d9f91b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frontAttackSound: {fileID: 8300000, guid: 19bdfd1b0e504c04d9a2be2f2766a121, type: 3}
+  backAttackSound: {fileID: 8300000, guid: e4f209074394a824cb5a0b86acf33fc6, type: 3}
+  damageSound: {fileID: 8300000, guid: 3c57aa7a1f256134c9f28d8b1d10350e, type: 3}
+  deathSound: {fileID: 8300000, guid: ba8b7cdb1fbc3a04aab3dc4ac09cbcde, type: 3}
 --- !u!61 &22546897979383977
 BoxCollider2D:
   m_ObjectHideFlags: 0
