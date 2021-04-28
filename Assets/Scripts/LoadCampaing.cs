@@ -34,7 +34,7 @@ public class LoadCampaing : MonoBehaviour
         Button battle = (Button)GameObject.Find("battleBtn").GetComponent<Button>();
         battle.onClick.AddListener( delegate { SceneManager.LoadScene("Map"); });
         Button tournament = (Button)GameObject.Find("tournamentBtn").GetComponent<Button>();
-        tournament.onClick.AddListener(delegate { SceneManager.LoadScene("Tournament"); });
+        tournament.onClick.AddListener(delegate { SceneManager.LoadScene("DialogScene"); });
     }
 
     // Update is called once per frame
