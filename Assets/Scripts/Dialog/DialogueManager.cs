@@ -39,10 +39,10 @@ namespace DialogueEditor
             timesUsedCounter = conversationNames.Count - 1;
 
             //Sets the default conversation
-            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
             //SetNPCConversation(FindByName("Questionnaire"));
             //SetNPCConversation(FindByName("Conv_Intro"));
-            // SetNPCConversation(FindByName("Conv_Opening"));
+             SetNPCConversation(FindByName("FallMirrulak_Intro"));
 
             //Sets tournament conversations
             if (SceneManager.GetActiveScene().name == "Tournament")
@@ -256,10 +256,19 @@ namespace DialogueEditor
                     characters[2].gameObject.SetActive(false);
                     characters[5].gameObject.SetActive(false);
 
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Party_Scene");
                     break;
                 case "FallMirrulak_Intro":
                     foreach (Image chars in characters)
                         chars.gameObject.SetActive(false);
+
+
+                    break;
+                case "FallMirrulak_1":
+                    foreach (Image chars in characters)
+                        chars.gameObject.SetActive(false);
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Arriving_Mirrulak");
                     break;
                 default:
 
@@ -333,8 +342,10 @@ namespace DialogueEditor
                     SetNPCConversation(FindByName("FallMirrulak_Intro"));
                     BeginConversation(currentConversation, "DialogScene");
                     break;
-                case "FallMirrulak_Intro": 
+                case "FallMirrulak_Intro":
                     //
+                    SetNPCConversation(FindByName("FallMirrulak_1"));
+                    BeginConversation(currentConversation, "DialogScene");
                     break;
             }
         }
