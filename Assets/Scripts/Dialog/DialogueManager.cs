@@ -142,6 +142,8 @@ namespace DialogueEditor
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
 
                     characters[8].gameObject.SetActive(false);
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Waiting_Room");
                     break;
                 case "Conv_Intro":
 
@@ -167,6 +169,8 @@ namespace DialogueEditor
                     {
                         characters[x].gameObject.SetActive(false);
                     }
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Miskatonic");
                     break;
                     //Moved tutorial to dialogue manager so it can be loaded directly from dialogue
                 case "Tutorial1":
@@ -178,7 +182,7 @@ namespace DialogueEditor
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Conv_Tour":
-
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Colosseum");
                     if (CampaignManager.dialogueEnd == false) {
                         characters[0].gameObject.SetActive(true);
                         for (int x = 1; x <= 8; x++)
@@ -216,6 +220,8 @@ namespace DialogueEditor
                             characters[x].gameObject.SetActive(false);
                     }
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dio"));
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Graduation_Hall");
                     break;
                 case "Conv_semi":
                     if (CampaignManager.semiDiagEnd == false)
@@ -262,7 +268,7 @@ namespace DialogueEditor
                     foreach (Image chars in characters)
                         chars.gameObject.SetActive(false);
 
-
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Forest_Mirrulak");
                     break;
                 case "FallMirrulak_1":
                     foreach (Image chars in characters)
