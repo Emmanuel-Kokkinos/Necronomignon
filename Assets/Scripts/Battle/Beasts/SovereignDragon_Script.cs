@@ -8,6 +8,7 @@ public class SovereignDragon_Script : Parent_Script, Parent_Beast
     [SerializeField] GameObject frontPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
+ 
     public void back_special()
     {
         if (battleManager.roundOrderTypes[battleManager.turn] == "Player")
@@ -64,5 +65,19 @@ public class SovereignDragon_Script : Parent_Script, Parent_Beast
         movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/SovereignDragon/SovereignDragon_Move_Controller") as RuntimeAnimatorController;
         movePrefab.GetComponent<Animator>().SetTrigger("Front");
     }
+
+    public string Beast_Name()
+    {
+        return "SovereignDragon";
+    }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
+    public void applyDoom() { }
+
+    public void updateDoom() { }
+
 
 }

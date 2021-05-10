@@ -59,9 +59,9 @@ public class LoadSquads : MonoBehaviour
                 squad1Slots[x].SetActive(true);
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(GameObject.Find("btnSquad1").transform.GetChild(x).transform);
-                beastPrefab.transform.localPosition = new Vector3(-10, -35);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(18f, 18f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .2f;
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
             }
@@ -83,9 +83,9 @@ public class LoadSquads : MonoBehaviour
                 squad2Slots[x].SetActive(true);
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(GameObject.Find("btnSquad2").transform.GetChild(x).transform);
-                beastPrefab.transform.localPosition = new Vector3(-10, -35);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(18f, 18f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .2f;
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
             }

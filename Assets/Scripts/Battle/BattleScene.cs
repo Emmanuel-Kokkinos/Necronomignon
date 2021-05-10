@@ -31,7 +31,7 @@ public class BattleScene : MonoBehaviour
         GameObject canv = GameObject.Find("Canvas");
         if (sceneInterface == "Tournament")
         {
-            canv.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/battle_bg_proto");
+            canv.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Tournament_Combat");
             //Set the images and components based on battle
             switch (LevelChecker.lastClick)
             {

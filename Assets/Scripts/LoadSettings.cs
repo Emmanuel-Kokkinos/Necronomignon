@@ -41,8 +41,7 @@ public class LoadSettings : MonoBehaviour
         //if settings screen is instantiated stop function
         GameObject go = GameObject.Find("Music");
         
-        if (go != null)
-        {
+        if (go != null){
             AudioSource[] auso = go.GetComponents<AudioSource>();
             value = auso[0].volume;
         }

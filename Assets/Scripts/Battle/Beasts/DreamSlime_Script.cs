@@ -11,7 +11,7 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
 
     [SerializeField] GameObject backPrefab;
     [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
-
+  
     void Start()
     {
         GameObject g = GameObject.Find("GameManager");
@@ -332,4 +332,18 @@ public class DreamSlime_Script : Parent_Script, Parent_Beast
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
     }
+
+    public string Beast_Name()
+    {
+        return "DreamSlime";
+    }
+
+    public void checkStatusEffect() { }
+
+    public void applyStatusEffect(string type) { }
+
+    public void applyDoom() { }
+
+    public void updateDoom() { }
+
 }

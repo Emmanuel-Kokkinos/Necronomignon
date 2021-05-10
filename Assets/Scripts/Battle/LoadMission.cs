@@ -136,17 +136,21 @@ public class LoadMission : MonoBehaviour
                 //Instantiate a prefab of the beast in battle
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + enemyToLoad[x].name));
                 beastPrefab.transform.SetParent(enemySlotImg[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -50);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(20f, 20f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .06f;
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
 
                 //Instantiate a prefab of the beast in the healthDisplay
                 GameObject beastDisplayPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + enemyToLoad[x].name));
                 beastDisplayPrefab.transform.SetParent(enemyImgs[x].transform);
-                beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
+                var pos = beastDisplayPrefab.transform.position;
+                pos.y += 50;
+                beastDisplayPrefab.transform.localPosition = pos;
                 beastDisplayPrefab.transform.localRotation = Quaternion.identity;
-                beastDisplayPrefab.transform.localScale = new Vector3(10f, 10f);
+                beastDisplayPrefab.transform.localScale = beastDisplayPrefab.transform.localScale * .015f;
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
                 enemyImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
@@ -190,17 +194,20 @@ public class LoadMission : MonoBehaviour
                 //Instantiate a prefab of the beast in battle
                 GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastPrefab.transform.SetParent(playerSlotImg[x].transform);
-                beastPrefab.transform.localPosition = new Vector3(0, -50);
+                beastPrefab.transform.localPosition = beastPrefab.transform.position;
                 beastPrefab.transform.localRotation = Quaternion.identity;
-                beastPrefab.transform.localScale = new Vector3(20f, 20f);
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .06f;
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 0);
 
                 //Instantiate a prefab of the beast in the healthDisplay
                 GameObject beastDisplayPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + toLoad[x].name));
                 beastDisplayPrefab.transform.SetParent(playerImgs[x].transform);
-                beastDisplayPrefab.transform.localPosition = new Vector3(0, 0);
+                var pos = beastDisplayPrefab.transform.position;
+                pos.y += 50;
+                beastDisplayPrefab.transform.localPosition = pos;
+                beastDisplayPrefab.transform.localPosition = beastDisplayPrefab.transform.position;
                 beastDisplayPrefab.transform.localRotation = Quaternion.identity;
-                beastDisplayPrefab.transform.localScale = new Vector3(10f, 10f);
+                beastDisplayPrefab.transform.localScale = beastDisplayPrefab.transform.localScale * .015f;
                 beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
                 beastDisplayPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 

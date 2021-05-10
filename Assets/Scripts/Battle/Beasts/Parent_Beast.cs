@@ -11,4 +11,14 @@ public interface Parent_Beast
 
     void Play_SoundFX(string sound);
 
+    string Beast_Name();
+
+    void checkStatusEffect();
+
+    void applyStatusEffect(string type);
+
+    void applyDoom();
+
+    void updateDoom();
+
 }

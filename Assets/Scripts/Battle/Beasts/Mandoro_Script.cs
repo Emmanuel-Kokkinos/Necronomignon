@@ -47,19 +47,11 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
 
     //To modify -> add parameter to select character sound.
 
-    public async void PlayBackMove()
-    {
-        //await Task.Delay(500);
-
+    public async void PlayBackMove(){
         GameObject player = this.gameObject;
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
-        emptyObj = new GameObject("Empty");
         GameObject arm = player.transform.Find("Left Arm").gameObject;
-
-        //string targetScript = battleManager.targets[0].name + "_Script";
-        //Debug.Log("target script " + targetScript);
-
-        //Kitsune_Script script;
+        emptyObj = new GameObject("Empty");
 
         float playerX = player.transform.position.x;
         float playerY = player.transform.position.y;
@@ -93,10 +85,15 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
         emptyObj.transform.rotation = Quaternion.Euler(0, 0, (float)angle);
         movePrefab.transform.SetAsFirstSibling();
 
+        movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Beasts_Moves/Mandoro/Mandoro_Move_Controller") as RuntimeAnimatorController;
+        
         await Task.Delay(70);
 
-        //movePrefab.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Mandoro/Mandoro_Move_Controller") as RuntimeAnimatorController;
         movePrefab.GetComponent<Animator>().SetTrigger("Back");
+
+        //starts the status effects
+        //for now there is a 100% chance for the status effects
+        getTargetScript(target);
     }
 
     public void Play_SoundFX(string sound)
@@ -113,4 +110,24 @@ public class Mandoro_Script : Parent_Script, Parent_Beast
     public void checkStatusEffect() { }
 
     public void applyStatusEffect(string type) { }
+
+    /*
+        Retrieves the target beast and its script, then applies the status effect on it.
+     */
+    public void getTargetScript(GameObject target) {
+        string enemy = battleManager.targets[0].name;
+
+        GameObject kit = GameObject.Find(enemy + "(Clone)");
+        Parent_Beast script = kit.GetComponent<Parent_Beast>();
+
+        script.applyStatusEffect("Doom" );
+    }
+
+    public void applyDoom() { }
+
+    public void updateDoom() { }
+
+    public string Beast_Name() {
+        return "Mandoro";
+    }
 }

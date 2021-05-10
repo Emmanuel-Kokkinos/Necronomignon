@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Resources/Beasts_Moves/Terraos.meta
 guid: 827d4f6cac7eb7a438c0ecd70d30dc2b
+=======
+guid: cd464b6377263b84e913373966eec80a
+>>>>>>> master:Assets/Resources/Beasts_Moves/Conglomerate.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
