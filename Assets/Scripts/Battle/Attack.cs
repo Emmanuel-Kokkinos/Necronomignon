@@ -85,6 +85,7 @@ public class Attack : MonoBehaviour
                 {
                     if (attacker.curse(target))
                     {
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("doom3");
                         healthManager.DisplayDamageOutput(target, "DOOM!", new Color(25f / 255f, 25f / 255f, 25f / 255f));
                         print("Doom has consumed " + target.name);
                         modifier = 1;
@@ -92,6 +93,7 @@ public class Attack : MonoBehaviour
                     }
                     else
                     {
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("doom2");
                         healthManager.DisplayDamageOutput(target, "Doom lingers...", new Color(25f / 255f, 25f / 255f, 25f / 255f));
                         print("Doom lingers over " + target.name);
                         modifier = 1;
@@ -284,11 +286,27 @@ public class Attack : MonoBehaviour
         else if(rand < effectChance && type == (int)Move.types.Corrupt)
         {
             target.statusTurns[type]++;
-            CreateStatusEffectPrefab(type, target);
-
-            if (target.statusTurns[type] > 5)
+            switch(target.statusTurns[type])
             {
-                healthManager.UpdateHealth(target, target.hitPoints);
+                case 1:
+                    CreateStatusEffectPrefab(type, target);
+                    break;
+                case 2:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted2");
+                    break;
+                case 3:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted3");
+                    break;
+                case 4:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted4");
+                    break;
+                case 5:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted5");
+                    break;
+                default:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted6");
+                    healthManager.UpdateHealth(target, target.hitPoints);
+                    break;
             }
         }
     }
@@ -328,7 +346,8 @@ public class Attack : MonoBehaviour
                     Resources.Load("Beasts_Moves/statusEffects/paralysis/paralysis_controller") as RuntimeAnimatorController;
                 break;
             case 4:
-                //dark
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
+                    Resources.Load("Beasts_Moves/statusEffects/Doom/Doom_Controller") as RuntimeAnimatorController;
                 break;
             case 5:
                 effectPrefab.GetComponent<Animator>().runtimeAnimatorController =

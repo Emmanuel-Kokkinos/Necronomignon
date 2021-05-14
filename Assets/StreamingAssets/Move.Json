@@ -32,7 +32,7 @@
       "power": "7",
       "number_of_moves": "2",
       "condition_chance": "1",
-      "type": "1",
+      "type": "6",
       "description": "Base damage: 17",
       "healing": "false",
       "rowAttack": "false",

@@ -349,7 +349,9 @@ public class HealthManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        ConversationStart.winBattleConvo();
+        // This is giving me problems in normal battles
+        //ConversationStart.winBattleConvo();
+        print("ConversationStart.winBattleConvo() line 352 HealthManager");
 
         foreach (GameObject g in winners)
         {
