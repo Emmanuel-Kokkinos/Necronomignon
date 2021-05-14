@@ -440,6 +440,9 @@ public class Attack : MonoBehaviour
         if (target.statusTurns[(int)Move.types.Sleep] > 0 && rand > 0 && rand<5)
         {
             print(target.name + " woke up");
+
+            Destroy(battleManager.getSlot(target).transform.Find("Move(Clone)").gameObject);
+
             target.statusTurns[(int)Move.types.Sleep] = 0;
         }
     }
