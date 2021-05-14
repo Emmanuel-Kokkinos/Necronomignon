@@ -403,6 +403,19 @@ public class BattleManager : MonoBehaviour
             if (currentTurn.statusTurns[x] > 0 && (int)Move.types.Corrupt != x)
             {
                 currentTurn.statusTurns[x]--;
+
+                // Stops status effect animation when no longer affected
+                if(currentTurn.statusTurns[x] == 0)
+                {
+                    try
+                    {
+                        Destroy(getSlot(currentTurn).gameObject.transform.Find("Move(Clone)").gameObject);
+                    }
+                    catch
+                    {
+
+                    }
+                }
             }
             if (currentTurn.statusTurns[x] > 0 && x == (int)Move.types.Burn)
             {

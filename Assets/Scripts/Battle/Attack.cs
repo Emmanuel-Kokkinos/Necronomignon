@@ -85,6 +85,7 @@ public class Attack : MonoBehaviour
                 {
                     if (attacker.curse(target))
                     {
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("doom3");
                         healthManager.DisplayDamageOutput(target, "DOOM!", new Color(25f / 255f, 25f / 255f, 25f / 255f));
                         print("Doom has consumed " + target.name);
                         modifier = 1;
@@ -92,6 +93,7 @@ public class Attack : MonoBehaviour
                     }
                     else
                     {
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("doom2");
                         healthManager.DisplayDamageOutput(target, "Doom lingers...", new Color(25f / 255f, 25f / 255f, 25f / 255f));
                         print("Doom lingers over " + target.name);
                         modifier = 1;
@@ -270,22 +272,97 @@ public class Attack : MonoBehaviour
         if (rand < effectChance && type != (int)Move.types.Doom && type != (int)Move.types.Corrupt && target.statusTurns[type]<=0)
         {
             print("status effect on " + target.name);
+            CreateStatusEffectPrefab(type, target);
             target.statusTurns[type] = 3;
         }
         //this is where doom is cast, after this point doom is charged and completed in another place
         else if(rand < effectChance && type != (int)Move.types.Corrupt && type == (int)Move.types.Doom && target.statusTurns[type] <= 0)
         {
             print(target.name + " has been doomed");
+            CreateStatusEffectPrefab(type, target);
             attacker.curse(target);
         }
         //here is where corruption is added and if neccisary, deleted 
         else if(rand < effectChance && type == (int)Move.types.Corrupt)
         {
             target.statusTurns[type]++;
-            if(target.statusTurns[type] > 5)
+            switch(target.statusTurns[type])
             {
-                healthManager.UpdateHealth(target, target.hitPoints);
+                case 1:
+                    CreateStatusEffectPrefab(type, target);
+                    break;
+                case 2:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted2");
+                    break;
+                case 3:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted3");
+                    break;
+                case 4:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted4");
+                    break;
+                case 5:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted5");
+                    break;
+                default:
+                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted6");
+                    healthManager.UpdateHealth(target, target.hitPoints);
+                    break;
             }
+        }
+    }
+
+    // Creates a prefab to display the status effect animation
+    void CreateStatusEffectPrefab(int type, Beast target)
+    {
+        GameObject effectPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        SetAnimatorController(effectPrefab, type);
+        effectPrefab.GetComponent<Animator>().SetTrigger("effect");
+        effectPrefab.transform.SetParent(battleManager.getSlot(target).transform);
+        effectPrefab.transform.localPosition = new Vector3(0, 100);
+        effectPrefab.transform.localRotation = Quaternion.identity;
+        effectPrefab.transform.localScale = new Vector3(.6f, .6f);
+    }
+
+    // Sets the right animator controller depending on which type of status effect is applied
+    void SetAnimatorController(GameObject effectPrefab, int type)
+    {
+        switch(type)
+        {
+            case 0:
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController = 
+                    Resources.Load("Beasts_Moves/statusEffects/sleep/sleep_controller") as RuntimeAnimatorController;
+                break;
+            case 1:
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController = 
+                    Resources.Load("Beasts_Moves/statusEffects/fire/fire_controller") as RuntimeAnimatorController;
+                break;
+            case 2:
+                print("poison animation");
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
+                    Resources.Load("Beasts_Moves/statusEffects/poison/poison_controller") as RuntimeAnimatorController;
+                break;
+            case 3:
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
+                    Resources.Load("Beasts_Moves/statusEffects/paralysis/paralysis_controller") as RuntimeAnimatorController;
+                break;
+            case 4:
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
+                    Resources.Load("Beasts_Moves/statusEffects/Doom/Doom_Controller") as RuntimeAnimatorController;
+                break;
+            case 5:
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
+                    Resources.Load("Beasts_Moves/statusEffects/blind/blind_controller") as RuntimeAnimatorController;
+                break;
+            case 6:
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
+                    Resources.Load("Beasts_Moves/statusEffects/corrupted/corrupted_controller") as RuntimeAnimatorController;
+                break;
+            case 7:
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
+                    Resources.Load("Beasts_Moves/statusEffects/stunned/stunned_controller") as RuntimeAnimatorController;
+                break;
+            default:
+                break;
         }
     }
 
@@ -382,6 +459,9 @@ public class Attack : MonoBehaviour
         if (target.statusTurns[(int)Move.types.Sleep] > 0 && rand > 0 && rand<5)
         {
             print(target.name + " woke up");
+
+            Destroy(battleManager.getSlot(target).transform.Find("Move(Clone)").gameObject);
+
             target.statusTurns[(int)Move.types.Sleep] = 0;
         }
     }

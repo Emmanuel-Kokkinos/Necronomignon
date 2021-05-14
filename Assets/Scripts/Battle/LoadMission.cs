@@ -386,6 +386,14 @@ public class LoadMission : MonoBehaviour
 
         GetImageToRemove(toRemove, owner).gameObject.SetActive(false);
         GameObject child = GetImageToRemove(toRemove, owner).transform.GetChild(0).gameObject;
+        try
+        {
+            Destroy(battleManager.getSlot(toRemove).transform.Find("Move(Clone)").gameObject);
+        }
+        catch
+        {
+
+        }
         Destroy(child);
     }
 
