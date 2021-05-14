@@ -270,33 +270,42 @@ public class Attack : MonoBehaviour
         if (rand < effectChance && type != (int)Move.types.Doom && type != (int)Move.types.Corrupt && target.statusTurns[type]<=0)
         {
             print("status effect on " + target.name);
+            CreateStatusEffectPrefab(type, target);
             target.statusTurns[type] = 3;
-
-            GameObject effectPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
-            SetAnimatorController(effectPrefab, type);
-            effectPrefab.GetComponent<Animator>().SetTrigger("effect");
-            effectPrefab.transform.SetParent(battleManager.getSlot(target).transform);
-            effectPrefab.transform.localPosition = new Vector3(0, 100);
-            effectPrefab.transform.localRotation = Quaternion.identity;
-            effectPrefab.transform.localScale = new Vector3(1, 1);
         }
         //this is where doom is cast, after this point doom is charged and completed in another place
         else if(rand < effectChance && type != (int)Move.types.Corrupt && type == (int)Move.types.Doom && target.statusTurns[type] <= 0)
         {
             print(target.name + " has been doomed");
+            CreateStatusEffectPrefab(type, target);
             attacker.curse(target);
         }
         //here is where corruption is added and if neccisary, deleted 
         else if(rand < effectChance && type == (int)Move.types.Corrupt)
         {
             target.statusTurns[type]++;
-            if(target.statusTurns[type] > 5)
+            CreateStatusEffectPrefab(type, target);
+
+            if (target.statusTurns[type] > 5)
             {
                 healthManager.UpdateHealth(target, target.hitPoints);
             }
         }
     }
 
+    // Creates a prefab to display the status effect animation
+    void CreateStatusEffectPrefab(int type, Beast target)
+    {
+        GameObject effectPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Move"));
+        SetAnimatorController(effectPrefab, type);
+        effectPrefab.GetComponent<Animator>().SetTrigger("effect");
+        effectPrefab.transform.SetParent(battleManager.getSlot(target).transform);
+        effectPrefab.transform.localPosition = new Vector3(0, 100);
+        effectPrefab.transform.localRotation = Quaternion.identity;
+        effectPrefab.transform.localScale = new Vector3(.6f, .6f);
+    }
+
+    // Sets the right animator controller depending on which type of status effect is applied
     void SetAnimatorController(GameObject effectPrefab, int type)
     {
         switch(type)
@@ -310,6 +319,7 @@ public class Attack : MonoBehaviour
                     Resources.Load("Beasts_Moves/statusEffects/fire/fire_controller") as RuntimeAnimatorController;
                 break;
             case 2:
+                print("poison animation");
                 effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
                     Resources.Load("Beasts_Moves/statusEffects/poison/poison_controller") as RuntimeAnimatorController;
                 break;
@@ -318,16 +328,17 @@ public class Attack : MonoBehaviour
                     Resources.Load("Beasts_Moves/statusEffects/paralysis/paralysis_controller") as RuntimeAnimatorController;
                 break;
             case 4:
+                //dark
                 break;
             case 5:
                 effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
                     Resources.Load("Beasts_Moves/statusEffects/blind/blind_controller") as RuntimeAnimatorController;
                 break;
             case 6:
+                effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
+                    Resources.Load("Beasts_Moves/statusEffects/corrupted/corrupted_controller") as RuntimeAnimatorController;
                 break;
             case 7:
-                break;
-            case 8:
                 effectPrefab.GetComponent<Animator>().runtimeAnimatorController =
                     Resources.Load("Beasts_Moves/statusEffects/stunned/stunned_controller") as RuntimeAnimatorController;
                 break;
