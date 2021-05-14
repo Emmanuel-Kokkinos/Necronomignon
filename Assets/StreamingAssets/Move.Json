@@ -29,10 +29,10 @@
     {
       "move_id": "2",
       "name": "Shadow Ball",
-      "power": "7",
+      "power": "17",
       "number_of_moves": "2",
-      "condition_chance": "1",
-      "type": "6",
+      "condition_chance": "0",
+      "type": "4",
       "description": "Base damage: 17",
       "healing": "false",
       "rowAttack": "false",
