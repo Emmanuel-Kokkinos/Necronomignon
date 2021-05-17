@@ -41,8 +41,8 @@ namespace DialogueEditor
             //Sets the default conversation
             //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
             //SetNPCConversation(FindByName("Questionnaire"));
-            //SetNPCConversation(FindByName("Conv_Intro"));
-             SetNPCConversation(FindByName("FallMirrulak_Intro"));
+            SetNPCConversation(FindByName("Conv_Intro"));
+             //SetNPCConversation(FindByName("FallMirrulak_Intro"));
 
             //Sets tournament conversations
             if (SceneManager.GetActiveScene().name == "Tournament")
