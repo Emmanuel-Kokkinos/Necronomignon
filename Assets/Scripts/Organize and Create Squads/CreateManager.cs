@@ -51,9 +51,9 @@ public class CreateManager : MonoBehaviour
     {
         TurnOffSlots();
         moveDescription.SetActive(true);
-        selected = createPoolLoader.summoned[selectedIndex + (createPoolLoader.counter * 9)];
+        
         selected.setAttacks();
-
+        
         if (selected.size == 0)
         {
             foreach (GameObject go in normalSlots)
