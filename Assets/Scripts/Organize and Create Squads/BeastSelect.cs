@@ -26,6 +26,8 @@ public class BeastSelect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                     {
                         if (createManager.canBePlaced)
                         {
+                            createManager.selected = createPoolLoader.summoned[createManager.selectedIndex + (createPoolLoader.counter * 9)];
+
                             createManager.LightUpSlots();
                             createManager.ShowMoveDescription();
                             createManager.placing = true;
