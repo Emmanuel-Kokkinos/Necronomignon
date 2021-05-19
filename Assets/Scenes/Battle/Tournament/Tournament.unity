@@ -1004,7 +1004,11 @@ MonoBehaviour:
   - {fileID: 110605346}
   - {fileID: 565609838}
   conversationNames:
-  - {fileID: 0}
+  - {fileID: 2044635768}
+  - {fileID: 2101365460}
+  - {fileID: 648203927}
+  - {fileID: 1922979455}
+  - {fileID: 280986327}
 --- !u!114 &336260505
 MonoBehaviour:
   m_ObjectHideFlags: 0
