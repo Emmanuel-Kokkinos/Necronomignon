@@ -40,9 +40,8 @@ namespace DialogueEditor
 
             //Sets the default conversation
             //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            //SetNPCConversation(FindByName("Questionnaire"));
-            SetNPCConversation(FindByName("Conv_Intro"));
-             //SetNPCConversation(FindByName("FallMirrulak_Intro"));
+            //SetNPCConversation(FindByName("Conv_Intro"));
+            SetNPCConversation(FindByName("FallMirrulak_8"));
 
             //Sets tournament conversations
             if (SceneManager.GetActiveScene().name == "Tournament")
@@ -276,6 +275,11 @@ namespace DialogueEditor
 
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Arriving_Mirrulak");
                     break;
+                case "FallMirrulak_2":
+
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Forest_Mirrulak");
+                    break;
                 default:
 
                     break;
@@ -352,6 +356,50 @@ namespace DialogueEditor
                     //
                     SetNPCConversation(FindByName("FallMirrulak_1"));
                     BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_1":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_2"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_2":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_3"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_3":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_4"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_4":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_5"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_5":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_6"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_6":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_7"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_7":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_8"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_8":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_End"));
+                    BeginConversation(currentConversation, "DialogScene");
+                    break;
+                case "FallMirrulak_End":
+                    // Begin End Sequence
+                    
                     break;
             }
         }

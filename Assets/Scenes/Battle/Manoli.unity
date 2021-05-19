@@ -195,6 +195,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14676351}
   m_CullTransparentMesh: 0
+--- !u!1 &17612932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17612933}
+  - component: {fileID: 17612934}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &17612933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17612932}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 45810829}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &17612934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17612932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &22712022
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +527,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41934927}
   m_CullTransparentMesh: 0
+--- !u!1 &45810828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45810829}
+  - component: {fileID: 45810830}
+  m_Layer: 0
+  m_Name: Fallborne_G_death
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &45810829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45810828}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 97.1875, y: 2.9252014, z: -99.8772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 17612933}
+  m_Father: {fileID: 1280917759}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &45810830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45810828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-65,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+    R\u0338\u0358\u0312\u0314\u0310\u033D\u033F\u030E\u0360\u033F\u030E\u035C\u034D\u0331\u0347\u034E\u0330\u0325\u035C\u0328\u0331\u0326\u0317\u0349\u033C\u0356\u031F\u032E\u032D\u033C\u0326\u034EE\u0334\u030D\u033F\u0308\u035D\u034C\u031A\u0360\u0352\u030A\u0358\u0357\u033D\u034A\u033F\u0344\u0303\u034C\u0312\u0306\u0302\u0360\u0350\u0360\u0341\u030B\u033F\u0332\u0329\u0333\u031F\u0353\u031D\u0356\u0333\u0321\u0353\u0345\u0347\u0348\u032D\u034DE\u0336\u0341\u0305\u0344\u034C\u035B\u034C\u0340\u0302\u033D\u031B\u0313\u030C\u030A\u0341\u0360\u0357\u033D\u0346\u033D\u0308\u031D\u032A\u031F\u0323E\u0334\u0304\u0351\u0309\u030C\u0301\u0304\u0346\u0312\u033D\u0309\u0315\u031B\u0346\u030D\u034B\u0344\u0309\u0300\u0311\u0300\u030C\u0307\u0308\u032C\u0319\u034E\u031E\u0321E\u0335\u033E\u035B\u0342\u0344\u030C\u030E\u0301\u0302\u0305\u0344\u030F\u0303\u0313\u030A\u0303\u033D\u0314\u032B\u0355\u0317\u0326\u0356\u033C\u0327\u0316\u033A\u032C\u0316\u0347\u0355\u033A\u0348\u032C\u032B\u0327\u0325\u0318E\u0338\u0352\u0342\u0305\u0350\u0308\u035D\u0315\u035D\u030A\u0350\u0344\u0357\u0357\u0344\u035B\u033D\u0304\u0314\u0358\u034A\u0343\u030B\u0313\u0311\u0311\u0309\u0306\u0318\u0326\u035C\u0330\u032D\u0347\u031E\u0330\u0327\u031C\u0333\u0354E\u0335\u030A\u0344\u0300\u030F\u0342\u0357\u034B\u0344\u034B\u0344\u0311\u035D\u034A\u0306\u0314\u033F\u0360\u030E\u0301\u0315\u033D\u030E\u0304\u033D\u031D\u0323\u032B\u032D\u0347\u035C\u0347\u0354\u033C\u0319\u032B\u032F\u0328\u0319\u0316\u0321E\u0334\u0304\u0300\u0304\u0307\u0307\u034A\u034A\u0301\u033F\u0340\u0315\u0346\u0306\u033E\u0306\u031B\u0357\u0313\u035B\u035B\u030D\u0343\u030D\u0316\u0322\u0324\u032C\u032F\u0333\u0355\u0354\u0316\u0359\u0324\u0355E\u0335\u035D\u0301\u0304\u034A\u0351\u0342\u0305\u0307\u0357\u030D\u0357\u033D\u0344\u035D\u030C\u0307\u0302\u0318\u034D\u0332\u033A\u0355\u0331\u033A\u0355\u0327\u0356\u033A\u0324\u035C\u031E\u0316\u0325\u0319\u032D\u0328\u0321\u0359\u032F\u033C\u031C\u0327\u0321\u033C\u0356E\u0336\u0309\u0352\u031B\u030F\u0354\u0326\u0325\u0353\u0354\u0325\u032A\u0339\u035A\u0326\u032DE\u0338\u0357\u035D\u0304\u0314\u0310\u035D\u034C\u0305\u0310\u0310\u0300\u0308\u0357\u0306\u030D\u0304\u0308\u035D\u0300\u0346\u0300\u035D\u0357\u0348\u0316\u0355\u0331\u0333\u033B\u035A\u0332\u0345\u0339\u0319\u0331\u0339E\u0338\u031B\u0302\u030C\u0303\u0341\u034D\u0328e\u0336\u030F\u030B\u0311\u030D\u0308\u033E\u0344\u0305\u034C\u031A\u0344\u0310\u0308\u0344\u0346\u0309\u0341\u0343\u030C\u0311\u032D\u034D\u0353\u031C\u032B\u0328\u031E\u032B\u0359\u031C\u032D\u0323\u033A\u032A\u032Be\u0334\u031B\u034C\u0300\u031A\u0315\u0301\u0313\u0357\u0304\u030F\u0314\u033E\u0304\u0307\u0360\u030E\u035D\u0355\u0326\u0326\u0359\u0318\u033B\u034D\u0330\u033C\u032E\u0318\u0354\u0339\u0325\u032F\u0356e\u0337\u0342\u0310\u030A\u0311\u0303\u0313\u0311\u0306\u0341\u035B\u0312\u0311\u0313\u0355\u0320\u0359\u0317\u033A\u0321\u032E\u0317e\u0334\u030A\u0308\u0315\u0312\u033D\u0358\u0311\u0360\u0342\u0360\u0301\u030D\u033F\u0309\u0355\u0323\u031F\u0325\u0329\u0354\u0327\u032B\u0326\u033A\u0321\u0326\u0339\u0353\u0354e\u0338\u031A\u033F\u035D\u0344\u0314\u0350\u0304\u030A\u0310\u0358\u0307\u030F\u0352\u0307\u0315\u0307\u0341\u034C\u0312\u0306\u0303\u0360\u0302\u0346\u034C\u031B\u032E\u033C\u0319\u032D\u032A\u031E\u031E\u0320\u033C\u031F\u0323\u035C\u032F\u0327\u0349\u033A\u0331\u0353\u032A\u0331\u0325\u0324\u0345\u033A\u0318\u0347\u0329e\u0336\u0310\u0306\u0307\u0304\u0360\u0306\u031A\u0311\u0306\u031A\u034B\u0310\u0301\u030B\u030B\u034A\u030E\u035D\u035D\u0315\u0301\u0360\u0310\u034B\u0345\u032Ce\u0335\u0308\u0309\u0358\u0344\u033D\u0314\u0315\u034B\u0344\u034C\u0311\u0314\u0303\u0341\u0360\u030D\u030A\u0346\u0343\u0304\u0311\u0326\u0323\u032E\u031Fe\u0335\u0304\u0342\u0343\u034B\u0342\u0315\u031D\u0320\u0316\u0332\u031C\u0359\u0353\u0319\u0353\u0333\u0329\u0325\u0333\u0356\u031C\u0339\u0355\u0320\u0359\u0353\u0353\u032Ce\u0336\u034A\u0305\u0341\u031A\u0300\u0342\u030C\u0358\u031B\u0305\u035B\u0351\u030A\u0344\u0346\u0300\u030B\u0301\u0312\u0344\u0315\u0314\u030D\u0350\u034C\u033C\u0348\u0317\u031F\u0319\u0332\u032E\u031C\u031C\u0327\u0348\u031F\u033C\u034E\u0320\u0349\u031C\u0327\u033C\u031E\u0327\u032D\u032A\u0359\u033C\u0317e\u0338\u0309\u0344\u0341\u033E\u035B\u0357\u0300\u0344\u0350\u0309\u034A\u035B\u033D\u030B\u0313\u030F\u030B\u0349\u033B\u0321\u033A\u0325\u0331\u0348\u0319\u0353\u032F\u0356\u0339\u0319\u0349\u034E\u0322\u0319e\u0336\u0307\u0358\u030F\u031A\u0310\u0311\u0312\u035D\u0307\u033D\u0307\u0356\u0325\u035C\u0322\u0327\u032B\u0333\u035C\u0323\u034D\u0329\u0318\u035A\u0329\u033C\u033B\u0329\u031E\u0329\u031F\u0321\u032B\u0333\u0322\u0348\u0355\u031Fe\u0334\u0304\u0344\u030A\u0330\u031E\u0359\u0321\u0345e\u0338\u035D\u031A\u035D\u032E\u034E\u0317\u034D\u0318\u0317\u0325\u0320\u0349\u0322\u0333\u033B\u0323e\u0335\u0342\u0352\u0309\u0310\u0309\u0340\u0307\u030B\u0315\u0350\u030D\u035D\u035B\u035D\u030C\u030E\u030B\u0304\u030C\u0312\u0303\u0360\u0316\u0325\u033C\u033A\u0324\u0345\u031C\u035A\u0332\u0324\u0355\u0316\u0321\u0318\u031E\u0333\u035A\u032E\u033Ae\u0335\u035D\u031B\u0331\u0316\u0320\\r\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Fallborne
+    G:\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: Fallborne_G_death
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 17612934}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &49642973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1122,56 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &85738974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 85738975}
+  - component: {fileID: 85738976}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &85738975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85738974}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1079720669}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &85738976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85738974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &93803183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1493,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117905733}
   m_CullTransparentMesh: 0
+--- !u!1 &125843154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 125843155}
+  - component: {fileID: 125843156}
+  m_Layer: 0
+  m_Name: Fallborne_G
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &125843155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125843154}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 97.1875, y: 2.9252014, z: -99.8772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 800120768}
+  m_Father: {fileID: 1280917759}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &125843156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125843154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":65,\"yPos\":70},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"c\u0336\u0350\u0316\u0331\u0355\u0333\u0339\u032Fh\u0338\u034B\u0312\u035D\u030B\u0308\u033D\u030C\u0350\u0306\u0306\u0300\u0330\u031D\u0327\u0320\u0328\u0317\u0329
+    \u0335\u030B\u0309\u0303\u0307\u030D\u0305\u0358\u0305\u0301\u035D\u0359\u035C\u0318\u0355\u0349\u0359\u0319\u0356\u031F\u034D\u0339b\u0334\u035D\u0358\u0308\u035D\u030A\u0341\u0307\u030B\u0305\u033F\u034A\u0314\u0315\u0351\u0344\u0352\u032C\u032B\u0339\u0333\u034E\u0347\u0328\u033A\u031D\u0355\u0317i\u0338\u035D\u0344\u0310\u0358\u0342\u0300\u0313\u0360\u0311\u030D\u030F\u0315\u0312\u0312\u0312\u034E\u033C\u0345\u0333\u0356\u0332\u0322\u0332\u0319\u035C\u0348\u0323\u0359n\u0335\u0312\u0301\u0309\u0340\u0300\u0303\u0344\u0300\u033D\u0346\u0340\u0314\u033A\u0349\u032A\u0333\u0347\u0349
+    \u0337\u0313\u0351\u034B\u0321\u0327\u0325\u033B\u0327\u0345\u032D\u0330\u0322e\u0334\u0306\u0341\u0312\u034B\u0308\u0310\u0314\u0305\u0310\u0313\u031A\u035C\u0345\u031D\u0316\u0327\u033B\u0319\u0328\u035Ci\u0334\u030D\u0341\u033F\u030B\u0307\u0324\u031F\u035C\u0332\u0355\u0317\u0318\u0331\u0331\u0326\u0339\u0317\u0332\u0347\u034Dn\u0334\u0344\u0350\u0346\u0310\u0311\u0305\u0314\u0347\u0345\u0348\u0332\u0331\u0325\u031C\u0349\u0316\u032C\u031D\u035A\u0331\u0324\u0329\u0339\u032B
+    \u0336\u035B\u031A\u0314\u0340\u031B\u030C\u0317k\u0335\u0307\u034B\u030C\u0352\u0324\u035A\u032F\u032F\u0359\u032C\u031F\u0321\u0325\u034D\u0349\u034E\u032D\u031F\u0318\u0354\u0345l\u0334\u0343\u030A\u0360\u035B\u0319\u0339\u035C\u0332\u0322e\u0336\u0302\u034A\u031B\u0346\u0343\u030F\u0306\u035B\u0353\u0326\u0316\u032A\u0332\u0321i\u0335\u030C\u0340\u0304\u0344\u0352\u0303\u0352\u034C\u0341\u0351\u0306\u0346\u0341\u032D\u0345\u0333\u0339\u032F\u032E\u0318\u031En\u0338\u031A\u0352\u0312\u0346\u0304\u0323e\u0338\u0305\u0352\u0314\u0341\u034C\u0357\u035D\u0308\u034C\u034B\u033E\u030A\u035B\u0306\u030B\u0326\u0354\u033C\u0321\u0319\u033C\u032A\u0318s\u0338\u0344\u0303\u0315\u033E\u0340\u0340\u033A\u031C\u032D\u0325\u0339\u0332
+    \u0335\u0350\u034B\u0311\u0303\u0307\u033D\u0348\u0321\u0325\u0349\u0354\u0355\u035CH\u0336\u0311\u033E\u033F\u0310\u0360\u0351\u0310\u0360\u0340\u0307\u033E\u033F\u0343\u033E\u0346\u0322\u0330\u0318\u0356\u031E\u0347\u033B\u0318\u0325\u0328\u031E\u0318\u0331\u032C\u031Du\u0335\u0307\u032C\u0339\u0323\u0349\u033A\u0349\u032B\u0333n\u0337\u0341\u0352\u031A\u0309\u0315\u0341\u030B\u0342\u0331\u0339\u035C\u0345\u034E\u0355\u031C\u0328\u0330\u0348\u0324\u031D\u032B\u0323\u0322d\u0335\u0344\u0313\u034B\u0310\u0310\u033B\u0326\u0333\u032C\u0355\u0320e\u0336\u033D\u0344\u035B\u0315\u0333\u0318\u0329\u031C\u0317\u0324\u031E\u0353\u034D\u035C\u035C
+    \u0334\u0312\u030F\u034C\u030E\u0300\u0317\u033A\u035C\u0329\u0347\u0354\u0332\u031F\u034E\u032F\u0323\u034Du\u0334\u031B\u0344\u0303\u0315\u0350\u031B\u0312\u033C\u0345\u0317\u033B\u032D\u0326\u0332\u031E\u034E\u031F\u0354\u0329\u0328\u031D\u034E\u034Dn\u0335\u030E\u0310\u034B\u0354\u035C\u0318\u0328\u0318\u0348\u0349d\u0337\u0302\u0305\u0310\u0344\u035A\u0324\u032B\u0353\u0332\u0322\u0316\u031D\u0359\u0322\u032A\u0354\u0331\u0348\u0324\u0331
+    \u0335\u0341\u031B\u0325\u035A\u0326\u0353\u0327\u0353I\u0335\u0300\u0302\u0343\u033A\u0332\u032C\u031C\u0359\u0322\u0328\u0316\u0330\u031Cc\u0337\u0341\u0308\u033F\u0352\u033D\u0305\u031B\u0355\u0332\u0321\u032B\u0328\u0348\u031D\u0317\u0353\u0355\u0321\u0349\u0326\u0320\u0356\u0345h\u0335\u0300\u0308\u030C\u031E\u035A\u031C\u0332\u031C\u0359\u0330\u031C\u0332\u0349\u0330\u0317\u0325\u0319\u0354\u032C\u0322
+    \u0337\u0306\u0341\u0307\u0305\u034C\u0312\u0305\u0341\u0342\u0342\u0304\u0341\u034Dh\u0338\u0312\u035D\u0313\u0307\u0346\u0309\u0314\u0307\u0311\u0352\u0345\u0349\u0329\u0321\u0332\u032F\u0347\u0328e\u0335\u0340\u035D\u0344\u0311\u0312\u0322\u0355\u032C\u0322\u031D\u033B\u032A\u0324s\u0335\u0301\u030D\u0315\u0315\u0301\u0300\u033F\u030F\u0317\u0322\u0320\u0316\u0320\u032B\u032B\u0355\u0323s\u0337\u0360\u0308\u0308\u0304\u0300\u0310\u0346\u034B\u0352\u030E\u034D\u0324\u0316\u0348\u032D\u035A\u0354\u0332\u032F\u032C\u0320\u0323\u0339\u0321\u0323\u033A\u0328i\u0338\u0301\u0344\u0302\u0350\u030D\u0314\u031A\u033F\u0300\u0304\u031A\u0301\u0314\u030E\u033D\u032D\u0322\u0326\u0331\u0319\u032D\u032B\u034E\u033B\u032B\u034E\u035C\u031D\u032C\u033B\u035Ae\u0338\u030B\u0343\u0310\u0344\u033E\u0327\u032E\u032B\u0353\u0332\u031C\u0353\u034E\u0323\u035C\u0316\u0324\u031C\u0317\u0323
+    \u0337\u0306\u0303\u0305\u0344\u0315\u034C\u0313\u0306\u0306\u0343\u0315\u0307\u0344\u0303\u030C\u0358\u034A\u033A\u0332\u035CS\u0336\u0350\u030A\u0342\u0308\u0342\u0304\u0320\u032D\u0356\u0319v\u0337\u0340\u0310\u0346\u0300\u030F\u035D\u0344\u0357\u0308\u0309\u030B\u0324e\u0336\u0304\u0301\u035D\u035D\u0344\u0344\u030F\u0352\u0358\u0358\u0300\u0304\u0307\u0353\u0347\u0329\u032B\u034E\u0326\u031D\u0326\u035C\u0317\u0322\u0327\u0333\u0356\u035An\u0335\u030E\u033F\u0351\u032E\u0327\u032F\u0318\u0333\u0323\u0345\u0332\u035A\u0324.\u0335\u0350\u030D\u0327\u034D\u0321\u0324\u0355\u0322\u0348\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Fallborne
+    G:\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: Fallborne_G
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 800120769}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &143569501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,6 +3509,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329955782}
   m_CullTransparentMesh: 0
+--- !u!1 &332231732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 332231733}
+  - component: {fileID: 332231736}
+  - component: {fileID: 332231735}
+  - component: {fileID: 332231734}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &332231733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332231732}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 981431368}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &332231734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332231732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &332231735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332231732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 2
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &332231736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332231732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &334927421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,6 +5562,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514046941}
   m_CullTransparentMesh: 0
+--- !u!1 &536632711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 536632712}
+  - component: {fileID: 536632713}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &536632712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536632711}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1783522504}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &536632713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536632711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &539836487
 GameObject:
   m_ObjectHideFlags: 0
@@ -8656,6 +9017,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 1972296792}
+--- !u!1 &800120767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800120768}
+  - component: {fileID: 800120769}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &800120768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800120767}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 125843155}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &800120769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800120767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &833932174
 GameObject:
   m_ObjectHideFlags: 0
@@ -9746,6 +10157,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944660744}
   m_CullTransparentMesh: 0
+--- !u!1 &946460311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946460312}
+  - component: {fileID: 946460313}
+  m_Layer: 0
+  m_Name: SHOGGOTH_Battle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &946460312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946460311}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 97.1875, y: 2.9252014, z: -99.8772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1208842787}
+  m_Father: {fileID: 1685957828}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &946460313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946460311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":78,\"yPos\":81},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cutscene
+    reforms shoggoth back but now it is two\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TODELETE\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":327,\"yPos\":88},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Y\u0338\u034B\u0343\u030E\u033D\u030D\u0313\u0312\u0300\u0351\u0360\u0307\u0310\u033D\u0346\u0301\u0314\u0344\u0303\u0344\u0301\u033D\u0311\u0307\u035D\u033D\u030E\u0315\u0308\u0310\u0305\u033D\u0352\u0303\u0348\u0355\u0349\u0359\u0354\u034E\u0331\u0348\u033A\u0349\u032A\u033C\u033A\u032C\u0318\u0329\u032E\u0321O\u0334\u0310\u030D\u0350\u0302\u0360\u033F\u0315\u0304\u030F\u035B\u0357\u034C\u0305\u0302\u0344\u030C\u0312\u0301\u030B\u030D\u0312\u0310\u033F\u035D\u031A\u030D\u033E\u0357\u034C\u030E\u0311\u033E\u032A\u033C\u035A\u0324\u0345\u0321\u0329\u033A\u0348\u0317\u032F\u033C\u035C\u0324\u0324\u0322\u0348\u0326\u0354\u0318\u031D\u0329\u0322\u035A\u0321\u033AU\u0334\u0311\u0314\u030C\u0313\u033F\u034B\u0306\u030A\u034C\u034B\u0302\u0344\u033F\u031B\u0313\u035D\u0346\u035D\u0303\u0346\u0341\u0360\u035D\u0309\u0310\u035B\u0314\u034C\u0346\u0302\u0303\u0311\u0315\u0341\u0300\u0315\u0351\u0344\u032D
+    \u0336\u0351\u035D\u0304\u0302\u0310\u0341\u033E\u0346\u0309\u035D\u0301\u0342\u0344\u035D\u0314\u034B\u030C\u0302\u0344\u0357\u030F\u0307\u0303\u034A\u0303\u031A\u034D\u0317\u0328\u0353\u0359\u0333\u0323\u0359\u031E\u0354\u033A\u0323\u0320\u0355\u0318\u033A\u035A\u0317\u0349A\u0335\u0304\u0303\u0300\u030D\u030D\u033C\u031C\u0356\u0353\u0349\u0332\u0332\u0333\u0355\u0353\u0320\u0316\u0328R\u0338\u034A\u030C\u0315\u0309\u0351\u033E\u0315\u0314\u030F\u0342\u0306\u0306\u030D\u0311\u0358\u0306\u0305\u0352\u0341\u0314\u0343\u030A\u030A\u033F\u0352\u0313\u031E\u032B\u0320\u0320\u0353\u0359\u0316\u0320\u035A\u0347\u031F\u0328E\u0335\u030E\u030A\u033D\u035D\u0340\u0341\u0305\u0309\u0355\u0316\u0356\u0326\u0322\u0328\u033B\u0320\u0328\u0331\u032A\u0359\u0326\u0322\u0345\u0359\u0325\u033B\u0347\u0354\u0328\u033A\u032D\u033B\u0356\u0321\u0331\u032A\u0320\u0324\u0330\u0324\u0356
+    \u0334\u0314\u030D\u0304\u035D\u0306\u030E\u0306\u030B\u0304\u0302\u030B\u035B\u0342\u0357\u0350\u030F\u030C\u0309\u0342\u0307\u034B\u0315\u0312\u034A\u0344\u0357\u035D\u031B\u031B\u0344\u0305\u030E\u033E\u0315\u031A\u0301\u033F\u0343\u0326\u035A\u0329\u032E\u0329\u0348\u0323\u0323\u0333\u032E\u0325\u0329\u0331\u033C\u0330\u0321\u0356\u0319\u0349\u0316\u032E\u0331\u033A\u035C\u034E\u035C\u0355\u032C\u032A\u0353\u031E\u032A\u035C\u0318\u035A\u034D\u032C\u0319A\u0338\u0351\u0350\u0307\u0351\u030A\u0346\u0301\u0310\u0344\u0344\u031A\u0305\u030D\u0306\u035D\u0341\u0340\u0303\u033F\u030B\u031A\u0356\u0319\u0321\u0347\u033A\u0327\u0323\u035C\u0321\u0320\u0333\u0321\u0321\u0347\u033A\u0318\u0356\u0345\u0327\u035C\u0331\u0348\u0322\u0331\u0319\u0322\u035A\u0322\u0329
+    \u0337\u0358\u0314\u0314\u030E\u0308\u0301\u030C\u034A\u0302\u0306\u033F\u0357\u033D\u0300\u033D\u030D\u0358\u031B\u0341\u0310\u0312\u034B\u035B\u030C\u0360\u0357\u0343\u0311\u0360\u031A\u035D\u0343\u033F\u0353\u0331\u0318\u034E\u0333\u0354\u0333\u0339\u0320\u0324\u0324\u0345\u0323\u0318\u032D\u0353\u0332\u0322\u032A\u033C\u0353\u035A\u0355F\u0334\u0313\u035D\u0352\u030B\u034A\u033D\u030A\u030D\u0352\u0351\u035D\u031E\u035A\u0348\u034D\u032F\u0330\u0328\u0349\u0329\u0359\u0317\u0327\u033B\u0325\u0322\u0321\u0326\u0353\u031F\u032B\u0347\u0321\u0356\u0330\u0353\u0356\u0347\u0329\u034E\u034DI\u0335\u0352\u034B\u0313\u035B\u0308\u033E\u0351\u0306\u030C\u030D\u0300\u035D\u035B\u035B\u0350\u0304\u0344\u0309\u0357\u031B\u033F\u034B\u033E\u0300\u0342\u0340\u0341\u0310\u0358\u0357\u0339\u0329\u033B\u032D\u0349\u0333\u0328\u0318\u031C\u0354\u0319\u0349\u0322\u033C\u032E\u032B\u0333\u035C\u0349\u0325\u0316\u0331\u0359\u0347\u0347\u035C\u034D\u0339\u031D\u032F\u035CN\u0335\u0350\u035B\u0313\u0358\u0330\u034E\u0356\u032E\u0329\u032E\u032C\u0339\u0339\u0324\u032A\u0328\u0356\u0323\u0329\u035C\u033AE\u0335\u0340\u0309\u035D\u0357\u035D\u034B\u0351\u035B\u0302\u0302\u030E\u0315\u030F\u0343\u035D\u0310\u0304\u035B\u0350\u0310\u0307\u0306\u0315\u0344\u034A\u0315\u033B\u0339\u0345\u032D\u0356\u032D\u0326\u0328\u032E\u0354\u031F\u031D\u034D\u033C\u0330\u031E
+    \u0338\u0311\u033E\u035B\u0342\u030D\u0307\u0307\u0346\u033E\u030D\u0344\u0302\u0342\u0360\u0351\u0346\u0346\u035D\u0351\u0350\u030A\u0319\u0332\u0330\u0317\u0359\u0356\u0319\u0332\u0319\u032E\u031C\u0318\u0317\u0348\u0330\u0349\u032F\u034ES\u0335\u035D\u035B\u0347\u0345\u0333\u0328\u0353\u0355\u0359\u031F\u0322\u032E\u0322\u0354\u0318\u032D\u0320\u0355\u0347P\u0338\u030D\u032F\u0319\u035C\u0331\u035A\u0356\u032E\u0353\u031C\u0356\u0347\u032F\u0356\u035A\u031E\u034E\u0323\u0326E\u0334\u033E\u032F\u0319\u0329\u032FC\u0335\u0305\u0302\u0315\u030F\u0352\u0304\u0351\u035D\u0312\u0305\u0314\u0304\u030B\u0314\u033F\u0307\u0305\u0313\u0344\u033E\u0346\u0340\u0351\u0300\u0304\u0305\u0310\u0353\u0331\u0353\u0333\u0354\u0349\u0320\u0356\u033A\u0323\u0359\u031F\u0323\u0328\u0317\u0322\u032B\u035C\u032A\u0330\u0339\u0317\u0328\u033C\u032D\u0355\u0325\u034E\u0347I\u0337\u035D\u0305\u0344\u0314\u0344\u0311\u0360\u035A\u031F\u031C\u032C\u0330\u033C\u035C\u031F\u0319\u031C\u0325\u0332\u034E\u0326\u0327\u0359\u0322\u0347\u031F\u0333\u0325\u0326\u031E\u033B\u0321\u0326\u0318M\u0335\u033D\u0307\u0342\u0315\u0313\u030C\u0307\u035D\u030B\u035D\u033E\u0300\u035B\u031A\u0309\u0307\u0310\u0310\u0306\u030A\u0311\u0309\u033A\u0359\u0329\u0326\u0324\u033B\u0348\u033A\u0333\u0328\u031D\u0333\u031F\u0321\u0349\u034D\u0318\u0319\u0349\u0328\u032E\u0354\u0359\u033C\u035A\u0359\u0319\u0318\u031E\u0347\u032A\u0325\u0333\u0349\u0322\u0339\u0333\u0331E\u0338\u0302\u0350\u0357\u033D\u034B\u0343\u0344\u0311\u030F\u030A\u033F\u0311\u0344\u033F\u0302\u035D\u0301\u0350\u0301\u0300\u0310\u0342\u031A\u0342\u0360\u033E\u033D\u032E\u033B\u0324\u032F\u0347\u0327\u0327\u0321\u0320\u0328\u035C\u0320\u0356\u0329\u0318\u0349\u034E\u033B\u033A\u0321\u0359\u0321\u0331\u0316\u031CN\u0336\u034C\u0315\u0357\u0340\u0308\u0315\u034C\u031F\u031E\u0328\u0326\u0318\u0321\u0327.\u0334\u0307\u0357\u0303\u0302\u030D\u0307\u0306\u031A\u033F\u030C\u0352\u0340\u0303\u0311\u030E\u030D\u0308\u0305\u0313\u0309\u0301\u0307\u0315\u0306\u030D\u035B\u0358\u033F\u0352\u034A\u0324\u031D\u0327\u0328\u0326\u0319\u031E\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"SHOGGOTH:
+    \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 1208842789}
+  - {fileID: 1208842788}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &948815694
 GameObject:
   m_ObjectHideFlags: 0
@@ -10118,6 +10591,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961604296}
   m_CullTransparentMesh: 0
+--- !u!1 &981431367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981431368}
+  - component: {fileID: 981431369}
+  m_Layer: 0
+  m_Name: Victory_Fallborne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &981431368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981431367}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 97.1875, y: 2.9252014, z: -99.8772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 332231733}
+  m_Father: {fileID: 1280917759}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981431369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981431367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 3
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":158,\"yPos\":27},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"BURN
+    IN HELL!\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-65,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"D\u0336\u0360\u030B\u030E\u0312\u0350\u035D\u0346\u030A\u0312\u030A\u0342\u033E\u0351\u0309\u033D\u0358\u031B\u0312\u0307\u0357\u0301\u034C\u0302\u0304\u0311\u0307\u0307\u0314\u0315\u035D\u0346\u0346\u0304\u0315\u035D\u0304\u030D\u0358\u031A\u035D\u033F\u0308\u0312\u034A\u0315\u0358\u0344\u0357\u030B\u030C\u0344\u035B\u0317\u0355\u0359\u033B\u031C\u0347\u0322\u034E\u0332\u0328\u032F\u0356\u033C\u031D\u0348\u0353\u0353\u032E\u0326\u031C\u0331\u0331\u0345\u0329\u0324\u033A\u0328\u033C\u0325\u033A\u031F\u0349\u0349\u0323\u0347\u0355O\u0334\u0350\u0344\u0341\u0306\u0329\u0329\u035A\u031F\u0353\u033A\u0321\u032B\u031D\u034E\u031F\u0354\u033C\u031F\u0331\u0354\u0330\u032C\u0325\u0330\u0347\u0323\u0319\u034D\u0321\u0319\u0319\u031D\u0319\u0324\u035A\u0353\u034D
+    \u0335\u0300\u0310\u031B\u0351\u0311\u0357\u0304\u0309\u030B\u0304\u035D\u0344\u0303\u030F\u0307\u0315\u0307\u0358\u0312\u034B\u0306\u0340\u030C\u0311\u0312\u0307\u0308\u0305\u0303\u0309\u0301\u0301\u0300\u0344\u0341\u033E\u033F\u031B\u0325\u0359\u031F\u0355\u0345\u0328\u0330\u0330\u0328\u0325\u0316\u033C\u033B\u0323\u0321\u0325\u035A\u032C\u0320\u0332\u0321\u0345\u0356\u0331\u0353\u0319\u033A\u0325\u033B\u0318\u0327\u033B\u031D\u032D\u0319\u032D\u0316\u0359\u032C\u032D\u0319\u0330\u0348\u033A\u0322\u0339\u0332\u0333\u0321\u031C\u033BN\u0337\u0342\u0306\u0314\u034C\u0351\u0351\u030B\u0340\u0315\u0312\u0351\u035D\u0360\u0342\u0306\u033F\u0350\u0300\u035B\u0357\u034A\u0302\u0306\u0340\u030D\u0304\u0305\u035D\u0344\u0342\u0304\u0308\u0341\u0357\u031A\u030B\u0300\u0344\u0360\u0306\u0314\u035D\u035D\u0346\u031B\u030B\u0301\u033E\u0358\u0352\u0347\u0359\u0328\u032B\u032B\u035C\u0348\u0319\u032C\u0331\u0319\u0324\u032D\u0320\u032E\u032E\u0348\u0349\u0348\u0348\u0349\u032AO\u0334\u0350\u0304\u0311\u0302\u0341\u0310\u0306\u0346\u030A\u0308\u0344\u035D\u0341\u034B\u0314\u0344\u0343\u035B\u031B\u0308\u0343\u0342\u034C\u035B\u0302\u035D\u030B\u0301\u0306\u033D\u030B\u030E\u031A\u034C\u0349\u031D\u0327\u032C\u0324\u033C\u0356\u032E\u0328\u0330\u0354\u0339\u032E\u0359\u0339\u0333\u0332\u0353\u032B\u033A\u032C\u0332T\u0338\u0346\u030E\u0306\u0311\u0305\u0342\u030F\u0310\u0305\u0302\u0306\u0308\u033D\u0302\u0303\u034E\u035C\u0321\u033A\u0353\u031F\u0339\u0329\u0324\u031D
+    \u0334\u035D\u0357\u0360\u0310\u0306\u0352\u033F\u0358\u0302\u030F\u0301\u034C\u031B\u0304\u035D\u030F\u031B\u030C\u035D\u0350\u033E\u0360\u033F\u030F\u0344\u031A\u0344\u031B\u0305\u0314\u0357\u0305\u0341\u0315\u0342\u0351\u0351\u0300\u033E\u0340\u0300\u0357\u0300\u0308\u035D\u0340\u0316\u033C\u0329\u0354\u0332\u032F\u031F\u0321\u0347\u033C\u0316\u0318\u0333\u0316\u0321F\u0338\u030E\u0350\u0346\u0306\u035D\u0308\u0312\u0311\u030F\u0350\u030C\u0352\u0328\u032F\u0348\u0333\u032F\u0321\u0319\u034E\u0320\u0327\u0325\u0347\u0320\u0316\u0345\u0356\u032D\u0326\u0356\u0353\u033B\u0339\u035C\u032C\u0329\u0355\u0325\u035C\u0322\u032C\u0319\u0355\u034E\u032F\u0332\u0329\u0323\u0322\u0318\u0354\u0354\u0325\u0322\u0317\u0320\u0356\u031E\u0359\u0322\u0324\u034E\u031F\u0345\u0317\u0325I\u0337\u0357\u0306\u0346\u035D\u033F\u0343\u0351\u0350\u033F\u0344\u030A\u0340\u0344\u0311\u030C\u0308\u035D\u0314\u034C\u0352\u033F\u033D\u0314\u033F\u0310\u0311\u030D\u0310\u0306\u031B\u0301\u030F\u034C\u031B\u0350\u0302\u0342\u035D\u033F\u0341\u035D\u034A\u0303\u0301\u035D\u0308\u0342\u034A\u0307\u0357\u031B\u0350\u033B\u0348\u0326\u0316\u0333\u0322\u0347\u0348\u0347\u0353\u0326\u0328\u033B\u0320\u031F\u032A\u0339\u0347\u031F\u0349\u033A\u031C\u033CG\u0336\u0352\u0304\u0308\u0360\u0342\u0343\u0307\u0300\u0306\u0352\u033E\u0308\u0300\u035D\u0306\u0306\u0343\u033D\u0340\u030B\u030D\u034C\u0350\u0301\u0357\u0344\u030F\u033C\u0353\u032B\u035C\u032D\u0316\u0356\u0322\u0332\u0317\u0327\u0323\u0353\u033B\u0319\u0319\u0324\u0325\u0339\u0348\u035A\u0318\u0329\u0347\u0348\u0324\u0329\u033A\u0321\u032E\u0347\u0325\u0354\u032F\u0349\u033B\u0333\u032E\u034DH\u0335\u0313\u0308\u031A\u0304\u0352\u0309\u0314\u0305\u031B\u0303\u0300\u033F\u0350\u030E\u0342\u0303\u030A\u0312\u0311\u034B\u0351\u0344\u030A\u0344\u0312\u0312\u034C\u0332\u0321\u032D\u0339\u0348\u0353\u035C\u034E\u0321\u0355\u0354\u0354\u033A\u0326T\u0336\u0310\u033F\u030E\u030A\u0350\u0311\u0352\u0315\u0311\u0314\u0341\u0307\u0358\u0344\u033F\u031E\u032E\u0320\u034E\u034D\u0333\u032C\u0318\u0328\u034E\u032B\u0328\u0349\u033B\u0331\u0324\u0327\u0348\u032F\u0321\u0330\u0327\u0325\u0332\u0354\u032A\u0327\u0324\u0325\u0328\u032A\u034D\u0320\u032A\u032F\u0316\u0322\u0319\u0349
+    \u0334\u0313\u0344\u0343\u0304\u0357\u0309\u0310\u030D\u0315\u0312\u0307\u0309\u0358\u0343\u030D\u0344\u0350\u031B\u030F\u0344\u0341\u0344\u0300\u0306\u0302\u0304\u0347\u032C\u0355\u0328\u033B\u0322\u033C\u031E\u0333\u033A\u0330\u032B\u0348\u0322\u0330\u032A\u0353\u0323\u0324\u0322\u031D\u0347Y\u0334\u0344\u0302\u0314\u0357\u0340\u035B\u0309\u030B\u030D\u033F\u0360\u0315\u0346\u0343\u030C\u0310\u0356\u0359\u0321\u033B\u0326\u0324\u0347\u031E\u032F\u033B\u0323\u033A\u0329\u0330\u0345\u0348\u0320O\u0336\u0358\u035D\u0312\u0346\u0341\u0343\u031A\u0314\u0304\u0352\u034A\u0353\u0347\u033A\u0333\u031E\u031E\u0331\u0332\u0322\u0359\u031D\u0348\u0333\u031C\u0345\u0353\u0322\u032F\u0322\u0322\u0354\u034D\u0324\u033A\u0339\u033B\u0324\u0347\u0359\u0332\u0319\u0359\u0323\u031F\u035A\u0347\u031C\u0328\u0332\u0322\u0322\u0328\u0339U\u0338\u0303\u0300\u034B\u0303\u034A\u0314\u031B\u0344\u0315\u030B\u0305\u030A\u0308\u0360\u033E\u0300\u0307\u035D\u0311\u034B\u0309\u0309\u0307\u0306\u0307\u033F\u0342\u0304\u0360\u0306\u0360\u031B\u0300\u0315\u0357\u032B\u032A\u0319\u031D\u0330\u032A\u031F\u0324R\u0334\u0344\u030D\u031B\u0352\u0342\u0350\u034C\u0346\u030E\u0342\u0306\u0310\u0357\u034B\u0312\u033E\u033D\u0302\u0300\u0346\u0360\u0346\u0309\u0309\u0309\u030B\u0360\u0350\u0312\u030E\u0307\u035D\u0352\u0344\u0343\u034A\u0342\u0344\u035D\u0351\u0304\u031A\u034C\u0314\u0301\u0313\u030B\u0315\u032D\u032D\u0345\u0327\u033B\u034E\u035A\u0316\u033B\u0317\u032F\u033A\u0320\u033A\u0329\u0349\u0333\u0354\u031E\u0322\u035C\u0326\u0329\u0339\u0349\u0348\u031E\u0322\u033A\u0329\u035A\u031E\u0355\u032B\u035C\u0325\u0353\u0321\u0345\u0355\u0317\u034E\u035C\u032B\u032D\u0316\u0333\u034D\u0347\u0317\u0327\u0339\u0345\u0323\u031D
+    \u0338\u031B\u030F\u0312\u0315\u0314\u0305\u0309\u0357\u0305\u0300\u030F\u030E\u0304\u0303\u035D\u031B\u0310\u0305\u0300\u0310\u0314\u0344\u0353\u0316\u0325\u0353\u032A\u0332\u0349\u0325\u0326D\u0335\u0300\u0352\u035D\u030D\u033F\u0346\u033E\u0300\u0301\u035D\u034C\u0300\u0340\u033F\u0306\u0344\u0344\u033F\u0308\u0341\u0344\u0360\u0344\u0340\u0330\u033C\u0331\u0327\u0355\u0331\u0324\u0325E\u0337\u0304\u0301\u0315\u035D\u034A\u0344\u0306\u0300\u0314\u0357\u0357\u0315\u0301\u0343\u033F\u0340\u030A\u0342\u0300\u030B\u031B\u0344\u0341\u0340\u0360\u034A\u0311\u033E\u0314\u033F\u031B\u0310\u0355\u0327\u032B\u035C\u0319\u0328\u034E\u0317\u032FS\u0337\u0344\u030B\u0302\u033D\u034C\u0301\u034A\u033F\u0357\u0346\u0358\u031A\u0303\u033D\u0305\u0303\u0352\u0310\u035B\u034C\u0344\u031D\u033A\u034D\u032F\u0347\u032B\u0353\u033B\u0316\u032E\u0321\u0318\u0326\u0355\u033A\u032C\u0318\u0330\u032C\u032E\u031F\u032D\u0331\u032E\u0324\u033B\u035A\u0325\u0320\u0319\u031D\u0322\u031C\u032D\u032D\u035A\u0326\u0353\u0354\u032A\u032D\u033BT\u0337\u035D\u0311\u0343\u035B\u031B\u035D\u0300\u033E\u0311\u034A\u0312\u030C\u0352\u030D\u0352\u0350\u0360\u0352\u0301\u034A\u0303\u0341\u030E\u0301\u030F\u033F\u033F\u0358\u0352\u034B\u0309\u0352\u034C\u030E\u0324\u035A\u032A\u032F\u035C\u032B\u034E\u033B\u035A\u032A\u0333\u0322\u034E\u0355\u032F\u0345\u0331\u0322\u0345\u035C\u031C\u031C\u0330\u0330\u034D\u0323\u033B\u031D\u0324\u034E\u0353\u0339\u0353\u033B\u0330\u033A\u0345\u032D\u031E\u031D\u032A\u0354\u0326\u0345I\u0337\u0303\u030F\u0302\u0312\u034C\u0314\u0304\u0306\u0357\u0306\u031A\u030D\u034B\u035D\u033E\u0351\u033D\u0341\u0314\u0341\u0312\u0358\u0358\u0325\u0329\u0347\u0333\u0326\u035A\u032C\u0359\u0323\u0328\u032A\u031D\u031E\u0328\u034E\u034E\u0339\u032E\u0325\u0317\u0354\u0327\u0353\u0332\u032D\u0322\u031F\u0345\u034E\u033C\u0319\u0323\u0319\u032A\u0333\u031E\u031D\u0345\u0354\u0327\u031D\u032B\u031D\u034D\u0349\u034D\u0317\u034D\u033C\u035C\u033B\u033A\u032D\u0325\u0317N\u0337\u030B\u030D\u0315\u033E\u033D\u030F\u0341\u034C\u0315\u030F\u0344\u0310\u0350\u0301\u030C\u034C\u0311\u0301\u0303\u0346\u0357\u0302\u035B\u0304\u0315\u0343\u030B\u031E\u034E\u0339\u0329\u0329\u032D\u0325\u0356\u033A\u033B\u0318\u031C\u032B\u0339\u033A\u0353\u0355\u0349\u031D\u0330\u031D\u0349\u0349\u031C\u0339\u035C\u0348\u0325\u0353\u0326\u0353\u031FY\u0337\u030D\u0310\u030D\u0343\u0315\u030A\u030A\u0300\u0344\u0344\u034B\u0341\u0301\u034A\u0313\u0352\u032F\u0326\u032A\u0320\u0321\u0320\u031E\u035C\u033C\u031C\u0349\u0321\u035A\u033B\u0345\u032A\u0347\u0319\u031D\u0331\u0331\u033A\u0348\u035C\u031C\u0348\u0339\u0348\u0318\u034E\u0328\u0321\u0330\u0347\u033C\u031C\u0330\u0353\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Fallborne:\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":394,\"yPos\":26},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Kitsune
+    Incinerates the Fallborne*\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: Victory_Fallborne
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 332231736}
+  - {fileID: 332231735}
+  - {fileID: 332231734}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &983964749
 GameObject:
   m_ObjectHideFlags: 0
@@ -10966,6 +11502,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074470854}
   m_CullTransparentMesh: 0
+--- !u!1 &1079720668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079720669}
+  - component: {fileID: 1079720670}
+  m_Layer: 0
+  m_Name: Fallborne_E
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1079720669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079720668}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 97.1875, y: 2.9252014, z: -99.8772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 85738975}
+  m_Father: {fileID: 1280917759}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1079720670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079720668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":320,\"yPos\":153},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"W\u0336\u0305\u0323\u0316\u0320H\u0336\u0341\u033C\u0328\u032D\u0354\u0322\u0345\u0324\u0359\u031F\u0348\u031F\u0359\u0359\u032D\u031E\u035C\u0318A\u0335\u0302\u0342\u033D\u0315\u033D\u034C\u0341\u033C\u0355\u032A\u0339\u031C\u0354T\u0338\u0340\u031B\u033D\u031B\u0313\u030A\u0346\u0358\u0314\u0303\u0308\u0309\u035A\u0328\u032A\u0354\u0321\u031F\u032C\u0331\u034E
+    \u0335\u0306\u0301\u0342\u0304\u0310\u0350\u0360\u035C\u0326A\u0334\u0342\u030E\u031A\u0350\u035D\u035D\u0360\u0351\u0350\u030D\u030A\u0349\u0319\u0317\u0355\u032C\u0348\u0318\u031F\u0329M\u0338\u030E\u033F\u034B\u034A\u0327\u034E\u0345\u0318\u0349\u0319\u0353\u0354\u031E\u0359\u032F\u0325\u032D\u031F\u032A\u0349
+    \u0336\u0307\u0304\u030D\u0304\u0358\u030B\u0343\u0313\u0306\u030B\u0342\u0312\u031E\u0347\u0317\u032CI\u0338\u035B\u0344\u0344\u033F\u0309\u0312\u0342\u0302\u0312\u030C\u030A\u034A\u035B\u0303\u0310\u0349\u0325\u031E\u033C\u0339\u035C\u0319\u034D\u031D\u031F\u0332\u0322?\u0338\u0358\u0358\u0307\u031A\u031B\u0340\u0350\u0342\u0346\u030A\u030B\u035B\u0304\u033E\u0304\u0343\u031F\u0320\u0316\u0339\u0330\u032D\u031C\u032F\u0317\u0323\u0325\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Fallborne
+    E:\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: Fallborne_E
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 85738976}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1081652348
 GameObject:
   m_ObjectHideFlags: 0
@@ -12150,6 +12744,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205757990}
   m_CullTransparentMesh: 0
+--- !u!1 &1208842786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208842787}
+  - component: {fileID: 1208842789}
+  - component: {fileID: 1208842788}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208842787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208842786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 946460312}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1208842788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208842786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1208842789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208842786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &1214333987
 GameObject:
   m_ObjectHideFlags: 0
@@ -12956,6 +13620,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266777533}
   m_CullTransparentMesh: 0
+--- !u!1 &1280917758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280917759}
+  m_Layer: 0
+  m_Name: Fallborne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280917759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280917758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 981431368}
+  - {fileID: 1079720669}
+  - {fileID: 1684568187}
+  - {fileID: 1646248224}
+  - {fileID: 1783522504}
+  - {fileID: 125843155}
+  - {fileID: 45810829}
+  m_Father: {fileID: 1685957828}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281752893
 GameObject:
   m_ObjectHideFlags: 0
@@ -16662,6 +17363,116 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615711724}
   m_CullTransparentMesh: 0
+--- !u!1 &1623378132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623378133}
+  - component: {fileID: 1623378134}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1623378133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623378132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1646248224}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1623378134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623378132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!1 &1646248223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1646248224}
+  - component: {fileID: 1646248225}
+  m_Layer: 0
+  m_Name: Fallborne_F
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1646248224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646248223}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 97.1875, y: 2.9252014, z: -99.8772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1623378133}
+  m_Father: {fileID: 1280917759}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1646248225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646248223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-65,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I\u0334\u0307\u0314\u0315\u031A\u0351\u035D\u0357\u033F\u034D\u033A\u0331\u032E\u0317\u0345\u035C\u0355\u0321\u033C\u032B\u0323\u0333\u031D\u033B\u0349\u0316
+    \u0336\u030B\u035D\u0308\u0310\u035D\u0350\u0344\u0342\u031A\u030F\u0344\u0358\u0346\u0355C\u0338\u0301\u0344\u0306\u0308\u031B\u0322A\u0338\u035D\u0340\u0349\u031E\u032D\u0328\u0349\u031F\u032B\u0323\u0331\u0318\u0354\u0316\u034D\u033AN\u0335\u0358\u0350\u034B\u030D\u0303\u0343\u035B\u0307\u0341\u0313\u0306\u030A\u035D\u0313\u0302\u0311\u0358\u033B\u0353\u0326\u031E\u0333\u031F'\u0338\u0343\u0350\u035D\u0351\u0360\u034A\u034B\u0333\u0319\u0327\u0356\u0324\u0317\u0325\u0349T\u0335\u035D\u035D\u031D\u0345\u032B\u0333\u0324\u032D\u032E\u0349\u031E\u0319\u0355\u0330\u0321\u0322\u0319\u0356\u0332
+    \u0335\u034C\u030A\u031A\u0316\u0326\u0329\u034D\u0328\u034D\u0339\u033A\u0328\u0354\u0355\u0354F\u0338\u0309\u0357\u0315\u033D\u0303\u0314\u035D\u0321\u0354\u0325\u034D\u032D\u0323\u0348\u033A\u035CE\u0336\u0307\u0308\u0358\u0346\u0307\u030D\u033E\u0303\u030B\u0346\u030C\u0340\u0314\u031B\u0333\u0356\u0320\u033C\u0323\u0319\u0348E\u0336\u030B\u031A\u0341\u0315\u0342\u0308\u030E\u0344\u034B\u0309\u0340\u0319\u0318\u0353\u0348\u032B\u0326\u0316\u034E\u035A\u0339\u0359\u032D\u0348L\u0336\u034C\u035B\u034A\u030D\u035B\u0358\u0304\u033F\u0357\u031E\u033B\u0345\u032E\u0356\u0316\u031F\u0330\u0329
+    \u0336\u0352\u0342\u0314\u0301\u0312\u030C\u0301\u030E\u0311\u0303\u035B\u0346\u034C\u0343\u0302\u0354\u0332\u0321\u0323\u0339\u0354\u0325M\u0336\u0360\u0312\u0343\u030A\u033A\u0332\u0348\u034E\u0339\u0324\u0317\u0345\u0354\u0356\u0332Y\u0338\u030D\u035B\u034C\u035B\u030E\u0306\u0303\u030D\u030C\u0305\u0303\u0315\u030A\u0307\u033D\u0356\u035C\u032B\u0326\u0333\u0316\u0325
+    \u0338\u030B\u0350\u031A\u0300\u034C\u0330\u031E\u0326\u034D\u031D\u0322\u0328\u032F\u0321\u032E\u0345\u0324L\u0337\u0343\u0346\u0357\u0343\u033D\u0350\u0302\u0352\u0304\u0350\u0315\u0300\u035D\u0300\u0303\u034A\u034D\u0332\u0356\u0329\u031D\u0318\u0355\u0320\u0327\u0328\u0356\u032E\u0326\u0324\u031D\u0318I\u0336\u0315\u0300\u033E\u0358\u0343\u0303\u034B\u0326\u0347\u0345\u031C\u0319\u0333M\u0334\u035B\u0344\u0358\u0300\u0351\u035D\u035D\u0346\u031B\u0304\u0312\u0357\u0341\u033BB\u0338\u0310\u0351\u0309\u0314\u030A\u0313\u031B\u035D\u0317\u031E\u0349\u032BS\u0337\u0358\u031E\u0359\u032B\u032E\u031C\u035A\u0347\u032B\u0347\u031E\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Fallborne
+    F:\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: Fallborne_F
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 1623378134}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1648047272
 GameObject:
   m_ObjectHideFlags: 0
@@ -16778,6 +17589,64 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1684568186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1684568187}
+  - component: {fileID: 1684568188}
+  m_Layer: 0
+  m_Name: Fallborne_E_death
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1684568187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684568186}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 97.1875, y: 2.9252014, z: -99.8772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1951816722}
+  m_Father: {fileID: 1280917759}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1684568188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684568186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":228,\"yPos\":147},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I\u0336\u035B\u035D\u0342\u0352\u0311\u035B\u0339\u0318\u0359\u033A\u0345\u0318\u0325\u0322S\u0336\u030E\u0307\u0315\u0311\u0344\u0304\u0346\u0350\u0360\u033D\u034C\u0350\u0315\u034B\u030E\u030F\u0300\u031F\u031C\u0355\u0327\u032E\u0347\u0324\u0330\u0327\u032F\u0349\u0325\u0329\u031D
+    \u0334\u033D\u0341\u030A\u030B\u0360\u0306\u0300\u0358\u0348\u0349\u0349\u0345\u032C\u035A\u032F\u0330\u0339T\u0334\u0315\u0312\u0308\u0322\u031D\u0348\u0330\u0317\u0316\u0325\u0323\u0317\u033B\u0322\u0339\u0347\u0349\u0317H\u0335\u0308\u0314\u0357\u031B\u0357\u030D\u0343\u0341\u0350\u033D\u0305\u0350\u030A\u033D\u0304\u034A\u030A\u032D\u0326\u031C\u033C\u031C\u0355\u032B\u0349\u031D\u031E\u031F\u031C\u0348\u0327\u033C\u032DI\u0336\u035D\u0341\u0309\u033E\u0303\u0346\u034B\u0306\u0316\u0323\u0324\u035A\u0354\u0317\u0328\u035AS\u0336\u0314\u0310\u0342\u030E\u035D\u0343\u0314\u0352\u033D\u0303\u0343\u0315\u030B\u0351\u0345\u0329
+    \u0336\u0313\u031A\u0358\u035D\u0333\u0330D\u0336\u0343\u0312\u032F\u0345\u0321\u0319Y\u0336\u033E\u0318\u0332\u0330\u0316\u0328\u0318\u0320\u035C\u0321\u0353I\u0335\u0306\u0309\u033F\u034B\u0312\u0314\u0315\u030E\u034A\u0315\u033A\u0339\u032E\u0339\u0319\u032C\u0348\u0348\u0319\u0326\u031E\u035C\u032F\u0326N\u0338\u0301\u0360\u0351\u035B\u0346\u035D\u0329\u032C\u0330\u0355\u031E\u0347\u0329\u033A\u035A\u0353\u032B\u032E\u033C\u0355\u0333G\u0336\u0360\u0300\u033E\u034C\u0344\u035D\u0329\u0318\u0356\u0322\u0336\u0307\u0304\u030D\u0304\u0358\u030B\u0343\u0313\u0306\u030B\u0342\u0312\u031E\u0347\u0317\u032CI\u0338\u035B\u0344\u0344\u033F\u0309\u0312\u0342\u0302\u0312\u030C\u030A\u034A\u035B\u0303\u0310\u0349\u0325\u031E\u033C\u0339\u035C\u0319\u034D\u031D\u031F\u0332\u0322?\u0338\u0358\u0358\u0307\u031A\u031B\u0340\u0350\u0342\u0346\u030A\u030B\u035B\u0304\u033E\u0304\u0343\u031F\u0320\u0316\u0339\u0330\u032D\u031C\u032F\u0317\u0323\u0325\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Fallborne
+    E:\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: Fallborne_E_death
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 1951816723}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1685957827
 GameObject:
   m_ObjectHideFlags: 0
@@ -16809,6 +17678,8 @@ Transform:
   - {fileID: 858761887}
   - {fileID: 1379948990}
   - {fileID: 1609944697}
+  - {fileID: 1280917759}
+  - {fileID: 946460312}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17662,6 +18533,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780179124}
   m_CullTransparentMesh: 0
+--- !u!1 &1783522503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783522504}
+  - component: {fileID: 1783522505}
+  m_Layer: 0
+  m_Name: Fallborne_F_death
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1783522504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783522503}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 97.1875, y: 2.9252014, z: -99.8772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 536632712}
+  m_Father: {fileID: 1280917759}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783522505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783522503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":123,\"yPos\":106},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"D\u0336\u0309\u0315\u0350\u0308\u0350\u031B\u0312\u0346\u034E\u0321\u0316I\u0338\u031B\u0302\u030D\u034A\u0344\u0358\u030E\u030C\u031B\u0331\u032D\u034E\u0356\u035C\u032E\u033C\u0359\u0316\u0316\u0319\u0318D\u0336\u0352\u030F\u0327\u0349\u032A
+    \u0336\u0342\u0309\u0360\u033A\u0356\u031D\u0349\u0345\u0325\u0348\u0353\u0327\u034DY\u0335\u0313\u0344\u0307\u0356\u0332\u0331\u032D\u031CO\u0337\u0304\u0307\u0300\u0343\u0346\u0312\u0344\u0312\u0344\u0303\u0311\u0343\u035D\u034D\u033A\u033B\u032BU\u0338\u0350\u030C\u0303\u0350\u0304\u0300\u0314\u0301\u0346\u0344\u0311\u031B\u0306\u034E\u0345\u0349\u0353\u035C\u0332\u0329\u0355\u0326\u035C\u0320\u032F\u0333
+    \u0336\u0344\u0344\u0352\u033D\u0343\u031B\u030B\u0300\u030D\u030F\u0358\u0344\u030A\u034C\u0317\u0349\u0327\u035C\u0322\u0331\u0331\u031C\u0327K\u0338\u0358\u0315\u033D\u030B\u0311\u033D\u035A\u0329\u0326\u0330\u0353\u0348\u0354\u032CN\u0335\u034C\u0311\u035B\u0360\u030E\u0315\u0345\u032D\u0330\u0347\u031E\u032C\u0331\u0319\u0347\u032CO\u0335\u0301\u031B\u0350\u0358\u0329\u032D\u0325\u0324\u0325\u0331\u0329\u032F\u032C\u032E\u032F\u0323\u032B\u033A\u0356\u0328W\u0337\u034A\u0358\u0300\u0351\u0328\u032C\u0353\u032D\u0359\u035C\u0347\u031C\u031D\u0321
+    \u0334\u031B\u033F\u0313\u0357\u030C\u0307\u0357\u0301\u0343\u0352\u0301\u0340\u0327T\u0335\u0301\u0356\u032A\u0319\u0324\u0321\u032F\u0325\u032F\u0347\u0330\u0320\u032E\u0325\u032D\u035C\u032BH\u0336\u0357\u030B\u033D\u034A\u0313\u031A\u035B\u0311\u0358\u0341\u0346\u035B\u035D\u0310\u035B\u0349\u033A\u035A\u0347\u032B\u0332\u0316\u0353\u0326\u0353\u0328\u0330\u034E\u0316A\u0336\u0309\u0311\u0314\u030D\u0312\u034A\u0351\u031C\u035C\u0318\u0359\u0324\u0359\u0316T\u0337\u030C\u031A\u0300\u0303\u0308\u0302\u0311\u031A\u0355
+    \u0335\u0300\u035D\u0346\u0344\u035D\u0303\u034C\u0358\u0340\u034ET\u0334\u030D\u0342\u0317\u0354\u031D\u032E\u0317\u0330\u0345\u032FI\u0336\u0311\u031A\u0317\u034D\u0329\u0328\u034EM\u0334\u0358\u0351\u0313\u0340\u030D\u035D\u0350\u035D\u030C\u0332\u034E\u033B\u033B\u0353\u0339\u033B\u0348\u0339\u0332\u0339\u0318E\u0334\u031B\u0306\u033F\u0309\u0351\u031D\u0348\u032A\u0356\u034D\u032B\u0316
+    \u0336\u0346\u0351\u032E\u0323\u0317\u0356\u031C\u0348I\u0334\u035D\u0304\u0303\u0331S\u0338\u030C\u0352\u030B\u035D\u0309\u0315\u0358\u0309\u0302\u0352\u030E\u0355\u0316\u0348\u033B\u0353\u031F\u0349\u0354\u0322\u0316\u0330\u0323\u032F\u0353\u032E\u0317
+    \u0337\u0300\u0305\u0303\u0315\u030B\u0310\u033C\u0345\u034D\u033C\u0326\u0325\u0348A\u0337\u0346\u0340\u0305\u031A\u0305\u0351\u0304\u0308\u0346\u0351\u0317\u031C\u032E\u032F\u031D\u032B\u0356\u031D\u0331\u034D\u0316\u0333\u0319\u0347\u0330\u0348\u0355N\u0336\u030A\u0310\u0305\u0313\u034D\u0316\u0356\u032A\u031C\u034D\u033B\u031D\u0318\u0339\u032C
+    \u0337\u033D\u030F\u0303\u0357\u033D\u0312\u0360\u030F\u033E\u0314\u0307\u0357\u0327\u032D\u032E\u033C\u0325\u0359\u032A\u033B\u032C\u0324I\u0338\u035D\u0351\u0310\u0344\u0352\u033D\u0344\u0319\u031F\u0327\u033A\u033B\u032EL\u0336\u0314\u030C\u0343\u0344\u0310\u0310\u030F\u0340\u0342\u0341\u034C\u032B\u032FL\u0335\u0305\u031A\u0360\u031B\u0300\u030A\u033E\u030C\u035D\u0302\u035D\u0303\u0357\u0340\u0300\u0344\u0315\u033B\u032C\u031F\u0326\u0317\u031D\u031F\u0326\u0332\u033B\u0323U\u0334\u034B\u0343\u0331\u031D\u031F\u031C\u0355\u0353\u0348\u031F\u034E\u0318S\u0336\u0343\u033F\u031A\u030A\u030A\u033F\u0310\u0358\u0343\u030A\u0357\u0351\u030C\u031B\u034C\u0349\u0317\u0353\u0324\u032F\u0319\u031E\u0356\u031C\u0325\u0327\u0355\u0354\u0324\u033C\u0359\u0323I\u0335\u0313\u0317\u0333\u0330O\u0335\u0310\u030A\u030D\u0303\u031A\u0344\u0304\u0356\u0319\u0324\u0354\u0331\u033B\u0326\u0356\u0331\u032B\u0328\u032DN\u0334\u0301\u030D\u0344\u0342\u030A\u0313\u0342\u034A\u032E?\u0338\u0350\u0304\u0312\u0305\u033F\u030F\u033F\u033F\u035D\u0309\u0352\u030C\u0307\u0302\u0311\u0306\u033B\u032F\u0331\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Fallborne
+    F:\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: Fallborne_F_death
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  NodeSerializedDataList:
+  - {fileID: 536632713}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1788938865
 GameObject:
   m_ObjectHideFlags: 0
@@ -19304,6 +20238,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941684586}
   m_CullTransparentMesh: 0
+--- !u!1 &1951816721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1951816722}
+  - component: {fileID: 1951816723}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1951816722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951816721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -747.3892, y: -295.62503, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1684568187}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1951816723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951816721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &1958571817
 GameObject:
   m_ObjectHideFlags: 0
