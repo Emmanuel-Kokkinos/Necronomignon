@@ -33,15 +33,15 @@ namespace DialogueEditor
             background = GameObject.Find("Canvas");
 
             //Sets all conversations to list
-            NPCConversationToList();
+            //NPCConversationToList();
 
             //Last item of list
-            timesUsedCounter = conversationNames.Count - 1;
+            timesUsedCounter = 0;
 
             //Sets the default conversation
-            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
+            SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
             //SetNPCConversation(FindByName("Conv_Intro"));
-            SetNPCConversation(FindByName("FallMirrulak_8"));
+            //SetNPCConversation(FindByName("FallMirrulak_8"));
 
             //Sets tournament conversations
             if (SceneManager.GetActiveScene().name == "Tournament")
@@ -107,7 +107,10 @@ namespace DialogueEditor
          */
         private void NPCConversationToList()
         {
-            NPCConversation[] convs = GameObject.FindObjectsOfType<NPCConversation>();
+
+
+            NPCConversation[] convs = FindObjectsOfType<NPCConversation>();
+
             conversationNames = new List<NPCConversation>(convs);
         }
 
@@ -290,7 +293,7 @@ namespace DialogueEditor
         public void ConversationEnd()
         {
             string convname = currentConversation.DefaultName;
-            timesUsedCounter--;
+            timesUsedCounter++;
 
             //Saving.saveAll();
 

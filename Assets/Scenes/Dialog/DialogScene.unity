@@ -270,6 +270,19 @@ MonoBehaviour:
   - {fileID: 1736545121}
   - {fileID: 582229788}
   - {fileID: 340534774}
+  - {fileID: 1639468713}
+  - {fileID: 1848433079}
+  - {fileID: 1775077825}
+  - {fileID: 934054524}
+  - {fileID: 1282560666}
+  - {fileID: 1007812211}
+  - {fileID: 873767391}
+  - {fileID: 2093901621}
+  - {fileID: 396877068}
+  - {fileID: 375065821}
+  - {fileID: 1595115557}
+  - {fileID: 1235565106}
+  - {fileID: 1178687413}
 --- !u!114 &209366594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7946,12 +7959,12 @@ PrefabInstance:
     - target: {fileID: 6449887092502888396, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 128.9
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 6449887092502888396, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 59
+      value: 72.2
       objectReference: {fileID: 0}
     - target: {fileID: 6449887092502888396, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca,
         type: 3}
