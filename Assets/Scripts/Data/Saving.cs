@@ -1,4 +1,5 @@
-﻿using SaveSystem;
+﻿using DialogueEditor;
+using SaveSystem;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,7 +28,8 @@ public class Saving : MonoBehaviour
         if(loadSaveDialog != null)
             loadSaveDialog.SetActive(false);
 
-        //loadSaveDialog.SetActive(false);
+
+
     }
 
     // Update is called once per frame
@@ -40,6 +42,13 @@ public class Saving : MonoBehaviour
     {
         EasySave.Save<BeastList>("playerBL",BeastManager.beastsList);
         EasySave.Save<int>("level", LevelChecker.levels);
+        //Saves tournament progress
+        EasySave.Save<int>("tourLevel", LevelChecker.tourLevels);
+        //Saves dialogue tournament progress
+        EasySave.Save<int>("winTournament", CampaignManager.winTourBattle);
+        //Saves conversation state
+        EasySave.Save<int>("convCounter", DialogueManager.DialogueCounter);
+        EasySave.Save<int>("convTourCounter", DialogueManager.TourDiagCounter);
         List<Beast> failsafe = new List<Beast>();
       /*  while (failsafe.Count < 11)
         {
@@ -64,13 +73,24 @@ public class Saving : MonoBehaviour
         EasySave.Save<int>("playerXP", Player.summoner.xp);
 
         //Dialog box when game is saved
-        txtLoadSave.text = "The Game Has Been Saved!";
-        loadSaveDialog.SetActive(true);
+        if (txtLoadSave != null)
+            txtLoadSave.text = "The Game Has Been Saved!";
+        if(loadSaveDialog != null)
+            loadSaveDialog.SetActive(true);
     }
     public static void loadAll()
     {
         BeastManager.beastsList = EasySave.Load<BeastList>("playerBL");
         LevelChecker.levels = EasySave.Load<int>("level");
+
+        //Load tournament progress
+        LevelChecker.tourLevels = EasySave.Load<int>("tourLevel");
+        //Load dialogue tournament progress
+        CampaignManager.winTourBattle = EasySave.Load<int>("winTournament");
+        //Load conversation state
+        DialogueManager.DialogueCounter = EasySave.Load<int>("convCounter");
+        DialogueManager.TourDiagCounter = EasySave.Load<int>("convTourCounter");
+
         if (EasySave.Load<List<Beast>>("squad1") != null && EasySave.Load<List<Beast>>("squad1").Count > 0)
         {
             SquadData.squad1 = EasySave.Load<List<Beast>>("squad1");
@@ -91,9 +111,12 @@ public class Saving : MonoBehaviour
         }
         Player.summoner.xp = EasySave.Load<int>("playerXP");
 
+
         //Displays dialog box when game is loaded
-        txtLoadSave.text = "Your Game Has Been Loaded!";
-        loadSaveDialog.SetActive(true);
+        if (txtLoadSave != null)
+            txtLoadSave.text = "Your Game Has Been Loaded!";
+        if (loadSaveDialog != null)
+            loadSaveDialog.SetActive(true);
         changeSettingsBtnStatus(false);
     }
 

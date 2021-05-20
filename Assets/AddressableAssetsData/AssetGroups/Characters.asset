@@ -22,106 +22,176 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 12d3aa7df9614ff4797e358197547ae4, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 12d3aa7df9614ff4797e358197547ae4, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 15785fc73cfb13341899ad42b55c771d
+    m_Address: Fallborne_G
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: 15785fc73cfb13341899ad42b55c771d, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 15785fc73cfb13341899ad42b55c771d, type: 3}
   - m_GUID: 16f9f30e0a2a38f4dbea222e41d003c9
     m_Address: Catherine
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 16f9f30e0a2a38f4dbea222e41d003c9, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 16f9f30e0a2a38f4dbea222e41d003c9, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 18da306d12c7446428836dae30c60c79
     m_Address: Mom
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 18da306d12c7446428836dae30c60c79, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 18da306d12c7446428836dae30c60c79, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1f3d7d3831c11124599cc46e3ae00614
+    m_Address: Fallborne_F
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: 1f3d7d3831c11124599cc46e3ae00614, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 1f3d7d3831c11124599cc46e3ae00614, type: 3}
   - m_GUID: 21b95a092c94f2c4480412d628025237
     m_Address: Jheera
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 21b95a092c94f2c4480412d628025237, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 21b95a092c94f2c4480412d628025237, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 2fb7c5ff932c41f42851c3748d9f0af2
     m_Address: Dio
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 2fb7c5ff932c41f42851c3748d9f0af2, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 2fb7c5ff932c41f42851c3748d9f0af2, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 4efa836f79ac09548ab9885c28d03af3
     m_Address: Auriga
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 4efa836f79ac09548ab9885c28d03af3, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 4efa836f79ac09548ab9885c28d03af3, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 5b214d3c4c0a1344fa57ad429877b449
     m_Address: Dad
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 5b214d3c4c0a1344fa57ad429877b449, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 5b214d3c4c0a1344fa57ad429877b449, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 6d207e92eb992124bb1e3671831612f5
     m_Address: John
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 6d207e92eb992124bb1e3671831612f5, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 6d207e92eb992124bb1e3671831612f5, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7258df1d4bbcca54182d335946de7f21
+    m_Address: Fallborne_A
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: 7258df1d4bbcca54182d335946de7f21, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 7258df1d4bbcca54182d335946de7f21, type: 3}
   - m_GUID: 76a025cc36b25c24fa42f1d93c538d1e
     m_Address: Irvina
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 76a025cc36b25c24fa42f1d93c538d1e, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 76a025cc36b25c24fa42f1d93c538d1e, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 83b7aa016366ccd479c91969a3c2b06e
     m_Address: Neput
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 83b7aa016366ccd479c91969a3c2b06e, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 83b7aa016366ccd479c91969a3c2b06e, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 8fd8b714e2b6d6a4083e1ac9e1789988
     m_Address: Gabriel
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: 8fd8b714e2b6d6a4083e1ac9e1789988, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 8fd8b714e2b6d6a4083e1ac9e1789988, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 93ea0a528eb354e4a9dfc909cd3c1b57
+    m_Address: Fallborne_D
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: 93ea0a528eb354e4a9dfc909cd3c1b57, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 93ea0a528eb354e4a9dfc909cd3c1b57, type: 3}
+  - m_GUID: aaad35d54283cf64f8edb6c11985db6e
+    m_Address: Fallborne_E
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: aaad35d54283cf64f8edb6c11985db6e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: aaad35d54283cf64f8edb6c11985db6e, type: 3}
   - m_GUID: af663a2687ad9324280c3fbb955dc19e
     m_Address: Faraday
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: af663a2687ad9324280c3fbb955dc19e, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: af663a2687ad9324280c3fbb955dc19e, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b99191c0c423fc14aad630e167eca4dd
+    m_Address: Leopold
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: b99191c0c423fc14aad630e167eca4dd, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: b99191c0c423fc14aad630e167eca4dd, type: 3}
+  - m_GUID: bb5f36ae41564b34a8d8bbdbb10bcedb
+    m_Address: Fallborne_C
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: bb5f36ae41564b34a8d8bbdbb10bcedb, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: bb5f36ae41564b34a8d8bbdbb10bcedb, type: 3}
+  - m_GUID: c2bfad360967501429a412c2ab5e31d8
+    m_Address: Sgt_Persephone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: c2bfad360967501429a412c2ab5e31d8, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: c2bfad360967501429a412c2ab5e31d8, type: 3}
   - m_GUID: c3b3a4a22d148414faa1d54c296ab9d6
     m_Address: Ari
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: c3b3a4a22d148414faa1d54c296ab9d6, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: c3b3a4a22d148414faa1d54c296ab9d6, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: cd43c19b4789acb449fa0ae3553e32ff
     m_Address: Thoth
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: cd43c19b4789acb449fa0ae3553e32ff, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: cd43c19b4789acb449fa0ae3553e32ff, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: d41c012ebf130fd4d96fb2052ebbc6e7
     m_Address: Tadria
     m_ReadOnly: 0
     m_SerializedLabels:
     - GameNPC
-    m_MainAsset: {fileID: 2800000, guid: d41c012ebf130fd4d96fb2052ebbc6e7, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: d41c012ebf130fd4d96fb2052ebbc6e7, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f0f79389a5c58254197dd27a92c78d7a
+    m_Address: Fallborne_Dragon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: f0f79389a5c58254197dd27a92c78d7a, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: f0f79389a5c58254197dd27a92c78d7a, type: 3}
+  - m_GUID: f84dd95b5718fb141aa1d8e9a2c2ba93
+    m_Address: Fallborne_B
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameNPC
+    m_MainAsset: {fileID: 2800000, guid: f84dd95b5718fb141aa1d8e9a2c2ba93, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: f84dd95b5718fb141aa1d8e9a2c2ba93, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 543447ffde342454baea6fd67311b463, type: 2}
   m_SchemaSet:
