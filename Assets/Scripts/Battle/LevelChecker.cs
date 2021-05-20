@@ -6,6 +6,7 @@ using UnityEngine;
 public class LevelChecker : MonoBehaviour
 {
     static public int levels = 0;
+    static public int tourLevels = 0;
 
     static public string lastClick;
 
@@ -29,23 +30,24 @@ public class LevelChecker : MonoBehaviour
     public void Progess(string levelName)
     {
         //Tournament
-        if (lastClick == "John" && levels <= 0)
+        if (lastClick == "John" && tourLevels <= 0)
         {
-            levels++;
-            CampaignManager.winTourBattle = levels;
+            tourLevels++;
+            CampaignManager.winTourBattle = tourLevels;
         }
-        if (lastClick == "DemonChick" && levels <= 1)
+        if (lastClick == "DemonChick" && tourLevels <= 1)
         {
-            levels++;
-            CampaignManager.winTourBattle = levels;
+            tourLevels++;
+            CampaignManager.winTourBattle = tourLevels;
         }
         if (lastClick == "Gabriel" && levels <= 2)
         {
-            levels++;
-            CampaignManager.winTourBattle = levels;
+            tourLevels++;
+            CampaignManager.winTourBattle = tourLevels;
         }
-        if (lastClick == "Boss" && levels <= 3)
+        if (lastClick == "Boss" && tourLevels <= 3)
         {
+            tourLevels = 0;
             levels = 0;
         }
 

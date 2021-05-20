@@ -347,11 +347,10 @@ public class HealthManager : MonoBehaviour
     //Play the 'roaring' animation for the winning team.
     IEnumerator winnersAnimations()
     {
-        yield return new WaitForSeconds(2f);
 
-        // This is giving me problems in normal battles
-        //ConversationStart.winBattleConvo();
-        print("ConversationStart.winBattleConvo() line 352 HealthManager");
+        ConversationStart.winBattleConvo();
+
+        yield return new WaitForSeconds(2f);
 
         foreach (GameObject g in winners)
         {
