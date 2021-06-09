@@ -150,6 +150,7 @@ public class DemoBattleManager : MonoBehaviour
     {
         currentTurn = roundOrder[turn];
 
+        /*
         for (int x = 0; x < orderImgs.Count; x++)
         {
             try
@@ -159,6 +160,39 @@ public class DemoBattleManager : MonoBehaviour
             catch
             {
                 orderImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
+            }
+        }
+        */
+
+        foreach (Image beast in orderImgs)
+        {
+            beast.gameObject.SetActive(true);
+        }
+
+        for (int x = 0; x < orderImgs.Count; x++)
+        {
+            if (orderImgs[x].transform.childCount > 0)
+            {
+                foreach (UnityEngine.Transform child in orderImgs[x].transform)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+            try
+            {
+                GameObject beastPrefab = (GameObject)Instantiate(Resources.Load("Prefabs/Beasts/" + roundOrder[x + turn].name));
+                beastPrefab.transform.SetParent(orderImgs[x].transform);
+                var pos = beastPrefab.transform.position;
+                pos.y += 15;
+                beastPrefab.transform.localPosition = pos;
+                beastPrefab.transform.localRotation = Quaternion.identity;
+                beastPrefab.transform.localScale = beastPrefab.transform.localScale * .15f;
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
+                beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
+            }
+            catch
+            {
+                orderImgs[x].gameObject.SetActive(false);
             }
         }
     }
