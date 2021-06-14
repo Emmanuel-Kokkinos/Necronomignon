@@ -269,44 +269,47 @@ public class Attack : MonoBehaviour
 
         int rand = UnityEngine.Random.Range(1, 100);
 
-        if (rand < effectChance && type != (int)Move.types.Doom && type != (int)Move.types.Corrupt && target.statusTurns[type]<=0)
+        if (!target.name.Equals("Target"))
         {
-            print("status effect on " + target.name);
-            CreateStatusEffectPrefab(type, target);
-            target.statusTurns[type] = 3;
-        }
-        //this is where doom is cast, after this point doom is charged and completed in another place
-        else if(rand < effectChance && type != (int)Move.types.Corrupt && type == (int)Move.types.Doom && target.statusTurns[type] <= 0)
-        {
-            print(target.name + " has been doomed");
-            CreateStatusEffectPrefab(type, target);
-            attacker.curse(target);
-        }
-        //here is where corruption is added and if neccisary, deleted 
-        else if(rand < effectChance && type == (int)Move.types.Corrupt)
-        {
-            target.statusTurns[type]++;
-            switch(target.statusTurns[type])
+            if (rand < effectChance && type != (int)Move.types.Doom && type != (int)Move.types.Corrupt && target.statusTurns[type] <= 0)
             {
-                case 1:
-                    CreateStatusEffectPrefab(type, target);
-                    break;
-                case 2:
-                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted2");
-                    break;
-                case 3:
-                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted3");
-                    break;
-                case 4:
-                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted4");
-                    break;
-                case 5:
-                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted5");
-                    break;
-                default:
-                    battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted6");
-                    healthManager.UpdateHealth(target, target.hitPoints);
-                    break;
+                print("status effect on " + target.name);
+                CreateStatusEffectPrefab(type, target);
+                target.statusTurns[type] = 3;
+            }
+            //this is where doom is cast, after this point doom is charged and completed in another place
+            else if (rand < effectChance && type != (int)Move.types.Corrupt && type == (int)Move.types.Doom && target.statusTurns[type] <= 0)
+            {
+                print(target.name + " has been doomed");
+                CreateStatusEffectPrefab(type, target);
+                attacker.curse(target);
+            }
+            //here is where corruption is added and if neccisary, deleted 
+            else if (rand < effectChance && type == (int)Move.types.Corrupt)
+            {
+                target.statusTurns[type]++;
+                switch (target.statusTurns[type])
+                {
+                    case 1:
+                        CreateStatusEffectPrefab(type, target);
+                        break;
+                    case 2:
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted2");
+                        break;
+                    case 3:
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted3");
+                        break;
+                    case 4:
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted4");
+                        break;
+                    case 5:
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted5");
+                        break;
+                    default:
+                        battleManager.getSlot(target).transform.Find("Move(Clone)").GetComponent<Animator>().SetTrigger("corrupted6");
+                        healthManager.UpdateHealth(target, target.hitPoints);
+                        break;
+                }
             }
         }
     }
