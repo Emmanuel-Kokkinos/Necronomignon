@@ -16,7 +16,7 @@ public class DemoTarget : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     void Update()
     {
         // Attacks every time the target is clicked
-        if (mouse_over)
+        if (mouse_over && demoBattleManager.attackingAnim == false)
         {
             if (Input.GetMouseButtonDown(0))
             {

@@ -28,8 +28,10 @@ public class DemoBattleManager : MonoBehaviour
     int turn = 0;
     int totalMoves;
     int squadNumber;
+    public bool attackingAnim = false;
     public Beast currentTurn;
     Beast b;
+    UnityArmatureComponent armature;
 
     // Start is called before the first frame update
     void Start()
@@ -150,20 +152,6 @@ public class DemoBattleManager : MonoBehaviour
     {
         currentTurn = roundOrder[turn];
 
-        /*
-        for (int x = 0; x < orderImgs.Count; x++)
-        {
-            try
-            {
-                orderImgs[x].sprite = Resources.Load<Sprite>("Static_Images/" + GetImage(roundOrder[x + turn]));
-            }
-            catch
-            {
-                orderImgs[x].sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
-            }
-        }
-        */
-
         foreach (Image beast in orderImgs)
         {
             beast.gameObject.SetActive(true);
@@ -202,19 +190,47 @@ public class DemoBattleManager : MonoBehaviour
     {
         bool inFront = this.inFront();
 
-        GameObject slot = getSlot();
-
-        if (inFront) slot.GetComponent<Animator>().SetTrigger("Front");
-        else slot.GetComponent<Animator>().SetTrigger("Back");
+        PlayAttackAnimation(inFront);
 
         List<Beast> beThe = new List<Beast>();
         beThe.Add(b);
-
 
         attack.InitiateAttack(currentTurn, beThe, inFront, Player.summoner);
         totalDamageText.text = totalDamage.ToString();
 
         TakeTurn();
+    }
+
+    //plays the attacking animation for either front or back row attack depending on the bool
+    public void PlayAttackAnimation(bool inFront)
+    {
+        GameObject slot = getSlot();
+        slot = slot.transform.GetChild(0).gameObject;
+        Parent_Beast beast = slot.GetComponent<Parent_Beast>();
+        armature = slot.GetComponent<UnityArmatureComponent>();
+
+        if (inFront)
+        {
+            armature.animation.Play("Front", 1);
+            StartCoroutine(AnimationWaitTime(armature));
+
+            if (beast != null)
+            {
+                beast.Play_SoundFX("front");
+                //beast.front_special();
+            }
+        }
+        else
+        {
+            armature.animation.Play("Back", 1);
+            StartCoroutine(AnimationWaitTime(armature));
+
+            if (beast != null)
+            {
+                beast.Play_SoundFX("back");
+                //beast.back_special();
+            }
+        }
     }
 
     // Uses a beasts turn when they attack and ends the round if they are the last beast in the round order
@@ -260,5 +276,14 @@ public class DemoBattleManager : MonoBehaviour
         }
 
         return null;
+    }
+
+    // Wait for the animation to finish then go back to Idle animation
+    public IEnumerator AnimationWaitTime(UnityArmatureComponent beast)
+    {
+        attackingAnim = true;
+        yield return new WaitUntil(() => beast.animation.isCompleted);
+        attackingAnim = false;
+        beast.animation.Play("Idle", 0);
     }
 }
