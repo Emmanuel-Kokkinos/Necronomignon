@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Terraos_Script : Parent_Script, Parent_Beast
 {
+    [SerializeField] AudioClip frontAttackSound, backAttackSound, damageSound, deathSound;
 
     public void back_special()
     {
@@ -31,7 +32,6 @@ public class Terraos_Script : Parent_Script, Parent_Beast
 
     public void Play_SoundFX(string sound)
     {
-        /*
         switch (sound)
         {
             case "front": audioSrc.PlayOneShot(frontAttackSound); break;
@@ -39,7 +39,6 @@ public class Terraos_Script : Parent_Script, Parent_Beast
             case "damage": audioSrc.PlayOneShot(damageSound); break;
             case "death": audioSrc.PlayOneShot(deathSound); break;
         }
-        */
     }
     public string Beast_Name()
     {
