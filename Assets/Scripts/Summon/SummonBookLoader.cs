@@ -94,7 +94,7 @@ public class SummonBookLoader : MonoBehaviour
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
-                beastTexts[x % 6].GetComponent<Text>().text = summonedNames[x];
+                beastTexts[x % 6].GetComponent<Text>().text = CamelCaseCorrection(summonedNames[x]);
 
                 //Make not summoned beasts transparent
                 if (sorted[x].tier <= 0)
@@ -173,6 +173,22 @@ public class SummonBookLoader : MonoBehaviour
         */
 
 
+    }
+
+    public static string CamelCaseCorrection(string v)
+    {
+        string str = "";
+        char[] charry = v.ToCharArray();
+        foreach(char c in charry)
+        {
+            if (Char.IsUpper(c))
+            {
+                str += " ";
+            }
+            str += c;
+        }
+        str.Trim();
+        return str;
     }
 
 
