@@ -9,18 +9,21 @@ using System.Collections;
 
 namespace DialogueEditor
 {
+    
     public class DialogueManager : MonoBehaviour
     {
         //public NPCManager npcManager;
         //main conversation scene variables
         private NPCConversation currentConversation;
-        private static int timesUsedCounter;
+        //Used for saving state
+        public static int DialogueCounter;
+        public static int TourDiagCounter;
         private string sceneName;
         GameObject background;
 
         public string dialogueScene;
 
-        [SerializeField] List<Image> characters;
+        [SerializeField] public List<Image> characters;
         [SerializeField] List<NPCConversation> conversationNames;
         
         private List<string> characterNames = new List<string>();
@@ -30,28 +33,51 @@ namespace DialogueEditor
         // Start is called before the first frame update
         void Start()
         {
+            DontDestroyOnLoad(this.gameObject);
+
+            DialogueCounter = 0;
+            TourDiagCounter = 0;
+
             background = GameObject.Find("Canvas");
 
             //Sets all conversations to list
-            NPCConversationToList();
-
-            //Last item of list
-            timesUsedCounter = conversationNames.Count - 1;
+            //NPCConversationToList();
 
             //Sets the default conversation
-            //SetNPCConversation(FindByName(conversationNames[timesUsedCounter].DefaultName));
-            //SetNPCConversation(FindByName("Questionnaire"));
-            //SetNPCConversation(FindByName("Conv_Intro"));
-             SetNPCConversation(FindByName("FallMirrulak_Intro"));
 
-            //Sets tournament conversations
-            if (SceneManager.GetActiveScene().name == "Tournament")
-            {
+            SetNPCConversation(FindByName(conversationNames[DialogueCounter].DefaultName));
 
-                if(CampaignManager.winTourBattle == 0)
+           if (SceneManager.GetActiveScene().name == "Tournament")
+                SetTournamentConversation();
+
+            //SetNPCConversation(FindByName("Conv_Graduation"));
+            //SetNPCConversation(FindByName("FallMirrulak_8"));
+
+
+            //Gets the data associated with conversation for further edit
+            GetConversationData(currentConversation);
+
+            //Start conversation and Initializes addressable components to load resources
+            StartCoroutine(LoadConversationAsync());
+            
+            //Add conversation End Events
+            ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);
+
+
+            
+        }
+
+        // ---SETS THE CONVERSATION OBJECTS IN SCENE
+
+        /* Since the tournament needs to reload tournament scene each time, we need to select what conversations will happen after
+         * 
+         */
+        public void SetTournamentConversation()
+        {
+
+                if (CampaignManager.winTourBattle == 0)
                 {
-                   
-                    SetNPCConversation(FindByName("Conv_Tour"));
+                    SetNPCConversation(FindByName("Conv_Tour")); 
                 }
                 else
                 {
@@ -67,24 +93,8 @@ namespace DialogueEditor
                         SetNPCConversation(FindByName("Conv_Auriga"));
 
                 }
-                
 
-            }
-            //SetNPCConversation(FindByName("Conv_Graduation"));
-
-            //Gets the data associated with conversation for further edit
-            GetConversationData(currentConversation);
-
-            //Start conversation and Initializes addressable components to load resources
-            StartCoroutine(LoadConversationAsync());
-            
-
-            //Add conversation End Events
-            ConversationManager.OnConversationEnded = new ConversationManager.ConversationEndEvent(ConversationEnd);
-            
         }
-
-        // ---SETS THE CONVERSATION OBJECTS IN SCENE
 
         //Sets the conversation progression in the scene 
         public void SetNPCConversation(NPCConversation dialogue)
@@ -102,15 +112,6 @@ namespace DialogueEditor
             return sceneConvo;
         }
 
-        /*Populates a list will all the conversations present
-         * ConversationNames list has all conversation reversed from the order they appear in inspector
-         * thus: last item in list == first conversation in inspector
-         */
-        private void NPCConversationToList()
-        {
-            NPCConversation[] convs = GameObject.FindObjectsOfType<NPCConversation>();
-            conversationNames = new List<NPCConversation>(convs);
-        }
 
         //Sets assets of current dialogue scene based on story 
         public void SceneInterface(string screenInter)
@@ -160,12 +161,21 @@ namespace DialogueEditor
                     characters[3].sprite = characterAssets.Find(x => x.name.Equals("Mom")); //mom
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
 
+                    for (int x = 0; x <= 3; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
+
                     //Sets background of intro conversation
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/housePX");
                     break;
                 case "Conv_Academy":
-                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
-                    for (int x = 4; x < 7; x++)
+
+                    characters[1].transform.localScale = new Vector3(.8f, .8f);
+                    characters[2].transform.localScale = new Vector3(.8f, .8f);
+                    characters[6].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
+                    
+                    for (int x = 0; x <= 7; x++)
                     {
                         characters[x].gameObject.SetActive(false);
                     }
@@ -276,6 +286,11 @@ namespace DialogueEditor
 
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Arriving_Mirrulak");
                     break;
+                case "FallMirrulak_2":
+
+
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Forest_Mirrulak");
+                    break;
                 default:
 
                     break;
@@ -286,27 +301,30 @@ namespace DialogueEditor
         public void ConversationEnd()
         {
             string convname = currentConversation.DefaultName;
-            timesUsedCounter--;
 
-            //Saving.saveAll();
-
+            if (SceneManager.GetActiveScene().name == "DialogScene")
+                DialogueCounter++;
+            else if (SceneManager.GetActiveScene().name == "Tournament")
+                TourDiagCounter++;
+            Saving.saveAll();
+            Destroy(currentConversation);
             switch (convname)
             {
                 case "Conv_Academy":
                     SetNPCConversation(FindByName("Conv_Opening"));
-                    BeginConversation(currentConversation, "DialogScene");
                     break;
                 case "Conv_Intro":
+
                     SetNPCConversation(FindByName("Conv_Academy"));
-                    BeginConversation(currentConversation, "DialogScene");
+                    
                     break;
                 case "Conv_Opening":
                     SetNPCConversation(FindByName("Questionnaire"));
-                    BeginConversation(currentConversation, "DialogScene");
+                    
                     break;
                 case "Questionnaire":
                     SetNPCConversation(FindByName("Conv_Graduation"));
-                    BeginConversation(currentConversation, "DialogScene");
+                    
                     break;
                 case "Tutorial1":
                     SceneManager.LoadScene("Menu");
@@ -321,7 +339,7 @@ namespace DialogueEditor
                         characters[x].gameObject.SetActive(false);
                     }
                     CampaignManager.firstMission.SetActive(true);
-
+                    
                     CampaignManager.dialogueEnd = true;
                     break;
                 case "Conv_semi":
@@ -341,19 +359,64 @@ namespace DialogueEditor
                     break;
                 case "Conv_Auriga":
                     SetNPCConversation(FindByName("Conv_Interlude"));
-                    BeginConversation(currentConversation, "DialogScene");
+                    
                     break;
                 case "Conv_Interlude":
                     //TODO: Implement cutscene of speech and subsequent fall of mirrulak. For now We will only start the last dialogue
                     SetNPCConversation(FindByName("FallMirrulak_Intro"));
-                    BeginConversation(currentConversation, "DialogScene");
+                    
                     break;
                 case "FallMirrulak_Intro":
                     //
                     SetNPCConversation(FindByName("FallMirrulak_1"));
-                    BeginConversation(currentConversation, "DialogScene");
+                    
+                    break;
+                case "FallMirrulak_1":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_2"));
+                    
+                    break;
+                case "FallMirrulak_2":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_3"));
+                    
+                    break;
+                case "FallMirrulak_3":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_4"));
+                    
+                    break;
+                case "FallMirrulak_4":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_5"));
+                    
+                    break;
+                case "FallMirrulak_5":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_6"));
+                    
+                    break;
+                case "FallMirrulak_6":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_7"));
+                    
+                    break;
+                case "FallMirrulak_7":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_8"));
+                   break;
+                case "FallMirrulak_8":
+                    //
+                    SetNPCConversation(FindByName("FallMirrulak_End"));
+                    break;
+                case "FallMirrulak_End":
+                    // Begin End Sequence
+                    
                     break;
             }
+
+            if(SceneManager.GetActiveScene().name == "DialogScene")
+                BeginConversation(currentConversation, "DialogScene");
         }
 
         //Conversation begins on scene
@@ -410,10 +473,12 @@ namespace DialogueEditor
             characters[charId].gameObject.SetActive(false);
         }
 
+        /*Only replaces first character of scene*/
         public void CharacterReplace(string character)
         {
             characters[0].sprite = characterAssets.Find(x => x.name.Equals(character));
         }
+
 
         public void CharacterOnScene(int charId)
         {
@@ -448,6 +513,15 @@ namespace DialogueEditor
         {
             SetNPCConversation(FindByName("Conv_Tour"));
             BeginConversation(currentConversation, "Tournament");
+            TourDiagCounter = 5;
+        }
+
+        /*Populates a list will all the conversations present -- Method to be fixed */
+        private void NPCConversationToList()
+        {
+            NPCConversation[] convs = FindObjectsOfType<NPCConversation>();
+
+            conversationNames = new List<NPCConversation>(convs);
         }
 
     }

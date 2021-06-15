@@ -347,9 +347,10 @@ public class HealthManager : MonoBehaviour
     //Play the 'roaring' animation for the winning team.
     IEnumerator winnersAnimations()
     {
-        yield return new WaitForSeconds(2f);
 
         ConversationStart.winBattleConvo();
+
+        yield return new WaitForSeconds(2f);
 
         foreach (GameObject g in winners)
         {

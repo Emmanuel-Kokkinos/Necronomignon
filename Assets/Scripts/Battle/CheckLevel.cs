@@ -89,15 +89,15 @@ public class CheckLevel : MonoBehaviour
 
     public void ActiveTourInterface()
     {
-        if (LevelChecker.levels < 1)
+        if (LevelChecker.tourLevels < 1)
         {
             GameObject.Find("btnTour2").SetActive(false);
         }
-        if (LevelChecker.levels < 2)
+        if (LevelChecker.tourLevels < 2)
         {
             GameObject.Find("btnTour3").SetActive(false);
         }
-        if (LevelChecker.levels < 3)
+        if (LevelChecker.tourLevels < 3)
         {
             GameObject.Find("btnBoss").SetActive(false);
         }

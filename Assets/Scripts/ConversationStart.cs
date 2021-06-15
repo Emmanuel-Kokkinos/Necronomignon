@@ -81,6 +81,7 @@ public class ConversationStart : MonoBehaviour
             }
         }
 
-        ConversationManager.Instance.StartConversation(winLoseConvo);
+        if(winLoseConvo != null)
+            ConversationManager.Instance.StartConversation(winLoseConvo);
     }
 }
