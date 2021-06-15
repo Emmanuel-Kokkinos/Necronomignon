@@ -23,5 +23,23 @@ public class StartingBeast : MonoBehaviour
         {
             chosenBeast = "Terraos";
         }
+        unlock(chosenBeast);
+    }
+    public static void unlock(string name)
+    {
+        Beast b = new Beast();
+        int x = 0;
+        for (; x < BeastManager.beastsList.Beasts.Count; x++)
+        {
+            if (BeastManager.beastsList.Beasts[x].name == name)
+            {
+                b = BeastManager.beastsList.Beasts[x];
+                break;
+            }
+        }
+        if (b.tier == -1)
+        {
+            BeastManager.beastsList.Beasts[x].tier = 0;
+        }
     }
 }
