@@ -974,6 +974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beastManager: {fileID: 354535501}
+  loadScenes: {fileID: 354535496}
   beastTexts:
   - {fileID: 593302168}
   - {fileID: 846770285}

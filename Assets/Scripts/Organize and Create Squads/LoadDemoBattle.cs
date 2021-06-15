@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class LoadDemoBattle : MonoBehaviour
 {
     public SquadData squadData;
+    public LoadScenes loadScenes;
 
     public static int squadNo;
 
@@ -21,14 +22,14 @@ public class LoadDemoBattle : MonoBehaviour
         {
             if (squadData.GetSquad1Status())
             {
-                SceneManager.LoadScene("DemoBattle");
+                loadScenes.LoadSelect("DemoBattle");
             }
         }
         else
         {
             if (squadData.GetSquad2Status())
             {
-                SceneManager.LoadScene("DemoBattle");
+                loadScenes.LoadSelect("DemoBattle");
             }
         }
     }
