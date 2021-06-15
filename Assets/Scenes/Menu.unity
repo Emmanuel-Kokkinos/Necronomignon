@@ -1971,33 +1971,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: SummonMain
-    clip: {fileID: 8300000, guid: bee428bba74450e499653517caa2dacf, type: 3}
-    volume: 0.083
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: BeastStory
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: BeastView
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: SummonMain
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
     pitch: 1.5
     source: {fileID: 0}
   - name: Menu
     clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
-    volume: 0.107
+    volume: 0.1
     pitch: 1.5
     source: {fileID: 0}
   - name: OrganizeMain
-    clip: {fileID: 8300000, guid: 4c59800689ac30342925ac0888ed9a0d, type: 3}
-    volume: 0.132
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: CreateSquad
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: SquadLoadouts
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
     pitch: 1.5
     source: {fileID: 0}
   - name: TutorialMain
-    clip: {fileID: 8300000, guid: e80ecd4266b015b46ac004546d2f63a7, type: 3}
-    volume: 0.107
-    pitch: 1.5
-    source: {fileID: 0}
-  - name: Manoli
-    clip: {fileID: 8300000, guid: 1b34fd1e61b719842a905b6113736715, type: 3}
-    volume: 0.107
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
     pitch: 1.5
     source: {fileID: 0}
   - name: Map
-    clip: {fileID: 8300000, guid: 5be27d78cd2f99442bbf7a54d3a0a455, type: 3}
-    volume: 0.12
+    clip: {fileID: 8300000, guid: dce687fef2deb7a4281999021092fbe6, type: 3}
+    volume: 0.1
     pitch: 1.5
     source: {fileID: 0}
   battleTheme: {fileID: 8300000, guid: 1b34fd1e61b719842a905b6113736715, type: 3}

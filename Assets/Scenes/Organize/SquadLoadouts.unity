@@ -725,6 +725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   squadData: {fileID: 443206363}
+  loadScenes: {fileID: 443206361}
 --- !u!1 &510065415
 GameObject:
   m_ObjectHideFlags: 0

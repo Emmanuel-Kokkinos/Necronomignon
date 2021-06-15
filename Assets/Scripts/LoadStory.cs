@@ -29,7 +29,7 @@ public class LoadStory : MonoBehaviour
                 }
             }
             txt.text = stoList[beastIndex].pages[0];
-            title.text = stoList[beastIndex].title;
+            title.text = SummonBookLoader.CamelCaseCorrection(stoList[beastIndex].title);
         }
     }
 

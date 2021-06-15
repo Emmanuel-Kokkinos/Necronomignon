@@ -22,6 +22,8 @@ public class SummonBookLoader : MonoBehaviour
     //BeastManager Script object
     public BeastManager beastManager;
 
+    public LoadScenes loadScenes;
+
     //Holds the name and Image of the beast that will be listed on a specific slot
     public List<GameObject> beastTexts;
     public List<Image> slots;
@@ -94,7 +96,7 @@ public class SummonBookLoader : MonoBehaviour
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
                 beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
-                beastTexts[x % 6].GetComponent<Text>().text = summonedNames[x];
+                beastTexts[x % 6].GetComponent<Text>().text = CamelCaseCorrection(summonedNames[x]);
 
                 //Make not summoned beasts transparent
                 if (sorted[x].tier <= 0)
@@ -175,6 +177,22 @@ public class SummonBookLoader : MonoBehaviour
 
     }
 
+    public static string CamelCaseCorrection(string v)
+    {
+        string str = "";
+        char[] charry = v.ToCharArray();
+        foreach(char c in charry)
+        {
+            if (Char.IsUpper(c))
+            {
+                str += " ";
+            }
+            str += c;
+        }
+        str.Trim();
+        return str;
+    }
+
 
     //Changes Image set & arrow from the Summon Book
     public void Forward()
@@ -214,11 +232,11 @@ public class SummonBookLoader : MonoBehaviour
                 if (sorted[(counter * 6) + x - 1].tier >= 0 && hasAStory(beastName))
                 {
                     SummonManager.name = beastName;
-                    SceneManager.LoadScene("BeastStory");
+                    loadScenes.LoadSelect("BeastStory");
                 }
                 else
                 {
-                    SceneManager.LoadScene("BeastView");
+                    loadScenes.LoadSelect("BeastView");
                 }
             }
         }
