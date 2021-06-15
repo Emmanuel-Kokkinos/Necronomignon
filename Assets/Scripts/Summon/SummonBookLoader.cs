@@ -22,6 +22,8 @@ public class SummonBookLoader : MonoBehaviour
     //BeastManager Script object
     public BeastManager beastManager;
 
+    public LoadScenes loadScenes;
+
     //Holds the name and Image of the beast that will be listed on a specific slot
     public List<GameObject> beastTexts;
     public List<Image> slots;
@@ -230,11 +232,11 @@ public class SummonBookLoader : MonoBehaviour
                 if (sorted[(counter * 6) + x - 1].tier >= 0 && hasAStory(beastName))
                 {
                     SummonManager.name = beastName;
-                    SceneManager.LoadScene("BeastStory");
+                    loadScenes.LoadSelect("BeastStory");
                 }
                 else
                 {
-                    SceneManager.LoadScene("BeastView");
+                    loadScenes.LoadSelect("BeastView");
                 }
             }
         }

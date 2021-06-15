@@ -70,12 +70,6 @@ public class AnimationPlayer : MonoBehaviour
         armatureComponent.animation.Play("Idle", 0);
     }
 
-    //Back Button(obviously) 
-    public void BackButton()
-    {
-        SceneManager.LoadScene("SummonMain");
-    }
-
     IEnumerator AnimationWaitTime()
     {
         yield return new WaitWhile(new System.Func<bool>(() => !armatureComponent.animation.isCompleted));

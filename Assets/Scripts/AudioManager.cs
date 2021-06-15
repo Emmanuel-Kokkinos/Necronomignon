@@ -102,7 +102,7 @@ public class AudioManager : MonoBehaviour
 
 
         // In case the scene is a battle scene, this will load the battle music
-        if (name.Equals("Manoli") || name.Equals("RandomFight") || name.Equals("RandomerFight"))
+        if (name.Equals("Manoli") || name.Equals("RandomFight") || name.Equals("RandomerFight") || name.Equals("DemoBattle"))
         {
             audio.clip = battleTheme;
             audio.Play();
@@ -110,7 +110,8 @@ public class AudioManager : MonoBehaviour
         }
         
         // If exiting from a battle , this sets the music back to the Main theme 
-        else if ((name.Equals("Map") && tempName.Equals("Manoli")) || (name.Equals("Map") && tempName.Equals("RandomFight")) || (name.Equals("Map") && tempName.Equals("RandomerFight")))
+        else if ((name.Equals("Map") && tempName.Equals("Manoli")) || (name.Equals("Map") && tempName.Equals("RandomFight")) 
+            || (name.Equals("Map") && tempName.Equals("RandomerFight")) || (name.Equals("SquadLoadouts") && tempName.Equals("DemoBattle")))
         {
             tempName = name;
             audio.Play();
