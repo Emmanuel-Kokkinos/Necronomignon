@@ -20,7 +20,7 @@ public class TrainPrep : MonoBehaviour
     {
         img.GetComponent<Image>().sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
-        name.text = SummonManager.name;
+        name.text = SummonBookLoader.CamelCaseCorrection(SummonManager.name);
         GameObject beastPrefab = (GameObject)Instantiate(Resources.Load($"Prefabs/Beasts/{SummonManager.name}"));
         beastPrefab.transform.SetParent(GameObject.Find($"BeastImage").transform);
         beastPrefab.transform.localPosition = beastPrefab.transform.position;
