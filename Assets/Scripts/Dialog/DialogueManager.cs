@@ -127,11 +127,15 @@ namespace DialogueEditor
                 case "Conv_Opening":
 
                     //Change for setCharacterActive Method later
-                    for (int x = 4; x <= 7; x++)
+                    for (int x = 0; x <= 3; x++)
                     {
-                        characters[x].gameObject.SetActive(true);
+                        characters[x].gameObject.SetActive(false);
                     }
 
+                    for (int x = 5; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
                     characters[2].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
@@ -142,7 +146,7 @@ namespace DialogueEditor
                     characters[7].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
 
-                    characters[8].gameObject.SetActive(false);
+                    //characters[8].gameObject.SetActive(false);
 
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Waiting_Room");
                     break;
