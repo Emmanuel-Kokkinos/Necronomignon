@@ -141,9 +141,9 @@ namespace DialogueEditor
                     characters[2].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
                     characters[3].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
                     characters[4].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
-                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
+                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
                     characters[6].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
-                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
 
                     //characters[8].gameObject.SetActive(false);
@@ -474,9 +474,22 @@ namespace DialogueEditor
 
         public void CharacterOutOfScene(int charId)
         {
+            
             characters[charId].gameObject.SetActive(false);
         }
 
+
+        public void CharactersOutOfScene(int charId)
+        {
+            int n = charId;
+
+            while (n > 0)
+            {
+                CharacterOutOfScene(n % 10);
+                n /= 10;
+            }
+           
+        }
         /*Only replaces first character of scene*/
         public void CharacterReplace(string character)
         {
