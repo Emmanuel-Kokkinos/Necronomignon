@@ -40,14 +40,14 @@ public class Wyvern_Script : Parent_Script, Parent_Beast
 
     void ProjectileAnimation()
     {
-        /*
+        
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
 
         GameObject movePrefab = Instantiate(backPrefab);
         movePrefab.transform.SetParent(target.transform);
         movePrefab.transform.localPosition = new Vector3(0, 0);
         movePrefab.transform.localRotation = Quaternion.identity;
-        movePrefab.transform.localScale = new Vector3(50, 50);*/
+        movePrefab.transform.localScale = new Vector3(50, 50);
     }
 
     //this method finds which targets are availible to a beast using a stab attack

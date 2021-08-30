@@ -18,6 +18,13 @@ public class TrainPrep : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        b = BeastManager.getFromNameS(name.text);
+
+        for (int x = 0; x <= b.tier; x++)
+        {
+            pentagrams[x].gameObject.SetActive(true);
+        }
+
         img.GetComponent<Image>().sprite = Resources.Load<Sprite>("Static_Images/EmptyRectangle");
 
         name.text = SummonBookLoader.CamelCaseCorrection(SummonManager.name);
@@ -29,12 +36,7 @@ public class TrainPrep : MonoBehaviour
         beastPrefab.GetComponent<UnityArmatureComponent>().animation.Play("Idle", 1);
         beastPrefab.GetComponent<UnityArmatureComponent>().animation.Stop();
 
-        b = BeastManager.getFromNameS(name.text);
-
-        for(int x = 0; x < b.tier; x++)
-        {
-            pentagrams[x].gameObject.SetActive(true);
-        }
+        
     }
 
     public void CheckToTrain()
