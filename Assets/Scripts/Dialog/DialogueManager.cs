@@ -41,16 +41,18 @@ namespace DialogueEditor
             background = GameObject.Find("Canvas");
 
             //Sets all conversations to list
-            //NPCConversationToList();
+            NPCConversationToList();
 
             //Sets the default conversation
 
-            SetNPCConversation(FindByName(conversationNames[DialogueCounter].DefaultName));
+            //SetNPCConversation(FindByName(conversationNames[DialogueCounter].DefaultName));
+            SetNPCConversation(FindByName("Questionnaire"));
 
-           if (SceneManager.GetActiveScene().name == "Tournament")
+
+            if (SceneManager.GetActiveScene().name == "Tournament")
                 SetTournamentConversation();
 
-            //SetNPCConversation(FindByName("Conv_Graduation"));
+            
             //SetNPCConversation(FindByName("FallMirrulak_8"));
 
 
