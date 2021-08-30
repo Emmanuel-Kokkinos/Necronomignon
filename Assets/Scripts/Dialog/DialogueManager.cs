@@ -224,10 +224,15 @@ namespace DialogueEditor
                     characters[3].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
                     characters[4].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
                     characters[5].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
-                    characters[6].gameObject.SetActive(false);
+                    
                     characters[7].sprite = characterAssets.Find(x => x.name.Equals("Irvina")); //Irvina
                     characters[7].gameObject.transform.localScale = new Vector3(1.3f, 1.3f);
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Thoth")); //Thoth
+
+                    for (int x = 0; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
                     break;
                 case "Conv_Graduation":
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Gabriel
