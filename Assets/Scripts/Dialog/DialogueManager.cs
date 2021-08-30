@@ -33,7 +33,7 @@ namespace DialogueEditor
         // Start is called before the first frame update
         void Start()
         {
-            DontDestroyOnLoad(this.gameObject);
+           
 
             DialogueCounter = 0;
             TourDiagCounter = 0;

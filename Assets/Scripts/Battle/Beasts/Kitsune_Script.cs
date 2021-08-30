@@ -32,7 +32,7 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
 
     void ProjectileAnimation()
     {
-        /*
+        
         GameObject player = battleManager.getSlot(battleManager.currentTurn);
         GameObject target = battleManager.getSlot(battleManager.targets[0]);
 
@@ -44,7 +44,7 @@ public class Kitsune_Script : Parent_Script, Parent_Beast
 
         Vector3 shootDir = ((target.transform.localPosition) - (player.transform.localPosition)).normalized;
 
-        movePrefab.GetComponent<Projectile>().Setup(shootDir);*/
+        movePrefab.GetComponent<Projectile>().Setup(shootDir);
     }
 
     public void Play_SoundFX(string sound)
