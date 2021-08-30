@@ -41,7 +41,7 @@ namespace DialogueEditor
             background = GameObject.Find("Canvas");
 
             //Sets all conversations to list
-            NPCConversationToList();
+            //NPCConversationToList();
 
             //Sets the default conversation
 
@@ -71,7 +71,7 @@ namespace DialogueEditor
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
 
-        /* Since the tournament needs to reload tournament scene each time, we need to select what conversations will happen after
+        /* tournament needs to reload tournament scene each time, we need to select what conversations will happen after
          * 
          */
         public void SetTournamentConversation()
@@ -198,6 +198,7 @@ namespace DialogueEditor
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Conv_Tour":
+                    CampaignManager.dialogueEnd = false;
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Colosseum");
                     if (CampaignManager.dialogueEnd == false) {
                         characters[0].gameObject.SetActive(true);
@@ -240,6 +241,7 @@ namespace DialogueEditor
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Graduation_Hall");
                     break;
                 case "Conv_semi":
+                    CampaignManager.dialogueEnd = false;
                     if (CampaignManager.semiDiagEnd == false)
                     {
                         characters[0].gameObject.SetActive(true);
@@ -249,14 +251,15 @@ namespace DialogueEditor
 
                     break;
                 case "Conv_finals":
-
-                    if(CampaignManager.finDiagEnd == false)
+                    CampaignManager.dialogueEnd = false;
+                    if (CampaignManager.finDiagEnd == false)
                     {
                         SetTournamentSprites();
                     }
                     
                     break;
                 case "Tourn_End":
+                    CampaignManager.dialogueEnd = false;
                     SetTournamentSprites();
                     break;
                 case "Conv_Auriga":
@@ -340,6 +343,7 @@ namespace DialogueEditor
                     BeginConversation(currentConversation, "Tournament");
                     break;
                 case "Conv_Tour":
+
                     for (int x = 0; x <= 8; x++)
                     {
                         characters[x].gameObject.SetActive(false);
@@ -349,18 +353,22 @@ namespace DialogueEditor
                     CampaignManager.dialogueEnd = true;
                     break;
                 case "Conv_semi":
+
                     CampaignManager.semiDiagEnd = true;
                     for (int x = 0; x <= 8; x++)
                     {
                         characters[x].gameObject.SetActive(false);
                     }
+                    CampaignManager.dialogueEnd = true;
                     break;
                 case "Conv_finals":
-                    CampaignManager.finDiagEnd = true;
 
+                    CampaignManager.finDiagEnd = true;
+                    CampaignManager.dialogueEnd = true;
                     break;
                 case "Tour_end":
                     CampaignManager.tourEnd = true;
+                    CampaignManager.dialogueEnd = true;
                     //Begin a battle with John and then with gabriel
                     break;
                 case "Conv_Auriga":

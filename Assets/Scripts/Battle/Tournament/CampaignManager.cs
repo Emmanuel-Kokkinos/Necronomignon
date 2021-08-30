@@ -32,13 +32,20 @@ public class CampaignManager : MonoBehaviour
             firstMission.SetActive(false);
 
         //When Dialogue Ends once, don't repeat
-        /*if(dialogueEnd == true)
+        if(dialogueEnd == true)
         {
             if (conversation != null)
             {
                 conversation.SetActive(false);
             }
-        }*/
+        }
+        else if(dialogueEnd == false && conversation.activeSelf == false)
+        {
+            if (conversation != null)
+            {
+                conversation.SetActive(true);
+            }
+        }
 
         BuildTournament();
     }

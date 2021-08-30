@@ -687,8 +687,9 @@ PlayerSettings:
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
+    Standalone: 0
+  il2cppCompilerConfiguration:
     Standalone: 1
-  il2cppCompilerConfiguration: {}
   managedStrippingLevel:
     Android: 1
   incrementalIl2cppBuild: {}
@@ -776,6 +777,6 @@ PlayerSettings:
   projectName: 
   organizationId: 
   cloudEnabled: 0
-  enableNativePlatformBackendsForNewInputSystem: 0
+  enableNativePlatformBackendsForNewInputSystem: 1
   disableOldInputManagerSupport: 0
   legacyClampBlendShapeWeights: 0
