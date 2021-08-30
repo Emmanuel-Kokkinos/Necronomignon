@@ -46,11 +46,13 @@ namespace DialogueEditor
             //Sets the default conversation
 
             SetNPCConversation(FindByName(conversationNames[DialogueCounter].DefaultName));
+            //SetNPCConversation(FindByName("Questionnaire"));
 
-           if (SceneManager.GetActiveScene().name == "Tournament")
+
+            if (SceneManager.GetActiveScene().name == "Tournament")
                 SetTournamentConversation();
 
-            //SetNPCConversation(FindByName("Conv_Graduation"));
+            
             //SetNPCConversation(FindByName("FallMirrulak_8"));
 
 
@@ -69,7 +71,7 @@ namespace DialogueEditor
 
         // ---SETS THE CONVERSATION OBJECTS IN SCENE
 
-        /* Since the tournament needs to reload tournament scene each time, we need to select what conversations will happen after
+        /* tournament needs to reload tournament scene each time, we need to select what conversations will happen after
          * 
          */
         public void SetTournamentConversation()
@@ -127,22 +129,26 @@ namespace DialogueEditor
                 case "Conv_Opening":
 
                     //Change for setCharacterActive Method later
-                    for (int x = 4; x <= 7; x++)
+                    for (int x = 0; x <= 3; x++)
                     {
-                        characters[x].gameObject.SetActive(true);
+                        characters[x].gameObject.SetActive(false);
                     }
 
+                    for (int x = 5; x <= 8; x++)
+                    {
+                        characters[x].gameObject.SetActive(false);
+                    }
                     characters[0].sprite = characterAssets.Find(x => x.name.Equals("Gabriel")); //Gabriel
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Faraday")); //Faraday
                     characters[2].sprite = characterAssets.Find(x => x.name.Equals("Auriga")); //Auriga
                     characters[3].sprite = characterAssets.Find(x => x.name.Equals("John")); //John
                     characters[4].sprite = characterAssets.Find(x => x.name.Equals("Dio")); //Dio
-                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
+                    characters[5].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
                     characters[6].sprite = characterAssets.Find(x => x.name.Equals("Neput")); //Neput
-                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Azglor")); //Azglor
+                    characters[7].sprite = characterAssets.Find(x => x.name.Equals("Jheera")); //Jheera
                     characters[8].sprite = characterAssets.Find(x => x.name.Equals("Tadria")); //Instructor
 
-                    characters[8].gameObject.SetActive(false);
+                    //characters[8].gameObject.SetActive(false);
 
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Waiting_Room");
                     break;
@@ -192,6 +198,7 @@ namespace DialogueEditor
                     characters[1].sprite = characterAssets.Find(x => x.name.Equals("Tadria"));
                     break;
                 case "Conv_Tour":
+                    CampaignManager.dialogueEnd = false;
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Colosseum");
                     if (CampaignManager.dialogueEnd == false) {
                         characters[0].gameObject.SetActive(true);
@@ -234,6 +241,7 @@ namespace DialogueEditor
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("Background_Pics/Graduation_Hall");
                     break;
                 case "Conv_semi":
+                    CampaignManager.dialogueEnd = false;
                     if (CampaignManager.semiDiagEnd == false)
                     {
                         characters[0].gameObject.SetActive(true);
@@ -243,14 +251,15 @@ namespace DialogueEditor
 
                     break;
                 case "Conv_finals":
-
-                    if(CampaignManager.finDiagEnd == false)
+                    CampaignManager.dialogueEnd = false;
+                    if (CampaignManager.finDiagEnd == false)
                     {
                         SetTournamentSprites();
                     }
                     
                     break;
                 case "Tourn_End":
+                    CampaignManager.dialogueEnd = false;
                     SetTournamentSprites();
                     break;
                 case "Conv_Auriga":
@@ -334,6 +343,7 @@ namespace DialogueEditor
                     BeginConversation(currentConversation, "Tournament");
                     break;
                 case "Conv_Tour":
+
                     for (int x = 0; x <= 8; x++)
                     {
                         characters[x].gameObject.SetActive(false);
@@ -343,18 +353,22 @@ namespace DialogueEditor
                     CampaignManager.dialogueEnd = true;
                     break;
                 case "Conv_semi":
+
                     CampaignManager.semiDiagEnd = true;
                     for (int x = 0; x <= 8; x++)
                     {
                         characters[x].gameObject.SetActive(false);
                     }
+                    CampaignManager.dialogueEnd = true;
                     break;
                 case "Conv_finals":
-                    CampaignManager.finDiagEnd = true;
 
+                    CampaignManager.finDiagEnd = true;
+                    CampaignManager.dialogueEnd = true;
                     break;
                 case "Tour_end":
                     CampaignManager.tourEnd = true;
+                    CampaignManager.dialogueEnd = true;
                     //Begin a battle with John and then with gabriel
                     break;
                 case "Conv_Auriga":
@@ -470,9 +484,22 @@ namespace DialogueEditor
 
         public void CharacterOutOfScene(int charId)
         {
+            
             characters[charId].gameObject.SetActive(false);
         }
 
+
+        public void CharactersOutOfScene(int charId)
+        {
+            int n = charId;
+
+            while (n > 0)
+            {
+                CharacterOutOfScene(n % 10);
+                n /= 10;
+            }
+           
+        }
         /*Only replaces first character of scene*/
         public void CharacterReplace(string character)
         {
