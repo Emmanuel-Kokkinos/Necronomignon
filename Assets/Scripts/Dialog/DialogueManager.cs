@@ -45,8 +45,8 @@ namespace DialogueEditor
 
             //Sets the default conversation
 
-            //SetNPCConversation(FindByName(conversationNames[DialogueCounter].DefaultName));
-            SetNPCConversation(FindByName("Questionnaire"));
+            SetNPCConversation(FindByName(conversationNames[DialogueCounter].DefaultName));
+            //SetNPCConversation(FindByName("Questionnaire"));
 
 
             if (SceneManager.GetActiveScene().name == "Tournament")
